@@ -1,3 +1,85 @@
+## ACT-019 — 2026-10-02
+Type: SPECIFICATION-COMPLETION
+Status: DONE
+
+### انجام شد
+- TASK-01-018 — Search Requirements تکمیل و DONE شد.
+- Search entities، privacy، normalization، ranking پایه، multilingual behavior و result contract تعریف شد.
+- با تکمیل ACT-014 تا ACT-019، تمام specificationهای باقیمانده PHASE-01 نهایی شدند.
+- DEC-013 ثبت شد.
+- ROADMAP، STATUS و INDEX همگام شدند.
+
+### نتیجه
+PHASE-01 — Product Discovery & Specification اکنون 100% و DONE است و پروژه وارد Architecture شده است.
+
+### Next
+TASK-02-001 — انتخاب Stack و Runtime
+
+## ACT-018 — 2026-10-02
+Type: DOMAIN-SPEC
+Status: DONE
+
+### انجام شد
+- TASK-01-017 — Historical Date Representation تکمیل و DONE شد.
+- `docs/HISTORICAL-DATE-MODEL.md` ایجاد و APPROVED شد.
+- original date/calendar، imperial equivalent، precision/uncertainty و BCE handling مشخص شد.
+- Calendar Engine به‌عنوان مرجع conversion تثبیت شد.
+
+### Next
+TASK-01-018 — Search Requirements
+
+## ACT-017 — 2026-10-02
+Type: DOMAIN-SPEC
+Status: DONE
+
+### انجام شد
+- TASK-01-016 — Media/Asset Content Model تکمیل و DONE شد.
+- `docs/MEDIA-MODEL.md` ایجاد و APPROVED شد.
+- image/document، metadata، provenance/rights و relationshipها مشخص شدند.
+
+### Next
+TASK-01-017 — Historical Date Representation
+
+## ACT-016 — 2026-10-02
+Type: EDITORIAL-SPEC
+Status: DONE
+
+### انجام شد
+- TASK-01-015 — Sources, Verification & Editorial Policy تکمیل و DONE شد.
+- `docs/SOURCE-EDITORIAL-MODEL.md` ایجاد و APPROVED شد.
+- Source entity، verification lifecycle، confidence و editorial rules ثبت شد.
+- برای موضوعات سیاسی/معاصر، factual claims منبع‌دار و اختلاف دیدگاه‌ها نسبت‌داده‌شده باقی می‌مانند.
+
+### Next
+TASK-01-016 — Media/Asset Content Model
+
+## ACT-015 — 2026-10-02
+Type: DOMAIN-SPEC
+Status: DONE
+
+### انجام شد
+- TASK-01-014 — Timeline & Entity Relationships تکمیل و DONE شد.
+- `docs/TIMELINE-MODEL.md` ایجاد و APPROVED شد.
+- Historical Period و relationshipهای اصلی Entityها تعریف شدند.
+- ordering بر اساس Calendar Engine و با حفظ uncertainty تعیین شد.
+
+### Next
+TASK-01-015 — Sources, Verification & Editorial Policy
+
+## ACT-014 — 2026-10-02
+Type: DOMAIN-SPEC
+Status: DONE
+
+### انجام شد
+- TASK-01-013 — Important Event & Editorial Selection تکمیل و DONE شد.
+- `docs/IMPORTANT-EVENTS-MODEL.md` ایجاد و APPROVED شد.
+- Important Event به‌عنوان Event + editorial selection تثبیت شد.
+- hero image برای Eventهای منتخب الزامی شد.
+- public selection فقط از APPROVED Eventها انجام می‌شود.
+
+### Next
+TASK-01-014 — Timeline & Entity Relationships
+
 ## ACT-013 — 2026-10-02
 Type: DOMAIN-SPEC
 Status: DONE
