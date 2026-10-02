@@ -1,3 +1,19 @@
+## DEC-012 — 2026-10-02
+Status: ACCEPTED
+Title: تثبیت مدل‌های Person، Memory و Personal Event
+
+### Decision
+- Person به‌عنوان Entity عمومی و مستقل از Event تثبیت شد؛ Eventها از طریق ID به Person متصل می‌شوند.
+- Person می‌تواند اطلاعات هویتی، معرفی، تاریخ‌های تولد/درگذشت در صورت وجود، روابط، منابع و رسانه داشته باشد؛ منطق تقویم و schemaهای تخصصی به لایه‌های بعدی واگذار شد.
+- Memory به‌عنوان Entity خصوصی متعلق به کاربر تثبیت شد و از Personal Event جدا باقی می‌ماند.
+- Personal Event به‌عنوان Entity خصوصی و مستقل از public Event تثبیت شد و برای birthday، anniversary و custom event استفاده می‌شود.
+- Personal Event می‌تواند به Personal Person متصل شود و منبع داده Share Card باشد.
+- مالکیت و حریم خصوصی باید در data/application layer enforce شوند و صرفاً به UI وابسته نباشند.
+- Reminder/Notification همچنان خارج از MVP باقی می‌ماند.
+
+### Consequence
+TASK-01-010، TASK-01-011 و TASK-01-012 تکمیل شدند. نقطه ادامه رسمی پروژه TASK-01-013 — Important Event & Editorial Selection است.
+
 ## DEC-011 — 2026-10-02
 Status: ACCEPTED
 Title: تثبیت مدل تفصیلی Event
