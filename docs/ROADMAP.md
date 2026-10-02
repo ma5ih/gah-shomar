@@ -131,10 +131,10 @@ Last updated: 2026-10-02
 - TASK-03-018 — Source/Editorial Domain — DONE
 
 ## 3C — Content/Data foundation
-- TASK-03-019 — Structured Event Dataset Contract — TODO
-- TASK-03-020 — Seed/Fixture Data Strategy — TODO
-- TASK-03-021 — Content Validation Pipeline — TODO
-- TASK-03-022 — Public vs Personal Data Separation — TODO
+- TASK-03-019 — Structured Event Dataset Contract — DONE
+- TASK-03-020 — Seed/Fixture Data Strategy — DONE
+- TASK-03-021 — Content Validation Pipeline — DONE
+- TASK-03-022 — Public vs Personal Data Separation — DONE
 
 ## 3D — Tests
 - TASK-03-023 — Calendar Unit Tests — TODO
@@ -386,3 +386,5 @@ Last updated: 2026-10-02
 - MVP Definition — DONE
 
 **اقدام بعدی:** TASK-03-004 — Leap-Year Rules (BLOCKED — نیازمند تعیین قاعده کبیسه)
+
+سایر Taskهای مستقل تا حد امکان بدون وابستگی به قاعده کبیسه ادامه می‌یابند.
