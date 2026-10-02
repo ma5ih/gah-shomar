@@ -1,7 +1,7 @@
 # REQUIREMENTS — نیازمندی‌های محصول
 
-Version: 1.2.0-draft
-Status: IN_PROGRESS
+Version: 1.0.0
+Status: APPROVED
 Last updated: 2026-10-02
 
 ## نیازمندی‌های تأییدشده
@@ -135,14 +135,23 @@ Last updated: 2026-10-02
 - AC-038 — هیچ قابلیت خارج از Scope مصوب MVP نباید برای تکمیل یک acceptance criterion به‌صورت پنهان وارد محصول شود.
 - AC-039 — معیار پذیرش نهایی MVP باید بر اساس نتیجه تست و QA بررسی شود، نه صرفاً ظاهر صفحه یا وجود کد.
 
-## موارد باقی‌مانده برای PHASE-01
-- مدل دقیق Account/Authentication و قرارداد هویت کاربر
-- مدل دقیق Event/Person/Memory/Personal Event
-- مدل Important Event و Editorial Selection
-- مدل Timeline و روابط Entityها
-- سیاست منابع/اعتبارسنجی
-- مدل Media/Asset و Share Card
-- تثبیت REQUIREMENTS v1.0 نهایی
+## ادامه PHASE-01 پس از REQUIREMENTS v1.0
+
+Requirements v1.0 در سطح محصول، Scope، MVP، Acceptance، Account/Auth و Share Card نهایی و APPROVED است.
+
+موارد زیر دیگر «ناتمام بودن Requirements» محسوب نمی‌شوند؛ این‌ها specificationهای تفصیلی مدل محتوا و قراردادهای دامنه هستند و در TASKهای بعدی PHASE-01 به‌صورت مستقل تکمیل می‌شوند:
+- TASK-01-009 — Event Model
+- TASK-01-010 — Person Model
+- TASK-01-011 — Memory Model
+- TASK-01-012 — Personal Event Model
+- TASK-01-013 — Important Event & Editorial Selection
+- TASK-01-014 — Timeline & Entity Relationships
+- TASK-01-015 — Sources, Verification & Editorial Policy
+- TASK-01-016 — Media/Asset Content Model
+- TASK-01-017 — Historical Date Representation
+- TASK-01-018 — Search Requirements
+
+Account/Auth و Personal Share Card در سطح Requirements نهایی هستند؛ جزئیات فنی آن‌ها در PHASE-02 به معماری منتقل می‌شوند.
 
 
 ## نیازمندی‌های حساب کاربری و هویت
@@ -179,3 +188,13 @@ Last updated: 2026-10-02
 - REQ-078 — Session کاربر تا Logout یا انقضای امنیتی تعریف‌شده در Architecture حفظ می‌شود.
 - REQ-079 — ثبت‌نام و ورود باید حداقلی و بسیار ساده باشند.
 - REQ-080 — معماری می‌تواند برای قابلیت‌های Deferred آماده باشد، اما این قابلیت‌ها تا زمان تصمیم مستقل فعال یا در UI نمایان نمی‌شوند.
+
+## وضعیت نسخه
+
+- Requirements version: 1.0.0
+- Product requirements: APPROVED
+- Acceptance criteria: AC-001 تا AC-039
+- Scope boundaries: APPROVED
+- Account/Auth product requirements: APPROVED
+- Personal Share Card product requirements: APPROVED
+- Detailed domain/content specifications continue as separate PHASE-01 tasks.
