@@ -1,6 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { IMPERIAL_MONTH_NAMES } from "@/domain/calendar/constants";
-import { isValidDay, monthLength } from "@/domain/calendar/month";
+import { IMPERIAL_MONTH_NAMES } from "../../src/domain/calendar/constants";
+import { isValidDay, monthLength } from "../../src/domain/calendar/month";
+import {
+  isImperialLeapYear,
+  nextImperialLeapYear,
+  previousImperialLeapYear,
+} from "../../src/domain/calendar/leap-year";
 
 describe("Imperial calendar month rules", () => {
   it("uses the approved month names", () => {
@@ -28,15 +33,8 @@ describe("Imperial calendar month rules", () => {
   });
 });
 
-import { describe, expect, it } from "vitest";
-import {
-  isImperialLeapYear,
-  nextImperialLeapYear,
-  previousImperialLeapYear,
-} from "../../src/domain/calendar/leap-year";
-
 describe("Imperial calendar leap-year rules", () => {
-  it("mirrors the approved Solar Hijri sequence around the current year", () => {
+  it("supports the known modern sequence", () => {
     const expected = [
       2579,
       2583,
@@ -53,6 +51,21 @@ describe("Imperial calendar leap-year rules", () => {
     }
   });
 
+  it("does not force a fixed 33-year cycle onto older years", () => {
+    expect(isImperialLeapYear(1440)).toBe(false);
+    expect(isImperialLeapYear(1441)).toBe(true);
+  });
+
+  it("preserves five-year leap gaps", () => {
+    expect(isImperialLeapYear(2583)).toBe(true);
+    expect(isImperialLeapYear(2588)).toBe(true);
+    expect(isImperialLeapYear(2584)).toBe(false);
+    expect(isImperialLeapYear(2587)).toBe(false);
+
+    expect(isImperialLeapYear(2616)).toBe(true);
+    expect(isImperialLeapYear(2621)).toBe(true);
+  });
+
   it("treats Imperial 2585 as a common year", () => {
     expect(isImperialLeapYear(2585)).toBe(false);
   });
@@ -60,5 +73,10 @@ describe("Imperial calendar leap-year rules", () => {
   it("finds the previous and next leap years around Imperial 2585", () => {
     expect(previousImperialLeapYear(2585)).toBe(2583);
     expect(nextImperialLeapYear(2585)).toBe(2588);
+  });
+
+  it("finds the previous and next leap years around Imperial 1440", () => {
+    expect(previousImperialLeapYear(1440)).toBe(1436);
+    expect(nextImperialLeapYear(1440)).toBe(1441);
   });
 });
