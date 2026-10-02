@@ -1,7 +1,7 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 1.3.0
+Index version: 1.4.0
 Last update: 2026-10-02
 Current phase: PHASE-01 — Product Discovery & Specification
 
@@ -41,10 +41,10 @@ PHASE-09: TODO
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-004 — تثبیت Calendar Specification، MVP و بازطراحی Roadmap end-to-end.
+ACT-005 — تثبیت Non-goals، Scope Boundaries، حساب کاربری و Share Card.
 
 ## اقدام بعدی
-TASK-01-006 — تعریف Non-goals و Scope Boundaries.
+TASK-01-007 — تعریف Acceptance Criteria.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.
