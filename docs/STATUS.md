@@ -14,8 +14,8 @@ Overall status: IN_PROGRESS
 |---|---|---:|
 | PHASE-00 Documentation | DONE | 100% |
 | PHASE-01 Specification | DONE | 100% |
-| PHASE-02 Architecture | IN_PROGRESS | 15% |
-| PHASE-03 Core Backend / Calendar Engine | TODO | 0% |
+| PHASE-02 Architecture | DONE | 100% |
+| PHASE-03 Core Backend / Calendar Engine | IN_PROGRESS | 8% |
 | PHASE-04 Application Backend / Use Cases | TODO | 0% |
 | PHASE-05 Frontend Architecture & Design System | TODO | 0% |
 | PHASE-06 Core Frontend | TODO | 0% |
@@ -86,7 +86,7 @@ Overall status: IN_PROGRESS
 
 ## اقدام بعدی
 
-TASK-02-005 — Calendar Engine Boundary
+TASK-03-001 — Imperial Date Type
 
 PHASE-01 specification کامل شد و پروژه وارد PHASE-02 — Architecture شده است.
 
@@ -102,3 +102,4 @@ PHASE-01 specification کامل شد و پروژه وارد PHASE-02 — Archite
 3. در صورت تغییر تصمیم/نیازمندی، DECISIONS یا REQUIREMENTS به‌روزرسانی شود.
 4. وضعیت ROADMAP و STATUS را همگام کند.
 5. اگر سند جدید ایجاد شد، INDEX به‌روزرسانی شود.
+
