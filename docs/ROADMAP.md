@@ -44,7 +44,7 @@ Last updated: 2026-10-02
 
 ## 1B — مرزبندی محصول
 - TASK-01-006 — Non-goals & Scope Boundaries — DONE
-- TASK-01-007 — Acceptance Criteria — TODO
+- TASK-01-007 — Acceptance Criteria — DONE
 - TASK-01-008 — Requirements v1.0 Finalization — TODO
 
 ## 1C — مدل‌های محتوایی
@@ -385,4 +385,4 @@ Last updated: 2026-10-02
 - Main Capabilities — DONE
 - MVP Definition — DONE
 
-**اقدام بعدی:** TASK-01-007 — Acceptance Criteria
+**اقدام بعدی:** TASK-01-008 — Requirements v1.0 Finalization
