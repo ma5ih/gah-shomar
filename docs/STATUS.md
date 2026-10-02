@@ -15,7 +15,7 @@ Overall status: IN_PROGRESS
 | PHASE-00 Documentation | DONE | 100% |
 | PHASE-01 Specification | DONE | 100% |
 | PHASE-02 Architecture | DONE | 100% |
-| PHASE-03 Core Backend / Calendar Engine | IN_PROGRESS | 22% |
+| PHASE-03 Core Backend / Calendar Engine | IN_PROGRESS | 30% |
 | PHASE-04 Application Backend / Use Cases | TODO | 0% |
 | PHASE-05 Frontend Architecture & Design System | TODO | 0% |
 | PHASE-06 Core Frontend | TODO | 0% |
@@ -58,6 +58,10 @@ Overall status: IN_PROGRESS
 - ACT-051 — تعریف Memory Domain — DONE
 - ACT-052 — تعریف Timeline/Period Domain — DONE
 - ACT-053 — تعریف Source/Editorial Domain — DONE
+- ACT-054 — Structured Event Dataset Contract — DONE
+- ACT-055 — Seed/Fixture Data Strategy — DONE
+- ACT-056 — Content Validation Pipeline — DONE
+- ACT-057 — Public vs Personal Data Separation — DONE
 
 ## تصمیم‌های محصول فعلی
 
