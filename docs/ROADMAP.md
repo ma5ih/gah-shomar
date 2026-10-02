@@ -59,7 +59,7 @@ Last updated: 2026-10-02
 - TASK-01-017 — Historical Date Representation — TODO
 - TASK-01-018 — Search Requirements — TODO
 - TASK-01-019 — Account & Authentication Requirements — TODO
-- TASK-01-020 — Share Card Requirements — TODO
+- TASK-01-020 — Personal Share Card Requirements — DONE
 
 **خروجی فاز:** Product/Requirements/Content Specification v1.0.
 
