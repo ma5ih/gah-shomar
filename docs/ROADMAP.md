@@ -1,6 +1,6 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 2.0.0
+Version: 2.0.1
 Last updated: 2026-10-02
 
 این سند مرجع اجرایی پروژه از صفر تا انتشار است. ترتیب مراحل عمداً به‌گونه‌ای طراحی شده که ابتدا Product/Specification و مدل داده تثبیت شود، سپس Architecture و Backend/Core Engine ساخته شود، بعد Application Logic، سپس UI/UX و Frontend، و در پایان Integration/QA/Release انجام شود.
@@ -58,7 +58,7 @@ Last updated: 2026-10-02
 - TASK-01-016 — Media/Asset Content Model — TODO
 - TASK-01-017 — Historical Date Representation — TODO
 - TASK-01-018 — Search Requirements — TODO
-- TASK-01-019 — Account & Authentication Requirements — TODO
+- TASK-01-019 — Account & Authentication Requirements — DONE
 - TASK-01-020 — Personal Share Card Requirements — DONE
 
 **خروجی فاز:** Product/Requirements/Content Specification v1.0.
