@@ -72,11 +72,12 @@ Last updated: 2026-10-02
 
 ## موارد باقی‌مانده برای PHASE-01
 - Acceptance Criteria دقیق
-- Non-goals و Scope Boundaries
+- مدل دقیق Account/Authentication و قرارداد هویت کاربر
 - مدل دقیق Event/Person/Memory/Personal Event
 - مدل Important Event و Editorial Selection
 - مدل Timeline و روابط Entityها
 - سیاست منابع/اعتبارسنجی
+- مدل Media/Asset و Share Card
 - تثبیت REQUIREMENTS v1.0 نهایی
 
 
