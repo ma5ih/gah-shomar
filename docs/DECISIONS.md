@@ -1,3 +1,16 @@
+## DEC-015 — 2026-10-02
+Status: ACCEPTED
+Title: تکمیل Architecture v1.0
+
+### Decision
+- تمام Taskهای PHASE-02 از 02-001 تا 02-025 تکمیل و ثبت شدند.
+- معماری لایه‌ای، boundaryهای Calendar Engine/Domain/Application/Presentation، data contracts، quality strategy، authentication/session و Share Card architecture تثبیت شدند.
+- PHASE-03 از Calendar Engine و domain implementation آغاز می‌شود.
+- هر feature باید ابتدا از boundaryهای معماری عبور کند و logic تقویم فقط در Calendar Engine قرار گیرد.
+
+### Consequence
+PHASE-02 → DONE و PHASE-03 → IN_PROGRESS شد. نقطه ادامه TASK-03-001 — Imperial Date Type است.
+
 ## DEC-014 — 2026-10-02
 Status: ACCEPTED
 Title: تثبیت Stack و اصول فنی پایه
