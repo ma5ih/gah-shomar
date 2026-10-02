@@ -1,3 +1,103 @@
+## ACT-053 — 2026-10-02
+Type: DOMAIN-IMPLEMENTATION
+Status: DONE
+
+### انجام شد
+- TASK-03-018 — Source/Editorial Domain تکمیل شد.
+- SourceType و Source contract پایه در `src/domain/source/types.ts` ایجاد شد.
+
+### Next
+TASK-03-004 — Leap-Year Rules
+
+## ACT-052 — 2026-10-02
+Type: DOMAIN-IMPLEMENTATION
+Status: DONE
+
+### انجام شد
+- TASK-03-017 — Timeline/Period Domain تکمیل شد.
+- HistoricalPeriod contract در `src/domain/period/types.ts` ایجاد شد.
+
+### Next
+TASK-03-018 — Source/Editorial Domain
+
+## ACT-051 — 2026-10-02
+Type: DOMAIN-IMPLEMENTATION
+Status: DONE
+
+### انجام شد
+- TASK-03-016 — Memory Domain تکمیل شد.
+- Memory contract خصوصی در `src/domain/personal/types.ts` ایجاد شد.
+
+### Next
+TASK-03-017 — Timeline/Period Domain
+
+## ACT-050 — 2026-10-02
+Type: DOMAIN-IMPLEMENTATION
+Status: DONE
+
+### انجام شد
+- TASK-03-015 — Personal Event Domain تکمیل شد.
+- Personal Event و Personal Person contractها ایجاد شدند.
+
+### Next
+TASK-03-016 — Memory Domain
+
+## ACT-049 — 2026-10-02
+Type: DOMAIN-IMPLEMENTATION
+Status: DONE
+
+### انجام شد
+- TASK-03-014 — Person Domain تکمیل شد.
+- Person contract مستقل و public ایجاد شد.
+
+### Next
+TASK-03-015 — Personal Event Domain
+
+## ACT-048 — 2026-10-02
+Type: DOMAIN-IMPLEMENTATION
+Status: DONE
+
+### انجام شد
+- TASK-03-013 — Event Domain تکمیل شد.
+- Event، EditorialStatus و EventCategory contractها ایجاد شدند.
+
+### Next
+TASK-03-014 — Person Domain
+
+## ACT-047 — 2026-10-02
+Type: DOMAIN-IMPLEMENTATION
+Status: DONE
+
+### انجام شد
+- TASK-03-003 — Month Lengths تکمیل شد.
+- شش ماه اول 31 روز، پنج ماه بعد 30 روز و اسپند 29/30 روز بر اساس leap flag تعریف شد.
+
+### Next
+TASK-03-004 — Leap-Year Rules
+
+## ACT-046 — 2026-10-02
+Type: DOMAIN-IMPLEMENTATION
+Status: DONE
+
+### انجام شد
+- TASK-03-002 — Year/Month/Day Rules تکمیل شد.
+- ImperialMonth و ImperialDate contractها ایجاد شدند.
+
+### Next
+TASK-03-003 — Month Lengths
+
+## ACT-045 — 2026-10-02
+Type: DOMAIN-IMPLEMENTATION
+Status: DONE
+
+### انجام شد
+- TASK-03-001 — Imperial Date Type تکمیل شد.
+- ImperialDate، GregorianDate، HistoricalDate و Weekday typeها ایجاد شدند.
+- Calendar constants و month helpers در `src/domain/calendar/` ایجاد شدند.
+
+### Next
+TASK-03-002 — Year/Month/Day Rules
+
 ## ACT-044 — 2026-10-02
 Type: ARCHITECTURE
 Status: DONE
