@@ -63,7 +63,8 @@ Overall status: IN_PROGRESS
 - ACT-056 — Content Validation Pipeline — DONE
 - ACT-057 — Public vs Personal Data Separation — DONE
 - ACT-058 — ثبت blocker قاعده کبیسه — SUPERSEDED
-- ACT-059 — نهایی‌سازی و پیاده‌سازی قاعده کبیسه متناظر با تقویم خورشیدی — DONE
+- ACT-059 — نهایی‌سازی اولیه قاعده کبیسه متناظر با تقویم خورشیدی — SUPERSEDED
+- ACT-060 — اصلاح الگوریتم کبیسه برای چرخه‌های غیرثابت — DONE
 
 ## تصمیم‌های محصول فعلی
 
