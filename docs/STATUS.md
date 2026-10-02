@@ -13,7 +13,7 @@ Overall status: IN_PROGRESS
 | Phase | Status | Progress |
 |---|---|---:|
 | PHASE-00 Documentation | DONE | 100% |
-| PHASE-01 Specification | IN_PROGRESS | 85% |
+| PHASE-01 Specification | IN_PROGRESS | 90% |
 | PHASE-02 Architecture | TODO | 0% |
 | PHASE-03 Core Backend / Calendar Engine | TODO | 0% |
 | PHASE-04 Application Backend / Use Cases | TODO | 0% |
@@ -34,6 +34,7 @@ Overall status: IN_PROGRESS
 - ACT-006 — تثبیت Acceptance-level Account/Auth و Personal Share Card — DONE
 - ACT-007 — Documentation Sync/Audit — DONE
 - ACT-008 — تعریف Acceptance Criteria برای MVP — DONE
+- ACT-009 — نهایی‌سازی REQUIREMENTS v1.0 — DONE
 
 ## تصمیم‌های محصول فعلی
 
@@ -71,9 +72,9 @@ Overall status: IN_PROGRESS
 
 ## اقدام بعدی
 
-TASK-01-008 — Requirements v1.0 Finalization
+TASK-01-009 — Event Model
 
-پس از آن:
+پس از تکمیل specificationهای محتوایی:
 PHASE-02 — Architecture
 
 ## Blocked
