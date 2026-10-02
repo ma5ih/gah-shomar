@@ -15,7 +15,7 @@ Overall status: IN_PROGRESS
 | PHASE-00 Documentation | DONE | 100% |
 | PHASE-01 Specification | DONE | 100% |
 | PHASE-02 Architecture | DONE | 100% |
-| PHASE-03 Core Backend / Calendar Engine | IN_PROGRESS | 8% |
+| PHASE-03 Core Backend / Calendar Engine | IN_PROGRESS | 22% |
 | PHASE-04 Application Backend / Use Cases | TODO | 0% |
 | PHASE-05 Frontend Architecture & Design System | TODO | 0% |
 | PHASE-06 Core Frontend | TODO | 0% |
@@ -49,6 +49,15 @@ Overall status: IN_PROGRESS
 - ACT-021 — تعریف Repository/Directory Architecture — DONE
 - ACT-022 — تعریف Environment & Configuration Strategy — DONE
 - ACT-023 — تعریف Dependency Policy — DONE
+- ACT-045 — پیاده‌سازی Imperial Date Type — DONE
+- ACT-046 — پیاده‌سازی Year/Month/Day Rules — DONE
+- ACT-047 — پیاده‌سازی Month Lengths — DONE
+- ACT-048 — تعریف Event Domain — DONE
+- ACT-049 — تعریف Person Domain — DONE
+- ACT-050 — تعریف Personal Event Domain — DONE
+- ACT-051 — تعریف Memory Domain — DONE
+- ACT-052 — تعریف Timeline/Period Domain — DONE
+- ACT-053 — تعریف Source/Editorial Domain — DONE
 
 ## تصمیم‌های محصول فعلی
 
@@ -86,13 +95,13 @@ Overall status: IN_PROGRESS
 
 ## اقدام بعدی
 
-TASK-03-001 — Imperial Date Type
+TASK-03-004 — Leap-Year Rules (BLOCKED — نیازمند تعیین قاعده کبیسه)
 
 PHASE-01 specification کامل شد و پروژه وارد PHASE-02 — Architecture شده است.
 
 ## Blocked
 
-فعلاً موردی ثبت نشده است.
+- TASK-03-004 — Leap-Year Rules: CALENDAR-SPEC ساختار ماه‌ها را مشخص کرده اما الگوریتم دقیق کبیسه را نهایی نکرده است. تا تعیین این قاعده، تبدیل دقیق روزانه و validation کامل روزهای اسپند نباید حدس زده شود.
 
 ## قانون ادامه پروژه
 
