@@ -62,7 +62,7 @@ Last updated: 2026-10-02
 - اسپند
 
 ### تقویم‌های دیگر
-سیستم باید از ابتدا طوری طراحی شود که تاریخ میلادی و در صورت نیاز سایر سیستم‌های تاریخی/تقویمی را به‌صورت مستقل پشتیبانی یا نمایش دهد، بدون اینکه Calendar Engine با UI مخلوط شود.
+در MVP فقط تاریخ میلادی به‌صورت فرعی و کوچک کنار تاریخ شاهنشاهی نمایش داده می‌شود. سایر تقویم‌ها در UI محصول نمایش داده نمی‌شوند؛ معماری Calendar Engine می‌تواند برای نیازهای آینده قابل توسعه باقی بماند.
 
 ## 4. مخاطبان هدف و سناریوی استفاده
 
@@ -101,7 +101,7 @@ Last updated: 2026-10-02
 
 این صفحه باید اطلاعات مهم روز را در یک نگاه و بدون شلوغی نشان دهد:
 - تاریخ شاهنشاهی
-- تاریخ شمسی قابل نمایش
+- تاریخ شاهنشاهی
 - تاریخ میلادی
 - روز هفته
 - مناسبت‌های امروز
@@ -142,7 +142,7 @@ Last updated: 2026-10-02
 - نوع و دسته‌بندی
 - دوره تاریخی
 - افراد مرتبط
-- مکان
+- مکان (در MVP اختیاری/غیرفعال؛ بدون Map/Location experience)
 - توضیح کوتاه
 - متن کامل
 - تصاویر
@@ -186,6 +186,8 @@ PROPOSED → RESEARCHING → VERIFIED → APPROVED
 - رویدادهای معاصر مهم
 
 در هر ماه چند رویداد منتخب نمایش داده می‌شود.
+
+برای صفحه مستقل هر رویداد، تصویر شاخص باید باکیفیت و متناسب با ارائه بصری صفحه انتخاب یا تهیه شود.
 
 ### تجربه صفحه
 رویدادها باید بصری باشند، نه فقط متن. هر مورد می‌تواند تصویر اصلی، عنوان، تاریخ، توضیح کوتاه و دسته‌بندی داشته باشد.
@@ -240,10 +242,10 @@ PROPOSED → RESEARCHING → VERIFIED → APPROVED
 کاربر می‌تواند رویداد شخصی بسازد:
 - تولد
 - سالگرد
-- قرار
-- یادآوری
 - مناسبت شخصی
 - رویداد سفارشی
+
+Reminder/Notification در MVP وجود ندارد.
 
 فرآیند نمونه:
 1. انتخاب نوع
@@ -367,8 +369,25 @@ PROPOSED → RESEARCHING → VERIFIED → APPROVED
 23. RTL/LTR واقعی
 24. PWA/app-like experience
 25. معماری داده‌محور و قابل توسعه
+26. ثبت‌نام و ورود ساده با نام کاربری و رمز عبور
+27. Share Card اختصاصی برای اشتراک‌گذاری یک روز
 
-## 23. چیزهایی که عمداً نباید اتفاق بیفتد
+## 23. قابلیت‌های خارج از Scope MVP
+
+در MVP این موارد وجود ندارند:
+- Reminder/Notification
+- social features مانند profile عمومی، follow، like، comment و feed
+- ایجاد یا پیشنهاد Event عمومی توسط کاربر
+- Admin/CMS
+- Map/Location experience
+- Export/Import
+- اتصال به تقویم‌های دیگر یا سرویس‌های ثالث
+- مدل درآمدی، Subscription و تبلیغات
+- Public API
+
+معماری می‌تواند برای این قابلیت‌ها آماده باشد، اما آن‌ها تا زمان تصمیم مستقل فعال یا در UI نمایان نمی‌شوند.
+
+## 24. چیزهایی که عمداً نباید اتفاق بیفتد
 
 گاه‌شمار نباید تبدیل شود به:
 - یک سایت تقویم معمولی
@@ -381,25 +400,21 @@ PROPOSED → RESEARCHING → VERIFIED → APPROVED
 - UIای که منطق تقویم را خودش پیاده‌سازی می‌کند
 - نسخه موبایل یک وب‌سایت دسکتاپ
 
-## 24. مسیر ساخت پروژه
+## 25. مسیر ساخت پروژه
 
 PHASE-00 — Documentation Foundation — DONE
-
 PHASE-01 — Product Discovery & Specification — IN_PROGRESS
+PHASE-02 — Architecture & Technical Foundation — TODO
+PHASE-03 — Core Backend / Domain / Calendar Engine — TODO
+PHASE-04 — Application Backend / Use Cases — TODO
+PHASE-05 — Frontend Architecture & Design System — TODO
+PHASE-06 — Core Frontend Product Experience — TODO
+PHASE-07 — Visual Polish, Time/Season & App-like Experience — TODO
+PHASE-08 — Content, Editorial & Historical Dataset — TODO
+PHASE-09 — Integration & Full QA — TODO
+PHASE-10 — Release & Handoff — TODO
 
-PHASE-02 — Architecture — TODO
-
-PHASE-03 — Core Calendar Engine — TODO
-
-PHASE-04 — Application Features — TODO
-
-PHASE-05 — UI/UX — TODO
-
-PHASE-06 — Integration & QA — TODO
-
-PHASE-07 — Release — TODO
-
-## 25. روش توسعه
+## 26. روش توسعه
 
 GitHub مرجع اصلی حقیقت پروژه است.
 
@@ -413,10 +428,12 @@ GitHub مرجع اصلی حقیقت پروژه است.
 
 هر تغییر مهم باید اسناد مرتبط را نیز به‌روزرسانی کند تا repository همیشه قابل ادامه از هر اکانت، دستگاه و محیط باشد.
 
-## 26. وضعیت فعلی
+## 27. وضعیت فعلی
 
 - زیرساخت مستندسازی: DONE
 - تعریف کلی محصول: APPROVED / در حال تبدیل به specification رسمی
+- Scope Boundaries و Non-goals: DONE
+- Account/Auth و Share Card: APPROVED در سطح محصول
 - ایده‌های اصلی محصول: تأیید شده
 - معماری فنی: شروع نشده
 - موتور تقویم: شروع نشده
@@ -425,7 +442,7 @@ GitHub مرجع اصلی حقیقت پروژه است.
 
 مهم‌ترین کار بعدی، تبدیل این تعریف محصول به نیازمندی‌های شماره‌گذاری‌شده و معیارهای پذیرش است؛ سپس معماری بر اساس همان نیازمندی‌ها طراحی خواهد شد.
 
-## 27. اصل کلیدی پروژه
+## 28. اصل کلیدی پروژه
 
 گاه‌شمار قرار نیست فقط بگوید:
 
