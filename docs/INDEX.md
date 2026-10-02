@@ -1,7 +1,7 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.0.0
+Index version: 2.1.0
 Last update: 2026-10-02
 Current phase: PHASE-02 — Architecture & Technical Foundation
 
@@ -28,6 +28,10 @@ Current phase: PHASE-02 — Architecture & Technical Foundation
 | DOC-017 | MEDIA-MODEL.md | APPROVED | مدل Media / Asset |
 | DOC-018 | HISTORICAL-DATE-MODEL.md | APPROVED | مدل نمایش تاریخ‌های تاریخی |
 | DOC-019 | SEARCH-REQUIREMENTS.md | APPROVED | نیازمندی‌های Search |
+| DOC-020 | STACK.md | APPROVED | Stack و Runtime |
+| DOC-021 | REPOSITORY-ARCHITECTURE.md | APPROVED | معماری Repository و Directory |
+| DOC-022 | ENV-CONFIG.md | APPROVED | Environment و Configuration Strategy |
+| DOC-023 | DEPENDENCY-POLICY.md | APPROVED | سیاست Dependency |
 
 ## شناسه‌گذاری
 - PHASE-XX — مرحله
@@ -52,10 +56,10 @@ PHASE-09: TODO
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-019 — تعریف نیازمندی‌های Search.
+ACT-023 — تعریف Dependency Policy.
 
 ## اقدام بعدی
-TASK-02-001 — انتخاب Stack و Runtime.
+TASK-02-005 — Calendar Engine Boundary.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.
