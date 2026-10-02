@@ -5,47 +5,78 @@ Current phase: PHASE-01 — Product Discovery & Specification
 Overall status: IN_PROGRESS
 
 ## آخرین نقطه قطعی
-تعریف محصول و مجموعه قابلیت‌های اصلی با کاربر تأیید شده و در PROJECT.md و REQUIREMENTS.md ثبت شده است.
+
+تا این لحظه تعریف محصول، مخاطبان و use caseها، قابلیت‌های اصلی، مشخصات رسمی تقویم و محدوده MVP با کاربر بررسی و تثبیت شده‌اند. نقشه راه نیز از صفر تا Release به‌صورت مرحله‌ای و کدگذاری‌شده بازطراحی شده است.
 
 ## وضعیت مراحل
+
 | Phase | Status | Progress |
 |---|---|---:|
 | PHASE-00 Documentation | DONE | 100% |
-| PHASE-01 Specification | IN_PROGRESS | 60% |
+| PHASE-01 Specification | IN_PROGRESS | 70% |
 | PHASE-02 Architecture | TODO | 0% |
-| PHASE-03 Calendar Engine | TODO | 0% |
-| PHASE-04 Features | TODO | 0% |
-| PHASE-05 UI/UX | TODO | 0% |
-| PHASE-06 QA | TODO | 0% |
-| PHASE-07 Release | TODO | 0% |
+| PHASE-03 Core Backend / Calendar Engine | TODO | 0% |
+| PHASE-04 Application Backend / Use Cases | TODO | 0% |
+| PHASE-05 Frontend Architecture & Design System | TODO | 0% |
+| PHASE-06 Core Frontend | TODO | 0% |
+| PHASE-07 Visual Polish & PWA | TODO | 0% |
+| PHASE-08 Historical Content / Editorial Dataset | TODO | 0% |
+| PHASE-09 Integration & QA | TODO | 0% |
+| PHASE-10 Release | TODO | 0% |
 
-## اقدامات مهم
-- ACT-001 — ایجاد زیرساخت مستندسازی و ردیابی پروژه.
-- ACT-002 — تثبیت تعریف محصول، قابلیت‌های اصلی و مدل کلی تجربه گاه‌شمار.
-- ACT-003 — تکمیل و ثبت مخاطبان هدف و سناریوهای استفاده.
+## اقدامات ثبت‌شده
 
-## تصمیم‌های محصول تأییدشده
+- ACT-001 — ایجاد زیرساخت مستندسازی و ردیابی پروژه — DONE
+- ACT-002 — تثبیت تعریف محصول و قابلیت‌های اصلی — DONE
+- ACT-003 — تثبیت مخاطبان و use caseها — DONE
+- ACT-004 — تثبیت Calendar Specification، تعریف MVP و بازطراحی کامل Roadmap — DONE
+
+## تصمیم‌های محصول فعلی
+
 - Mobile-first و App-like
-- تقویم شمسی/ایرانی با شماره‌گذاری شاهنشاهی
-- نام‌های تاریخی ماه‌ها
+- تقویم اصلی: خورشیدی با شماره‌گذاری شاهنشاهی
+- نمایش سال هجری شمسی معمولی در UI: ممنوع
+- میلادی: کوچک و فرعی
+- نام ماه‌ها مطابق CALENDAR-SPEC
 - Today به‌عنوان مرکز تجربه
-- Event Entity ساختاریافته
-- Person Entity
-- Personal Events
-- Memories
+- Month Calendar و Day Detail
+- Historical Events و Important Events
 - Historical Timeline
+- Person Entity
+- Personal Events و Personal Person
+- Memories
 - Search
-- Time-of-day UI
-- Seasonal UI
-- فارسی/انگلیسی با RTL/LTR واقعی
-- صفحه مستقل «رویدادهای مهم»
-- صفحه کامل و تصویری برای هر رویداد
+- Time-of-day و Seasonal UI
+- فارسی + انگلیسی با RTL/LTR واقعی
+- PWA از نسخه اول
 - داده تاریخی منبع‌دار و قابل اعتبارسنجی
-- معماری لایه‌ای و داده‌محور
-- PWA به‌عنوان هدف محصول
+- معماری داده‌محور و لایه‌ای
+- عدم پیچیده‌سازی غیرضروری
+
+## MVP تأییدشده در سطح محصول
+
+1. تقویم شاهنشاهی و Calendar Engine
+2. لایه تاریخ/رویداد ایران: Today، Events، Important Events، Timeline، Person
+3. لایه شخصی: Personal Events، Personal Person، Memories
 
 ## اقدام بعدی
-TASK-01-003 — تکمیل تعریف تقویم‌ها، سیستم‌های تاریخی و تبدیل تاریخ‌ها؛ سپس MVP و معیارهای پذیرش.
+
+TASK-01-006 — تعریف Non-goals و Scope Boundaries
+
+پس از آن:
+TASK-01-007 → Acceptance Criteria
+TASK-01-008 → Requirements v1.0
+سپس PHASE-02 — Architecture
 
 ## Blocked
+
 فعلاً موردی ثبت نشده است.
+
+## قانون ادامه پروژه
+
+هر اقدام معنادار بعدی باید:
+1. یک ID دریافت کند.
+2. در CHANGELOG ثبت شود.
+3. در صورت تغییر تصمیم/نیازمندی، DECISIONS یا REQUIREMENTS به‌روزرسانی شود.
+4. وضعیت ROADMAP و STATUS را همگام کند.
+5. اگر سند جدید ایجاد شد، INDEX به‌روزرسانی شود.
