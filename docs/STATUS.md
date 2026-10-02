@@ -62,6 +62,7 @@ Overall status: IN_PROGRESS
 - ACT-055 — Seed/Fixture Data Strategy — DONE
 - ACT-056 — Content Validation Pipeline — DONE
 - ACT-057 — Public vs Personal Data Separation — DONE
+- ACT-058 — ثبت blocker قاعده کبیسه — BLOCKED
 
 ## تصمیم‌های محصول فعلی
 
