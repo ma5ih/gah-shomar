@@ -5,13 +5,13 @@ Current phase: PHASE-01 — Product Discovery & Specification
 Overall status: IN_PROGRESS
 
 ## آخرین نقطه قطعی
-زیرساخت ثبت و ردیابی پروژه ساخته شده است. هنوز هیچ قابلیت محصولی DONE محسوب نمی‌شود.
+تعریف محصول و مجموعه قابلیت‌های اصلی با کاربر تأیید شده و در PROJECT.md و REQUIREMENTS.md ثبت شده است.
 
 ## وضعیت مراحل
 | Phase | Status | Progress |
 |---|---|---:|
 | PHASE-00 Documentation | DONE | 100% |
-| PHASE-01 Specification | IN_PROGRESS | 0% |
+| PHASE-01 Specification | IN_PROGRESS | 55% |
 | PHASE-02 Architecture | TODO | 0% |
 | PHASE-03 Calendar Engine | TODO | 0% |
 | PHASE-04 Features | TODO | 0% |
@@ -19,11 +19,32 @@ Overall status: IN_PROGRESS
 | PHASE-06 QA | TODO | 0% |
 | PHASE-07 Release | TODO | 0% |
 
-## آخرین اقدام
-ACT-001 — ایجاد زیرساخت مستندسازی و ردیابی پروژه.
+## اقدامات مهم
+- ACT-001 — ایجاد زیرساخت مستندسازی و ردیابی پروژه.
+- ACT-002 — تثبیت تعریف محصول، قابلیت‌های اصلی و مدل کلی تجربه گاه‌شمار.
+
+## تصمیم‌های محصول تأییدشده
+- Mobile-first و App-like
+- تقویم شمسی/ایرانی با شماره‌گذاری شاهنشاهی
+- نام‌های تاریخی ماه‌ها
+- Today به‌عنوان مرکز تجربه
+- Event Entity ساختاریافته
+- Person Entity
+- Personal Events
+- Memories
+- Historical Timeline
+- Search
+- Time-of-day UI
+- Seasonal UI
+- فارسی/انگلیسی با RTL/LTR واقعی
+- صفحه مستقل «رویدادهای مهم»
+- صفحه کامل و تصویری برای هر رویداد
+- داده تاریخی منبع‌دار و قابل اعتبارسنجی
+- معماری لایه‌ای و داده‌محور
+- PWA به‌عنوان هدف محصول
 
 ## اقدام بعدی
-TASK-01-001 — تعریف کامل محصول و مشخصات گاه‌شمار.
+TASK-01-002 — تعریف مخاطبان و سناریوهای استفاده، سپس تکمیل تقویم‌ها، MVP و معیارهای پذیرش.
 
 ## Blocked
 فعلاً موردی ثبت نشده است.
