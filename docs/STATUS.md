@@ -31,6 +31,7 @@ Overall status: IN_PROGRESS
 - ACT-003 — تثبیت مخاطبان و use caseها — DONE
 - ACT-004 — تثبیت Calendar Specification، تعریف MVP و بازطراحی کامل Roadmap — DONE
 - ACT-005 — تثبیت Non-goals، Scope Boundaries، حساب کاربری و Share Card — DONE
+- ACT-006 — تثبیت Acceptance-level Account/Auth و Personal Share Card — DONE
 
 ## تصمیم‌های محصول فعلی
 
@@ -40,7 +41,7 @@ Overall status: IN_PROGRESS
 - میلادی: کوچک و فرعی
 - نام ماه‌ها مطابق CALENDAR-SPEC
 - Today به‌عنوان مرکز تجربه
-- ثبت‌نام/ورود ساده با نام کاربری و رمز عبور
+- ثبت‌نام/ورود حداقلی با نام کاربری و رمز عبور
 - نام کاربری unique و cross-platform-safe
 - ورود برای محتوای عمومی الزامی نیست
 - ثبت‌نام/ورود حداقلی با username/password
