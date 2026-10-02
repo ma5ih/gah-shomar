@@ -52,12 +52,12 @@ Last updated: 2026-10-02
 - TASK-01-010 — Person Model — DONE
 - TASK-01-011 — Memory Model — DONE
 - TASK-01-012 — Personal Event Model — DONE
-- TASK-01-013 — Important Event & Editorial Selection — TODO
-- TASK-01-014 — Timeline & Entity Relationships — TODO
-- TASK-01-015 — Sources, Verification & Editorial Policy — TODO
-- TASK-01-016 — Media/Asset Content Model — TODO
-- TASK-01-017 — Historical Date Representation — TODO
-- TASK-01-018 — Search Requirements — TODO
+- TASK-01-013 — Important Event & Editorial Selection — DONE
+- TASK-01-014 — Timeline & Entity Relationships — DONE
+- TASK-01-015 — Sources, Verification & Editorial Policy — DONE
+- TASK-01-016 — Media/Asset Content Model — DONE
+- TASK-01-017 — Historical Date Representation — DONE
+- TASK-01-018 — Search Requirements — DONE
 - TASK-01-019 — Account & Authentication Requirements — DONE
 - TASK-01-020 — Personal Share Card Requirements — DONE
 
@@ -65,7 +65,7 @@ Last updated: 2026-10-02
 
 ---
 
-# PHASE-02 — Architecture & Technical Foundation — TODO
+# PHASE-02 — Architecture & Technical Foundation — IN_PROGRESS
 
 ## 2A — تصمیم‌های فنی
 - TASK-02-001 — انتخاب Stack و Runtime — TODO
@@ -374,7 +374,7 @@ Last updated: 2026-10-02
 
 ## وضعیت فعلی
 
-**PHASE-01 — IN_PROGRESS**
+**PHASE-02 — IN_PROGRESS**
 
 آخرین کارهای قطعی:
 - Non-goals & Scope Boundaries — DONE
@@ -385,4 +385,4 @@ Last updated: 2026-10-02
 - Main Capabilities — DONE
 - MVP Definition — DONE
 
-**اقدام بعدی:** TASK-01-013 — Important Event & Editorial Selection
+**اقدام بعدی:** TASK-02-001 — انتخاب Stack و Runtime
