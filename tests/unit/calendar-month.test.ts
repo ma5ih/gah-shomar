@@ -27,3 +27,38 @@ describe("Imperial calendar month rules", () => {
     expect(isValidDay(12, 30, true)).toBe(true);
   });
 });
+
+import { describe, expect, it } from "vitest";
+import {
+  isImperialLeapYear,
+  nextImperialLeapYear,
+  previousImperialLeapYear,
+} from "../../src/domain/calendar/leap-year";
+
+describe("Imperial calendar leap-year rules", () => {
+  it("mirrors the approved Solar Hijri sequence around the current year", () => {
+    const expected = [
+      2579,
+      2583,
+      2588,
+      2592,
+      2596,
+      2600,
+      2604,
+      2608,
+    ];
+
+    for (const year of expected) {
+      expect(isImperialLeapYear(year)).toBe(true);
+    }
+  });
+
+  it("treats Imperial 2585 as a common year", () => {
+    expect(isImperialLeapYear(2585)).toBe(false);
+  });
+
+  it("finds the previous and next leap years around Imperial 2585", () => {
+    expect(previousImperialLeapYear(2585)).toBe(2583);
+    expect(nextImperialLeapYear(2585)).toBe(2588);
+  });
+});
