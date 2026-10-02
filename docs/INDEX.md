@@ -1,7 +1,7 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.2.0
+Index version: 2.3.0
 Last update: 2026-10-02
 Current phase: PHASE-02 — Architecture & Technical Foundation
 
@@ -38,6 +38,7 @@ Current phase: PHASE-02 — Architecture & Technical Foundation
 | DOC-027 | ARCHITECTURE-REVIEW.md | APPROVED | Review معماری |
 | DOC-028 | AUTH-ARCHITECTURE.md | APPROVED | Authentication و Session |
 | DOC-029 | SHARE-CARD-ARCHITECTURE.md | APPROVED | معماری Personal Share Card |
+| DOC-030 | CALENDAR-ENGINE-OPEN-QUESTION.md | BLOCKED | blocker قاعده کبیسه |
 
 ## شناسه‌گذاری
 - PHASE-XX — مرحله
