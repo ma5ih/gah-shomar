@@ -1,19 +1,19 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 1.0.0
+Index version: 1.1.0
 Last update: 2026-10-02
-Current phase: PHASE-00 — Documentation Foundation
+Current phase: PHASE-01 — Product Discovery & Specification
 
 ## اسناد
 | ID | سند | وضعیت | کاربرد |
 |---|---|---|---|
-| DOC-001 | PROJECT.md | DONE | شناسنامه |
+| DOC-001 | PROJECT.md | DONE | سند آشنایی و توضیحات رسمی پروژه |
 | DOC-002 | ROADMAP.md | DONE | نقشه راه |
 | DOC-003 | STATUS.md | DONE | وضعیت لحظه‌ای |
 | DOC-004 | CHANGELOG.md | DONE | تاریخچه اقدامات |
 | DOC-005 | DECISIONS.md | DONE | تصمیم‌ها |
-| DOC-006 | REQUIREMENTS.md | IN_PROGRESS | نیازمندی‌ها |
+| DOC-006 | REQUIREMENTS.md | IN_PROGRESS | نیازمندی‌های محصول |
 | DOC-007 | ARCHITECTURE.md | TODO | معماری |
 | DOC-008 | WORKFLOW.md | DONE | قواعد توسعه |
 
@@ -31,7 +31,7 @@ PHASE-01: IN_PROGRESS
 PHASE-02 به بعد: TODO
 
 ## آخرین اقدام
-ACT-001 — ایجاد زیرساخت مستندسازی و ردیابی پروژه.
+ACT-002 — تثبیت تعریف محصول، قابلیت‌های اصلی و مدل کلی تجربه گاه‌شمار.
 
 ## اقدام بعدی
-TASK-01-001 — تعریف کامل محصول و مشخصات گاه‌شمار.
+TASK-01-002 — تعریف مخاطبان و سناریوهای استفاده.
