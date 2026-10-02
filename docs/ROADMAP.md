@@ -68,10 +68,10 @@ Last updated: 2026-10-02
 # PHASE-02 — Architecture & Technical Foundation — IN_PROGRESS
 
 ## 2A — تصمیم‌های فنی
-- TASK-02-001 — انتخاب Stack و Runtime — TODO
-- TASK-02-002 — Repository/Directory Architecture — TODO
-- TASK-02-003 — Environment & Configuration Strategy — TODO
-- TASK-02-004 — Dependency Policy — TODO
+- TASK-02-001 — انتخاب Stack و Runtime — DONE
+- TASK-02-002 — Repository/Directory Architecture — DONE
+- TASK-02-003 — Environment & Configuration Strategy — DONE
+- TASK-02-004 — Dependency Policy — DONE
 
 ## 2B — معماری لایه‌ای
 - TASK-02-005 — Calendar Engine Boundary — TODO
@@ -385,4 +385,4 @@ Last updated: 2026-10-02
 - Main Capabilities — DONE
 - MVP Definition — DONE
 
-**اقدام بعدی:** TASK-02-001 — انتخاب Stack و Runtime
+**اقدام بعدی:** TASK-02-005 — Calendar Engine Boundary
