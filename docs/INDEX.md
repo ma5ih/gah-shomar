@@ -1,7 +1,7 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 1.8.0
+Index version: 1.9.0
 Last update: 2026-10-02
 Current phase: PHASE-01 — Product Discovery & Specification
 
@@ -19,6 +19,9 @@ Current phase: PHASE-01 — Product Discovery & Specification
 | DOC-008 | WORKFLOW.md | DONE | قواعد توسعه و ادامه پروژه |
 | DOC-009 | CALENDAR-SPEC.md | APPROVED | مشخصات رسمی سیستم تقویم |
 | DOC-010 | EVENT-MODEL.md | APPROVED | مدل تفصیلی Event |
+| DOC-011 | PERSON-MODEL.md | APPROVED | مدل تفصیلی Person |
+| DOC-012 | MEMORY-MODEL.md | APPROVED | مدل تفصیلی Memory |
+| DOC-013 | PERSONAL-EVENT-MODEL.md | APPROVED | مدل تفصیلی Personal Event |
 
 ## شناسه‌گذاری
 - PHASE-XX — مرحله
@@ -43,10 +46,10 @@ PHASE-09: TODO
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-010 — تعریف مدل تفصیلی Event.
+ACT-013 — تعریف مدل تفصیلی Personal Event.
 
 ## اقدام بعدی
-TASK-01-010 — Person Model.
+TASK-01-013 — Important Event & Editorial Selection.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.
