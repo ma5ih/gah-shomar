@@ -51,9 +51,9 @@ describe("Imperial calendar leap-year rules", () => {
     }
   });
 
-  it("does not force a fixed 33-year cycle onto older years", () => {
-    expect(isImperialLeapYear(1440)).toBe(false);
-    expect(isImperialLeapYear(1441)).toBe(true);
+  it("preserves the Solar Hijri 1440/1441 transition after the +1180 offset", () => {
+    expect(isImperialLeapYear(2620)).toBe(false);
+    expect(isImperialLeapYear(2621)).toBe(true);
   });
 
   it("preserves five-year leap gaps", () => {
@@ -75,8 +75,8 @@ describe("Imperial calendar leap-year rules", () => {
     expect(nextImperialLeapYear(2585)).toBe(2588);
   });
 
-  it("finds the previous and next leap years around Imperial 1440", () => {
-    expect(previousImperialLeapYear(1440)).toBe(1436);
-    expect(nextImperialLeapYear(1440)).toBe(1441);
+  it("finds the previous and next leap years around Imperial 2620", () => {
+    expect(previousImperialLeapYear(2620)).toBe(2616);
+    expect(nextImperialLeapYear(2620)).toBe(2621);
   });
 });
