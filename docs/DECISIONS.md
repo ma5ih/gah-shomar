@@ -1,3 +1,18 @@
+## DEC-011 — 2026-10-02
+Status: ACCEPTED
+Title: تثبیت مدل تفصیلی Event
+
+### Decision
+- Event به‌عنوان Entity مستقل برای محتوای عمومی تعریف شد.
+- Personal Event عمداً Entity جدا از Event عمومی باقی می‌ماند تا مالکیت، حریم خصوصی و دسترسی با محتوای عمومی مخلوط نشود.
+- Event شامل هویت پایدار، عنوان/متن چندزبانه، تاریخ/بازه تاریخ، category، tags، روابط Entity، منابع، رسانه و metadata نمایشی است.
+- Important Event یک Event مستقل نیست؛ یک Event با editorial selection/featured metadata است.
+- منطق Calendar Engine، تبدیل تاریخ، recurrence grammar، Source schema، Media schema و Search indexing داخل Event Model پیاده‌سازی نمی‌شوند و در specificationهای تخصصی بعدی/Architecture تعیین خواهند شد.
+- محتوای تاریخی APPROVED باید مسیر source/validation داشته باشد.
+
+### Consequence
+TASK-01-009 تکمیل شد. نقطه ادامه رسمی پروژه TASK-01-010 — Person Model است.
+
 ## DEC-010 — 2026-10-02
 Status: ACCEPTED
 Title: نهایی‌سازی REQUIREMENTS v1.0
