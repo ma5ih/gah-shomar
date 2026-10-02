@@ -1,3 +1,16 @@
+## DEC-010 — 2026-10-02
+Status: ACCEPTED
+Title: نهایی‌سازی REQUIREMENTS v1.0
+
+### Decision
+- REQUIREMENTS.md به نسخه 1.0.0 ارتقا یافت و Status آن APPROVED شد.
+- Product scope، MVP، Acceptance Criteria، Account/Auth و Personal Share Card در سطح نیازمندی محصول نهایی تلقی می‌شوند.
+- مدل‌های تفصیلی Event، Person، Memory، Personal Event، Important Event، Timeline، Sources، Media، Historical Date Representation و Search به‌عنوان specificationهای مستقل در ادامه PHASE-01 باقی می‌مانند و به معنی باز بودن Requirements v1.0 نیستند.
+- تغییر requirements نهایی‌شده فقط با Decision/Requirement جدید و ثبت‌شده انجام می‌شود و نسخه سند باید در صورت تغییر معنادار به‌روزرسانی شود.
+
+### Consequence
+TASK-01-008 تکمیل می‌شود و نقطه ادامه بعدی TASK-01-009 — Event Model است. پس از تکمیل specificationهای باقی‌مانده، PHASE-02 بر اساس Requirements v1.0 و مدل‌های تفصیلی آغاز می‌شود.
+
 ## DEC-009 — 2026-10-02
 Status: ACCEPTED
 Title: تعریف Acceptance Criteria برای MVP
