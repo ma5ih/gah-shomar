@@ -1,3 +1,21 @@
+## ACT-008 — 2026-10-02
+Type: ACCEPTANCE-SPEC
+Status: DONE
+
+### انجام شد
+- TASK-01-007 — Acceptance Criteria به‌صورت کامل در سطح MVP تعریف و DONE شد.
+- معیارهای AC-001 تا AC-039 برای Calendar Engine، Today/Calendar، Historical/Event/Timeline، Personal Layer، Search/Localization، Authentication/PWA و Quality/Scope ثبت شدند.
+- معیارهای Acceptance به‌عنوان مرجع PASS/FAIL برای تست و QA تعیین شدند.
+- DEC-009 برای تثبیت این معیارها ثبت شد.
+- ROADMAP، STATUS، INDEX، REQUIREMENTS و MVP-SPEC همگام شدند.
+- عبارت قدیمی Share Card در MVP-SPEC اصلاح شد تا Share Card فقط برای Personal Event تعریف شود.
+
+### نتیجه
+مرحله Product Acceptance اکنون قابل ردیابی و تست‌پذیر است و پروژه وارد آخرین گام Product Specification می‌شود.
+
+### Next
+TASK-01-008 — Requirements v1.0 Finalization
+
 # CHANGELOG — دفتر ثبت اقدامات
 
 ## ACT-007 — 2026-10-02
