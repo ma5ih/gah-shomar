@@ -1,6 +1,6 @@
 # گاه‌شمار | Calendar App
 
-> Project status: 00% — Documentation Foundation
+> Project status: PHASE-01 — Product Discovery & Specification — 90%
 
 این مخزن منبع اصلی و مرجع رسمی پروژه «گاه‌شمار» است.
 
