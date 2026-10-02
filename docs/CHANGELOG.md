@@ -1,3 +1,18 @@
+## ACT-058 — 2026-10-02
+Type: BLOCKER-RESEARCH
+Status: BLOCKED
+
+### انجام شد
+- TASK-03-004 — Leap-Year Rules بررسی شد اما به‌دلیل نبود تصمیم رسمی در CALENDAR-SPEC نهایی نشد.
+- شواهد پژوهشی برای یک مدل 33 ساله ثبت شد، اما بدون تبدیل آن به تصمیم قطعی محصول.
+- `docs/CALENDAR-ENGINE-OPEN-QUESTION.md` ایجاد شد.
+
+### Blocker
+برای ادامه تبدیل دقیق تاریخ و تست‌های کامل Calendar Engine باید قاعده کبیسه انتخاب شود.
+
+### Next
+TASK-03-004 — Leap-Year Rules
+
 ## ACT-057 — 2026-10-02
 Type: CORE-DATA
 Status: DONE
