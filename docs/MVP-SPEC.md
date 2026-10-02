@@ -38,8 +38,11 @@ MVP باید یک محصول واقعی و قابل استفاده از «گاه
 - وابستگی به حساب کاربری برای نگهداری داده شخصی
 
 ### Cross-cutting MVP Foundation
-- ثبت‌نام و ورود ساده با username/password
+- ثبت‌نام و ورود حداقلی با username/password
+- ورود برای محتوای عمومی الزامی نیست
 - نام کاربری unique و cross-platform-safe
+- Password حداقل ۸ کاراکتر
+- Session تا Logout کاربر حفظ می‌شود
 
 ## قابلیت‌های همراه MVP
 
@@ -49,7 +52,7 @@ MVP باید یک محصول واقعی و قابل استفاده از «گاه
 - Time-of-day state
 - Seasonal state
 - PWA baseline
-- Share Card مستقل برای اشتراک‌گذاری یک روز
+- Personal Share Card مستقل برای اشتراک‌گذاری یک رویداد شخصی
 
 ## خارج از MVP اولیه
 
@@ -68,6 +71,8 @@ MVP باید یک محصول واقعی و قابل استفاده از «گاه
 - اتصال به تقویم‌های ثالث
 - مدل درآمدی و پرداخت
 - Public API
+- Forgot Password
+- Account Deletion
 - قابلیت‌های gamification
 - هر featureی که صرفاً پیچیدگی را زیاد کند بدون اینکه use case اصلی را بهتر کند
 
