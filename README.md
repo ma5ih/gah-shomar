@@ -21,6 +21,12 @@
 - docs/REPOSITORY-ARCHITECTURE.md — معماری Repository
 - docs/ENV-CONFIG.md — Environment و Configuration
 - docs/DEPENDENCY-POLICY.md — سیاست Dependency
+- docs/ARCHITECTURE-BOUNDARIES.md — Boundaryهای معماری
+- docs/DATA-CONTRACTS.md — قراردادهای داده
+- docs/QUALITY-ARCHITECTURE.md — Error/Testing/Validation
+- docs/ARCHITECTURE-REVIEW.md — Review معماری
+- docs/AUTH-ARCHITECTURE.md — Authentication و Session
+- docs/SHARE-CARD-ARCHITECTURE.md — معماری Personal Share Card
 
 ## قانون ضد گم‌شدن
 هر اقدام معنادار باید شناسه یکتا داشته باشد، در CHANGELOG ثبت شود، STATUS را به‌روز کند و در صورت ارتباط، ROADMAP/DECISIONS/REQUIREMENTS را نیز به‌روز کند.
