@@ -1,7 +1,7 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 1.6.0
+Index version: 1.7.0
 Last update: 2026-10-02
 Current phase: PHASE-01 — Product Discovery & Specification
 
@@ -14,7 +14,7 @@ Current phase: PHASE-01 — Product Discovery & Specification
 | DOC-003 | STATUS.md | DONE | وضعیت لحظه‌ای |
 | DOC-004 | CHANGELOG.md | DONE | تاریخچه اقدامات |
 | DOC-005 | DECISIONS.md | DONE | تصمیم‌های رسمی |
-| DOC-006 | REQUIREMENTS.md | IN_PROGRESS | نیازمندی‌های محصول |
+| DOC-006 | REQUIREMENTS.md | APPROVED | نیازمندی‌های محصول نهایی v1.0 |
 | DOC-007 | ARCHITECTURE.md | TODO | معماری فنی |
 | DOC-008 | WORKFLOW.md | DONE | قواعد توسعه و ادامه پروژه |
 | DOC-009 | CALENDAR-SPEC.md | APPROVED | مشخصات رسمی سیستم تقویم |
@@ -42,10 +42,10 @@ PHASE-09: TODO
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-008 — تعریف Acceptance Criteria برای MVP.
+ACT-009 — نهایی‌سازی REQUIREMENTS v1.0.
 
 ## اقدام بعدی
-TASK-01-008 — Requirements v1.0 Finalization.
+TASK-01-009 — Event Model.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.
