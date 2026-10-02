@@ -1,7 +1,7 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 1.4.0
+Index version: 1.5.0
 Last update: 2026-10-02
 Current phase: PHASE-01 — Product Discovery & Specification
 
@@ -41,7 +41,7 @@ PHASE-09: TODO
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-005 — تثبیت Non-goals، Scope Boundaries، حساب کاربری و Share Card.
+ACT-006 — تثبیت معیارهای Account/Auth و Personal Share Card.
 
 ## اقدام بعدی
 TASK-01-007 — تعریف Acceptance Criteria.
