@@ -1,7 +1,7 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
 Last updated: 2026-10-02
-Current phase: PHASE-01 — Product Discovery & Specification
+Current phase: PHASE-02 — Architecture & Technical Foundation
 Overall status: IN_PROGRESS
 
 ## آخرین نقطه قطعی
@@ -13,8 +13,8 @@ Overall status: IN_PROGRESS
 | Phase | Status | Progress |
 |---|---|---:|
 | PHASE-00 Documentation | DONE | 100% |
-| PHASE-01 Specification | IN_PROGRESS | 94% |
-| PHASE-02 Architecture | TODO | 0% |
+| PHASE-01 Specification | DONE | 100% |
+| PHASE-02 Architecture | IN_PROGRESS | 4% |
 | PHASE-03 Core Backend / Calendar Engine | TODO | 0% |
 | PHASE-04 Application Backend / Use Cases | TODO | 0% |
 | PHASE-05 Frontend Architecture & Design System | TODO | 0% |
@@ -39,6 +39,12 @@ Overall status: IN_PROGRESS
 - ACT-011 — تعریف مدل تفصیلی Person — DONE
 - ACT-012 — تعریف مدل تفصیلی Memory — DONE
 - ACT-013 — تعریف مدل تفصیلی Personal Event — DONE
+- ACT-014 — تعریف Important Event & Editorial Selection — DONE
+- ACT-015 — تعریف Timeline و روابط Entityها — DONE
+- ACT-016 — تعریف Sources, Verification و Editorial Policy — DONE
+- ACT-017 — تعریف Media/Asset Model — DONE
+- ACT-018 — تعریف Historical Date Representation — DONE
+- ACT-019 — تعریف Search Requirements — DONE
 
 ## تصمیم‌های محصول فعلی
 
@@ -76,10 +82,9 @@ Overall status: IN_PROGRESS
 
 ## اقدام بعدی
 
-TASK-01-013 — Important Event & Editorial Selection
+TASK-02-001 — انتخاب Stack و Runtime
 
-پس از تکمیل specificationهای محتوایی:
-PHASE-02 — Architecture
+PHASE-01 specification کامل شد و پروژه وارد PHASE-02 — Architecture شده است.
 
 ## Blocked
 
