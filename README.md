@@ -1,6 +1,6 @@
 # گاه‌شمار | Calendar App
 
-> Project status: PHASE-01 — Product Discovery & Specification — 90%
+> Project status: PHASE-02 — Architecture & Technical Foundation — 4%
 
 این مخزن منبع اصلی و مرجع رسمی پروژه «گاه‌شمار» است.
 
@@ -17,6 +17,10 @@
 - docs/ARCHITECTURE.md — معماری فنی
 - docs/WORKFLOW.md — قواعد کار و ثبت تغییرات
 - docs/INDEX.md — فهرست مرکزی
+- docs/STACK.md — Stack و Runtime
+- docs/REPOSITORY-ARCHITECTURE.md — معماری Repository
+- docs/ENV-CONFIG.md — Environment و Configuration
+- docs/DEPENDENCY-POLICY.md — سیاست Dependency
 
 ## قانون ضد گم‌شدن
 هر اقدام معنادار باید شناسه یکتا داشته باشد، در CHANGELOG ثبت شود، STATUS را به‌روز کند و در صورت ارتباط، ROADMAP/DECISIONS/REQUIREMENTS را نیز به‌روز کند.
