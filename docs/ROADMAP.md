@@ -49,9 +49,9 @@ Last updated: 2026-10-02
 
 ## 1C — مدل‌های محتوایی
 - TASK-01-009 — Event Model — DONE
-- TASK-01-010 — Person Model — TODO
-- TASK-01-011 — Memory Model — TODO
-- TASK-01-012 — Personal Event Model — TODO
+- TASK-01-010 — Person Model — DONE
+- TASK-01-011 — Memory Model — DONE
+- TASK-01-012 — Personal Event Model — DONE
 - TASK-01-013 — Important Event & Editorial Selection — TODO
 - TASK-01-014 — Timeline & Entity Relationships — TODO
 - TASK-01-015 — Sources, Verification & Editorial Policy — TODO
@@ -385,4 +385,4 @@ Last updated: 2026-10-02
 - Main Capabilities — DONE
 - MVP Definition — DONE
 
-**اقدام بعدی:** TASK-01-010 — Person Model
+**اقدام بعدی:** TASK-01-013 — Important Event & Editorial Selection
