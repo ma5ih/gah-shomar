@@ -74,8 +74,7 @@ Overall status: IN_PROGRESS
 TASK-01-008 — Requirements v1.0 Finalization
 
 پس از آن:
-TASK-01-008 → Requirements v1.0
-سپس PHASE-02 — Architecture
+PHASE-02 — Architecture
 
 ## Blocked
 
