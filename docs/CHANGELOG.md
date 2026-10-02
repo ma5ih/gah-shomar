@@ -1,3 +1,22 @@
+## ACT-009 — 2026-10-02
+Type: REQUIREMENTS-FINALIZATION
+Status: DONE
+
+### انجام شد
+- TASK-01-008 — Requirements v1.0 Finalization تکمیل و DONE شد.
+- REQUIREMENTS.md از نسخه draft به `1.0.0` و Status = APPROVED منتقل شد.
+- محدوده محصول، MVP، Acceptance Criteria، Account/Auth و Personal Share Card در سطح Product Requirements نهایی شدند.
+- مشخص شد که مدل‌های تفصیلی Event، Person، Memory، Personal Event، Important Event، Timeline، Sources، Media، Historical Date Representation و Search ادامه PHASE-01 هستند و «ناتمام بودن Requirements v1.0» محسوب نمی‌شوند.
+- DEC-010 برای نهایی‌سازی Requirements ثبت شد.
+- ROADMAP، STATUS، INDEX، PROJECT و README با نقطه جدید همگام شدند.
+- عبارت قدیمی Share Card در PROJECT.md اصلاح شد تا Share Card فقط برای Personal Event تعریف شود.
+
+### نتیجه
+Product Requirements نسخه 1.0 اکنون یک baseline رسمی و APPROVED برای Architecture و implementation است.
+
+### Next
+TASK-01-009 — Event Model
+
 ## ACT-008 — 2026-10-02
 Type: ACCEPTANCE-SPEC
 Status: DONE
