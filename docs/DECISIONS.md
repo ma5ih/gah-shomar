@@ -1,5 +1,24 @@
 # DECISIONS — دفتر تصمیم‌ها
 
+## DEC-008 — 2026-10-02
+Status: ACCEPTED
+Title: معیارهای حساب کاربری و Personal Share Card
+
+### Decision
+- مشاهده تقویم و محتوای عمومی بدون ورود مجاز است.
+- ثبت‌نام و ورود حداقلی و بسیار ساده با username/password انجام می‌شود.
+- Username با قوانین cross-platform-safe ثبت‌شده در requirements اجرا می‌شود.
+- Password حداقل ۸ کاراکتر دارد.
+- Forgot Password و Account Deletion در MVP وجود ندارند.
+- کاربر پس از ورود تا Logout در Session می‌ماند؛ جزئیات امنیتی و انقضای Session در Architecture تعیین می‌شود.
+- Share Card فقط برای Personal Event کاربر تولید می‌شود، نه برای هر روز یا رویداد عمومی.
+- Share Card به‌صورت تصویر مستقل ساخته می‌شود و شامل تاریخ شاهنشاهی، روز هفته، میلادی کوچک و اطلاعات رویداد شخصی است.
+- تم کارت براساس نوع/انتخاب Personal Event تعیین می‌شود؛ «سایر» طراحی ساده، شیک و متمایز دارد.
+- Share از طریق Share Sheet سیستم‌عامل/مرورگر انجام می‌شود.
+
+### Consequence
+Public browsing از Authentication مستقل می‌ماند، اما Personal Layer به Account وابسته است. Personal Share Card نیز به‌عنوان یک artifact خصوصی و قابل اشتراک‌گذاری باقی می‌ماند و social graph ایجاد نمی‌کند.
+
 ## DEC-007 — 2026-10-02
 Status: ACCEPTED
 Title: مرزبندی MVP، حساب کاربری و Share Card
