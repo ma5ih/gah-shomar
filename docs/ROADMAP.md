@@ -383,4 +383,4 @@ Last updated: 2026-10-02
 - Main Capabilities — DONE
 - MVP Definition — DONE
 
-**اقدام بعدی:** TASK-01-006 — Non-goals & Scope Boundaries
+**اقدام بعدی:** TASK-01-007 — Acceptance Criteria
