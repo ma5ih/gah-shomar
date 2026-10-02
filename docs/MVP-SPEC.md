@@ -35,6 +35,11 @@ MVP باید یک محصول واقعی و قابل استفاده از «گاه
 - Personal Person
 - Memories
 - Recurrence پایه
+- وابستگی به حساب کاربری برای نگهداری داده شخصی
+
+### Cross-cutting MVP Foundation
+- ثبت‌نام و ورود ساده با username/password
+- نام کاربری unique و cross-platform-safe
 
 ## قابلیت‌های همراه MVP
 
@@ -44,6 +49,7 @@ MVP باید یک محصول واقعی و قابل استفاده از «گاه
 - Time-of-day state
 - Seasonal state
 - PWA baseline
+- Share Card مستقل برای اشتراک‌گذاری یک روز
 
 ## خارج از MVP اولیه
 
@@ -54,6 +60,14 @@ MVP باید یک محصول واقعی و قابل استفاده از «گاه
 - سیستم editorial چندکاربره
 - analytics پیچیده
 - قابلیت‌های اجتماعی
+- ایجاد/پیشنهاد Event عمومی توسط کاربر
+- Admin/CMS
+- Reminder/Notification
+- Maps/Location
+- Export/Import
+- اتصال به تقویم‌های ثالث
+- مدل درآمدی و پرداخت
+- Public API
 - قابلیت‌های gamification
 - هر featureی که صرفاً پیچیدگی را زیاد کند بدون اینکه use case اصلی را بهتر کند
 
