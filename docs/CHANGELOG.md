@@ -1,5 +1,27 @@
 # CHANGELOG — دفتر ثبت اقدامات
 
+## ACT-006 — 2026-10-02
+Type: ACCEPTANCE-SPEC
+Status: DONE
+
+### انجام شد
+- Authentication به‌صورت اختیاری برای Public Content و لازم برای Personal Layer تثبیت شد.
+- ثبت‌نام و ورود به حداقل Username + Password محدود شد.
+- Username policy نهایی شد؛ Password حداقل ۸ کاراکتر است.
+- Forgot Password و Account Deletion از MVP خارج شدند.
+- Session تا Logout کاربر به‌عنوان رفتار مورد انتظار ثبت شد؛ جزئیات امنیتی به Architecture واگذار شد.
+- Share Card از «اشتراک‌گذاری روز» به «اشتراک‌گذاری Personal Event» تغییر یافت.
+- Share Card به‌صورت تصویر مستقل با Share Sheet سیستم‌عامل/مرورگر تعریف شد.
+- اطلاعات کارت شامل تاریخ شاهنشاهی، روز هفته، میلادی کوچک و اطلاعات رویداد شخصی است.
+- Theme کارت براساس نوع/انتخاب Personal Event خواهد بود؛ برای «سایر» یک طرح ساده، شیک و متمایز تعیین شد.
+- برای Important Eventها استفاده از تصویر شاخص باکیفیت و امکان تصاویر بیشتر در صفحه جزئیات تأیید شد.
+
+### نتیجه
+معیارهای اصلی Account/Auth و Personal Share Card در سطح محصول تثبیت شد.
+
+### Next
+TASK-01-007 — Acceptance Criteria
+
 ## ACT-005 — 2026-10-02
 Type: PRODUCT-SCOPE
 Status: DONE
