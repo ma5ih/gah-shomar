@@ -112,7 +112,7 @@ Last updated: 2026-10-02
 - TASK-03-001 — Imperial Date Type — DONE
 - TASK-03-002 — Year/Month/Day Rules — DONE
 - TASK-03-003 — Month Lengths — DONE
-- TASK-03-004 — Leap-Year Rules — BLOCKED
+- TASK-03-004 — Leap-Year Rules — DONE
 - TASK-03-005 — Now/Today Calculation — TODO
 - TASK-03-006 — Gregorian ↔ Imperial Conversion — TODO
 - TASK-03-007 — Historical Date Conversion — TODO
