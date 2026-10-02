@@ -1,9 +1,9 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.3.0
+Index version: 2.4.0
 Last update: 2026-10-02
-Current phase: PHASE-02 — Architecture & Technical Foundation
+Current phase: PHASE-03 — Core Backend / Domain / Calendar Engine
 
 ## اسناد
 
@@ -38,7 +38,7 @@ Current phase: PHASE-02 — Architecture & Technical Foundation
 | DOC-027 | ARCHITECTURE-REVIEW.md | APPROVED | Review معماری |
 | DOC-028 | AUTH-ARCHITECTURE.md | APPROVED | Authentication و Session |
 | DOC-029 | SHARE-CARD-ARCHITECTURE.md | APPROVED | معماری Personal Share Card |
-| DOC-030 | CALENDAR-ENGINE-OPEN-QUESTION.md | BLOCKED | blocker قاعده کبیسه |
+| DOC-030 | CALENDAR-ENGINE-OPEN-QUESTION.md | RESOLVED | تصمیم و وضعیت نهایی قاعده کبیسه |
 
 ## شناسه‌گذاری
 - PHASE-XX — مرحله
@@ -63,10 +63,10 @@ PHASE-09: TODO
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-044 — معماری Personal Share Card.
+ACT-059 — نهایی‌سازی و پیاده‌سازی قاعده کبیسه.
 
 ## اقدام بعدی
-TASK-03-001 — Imperial Date Type.
+TASK-03-005 — Now/Today Calculation.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.
