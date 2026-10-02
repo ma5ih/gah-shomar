@@ -1,7 +1,7 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
 Last updated: 2026-10-02
-Current phase: PHASE-02 — Architecture & Technical Foundation
+Current phase: PHASE-03 — Core Backend / Domain / Calendar Engine
 Overall status: IN_PROGRESS
 
 ## آخرین نقطه قطعی
@@ -62,7 +62,8 @@ Overall status: IN_PROGRESS
 - ACT-055 — Seed/Fixture Data Strategy — DONE
 - ACT-056 — Content Validation Pipeline — DONE
 - ACT-057 — Public vs Personal Data Separation — DONE
-- ACT-058 — ثبت blocker قاعده کبیسه — BLOCKED
+- ACT-058 — ثبت blocker قاعده کبیسه — SUPERSEDED
+- ACT-059 — نهایی‌سازی و پیاده‌سازی قاعده کبیسه متناظر با تقویم خورشیدی — DONE
 
 ## تصمیم‌های محصول فعلی
 
@@ -100,13 +101,14 @@ Overall status: IN_PROGRESS
 
 ## اقدام بعدی
 
-TASK-03-004 — Leap-Year Rules (BLOCKED — نیازمند تعیین قاعده کبیسه)
+TASK-03-005 — Now/Today Calculation
 
-PHASE-01 specification کامل شد و پروژه وارد PHASE-02 — Architecture شده است.
+PHASE-03 — Calendar Engine اکنون از blocker اصلی کبیسه عبور کرده است.
 
 ## Blocked
 
-- TASK-03-004 — Leap-Year Rules: CALENDAR-SPEC ساختار ماه‌ها را مشخص کرده اما الگوریتم دقیق کبیسه را نهایی نکرده است. تا تعیین این قاعده، تبدیل دقیق روزانه و validation کامل روزهای اسپند نباید حدس زده شود.
+- موردی در TASK-03-004 باقی نمانده است.
+- تبدیل دقیق Gregorian ↔ Imperial و edge caseهای مرز نوروز در TASK-03-006 و TASK-03-008 باید مطابق همین قاعده و regression testهای Calendar Engine پیاده‌سازی شوند.
 
 ## قانون ادامه پروژه
 
