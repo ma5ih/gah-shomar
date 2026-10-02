@@ -1,3 +1,18 @@
+## ACT-060 — 2026-10-02
+Type: CALENDAR-ENGINE-CORRECTION
+Status: DONE
+
+### انجام شد
+- مشخص شد implementation قبلی یک چرخه ۳۳ سالهٔ ثابت را به تمام تاریخ تعمیم می‌داد و در نمونه‌های تاریخی مانند ۱۴۴۰/۱۴۴۱ درست نبود.
+- implementation در src/domain/calendar/leap-year.ts به الگوریتم break-point خانواده Borkowski/Jalaali اصلاح شد.
+- فاصله‌های ۵ ساله دیگر به‌عنوان استثناء دستی تعریف نمی‌شوند و از خود الگوریتم به‌دست می‌آیند.
+- تست‌های ۱۴۰۳، ۱۴۰۸، ۱۴۳۶، ۱۴۴۰ و ۱۴۴۱ و معادل‌های شاهنشاهی آن‌ها اضافه شدند.
+- ۲۵۸۵ همچنان سال عادی، ۲۵۸۳ آخرین کبیسهٔ قبلی و ۲۵۸۸ کبیسه بعدی در بازه فعلی باقی ماندند.
+- CALENDAR-SPEC، DECISIONS و CALENDAR-ENGINE-OPEN-QUESTION اصلاح شدند.
+
+### Next
+TASK-03-005 — Now/Today Calculation
+
 ## ACT-059 — 2026-10-02
 Type: CALENDAR-ENGINE
 Status: DONE
