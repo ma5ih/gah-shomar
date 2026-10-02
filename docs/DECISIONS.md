@@ -1,3 +1,20 @@
+## DEC-014 — 2026-10-02
+Status: ACCEPTED
+Title: تثبیت Stack و اصول فنی پایه
+
+### Decision
+- Next.js App Router + React + TypeScript به‌عنوان application/runtime stack انتخاب شد.
+- PostgreSQL + Drizzle ORM به‌عنوان persistence stack انتخاب شد.
+- Tailwind CSS برای styling/design tokens انتخاب شد؛ visual system در PHASE-05 تثبیت می‌شود.
+- Node.js LTS و npm به‌عنوان baseline توسعه تعیین شدند.
+- Repository به‌صورت domain-first و لایه‌ای سازمان‌دهی می‌شود.
+- Domain و Calendar Engine نباید به Next.js، React یا database وابسته باشند.
+- Secret/config از environment boundary عبور می‌کند و dependency جدید نیازمند دلیل مستند است.
+- انتخاب دقیق auth، PWA package، search provider و deployment به Taskهای تخصصی واگذار شد.
+
+### Consequence
+TASK-02-001 تا TASK-02-004 تکمیل شدند و نقطه ادامه رسمی TASK-02-005 — Calendar Engine Boundary است.
+
 ## DEC-013 — 2026-10-02
 Status: ACCEPTED
 Title: تکمیل Product/Content Specification و ورود به Architecture
