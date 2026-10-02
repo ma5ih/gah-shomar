@@ -13,7 +13,7 @@ Overall status: IN_PROGRESS
 | Phase | Status | Progress |
 |---|---|---:|
 | PHASE-00 Documentation | DONE | 100% |
-| PHASE-01 Specification | IN_PROGRESS | 70% |
+| PHASE-01 Specification | IN_PROGRESS | 75% |
 | PHASE-02 Architecture | TODO | 0% |
 | PHASE-03 Core Backend / Calendar Engine | TODO | 0% |
 | PHASE-04 Application Backend / Use Cases | TODO | 0% |
@@ -30,6 +30,7 @@ Overall status: IN_PROGRESS
 - ACT-002 — تثبیت تعریف محصول و قابلیت‌های اصلی — DONE
 - ACT-003 — تثبیت مخاطبان و use caseها — DONE
 - ACT-004 — تثبیت Calendar Specification، تعریف MVP و بازطراحی کامل Roadmap — DONE
+- ACT-005 — تثبیت Non-goals، Scope Boundaries، حساب کاربری و Share Card — DONE
 
 ## تصمیم‌های محصول فعلی
 
@@ -39,6 +40,9 @@ Overall status: IN_PROGRESS
 - میلادی: کوچک و فرعی
 - نام ماه‌ها مطابق CALENDAR-SPEC
 - Today به‌عنوان مرکز تجربه
+- ثبت‌نام/ورود ساده با نام کاربری و رمز عبور
+- نام کاربری unique و cross-platform-safe
+- Share Card اختصاصی برای اشتراک‌گذاری یک روز
 - Month Calendar و Day Detail
 - Historical Events و Important Events
 - Historical Timeline
@@ -52,6 +56,7 @@ Overall status: IN_PROGRESS
 - داده تاریخی منبع‌دار و قابل اعتبارسنجی
 - معماری داده‌محور و لایه‌ای
 - عدم پیچیده‌سازی غیرضروری
+- Reminder/Notification، social features، user-generated public events، Admin/CMS، location/maps، export/import، calendar integrations، monetization و public API خارج از MVP
 
 ## MVP تأییدشده در سطح محصول
 
@@ -61,10 +66,9 @@ Overall status: IN_PROGRESS
 
 ## اقدام بعدی
 
-TASK-01-006 — تعریف Non-goals و Scope Boundaries
+TASK-01-007 — تعریف Acceptance Criteria
 
 پس از آن:
-TASK-01-007 → Acceptance Criteria
 TASK-01-008 → Requirements v1.0
 سپس PHASE-02 — Architecture
 
