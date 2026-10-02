@@ -1,5 +1,24 @@
 # DECISIONS — دفتر تصمیم‌ها
 
+## DEC-006 — 2026-10-02
+Status: ACCEPTED
+Title: تعریف MVP و ترتیب توسعه end-to-end
+
+### Decision
+MVP گاه‌شمار سه ستون اصلی دارد:
+1. تقویم شاهنشاهی و Calendar Engine
+2. تجربه تاریخ و رویدادهای ایران شامل Today، Historical/Important Events، Timeline و Person
+3. لایه شخصی شامل Personal Events، Personal Person و Memories
+
+قابلیت‌های Search، فارسی/انگلیسی، RTL/LTR و PWA نیز از پایه در معماری MVP در نظر گرفته می‌شوند.
+
+### Development order
+ترتیب اصلی توسعه:
+Product Specification → Scope/Acceptance → Content/Domain Models → Architecture → Core Backend/Calendar Engine → Application Use Cases → Frontend Architecture/Design System → Core Frontend → Visual Polish/PWA → Historical Content/Editorial Dataset → Integration/QA → Release
+
+### Consequence
+ظاهر نهایی قبل از تثبیت منطق و معماری ساخته نمی‌شود. هر مرحله باید خروجی قابل بررسی داشته باشد و وضعیت آن در ROADMAP، STATUS و CHANGELOG ثبت شود.
+
 ## DEC-005 — 2026-10-02
 Status: ACCEPTED
 Title: مخاطبان هدف و سطح پیچیدگی محصول
@@ -12,7 +31,6 @@ Title: مخاطبان هدف و سطح پیچیدگی محصول
 
 ### Consequence
 محصول برای یک جامعه مخاطب مشخص بهینه می‌شود و لازم نیست با قابلیت‌های عجیب یا رفتارهای پیچیده، خاص بودن خود را ثابت کند. تفاوت اصلی باید از هویت تقویم، محتوا و کیفیت تجربه حاصل شود.
-
 
 ## DEC-002 — 2026-10-02
 Status: ACCEPTED
