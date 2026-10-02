@@ -109,10 +109,10 @@ Last updated: 2026-10-02
 این فاز منطق اصلی محصول را بدون وابستگی به ظاهر نهایی می‌سازد.
 
 ## 3A — Calendar Engine
-- TASK-03-001 — Imperial Date Type — TODO
-- TASK-03-002 — Year/Month/Day Rules — TODO
-- TASK-03-003 — Month Lengths — TODO
-- TASK-03-004 — Leap-Year Rules — TODO
+- TASK-03-001 — Imperial Date Type — DONE
+- TASK-03-002 — Year/Month/Day Rules — DONE
+- TASK-03-003 — Month Lengths — DONE
+- TASK-03-004 — Leap-Year Rules — BLOCKED
 - TASK-03-005 — Now/Today Calculation — TODO
 - TASK-03-006 — Gregorian ↔ Imperial Conversion — TODO
 - TASK-03-007 — Historical Date Conversion — TODO
@@ -123,12 +123,12 @@ Last updated: 2026-10-02
 - TASK-03-012 — Seasonal State — TODO
 
 ## 3B — Domain Layer
-- TASK-03-013 — Event Domain — TODO
-- TASK-03-014 — Person Domain — TODO
-- TASK-03-015 — Personal Event Domain — TODO
-- TASK-03-016 — Memory Domain — TODO
-- TASK-03-017 — Timeline/Period Domain — TODO
-- TASK-03-018 — Source/Editorial Domain — TODO
+- TASK-03-013 — Event Domain — DONE
+- TASK-03-014 — Person Domain — DONE
+- TASK-03-015 — Personal Event Domain — DONE
+- TASK-03-016 — Memory Domain — DONE
+- TASK-03-017 — Timeline/Period Domain — DONE
+- TASK-03-018 — Source/Editorial Domain — DONE
 
 ## 3C — Content/Data foundation
 - TASK-03-019 — Structured Event Dataset Contract — TODO
@@ -385,4 +385,4 @@ Last updated: 2026-10-02
 - Main Capabilities — DONE
 - MVP Definition — DONE
 
-**اقدام بعدی:** TASK-03-001 — Imperial Date Type
+**اقدام بعدی:** TASK-03-004 — Leap-Year Rules (BLOCKED — نیازمند تعیین قاعده کبیسه)
