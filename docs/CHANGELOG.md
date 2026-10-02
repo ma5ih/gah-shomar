@@ -1,3 +1,23 @@
+## ACT-010 — 2026-10-02
+Type: DOMAIN-SPEC
+Status: DONE
+
+### انجام شد
+- TASK-01-009 — Event Model تکمیل و DONE شد.
+- مدل تفصیلی Event در `docs/EVENT-MODEL.md` ایجاد و APPROVED شد.
+- مرز Event عمومی و Personal Event تثبیت شد.
+- ساختار هویت، متن چندزبانه، تاریخ، دسته‌بندی، روابط، منابع، رسانه، recurrence و metadata نمایشی تعریف شد.
+- مشخص شد Important Event یک Entity جدا نیست و از Event + editorial selection تشکیل می‌شود.
+- وابستگی‌های تخصصی مانند Historical Date Representation، Source/Validation، Media و Search برای Taskهای مستقل بعدی نگه داشته شدند.
+- DEC-011 ثبت شد.
+- ROADMAP، STATUS و INDEX همگام شدند.
+
+### نتیجه
+مدل محتوایی Event اکنون یک قرارداد تفصیلی و قابل استفاده برای Person/Timeline/Source/Media و سپس Architecture دارد.
+
+### Next
+TASK-01-010 — Person Model
+
 ## ACT-009 — 2026-10-02
 Type: REQUIREMENTS-FINALIZATION
 Status: DONE
