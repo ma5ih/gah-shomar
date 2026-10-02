@@ -183,7 +183,7 @@ Last updated: 2026-10-02
 - TASK-04-023 — Persian/English Data Contracts — TODO
 - TASK-04-024 — RTL/LTR Direction State — TODO
 - TASK-04-025 — Register/Login/Session Use Cases — TODO
-- TASK-04-026 — Share Day Card Data Use Case — TODO
+- TASK-04-026 — Personal Event Share Card Data Use Case — TODO
 
 **خروجی فاز:** use caseهای محصول مستقل از UI و قابل مصرف توسط frontend.
 
@@ -255,7 +255,7 @@ Last updated: 2026-10-02
 - TASK-06-021 — Persian Experience — TODO
 - TASK-06-022 — English Experience — TODO
 - TASK-06-023 — Authentication UI — TODO
-- TASK-06-024 — Day Share Card Experience — TODO
+- TASK-06-024 — Personal Event Share Card Experience — TODO
 
 ---
 
@@ -377,6 +377,8 @@ Last updated: 2026-10-02
 **PHASE-01 — IN_PROGRESS**
 
 آخرین کارهای قطعی:
+- Non-goals & Scope Boundaries — DONE
+- Account/Auth & Personal Share Card — APPROVED
 - Product Definition — DONE
 - Audience & Use Cases — DONE
 - Calendar Specification — DONE
