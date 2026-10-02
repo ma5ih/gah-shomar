@@ -1,7 +1,7 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 1.1.0
+Index version: 1.2.0
 Last update: 2026-10-02
 Current phase: PHASE-01 — Product Discovery & Specification
 
@@ -31,7 +31,7 @@ PHASE-01: IN_PROGRESS
 PHASE-02 به بعد: TODO
 
 ## آخرین اقدام
-ACT-002 — تثبیت تعریف محصول، قابلیت‌های اصلی و مدل کلی تجربه گاه‌شمار.
+ACT-003 — تکمیل و ثبت مخاطبان هدف و سناریوهای استفاده.
 
 ## اقدام بعدی
-TASK-01-002 — تعریف مخاطبان و سناریوهای استفاده.
+TASK-01-003 — تکمیل تعریف تقویم‌ها و سیستم‌های تاریخی.
