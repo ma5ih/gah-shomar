@@ -43,7 +43,7 @@ Last updated: 2026-10-02
 - TASK-01-005 — MVP Definition — DONE
 
 ## 1B — مرزبندی محصول
-- TASK-01-006 — Non-goals & Scope Boundaries — TODO
+- TASK-01-006 — Non-goals & Scope Boundaries — DONE
 - TASK-01-007 — Acceptance Criteria — TODO
 - TASK-01-008 — Requirements v1.0 Finalization — TODO
 
@@ -58,6 +58,8 @@ Last updated: 2026-10-02
 - TASK-01-016 — Media/Asset Content Model — TODO
 - TASK-01-017 — Historical Date Representation — TODO
 - TASK-01-018 — Search Requirements — TODO
+- TASK-01-019 — Account & Authentication Requirements — TODO
+- TASK-01-020 — Share Card Requirements — TODO
 
 **خروجی فاز:** Product/Requirements/Content Specification v1.0.
 
@@ -95,6 +97,8 @@ Last updated: 2026-10-02
 - TASK-02-021 — Data Validation Strategy — TODO
 - TASK-02-022 — Architecture Review — TODO
 - TASK-02-023 — ARCHITECTURE v1.0 — TODO
+- TASK-02-024 — Authentication & Session Architecture — TODO
+- TASK-02-025 — Share Card Architecture — TODO
 
 **خروجی فاز:** معماری فنی تثبیت‌شده و قابل پیاده‌سازی.
 
@@ -178,6 +182,8 @@ Last updated: 2026-10-02
 - TASK-04-022 — Search Results by Entity — TODO
 - TASK-04-023 — Persian/English Data Contracts — TODO
 - TASK-04-024 — RTL/LTR Direction State — TODO
+- TASK-04-025 — Register/Login/Session Use Cases — TODO
+- TASK-04-026 — Share Day Card Data Use Case — TODO
 
 **خروجی فاز:** use caseهای محصول مستقل از UI و قابل مصرف توسط frontend.
 
@@ -248,6 +254,8 @@ Last updated: 2026-10-02
 - TASK-06-020 — Search Result Navigation — TODO
 - TASK-06-021 — Persian Experience — TODO
 - TASK-06-022 — English Experience — TODO
+- TASK-06-023 — Authentication UI — TODO
+- TASK-06-024 — Day Share Card Experience — TODO
 
 ---
 
