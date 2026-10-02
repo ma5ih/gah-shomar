@@ -1,7 +1,7 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 1.5.0
+Index version: 1.6.0
 Last update: 2026-10-02
 Current phase: PHASE-01 — Product Discovery & Specification
 
@@ -26,6 +26,7 @@ Current phase: PHASE-01 — Product Discovery & Specification
 - REQ-XXX — نیازمندی
 - DEC-XXX — تصمیم
 - REL-X.Y.Z — انتشار
+- AC-XXX — معیار پذیرش
 
 ## وضعیت
 PHASE-00: DONE
@@ -41,10 +42,10 @@ PHASE-09: TODO
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-006 — تثبیت معیارهای Account/Auth و Personal Share Card.
+ACT-008 — تعریف Acceptance Criteria برای MVP.
 
 ## اقدام بعدی
-TASK-01-007 — تعریف Acceptance Criteria.
+TASK-01-008 — Requirements v1.0 Finalization.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.
