@@ -1,5 +1,20 @@
 # DECISIONS — دفتر تصمیم‌ها
 
+## DEC-007 — 2026-10-02
+Status: ACCEPTED
+Title: مرزبندی MVP، حساب کاربری و Share Card
+
+### Decision
+- MVP ثبت‌نام و ورود ساده با نام کاربری و رمز عبور دارد.
+- نام کاربری باید unique و cross-platform-safe باشد؛ قوانین اجرایی دقیق آن در Architecture تثبیت می‌شود.
+- Reminder/Notification، social features، ایجاد/پیشنهاد Event عمومی توسط کاربر، Admin/CMS، نقشه/Location، Export/Import، اتصال به تقویم‌های دیگر، مدل درآمدی و Public API فعلاً خارج از Scope هستند.
+- Important Events صفحه‌ای مستقل از تقویم دارند و برای هر رویداد مهم، تصویر باکیفیت/شاخص در نظر گرفته می‌شود.
+- قابلیت Share فقط برای اشتراک‌گذاری یک روز مشخص با یک Share Card اختصاصی فعال است؛ این قابلیت social system محسوب نمی‌شود.
+- معماری می‌تواند برای قابلیت‌های آینده آماده باشد، اما قابلیت‌های Deferred تا زمان تصمیم مستقل نباید فعال یا در UI ارائه شوند.
+
+### Consequence
+Account/Authentication به‌عنوان زیرساخت مشترک MVP طراحی می‌شود و Personal Layer روی آن سوار خواهد شد. Share Card نیز به‌صورت یک artifact مستقل از UI روز ساخته می‌شود. هیچ‌کدام باعث ورود social graph یا admin system به MVP نمی‌شوند.
+
 ## DEC-006 — 2026-10-02
 Status: ACCEPTED
 Title: تعریف MVP و ترتیب توسعه end-to-end
