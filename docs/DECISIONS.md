@@ -1,3 +1,16 @@
+## DEC-009 — 2026-10-02
+Status: ACCEPTED
+Title: تعریف Acceptance Criteria برای MVP
+
+### Decision
+- معیارهای پذیرش MVP با شناسه‌های AC-001 تا AC-039 و در گروه‌های Calendar Engine، Today/Calendar، Historical/Event/Timeline، Personal Layer، Search/Localization، Authentication/PWA و Quality/Scope ثبت شدند.
+- Acceptance Criterion مرجع مشترک تست و QA است و هر معیار باید با شواهد اجرایی یا تستی قابل PASS/FAIL باشد.
+- تکمیل کد یا ظاهر صفحه به‌تنهایی برای پذیرش کافی نیست.
+- معیارهای تعریف‌شده باید به‌صورت مستقل از UI قابل ردیابی باشند و در مراحل QA به تست‌های متناظر نگاشت شوند.
+
+### Consequence
+TASK-01-007 تکمیل می‌شود و مرحله بعدی، Requirements v1.0 Finalization است. مدل‌های دامنه و معماری بعد از آن بر اساس همین معیارها تثبیت خواهند شد.
+
 # DECISIONS — دفتر تصمیم‌ها
 
 ## DEC-008 — 2026-10-02
