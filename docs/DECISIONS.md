@@ -1,3 +1,15 @@
+## DEC-013 — 2026-10-02
+Status: ACCEPTED
+Title: تکمیل Product/Content Specification و ورود به Architecture
+
+### Decision
+- specificationهای باقی‌مانده PHASE-01 شامل Important Event، Timeline، Sources/Editorial، Media، Historical Date Representation و Search تکمیل و APPROVED شدند.
+- PHASE-01 اکنون از نظر specificationهای تعریف‌شده کامل است.
+- Architecture از TASK-02-001 آغاز می‌شود و implementation قبل از تثبیت boundaryهای معماری انجام نخواهد شد.
+
+### Consequence
+PHASE-01 → DONE و PHASE-02 → IN_PROGRESS شد. نقطه ادامه رسمی TASK-02-001 — انتخاب Stack و Runtime است.
+
 ## DEC-012 — 2026-10-02
 Status: ACCEPTED
 Title: تثبیت مدل‌های Person، Memory و Personal Event
