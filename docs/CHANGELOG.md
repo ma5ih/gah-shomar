@@ -1,5 +1,25 @@
 # CHANGELOG — دفتر ثبت اقدامات
 
+## ACT-005 — 2026-10-02
+Type: PRODUCT-SCOPE
+Status: DONE
+
+### انجام شد
+- Non-goals و Scope Boundaries با کاربر تثبیت شد.
+- ثبت‌نام و ورود ساده با username/password به MVP اضافه شد.
+- سیاست username به‌صورت cross-platform-safe تعریف شد و جزئیات فنی به Architecture موکول شد.
+- Reminder/Notification از MVP خارج شد.
+- social features، user-generated public events، Admin/CMS، maps/location، export/import، calendar integrations، monetization و public API از Scope خارج شدند.
+- صفحه مستقل Important Events به‌عنوان محل تصاویر باکیفیت و شاخص تأیید شد.
+- قابلیت Share برای یک روز مشخص به‌صورت یک Share Card مستقل و اختصاصی به MVP اضافه شد.
+- اصل «آماده‌بودن معماری برای قابلیت‌های آینده بدون فعال‌سازی آن‌ها» تأیید شد.
+
+### نتیجه
+TASK-01-006 — Non-goals & Scope Boundaries تکمیل و DONE شد.
+
+### Next
+TASK-01-007
+
 ## ACT-004 — 2026-10-02
 Type: PROJECT-UPDATE
 Status: DONE
