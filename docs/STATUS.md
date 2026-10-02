@@ -13,7 +13,7 @@ Overall status: IN_PROGRESS
 | Phase | Status | Progress |
 |---|---|---:|
 | PHASE-00 Documentation | DONE | 100% |
-| PHASE-01 Specification | IN_PROGRESS | 75% |
+| PHASE-01 Specification | IN_PROGRESS | 80% |
 | PHASE-02 Architecture | TODO | 0% |
 | PHASE-03 Core Backend / Calendar Engine | TODO | 0% |
 | PHASE-04 Application Backend / Use Cases | TODO | 0% |
@@ -42,7 +42,9 @@ Overall status: IN_PROGRESS
 - Today به‌عنوان مرکز تجربه
 - ثبت‌نام/ورود ساده با نام کاربری و رمز عبور
 - نام کاربری unique و cross-platform-safe
-- Share Card اختصاصی برای اشتراک‌گذاری یک روز
+- ورود برای محتوای عمومی الزامی نیست
+- ثبت‌نام/ورود حداقلی با username/password
+- Personal Share Card اختصاصی برای اشتراک‌گذاری رویداد شخصی
 - Month Calendar و Day Detail
 - Historical Events و Important Events
 - Historical Timeline
@@ -56,7 +58,7 @@ Overall status: IN_PROGRESS
 - داده تاریخی منبع‌دار و قابل اعتبارسنجی
 - معماری داده‌محور و لایه‌ای
 - عدم پیچیده‌سازی غیرضروری
-- Reminder/Notification، social features، user-generated public events، Admin/CMS، location/maps، export/import، calendar integrations، monetization و public API خارج از MVP
+- Reminder/Notification، social features، user-generated public events، Admin/CMS، location/maps، export/import، calendar integrations، monetization، public API، forgot-password و account deletion خارج از MVP
 
 ## MVP تأییدشده در سطح محصول
 
