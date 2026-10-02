@@ -11,7 +11,7 @@ Overall status: IN_PROGRESS
 | Phase | Status | Progress |
 |---|---|---:|
 | PHASE-00 Documentation | DONE | 100% |
-| PHASE-01 Specification | IN_PROGRESS | 55% |
+| PHASE-01 Specification | IN_PROGRESS | 60% |
 | PHASE-02 Architecture | TODO | 0% |
 | PHASE-03 Calendar Engine | TODO | 0% |
 | PHASE-04 Features | TODO | 0% |
@@ -22,6 +22,7 @@ Overall status: IN_PROGRESS
 ## اقدامات مهم
 - ACT-001 — ایجاد زیرساخت مستندسازی و ردیابی پروژه.
 - ACT-002 — تثبیت تعریف محصول، قابلیت‌های اصلی و مدل کلی تجربه گاه‌شمار.
+- ACT-003 — تکمیل و ثبت مخاطبان هدف و سناریوهای استفاده.
 
 ## تصمیم‌های محصول تأییدشده
 - Mobile-first و App-like
@@ -44,7 +45,7 @@ Overall status: IN_PROGRESS
 - PWA به‌عنوان هدف محصول
 
 ## اقدام بعدی
-TASK-01-002 — تعریف مخاطبان و سناریوهای استفاده، سپس تکمیل تقویم‌ها، MVP و معیارهای پذیرش.
+TASK-01-003 — تکمیل تعریف تقویم‌ها، سیستم‌های تاریخی و تبدیل تاریخ‌ها؛ سپس MVP و معیارهای پذیرش.
 
 ## Blocked
 فعلاً موردی ثبت نشده است.
