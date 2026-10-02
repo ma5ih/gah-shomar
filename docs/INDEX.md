@@ -1,9 +1,9 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 1.9.0
+Index version: 2.0.0
 Last update: 2026-10-02
-Current phase: PHASE-01 — Product Discovery & Specification
+Current phase: PHASE-02 — Architecture & Technical Foundation
 
 ## اسناد
 
@@ -22,6 +22,12 @@ Current phase: PHASE-01 — Product Discovery & Specification
 | DOC-011 | PERSON-MODEL.md | APPROVED | مدل تفصیلی Person |
 | DOC-012 | MEMORY-MODEL.md | APPROVED | مدل تفصیلی Memory |
 | DOC-013 | PERSONAL-EVENT-MODEL.md | APPROVED | مدل تفصیلی Personal Event |
+| DOC-014 | IMPORTANT-EVENTS-MODEL.md | APPROVED | مدل Important Event و Editorial Selection |
+| DOC-015 | TIMELINE-MODEL.md | APPROVED | مدل Timeline و روابط Entityها |
+| DOC-016 | SOURCE-EDITORIAL-MODEL.md | APPROVED | Sources, Verification و Editorial Policy |
+| DOC-017 | MEDIA-MODEL.md | APPROVED | مدل Media / Asset |
+| DOC-018 | HISTORICAL-DATE-MODEL.md | APPROVED | مدل نمایش تاریخ‌های تاریخی |
+| DOC-019 | SEARCH-REQUIREMENTS.md | APPROVED | نیازمندی‌های Search |
 
 ## شناسه‌گذاری
 - PHASE-XX — مرحله
@@ -34,8 +40,8 @@ Current phase: PHASE-01 — Product Discovery & Specification
 
 ## وضعیت
 PHASE-00: DONE
-PHASE-01: IN_PROGRESS
-PHASE-02: TODO
+PHASE-01: DONE
+PHASE-02: IN_PROGRESS
 PHASE-03: TODO
 PHASE-04: TODO
 PHASE-05: TODO
@@ -46,10 +52,10 @@ PHASE-09: TODO
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-013 — تعریف مدل تفصیلی Personal Event.
+ACT-019 — تعریف نیازمندی‌های Search.
 
 ## اقدام بعدی
-TASK-01-013 — Important Event & Editorial Selection.
+TASK-02-001 — انتخاب Stack و Runtime.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.
