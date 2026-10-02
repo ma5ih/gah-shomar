@@ -1,3 +1,53 @@
+## ACT-013 — 2026-10-02
+Type: DOMAIN-SPEC
+Status: DONE
+
+### انجام شد
+- TASK-01-012 — Personal Event Model تکمیل و DONE شد.
+- `docs/PERSONAL-EVENT-MODEL.md` ایجاد و APPROVED شد.
+- مالکیت خصوصی، CRUD، نوع‌های birthday/anniversary/custom، recurrence، Personal Person و رابطه با Share Card مشخص شد.
+- DEC-012 به‌عنوان تصمیم تجمیعی مدل‌های Person/Memory/Personal Event ثبت شد.
+- ROADMAP، STATUS و INDEX همگام شدند.
+
+### نتیجه
+Personal Event اکنون قرارداد تفصیلی مستقلی دارد و از public Event جداست.
+
+### Next
+TASK-01-013 — Important Event & Editorial Selection
+
+## ACT-012 — 2026-10-02
+Type: DOMAIN-SPEC
+Status: DONE
+
+### انجام شد
+- TASK-01-011 — Memory Model تکمیل و DONE شد.
+- `docs/MEMORY-MODEL.md` ایجاد و APPROVED شد.
+- Memory به‌عنوان داده خصوصی مالک تعریف شد و از Personal Event جدا نگه داشته شد.
+- روابط اختیاری با Person، Event و Personal Event مشخص شد.
+- حذف/ویرایش در سطح مالکیت تعریف شد.
+
+### نتیجه
+Memory اکنون مدل مستقل و قابل استفاده برای لایه شخصی دارد.
+
+### Next
+TASK-01-012 — Personal Event Model
+
+## ACT-011 — 2026-10-02
+Type: DOMAIN-SPEC
+Status: DONE
+
+### انجام شد
+- TASK-01-010 — Person Model تکمیل و DONE شد.
+- `docs/PERSON-MODEL.md` ایجاد و APPROVED شد.
+- هویت، محتوای چندزبانه، تاریخ‌های تولد/درگذشت، روابط، منابع، رسانه و وضعیت editorial برای Person مشخص شد.
+- Person به‌عنوان Entity مستقل و قابل جستجو تثبیت شد.
+
+### نتیجه
+مدل Person اکنون پایه رسمی صفحات مستقل افراد و روابط تاریخی پروژه است.
+
+### Next
+TASK-01-011 — Memory Model
+
 ## ACT-010 — 2026-10-02
 Type: DOMAIN-SPEC
 Status: DONE
