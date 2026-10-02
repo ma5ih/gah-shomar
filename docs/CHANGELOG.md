@@ -1,3 +1,50 @@
+## ACT-023 — 2026-10-02
+Type: ARCHITECTURE-FOUNDATION
+Status: DONE
+
+### انجام شد
+- TASK-02-004 — Dependency Policy تکمیل و DONE شد.
+- سیاست dependency، نقش‌ها، version locking، security و maintenance ثبت شد.
+- Core baseline شامل Next.js/React/TypeScript، PostgreSQL/Drizzle و Tailwind CSS ثبت شد.
+
+### Next
+TASK-02-005 — Calendar Engine Boundary
+
+## ACT-022 — 2026-10-02
+Type: ARCHITECTURE-FOUNDATION
+Status: DONE
+
+### انجام شد
+- TASK-02-003 — Environment & Configuration Strategy تکمیل و DONE شد.
+- environment classes، secret/public boundaries، core variables و validation rules ثبت شدند.
+
+### Next
+TASK-02-004 — Dependency Policy
+
+## ACT-021 — 2026-10-02
+Type: ARCHITECTURE-FOUNDATION
+Status: DONE
+
+### انجام شد
+- TASK-02-002 — Repository/Directory Architecture تکمیل و DONE شد.
+- domain/application/data/content/frontend boundaries و import direction تعریف شدند.
+
+### Next
+TASK-02-003 — Environment & Configuration Strategy
+
+## ACT-020 — 2026-10-02
+Type: ARCHITECTURE-FOUNDATION
+Status: DONE
+
+### انجام شد
+- TASK-02-001 — Stack و Runtime تکمیل و DONE شد.
+- Next.js App Router، TypeScript، PostgreSQL، Drizzle، Tailwind، Node.js LTS و npm به‌عنوان baseline انتخاب شدند.
+- انتخاب auth/PWA/search/deployment به Taskهای تخصصی بعدی واگذار شد.
+- DEC-014 ثبت شد.
+
+### Next
+TASK-02-002 — Repository/Directory Architecture
+
 ## ACT-019 — 2026-10-02
 Type: SPECIFICATION-COMPLETION
 Status: DONE
