@@ -1,5 +1,21 @@
 # CHANGELOG — دفتر ثبت اقدامات
 
+## ACT-007 — 2026-10-02
+Type: DOCUMENTATION-SYNC
+Status: DONE
+
+### انجام شد
+- CHANGELOG، STATUS، ROADMAP و INDEX با آخرین تصمیم‌های محصول تطبیق داده شدند.
+- TASK-01-019 — Account & Authentication Requirements به DONE منتقل شد.
+- آخرین اقدام پروژه در STATUS و INDEX روی ACT-006 همگام شد.
+- ثبت شد که تعریف قبلی Share Card در ACT-005 توسط تصمیم دقیق‌تر ACT-006 supersede شده است: Share Card فقط برای Personal Event است، نه برای یک روز عمومی.
+
+### نتیجه
+ردیابی تصمیم‌ها و وضعیت پروژه با Source of Truth فعلی GitHub همگام شد.
+
+### Next
+TASK-01-007 — Acceptance Criteria
+
 ## ACT-006 — 2026-10-02
 Type: ACCEPTANCE-SPEC
 Status: DONE
