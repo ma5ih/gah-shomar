@@ -74,37 +74,37 @@ Last updated: 2026-10-02
 - TASK-02-004 — Dependency Policy — DONE
 
 ## 2B — معماری لایه‌ای
-- TASK-02-005 — Calendar Engine Boundary — TODO
-- TASK-02-006 — Domain/Data Layer — TODO
-- TASK-02-007 — Application/Use-case Layer — TODO
-- TASK-02-008 — Presentation/UI Boundary — TODO
-- TASK-02-009 — Localization Boundary — TODO
-- TASK-02-010 — Media/Content Boundary — TODO
+- TASK-02-005 — Calendar Engine Boundary — DONE
+- TASK-02-006 — Domain/Data Layer — DONE
+- TASK-02-007 — Application/Use-case Layer — DONE
+- TASK-02-008 — Presentation/UI Boundary — DONE
+- TASK-02-009 — Localization Boundary — DONE
+- TASK-02-010 — Media/Content Boundary — DONE
 
 ## 2C — مدل داده و قراردادها
-- TASK-02-011 — Event Schema — TODO
-- TASK-02-012 — Person Schema — TODO
-- TASK-02-013 — Memory Schema — TODO
-- TASK-02-014 — Personal Event Schema — TODO
-- TASK-02-015 — Timeline/Period Schema — TODO
-- TASK-02-016 — Source/Validation Schema — TODO
-- TASK-02-017 — Entity Relationship Map — TODO
-- TASK-02-018 — Internal Contracts/API Boundaries — TODO
+- TASK-02-011 — Event Schema — DONE
+- TASK-02-012 — Person Schema — DONE
+- TASK-02-013 — Memory Schema — DONE
+- TASK-02-014 — Personal Event Schema — DONE
+- TASK-02-015 — Timeline/Period Schema — DONE
+- TASK-02-016 — Source/Validation Schema — DONE
+- TASK-02-017 — Entity Relationship Map — DONE
+- TASK-02-018 — Internal Contracts/API Boundaries — DONE
 
 ## 2D — کیفیت معماری
-- TASK-02-019 — Error/Edge-case Strategy — TODO
-- TASK-02-020 — Testing Architecture — TODO
-- TASK-02-021 — Data Validation Strategy — TODO
-- TASK-02-022 — Architecture Review — TODO
-- TASK-02-023 — ARCHITECTURE v1.0 — TODO
-- TASK-02-024 — Authentication & Session Architecture — TODO
-- TASK-02-025 — Share Card Architecture — TODO
+- TASK-02-019 — Error/Edge-case Strategy — DONE
+- TASK-02-020 — Testing Architecture — DONE
+- TASK-02-021 — Data Validation Strategy — DONE
+- TASK-02-022 — Architecture Review — DONE
+- TASK-02-023 — ARCHITECTURE v1.0 — DONE
+- TASK-02-024 — Authentication & Session Architecture — DONE
+- TASK-02-025 — Share Card Architecture — DONE
 
 **خروجی فاز:** معماری فنی تثبیت‌شده و قابل پیاده‌سازی.
 
 ---
 
-# PHASE-03 — Core Backend / Domain / Calendar Engine — TODO
+# PHASE-03 — Core Backend / Domain / Calendar Engine — IN_PROGRESS
 
 این فاز منطق اصلی محصول را بدون وابستگی به ظاهر نهایی می‌سازد.
 
@@ -385,4 +385,4 @@ Last updated: 2026-10-02
 - Main Capabilities — DONE
 - MVP Definition — DONE
 
-**اقدام بعدی:** TASK-02-005 — Calendar Engine Boundary
+**اقدام بعدی:** TASK-03-001 — Imperial Date Type
