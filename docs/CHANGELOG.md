@@ -1,3 +1,48 @@
+## ACT-057 — 2026-10-02
+Type: CORE-DATA
+Status: DONE
+
+### انجام شد
+- TASK-03-022 — Public vs Personal Data Separation تکمیل شد.
+- ownership assertion و visibility contracts در `src/data/contracts/visibility.ts` ایجاد شدند.
+
+### Next
+TASK-03-004 — Leap-Year Rules (BLOCKED)
+
+## ACT-056 — 2026-10-02
+Type: CORE-DATA
+Status: DONE
+
+### انجام شد
+- TASK-03-021 — Content Validation Pipeline تکمیل شد.
+- public content validation برای APPROVED visibility/status ایجاد شد.
+
+### Next
+TASK-03-022 — Public vs Personal Data Separation
+
+## ACT-055 — 2026-10-02
+Type: CORE-DATA
+Status: DONE
+
+### انجام شد
+- TASK-03-020 — Seed/Fixture Data Strategy تکمیل شد.
+- مسیر `src/content/` و قرارداد seed/fixture مشخص شد.
+- داده تاریخی در UI hard-code نمی‌شود.
+
+### Next
+TASK-03-021 — Content Validation Pipeline
+
+## ACT-054 — 2026-10-02
+Type: CORE-DATA
+Status: DONE
+
+### انجام شد
+- TASK-03-019 — Structured Event Dataset Contract تکمیل شد.
+- PublicContentDataset و validation contracts در `src/content/contracts.ts` ایجاد شدند.
+
+### Next
+TASK-03-020 — Seed/Fixture Data Strategy
+
 ## ACT-053 — 2026-10-02
 Type: DOMAIN-IMPLEMENTATION
 Status: DONE
