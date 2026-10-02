@@ -14,7 +14,7 @@ Overall status: IN_PROGRESS
 |---|---|---:|
 | PHASE-00 Documentation | DONE | 100% |
 | PHASE-01 Specification | DONE | 100% |
-| PHASE-02 Architecture | IN_PROGRESS | 4% |
+| PHASE-02 Architecture | IN_PROGRESS | 15% |
 | PHASE-03 Core Backend / Calendar Engine | TODO | 0% |
 | PHASE-04 Application Backend / Use Cases | TODO | 0% |
 | PHASE-05 Frontend Architecture & Design System | TODO | 0% |
@@ -45,6 +45,10 @@ Overall status: IN_PROGRESS
 - ACT-017 — تعریف Media/Asset Model — DONE
 - ACT-018 — تعریف Historical Date Representation — DONE
 - ACT-019 — تعریف Search Requirements — DONE
+- ACT-020 — انتخاب Stack و Runtime — DONE
+- ACT-021 — تعریف Repository/Directory Architecture — DONE
+- ACT-022 — تعریف Environment & Configuration Strategy — DONE
+- ACT-023 — تعریف Dependency Policy — DONE
 
 ## تصمیم‌های محصول فعلی
 
@@ -82,7 +86,7 @@ Overall status: IN_PROGRESS
 
 ## اقدام بعدی
 
-TASK-02-001 — انتخاب Stack و Runtime
+TASK-02-005 — Calendar Engine Boundary
 
 PHASE-01 specification کامل شد و پروژه وارد PHASE-02 — Architecture شده است.
 
