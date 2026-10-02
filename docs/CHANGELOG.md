@@ -1,3 +1,228 @@
+## ACT-044 — 2026-10-02
+Type: ARCHITECTURE
+Status: DONE
+
+### انجام شد
+- TASK-02-025 — Share Card Architecture تکمیل شد.
+- privacy boundary، authorization، DTO، image rendering و Share Sheet flow مشخص شد.
+
+### Next
+PHASE-03 — TASK-03-001 — Imperial Date Type
+
+## ACT-043 — 2026-10-02
+Type: ARCHITECTURE
+Status: DONE
+
+### انجام شد
+- TASK-02-024 — Authentication & Session Architecture تکمیل شد.
+- username/password، password hashing، DB-backed session، secure cookie و authorization boundary تعریف شد.
+
+### Next
+TASK-02-025 — Share Card Architecture
+
+## ACT-042 — 2026-10-02
+Type: ARCHITECTURE
+Status: DONE
+
+### انجام شد
+- TASK-02-023 — ARCHITECTURE v1.0 تکمیل شد.
+- معماری نهایی لایه‌ای و dependency direction تثبیت شد.
+- PHASE-02 architecture به baseline رسمی implementation تبدیل شد.
+
+### Next
+TASK-02-024 — Authentication & Session Architecture
+
+## ACT-041 — 2026-10-02
+Type: ARCHITECTURE-REVIEW
+Status: DONE
+
+### انجام شد
+- TASK-02-022 — Architecture Review انجام شد.
+- boundaryها، privacy، deferred scope، localization، source/validation و testability بررسی شدند.
+
+### Next
+TASK-02-023 — ARCHITECTURE v1.0
+
+## ACT-040 — 2026-10-02
+Type: ARCHITECTURE
+Status: DONE
+
+### انجام شد
+- TASK-02-021 — Data Validation Strategy تکمیل شد.
+- input، domain invariant و DB constraints به‌عنوان سه لایه validation تعریف شدند.
+
+### Next
+TASK-02-022 — Architecture Review
+
+## ACT-039 — 2026-10-02
+Type: ARCHITECTURE
+Status: DONE
+
+### انجام شد
+- TASK-02-020 — Testing Architecture تکمیل شد.
+- unit/integration/E2E/regression و traceability به Acceptance Criteria تعریف شد.
+
+### Next
+TASK-02-021 — Data Validation Strategy
+
+## ACT-038 — 2026-10-02
+Type: ARCHITECTURE
+Status: DONE
+
+### انجام شد
+- TASK-02-019 — Error/Edge-case Strategy تکمیل شد.
+- domain/validation/auth/infrastructure errors و edge cases ثبت شدند.
+
+### Next
+TASK-02-020 — Testing Architecture
+
+## ACT-037 — 2026-10-02
+Type: ARCHITECTURE
+Status: DONE
+
+### انجام شد
+- TASK-02-018 — Internal Contracts/API Boundaries تکمیل شد.
+- application DTO/command/result و route boundary مشخص شد.
+
+### Next
+TASK-02-019 — Error/Edge-case Strategy
+
+## ACT-036 — 2026-10-02
+Type: ARCHITECTURE
+Status: DONE
+
+### انجام شد
+- TASK-02-017 — Entity Relationship Map تکمیل شد.
+- relationها ID-based و data privacy boundaryها ثبت شدند.
+
+### Next
+TASK-02-018 — Internal Contracts/API Boundaries
+
+## ACT-035 — 2026-10-02
+Type: ARCHITECTURE
+Status: DONE
+
+### انجام شد
+- TASK-02-016 — Source/Validation Schema تکمیل شد.
+- Source، verification، confidence و editorial status به contracts متصل شدند.
+
+### Next
+TASK-02-017 — Entity Relationship Map
+
+## ACT-034 — 2026-10-02
+Type: ARCHITECTURE
+Status: DONE
+
+### انجام شد
+- TASK-02-015 — Timeline/Period Schema تکمیل شد.
+- Historical Period و timeline ordering با uncertainty تعریف شد.
+
+### Next
+TASK-02-016 — Source/Validation Schema
+
+## ACT-033 — 2026-10-02
+Type: ARCHITECTURE
+Status: DONE
+
+### انجام شد
+- TASK-02-014 — Personal Event Schema تکمیل شد.
+- ownership، recurrence و Share Card relation مشخص شد.
+
+### Next
+TASK-02-015 — Timeline/Period Schema
+
+## ACT-032 — 2026-10-02
+Type: ARCHITECTURE
+Status: DONE
+
+### انجام شد
+- TASK-02-013 — Memory Schema تکمیل شد.
+- privacy، ownership و relations مشخص شدند.
+
+### Next
+TASK-02-014 — Personal Event Schema
+
+## ACT-031 — 2026-10-02
+Type: ARCHITECTURE
+Status: DONE
+
+### انجام شد
+- TASK-02-012 — Person Schema تکمیل شد.
+
+### Next
+TASK-02-013 — Memory Schema
+
+## ACT-030 — 2026-10-02
+Type: ARCHITECTURE
+Status: DONE
+
+### انجام شد
+- TASK-02-011 — Event Schema تکمیل شد.
+
+### Next
+TASK-02-012 — Person Schema
+
+## ACT-029 — 2026-10-02
+Type: ARCHITECTURE
+Status: DONE
+
+### انجام شد
+- TASK-02-010 — Media/Content Boundary تکمیل شد.
+
+### Next
+TASK-02-011 — Event Schema
+
+## ACT-028 — 2026-10-02
+Type: ARCHITECTURE
+Status: DONE
+
+### انجام شد
+- TASK-02-009 — Localization Boundary تکمیل شد.
+
+### Next
+TASK-02-010 — Media/Content Boundary
+
+## ACT-027 — 2026-10-02
+Type: ARCHITECTURE
+Status: DONE
+
+### انجام شد
+- TASK-02-008 — Presentation/UI Boundary تکمیل شد.
+
+### Next
+TASK-02-009 — Localization Boundary
+
+## ACT-026 — 2026-10-02
+Type: ARCHITECTURE
+Status: DONE
+
+### انجام شد
+- TASK-02-007 — Application/Use-case Layer تکمیل شد.
+
+### Next
+TASK-02-008 — Presentation/UI Boundary
+
+## ACT-025 — 2026-10-02
+Type: ARCHITECTURE
+Status: DONE
+
+### انجام شد
+- TASK-02-006 — Domain/Data Layer تکمیل شد.
+
+### Next
+TASK-02-007 — Application/Use-case Layer
+
+## ACT-024 — 2026-10-02
+Type: ARCHITECTURE
+Status: DONE
+
+### انجام شد
+- TASK-02-005 — Calendar Engine Boundary تکمیل شد.
+- Calendar Engine به‌عنوان تنها مرجع منطق تاریخ تثبیت شد.
+
+### Next
+TASK-02-006 — Domain/Data Layer
+
 ## ACT-023 — 2026-10-02
 Type: ARCHITECTURE-FOUNDATION
 Status: DONE
