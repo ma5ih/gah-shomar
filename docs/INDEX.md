@@ -1,7 +1,7 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.1.0
+Index version: 2.2.0
 Last update: 2026-10-02
 Current phase: PHASE-02 — Architecture & Technical Foundation
 
@@ -32,6 +32,12 @@ Current phase: PHASE-02 — Architecture & Technical Foundation
 | DOC-021 | REPOSITORY-ARCHITECTURE.md | APPROVED | معماری Repository و Directory |
 | DOC-022 | ENV-CONFIG.md | APPROVED | Environment و Configuration Strategy |
 | DOC-023 | DEPENDENCY-POLICY.md | APPROVED | سیاست Dependency |
+| DOC-024 | ARCHITECTURE-BOUNDARIES.md | APPROVED | Boundaryهای معماری |
+| DOC-025 | DATA-CONTRACTS.md | APPROVED | قراردادهای داده |
+| DOC-026 | QUALITY-ARCHITECTURE.md | APPROVED | Error/Testing/Validation |
+| DOC-027 | ARCHITECTURE-REVIEW.md | APPROVED | Review معماری |
+| DOC-028 | AUTH-ARCHITECTURE.md | APPROVED | Authentication و Session |
+| DOC-029 | SHARE-CARD-ARCHITECTURE.md | APPROVED | معماری Personal Share Card |
 
 ## شناسه‌گذاری
 - PHASE-XX — مرحله
@@ -45,8 +51,8 @@ Current phase: PHASE-02 — Architecture & Technical Foundation
 ## وضعیت
 PHASE-00: DONE
 PHASE-01: DONE
-PHASE-02: IN_PROGRESS
-PHASE-03: TODO
+PHASE-02: DONE
+PHASE-03: IN_PROGRESS
 PHASE-04: TODO
 PHASE-05: TODO
 PHASE-06: TODO
@@ -56,10 +62,10 @@ PHASE-09: TODO
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-023 — تعریف Dependency Policy.
+ACT-044 — معماری Personal Share Card.
 
 ## اقدام بعدی
-TASK-02-005 — Calendar Engine Boundary.
+TASK-03-001 — Imperial Date Type.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.
