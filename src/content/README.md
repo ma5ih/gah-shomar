@@ -4,9 +4,9 @@ Public historical content is structured data and must pass validation before pub
 
 ## Current MVP dataset
 
-The repository currently contains 7 source-backed historical events, 5 public people, 2 historical periods and 6 reference sources.
+The repository currently contains 0 published historical events, 5 public people, 2 historical periods and 6 reference sources.
 
-The dataset is an MVP editorial seed, not a comprehensive history database.
+The event dataset is intentionally empty while historical events are reviewed month by month and approved for publication. The people, periods and sources are structural content only and must not be treated as event approval.
 
 ## Editorial rules
 
