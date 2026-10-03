@@ -1,4 +1,4 @@
-/* Theme A — Flat Geometric | TASK-07-001 */
+/* Theme A — Flat Geometric | TASK-07-002 */
 html[data-theme="flat-geometric"]{--fg-bg:#efe9dc;--fg-surface:#f7f2e7;--fg-surface-strong:#fbf7ed;--fg-ink:#24322c;--fg-muted:#6b7069;--fg-line:rgba(36,50,44,.16);--fg-accent:#8f5b3b;--fg-accent-soft:#e9d5bd;--fg-green:#687f68;--fg-blue:#657b87;--fg-shadow:0 12px 28px rgba(36,50,44,.08);--fg-space-1:4px;--fg-space-2:8px;--fg-space-3:12px;--fg-space-4:16px;--fg-space-5:20px;--fg-space-6:24px;--fg-space-7:32px}
 html[data-theme="flat-geometric"],html[data-theme="flat-geometric"] body{background:var(--fg-bg)}
 html[data-theme="flat-geometric"] body{color:var(--fg-ink)}
@@ -20,7 +20,7 @@ html[data-theme="flat-geometric"] .hero-panel:first-child::before{inset:auto aut
 html[data-theme="flat-geometric"] .hero-panel:first-child::after{inset:auto 0 0 auto;width:58%;height:23%;background:var(--fg-land-b,#c3b17b);clip-path:polygon(0 48%,23% 16%,44% 36%,67% 0,100% 30%,100% 100%,0 100%)}
 html[data-theme="flat-geometric"] .hero-panel:first-child>*{position:relative;z-index:1}
 html[data-theme="flat-geometric"] .overline,html[data-theme="flat-geometric"] .eyebrow{color:var(--fg-muted)}
-html[data-theme="flat-geometric"] .hero-title{color:var(--fg-ink);margin-top:10px;margin-bottom:10px;letter-spacing:-.065em}
+html[data-theme="flat-geometric"] .hero-title{color:var(--fg-ink);margin-top:var(--fg-space-3);margin-bottom:var(--fg-space-3);letter-spacing:-.065em}
 html[data-theme="flat-geometric"] .hero-subtitle{color:var(--fg-muted);line-height:1.75}
 html[data-theme="flat-geometric"] .context-card{background:var(--fg-surface-strong);justify-content:flex-start;gap:var(--fg-space-6);padding:var(--fg-space-6)}
 html[data-theme="flat-geometric"] .context-value{color:var(--fg-ink)}
@@ -59,7 +59,7 @@ html[data-theme="flat-geometric"] .auth-card{background:var(--fg-surface);border
 html[data-theme="flat-geometric"] .notice{background:var(--fg-accent-soft);color:#65452f;border-radius:10px}
 html[data-theme="flat-geometric"] .empty{background:var(--fg-surface);border:1px dashed rgba(36,50,44,.2);border-radius:12px;padding:var(--fg-space-7)}
 html[data-theme="flat-geometric"] .sheet-backdrop{background:rgba(36,50,44,.34)}
-html[data-theme="flat-geometric"] .bottom-sheet{background:var(--fg-surface-strong);border-radius:18px 18px 0 0;box-shadow:0 -12px 28px rgba(36,50,44,.12);padding:var(--fg-space-3) var(--fg-space-6) 28px}
+html[data-theme="flat-geometric"] .bottom-sheet{background:var(--fg-surface-strong);border-radius:18px 18px 0 0;box-shadow:0 -12px 28px rgba(36,50,44,.12);padding:var(--fg-space-3) var(--fg-space-6) var(--fg-space-6)}
 html[data-theme="flat-geometric"] .sheet-handle{background:#aeb7ab}
 html[data-theme="flat-geometric"] .bottom-nav{background:var(--fg-surface-strong);border-color:var(--fg-line);border-radius:16px;backdrop-filter:none;box-shadow:0 12px 28px rgba(36,50,44,.12)}
 html[data-theme="flat-geometric"] .bottom-link{color:var(--fg-muted);border-radius:10px}
@@ -76,7 +76,7 @@ html[data-theme="flat-geometric"] .hero[data-season="autumn"]{--fg-accent:#a46f4
 html[data-theme="flat-geometric"] .hero[data-season="winter"]{--fg-accent:#6e8790}
 html[data-theme="flat-geometric"] .hero[data-season] .hero-panel:first-child{border-bottom:4px solid var(--fg-accent)}
 html[data-theme="flat-geometric"] a:focus-visible,html[data-theme="flat-geometric"] button:focus-visible,html[data-theme="flat-geometric"] input:focus-visible,html[data-theme="flat-geometric"] textarea:focus-visible,html[data-theme="flat-geometric"] select:focus-visible{outline:3px solid rgba(143,91,59,.35);outline-offset:3px}
-@media (max-width:760px){html[data-theme="flat-geometric"] .app-shell{padding-top:10px}html[data-theme="flat-geometric"] .topbar{padding-bottom:12px}html[data-theme="flat-geometric"] .hero-panel{padding:22px;border-radius:12px}html[data-theme="flat-geometric"] .hero-panel:first-child{min-height:330px}html[data-theme="flat-geometric"] .calendar-surface{border-radius:12px}html[data-theme="flat-geometric"] .day-cell{min-height:58px}html[data-theme="flat-geometric"] .bottom-nav{border-radius:14px}}
+@media (max-width:760px){html[data-theme="flat-geometric"] .app-shell{padding-top:var(--fg-space-2)}html[data-theme="flat-geometric"] .topbar{padding-bottom:var(--fg-space-3)}html[data-theme="flat-geometric"] .hero-panel{padding:var(--fg-space-6);border-radius:12px}html[data-theme="flat-geometric"] .hero-panel:first-child{min-height:330px}html[data-theme="flat-geometric"] .calendar-surface{border-radius:12px}html[data-theme="flat-geometric"] .day-cell{min-height:58px}html[data-theme="flat-geometric"] .bottom-nav{border-radius:14px}}
 @media (prefers-reduced-motion:reduce){html[data-theme="flat-geometric"] *,html[data-theme="flat-geometric"] *::before,html[data-theme="flat-geometric"] *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 /* TASK-07-002 — Spacing/Margin Consistency */
 html[data-theme="flat-geometric"] .stack{gap:var(--fg-space-3)}
