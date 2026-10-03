@@ -22,5 +22,3 @@ describe.skipIf(!databaseUrl)("personal event persistence",()=>{
   expect((await personalRepository.listPeople(other.id)).some(item=>item.id===person.id)).toBe(false);
  });
 });
- });
-});
