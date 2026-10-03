@@ -20,4 +20,11 @@ describe("PWA baseline",()=>{
   expect(source).toContain("localStorage");
   expect(source).toContain("prompt()");
  });
+ it("pre-caches the install and offline shell assets",()=>{
+  const source=readFileSync(resolve(process.cwd(),"public/sw.js"),"utf8");
+  expect(source).toContain('"/offline"');
+  expect(source).toContain('"/manifest.webmanifest"');
+  expect(source).toContain('"/icon-192.png"');
+  expect(source).toContain('"/icon-512.png"');
+ });
 });
