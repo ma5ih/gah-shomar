@@ -64,7 +64,7 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 - TASK-02-024 — Authentication & Session Architecture — DONE
 - TASK-02-025 — Share Card Architecture — DONE
 
-# PHASE-03 — Core Backend / Domain / Calendar Engine — IN_PROGRESS
+# PHASE-03 — Core Backend / Domain / Calendar Engine — DONE
 
 ## 3A — Calendar Engine
 - TASK-03-001 — Imperial Date Type — DONE
@@ -73,7 +73,7 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 - TASK-03-004 — Leap-Year Rules — DONE
 - TASK-03-005 — Now/Today Calculation — DONE
 - TASK-03-006 — Gregorian ↔ Imperial Conversion — DONE
-- TASK-03-007 — Historical Date Conversion — IN_PROGRESS
+- TASK-03-007 — Historical Date Conversion — DEFERRED
   - Gregorian exact: DONE
   - Solar Hijri exact: DONE
   - Other historical calendars/eras: TODO / require dedicated converter + policy
@@ -118,53 +118,53 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 ### خروجی مورد انتظار PHASE-03
 Calendar Engine + Domain foundation + test suite + CI validation قابل اعتماد و مستقل از UI.
 
-# PHASE-04 — Application Backend / Use Cases — IN_PROGRESS
-- TASK-04-001 — Today Query/State — IN_PROGRESS
-- TASK-04-002 — Today's Occasions — IN_PROGRESS
-- TASK-04-003 — Today's Historical Events — IN_PROGRESS
-- TASK-04-004 — Today's Personal Events — IN_PROGRESS
-- TASK-04-005 — Today's Memories — IN_PROGRESS
-- TASK-04-006 — Time/Season Context — IN_PROGRESS
-- TASK-04-007 — Month Query — IN_PROGRESS
-- TASK-04-008 — Day Detail Query — IN_PROGRESS
-- TASK-04-009 — Event Markers — IN_PROGRESS
-- TASK-04-010 — Month Navigation — IN_PROGRESS
-- TASK-04-011 — Event Retrieval — IN_PROGRESS
-- TASK-04-012 — Event Detail — IN_PROGRESS
-- TASK-04-013 — Important Events Selection — IN_PROGRESS
-- TASK-04-014 — Timeline Queries — IN_PROGRESS
-- TASK-04-015 — Person Queries — IN_PROGRESS
-- TASK-04-016 — Related Entities — IN_PROGRESS
-- TASK-04-017 — Personal Event Creation/Editing — IN_PROGRESS
-- TASK-04-018 — Personal Person — IN_PROGRESS
-- TASK-04-019 — Memory Creation/Editing — IN_PROGRESS
-- TASK-04-020 — Recurrence — IN_PROGRESS
-- TASK-04-021 — Search Index/Query — IN_PROGRESS
-- TASK-04-022 — Search Results by Entity — IN_PROGRESS
-- TASK-04-023 — Persian/English Data Contracts — IN_PROGRESS
-- TASK-04-024 — RTL/LTR Direction State — IN_PROGRESS
-- TASK-04-025 — Register/Login/Session Use Cases — IN_PROGRESS
-- TASK-04-026 — Personal Event Share Card Data Use Case — IN_PROGRESS
+# PHASE-04 — Application Backend / Use Cases — DONE
+- TASK-04-001 — Today Query/State — DONE
+- TASK-04-002 — Today's Occasions — DONE
+- TASK-04-003 — Today's Historical Events — DONE
+- TASK-04-004 — Today's Personal Events — DONE
+- TASK-04-005 — Today's Memories — DONE
+- TASK-04-006 — Time/Season Context — DONE
+- TASK-04-007 — Month Query — DONE
+- TASK-04-008 — Day Detail Query — DONE
+- TASK-04-009 — Event Markers — DONE
+- TASK-04-010 — Month Navigation — DONE
+- TASK-04-011 — Event Retrieval — DONE
+- TASK-04-012 — Event Detail — DONE
+- TASK-04-013 — Important Events Selection — DONE
+- TASK-04-014 — Timeline Queries — DONE
+- TASK-04-015 — Person Queries — DONE
+- TASK-04-016 — Related Entities — DONE
+- TASK-04-017 — Personal Event Creation/Editing — DONE
+- TASK-04-018 — Personal Person — DONE
+- TASK-04-019 — Memory Creation/Editing — DONE
+- TASK-04-020 — Recurrence — DONE
+- TASK-04-021 — Search Index/Query — DONE
+- TASK-04-022 — Search Results by Entity — DONE
+- TASK-04-023 — Persian/English Data Contracts — DONE
+- TASK-04-024 — RTL/LTR Direction State — DONE
+- TASK-04-025 — Register/Login/Session Use Cases — DONE
+- TASK-04-026 — Personal Event Share Card Data Use Case — DONE
 
-# PHASE-05 — Frontend Architecture & Design System — IN_PROGRESS
-- TASK-05-001 — App Shell — IN_PROGRESS
-- TASK-05-002 — Routing/Navigation Architecture — IN_PROGRESS
-- TASK-05-003 — State Management Strategy — IN_PROGRESS
-- TASK-05-004 — Data Fetching/Domain Integration — IN_PROGRESS
-- TASK-05-005 — Error/Loading/Empty States — IN_PROGRESS
-- TASK-05-006 — Typography — IN_PROGRESS
-- TASK-05-007 — Spacing/Grid — IN_PROGRESS
-- TASK-05-008 — Color Tokens — IN_PROGRESS
-- TASK-05-009 — Iconography — IN_PROGRESS
-- TASK-05-010 — Buttons/Controls — IN_PROGRESS
-- TASK-05-011 — Sheets/Dialogs — IN_PROGRESS
-- TASK-05-012 — Cards/Content Surfaces — IN_PROGRESS
-- TASK-05-013 — Mobile Touch Model — IN_PROGRESS
-- TASK-05-014 — Swipe Patterns — IN_PROGRESS
-- TASK-05-015 — Motion/Transitions — IN_PROGRESS
-- TASK-05-016 — Accessibility Foundations — IN_PROGRESS
-- TASK-05-017 — Responsive Rules — IN_PROGRESS
-- TASK-05-018 — RTL/LTR Mirroring — IN_PROGRESS
+# PHASE-05 — Frontend Architecture & Design System — DONE
+- TASK-05-001 — App Shell — DONE
+- TASK-05-002 — Routing/Navigation Architecture — DONE
+- TASK-05-003 — State Management Strategy — DONE
+- TASK-05-004 — Data Fetching/Domain Integration — DONE
+- TASK-05-005 — Error/Loading/Empty States — DONE
+- TASK-05-006 — Typography — DONE
+- TASK-05-007 — Spacing/Grid — DONE
+- TASK-05-008 — Color Tokens — DONE
+- TASK-05-009 — Iconography — DONE
+- TASK-05-010 — Buttons/Controls — DONE
+- TASK-05-011 — Sheets/Dialogs — DONE
+- TASK-05-012 — Cards/Content Surfaces — DONE
+- TASK-05-013 — Mobile Touch Model — DONE
+- TASK-05-014 — Swipe Patterns — DONE
+- TASK-05-015 — Motion/Transitions — DONE
+- TASK-05-016 — Accessibility Foundations — DONE
+- TASK-05-017 — Responsive Rules — DONE
+- TASK-05-018 — RTL/LTR Mirroring — DONE
 
 # PHASE-06 — Core Frontend Product Experience — IN_PROGRESS
 - TASK-06-001 — Today Page — IN_PROGRESS
@@ -192,7 +192,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-06-023 — Authentication UI — IN_PROGRESS
 - TASK-06-024 — Personal Event Share Card Experience — IN_PROGRESS
 
-# PHASE-07 — Visual Polish, Time/Season & App-like Experience — TODO
+# PHASE-07 — Visual Polish, Time/Season & App-like Experience — IN_PROGRESS
 - TASK-07-001 — Final Visual Hierarchy — TODO
 - TASK-07-002 — Spacing/Margin Consistency — TODO
 - TASK-07-003 — Typography Consistency — TODO
@@ -204,31 +204,31 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-07-009 — Night State — TODO
 - TASK-07-010 — Seasonal Variations — TODO
 - TASK-07-011 — Motion Polish — TODO
-- TASK-07-012 — PWA Manifest — TODO
-- TASK-07-013 — Install Experience — TODO
-- TASK-07-014 — Offline Baseline — TODO
-- TASK-07-015 — Mobile Safe Areas — TODO
-- TASK-07-016 — Native-feeling Navigation — TODO
+- TASK-07-012 — PWA Manifest — DONE
+- TASK-07-013 — Install Experience — IN_PROGRESS
+- TASK-07-014 — Offline Baseline — DONE
+- TASK-07-015 — Mobile Safe Areas — DONE
+- TASK-07-016 — Native-feeling Navigation — DONE
 
-# PHASE-08 — Content, Editorial & Historical Dataset — TODO
-- TASK-08-001 — Content Taxonomy — TODO
-- TASK-08-002 — Historical Source Registry — TODO
+# PHASE-08 — Content, Editorial & Historical Dataset — IN_PROGRESS
+- TASK-08-001 — Content Taxonomy — DONE
+- TASK-08-002 — Historical Source Registry — DONE
 - TASK-08-003 — Event Research Workflow — TODO
 - TASK-08-004 — Monthly Occasion Review — TODO
 - TASK-08-005 — Important Event Editorial Selection — TODO
 - TASK-08-006 — Person Dataset — TODO
 - TASK-08-007 — Timeline Period Dataset — TODO
-- TASK-08-008 — Historical Date Conversions — TODO
+- TASK-08-008 — Historical Date Conversions — DONE
 - TASK-08-009 — Media/Image Metadata — TODO
-- TASK-08-010 — Initial MVP Dataset — TODO
+- TASK-08-010 — Initial MVP Dataset — DONE
 - TASK-08-011 — Content QA — TODO
 
-# PHASE-09 — Integration & Full QA — TODO
-- TASK-09-001 — Unit Test Suite — TODO
-- TASK-09-002 — Integration Tests — TODO
-- TASK-09-003 — Calendar Regression Tests — TODO
-- TASK-09-004 — Data Validation Tests — TODO
-- TASK-09-005 — Search Tests — TODO
+# PHASE-09 — Integration & Full QA — IN_PROGRESS
+- TASK-09-001 — Unit Test Suite — DONE
+- TASK-09-002 — Integration Tests — DONE
+- TASK-09-003 — Calendar Regression Tests — DONE
+- TASK-09-004 — Data Validation Tests — DONE
+- TASK-09-005 — Search Tests — DONE
 - TASK-09-006 — Today Acceptance Test — TODO
 - TASK-09-007 — Calendar Acceptance Test — TODO
 - TASK-09-008 — Event Acceptance Test — TODO
@@ -242,7 +242,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-09-016 — Performance QA — TODO
 - TASK-09-017 — PWA QA — TODO
 - TASK-09-018 — Visual Consistency QA — TODO
-- TASK-09-019 — Critical Bug Fixes — TODO
+- TASK-09-019 — Critical Bug Fixes — IN_PROGRESS
 - TASK-09-020 — Release Blocker Review — TODO
 - TASK-09-021 — Final Product Review — TODO
 
@@ -258,13 +258,10 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-10-009 — Handoff/Continuation Guide — TODO
 - TASK-10-010 — Post-release Backlog — TODO
 
-# مسیر ادامه قطعی
+# مسیر ادامه فعلی
 
-**CURRENT:** PHASE-03 — IN_PROGRESS
+**CURRENT:** PHASE-09 — IN_PROGRESS
 
-**NEXT:** TASK-03-023 — Calendar Unit Tests / CI Validation
+**NEXT:** تکمیل runtime/browser acceptance، سپس release-blocker review و PHASE-10.
 
-پس از آن:
-TASK-03-024 → TASK-03-025 → TASK-03-026 → TASK-03-027 → پایان PHASE-03 → PHASE-04.
-
-قاعده: تا وقتی validation فنی PHASE-03 بسته نشده، وارد polish یا frontend product build نمی‌شویم.
+قاعده: Phase فقط با implementation + tests + validation واقعی به DONE می‌رسد.
