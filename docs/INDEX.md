@@ -65,10 +65,10 @@ PHASE-09: IN_PROGRESS
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-198 — Documentation HEAD metadata correction.
+ACT-199 — post-audit persistence and server-boundary correction.
 
 ## اقدام بعدی
-CI #281 PASS → PHASE-06 runtime/browser acceptance → PHASE-07 polish.
+ACT-199 CI revalidation → PHASE-06 runtime/browser acceptance → PHASE-07 polish.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.

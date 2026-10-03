@@ -25,7 +25,7 @@ Last updated: 2026-10-02
 
 - Next.js / React / TypeScript
 - PostgreSQL / Drizzle
-- Tailwind CSS
+- current global CSS/design-token layer
 - test tooling که در TASK-02-020 انتخاب می‌شود
 
 Auth/PWA/Search-specific packages هنوز baseline اجباری نیستند.

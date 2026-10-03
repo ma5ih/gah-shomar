@@ -1,3 +1,25 @@
+## ACT-199 — 2026-10-04
+Type: POST-AUDIT-CORRECTION
+Status: DONE
+
+### Implementation
+- Personal Event create now preserves optional `notes` and `personalPersonId`.
+- Day Detail now receives repository binding through `src/application/server.ts`.
+- Personal Event browser E2E verifies persisted note, linked Personal Person and yearly recurrence.
+
+### Contract synchronization
+- Current checkpoint advanced to ACT-199; TASK-09-019 remains DONE.
+- Stack/dependency docs now match the actual CSS-based design-token implementation.
+- Search docs separate the future month/date parser from current entity/category search.
+- Auth docs record current `scrypt` implementation and track CSRF/rate limiting as release hardening.
+- Roadmap assigns configuration validation to TASK-10-001 and security/reproducibility review to TASK-09-020.
+
+### Validation
+- Pre-change latest fully green workflow: #283.
+- Post-change CI revalidation is required before ACT-199 is considered fully verified.
+
+Next fresh ACT ID: ACT-200.
+
 ## ACT-198 — 2026-10-04
 Type: DOCUMENTATION-CORRECTION
 Status: DONE

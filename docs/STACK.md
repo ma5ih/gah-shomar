@@ -14,7 +14,7 @@ Stack پایه پروژه:
 - TypeScript با strict mode
 - PostgreSQL
 - Drizzle ORM
-- Tailwind CSS برای styling/design tokens
+- CSS custom properties و global CSS برای styling/design tokens فعلی
 - Node.js LTS به‌عنوان runtime baseline
 - npm به‌عنوان package manager baseline
 
@@ -28,13 +28,13 @@ Drizzle + PostgreSQL برای data layer انتخاب شد؛ Drizzle اتصال 
 - TypeScript: قرارداد صریح و testable برای domain و Calendar Engine.
 - PostgreSQL: مناسب relation، ownership، privacy و indexing.
 - Drizzle: type-safe و migration-oriented و نزدیک به SQL.
-- Tailwind: مناسب mobile-first و design tokens؛ جزئیات visual system در PHASE-05.
+- CSS design-token layer: پیاده‌سازی فعلی mobile-first و design tokens؛ جزئیات visual system در PHASE-05.
 
 ## Deferred
 
 فعلاً این موارد در Taskهای بعدی نهایی می‌شوند:
-- authentication/session strategy
-- PWA implementation/package
+- external auth provider strategy
+- PWA advanced packaging beyond the current manifest/service-worker baseline
 - external search engine
 - object storage provider
 - hosting/deployment provider

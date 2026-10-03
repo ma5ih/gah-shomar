@@ -16,8 +16,8 @@ MVP:
 - Event
 - Person
 - Historical Period
-- Public occasion/category metadata
-- Month/date references
+- Public occasion/category metadata (through Event category/tags)
+- Month/date references as a future parser extension
 - Personal Event
 - Memory
 
@@ -65,7 +65,7 @@ Search نباید با تغییر query یا indexing، داده خصوصی را
 
 ## 7. Language
 
-Search باید Persian و English را پشتیبانی کند و در صورت وجود localized aliases امکان match داشته باشد.
+Search باید Persian و English را پشتیبانی کند و در صورت وجود localized aliases امکان match داشته باشد. ماه/تاریخ در این checkpoint parser مستقل ندارند و به extension اختصاصی آینده موکول شده‌اند.
 
 RTL/LTR presentation از query engine جداست.
 

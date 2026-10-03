@@ -93,10 +93,10 @@ PHASE-08 IN_PROGRESS
 PHASE-09 IN_PROGRESS
 PHASE-10 TODO
 
-Implementation baseline: `4e06741359d86cd2194b5cacbcb4c2d9e81c4fd1`
-Current HEAD: `4e06741359d86cd2194b5cacbcb4c2d9e81c4fd1`
-Latest code checkpoint CI: #246 — IN_PROGRESS at browser setup when this checkpoint was recorded.
-TASK-09-019 — Critical Bug Fixes remains IN_PROGRESS; next fresh ACT: ACT-189.
+Current implementation checkpoint: **ACT-199 — post-audit persistence and server-boundary correction**.
+Latest verified implementation checkpoint before this action: `1f28a0306c446beb89f279a69a382814090d4e7a`.
+Latest fully green workflow before this action: **#283 — PASS**.
+`TASK-09-019` is DONE. The product remains in PHASE-06 with runtime/browser acceptance open.
 
 ## 9. اصل ادامه پروژه
 GitHub مرجع نهایی است. فرد یا اکانت جدید نباید برای فهم وضعیت پروژه به چت قبلی نیاز داشته باشد.

@@ -193,7 +193,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-06-013 — Person Page — IN_PROGRESS
 - TASK-06-014 — Related Content Navigation — IN_PROGRESS
 - TASK-06-015 — Personal Events UI — IN_PROGRESS
-  - authenticated create flow now has E2E coverage and persistence verification; acceptance remains open
+  - authenticated create flow now has E2E coverage and persistence verification; create also persists optional notes and Personal Person linkage; acceptance remains open
 - TASK-06-016 — Personal Person UI — IN_PROGRESS
   - people are listed and selectable from Personal Event forms; ownership boundary is regression-tested; full UI acceptance remains open
 - TASK-06-017 — Memories UI — IN_PROGRESS
@@ -201,6 +201,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-06-018 — Recurrence UI — IN_PROGRESS
   - yearly recurrence remains wired through Personal Event creation/update; full browser acceptance remains open
 - TASK-06-019 — Search UI — IN_PROGRESS
+  - lightweight category/alias matching is supported; dedicated month/date parsing remains a future extension
 - TASK-06-020 — Search Result Navigation — IN_PROGRESS
 - TASK-06-021 — Persian Experience — IN_PROGRESS
   - Personal form labels/types are now localized; broader RTL/product acceptance remains open
@@ -268,6 +269,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - CI #281 validates lint, typecheck, unit/integration, production build and browser smoke on the corrected HEAD.
   - The missing package-lock is tracked as a release reproducibility concern, not an unresolved application bug.
 - TASK-09-020 — Release Blocker Review — TODO
+  - includes final security hardening evidence (CSRF/rate limiting) and release reproducibility review
 - TASK-09-021 — Final Product Review — TODO
 - TASK-09-022 — E2E Dataset/Editorial Alignment — DONE
   - browser smoke follows the intentionally empty historical-event seed
@@ -275,6 +277,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 
 # PHASE-10 — Release & Handoff — TODO
 - TASK-10-001 — Production Configuration — TODO
+  - includes central runtime configuration validation and production environment checks
 - TASK-10-002 — Production Build — TODO
 - TASK-10-003 — Deployment Validation — TODO
 - TASK-10-004 — PWA Production Validation — TODO

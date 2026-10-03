@@ -1,8 +1,8 @@
 # PHASE-06 IMPLEMENTATION NOTE
 
 Status: IN_PROGRESS
-Last updated: 2026-10-04 — ACT-188
-Implementation baseline: `4e06741359d86cd2194b5cacbcb4c2d9e81c4fd1`
+Last updated: 2026-10-04 — ACT-199
+Current checkpoint: post-audit persistence and server-boundary correction; CI revalidation follows this commit.
 
 ## Implemented product surfaces
 - Today and current date hierarchy
@@ -15,6 +15,7 @@ Implementation baseline: `4e06741359d86cd2194b5cacbcb4c2d9e81c4fd1`
 - Authentication
 - Personal Events / Personal Person / Memories
 - Authenticated Personal Event create/persistence/logout browser flow
+- Personal Event create persists optional notes and Personal Person linkage
 - Personal Person listing + event linkage
 - Personal Person ownership-boundary regression
 - Yearly recurrence
@@ -55,7 +56,7 @@ Current implementation:
 - HIGH implementation findings are recorded in `docs/ARCHITECTURE-IMPLEMENTATION-AUDIT-2026-10-04.md`.
 - HIGH-02 and HIGH-03 were corrected and validated by CI #244.
 - HIGH-01 presentation/data boundary was corrected through server composition and validated by CI #246 PASS.
-- TASK-09-019 remains IN_PROGRESS for the remaining medium/low quality gaps.
+- TASK-09-019 is DONE; remaining work is runtime/product acceptance plus release reproducibility/security hardening.
 
 ## Current acceptance gap
 - E2E smoke is aligned with the intentionally empty event seed and is green in CI.

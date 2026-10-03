@@ -1,13 +1,13 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
 Last updated: 2026-10-04
-Current repository HEAD: `f206ef0040271acd36ca1341d3bdbb1688b6c4a4`
-Last implementation HEAD: `1f28a0306c446beb89f279a69a382814090d4e7a`
+Current correction checkpoint: **ACT-199 — post-audit persistence and server-boundary correction**
+Latest implementation checkpoint before this action: `1f28a0306c446beb89f279a69a382814090d4e7a`
 Latest CI: **#281 — PASS**
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: **ACT-199**
+Next fresh ACT ID: **ACT-200**
 
 ## شمارش رسمی ریزتسک‌ها
 

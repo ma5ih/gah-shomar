@@ -135,10 +135,10 @@ migration → typecheck → unit/integration tests → production build → Chro
 - ACT-187 checkpoint: CI #244 PASS for migration, typecheck, unit/integration, production build and browser smoke.
 ACT-188 checkpoint: CI #246 PASS across migration, typecheck, unit/integration, build and browser smoke.
 
-آخرین CI برای HEAD فعلی:
-- run #199
-- SHA: d531e0a1bb3e4cbf287ad2ce25c72bf0cfa4d9e3
-- status: PASS
+آخرین implementation validation قبل از ACT-199:
+- CI #281: PASS
+- workflow runs #282 و #283: PASS documentation checkpoints
+- ACT-199 adds the post-audit persistence fix and remaining Day server-boundary correction; CI revalidation is required.
 
 ## 8. مسیر ادامه، به ترتیب
 
@@ -198,7 +198,7 @@ production configuration، deployment validation، production PWA check، final 
 
 قاعدهٔ جدید:
 - از checkpoint بعدی فقط شناسه‌های جدید استفاده شود.
-- شناسهٔ بعدی: ACT-189
+- شناسهٔ بعدی: ACT-200
 - هیچ ACT قدیمی دوباره استفاده نشود.
 - برای ارجاع به collisionهای قدیمی، از توضیح توصیفی و SHA commit استفاده شود.
 
@@ -218,10 +218,8 @@ production configuration، deployment validation، production PWA check، final 
 
 ## 11. آخرین نقطهٔ شروع عملی
 
-اولین کار بعد از این audit:
-**TASK-09-019 — Critical Bug Fixes identified in ACT-186.**
-
-پس از آن، runtime/browser acceptance PHASE-06 ادامه پیدا می‌کند.
+ACT-186 correction gate is already closed.
+**Next:** ACT-199 CI revalidation → PHASE-06 runtime/browser acceptance → PHASE-06 closure.
 
 بعد از سبزشدن CI و ثبت acceptance واقعی، تازه به visual polish و سپس editorial month-by-month content بروید.
 
@@ -245,4 +243,4 @@ ACT-160 corrected a stale ACT counter in this handoff. No product/code behavior 
 - All ACT-186 implementation findings are closed and CI #281 is fully green.
 - Remaining work is product/runtime acceptance in PHASE-06, followed by visual polish, editorial dataset work, final QA and release.
 - Release reproducibility still requires a committed `package-lock.json`; it has not been fabricated without a reliable npm/package-manager environment.
-- Next fresh ACT ID: ACT-199.
+- Next fresh ACT ID: ACT-200.

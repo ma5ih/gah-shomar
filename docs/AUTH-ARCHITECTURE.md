@@ -39,7 +39,7 @@ Password:
 
 ## Password Security
 
-Password hash با الگوریتم adaptive مناسب، ترجیحاً Argon2id، ذخیره می‌شود. package دقیق در implementation dependency review تثبیت خواهد شد.
+Password hash در implementation فعلی با `scrypt` به‌صورت salted/adaptive ذخیره می‌شود. تغییر به Argon2id فقط با تصمیم امنیتی/وابستگی مستقل انجام می‌شود.
 
 ## Session
 
@@ -65,7 +65,7 @@ Public content بدون login قابل مشاهده است.
 
 ## Abuse Protection
 
-State-changing requests باید CSRF-safe باشند و login/register rate limiting در implementation لحاظ شود.
+State-changing requests باید CSRF-safe باشند و login/register rate limiting برای release hardening پیگیری می‌شود؛ evidence نهایی در `TASK-09-020` بررسی می‌شود.
 
 ## Status
 
