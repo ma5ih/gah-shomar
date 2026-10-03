@@ -1,0 +1,28 @@
+import type { PersonalEvent } from "../domain/personal/types";
+import { AuthorizationError } from "../shared/errors";
+import { weekdayOfImperialDate, imperialToGregorian } from "../domain/calendar";
+
+export type PersonalShareCardDto = {
+  readonly eventId: string;
+  readonly type: PersonalEvent["type"];
+  readonly title: string;
+  readonly imperialDate: PersonalEvent["date"];
+  readonly weekday: string;
+  readonly gregorianDate: { year: number; month: number; day: number };
+  readonly theme: "birthday" | "anniversary" | "custom";
+  readonly notes?: string;
+};
+
+export function buildShareCardDto(userId: string, event: PersonalEvent): PersonalShareCardDto {
+  if (!userId || event.ownerUserId !== userId) throw new AuthorizationError();
+  return {
+    eventId: event.id,
+    type: event.type,
+    title: event.title,
+    imperialDate: event.date,
+    weekday: weekdayOfImperialDate(event.date),
+    gregorianDate: imperialToGregorian(event.date),
+    theme: event.type,
+    notes: event.notes,
+  };
+}
