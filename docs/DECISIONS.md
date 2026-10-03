@@ -211,3 +211,17 @@ PHASE-03 — Calendar Engine اکنون از blocker اصلی کبیسه عبو�
 4. وضعیت ROADMAP و STATUS را همگام کند.
 5. اگر سند جدید ایجاد شد، INDEX به‌روزرسانی شود.
 
+
+
+## DEC-022 — 2026-10-03
+Status: ACCEPTED
+Title: Yearly Personal Recurrence on Non-Leap Esfand
+
+Decision:
+- MVP yearly recurrence supports frequency=yearly and interval=1.
+- A recurring 30 Esfand date in a non-leap Imperial year resolves to day 29 of Esfand for that occurrence.
+- Recurrence logic stays in Domain/Application and is never duplicated in UI.
+
+Consequence:
+- Personal birthday/anniversary recurrence remains deterministic across leap/common year transitions.
+- Regression coverage is required for 30 Esfand recurrence.
