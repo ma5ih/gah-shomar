@@ -1,3 +1,13 @@
+## ACT-198 — 2026-10-04
+Type: DOCUMENTATION-CORRECTION
+Status: DONE
+
+- اصطلاح «Current HEAD» در STATUS/HANDOFF/AUDIT با HEAD واقعی repository همگام شد.
+- آخرین implementation HEAD جداگانه ثبت شد: `1f28a0306c446beb89f279a69a382814090d4e7a`.
+- Repository HEAD فعلی: `f206ef0040271acd36ca1341d3bdbb1688b6c4a4`.
+- آخرین validation کدی قطعی: CI #281 — PASS.
+- Next fresh ACT ID: ACT-199.
+
 ## ACT-197 — 2026-10-04
 Type: DOCUMENTATION-CHECKPOINT
 Status: DONE

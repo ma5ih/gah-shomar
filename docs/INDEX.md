@@ -65,7 +65,7 @@ PHASE-09: IN_PROGRESS
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-197 — Implementation correction checkpoint and documentation sync.
+ACT-198 — Documentation HEAD metadata correction.
 
 ## اقدام بعدی
 CI #281 PASS → PHASE-06 runtime/browser acceptance → PHASE-07 polish.

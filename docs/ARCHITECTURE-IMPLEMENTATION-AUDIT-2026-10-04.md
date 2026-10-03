@@ -257,7 +257,8 @@ Memory می‌تواند IDهای person/event/personalEvent بگیرد، ولی
 ## Follow-up status — ACT-197
 
 ### Current implementation checkpoint
-- Current HEAD: `1f28a0306c446beb89f279a69a382814090d4e7a`
+- Current repository HEAD: `f206ef0040271acd36ca1341d3bdbb1688b6c4a4`
+Last implementation HEAD: `1f28a0306c446beb89f279a69a382814090d4e7a`
 - CI run: **#281 — SUCCESS**
 - Pipeline: migration, lint, typecheck, unit/integration, production build, Chromium install, browser smoke — all PASS.
 
