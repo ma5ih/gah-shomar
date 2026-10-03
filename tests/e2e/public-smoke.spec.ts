@@ -26,10 +26,9 @@ test.describe("public product smoke",()=>{
  test("PWA manifest and standard icons are exposed",async({request})=>{
   const response=await request.get("/manifest.webmanifest");expect(response.ok()).toBe(true);const manifest=await response.json();expect(manifest.name).toBe("گاه‌شمار");expect(manifest.lang).toBe("fa");expect(manifest.dir).toBe("rtl");expect(manifest.display).toBe("standalone");expect(manifest.icons.length).toBeGreaterThanOrEqual(2);for(const path of ["/icon-192.png","/icon-512.png","/sw.js"]){expect((await request.get(path)).ok()).toBe(true)}
  });
-})
  test("Calendar day selection opens the Day Detail route",async({page})=>{
   await page.goto("/calendar?lang=fa&year=2465&month=5");
-  await page.getByRole("gridcell",{name:"1"}).click();
+  await page.getByRole("gridcell",{name:"1",exact:true}).click();
   await expect(page).toHaveURL(/\/day\/2465\/5\/1\?lang=fa$/);
   await expect(page.getByRole("heading",{level:1})).toBeVisible();
  });
@@ -55,4 +54,4 @@ test.describe("public product smoke",()=>{
   await expect(page.locator(".bottom-nav")).toBeVisible();
   await expect(page.locator(".bottom-link").filter({hasText:"Calendar"})).toBeVisible();
  });
-;
+});
