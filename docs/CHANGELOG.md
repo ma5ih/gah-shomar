@@ -1,3 +1,21 @@
+## ACT-063 — 2026-10-03
+Type: CALENDAR-ENGINE-HISTORICAL
+Status: IN_PROGRESS
+
+### انجام شد
+- gateway تبدیل تاریخ تاریخی دقیق در `src/domain/calendar/historical-conversion.ts` اضافه شد.
+- Gregorian و هجری‌شمسی دقیق پشتیبانی می‌شوند.
+- برای precisionهای غیر EXACT هیچ ImperialDate ساختگی تولید نمی‌شود.
+- leap state تاریخ هجری‌شمسی از همان Calendar Engine استفاده می‌کند و hard-code مستقل ندارد.
+- تست‌های تاریخی و invalid-date اضافه شدند.
+- regression مرز نوروز سال کبیسه ۱۴۰۳/۲۵۸۳ به suite تبدیل اضافه شد.
+
+### محدودیت فعلی
+- Julian، Hijri قمری، regnal/era و تاریخ‌های BCE هنوز نیازمند converter و policy مستقل هستند؛ تا آن زمان نباید برای آن‌ها ImperialDate حدس زده شود.
+
+### Next
+TASK-03-008 — Year Boundary / Nowruz Edge Cases
+
 ## ACT-062 — 2026-10-03
 Type: CALENDAR-ENGINE-TODAY
 Status: DONE
