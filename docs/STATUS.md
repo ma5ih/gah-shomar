@@ -19,7 +19,12 @@ Overall status: IN_PROGRESS
 | PHASE-10 | TODO | Release |
 
 ## Current HEAD
-`767a4e8c715da25464e4e715eb03d0923e91a5fd` — ACT-138.
+`6dfe546a189267726f8a5ebb8e0ee0b92281a123` — ACT-147.
+
+## Latest event-content decision
+- Public historical event seed is intentionally empty.
+- Daily event sections and the Important Events page remain implemented and safely render an editorial-pending empty state.
+- Events will be researched and reviewed month by month; only explicitly approved items will be published.
 
 ## Verified CI
 - ACT-133 / run #102: PASS — migration, typecheck, tests, production build.
@@ -39,10 +44,10 @@ Overall status: IN_PROGRESS
 - PWA and personal-storage resilience acceptance tests.
 
 ## Remaining work
-1. Finish and verify ACT-137/ACT-138 CI.
+1. Verify the CI runs triggered by ACT-142 through ACT-147.
 2. Complete browser/runtime and mobile/tablet/desktop acceptance.
 3. Finish Phase-07 visual polish, time/season visual states and install UX.
-4. Expand Phase-08 historical dataset and editorial QA/media metadata.
+4. Run the monthly event-review workflow; publish only user-approved events, then expand historical content and editorial/media QA.
 5. Complete Phase-09 release-blocker review and final QA.
 6. Execute Phase-10 production/release/handoff.
 
