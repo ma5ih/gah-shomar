@@ -1,3 +1,22 @@
+## ACT-213 — 2026-10-04
+Type: PWA-INSTALL-EXPERIENCE
+Status: IN_PROGRESS
+
+- TASK-07-013 — Install Experience برای محصول وارد اجرای واقعی شد.
+- `PwaInstallPrompt` به AppShell متصل شد و از `beforeinstallprompt`، `appinstalled` و persistent dismiss state استفاده می‌کند.
+- متن‌های Install/Later برای فارسی و انگلیسی به localization contract اضافه شدند.
+- browser E2E برای نمایش prompt و dismiss آن اضافه شد.
+- unit contract برای install prompt و service-worker precache اضافه شد.
+- service worker از cache shell v2 به v3 ارتقا یافت و offline page، manifest و iconهای استاندارد را precache می‌کند.
+- skin بصری install prompt فقط در Theme A قرار گرفت.
+- Theme B و shared Core/business behavior تغییری نکردند.
+- TASK-07-002 تا TASK-07-011 همچنان در انتظار validation کامل batch هستند؛ TASK-07-013 نیز تا validation نهایی IN_PROGRESS است.
+
+### Next
+Validation کامل branch شامل visual batch + PWA install experience؛ سپس promotion Taskهای validated به DONE.
+
+Next fresh ACT ID: **ACT-214**
+
 ## ACT-212 — 2026-10-04
 Type: THEME-A-VISUAL-POLISH-BATCH
 Status: IN_PROGRESS
