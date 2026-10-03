@@ -66,6 +66,7 @@ Overall status: IN_PROGRESS
 - ACT-059 — نهایی‌سازی اولیه قاعده کبیسه متناظر با تقویم خورشیدی — SUPERSEDED
 - ACT-060 — اصلاح الگوریتم کبیسه برای چرخه‌های غیرثابت — DONE
 - ACT-061 — پیاده‌سازی تبدیل Gregorian ↔ Imperial — DONE
+- ACT-062 — پیاده‌سازی Now/Today Calculation — DONE
 
 ## تصمیم‌های محصول فعلی
 
