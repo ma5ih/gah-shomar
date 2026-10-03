@@ -104,3 +104,16 @@ Shared Core remains untouched:
 TASK-07-002 through TASK-07-011 are implemented in the Theme A stylesheet but remain pending independently observed CI/runtime visual evidence before being promoted to DONE.
 
 Theme B remains untouched and outside the current execution scope.
+## TASK-07-013 — Install Experience
+
+The app shell now exposes a browser-native install prompt when the platform emits beforeinstallprompt.
+The flow supports:
+- Install action
+- Later/dismiss action with persistent localStorage state
+- appinstalled handling
+- Persian/English copy
+- Theme A visual styling
+- service-worker precache for offline page, manifest and standard icons
+- unit and browser acceptance coverage
+
+This feature is product behavior with Theme A-only presentation styling. Theme B remains untouched.
