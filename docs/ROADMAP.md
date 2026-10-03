@@ -1,7 +1,7 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 2.5.0
-Last updated: 2026-10-04 — ACT-212
+Version: 2.5.1
+Last updated: 2026-10-04 — ACT-213
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
 
@@ -275,17 +275,19 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - browser smoke follows the intentionally empty historical-event seed
   - CI run #168 and later full pipelines validate the aligned behavior
 
-## CURRENT CHECKPOINT — ACT-212 — 2026-10-04
+## CURRENT CHECKPOINT — ACT-213 — 2026-10-04
 
-- ACT-212 expands Theme A visual execution from spacing normalization into typography, component consistency, density, time-of-day presentation, seasonal accents and restrained motion.
-- TASK-07-002 through TASK-07-011 are implemented in the Theme A stylesheet and are currently **IN_PROGRESS** pending independently observed CI/runtime visual evidence.
-- The implementation remains isolated to src/frontend/themes/flat-geometric/theme.css plus the Theme A visual documentation record.
-- Theme A continues to use only flat solid colors, angular/layered forms, simple lines and minimal detail; no gradients or realistic textures are introduced.
-- Theme B remains untouched and outside the current scope.
-- No Core, Calendar Engine, Domain, Data, Application, Auth/Session, routing, localization or product/business behavior changed.
-- Static validation confirms 7 spacing tokens, full four-state time-of-day selectors, four seasonal selectors, reduced-motion handling and 0 gradient(...) expressions in the Theme A stylesheet.
-- Current implementation commit on this branch: 120722f4304c1ea385ffcb12058d9f94e0fa371b.
-- Canonical task counts for this implementation checkpoint: 204 total / 136 DONE / 41 IN_PROGRESS / 26 TODO / 1 DEFERRED.
+- ACT-213 implements TASK-07-013 — Install Experience.
+- Added a real browser `beforeinstallprompt` flow with Install/Later controls, persistent dismiss state and `appinstalled` handling.
+- Added install-flow localization for Persian and English.
+- Added a browser E2E acceptance scenario and unit-level source contract coverage for the install prompt.
+- Strengthened the service worker precache to include the offline page, manifest and standard icons.
+- Theme A provides the install-prompt visual skin; Theme B remains untouched.
+- No Calendar Engine, Domain, Data, Application business rules, Auth/session semantics or other product logic changed.
+- TASK-07-002 through TASK-07-011 remain IN_PROGRESS pending validation of the complete batch; TASK-07-013 is also IN_PROGRESS pending validation.
+- Latest implementation head on this work branch: 48a42d82083af949783b6aa6319e30e40834f9a0.
+- Last independently observed CI success is the earlier PR head 938939b8bb25..., which validates the visual batch before the later PWA changes; final validation must cover the current head as one unit.
+- Canonical task counts remain 204 total / 136 DONE / 41 IN_PROGRESS / 26 TODO / 1 DEFERRED.
 
 # PHASE-10 — Release & Handoff — TODO
 - TASK-10-001 — Production Configuration — TODO
@@ -307,6 +309,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 **QA BLOCKER:** TASK-09-022 in PHASE-09 — DONE
 
 **CURRENT VISUAL BATCH:** TASK-07-002 through TASK-07-011 — IN_PROGRESS
+**CURRENT APP-LIKE TASK:** TASK-07-013 — Install Experience — IN_PROGRESS
 - TASK-07-001 برای Theme A بسته شده و DONE است.
 - Theme B فعلاً خارج از Scope است و نباید وارد اجرای بصری فعلی شود.
 - پس از شروع Taskهای باقی‌مانده PHASE-07، مسیر به PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release می‌رسد.
