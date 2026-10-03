@@ -7,7 +7,7 @@ Checkpoint date: 2026-10-04
 Implementation baseline: 4e06741359d86cd2194b5cacbcb4c2d9e81c4fd1
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 QA gate: PHASE-09 — Integration & QA
-QA dependency: TASK-09-022 — DONE; TASK-09-019 correction gate remains IN_PROGRESS; latest code checkpoint CI #246 is IN_PROGRESS at browser setup.
+QA dependency: TASK-09-022 — DONE; TASK-09-019 correction gate remains IN_PROGRESS; latest code checkpoint CI #246 PASS.
 Overall status: IN_PROGRESS
 
 ## 1. از کجا شروع کنیم؟
@@ -132,7 +132,7 @@ migration → typecheck → unit/integration tests → production build → Chro
 آخرین CI baseline قطعی:
 - ACT-199 / run #199: PASS
 - ACT-187 checkpoint: CI #244 PASS for migration, typecheck, unit/integration, production build and browser smoke.
-ACT-188 checkpoint: CI #246 IN_PROGRESS at browser setup when this handoff was synchronized.
+ACT-188 checkpoint: CI #246 PASS across migration, typecheck, unit/integration, build and browser smoke.
 
 آخرین CI برای HEAD فعلی:
 - run #199
