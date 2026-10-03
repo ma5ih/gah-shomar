@@ -3,12 +3,12 @@
 Status: IN_PROGRESS
 Last updated: 2026-10-03
 
-## Implemented
-
+## Implemented product surfaces
 - Today and current date hierarchy
 - Month Calendar + navigation
 - Day Detail
-- Events / Event Detail
+- Important Events
+- Event Detail
 - People / Timeline
 - Search
 - Authentication
@@ -18,20 +18,32 @@ Last updated: 2026-10-03
 - Persian/English + RTL/LTR
 - Public/personal data separation
 - Graceful public fallback when personal storage is unavailable
+- Empty/loading/error boundaries
 
-## Verified automated baseline
+## Important Events / Event Detail contract
+The approved product design requires:
+- monthly important-event cards
+- hero image per published important event
+- click-through to dedicated Event Detail
+- fuller narrative/context
+- sources
+- people/period/related entities
+- additional images/documents where available
 
-- Database migration: PASS
-- TypeScript: PASS
-- Unit/integration tests: PASS on ACT-133 baseline
-- Production build: PASS on ACT-133 baseline
-- Application tests migrated to sourced content by ACT-137
-- Personal-storage resilience and PWA acceptance added by ACT-138; current CI run must finish before HEAD is called green
+Current implementation:
+- listing, clickable card and dedicated Detail route exist;
+- Detail currently renders date, narrative/summary, people, related events and sources;
+- hero/gallery image presentation is still not implemented;
+- public event seed is intentionally empty pending editorial approval.
 
-## Acceptance gap
+## Automated baseline
+- ACT-133 / run #102: migration, typecheck, unit/integration tests and production build PASS.
+- Later test/data changes require current HEAD revalidation.
 
-- Browser/runtime interaction QA
-- Mobile/tablet/desktop visual QA
-- Final responsive/accessibility review
+## Current acceptance gap
+- E2E smoke still contains assertions for the removed demo event.
+- Browser/runtime interaction QA remains open.
+- Mobile/tablet/desktop visual QA remains open.
+- Final responsive/accessibility review remains open.
 
-This phase remains IN_PROGRESS until the runtime acceptance gap is actually verified.
+Do not move PHASE-06 to DONE until these gaps have evidence.
