@@ -4,8 +4,10 @@ Project: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Checkpoint date: 2026-10-03
-Implementation baseline: e3107be19485199f3e725a1bbc40ceb86b72f88b
-Current phase: PHASE-09 — Integration & QA
+Implementation baseline: 7512b433d1396029ae30625c466008e9e2453a35
+Primary workstream: PHASE-06 — Core Frontend Product Experience
+QA gate: PHASE-09 — Integration & QA
+QA blocker: TASK-09-022 — E2E Dataset/Editorial Alignment
 Overall status: IN_PROGRESS
 
 ## 1. از کجا شروع کنیم؟
@@ -49,7 +51,8 @@ GitHub و همین شاخهٔ `main` مرجع واقعی وضعیت هستند. 
 - BLOCKED: **0**
 - DEPRECATED: **0**
 
-**نقطه فعلی:** TASK-09-022 — E2E Dataset/Editorial Alignment.
+**نقطه فعلی محصول:** PHASE-06 — Core Frontend Product Experience.
+**QA dependency:** TASK-09-022 — E2E Dataset/Editorial Alignment.
 این بخش و شمارش آن مرجع ادامه پروژه است؛ برای تعیین وضعیت به چت قبلی اتکا نشود.
 
 ## 3. وضعیت Phaseها
@@ -119,11 +122,11 @@ People/Periods/Sources در این مرحله فقط محتوای ساختاری
 آخرین workflow تعریف‌شده شامل این مراحل است:
 migration → typecheck → unit/integration tests → production build → Chromium install → browser smoke.
 
-اما در `tests/e2e/public-smoke.spec.ts` هنوز assertionهایی وجود دارد که event قدیمی «صدور فرمان مشروطیت» و route مربوط به آن را انتظار دارند، در حالی که public event seed عمداً خالی شده است.
+در `tests/e2e/public-smoke.spec.ts` assertionهای event قدیمی با ACT-163 با سیاست `seedEvents = []` همگام شدند.
 
 نتیجه:
 - current HEAD را نباید green/QA-passed اعلام کرد.
-- اول باید browser smoke با سیاست seed خالی همگام شود.
+- blocker کدی TASK-09-022 برطرف شده است.
 - بعد CI کامل روی HEAD فعلی دوباره بررسی شود.
 - سپس browser/runtime acceptance واقعی اجرا و ثبت شود.
 
@@ -200,7 +203,7 @@ production configuration، deployment validation، production PWA check، final 
 
 قاعدهٔ جدید:
 - از checkpoint بعدی فقط شناسه‌های جدید استفاده شود.
-- شناسهٔ بعدی: ACT-163
+- شناسهٔ بعدی: ACT-164
 - هیچ ACT قدیمی دوباره استفاده نشود.
 - برای ارجاع به collisionهای قدیمی، از توضیح توصیفی و SHA commit استفاده شود.
 
