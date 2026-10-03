@@ -17,34 +17,25 @@
 - PHASE-09 Integration & QA — IN_PROGRESS
 - PHASE-10 Release — TODO
 
-### کارهای انجام‌شده اخیر در PHASE-03
-- Imperial Date Type، Year/Month/Day و Month Lengths
-- Leap-Year Engine با break-pointهای Borkowski/Jalaali
-- Gregorian ↔ Imperial conversion
-- Today calculation
-- Historical Date conversion gateway
-- Nowruz/year-boundary regression coverage
-- Date arithmetic
-- Weekday calculation
-- Time-of-day state
-- Seasonal state
-- CI workflow برای typecheck + unit test + production build
-
 ### وضعیت اعتبارسنجی
-CI فعلی شامل migration، ESLint، typecheck، unit/integration tests، production build و Playwright browser smoke است. checkpoint فعلی run #281 با SUCCESS کامل شده است. Product acceptance و release QA هنوز باز هستند.
+CI workflow فعلی شامل migration، ESLint، typecheck، unit/integration tests، production build و Playwright browser smoke است.
+- CI #287: PASS روی implementation checkpoint
+- CI #288: PASS روی documentation checkpoint
+- CI #292: PASS روی current repository HEAD
+Product acceptance و release QA هنوز باز هستند.
 
-## مهم‌ترین اسناد
+### مهم‌ترین اسناد
 - `docs/PROJECT.md` — تعریف کامل محصول
 - `docs/ROADMAP.md` — همه Phaseها و Taskها
 - `docs/STATUS.md` — snapshot لحظه‌ای و Next Task
-- `docs/CHANGELOG.md` — تاریخچه تمام ACTها
+- `docs/CHANGELOG.md` — تاریخچه اقدامات
 - `docs/DECISIONS.md` — تصمیم‌های رسمی
 - `docs/REQUIREMENTS.md` — Requirements و Acceptance Criteria
 - `docs/ARCHITECTURE.md` — معماری فنی
-- `docs/CALENDAR-SPEC.md` — قرارداد تقویم
-- `docs/CALENDAR-ENGINE-OPEN-QUESTION.md` — وضعیت نهایی تصمیم کبیسه
-- `docs/INDEX.md` — فهرست مرکزی اسناد
-- `docs/ARCHITECTURE-IMPLEMENTATION-AUDIT-2026-10-04.md` — آخرین audit مستقل implementation و وضعیت follow-upهای آن
+- `docs/CALENDAR-SPEC.md` — قرارداد رسمی تقویم
+- `docs/EDITORIAL-EVENT-REVIEW.md` — workflow انتشار محتوای تاریخی
+- `docs/ARCHITECTURE-IMPLEMENTATION-AUDIT-2026-10-04.md` — audit architecture/implementation
+- `docs/PROJECT-AUDIT-2026-10-04-ACT-203.md` — پرونده کامل ممیزی، مغایرت‌سنجی، اصلاحات و نقطه ادامه
 
 ## Calendar Engine
 تقویم اصلی خورشیدی با شماره‌گذاری شاهنشاهی است:
@@ -54,8 +45,14 @@ CI فعلی شامل migration، ESLint، typecheck، unit/integration tests، p
 - نام ماه دوازدهم: «اسپند»
 - میلادی فقط تاریخ فرعی UI است.
 - سال هجری شمسی در UI نمایش داده نمی‌شود.
-- کبیسه با یک چرخه ۳۳ ساله ثابت تکرار نمی‌شود.
+- کبیسه با چرخه ۳۳ ساله ثابت تکرار نمی‌شود.
 - Calendar Engine مسئول conversion، leap-year، arithmetic، weekday، Today، time-of-day و season است.
+
+## وضعیت جاری
+Correction gate مربوط به ACT-186 بسته شده است. اصلاحات بعدی ACT-199 نیز روی implementation اعمال و در CI #287 PASS شده‌اند.
+Current repository HEAD: `f2060a1265c1ac79336364e31c69576de998e97c`
+Current implementation checkpoint: `a9eace682f32f6e6ff32a748fe9df53448c27692`
+Next fresh ACT ID: **ACT-204**
 
 ## قانون ضد گم‌شدن
 هر اقدام معنادار باید:
