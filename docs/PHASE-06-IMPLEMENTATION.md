@@ -49,12 +49,12 @@ Current implementation:
 - ACT-199 / run #199: full quality + browser smoke PASS after Personal Person linkage/ownership work.
 - ACT-186 / run #218: documentation checkpoint validated by full CI SUCCESS.
 - ACT-187 / run #244: correction checkpoint full CI SUCCESS.
-- ACT-188 / run #246: current boundary checkpoint IN_PROGRESS at browser setup during synchronization.
+- ACT-188 / run #246: full quality + browser smoke PASS after application/presentation boundary correction.
 
 ## Current correction gate after ACT-186 audit
 - HIGH implementation findings are recorded in `docs/ARCHITECTURE-IMPLEMENTATION-AUDIT-2026-10-04.md`.
 - HIGH-02 and HIGH-03 were corrected and validated by CI #244.
-- HIGH-01 presentation/data boundary was corrected through server composition; final validation is CI #246.
+- HIGH-01 presentation/data boundary was corrected through server composition and validated by CI #246 PASS.
 - TASK-09-019 remains IN_PROGRESS for the remaining medium/low quality gaps.
 
 ## Current acceptance gap
