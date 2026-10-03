@@ -108,7 +108,8 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
   - CI validation pending
 - TASK-03-025 — Edge-case Tests — IN_PROGRESS
   - leap/year boundary/month boundary cases exist
-  - broader regression matrix and CI validation pending
+  - modern leap-year regression matrix through Imperial 2629 / Solar Hijri 1449: DONE
+  - CI execution validation pending
 - TASK-03-026 — Domain Model Tests — TODO
 - TASK-03-027 — Engine Review — TODO
 
