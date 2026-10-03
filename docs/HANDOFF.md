@@ -4,13 +4,13 @@ Project: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Checkpoint date: 2026-10-04
-Current documentation checkpoint: **ACT-209 on main**
-Current implementation HEAD: 5791e3e89aabcd75fd856e03e9a05023d009dbcc
+Current documentation checkpoint: **ACT-210 on main**
+Current implementation HEAD: dadfc21de5bbc1c262774b47c539bd10c1072414
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 Current visual stream: PHASE-07 — Theme A refinement
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: **ACT-210**
+Next fresh ACT ID: **ACT-211**
 
 ## 1. نقطه فعلی پروژه
 
@@ -19,7 +19,7 @@ Next fresh ACT ID: **ACT-210**
 - TASK-07-001 — Final Visual Hierarchy — **DONE**
 - Theme A — Flat Geometric — فعال و validation شده است.
 - Theme B — Modern Flat Vector Illustration — هنوز وارد طراحی اصلی نشده است.
-- گام بعدی بصری: **TASK-07-002 — Spacing/Margin Consistency — TODO**
+- گام بصری جاری: **TASK-07-002 — Spacing/Margin Consistency — IN_PROGRESS**
 - هیچ تغییر جدیدی در Core، Calendar Engine، Domain، Data، Application، Auth/Session، routing یا business behavior در ACT-209 انجام نشده است.
 
 ## 2. شمارش رسمی Taskها
@@ -64,7 +64,11 @@ Next fresh ACT ID: **ACT-210**
 ### ACT-209 — Documentation convergence
 - STATUS/ROADMAP/INDEX/PROJECT/HANDOFF/Phase notes با ACT-208 همگام شدند.
 - اشاره‌های stale به pending بودن TASK-07-001 و checkpointهای قدیمی حذف یا جایگزین شدند.
-- implementation HEAD بدون تغییر باقی ماند.
+
+### ACT-210 — Theme A spacing implementation
+- TASK-07-002 آغاز شد و spacing scale اختصاصی 4/8/12/16/20/24/32px در Theme A فعال شد.
+- تغییر implementation فقط در src/frontend/themes/flat-geometric/theme.css انجام شد.
+- static validation انجام شد، اما CI جدید هنوز به‌صورت مستقل مشاهده نشده است؛ بنابراین Task فعلاً IN_PROGRESS است.
 
 ## 5. وضعیت Visual Themeها
 
@@ -87,7 +91,7 @@ Brief رسمی و تنها مرجع طراحی همان سند ثبت‌شده �
 
 وضعیت:
 - TASK-07-001: DONE
-- TASK-07-002: TODO / next
+- TASK-07-002: IN_PROGRESS
 
 ### Theme B
 وضعیت:
@@ -117,7 +121,7 @@ seedEvents = [] عمداً خالی است. هیچ historical event عمومی �
 
 ## 8. مسیر ادامه
 
-**گام بعدی:** TASK-07-002 — Spacing/Margin Consistency — TODO
+**گام بعدی:** تکمیل validation و بستن TASK-07-002 — Spacing/Margin Consistency
 
 تا زمانی که کاربر scope را تغییر نداده است، هر visual implementation جدید فقط روی Theme A انجام می‌شود و Theme B دست‌نخورده می‌ماند.
 
