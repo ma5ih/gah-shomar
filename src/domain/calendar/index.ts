@@ -8,3 +8,4 @@ export * from "./historical-conversion";
 export * from "./date-arithmetic";
 export * from "./weekday";
 export * from "./time-of-day";
+export * from "./season";
