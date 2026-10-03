@@ -1,7 +1,7 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 2.4.1
-Last updated: 2026-10-04 — ACT-203
+Version: 2.4.2
+Last updated: 2026-10-04 — ACT-204
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
 
@@ -275,13 +275,15 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - browser smoke follows the intentionally empty historical-event seed
   - CI run #168 and later full pipelines validate the aligned behavior
 
-## CURRENT CHECKPOINT — ACT-203 — 2026-10-04
+## CURRENT CHECKPOINT — ACT-204 — 2026-10-04
 
 - End-to-end project audit and continuation record is documented in `docs/PROJECT-AUDIT-2026-10-04-ACT-203.md`.
 - ACT-199 implementation correction is CI-validated: run #287 PASS.
 - Latest repository documentation checkpoint is CI-validated: run #292 PASS.
 - No roadmap task was prematurely marked DONE. The canonical ledger remains 204 / 134 DONE / 32 IN_PROGRESS / 37 TODO / 1 DEFERRED / 0 BLOCKED / 0 DEPRECATED.
-- Next fresh ACT ID: ACT-204.
+- ACT-204 completed browser acceptance expansion and CI #299 PASS.
+- Next fresh ACT ID: ACT-205.
+- **STOP POINT:** TASK-07-001 — Final Visual Hierarchy is the main visual-design entry point. Do not implement it until the product owner reviews/starts the visual design.
 - Primary continuation remains PHASE-06 runtime/browser acceptance.
 
 # PHASE-10 — Release & Handoff — TODO
@@ -302,7 +304,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 **PRIMARY WORKSTREAM:** PHASE-06 — Core Frontend Product Experience — IN_PROGRESS
 **QA BLOCKER:** TASK-09-022 in PHASE-09 — DONE
 
-**NEXT:** PHASE-06 runtime/browser acceptance → PHASE-06 closure → PHASE-07 polish → PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release.
+**NEXT:** TASK-07-001 — Final Visual Hierarchy. This is the requested visual-design stop point; implementation pauses here. → PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release.
 
 نکته: PHASE-09 در این checkpoint «فاز جاری محصول» نیست؛ یک QA gate باز است که blocker آن باید پیش از acceptance نهایی PHASE-06 بسته شود.
 
