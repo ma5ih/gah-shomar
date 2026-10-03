@@ -1,19 +1,19 @@
 /* Theme A — Flat Geometric | TASK-07-001 */
-html[data-theme="flat-geometric"]{--fg-bg:#efe9dc;--fg-surface:#f7f2e7;--fg-surface-strong:#fbf7ed;--fg-ink:#24322c;--fg-muted:#6b7069;--fg-line:rgba(36,50,44,.16);--fg-accent:#8f5b3b;--fg-accent-soft:#e9d5bd;--fg-green:#687f68;--fg-blue:#657b87;--fg-shadow:0 12px 28px rgba(36,50,44,.08)}
+html[data-theme="flat-geometric"]{--fg-bg:#efe9dc;--fg-surface:#f7f2e7;--fg-surface-strong:#fbf7ed;--fg-ink:#24322c;--fg-muted:#6b7069;--fg-line:rgba(36,50,44,.16);--fg-accent:#8f5b3b;--fg-accent-soft:#e9d5bd;--fg-green:#687f68;--fg-blue:#657b87;--fg-shadow:0 12px 28px rgba(36,50,44,.08);--fg-space-1:4px;--fg-space-2:8px;--fg-space-3:12px;--fg-space-4:16px;--fg-space-5:20px;--fg-space-6:24px;--fg-space-7:32px}
 html[data-theme="flat-geometric"],html[data-theme="flat-geometric"] body{background:var(--fg-bg)}
 html[data-theme="flat-geometric"] body{color:var(--fg-ink)}
-html[data-theme="flat-geometric"] .app-shell{max-width:1180px;padding-top:14px}
-html[data-theme="flat-geometric"] .topbar{gap:18px;padding:10px 2px 18px;background:var(--fg-bg);border-bottom:1px solid var(--fg-line)}
+html[data-theme="flat-geometric"] .app-shell{max-width:1180px;padding-top:var(--fg-space-3)}
+html[data-theme="flat-geometric"] .topbar{gap:var(--fg-space-4);padding:var(--fg-space-3) 2px var(--fg-space-6);background:var(--fg-bg);border-bottom:1px solid var(--fg-line)}
 html[data-theme="flat-geometric"] .brand{color:var(--fg-ink);font-size:1.28rem;letter-spacing:-.04em}
-html[data-theme="flat-geometric"] .toplinks{gap:4px}
+html[data-theme="flat-geometric"] .toplinks{gap:var(--fg-space-1)}
 html[data-theme="flat-geometric"] .nav-link,html[data-theme="flat-geometric"] .lang-chip,html[data-theme="flat-geometric"] .profile-chip{border-radius:10px;color:var(--fg-muted);transition:transform .16s ease,background-color .16s ease,color .16s ease}
 html[data-theme="flat-geometric"] .nav-link:hover,html[data-theme="flat-geometric"] .nav-link.active,html[data-theme="flat-geometric"] .lang-chip:hover,html[data-theme="flat-geometric"] .profile-chip:hover{background:var(--fg-surface-strong);color:var(--fg-ink)}
 html[data-theme="flat-geometric"] .nav-link.active{box-shadow:inset 0 -3px 0 var(--fg-accent)}
 html[data-theme="flat-geometric"] .lang-chip{border-color:var(--fg-line);background:var(--fg-surface)}
-html[data-theme="flat-geometric"] .app-content{gap:20px}
+html[data-theme="flat-geometric"] .app-content{gap:var(--fg-space-5)}
 html[data-theme="flat-geometric"] .card,html[data-theme="flat-geometric"] .calendar-surface,html[data-theme="flat-geometric"] .hero-panel{background:var(--fg-surface);border:1px solid var(--fg-line);box-shadow:var(--fg-shadow);backdrop-filter:none;border-radius:14px}
-html[data-theme="flat-geometric"] .hero{gap:20px}
-html[data-theme="flat-geometric"] .hero-panel{position:relative;isolation:isolate;overflow:hidden;padding:28px}
+html[data-theme="flat-geometric"] .hero{gap:var(--fg-space-5)}
+html[data-theme="flat-geometric"] .hero-panel{position:relative;isolation:isolate;overflow:hidden;padding:var(--fg-space-7)}
 html[data-theme="flat-geometric"] .hero-panel:first-child{background:var(--fg-hero-surface,#f4ead8);border-color:rgba(36,50,44,.12);box-shadow:var(--fg-shadow)}
 html[data-theme="flat-geometric"] .hero-panel:first-child::before,html[data-theme="flat-geometric"] .hero-panel:first-child::after{content:"";position:absolute;pointer-events:none;z-index:0}
 html[data-theme="flat-geometric"] .hero-panel:first-child::before{inset:auto auto 0 0;width:52%;height:30%;background:var(--fg-land-a,#9dae8f);clip-path:polygon(0 34%,26% 8%,47% 28%,68% 0,100% 20%,100% 100%,0 100%)}
@@ -22,18 +22,18 @@ html[data-theme="flat-geometric"] .hero-panel:first-child>*{position:relative;z-
 html[data-theme="flat-geometric"] .overline,html[data-theme="flat-geometric"] .eyebrow{color:var(--fg-muted)}
 html[data-theme="flat-geometric"] .hero-title{color:var(--fg-ink);margin-top:10px;margin-bottom:10px;letter-spacing:-.065em}
 html[data-theme="flat-geometric"] .hero-subtitle{color:var(--fg-muted);line-height:1.75}
-html[data-theme="flat-geometric"] .context-card{background:var(--fg-surface-strong);justify-content:flex-start;gap:22px;padding:24px}
+html[data-theme="flat-geometric"] .context-card{background:var(--fg-surface-strong);justify-content:flex-start;gap:var(--fg-space-6);padding:var(--fg-space-6)}
 html[data-theme="flat-geometric"] .context-value{color:var(--fg-ink)}
-html[data-theme="flat-geometric"] .section-head{margin:2px 2px 8px}
+html[data-theme="flat-geometric"] .section-head{margin:0 2px var(--fg-space-2)}
 html[data-theme="flat-geometric"] .section-head h2{color:var(--fg-ink)}
 html[data-theme="flat-geometric"] .section-head a{color:var(--fg-accent);font-weight:800}
-html[data-theme="flat-geometric"] .event-card{background:var(--fg-surface);border:1px solid var(--fg-line);box-shadow:none;border-radius:12px;transition:transform .16s ease,border-color .16s ease,background-color .16s ease}
+html[data-theme="flat-geometric"] .event-card{background:var(--fg-surface);border:1px solid var(--fg-line);box-shadow:none;border-radius:12px;padding:var(--fg-space-4);transition:transform .16s ease,border-color .16s ease,background-color .16s ease}
 html[data-theme="flat-geometric"] .event-card:hover{transform:translateY(-2px);background:var(--fg-surface-strong);border-color:rgba(143,91,59,.28);box-shadow:none}
 html[data-theme="flat-geometric"] .event-card h3{color:var(--fg-ink)}
 html[data-theme="flat-geometric"] .event-card p{color:var(--fg-muted)}
 html[data-theme="flat-geometric"] .card-meta{border-top-color:var(--fg-line)}
-html[data-theme="flat-geometric"] .calendar-surface{padding:16px;background:var(--fg-surface)}
-html[data-theme="flat-geometric"] .calendar-nav-row{margin-bottom:12px}
+html[data-theme="flat-geometric"] .calendar-surface{padding:var(--fg-space-4);background:var(--fg-surface)}
+html[data-theme="flat-geometric"] .calendar-nav-row{margin-bottom:var(--fg-space-3)}
 html[data-theme="flat-geometric"] .calendar-hint{color:var(--fg-muted)}
 html[data-theme="flat-geometric"] .icon-button{border-radius:10px;border-color:var(--fg-line);background:var(--fg-surface-strong);color:var(--fg-ink);box-shadow:none;transition:transform .16s ease,background-color .16s ease,border-color .16s ease}
 html[data-theme="flat-geometric"] .icon-button:hover{transform:translateY(-1px);background:var(--fg-bg);border-color:rgba(143,91,59,.28)}
@@ -49,17 +49,17 @@ html[data-theme="flat-geometric"] .primary-button{background:var(--fg-ink);color
 html[data-theme="flat-geometric"] .primary-button:hover{opacity:1;transform:translateY(-1px);background:#314239}
 html[data-theme="flat-geometric"] .secondary-button{background:var(--fg-surface-strong);border:1px solid var(--fg-line);color:var(--fg-ink)}
 html[data-theme="flat-geometric"] .secondary-button:hover{background:var(--fg-bg);border-color:rgba(143,91,59,.28)}
-html[data-theme="flat-geometric"] .search-form input,html[data-theme="flat-geometric"] .field input,html[data-theme="flat-geometric"] .field textarea,html[data-theme="flat-geometric"] .field select{border-color:var(--fg-line);background:var(--fg-surface-strong);border-radius:10px;color:var(--fg-ink);box-shadow:none}
+html[data-theme="flat-geometric"] .search-form input,html[data-theme="flat-geometric"] .field input,html[data-theme="flat-geometric"] .field textarea,html[data-theme="flat-geometric"] .field select{border-color:var(--fg-line);background:var(--fg-surface-strong);border-radius:10px;color:var(--fg-ink);box-shadow:none;padding:var(--fg-space-3) var(--fg-space-4)}
 html[data-theme="flat-geometric"] .search-form input:focus,html[data-theme="flat-geometric"] .field input:focus,html[data-theme="flat-geometric"] .field textarea:focus,html[data-theme="flat-geometric"] .field select:focus{border-color:rgba(143,91,59,.46);box-shadow:0 0 0 3px rgba(143,91,59,.1)}
-html[data-theme="flat-geometric"] .detail-card{background:var(--fg-surface)}
+html[data-theme="flat-geometric"] .detail-card{background:var(--fg-surface);padding:var(--fg-space-6)}
 html[data-theme="flat-geometric"] .detail-card h1,html[data-theme="flat-geometric"] .detail-card h2,html[data-theme="flat-geometric"] .detail-card h3{color:var(--fg-ink)}
 html[data-theme="flat-geometric"] .prose{color:#4d574f}
 html[data-theme="flat-geometric"] .pill{background:var(--fg-surface-strong);border:1px solid var(--fg-line);border-radius:10px;color:var(--fg-ink)}
-html[data-theme="flat-geometric"] .auth-card{background:var(--fg-surface);border-radius:14px}
+html[data-theme="flat-geometric"] .auth-card{background:var(--fg-surface);border-radius:14px;padding:var(--fg-space-7)}
 html[data-theme="flat-geometric"] .notice{background:var(--fg-accent-soft);color:#65452f;border-radius:10px}
-html[data-theme="flat-geometric"] .empty{background:var(--fg-surface);border:1px dashed rgba(36,50,44,.2);border-radius:12px}
+html[data-theme="flat-geometric"] .empty{background:var(--fg-surface);border:1px dashed rgba(36,50,44,.2);border-radius:12px;padding:var(--fg-space-7)}
 html[data-theme="flat-geometric"] .sheet-backdrop{background:rgba(36,50,44,.34)}
-html[data-theme="flat-geometric"] .bottom-sheet{background:var(--fg-surface-strong);border-radius:18px 18px 0 0;box-shadow:0 -12px 28px rgba(36,50,44,.12)}
+html[data-theme="flat-geometric"] .bottom-sheet{background:var(--fg-surface-strong);border-radius:18px 18px 0 0;box-shadow:0 -12px 28px rgba(36,50,44,.12);padding:var(--fg-space-3) var(--fg-space-6) 28px}
 html[data-theme="flat-geometric"] .sheet-handle{background:#aeb7ab}
 html[data-theme="flat-geometric"] .bottom-nav{background:var(--fg-surface-strong);border-color:var(--fg-line);border-radius:16px;backdrop-filter:none;box-shadow:0 12px 28px rgba(36,50,44,.12)}
 html[data-theme="flat-geometric"] .bottom-link{color:var(--fg-muted);border-radius:10px}
@@ -78,3 +78,28 @@ html[data-theme="flat-geometric"] .hero[data-season] .hero-panel:first-child{bor
 html[data-theme="flat-geometric"] a:focus-visible,html[data-theme="flat-geometric"] button:focus-visible,html[data-theme="flat-geometric"] input:focus-visible,html[data-theme="flat-geometric"] textarea:focus-visible,html[data-theme="flat-geometric"] select:focus-visible{outline:3px solid rgba(143,91,59,.35);outline-offset:3px}
 @media (max-width:760px){html[data-theme="flat-geometric"] .app-shell{padding-top:10px}html[data-theme="flat-geometric"] .topbar{padding-bottom:12px}html[data-theme="flat-geometric"] .hero-panel{padding:22px;border-radius:12px}html[data-theme="flat-geometric"] .hero-panel:first-child{min-height:330px}html[data-theme="flat-geometric"] .calendar-surface{border-radius:12px}html[data-theme="flat-geometric"] .day-cell{min-height:58px}html[data-theme="flat-geometric"] .bottom-nav{border-radius:14px}}
 @media (prefers-reduced-motion:reduce){html[data-theme="flat-geometric"] *,html[data-theme="flat-geometric"] *::before,html[data-theme="flat-geometric"] *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+/* TASK-07-002 — Spacing/Margin Consistency */
+html[data-theme="flat-geometric"] .stack{gap:var(--fg-space-3)}
+html[data-theme="flat-geometric"] .two-col{gap:var(--fg-space-5)}
+html[data-theme="flat-geometric"] .form-stack{gap:var(--fg-space-4)}
+html[data-theme="flat-geometric"] .field{gap:var(--fg-space-1)}
+html[data-theme="flat-geometric"] .search-form{gap:var(--fg-space-2)}
+html[data-theme="flat-geometric"] .meta-row{gap:var(--fg-space-2)}
+html[data-theme="flat-geometric"] .primary-button,html[data-theme="flat-geometric"] .secondary-button{padding:var(--fg-space-3) var(--fg-space-4)}
+html[data-theme="flat-geometric"] .pill{padding:var(--fg-space-2) var(--fg-space-3)}
+html[data-theme="flat-geometric"] .notice{padding:var(--fg-space-3) var(--fg-space-4)}
+html[data-theme="flat-geometric"] .bottom-nav{padding:var(--fg-space-2)}
+html[data-theme="flat-geometric"] .bottom-link{padding:var(--fg-space-2) var(--fg-space-1)}
+@media(max-width:760px){
+html[data-theme="flat-geometric"] .app-shell{padding-top:var(--fg-space-2)}
+html[data-theme="flat-geometric"] .topbar{padding-bottom:var(--fg-space-3)}
+html[data-theme="flat-geometric"] .hero-panel{padding:var(--fg-space-6)}
+html[data-theme="flat-geometric"] .context-card{padding:var(--fg-space-4)}
+html[data-theme="flat-geometric"] .calendar-surface{padding:var(--fg-space-3)}
+html[data-theme="flat-geometric"] .bottom-nav{padding:var(--fg-space-2)}
+}
+@media(min-width:761px){
+html[data-theme="flat-geometric"] .hero-panel{padding:var(--fg-space-7)}
+html[data-theme="flat-geometric"] .event-card{padding:var(--fg-space-5)}
+html[data-theme="flat-geometric"] .detail-card{padding:var(--fg-space-6)}
+}
