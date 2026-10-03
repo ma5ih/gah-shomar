@@ -15,14 +15,14 @@ Next fresh ACT ID: **ACT-210**
 ## شمارش رسمی ریزتسک‌ها
 
 - کل: **204**
-- DONE: **135**
-- IN_PROGRESS: **32**
+- DONE: **136**
+- IN_PROGRESS: **31**
 - TODO: **36**
 - DEFERRED: **1**
 - BLOCKED: **0**
 - DEPRECATED: **0**
 
-این شمارش canonical همان ledger فعلی ROADMAP است.
+این شمارش canonical مستقیماً از ledger فعلی ROADMAP خوانده شده است.
 
 ## وضعیت فازها
 
