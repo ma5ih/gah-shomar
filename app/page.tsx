@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { getTodayState } from "@/application/today";
+import { getServerTodayState } from "@/application/server";
 import { getCurrentSessionSafe } from "@/application/session";
-import { personalRepository } from "@/data/db/repositories";
 import { resolveLocale } from "@/application/locale";
 import { AppShell } from "@/frontend/components/app-shell";
 import { EventCard } from "@/frontend/components/event-card";
@@ -10,7 +9,7 @@ import { gregorianLabel,imperialDateLabel,weekdayLabel } from "@/frontend/lib/fo
 export const dynamic="force-dynamic";
 export default async function HomePage({searchParams}:{searchParams?:Promise<Record<string,string|string[]|undefined>>}){
  const params=await searchParams;const locale=resolveLocale(typeof params?.lang==="string"?params.lang:undefined);const c=copy[locale];const session=await getCurrentSessionSafe();
- const state=await getTodayState(session?{userId:session.userId,personalRepository}:{});const g=state.context.gregorianDate;
+ const state=await getServerTodayState(session?.userId);const g=state.context.gregorianDate;
  return <AppShell locale={locale} active="today">
   <div className="notice">{c.demoNotice}</div>
   <section className="hero" data-time-of-day={state.context.timeOfDay} data-season={state.context.season}>

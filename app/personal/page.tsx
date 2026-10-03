@@ -1,7 +1,7 @@
 import Link from "next/link";
 import {getCurrentSession} from "@/application/session";
-import {personalRepository} from "@/data/db/repositories";
 import {application} from "@/application/use-cases";
+import {getServerPersonalUseCases} from "@/application/server";
 import {resolveLocale} from "@/application/locale";
 import {AppShell} from "@/frontend/components/app-shell";
 import {copy} from "@/frontend/lib/i18n";
@@ -24,7 +24,7 @@ export default async function PersonalPage({searchParams}:{searchParams?:Promise
   const p=await searchParams,locale=resolveLocale(typeof p?.lang==="string"?p.lang:undefined),c=copy[locale],s=await getCurrentSession();
   if(!s)return <AppShell locale={locale} active="personal"><section className="auth-card card"><div className="overline">{c.personal}</div><h1>{locale==="fa"?"لایهٔ شخصی":"Personal layer"}</h1><p className="prose">{locale==="fa"?"برای نگهداری رویدادها و خاطرات شخصی وارد حساب شو.":"Sign in to manage personal data."}</p><Link className="primary-button" href={"/login?lang="+locale}>{c.signIn}</Link></section></AppShell>;
   try{
-    const d=await application.personal(personalRepository).listOverview(s.userId);
+    const d=await getServerPersonalUseCases().listOverview(s.userId);
     return <AppShell locale={locale} active="personal">
       <section className="hero-panel"><div className="overline">{c.personal}</div><h1 style={{margin:"8px 0"}}>{s.userId.slice(0,8)}</h1><form action={signOutAction}><button className="secondary-button"> {c.logout} </button></form></section>
       <div className="two-col">
