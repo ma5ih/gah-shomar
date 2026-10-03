@@ -2,6 +2,7 @@ import type { TodayState } from "./types";
 import { resolveTimeContext } from "./time-context";
 import { publicRepository } from "../data/public/repository";
 import type { PersonalRepository } from "../data/contracts/repositories";
+import type { PersonalEvent, Memory } from "../domain/personal/types";
 import { personalEventOccursOn } from "./personal-calendar";
 
 export async function getTodayState(options:{now?:Date;timeZone?:string;userId?:string;personalRepository?:PersonalRepository}={}):Promise<TodayState>{
@@ -14,8 +15,8 @@ export async function getTodayState(options:{now?:Date;timeZone?:string;userId?:
     .map(id=>publicRepository.getPersonById(id))
     .filter((p):p is NonNullable<typeof p>=>Boolean(p));
 
-  let personalEvents=[];
-  let memories=[];
+  let personalEvents: readonly PersonalEvent[] = [];
+  let memories: readonly Memory[] = [];
   if(options.userId&&options.personalRepository){
     const [allEvents,allMemories]=await Promise.all([
       options.personalRepository.listEvents(options.userId),
