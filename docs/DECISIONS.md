@@ -1,3 +1,18 @@
+## DEC-026 — 2026-10-04
+Status: ACCEPTED
+Title: بستن TASK-07-001 پس از validation Theme A
+
+### Decision
+- TASK-07-001 برای Theme A پس از اجرای مستقل presentation و موفقیت CI بسته شد.
+- CI run #37161733754 و quality job آن موفق بوده‌اند.
+- Theme B در این checkpoint وارد scope نشد و هیچ فایل presentation آن تغییر نکرد.
+- هیچ تغییر Core/domain/application/business behavior برای رسیدن به این checkpoint مجاز یا انجام نشده است.
+
+### Consequence
+- Theme A اکنون baseline بصری مصوب برای ادامه refinementهای مربوط به خودش است.
+- هر تغییر بعدی باید همچنان داخل brief Theme A بماند.
+- ادامه کار به تسک‌های باقی‌مانده PHASE-07 منتقل می‌شود.
+
 ## DEC-025 — 2026-10-04
 Status: ACCEPTED
 Title: آغاز اجرای بصری Theme A بدون تغییر Core
