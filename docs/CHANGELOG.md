@@ -1,3 +1,18 @@
+## ACT-205 — 2026-10-04
+Type: VISUAL-THEME-BOUNDARY
+Status: DONE
+
+- دو مسیر مستقل برای Visual Themeها ایجاد شد:
+  - `src/frontend/themes/flat-geometric/`
+  - `src/frontend/themes/modern-flat-vector/`
+- قرارداد رسمی ثبت شد که Core محصول، Calendar Engine، Domain، Data، Application، Auth/Session و product behavior بین هر دو Theme مشترک هستند.
+- فایل هشدار دائمی `docs/VISUAL-DESIGN-SEPARATION-WARNING.md` ایجاد شد و مرز دقیق «Core مشترک / Presentation مستقل» را ثبت می‌کند.
+- DEC-024 و ARCHITECTURE-BOUNDARIES با این تصمیم همگام شدند.
+- این اقدام وارد طراحی بصری TASK-07-001 نشد؛ فقط scaffolding و boundary طراحی را تثبیت کرد.
+
+### Next
+**TASK-07-001 — Final Visual Hierarchy.** شروع طراحی اصلی از این نقطه است و دو مسیر Theme از آن به بعد مستقل نگهداری می‌شوند.
+
 ## ACT-204 — 2026-10-04
 Type: E2E-ACCEPTANCE
 Status: DONE

@@ -38,5 +38,34 @@ LocalizedText و locale-aware formatting در یک boundary مشترک قرار 
 ## Media/Content Boundary
 Content structured و Media Asset مستقل از UI نگهداری می‌شوند. UI فقط presentation metadata و application DTO را مصرف می‌کند.
 
+## Visual Theme Boundary
+
+دو مسیر presentation مستقل از یک Core مشترک وجود دارند:
+
+```text
+Shared Core
+├── Calendar Engine
+├── Domain
+├── Data / Persistence
+├── Application / Use Cases
+├── Auth / Session
+├── Localization contracts
+└── Product routes / behavior contracts
+        │
+        ├── src/frontend/themes/flat-geometric/
+        │      └── Visual Theme A
+        │
+        └── src/frontend/themes/modern-flat-vector/
+               └── Visual Theme B
+```
+
+قواعد این مرز:
+- هیچ Theme نباید Core را fork، duplicate یا vendor کند.
+- Themeها نباید مستقیماً به repository یا Calendar Engine internals دسترسی پیدا کنند.
+- Themeها فقط presentation و visual behavior خود را مالک می‌شوند.
+- shared components فقط وقتی مشترک می‌مانند که semantic behavior مشترک داشته باشند؛ styling خاص هر Theme باید داخل مسیر همان Theme بماند.
+- فعال‌سازی Theme نباید داده، منطق تقویم، authentication، persistence یا قرارداد Application را تغییر دهد.
+- برای جزئیات ممنوعیت‌ها و نحوه ادامه کار، `docs/VISUAL-DESIGN-SEPARATION-WARNING.md` مرجع اجرایی است.
+
 ## Result
 TASK-02-005 تا TASK-02-010 DONE.

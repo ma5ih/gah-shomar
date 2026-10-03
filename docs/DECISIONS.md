@@ -1,3 +1,24 @@
+## DEC-024 — 2026-10-04
+Status: ACCEPTED
+Title: جداسازی کامل دو Visual Theme با Core مشترک
+
+### Decision
+- از این checkpoint، دو Visual Theme مستقل برای محصول نگهداری می‌شوند:
+  - `src/frontend/themes/flat-geometric/`
+  - `src/frontend/themes/modern-flat-vector/`
+- هر دو Theme باید همان Core موجود را مصرف کنند: Calendar Engine، Domain، Data، Application، Auth/Session، Localization contracts، routing/product behavior و persistence.
+- هیچ Theme مجاز نیست منطق domain/application، repository، calendar calculation، auth، data contract یا business rule را کپی یا تغییر دهد.
+- تفاوت Themeها فقط در presentation است: visual tokens، typography choices، colors، surfaces، shapes، illustration treatment، component styling، motion و visual composition.
+- صفحه‌ها و use caseهای مشترک باید از قراردادهای پایه تغذیه شوند؛ Theme-specific implementation فقط داخل پوشه Theme خودش قرار می‌گیرد.
+- هر Theme باید بتواند بدون انتقال فایل‌های Theme دیگر فعال/غیرفعال یا جایگزین شود.
+- فایل `docs/VISUAL-DESIGN-SEPARATION-WARNING.md` قرارداد اجرایی و هشدار دائمی این مرز است.
+
+### Consequence
+- دو مسیر طراحی می‌توانند مستقل و موازی تکامل پیدا کنند بدون اینکه Core پروژه دو شاخه شود.
+- تست‌های domain/application و منطق محصول بین دو Theme مشترک می‌مانند.
+- هر تغییر ظاهری باید ابتدا در Theme مربوطه انجام شود و فقط در صورت نیاز واقعی به abstraction مشترک، به لایه مشترک منتقل شود.
+- ورود به طراحی اصلی از TASK-07-001 انجام می‌شود؛ این checkpoint فقط مرزبندی و scaffolding را ثبت می‌کند.
+
 ## DEC-023 — 2026-10-04
 Status: ACCEPTED
 Title: Server Composition Root برای binding persistence

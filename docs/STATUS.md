@@ -1,15 +1,15 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
 Last updated: 2026-10-04
-Current repository checkpoint: **ACT-204 on main**
+Current repository checkpoint: **ACT-205 on main**
 Current implementation HEAD: `a9eace682f32f6e6ff32a748fe9df53448c27692`
-Current documentation/audit checkpoint: **ACT-204 — PHASE-06 browser acceptance checkpoint**
+Current documentation/audit checkpoint: **ACT-205 — Visual Theme boundary checkpoint**
 Latest CI: **#299 — PASS**
 Latest implementation-head CI: **#287 — PASS**
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: **ACT-205**
+Next fresh ACT ID: **ACT-206**
 
 ## شمارش رسمی ریزتسک‌ها
 
@@ -79,10 +79,18 @@ Implemented and validated:
 - MEDIUM-08: گسترش E2E به English flow، recurrence browser acceptance، memory CRUD، share-card behavior، accessibility، swipe و visual acceptance.
 - MEDIUM-10: نبود `package-lock.json`؛ برای reproducible release باید در محیط دارای package-manager/network به‌صورت رسمی تولید و commit شود.
 
+## Visual Theme state
+
+- Theme A: `src/frontend/themes/flat-geometric/`
+- Theme B: `src/frontend/themes/modern-flat-vector/`
+- Shared Core remains single-source: Calendar Engine, Domain, Data, Application, Auth/Session and product contracts.
+- No visual-design implementation has started under TASK-07-001 yet.
+- Permanent separation rules: `docs/VISUAL-DESIGN-SEPARATION-WARNING.md`.
+
 ## Editorial state
 
 `seedEvents = []` همچنان عمداً خالی است. هیچ رویداد تاریخی عمومی بدون editorial approval وارد محصول نشده است.
 
 ## مسیر بعدی
 
-**ACT-204 runtime/browser acceptance is validated. Next is TASK-07-001 — Final Visual Hierarchy. Per product-owner instruction, stop before entering main visual design.** → PHASE-08 editorial dataset → PHASE-09 final QA → PHASE-10 release.
+**ACT-205 فقط مرزبندی دو Visual Theme را ثبت کرد. Next is TASK-07-001 — Final Visual Hierarchy. طراحی اصلی هنوز شروع نشده و نقطه توقف همان‌جاست.** → PHASE-08 editorial dataset → PHASE-09 final QA → PHASE-10 release.
