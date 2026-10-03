@@ -1,195 +1,50 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
 Last updated: 2026-10-03
-Current phase: PHASE-03 — Core Backend / Domain / Calendar Engine
+Current phase: PHASE-09 — Integration & QA
 Overall status: IN_PROGRESS
 
-## وضعیت کلی
+| Phase | Status | خلاصه |
+|---|---|---|
+| PHASE-00 | DONE | Documentation |
+| PHASE-01 | DONE | Product specification |
+| PHASE-02 | DONE | Architecture |
+| PHASE-03 | DONE | Calendar engine + domain; unsupported historical calendars explicitly deferred |
+| PHASE-04 | DONE | Application use-cases, auth, personal layer, recurrence, search |
+| PHASE-05 | DONE | Frontend architecture, design system, RTL/LTR, responsive/accessibility foundations |
+| PHASE-06 | IN_PROGRESS | Core product implemented; runtime/device acceptance remains |
+| PHASE-07 | IN_PROGRESS | Visual polish + PWA baseline implemented; final polish remains |
+| PHASE-08 | IN_PROGRESS | 7 events, 5 people, 2 periods, 6 sourced references; dataset expansion remains |
+| PHASE-09 | IN_PROGRESS | Automated coverage strengthened; full product/device QA remains |
+| PHASE-10 | TODO | Release |
 
-| Phase | Status | Progress |
-|---|---|---:|
-| PHASE-00 Documentation | DONE | 100% |
-| PHASE-01 Specification | DONE | 100% |
-| PHASE-02 Architecture | DONE | 100% |
-| PHASE-03 Core Backend / Calendar Engine | IN_PROGRESS | 75% |
-| PHASE-04 Application Backend / Use Cases | TODO | 0% |
-| PHASE-05 Frontend Architecture & Design System | TODO | 0% |
-| PHASE-06 Core Frontend | TODO | 0% |
-| PHASE-07 Visual Polish & PWA | TODO | 0% |
-| PHASE-08 Historical Content / Editorial Dataset | TODO | 0% |
-| PHASE-09 Integration & QA | TODO | 0% |
-| PHASE-10 Release | TODO | 0% |
+## Current HEAD
+`767a4e8c715da25464e4e715eb03d0923e91a5fd` — ACT-138.
 
-## نقطه دقیق فعلی
+## Verified CI
+- ACT-133 / run #102: PASS — migration, typecheck, tests, production build.
+- ACT-132 / run #101: PASS.
+- ACT-134 / run #103: PASS.
+- ACT-135 / run #104: FAILED because old application tests still asserted removed demo IDs; fixed by ACT-137.
+- ACT-136 / run #105: FAILED for the same stale demo assertions; ACT-137 fixed them.
+- ACT-137 / run #106: pending at snapshot time.
+- ACT-138 / run #107: pending at snapshot time.
 
-Calendar Engine از blocker اصلی کبیسه عبور کرده و اجزای اصلی محاسباتی آن ساخته شده‌اند.
+## Recent implementation
+- Resilient public Today/Calendar/Day/Search when personal storage fails.
+- PWA manifest, service worker, offline page, app icon and safe-area/mobile navigation polish.
+- Real source-backed historical seed replacing demo data.
+- Relationship/source validation tests.
+- Application tests migrated from demo content.
+- PWA and personal-storage resilience acceptance tests.
 
-### DONE در PHASE-03
+## Remaining work
+1. Finish and verify ACT-137/ACT-138 CI.
+2. Complete browser/runtime and mobile/tablet/desktop acceptance.
+3. Finish Phase-07 visual polish, time/season visual states and install UX.
+4. Expand Phase-08 historical dataset and editorial QA/media metadata.
+5. Complete Phase-09 release-blocker review and final QA.
+6. Execute Phase-10 production/release/handoff.
 
-#### Calendar Engine
-- TASK-03-001 — Imperial Date Type
-- TASK-03-002 — Year/Month/Day Rules
-- TASK-03-003 — Month Lengths
-- TASK-03-004 — Leap-Year Rules
-- TASK-03-005 — Now/Today Calculation
-- TASK-03-006 — Gregorian ↔ Imperial Conversion
-- TASK-03-008 — Year Boundary / Nowruz Edge Cases
-- TASK-03-009 — Date Arithmetic
-- TASK-03-010 — Weekday Calculation
-- TASK-03-011 — Time-of-day State
-- TASK-03-012 — Seasonal State
-
-#### Domain / Content Foundation
-- TASK-03-013 تا TASK-03-022 — DONE
-
-### IN_PROGRESS
-
-- TASK-03-007 — Historical Date Conversion
-  - Gregorian exact conversion: DONE
-  - Solar Hijri exact mapping: DONE
-  - unsupported historical calendars: intentionally deferred until converter/policy exists
-  - current status: IN_PROGRESS because the full historical-date contract is not closed yet.
-- TASK-03-023 — Calendar Unit Tests / CI Validation
-- TASK-03-024 — Conversion Tests
-- TASK-03-025 — Edge-case Tests
-  - modern leap-year regression matrix expanded through Imperial 2629 / Solar Hijri 1449: DONE
-  - CI execution validation: PENDING
-
-### TODO
-- TASK-03-026 — Domain Model Tests
-- TASK-03-027 — Engine Review
-
-## دقیقاً چه چیزی ساخته شده؟
-
-### Leap Year
-Implementation از break-pointهای خانواده Borkowski/Jalaali استفاده می‌کند؛ چرخه ۳۳ ساله ثابت نیست.
-
-نمونه‌های regression:
-- ۱۴۰۳ → ۲۵۸۳: کبیسه
-- ۱۴۰۸ → ۲۵۸۸: کبیسه
-- ۱۴۳۶ → ۲۶۱۶: کبیسه
-- ۱۴۴۰ → ۲۶۲۰: عادی
-- ۱۴۴۱ → ۲۶۲۱: کبیسه
-
-سال فعلی:
-- ۲۵۸۵: عادی
-- اسپند ۲۵۸۵: ۲۹ روز
-
-### Conversion
-`src/domain/calendar/conversion.ts`
-- Gregorian → Imperial
-- Imperial → Gregorian
-- JDN-based
-- timezone-independent
-- validation
-- round-trip regression
-
-### Today
-`src/domain/calendar/today.ts`
-- pure function
-- runtime timezone را خودش تعیین نمی‌کند
-- مرز نوروز را از conversion engine می‌گیرد
-
-### Historical Conversion
-`src/domain/calendar/historical-conversion.ts`
-- Gregorian exact
-- Solar Hijri exact
-- preservation of original date
-- عدم تولید ImperialDate جعلی برای precision غیر EXACT
-
-### Date Arithmetic
-`src/domain/calendar/date-arithmetic.ts`
-- add days
-- signed difference
-- عبور ماه/سال/روز کبیسه
-- JDN-based
-
-### Weekday
-`src/domain/calendar/weekday.ts`
-- شنبه تا جمعه
-- timezone-independent
-
-### Time / Season
-- `time-of-day.ts`: morning / noon / sunset / night
-- `season.ts`: spring / summer / autumn / winter
-
-## تست و CI
-
-Test files برای calendar/month/leap/conversion/historical/today/arithmetic/weekday/time/season ثبت شده‌اند.
-
-`.github/workflows/ci.yml` شامل:
-1. checkout
-2. Node 22
-3. npm install
-4. TypeScript typecheck
-5. Vitest
-6. production build
-
-**مهم:** GitHub هنوز workflow run موفقی برای این CI گزارش نکرده است. بنابراین وضعیت فنی فعلی «configured / not yet verified» است، نه PASS.
-
-## اسناد همگام‌شده اخیر
-
-- README.md
-- docs/PROJECT.md
-- docs/ROADMAP.md
-- docs/STATUS.md
-- docs/CHANGELOG.md
-- docs/DECISIONS.md
-- docs/REQUIREMENTS.md
-- docs/ARCHITECTURE.md
-- docs/QUALITY-ARCHITECTURE.md
-- docs/INDEX.md
-- docs/CALENDAR-SPEC.md
-- docs/CALENDAR-ENGINE-OPEN-QUESTION.md
-
-## آخرین اقدامات
-
-- ACT-060 — Leap-Year correction — DONE
-- ACT-061 — Gregorian ↔ Imperial conversion — DONE
-- ACT-062 — Today calculation — DONE
-- ACT-063 — Historical conversion gateway — IN_PROGRESS
-- ACT-064 — Date arithmetic — DONE
-- ACT-065 — Weekday — DONE
-- ACT-066 — Time-of-day — DONE
-- ACT-067 — Season — DONE
-- ACT-068 — CI workflow — DONE
-- ACT-069 — README sync — DONE
-- ACT-070 — PROJECT sync — DONE
-- ACT-071 — ARCHITECTURE sync — DONE
-- ACT-072 — QUALITY-ARCHITECTURE sync — DONE
-- ACT-073 — Decisions sync — DONE
-- ACT-074 — Canonical status rebuild — DONE
-- ACT-075 — Canonical roadmap/task ledger — DONE
-- ACT-076 — Complete changelog sync — DONE
-- ACT-077 — Quality/calendar requirements sync — DONE
-- ACT-078 — Calendar Engine resolution note sync — DONE
-- ACT-079 — Documentation index sync — DONE
-- ACT-080 — Requirements version sync — DONE
-- ACT-081 — Complete changelog action ledger — DONE
-- ACT-082 — Expand calendar leap-year regression matrix — DONE
-- ACT-083 — Add domain contract fixtures — IN_PROGRESS
-
-## Next Task — دقیقاً از اینجا ادامه بده
-
-**TASK-03-023 — Calendar Unit Tests / CI Validation**
-
-ترتیب پیشنهادی بعدی:
-1. مشاهده اولین CI run
-2. رفع type/test/build errors در صورت وجود
-3. تکمیل regression suite
-4. بستن TASK-03-023
-5. بستن TASK-03-024
-6. بستن TASK-03-025
-7. TASK-03-026 Domain Model Tests
-8. TASK-03-027 Engine Review
-9. پایان PHASE-03
-10. ورود به PHASE-04 — Application Backend / Use Cases
-
-## قانون ادامه
-هیچ task را صرفاً به دلیل وجود کد DONE نکن؛ implementation + tests + documentation + validation باید با هم وضعیت را تعیین کنند.
-
-
-## Recent action tail
-- ACT-099 — recurrence decision and implementation-note synchronization — DONE
-- ACT-100 — correct auth action type import boundary — DONE
-- ACT-101 — update Phase 4-6 task ledger — DONE
+## Continuation rule
+Every meaningful change gets an ACT ID, changelog entry, tests/validation and synchronized STATUS/ROADMAP.
