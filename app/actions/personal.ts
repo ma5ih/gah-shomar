@@ -9,7 +9,7 @@ function date(fd:FormData){return{year:Number(fd.get("year")),month:Number(fd.ge
 async function sessionOrThrow(){const s=await getCurrentSession();if(!s)throw new Error("SIGN_IN_REQUIRED");return s}
 function eventInput(fd:FormData){
  const type=String(fd.get("type")??"custom") as "birthday"|"anniversary"|"custom";
- return{type,title:String(fd.get("title")??"").trim(),date:date(fd),notes:String(fd.get("notes")??"")||undefined,recurrence:type==="birthday"||type==="anniversary"||fd.get("recurrence")==="yearly"?{frequency:"yearly" as const,interval:1 as const}:undefined}
+ return{type,title:String(fd.get("title")??"").trim(),date:date(fd),notes:String(fd.get("notes")??"")||undefined,personalPersonId:String(fd.get("personalPersonId")??"")||undefined,recurrence:type==="birthday"||type==="anniversary"||fd.get("recurrence")==="yearly"?{frequency:"yearly" as const,interval:1 as const}:undefined}
 }
 export async function createPersonalEventAction(fd:FormData){const s=await sessionOrThrow();await application.personal(personalRepository).createEvent(s.userId,eventInput(fd));revalidatePath("/personal");revalidatePath("/")}
 export async function updatePersonalEventAction(fd:FormData){const s=await sessionOrThrow();await application.personal(personalRepository).updateEvent(s.userId,String(fd.get("id")??""),eventInput(fd));revalidatePath("/personal");revalidatePath("/")}
