@@ -1,4 +1,132 @@
 ## ACT-184 — 2026-10-03
+Type: PROJECT-LEDGER-SYNC
+Status: DONE
+
+### انجام شد
+- وضعیت واقعی HEAD پس از ACT-183 با GitHub و CI دوباره بررسی شد.
+- شمارش رسمی 193 ریزتسک بازشماری و ثبت شد:
+  - DONE: 134
+  - IN_PROGRESS: 32
+  - TODO: 26
+  - DEFERRED: 1
+  - BLOCKED: 0
+  - DEPRECATED: 0
+- TASK-09-010 — Personal Layer Acceptance Test از TODO به IN_PROGRESS منتقل شد، چون اکنون browser flow واقعی و regression مالکیت Personal Person دارد.
+- TASK-09-022 همچنان DONE است.
+- PRIMARY WORKSTREAM صریحاً PHASE-06 باقی ماند.
+- PHASE-07 به‌عنوان مرحله بعدی، مشروط به گفت‌وگوی قبلی درباره طراحی تخصصی ثبت شد؛ هیچ تصمیم طراحی جدیدی ثبت نشد.
+- ROADMAP / STATUS / HANDOFF / PHASE-06 IMPLEMENTATION همگام شدند.
+
+### Validation
+- آخرین HEAD: `b22ca9d59414b675512edf3bfe307c7dba3e87c9`
+- CI run #200: PASS
+- migration: PASS
+- typecheck: PASS
+- unit/integration: PASS
+- production build: PASS
+- browser smoke: PASS
+
+### Next
+PHASE-06 runtime/browser acceptance — ادامه Personal Layer acceptance، سپس closure فاز 06.
+
+---
+
+## ACT-183 — 2026-10-03
+Type: TYPE-COMPATIBILITY-FIX
+Status: DONE
+
+### انجام شد
+- ورودی collection افراد شخصی در فرم Event Detail از `any[]` به `readonly any[]` تغییر کرد.
+- مشکل TypeScript ناشی از عبور `readonly PersonalPerson[]` از application query به UI برطرف شد.
+- CI run #200 تمام مراحل را با موفقیت پشت سر گذاشت.
+
+---
+
+## ACT-182 — 2026-10-03
+Type: TEST-SYNTAX-FIX
+Status: DONE
+
+### انجام شد
+- فایل regression مربوط به Personal Repository syntax-normalize شد تا suite Vitest بدون خطای parser اجرا شود.
+- هیچ contract یا رفتار محصولی تغییر نکرد.
+
+### Validation
+- unit/integration tests: PASS در CI #200.
+
+---
+
+## ACT-181 — 2026-10-03
+Type: APPLICATION-AUTHORIZATION-FIX
+Status: DONE
+
+### انجام شد
+- `AuthorizationError` در `src/application/personal.ts` به‌درستی import شد.
+- validation مالکیت `personalPersonId` که در ACT-179 اضافه شده بود اکنون typecheck-safe و اجرایی است.
+
+### Validation
+- typecheck: PASS در CI #200.
+
+---
+
+## ACT-180 — 2026-10-03
+Type: PERSONAL-PERSON-REGRESSION
+Status: DONE
+
+### انجام شد
+- regression برای مرز مالکیت Personal Person اضافه شد.
+- شخص شخصی یک کاربر در `listPeople` کاربر دیگر قابل مشاهده نیست.
+- Personal Event می‌تواند به Personal Person همان مالک متصل شود.
+- این تست به‌صورت repository-level در کنار persistence test اجرا می‌شود.
+
+---
+
+## ACT-179 — 2026-10-03
+Type: PERSONAL-AUTHORIZATION
+Status: DONE
+
+### انجام شد
+- هنگام create/update رویداد شخصی، اگر `personalPersonId` ارسال شود، application layer بررسی می‌کند که آن شخص متعلق به همان user باشد.
+- در صورت عدم مالکیت، `AuthorizationError` صادر می‌شود.
+- این boundary جلوی cross-account reference را می‌گیرد.
+
+---
+
+## ACT-178 — 2026-10-03
+Type: PERSONAL-PERSON-UI
+Status: DONE
+
+### انجام شد
+- Personal Personهای کاربر در صفحه Personal نمایش داده می‌شوند.
+- فرم ایجاد Personal Person به UI متصل است.
+- Personal Event form اکنون می‌تواند یک Personal Person را انتخاب و به event متصل کند.
+- همین association برای edit نیز حفظ می‌شود.
+- هیچ تغییر تخصصی در visual design انجام نشد.
+
+---
+
+## ACT-177 — 2026-10-03
+Type: PERSONAL-EVENT-LINK
+Status: DONE
+
+### انجام شد
+- Server Action رویداد شخصی اکنون `personalPersonId` را از form دریافت و به application layer منتقل می‌کند.
+- اتصال Event ↔ Personal Person دیگر صرفاً در domain/repository باقی نمی‌ماند و از UI قابل استفاده است.
+
+---
+
+## ACT-176 — 2026-10-03
+Type: LOCALIZATION
+Status: DONE
+
+### انجام شد
+- labelهای اصلی Personal form در Persian و English به i18n اضافه شدند.
+- عنوان، نوع، سال، ماه، روز، یادداشت، recurrence و save actions از قرارداد locale استفاده می‌کنند.
+- گزینه‌های birthday / anniversary / custom نیز در هر دو زبان label مناسب دارند.
+- هدف این تغییر عملکرد و localization بود، نه visual redesign.
+
+---
+
+## ACT-184 — 2026-10-03
 Type: DOCUMENTATION-SYNC
 Status: DONE
 
