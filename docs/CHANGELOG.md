@@ -1,3 +1,19 @@
+## ACT-065 — 2026-10-03
+Type: CALENDAR-ENGINE-WEEKDAY
+Status: DONE
+
+### انجام شد
+- `weekdayOfImperialDate()` به Calendar Domain اضافه شد.
+- روز هفته از محاسبه تقویمی و Julian Day به‌دست می‌آید و به timezone وابسته نیست.
+- mapping کامل شنبه تا جمعه به قرارداد `Weekday` پروژه اضافه شد.
+- regression test برای ۳ مهر ۲۵۸۵ / ۳ اکتبر ۲۰۲۶ و روز بعد آن اضافه شد.
+
+### وضعیت تست
+- testها نوشته شده‌اند؛ اجرای CI برای commitهای جدید هنوز تأیید نشده است.
+
+### Next
+TASK-03-011 — Time-of-day State
+
 ## ACT-064 — 2026-10-03
 Type: CALENDAR-ENGINE-DATE-ARITHMETIC
 Status: DONE
