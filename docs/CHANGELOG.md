@@ -1,3 +1,13 @@
+## ACT-160 — 2026-10-03
+Type: DOCUMENTATION-CHECKPOINT
+Status: DONE
+
+- Corrected the stale next-ACT counter in docs/HANDOFF.md.
+- No application, content or test behavior changed.
+- Next fresh ACT ID is now ACT-161.
+- Implementation baseline remains e3107be19485199f3e725a1bbc40ceb86b72f88b.
+
+---
 ## ACT-159 — 2026-10-03
 Type: DOCUMENTATION-CHECKPOINT
 Status: DONE
