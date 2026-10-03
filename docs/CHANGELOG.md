@@ -433,3 +433,39 @@ PHASE-03 — Calendar Engine اکنون از blocker اصلی کبیسه عبو�
 4. وضعیت ROADMAP و STATUS را همگام کند.
 5. اگر سند جدید ایجاد شد، INDEX به‌روزرسانی شود.
 
+
+## ACT-103 — 2026-10-03
+Type: PERSONAL-CRUD
+Status: DONE
+- Completed Personal Event and Memory update/delete server actions and UI.
+- Added yearly recurrence controls to the Personal Event form.
+- Ownership remains enforced through authenticated session context.
+
+## ACT-104 — 2026-10-03
+Type: FRONTEND-CONTEXT
+Status: DONE
+- Integrated authenticated personal events/memories into Today.
+- Added private markers to Monthly Calendar.
+- Kept public and personal visibility separate.
+
+## ACT-105 — 2026-10-03
+Type: CALENDAR-REGRESSION
+Status: DONE
+- Restored the previously validated Gregorian/Imperial conversion implementation after CI detected a malformed restoration.
+- Preserved explicit numeric state typing for TypeScript.
+
+## ACT-106 — 2026-10-03
+Type: CALENDAR-REGRESSION
+Status: DONE
+- Restored canonical leap-year implementation with numeric breakpoint cursor typing.
+
+## ACT-107 — 2026-10-03
+Type: APPLICATION-CONTENT
+Status: DONE
+- Added public source lookup contract for richer Event Detail presentation.
+
+## ACT-108 — 2026-10-03
+Type: DOCUMENTATION-SYNC
+Status: DONE
+- Added PHASE-04-IMPLEMENTATION.md, PHASE-05-IMPLEMENTATION.md and PHASE-06-IMPLEMENTATION.md.
+- Updated implementation handoff notes and current phase checkpoint.
