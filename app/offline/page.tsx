@@ -1,0 +1,3 @@
+import Link from "next/link";
+export const dynamic="force-static";
+export default function OfflinePage(){return <main dir="rtl" style={{minHeight:"100dvh",display:"grid",placeItems:"center",padding:24,background:"#f7f3ec",color:"#25221f"}}><section className="card detail-card" style={{maxWidth:520,width:"100%",textAlign:"center"}}><div className="overline">گاه‌شمار</div><h1>اتصال اینترنت در دسترس نیست</h1><p className="prose">صفحه‌های ذخیره‌شده هنوز قابل مشاهده‌اند. بعد از وصل شدن اینترنت، دوباره تلاش کن.</p><Link className="primary-button" href="/">بازگشت به امروز</Link></section></main>}
