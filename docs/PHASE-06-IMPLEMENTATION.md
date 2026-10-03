@@ -2,6 +2,7 @@
 
 Status: IN_PROGRESS
 Last updated: 2026-10-03
+Implementation baseline: `d531e0a1bb3e4cbf287ad2ce25c72bf0cfa4d9e3`
 
 ## Implemented product surfaces
 - Today and current date hierarchy
@@ -13,6 +14,9 @@ Last updated: 2026-10-03
 - Search
 - Authentication
 - Personal Events / Personal Person / Memories
+- Authenticated Personal Event create/persistence/logout browser flow
+- Personal Person listing + event linkage
+- Personal Person ownership-boundary regression
 - Yearly recurrence
 - Personal Share Card
 - Persian/English + RTL/LTR
@@ -39,11 +43,14 @@ Current implementation:
 ## Automated baseline
 - ACT-165 / run #168: full quality + browser smoke PASS (24/24 assertions across desktop/tablet/mobile).
 - ACT-166 / run #173: full quality + browser smoke PASS after historical-content notice correction.
+- ACT-175 / run #189: full quality + browser smoke PASS after authenticated Personal Event flow coverage.
+- ACT-199 / run #199: full quality + browser smoke PASS after Personal Person linkage/ownership work.
 
 ## Current acceptance gap
 - E2E smoke is aligned with the intentionally empty event seed and is green in CI.
+- Current HEAD automated pipeline is green.
 - Browser/runtime interaction QA remains open for product acceptance beyond automated smoke.
 - Mobile/tablet/desktop visual QA remains open.
 - Final responsive/accessibility review remains open.
 
-Do not move PHASE-06 to DONE until these gaps have evidence.
+Do not move PHASE-06 to DONE until runtime/product acceptance has evidence. No specialized visual-design work has been started in this checkpoint.
