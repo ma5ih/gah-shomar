@@ -21,7 +21,7 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 ### نقطه فعلی اجرا
 **PRIMARY WORKSTREAM:** PHASE-06 — Core Frontend Product Experience
 **QA BLOCKER:** ندارد — TASK-09-022 در CI #168 با موفقیت بسته شد
-**NEXT:** runtime/browser acceptance for PHASE-06 → PHASE-06 closure → PHASE-07 → PHASE-08 → PHASE-09 final QA → PHASE-10.
+**NEXT:** PHASE-06 runtime/browser acceptance → PHASE-06 closure → PHASE-07 → PHASE-08 → PHASE-09 final QA → PHASE-10.
 
 این شمارش بر اساس تمام TASK-*های همین سند انجام شده و از این checkpoint به‌عنوان عدد مرجع استفاده می‌شود.
 
@@ -196,14 +196,21 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-06-013 — Person Page — IN_PROGRESS
 - TASK-06-014 — Related Content Navigation — IN_PROGRESS
 - TASK-06-015 — Personal Events UI — IN_PROGRESS
+  - authenticated create flow now has E2E coverage and persistence verification; acceptance remains open
 - TASK-06-016 — Personal Person UI — IN_PROGRESS
+  - people are listed and selectable from Personal Event forms; ownership boundary is regression-tested; full UI acceptance remains open
 - TASK-06-017 — Memories UI — IN_PROGRESS
+  - existing CRUD path remains implemented; dedicated browser acceptance is still open
 - TASK-06-018 — Recurrence UI — IN_PROGRESS
+  - yearly recurrence remains wired through Personal Event creation/update; full browser acceptance remains open
 - TASK-06-019 — Search UI — IN_PROGRESS
 - TASK-06-020 — Search Result Navigation — IN_PROGRESS
 - TASK-06-021 — Persian Experience — IN_PROGRESS
+  - Personal form labels/types are now localized; broader RTL/product acceptance remains open
 - TASK-06-022 — English Experience — IN_PROGRESS
+  - Personal form labels/types now have English counterparts; broader LTR/product acceptance remains open
 - TASK-06-023 — Authentication UI — IN_PROGRESS
+  - register/login/logout are covered by the authenticated Personal browser flow; final acceptance remains open
 - TASK-06-024 — Personal Event Share Card Experience — IN_PROGRESS
   - core pages are present; completion is gated by runtime/browser acceptance
 
@@ -249,7 +256,8 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-09-007 — Calendar Acceptance Test — TODO
 - TASK-09-008 — Event Acceptance Test — TODO
 - TASK-09-009 — Timeline Acceptance Test — TODO
-- TASK-09-010 — Personal Layer Acceptance Test — TODO
+- TASK-09-010 — Personal Layer Acceptance Test — IN_PROGRESS
+  - authenticated Personal Event create/persistence/logout flow and Personal Person ownership regression now have automated coverage
 - TASK-09-011 — Language/RTL/LTR QA — IN_PROGRESS
 - TASK-09-012 — Mobile QA — TODO
 - TASK-09-013 — Tablet/Desktop QA — TODO
@@ -262,8 +270,8 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-09-020 — Release Blocker Review — TODO
 - TASK-09-021 — Final Product Review — TODO
 - TASK-09-022 — E2E Dataset/Editorial Alignment — DONE
-  - browser smoke now follows the intentionally empty historical-event seed
-  - CI run #168 passed the full quality + browser-smoke pipeline
+  - browser smoke follows the intentionally empty historical-event seed
+  - CI run #168 and later full pipelines validate the aligned behavior
 
 # PHASE-10 — Release & Handoff — TODO
 - TASK-10-001 — Production Configuration — TODO
@@ -282,7 +290,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 **PRIMARY WORKSTREAM:** PHASE-06 — Core Frontend Product Experience — IN_PROGRESS
 **QA BLOCKER:** TASK-09-022 in PHASE-09 — DONE
 
-**NEXT:** CI revalidation → runtime/browser acceptance → PHASE-06 closure → PHASE-07 polish → PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release.
+**NEXT:** PHASE-06 runtime/browser acceptance → PHASE-06 closure → PHASE-07 polish → PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release.
 
 نکته: PHASE-09 در این checkpoint «فاز جاری محصول» نیست؛ یک QA gate باز است که blocker آن باید پیش از acceptance نهایی PHASE-06 بسته شود.
 
