@@ -4,7 +4,7 @@ Version: 1.0.0
 Status: APPROVED
 Tasks: TASK-02-019 تا TASK-02-021
 Actions: ACT-038 تا ACT-040
-Last updated: 2026-10-02
+Last updated: 2026-10-03
 
 ## Error Strategy
 
@@ -51,5 +51,17 @@ DB constraints لایه سوم دفاع هستند، نه جایگزین domain 
 
 AC-001 تا AC-039 باید در QA قابل trace باشند.
 
+## Calendar Engine Quality Status
+
+Calendar unit/regression tests اکنون برای month rules، leap-year، conversion، historical conversion، Today، date arithmetic، weekday، time-of-day و season وجود دارند. CI workflow نیز typecheck، Vitest و production build را تعریف کرده است.
+
+### Validation status
+- Test code: PRESENT
+- CI configuration: PRESENT
+- GitHub workflow result: NOT YET OBSERVED
+- Therefore: هیچ PASS رسمی تا مشاهده run موفق ثبت نمی‌شود.
+
 ## Result
 TASK-02-019 تا TASK-02-021 DONE.
+
+Current quality work: TASK-03-023 تا TASK-03-025 IN_PROGRESS.
