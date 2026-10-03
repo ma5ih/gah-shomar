@@ -10,7 +10,7 @@ Status: DONE
 - implementation HEAD قطعی فعلی: 5791e3e89aabcd75fd856e03e9a05023d009dbcc با commit «feat: ACT-207 — activate Theme A».
 - آخرین validation مشاهده‌شده برای checkpoint بستن Theme A: GitHub Actions run #37161733754 با conclusion = success و quality job با conclusion = success.
 - هیچ تغییر جدیدی در Calendar Engine، Domain، Application، Data، Auth/Session، routing، localization contracts، business rules یا product behavior در ACT-209 انجام نشد.
-- شمارش canonical ریزتسک‌ها بدون تغییر باقی ماند: 204 کل، 135 DONE، 32 IN_PROGRESS، 36 TODO، 1 DEFERRED.
+- شمارش canonical ریزتسک‌ها بر اساس ledger فعلی ROADMAP ثبت شد: 204 کل، 136 DONE، 31 IN_PROGRESS، 36 TODO، 1 DEFERRED.
 - handoff از اشاره‌های قدیمی به ACT-203/ACT-204 و «pending بودن TASK-07-001» پاک‌سازی شد تا Repository بدون نیاز به chat history قابل ادامه باشد.
 - این اقدام documentation-only است و implementation را تغییر نمی‌دهد.
 
