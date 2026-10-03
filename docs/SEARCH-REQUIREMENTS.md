@@ -12,14 +12,17 @@ Search باید راه سریع و ساده‌ای برای پیدا کردن م
 
 ## 2. Searchable Entities
 
-MVP:
+Current MVP:
 - Event
 - Person
 - Historical Period
-- Public occasion/category metadata (through Event category/tags)
-- Month/date references as a future parser extension
 - Personal Event
 - Memory
+
+Planned extensions:
+- Public occasion/category metadata
+- Month/date references through a dedicated parser
+- localized alias matching where content requires it
 
 ## 3. Query Inputs
 
@@ -59,13 +62,13 @@ Search نباید با تغییر query یا indexing، داده خصوصی را
 1. exact/near-exact title/name match
 2. prefix/token relevance
 3. normalized text relevance
-4. date/category context
+4. date/category context وقتی metadata مربوط در query/index حاضر باشد
 
 از ranking پیچیده و غیرقابل توضیح فعلاً اجتناب می‌شود.
 
 ## 7. Language
 
-Search باید Persian و English را پشتیبانی کند و در صورت وجود localized aliases امکان match داشته باشد. ماه/تاریخ در این checkpoint parser مستقل ندارند و به extension اختصاصی آینده موکول شده‌اند.
+Search باید Persian و English را پشتیبانی کند. localized alias matching و month/date parsing در extensionهای Search پیگیری می‌شوند.
 
 RTL/LTR presentation از query engine جداست.
 

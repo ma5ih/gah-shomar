@@ -201,7 +201,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-06-018 — Recurrence UI — IN_PROGRESS
   - yearly recurrence remains wired through Personal Event creation/update; full browser acceptance remains open
 - TASK-06-019 — Search UI — IN_PROGRESS
-  - lightweight category/alias matching is supported; dedicated month/date parsing remains a future extension
+  - category/alias search enhancements may be completed here; dedicated month/date parsing remains a future extension
 - TASK-06-020 — Search Result Navigation — IN_PROGRESS
 - TASK-06-021 — Persian Experience — IN_PROGRESS
   - Personal form labels/types are now localized; broader RTL/product acceptance remains open
@@ -277,7 +277,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 
 # PHASE-10 — Release & Handoff — TODO
 - TASK-10-001 — Production Configuration — TODO
-  - includes central runtime configuration validation and production environment checks
+  - includes central runtime configuration validation, production environment checks and the reproducible dependency-installation strategy (including lockfile)
 - TASK-10-002 — Production Build — TODO
 - TASK-10-003 — Deployment Validation — TODO
 - TASK-10-004 — PWA Production Validation — TODO

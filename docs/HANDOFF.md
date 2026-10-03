@@ -4,11 +4,11 @@ Project: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Checkpoint date: 2026-10-04
-Current repository HEAD: f206ef0040271acd36ca1341d3bdbb1688b6c4a4
-Last implementation HEAD: 1f28a0306c446beb89f279a69a382814090d4e7a
+Current repository checkpoint: **ACT-202 on main**
+Last implementation HEAD: `a9eace682f32f6e6ff32a748fe9df53448c27692`
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 QA gate: PHASE-09 — Integration & QA
-QA dependency: TASK-09-022 — DONE; TASK-09-019 implementation correction gate is DONE; latest code checkpoint CI #281 PASS.
+QA dependency: TASK-09-022 — DONE; TASK-09-019 implementation correction gate is DONE; current post-correction CI revalidation is pending; last fully green baseline before ACT-199 was #283 PASS.
 Overall status: IN_PROGRESS
 
 ## 1. از کجا شروع کنیم؟
@@ -198,7 +198,7 @@ production configuration، deployment validation، production PWA check، final 
 
 قاعدهٔ جدید:
 - از checkpoint بعدی فقط شناسه‌های جدید استفاده شود.
-- شناسهٔ بعدی: ACT-200
+- شناسهٔ بعدی: ACT-203
 - هیچ ACT قدیمی دوباره استفاده نشود.
 - برای ارجاع به collisionهای قدیمی، از توضیح توصیفی و SHA commit استفاده شود.
 
@@ -243,4 +243,4 @@ ACT-160 corrected a stale ACT counter in this handoff. No product/code behavior 
 - All ACT-186 implementation findings are closed and CI #281 is fully green.
 - Remaining work is product/runtime acceptance in PHASE-06, followed by visual polish, editorial dataset work, final QA and release.
 - Release reproducibility still requires a committed `package-lock.json`; it has not been fabricated without a reliable npm/package-manager environment.
-- Next fresh ACT ID: ACT-200.
+- Next fresh ACT ID: ACT-203.
