@@ -89,15 +89,14 @@ function jdnToSolarHijri(jdn: number): ImperialDate {
     jy -= 1;
     k += 179;
     if (leap === 1) k += 1;
-  }
-
-  if (k <= 185) {
+  } else if (k <= 185) {
     const month = (1 + div(k, 31)) as ImperialMonth;
     const day = mod(k, 31) + 1;
     return { year: jy, month, day };
+  } else {
+    k -= 186;
   }
 
-  k -= 186;
   const month = (7 + div(k, 30)) as ImperialMonth;
   const day = mod(k, 30) + 1;
   return { year: jy, month, day };
