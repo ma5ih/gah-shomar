@@ -1,3 +1,17 @@
+## ACT-066 — 2026-10-03
+Type: CALENDAR-ENGINE-TIME
+Status: DONE
+
+### انجام شد
+- `getTimeOfDayState()` به Calendar Domain اضافه شد.
+- چهار state مورد نیاز محصول: morning / noon / sunset / night.
+- مرزها configurable هستند و عمداً داخل Domain hard-code نشده‌اند؛ بنابراین UI می‌تواند در آینده بر اساس policy محصول یا موقعیت زمانی کاربر آن‌ها را تعیین کند.
+- validation برای ساعت، دقیقه و ترتیب مرزها اضافه شد.
+- regression test برای تمام مرزهای چهار state اضافه شد.
+
+### Next
+TASK-03-012 — Seasonal State
+
 ## ACT-065 — 2026-10-03
 Type: CALENDAR-ENGINE-WEEKDAY
 Status: DONE
