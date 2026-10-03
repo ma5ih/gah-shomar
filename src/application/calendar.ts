@@ -1,6 +1,6 @@
 import {addImperialDays,imperialToGregorian,isImperialLeapYear,monthLength,weekdayOfImperialDate} from "../domain/calendar";
 import {monthName} from "../domain/calendar/month";
-import type {GregorianDate,ImperialDate,ImperialMonth,Weekday} from "../domain/calendar/types";
+import type {ImperialDate,ImperialMonth,Weekday} from "../domain/calendar/types";
 import type {MonthQueryResult,DayQueryResult} from "./types";
 import {publicRepository} from "../data/public/repository";
 import type {PersonalRepository} from "../data/contracts/repositories";
