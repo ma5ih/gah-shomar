@@ -1,8 +1,8 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.24.0
-Last update: 2026-10-04 — ACT-209
+Index version: 2.25.0
+Last update: 2026-10-04 — ACT-210
 Current phase: PHASE-06 — Core Frontend Product Experience (QA gate: PHASE-09)
 
 ## اسناد
@@ -43,6 +43,7 @@ Current phase: PHASE-06 — Core Frontend Product Experience (QA gate: PHASE-09)
 | DOC-032 | ARCHITECTURE-IMPLEMENTATION-AUDIT-2026-10-04.md | COMPLETE — historical audit | Audit مستقل implementation/architecture و gapهای verified |\n| DOC-033 | PROJECT-AUDIT-2026-10-04-ACT-203.md | COMPLETE | پرونده کامل ممیزی این checkpoint، اصلاحات، تست‌ها و نقطه ادامه |
 | DOC-034 | VISUAL-DESIGN-SEPARATION-WARNING.md | APPROVED | قرارداد و هشدار جداسازی دو Visual Theme با Core مشترک |
 | DOC-035 | PHASE-07-THEME-A-FLAT-GEOMETRIC.md | DONE | اجرای بصری Theme A و قرارداد عملیاتی TASK-07-001 |
+| DOC-036 | PHASE-07-THEME-A-SPACING.md | IN_PROGRESS | اجرای TASK-07-002 و قرارداد spacing Theme A |
 
 ## شناسه‌گذاری
 - PHASE-XX — مرحله
@@ -67,10 +68,10 @@ PHASE-09: IN_PROGRESS
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-209 — همگام‌سازی کامل اسناد پس از بسته‌شدن TASK-07-001 برای Theme A.
+ACT-210 — شروع و ثبت اجرای TASK-07-002 برای Theme A.
 
 ## اقدام بعدی
-**TASK-07-002 — Spacing/Margin Consistency — TODO**؛ اجرای بصری فعلی فقط Theme A است و Theme B خارج از Scope می‌ماند.
+**TASK-07-002 — Spacing/Margin Consistency — IN_PROGRESS**؛ اجرای بصری فعلی فقط Theme A است و Theme B خارج از Scope می‌ماند.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.
