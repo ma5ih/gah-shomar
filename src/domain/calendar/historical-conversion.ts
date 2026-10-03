@@ -1,4 +1,5 @@
 import { gregorianToImperial } from "./conversion";
+import { isImperialLeapYear } from "./leap-year";
 import type { GregorianDate, HistoricalDate, ImperialDate } from "./types";
 
 export type ExactHistoricalCalendar = "gregorian" | "hijri_solar";
@@ -33,12 +34,7 @@ export function convertExactHistoricalDate(
     throw new RangeError("Invalid Solar Hijri historical date.");
   }
 
-  const leap =
-    input.month === 12 &&
-    input.day === 30 &&
-    [1399, 1403, 1408, 1412, 1416, 1420, 1424, 1428, 1432, 1436, 1441, 1445, 1449].includes(
-      input.year,
-    );
+  const leap = input.month === 12 && isImperialLeapYear(input.year + 1180);
 
   const maxDay =
     input.month <= 6 ? 31 : input.month <= 11 ? 30 : leap ? 30 : 29;
