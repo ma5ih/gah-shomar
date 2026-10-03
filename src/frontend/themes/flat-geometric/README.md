@@ -8,4 +8,10 @@
 
 All Theme A visual decisions must remain within this brief.
 
+## Current execution
+
+- TASK-07-001 is IN_PROGRESS.
+- Operational visual rules are recorded in docs/PHASE-07-THEME-A-FLAT-GEOMETRIC.md.
+- The active Theme A stylesheet is src/frontend/themes/flat-geometric/theme.css.
+
 This folder owns presentation only. It must consume the shared Core and must not duplicate domain, application, data, calendar, auth, or business logic.
