@@ -1,3 +1,17 @@
+## DEC-023 — 2026-10-04
+Status: ACCEPTED
+Title: Server Composition Root برای binding persistence
+
+### Decision
+- Presentation و `app/` route/actionها نباید concrete repository را مستقیماً مصرف کنند.
+- binding بین Application Use Cases و concrete persistence adapterها در `src/application/server.ts` انجام می‌شود.
+- Application contractهای قابل تست همچنان dependency injection را حفظ می‌کنند؛ composition root فقط wiring محیط واقعی server را انجام می‌دهد.
+
+### Consequence
+- dependency leakهای Presentation کاهش می‌یابند.
+- unit/integration tests می‌توانند repositoryهای fake/injected را حفظ کنند.
+- TASK-09-019 باید این boundary را قبل از release دوباره با import audit و CI تأیید کند.
+
 ## DEC-019 — 2026-10-03
 Status: ACCEPTED
 Title: تفکیک Timezone Resolution از Calendar Domain
