@@ -1,10 +1,10 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
 Last updated: 2026-10-04
-Implementation baseline: `d531e0a1bb3e4cbf287ad2ce25c72bf0cfa4d9e3`
+Implementation baseline: `4e06741359d86cd2194b5cacbcb4c2d9e81c4fd1`
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 QA gate: PHASE-09 — Integration & QA
-QA blocker: none; TASK-09-022 closed and current HEAD validated by CI #218
+QA blocker: TASK-09-019 correction gate; TASK-09-022 closed. Latest code checkpoint CI #246 is still validating browser setup.
 Overall status: IN_PROGRESS
 
 ## شمارش رسمی ریزتسک‌ها — ACT-185
@@ -94,9 +94,10 @@ Current implementation:
 ## Latest CI truth
 
 Current HEAD:
-- SHA `2f8bc94aa64d2cb6cf5efb42042ba418b04ad8be`
-- implementation baseline: `d531e0a1bb3e4cbf287ad2ce25c72bf0cfa4d9e3`
-- CI run **#218 — PASS**
+- SHA `4e06741359d86cd2194b5cacbcb4c2d9e81c4fd1`
+- implementation baseline: `4e06741359d86cd2194b5cacbcb4c2d9e81c4fd1`
+- CI #244 — PASS for ACT-187 checkpoint
+- CI #246 — IN_PROGRESS for ACT-188 checkpoint
 - migration: PASS
 - typecheck: PASS
 - unit/integration: PASS
@@ -119,7 +120,7 @@ No active E2E dataset mismatch remains. `seedEvents = []` is intentional and the
 
 ## Audit findings / immediate correction gate
 
-ACT-186 verified the architecture direction but found three HIGH implementation gaps (presentation dependency leaks, optional Event slug routing contract, and incomplete Period date containment) plus several MEDIUM quality/acceptance gaps. These must be handled under TASK-09-019 before final product acceptance.
+ACT-186 verified the architecture direction and found three HIGH implementation gaps (presentation dependency leaks, optional Event slug routing contract, and incomplete Period date containment) plus several MEDIUM quality/acceptance gaps. These must be handled under TASK-09-019 before final product acceptance.
 
 ## Immediate next actions
 
@@ -145,7 +146,7 @@ There is a historical ACT-ID collision in Git commit messages:
 
 These historical commits are immutable and should not be rewritten. From the next checkpoint onward, new ACT IDs must never be reused.
 
-Next fresh ACT ID: **ACT-187**
+Next fresh ACT ID: **ACT-189**
 
 ## Continuation rule
 
