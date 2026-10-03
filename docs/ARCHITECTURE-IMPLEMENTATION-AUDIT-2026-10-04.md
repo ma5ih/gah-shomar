@@ -1,6 +1,6 @@
 # ARCHITECTURE & IMPLEMENTATION AUDIT — 2026-10-04
 
-Status: OPEN
+Status: IN_PROGRESS
 Audit ID: ACT-186
 Repository: ma5ih/gah-shomar
 Branch: main
@@ -95,7 +95,7 @@ CI دیگر فقط typecheck/build نیست؛ migration و browser smoke هم د
 
 ## یافته‌های قابل اصلاح
 
-### HIGH-01 — Presentation boundary violation
+### HIGH-01 — Presentation boundary violation — IMPLEMENTATION FIXED, CI PENDING
 Architecture می‌گوید Presentation باید از Application contracts استفاده کند، اما implementation فعلی در چند نقطه مستقیماً به Domain/Data متصل است:
 
 - `app/calendar/page.tsx` → import از Calendar Domain (`monthName`)
@@ -108,7 +108,7 @@ Architecture می‌گوید Presentation باید از Application contracts ا
 
 **نتیجه:** معماری اسنادی درست است، implementation باید این dependency leaks را ببندد.
 
-### HIGH-02 — Optional event slug مقابل routing contract
+### HIGH-02 — Optional event slug مقابل routing contract — FIXED
 `Event.slug` در domain optional است، اما:
 - EventCard در نبود slug به ID لینک می‌دهد.
 - Event Detail فقط `getEventBySlug()` را استفاده می‌کند.
@@ -118,7 +118,7 @@ Architecture می‌گوید Presentation باید از Application contracts ا
 
 **راه اصلاح:** slug را برای published Event اجباری کنیم یا retrieval route را با ID fallback پشتیبانی کنیم. انتخاب نهایی باید قبل از publication dataset تثبیت شود.
 
-### HIGH-03 — Period/day containment bug
+### HIGH-03 — Period/day containment bug — FIXED + REGRESSION
 در `getDayQuery()` period فقط با year-range بررسی می‌شود:
 - startDate با ماه/روز مقایسه نمی‌شود.
 - بنابراین periodی که در میانهٔ یک سال شروع می‌شود، ممکن است از ابتدای همان سال برای day query نمایش داده شود.
@@ -233,6 +233,12 @@ Memory می‌تواند IDهای person/event/personalEvent بگیرد، ولی
 10. سپس PHASE-07 polish
 11. سپس PHASE-08 editorial monthly dataset
 12. سپس final PHASE-09/10 release QA
+
+## Checkpoint after ACT-187 / ACT-188
+
+- HIGH-01 implementation refactor is on HEAD; CI #246 is the validation gate.
+- HIGH-02 and HIGH-03 are implemented; CI #244 passed after HIGH-02/HIGH-03 regression fixes.
+- Medium/Low findings remain intentionally open for TASK-09-019.
 
 ## Final audit verdict
 
