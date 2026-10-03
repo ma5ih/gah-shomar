@@ -19,9 +19,9 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 - DEPRECATED: **0**
 
 ### نقطه فعلی اجرا
-**CURRENT:** PHASE-09 — Integration & Full QA
-**CURRENT TASK:** TASK-09-022 — E2E Dataset/Editorial Alignment — IN_PROGRESS
-**NEXT:** همگام‌سازی E2E با seed خالی → CI revalidation → runtime/browser acceptance → بستن PHASE-06 → PHASE-07 → PHASE-08 → تکمیل PHASE-09 → PHASE-10.
+**PRIMARY WORKSTREAM:** PHASE-06 — Core Frontend Product Experience
+**QA BLOCKER:** TASK-09-022 — E2E Dataset/Editorial Alignment — IN_PROGRESS
+**NEXT:** CI revalidation → runtime/browser acceptance for PHASE-06 → PHASE-06 closure → PHASE-07 → PHASE-08 → PHASE-09 final QA → PHASE-10.
 
 این شمارش بر اساس تمام TASK-*های همین سند انجام شده و از این checkpoint به‌عنوان عدد مرجع استفاده می‌شود.
 
@@ -279,8 +279,11 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 
 # مسیر ادامه فعلی
 
-**CURRENT:** PHASE-09 — IN_PROGRESS
+**PRIMARY WORKSTREAM:** PHASE-06 — Core Frontend Product Experience — IN_PROGRESS
+**QA BLOCKER:** TASK-09-022 in PHASE-09 — IN_PROGRESS
 
-**NEXT:** TASK-09-022 E2E dataset/editorial alignment → CI revalidation → runtime/browser acceptance → PHASE-06 closure → PHASE-07 polish → PHASE-08 monthly editorial review → PHASE-09 release blockers → PHASE-10 release.
+**NEXT:** CI revalidation → runtime/browser acceptance → PHASE-06 closure → PHASE-07 polish → PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release.
+
+نکته: PHASE-09 در این checkpoint «فاز جاری محصول» نیست؛ یک QA gate باز است که blocker آن باید پیش از acceptance نهایی PHASE-06 بسته شود.
 
 قاعده: Phase فقط با implementation + tests + validation واقعی به DONE می‌رسد. QA دوباره‌کاری روی Phaseهای قبلی را با تغییرات بعدی پوشش می‌دهد.
