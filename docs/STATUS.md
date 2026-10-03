@@ -156,6 +156,13 @@ Test files برای calendar/month/leap/conversion/historical/today/arithmetic/w
 - ACT-071 — ARCHITECTURE sync — DONE
 - ACT-072 — QUALITY-ARCHITECTURE sync — DONE
 - ACT-073 — Decisions sync — DONE
+- ACT-074 — Canonical status rebuild — DONE
+- ACT-075 — Canonical roadmap/task ledger — DONE
+- ACT-076 — Complete changelog sync — DONE
+- ACT-077 — Quality/calendar requirements sync — DONE
+- ACT-078 — Calendar Engine resolution note sync — DONE
+- ACT-079 — Documentation index sync — DONE
+- ACT-080 — Requirements version sync — DONE
 
 ## Next Task — دقیقاً از اینجا ادامه بده
 
