@@ -110,7 +110,9 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
   - leap/year boundary/month boundary cases exist
   - modern leap-year regression matrix through Imperial 2629 / Solar Hijri 1449: DONE
   - CI execution validation pending
-- TASK-03-026 — Domain Model Tests — TODO
+- TASK-03-026 — Domain Model Tests — IN_PROGRESS
+  - Event/Person/Period/Source contract fixtures: DONE
+  - Personal Event/Memory contract coverage pending
 - TASK-03-027 — Engine Review — TODO
 
 ### خروجی مورد انتظار PHASE-03
