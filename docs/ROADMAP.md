@@ -11,8 +11,8 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 ## شمارش رسمی ریزتسک‌ها — ACT-185
 
 - کل ریزتسک‌های شماره‌گذاری‌شده: **204**
-- DONE: **135**
-- IN_PROGRESS: **32**
+- DONE: **136**
+- IN_PROGRESS: **31**
 - TODO: **36**
 - DEFERRED: **1**
 - BLOCKED: **0**
@@ -286,7 +286,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - Core, Calendar Engine, Domain, Data, Application, Auth/Session, routing, localization contracts and product behavior remain shared and unchanged by this documentation checkpoint.
 - Last implementation HEAD remains 5791e3e89aabcd75fd856e03e9a05023d009dbcc.
 - Last Theme A validation observed: GitHub Actions run #37161733754 — PASS; its quality job also succeeded.
-- Canonical task counts remain: 204 total / 135 DONE / 32 IN_PROGRESS / 36 TODO / 1 DEFERRED.
+- Canonical task counts remain: 204 total / 136 DONE / 31 IN_PROGRESS / 36 TODO / 1 DEFERRED.
 - No task was added or removed by ACT-209 and no product/code behavior changed.
 
 # PHASE-10 — Release & Handoff — TODO
