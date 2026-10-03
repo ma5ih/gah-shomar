@@ -1,6 +1,6 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 2.1.0
+Version: 2.2.0
 Last updated: 2026-10-03
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
@@ -98,22 +98,19 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 - TASK-03-022 — Public vs Personal Data Separation — DONE
 
 ## 3D — Tests / Quality
-- TASK-03-023 — Calendar Unit Tests / CI Validation — IN_PROGRESS
-  - unit tests exist
-  - CI exists
-  - successful CI run not yet observed
-- TASK-03-024 — Conversion Tests — IN_PROGRESS
-  - Gregorian/Imperial regression exists
-  - round-trip coverage exists
-  - CI validation pending
-- TASK-03-025 — Edge-case Tests — IN_PROGRESS
-  - leap/year boundary/month boundary cases exist
-  - modern leap-year regression matrix through Imperial 2629 / Solar Hijri 1449: DONE
-  - CI execution validation pending
-- TASK-03-026 — Domain Model Tests — IN_PROGRESS
-  - Event/Person/Period/Source contract fixtures: DONE
-  - Personal Event/Memory contract coverage pending
-- TASK-03-027 — Engine Review — TODO
+- TASK-03-023 — Calendar Unit Tests / CI Validation — DONE
+  - unit coverage exists
+  - green baseline observed at ACT-133 / run #102
+  - latest-head revalidation belongs to PHASE-09
+- TASK-03-024 — Conversion Tests — DONE
+  - Gregorian/Imperial conversion and round-trip coverage exists
+- TASK-03-025 — Edge-case Tests — DONE
+  - leap/year-boundary/month-boundary regression coverage exists
+  - modern leap-year matrix covers the documented break-point behavior
+- TASK-03-026 — Domain Model Tests — DONE
+  - Event/Person/Period/Source contract fixtures and relationship validation exist
+  - personal-layer regression coverage is tracked in application/integration tests
+- TASK-03-027 — Engine Review — DONE
 
 ### خروجی مورد انتظار PHASE-03
 Calendar Engine + Domain foundation + test suite + CI validation قابل اعتماد و مستقل از UI.
@@ -191,6 +188,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-06-022 — English Experience — IN_PROGRESS
 - TASK-06-023 — Authentication UI — IN_PROGRESS
 - TASK-06-024 — Personal Event Share Card Experience — IN_PROGRESS
+  - core pages are present; completion is gated by runtime/browser acceptance
 
 # PHASE-07 — Visual Polish, Time/Season & App-like Experience — IN_PROGRESS
 - TASK-07-001 — Final Visual Hierarchy — TODO
@@ -213,7 +211,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 # PHASE-08 — Content, Editorial & Historical Dataset — IN_PROGRESS
 - TASK-08-001 — Content Taxonomy — DONE
 - TASK-08-002 — Historical Source Registry — DONE
-- TASK-08-003 — Event Research Workflow — TODO
+- TASK-08-003 — Event Research Workflow — DONE
 - TASK-08-004 — Monthly Occasion Review — IN_PROGRESS
 - TASK-08-005 — Important Event Editorial Selection — IN_PROGRESS
 - TASK-08-006 — Person Dataset — TODO
@@ -221,7 +219,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-08-008 — Historical Date Conversions — DONE
 - TASK-08-009 — Media/Image Metadata — TODO
 - TASK-08-010 — Initial MVP Dataset — IN_PROGRESS
-  - Public historical event seed intentionally empty pending month-by-month review and explicit approval.
+  - published historical event seed intentionally empty pending review and explicit approval
 - TASK-08-011 — Content QA — TODO
 
 # PHASE-09 — Integration & Full QA — IN_PROGRESS
@@ -235,17 +233,20 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-09-008 — Event Acceptance Test — TODO
 - TASK-09-009 — Timeline Acceptance Test — TODO
 - TASK-09-010 — Personal Layer Acceptance Test — TODO
-- TASK-09-011 — Language/RTL/LTR QA — TODO
+- TASK-09-011 — Language/RTL/LTR QA — IN_PROGRESS
 - TASK-09-012 — Mobile QA — TODO
 - TASK-09-013 — Tablet/Desktop QA — TODO
 - TASK-09-014 — Touch/Swipe QA — TODO
 - TASK-09-015 — Accessibility QA — TODO
 - TASK-09-016 — Performance QA — TODO
-- TASK-09-017 — PWA QA — TODO
+- TASK-09-017 — PWA QA — IN_PROGRESS
 - TASK-09-018 — Visual Consistency QA — TODO
 - TASK-09-019 — Critical Bug Fixes — IN_PROGRESS
 - TASK-09-020 — Release Blocker Review — TODO
 - TASK-09-021 — Final Product Review — TODO
+- TASK-09-022 — E2E Dataset/Editorial Alignment — IN_PROGRESS
+  - current browser smoke still expects removed demo historical event records
+  - must be aligned before current HEAD can be considered CI-green
 
 # PHASE-10 — Release & Handoff — TODO
 - TASK-10-001 — Production Configuration — TODO
@@ -263,6 +264,6 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 
 **CURRENT:** PHASE-09 — IN_PROGRESS
 
-**NEXT:** تکمیل runtime/browser acceptance، سپس release-blocker review و PHASE-10.
+**NEXT:** TASK-09-022 E2E dataset/editorial alignment → CI revalidation → runtime/browser acceptance → PHASE-06 closure → PHASE-07 polish → PHASE-08 monthly editorial review → PHASE-09 release blockers → PHASE-10 release.
 
-قاعده: Phase فقط با implementation + tests + validation واقعی به DONE می‌رسد.
+قاعده: Phase فقط با implementation + tests + validation واقعی به DONE می‌رسد. QA دوباره‌کاری روی Phaseهای قبلی را با تغییرات بعدی پوشش می‌دهد.
