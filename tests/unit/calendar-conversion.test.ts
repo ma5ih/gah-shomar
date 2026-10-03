@@ -32,6 +32,11 @@ describe("Gregorian ↔ Imperial conversion", () => {
     expect(isImperialDateValid({ year: 2620, month: 12, day: 30 })).toBe(false);
   });
 
+  it("covers the 1403 leap-year Nowruz boundary", () => {
+    expect(imperialToGregorian({ year: 2583, month: 12, day: 30 })).toEqual({ year: 2025, month: 3, day: 20 });
+    expect(imperialToGregorian({ year: 2584, month: 1, day: 1 })).toEqual({ year: 2025, month: 3, day: 21 });
+  });
+
   it("round-trips representative dates", () => {
     const dates = [
       { year: 2585, month: 1 as const, day: 1 },
