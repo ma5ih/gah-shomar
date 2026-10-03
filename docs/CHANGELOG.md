@@ -1,3 +1,17 @@
+## ACT-150 — 2026-10-03
+Type: CONTENT-EDITORIAL-POLICY
+Status: DONE
+
+- Public historical event seed reset to an empty dataset.
+- Removed event relationships from structural person/period seed records so validation remains consistent.
+- Updated daily-event and Important Events application tests to expect no published historical events.
+- Important Events page now has an explicit editorial-pending empty state.
+- Added the month-by-month event review and user-approval workflow to `docs/EDITORIAL-EVENT-REVIEW.md`.
+- Updated content foundation documentation and roadmap/status to prevent unapproved historical events from being published.
+
+### Editorial rule
+No historical event is added to `seedEvents` until it has been reviewed month-by-month and explicitly approved.
+
 ## ACT-141 — 2026-10-03
 Type: DOCUMENTATION-SYNC
 Status: DONE
