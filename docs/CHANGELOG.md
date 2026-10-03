@@ -1,3 +1,20 @@
+## ACT-062 — 2026-10-03
+Type: CALENDAR-ENGINE-TODAY
+Status: DONE
+
+### انجام شد
+- `getImperialToday()` به Calendar Domain اضافه شد.
+- Today به‌صورت pure function روی یک Gregorian calendar date resolved کار می‌کند.
+- timezone و clock resolution عمداً خارج از Domain نگه داشته شد تا SSR، موبایل و runtimeهای مختلف بتوانند timezone موردنظر را به‌صورت صریح تعیین کنند.
+- regression test برای تاریخ فعلی پروژه و مرز ۲۰/۲۱ مارس ۲۰۲۶ اضافه شد.
+- export عمومی Calendar Domain به‌روز شد.
+
+### وضعیت تست
+- testها نوشته شده‌اند؛ اجرای CI برای commitهای جدید هنوز تأیید نشده است.
+
+### Next
+TASK-03-007 — Historical Date Conversion
+
 ## ACT-061 — 2026-10-03
 Type: CALENDAR-ENGINE-CONVERSION
 Status: DONE
