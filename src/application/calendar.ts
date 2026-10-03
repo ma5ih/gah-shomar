@@ -27,7 +27,7 @@ export async function getMonthQuery(year:number,month:number,today?:ImperialDate
 }
 export async function getDayQuery(date:ImperialDate,userId?:string,personalRepository?:PersonalRepository):Promise<DayQueryResult>{
  const events=publicRepository.listEventsForDate(date.year,date.month,date.day);const importantEvents=events.filter(e=>e.featured);const people=[...new Set(events.flatMap(e=>e.personIds))].map(id=>publicRepository.getPersonById(id)).filter((p):p is NonNullable<typeof p>=>Boolean(p));const periods=publicRepository.listPeriods().filter(p=>{const start=p.startDate.imperialDate;const end=p.endDate?.imperialDate;return!!start&&date.year>=start.year&&(!end||date.year<=end.year)});
- let personalEvents=[];let memories=[];if(userId&&personalRepository){const[allEvents,allMemories]=await Promise.all([personalRepository.listEvents(userId),personalRepository.listMemoriesForDate(userId,date)]);personalEvents=allEvents.filter(e=>personalEventOccursOn(e,date));memories=allMemories}
+ let personalEvents: readonly PersonalEvent[]=[];let memories: readonly Memory[]=[];if(userId&&personalRepository){const[allEvents,allMemories]=await Promise.all([personalRepository.listEvents(userId),personalRepository.listMemoriesForDate(userId,date)]);personalEvents=allEvents.filter(e=>personalEventOccursOn(e,date));memories=allMemories}
  return{date,weekday:weekdayOfImperialDate(date),events,importantEvents,periods,people,personalEvents,memories}
 }
 export function shiftMonth(year:number,month:ImperialMonth,delta:-1|1):ImperialDate{assertYear(year);assertMonth(month);const moved=addImperialDays({year,month,day:1},delta===1?monthLength(month,isImperialLeapYear(year)):-1);return{year:moved.year,month:moved.month,day:1}}
