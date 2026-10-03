@@ -5,7 +5,7 @@ Name: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Status: IN_PROGRESS
-Document version: 1.4.0
+Document version: 1.5.0
 Last updated: 2026-10-04
 
 ## 1. تعریف محصول
@@ -94,12 +94,12 @@ PHASE-09 IN_PROGRESS
 PHASE-10 TODO
 
 Current implementation HEAD: 5791e3e89aabcd75fd856e03e9a05023d009dbcc.
-Current documentation checkpoint: **ACT-210 — Theme A spacing implementation**.
-Current implementation commit: dadfc21de5bbc1c262774b47c539bd10c1072414.
+Current documentation checkpoint: **ACT-213 — PWA install experience**.
+Current implementation HEAD: 48a42d82083af949783b6aa6319e30e40834f9a0.
 Latest completed Theme A validation: **GitHub Actions #37161733754 — PASS**.
 Earlier full product/E2E acceptance checkpoint: **CI #299 — PASS**.
 TASK-09-019 is DONE. The product remains in PHASE-06 with runtime/browser acceptance open.
-TASK-07-001 is DONE for Theme A. TASK-07-002 — Spacing/Margin Consistency — is IN_PROGRESS pending CI validation.
+TASK-07-001 is DONE for Theme A. TASK-07-002 through TASK-07-011 are IN_PROGRESS pending full validation. TASK-07-013 Install Experience is IN_PROGRESS pending PWA validation.
 
 ## 9. وضعیت Visual Themeها
 
