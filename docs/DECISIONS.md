@@ -1,3 +1,17 @@
+## DEC-018 — 2026-10-03
+Status: ACCEPTED
+Title: تبدیل Gregorian ↔ Imperial در Calendar Engine
+
+### Decision
+- تبدیل روزانه باید deterministic و مستقل از timezone مرورگر باشد.
+- مبنای تبدیل، الگوریتم Borkowski/Jalaali و break-pointهای مصوب DEC-017 است.
+- سال شاهنشاهی در خروجی با رابطه Solar Hijri + 1180 محاسبه می‌شود.
+- Calendar Engine باید round-tripهای Gregorian → Imperial → Gregorian و Imperial → Gregorian → Imperial را برای تاریخ‌های معتبر حفظ کند.
+- مرز نوروز بخشی از منطق تبدیل است و نباید با جمع/تفریق سادهٔ سال‌ها جایگزین شود.
+
+### Consequence
+TASK-03-006 implementation complete است و TASK-03-005 می‌تواند روی conversion contract موجود بنا شود.
+
 ## DEC-017 — 2026-10-02
 Status: ACCEPTED
 Title: عدم تکرار مکانیکی چرخه ۳۳ ساله در محاسبه کبیسه
