@@ -1,6 +1,6 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
-Last updated: 2026-10-02
+Last updated: 2026-10-03
 Current phase: PHASE-03 — Core Backend / Domain / Calendar Engine
 Overall status: IN_PROGRESS
 
@@ -15,7 +15,7 @@ Overall status: IN_PROGRESS
 | PHASE-00 Documentation | DONE | 100% |
 | PHASE-01 Specification | DONE | 100% |
 | PHASE-02 Architecture | DONE | 100% |
-| PHASE-03 Core Backend / Calendar Engine | IN_PROGRESS | 30% |
+| PHASE-03 Core Backend / Calendar Engine | IN_PROGRESS | 35% |
 | PHASE-04 Application Backend / Use Cases | TODO | 0% |
 | PHASE-05 Frontend Architecture & Design System | TODO | 0% |
 | PHASE-06 Core Frontend | TODO | 0% |
@@ -65,6 +65,7 @@ Overall status: IN_PROGRESS
 - ACT-058 — ثبت blocker قاعده کبیسه — SUPERSEDED
 - ACT-059 — نهایی‌سازی اولیه قاعده کبیسه متناظر با تقویم خورشیدی — SUPERSEDED
 - ACT-060 — اصلاح الگوریتم کبیسه برای چرخه‌های غیرثابت — DONE
+- ACT-061 — پیاده‌سازی تبدیل Gregorian ↔ Imperial — DONE
 
 ## تصمیم‌های محصول فعلی
 
