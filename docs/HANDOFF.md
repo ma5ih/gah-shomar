@@ -45,14 +45,14 @@ GitHub و همین شاخهٔ `main` مرجع واقعی وضعیت هستند. 
 بر اساس تمام TASK-*های موجود در ROADMAP فعلی:
 - کل: **193**
 - DONE: **134**
-- IN_PROGRESS: **31**
-- TODO: **27**
+- IN_PROGRESS: **32**
+- TODO: **26**
 - DEFERRED: **1**
 - BLOCKED: **0**
 - DEPRECATED: **0**
 
 **نقطه فعلی محصول:** PHASE-06 — Core Frontend Product Experience.
-**QA dependency:** TASK-09-022 — DONE in CI #168.
+**QA dependency:** TASK-09-022 — DONE. TASK-09-010 Personal Layer Acceptance — IN_PROGRESS.
 این بخش و شمارش آن مرجع ادامه پروژه است؛ برای تعیین وضعیت به چت قبلی اتکا نشود.
 
 ## 3. وضعیت Phaseها
@@ -139,7 +139,7 @@ migration → typecheck → unit/integration tests → production build → Chro
 
 ## 8. مسیر ادامه، به ترتیب
 
-### گام 1 — Runtime/browser acceptance
+### گام 1 — PHASE-06 runtime/browser acceptance
 حداقل این سناریوها بررسی شوند:
 - Today
 - Calendar
@@ -158,10 +158,10 @@ migration → typecheck → unit/integration tests → production build → Chro
 - loading/error/empty states
 - PWA manifest/service worker/offline baseline
 
-### گام 2 — PHASE-06 closure
+### گام 2 — PHASE-06 closure after acceptance evidence
 پس از acceptance واقعی، gapهای Core Frontend بسته و Phase-06 فقط در صورت evidence به DONE منتقل شود.
 
-### گام 3 — PHASE-07 visual polish
+### گام 3 — PHASE-07 visual polish (only after explicit design discussion)
 hierarchy، spacing، typography، component consistency، density، motion، time-of-day، seasonal states و install UX تکمیل شوند.
 
 ### گام 4 — PHASE-08 editorial content
