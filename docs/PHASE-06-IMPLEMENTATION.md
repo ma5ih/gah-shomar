@@ -37,12 +37,12 @@ Current implementation:
 - public event seed is intentionally empty pending editorial approval.
 
 ## Automated baseline
-- ACT-133 / run #102: migration, typecheck, unit/integration tests and production build PASS.
-- Later test/data changes require current HEAD revalidation.
+- ACT-165 / run #168: full quality + browser smoke PASS (24/24 assertions across desktop/tablet/mobile).
+- ACT-166 / run #173: full quality + browser smoke PASS after historical-content notice correction.
 
 ## Current acceptance gap
-- E2E smoke still contains assertions for the removed demo event.
-- Browser/runtime interaction QA remains open.
+- E2E smoke is aligned with the intentionally empty event seed and is green in CI.
+- Browser/runtime interaction QA remains open for product acceptance beyond automated smoke.
 - Mobile/tablet/desktop visual QA remains open.
 - Final responsive/accessibility review remains open.
 
