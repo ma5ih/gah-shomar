@@ -1,3 +1,12 @@
+## ACT-080 — 2026-10-03
+Type: REQUIREMENTS-SYNC
+Status: DONE
+
+### انجام شد
+- REQUIREMENTS از v1.0.0 به v1.1.0 ارتقا یافت.
+- REQ-081 و REQ-082 به نیازمندی‌های Calendar Engine و CI اضافه شدند.
+- AC-035 و AC-040 وضعیت واقعی validation را صریح می‌کنند.
+
 ## ACT-075 — 2026-10-03
 Type: DOCUMENTATION-SYNC
 Status: DONE
