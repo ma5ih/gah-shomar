@@ -1,3 +1,17 @@
+## ACT-204 — 2026-10-04
+Type: E2E-ACCEPTANCE
+Status: DONE
+
+- English/LTR Personal browser flow verified.
+- Yearly recurrence enable/clear browser flow verified.
+- Memory CRUD browser flow verified.
+- Public Calendar/Day navigation and empty-state acceptance expanded.
+- One session race and one non-deterministic Calendar selector were corrected.
+- CI **#299 PASS** validates the ACT-204 checkpoint.
+
+### Next
+**TASK-07-001 — Final Visual Hierarchy.** This is the main visual-design entry point. Per product-owner instruction, stop before implementing it.
+
 ## ACT-203 — 2026-10-04
 Type: AUDIT-AND-CONTINUATION
 Status: DONE
