@@ -1,9 +1,9 @@
 # PHASE-05 IMPLEMENTATION NOTE
 
-Status: IN_PROGRESS
+Status: DONE
 Last updated: 2026-10-03
 
-Implemented:
+## Implemented
 - App shell and primary navigation
 - Responsive visual token system
 - Glass/card/button/form surfaces
@@ -14,9 +14,17 @@ Implemented:
 - Search/auth/personal presentation primitives
 - Bottom-sheet primitive
 - Loading/error/empty states
+- Visible keyboard focus treatment
+- Mobile safe-area/navigation readability improvements
 
-Validation remaining:
-- Final green CI gate
-- Real-device visual QA
-- Accessibility audit
-- Final typography/spacing consistency pass
+## Validation
+- Core frontend architecture and interaction primitives are implemented.
+- Runtime, device, accessibility and visual acceptance continue in PHASE-09.
+- Playwright desktop/tablet/mobile Chromium coverage is present.
+
+## Remaining quality work
+- final typography/spacing consistency
+- visual density review
+- real-device acceptance
+- accessibility audit
+- final visual polish is tracked in PHASE-07
