@@ -43,6 +43,7 @@ export function personalUseCases(repository:PersonalRepository){
       const [events,memories]=await Promise.all([repository.listEventsForDate(userId,date),repository.listMemoriesForDate(userId,date)]);
       return {events,memories};
     },
+    createPerson:async(userId:string,input:Pick<import("../domain/personal/types").PersonalPerson,"name">)=>{assertUser(userId);validatePersonalPersonName(input.name);return repository.createPerson(userId,input)},
     createEvent:async(userId:string,input:Omit<PersonalEvent,"id"|"ownerUserId"|"createdAt"|"updatedAt">)=>{
       assertUser(userId); validatePersonalEventInput(input); return repository.createEvent(userId,input);
     },
