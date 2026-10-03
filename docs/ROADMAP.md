@@ -1,7 +1,7 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 2.4.2
-Last updated: 2026-10-04 — ACT-204
+Version: 2.4.3
+Last updated: 2026-10-04 — ACT-209
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
 
@@ -275,17 +275,19 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - browser smoke follows the intentionally empty historical-event seed
   - CI run #168 and later full pipelines validate the aligned behavior
 
-## CURRENT CHECKPOINT — ACT-207 — 2026-10-04
+## CURRENT CHECKPOINT — ACT-209 — 2026-10-04
 
-- ACT-207 starts the main visual-design execution for Theme A — Flat Geometric under TASK-07-001.
-- Theme A presentation is implemented in src/frontend/themes/flat-geometric/; Theme B is intentionally untouched.
-- The Theme A operational design rules are recorded in docs/PHASE-07-THEME-A-FLAT-GEOMETRIC.md.
-- Core, Calendar Engine, Domain, Data, Application, Auth/Session, routing, localization and product behavior remain unchanged.
-- Theme A removes gradient/glass treatment and uses flat solid surfaces, layered angular forms, simple lines and restrained interaction feedback.
-- Time-of-day and seasonal state remain data-driven and affect Theme A appearance only.
-- TASK-07-001 remains IN_PROGRESS pending broader visual validation across core pages and responsive states.
-- Latest observed CI before this checkpoint remains #299 PASS; ACT-207 validation is pending.
-- Next fresh ACT ID: ACT-208.
+- ACT-209 is a documentation-convergence checkpoint after ACT-208.
+- TASK-07-001 — Final Visual Hierarchy — is **DONE for Theme A — Flat Geometric**.
+- TASK-07-002 — Spacing/Margin Consistency — is the next visual task and remains **TODO** until implementation is explicitly started.
+- Theme A is the only active visual scope. Theme B — Modern Flat Vector Illustration — remains untouched and outside the current scope.
+- Theme A presentation remains isolated under src/frontend/themes/flat-geometric/.
+- The operational Theme A visual contract is docs/PHASE-07-THEME-A-FLAT-GEOMETRIC.md.
+- Core, Calendar Engine, Domain, Data, Application, Auth/Session, routing, localization contracts and product behavior remain shared and unchanged by this documentation checkpoint.
+- Last implementation HEAD remains 5791e3e89aabcd75fd856e03e9a05023d009dbcc.
+- Last Theme A validation observed: GitHub Actions run #37161733754 — PASS; its quality job also succeeded.
+- Canonical task counts remain: 204 total / 135 DONE / 32 IN_PROGRESS / 36 TODO / 1 DEFERRED.
+- No task was added or removed by ACT-209 and no product/code behavior changed.
 
 # PHASE-10 — Release & Handoff — TODO
 - TASK-10-001 — Production Configuration — TODO
