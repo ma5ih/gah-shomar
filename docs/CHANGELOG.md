@@ -1,4 +1,24 @@
-## ACT-188 — 2026-10-04
+## ACT-187 — 2026-10-04
+Type: CRITICAL-CORRECTION
+Status: DONE
+
+### انجام شد
+- Event retrieval از `getEventBySlugOrId()` پشتیبانی می‌کند تا Event بدون slug نیز routeable باقی بماند.
+- Period containment در Day Query بر اساس مقایسهٔ کامل ImperialDate اصلاح شد و regression test برای قبل/روز شروع Period اضافه شد.
+- Public search فقط People/Periods تأییدشده را در public result set وارد می‌کند.
+- Event rangeها در date/month queryها به‌صورت start/end inclusive در نظر گرفته می‌شوند.
+- application helpers برای conversion و month naming اضافه شدند تا Presentation مستقیماً به Calendar internals وابسته نباشد.
+- Event Detail، Person، Timeline، Calendar و Event Card از Application boundary مصرف می‌کنند.
+- CI run #244 برای checkpoint ACT-187 با SUCCESS کامل شد.
+
+### Findings
+- HIGH-02 و HIGH-03 اصلاح و validation شدند.
+- بخشی از HIGH-01 اصلاح شد؛ بستن کامل Presentation/Data binding در ACT-188 انجام شد.
+
+### Next
+ACT-188 — تکمیل Server Composition Boundary و validation نهایی.
+
+
 Type: ARCHITECTURE-BOUNDARY
 Status: DONE
 
