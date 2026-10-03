@@ -4,7 +4,7 @@ Project: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Checkpoint date: 2026-10-03
-Current HEAD: e3107be19485199f3e725a1bbc40ceb86b72f88b
+Implementation baseline: e3107be19485199f3e725a1bbc40ceb86b72f88b
 Current phase: PHASE-09 — Integration & QA
 Overall status: IN_PROGRESS
 
@@ -214,3 +214,8 @@ production configuration، deployment validation، production PWA check، final 
 ## 12. اصل انتقال‌پذیری
 
 هیچ‌کس نباید برای فهم وضعیت پروژه به چت قبلی وابسته باشد. اگر این فایل، STATUS، ROADMAP و CHANGELOG با هم سازگار باشند، پروژه باید از همین commit قابل ادامه باشد.
+
+
+## 13. Documentation checkpoint note
+
+ACT-158 performed the main reconciliation. ACT-159 finalizes the checkpoint after all documentation synchronization commits. The implementation baseline remains `e3107be19485199f3e725a1bbc40ceb86b72f88b`; later commits in this checkpoint are documentation-only unless explicitly listed otherwise.
