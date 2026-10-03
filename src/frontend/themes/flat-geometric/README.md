@@ -10,7 +10,7 @@ All Theme A visual decisions must remain within this brief.
 
 ## Current execution
 
-- TASK-07-001 is IN_PROGRESS.
+- TASK-07-001 is DONE.
 - Operational visual rules are recorded in docs/PHASE-07-THEME-A-FLAT-GEOMETRIC.md.
 - The active Theme A stylesheet is src/frontend/themes/flat-geometric/theme.css.
 
