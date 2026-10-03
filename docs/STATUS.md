@@ -1,11 +1,11 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
 Last updated: 2026-10-04 — ACT-211
-Current documentation checkpoint: ACT-210 on main
+Current documentation checkpoint: ACT-212 on work/act-212-phase-07
 Current implementation HEAD: fa095e637e3f4d244c9b06889717d71d3dd690a0
-Current implementation checkpoint: ACT-211 — Theme A spacing normalization refinement
+Current implementation checkpoint: ACT-212 — Theme A visual polish batch
 Latest completed Theme A validation: GitHub Actions #37161733754 — PASS (ACT-208)
-Current task: TASK-07-002 — Spacing/Margin Consistency — IN_PROGRESS
+Current task batch: TASK-07-002 through TASK-07-011 — IN_PROGRESS
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 Current visual stream: PHASE-07 — Theme A refinement
 QA gate: PHASE-09 — Integration & Full QA
@@ -35,7 +35,7 @@ Next fresh ACT ID: ACT-211
 | PHASE-04 | DONE | Application/backend use cases |
 | PHASE-05 | DONE | Frontend architecture/design system |
 | PHASE-06 | IN_PROGRESS | Core pages implemented; runtime/browser/product acceptance remains |
-| PHASE-07 | IN_PROGRESS | Theme A hierarchy complete; spacing consistency now in progress |
+| PHASE-07 | IN_PROGRESS | Theme A visual polish batch TASK-07-002..011 implemented; validation remains |
 | PHASE-08 | IN_PROGRESS | Editorial review and historical dataset remain |
 | PHASE-09 | IN_PROGRESS | Automated pipeline green; final QA remains |
 | PHASE-10 | TODO | Release |
