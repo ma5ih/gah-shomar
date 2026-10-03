@@ -1,8 +1,8 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.27.0
-Last update: 2026-10-04 — ACT-212
+Index version: 2.28.0
+Last update: 2026-10-04 — ACT-213
 Current phase: PHASE-06 — Core Frontend Product Experience (QA gate: PHASE-09)
 
 ## اسناد
@@ -45,6 +45,7 @@ Current phase: PHASE-06 — Core Frontend Product Experience (QA gate: PHASE-09)
 | DOC-035 | PHASE-07-THEME-A-FLAT-GEOMETRIC.md | DONE | اجرای بصری Theme A و قرارداد عملیاتی TASK-07-001 |
 | DOC-036 | PHASE-07-THEME-A-SPACING.md | IN_PROGRESS | اجرای TASK-07-002 و قرارداد spacing Theme A |
 | DOC-037 | PHASE-07-THEME-A-VISUAL-POLISH.md | IN_PROGRESS | اجرای batch بصری TASK-07-002 تا TASK-07-011 برای Theme A |
+| DOC-038 | PWA Install Experience | IN_PROGRESS | اجرای TASK-07-013 و قرارداد نصب/آفلاین PWA |
 
 ## شناسه‌گذاری
 - PHASE-XX — مرحله
@@ -72,7 +73,7 @@ PHASE-10: TODO
 ACT-211 — refinement اجرای TASK-07-002 برای Theme A و normalization نهایی spacing.
 
 ## اقدام بعدی
-**TASK-07-002 تا TASK-07-011 — IN_PROGRESS**؛ اجرای بصری فعلی فقط Theme A است و Theme B خارج از Scope می‌ماند.
+**TASK-07-002 تا TASK-07-011 + TASK-07-013 — IN_PROGRESS**؛ اجرای فعلی فقط Theme A و app-like PWA flow است و Theme B خارج از Scope می‌ماند.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.
