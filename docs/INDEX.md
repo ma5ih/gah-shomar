@@ -1,7 +1,7 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.22.0
+Index version: 2.23.0
 Last update: 2026-10-04
 Current phase: PHASE-06 — Core Frontend Product Experience (QA gate: PHASE-09)
 
@@ -42,6 +42,7 @@ Current phase: PHASE-06 — Core Frontend Product Experience (QA gate: PHASE-09)
 | DOC-031 | HANDOFF.md | DONE | نقطهٔ ادامه مستقل از چت و وضعیت واقعی repository |
 | DOC-032 | ARCHITECTURE-IMPLEMENTATION-AUDIT-2026-10-04.md | COMPLETE — historical audit | Audit مستقل implementation/architecture و gapهای verified |\n| DOC-033 | PROJECT-AUDIT-2026-10-04-ACT-203.md | COMPLETE | پرونده کامل ممیزی این checkpoint، اصلاحات، تست‌ها و نقطه ادامه |
 | DOC-034 | VISUAL-DESIGN-SEPARATION-WARNING.md | APPROVED | قرارداد و هشدار جداسازی دو Visual Theme با Core مشترک |
+| DOC-035 | PHASE-07-THEME-A-FLAT-GEOMETRIC.md | IN_PROGRESS | اجرای بصری Theme A و قرارداد عملیاتی TASK-07-001 |
 
 ## شناسه‌گذاری
 - PHASE-XX — مرحله
@@ -66,10 +67,10 @@ PHASE-09: IN_PROGRESS
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-205 — Visual Theme boundary and scaffolding.
+ACT-207 — شروع اجرای بصری Theme A در TASK-07-001.
 
 ## اقدام بعدی
-TASK-07-001 — Final Visual Hierarchy؛ شروع طراحی اصلی بصری.
+ادامه TASK-07-001 — validation بصری Theme A؛ Theme B فعلاً خارج از Scope است.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.
