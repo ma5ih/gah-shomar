@@ -3,11 +3,11 @@
 Project: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
-Checkpoint date: 2026-10-03
+Checkpoint date: 2026-10-04
 Implementation baseline: d531e0a1bb3e4cbf287ad2ce25c72bf0cfa4d9e3
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 QA gate: PHASE-09 — Integration & QA
-QA dependency: TASK-09-022 — DONE; current HEAD CI #199 PASS
+QA dependency: TASK-09-022 — DONE; current HEAD CI #218 PASS
 Overall status: IN_PROGRESS
 
 ## 1. از کجا شروع کنیم؟
@@ -130,7 +130,8 @@ migration → typecheck → unit/integration tests → production build → Chro
 - browser/runtime acceptance واقعی PHASE-06 همچنان باید اجرا و ثبت شود.
 
 آخرین CI baseline قطعی:
-- ACT-199 / run #199: PASS برای migration، typecheck، unit/integration، production build و browser smoke.
+- ACT-199 / run #199: PASS
+- Latest HEAD validation: CI #218 PASS برای migration، typecheck، unit/integration، production build و browser smoke.
 
 آخرین CI برای HEAD فعلی:
 - run #199
@@ -215,8 +216,10 @@ production configuration، deployment validation، production PWA check، final 
 
 ## 11. آخرین نقطهٔ شروع عملی
 
-اولین کار بعد از این checkpoint:
-**TASK-09-022 / E2E dataset/editorial alignment، سپس CI revalidation.**
+اولین کار بعد از این audit:
+**TASK-09-019 — Critical Bug Fixes identified in ACT-186.**
+
+پس از آن، runtime/browser acceptance PHASE-06 ادامه پیدا می‌کند.
 
 بعد از سبزشدن CI و ثبت acceptance واقعی، تازه به visual polish و سپس editorial month-by-month content بروید.
 
