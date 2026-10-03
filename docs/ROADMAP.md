@@ -1,7 +1,7 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 2.5.1
-Last updated: 2026-10-04 — ACT-213
+Version: 2.6.0
+Last updated: 2026-10-04 — ACT-216
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
 
@@ -12,8 +12,8 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 
 - کل ریزتسک‌های شماره‌گذاری‌شده: **204**
 - DONE: **136**
-- IN_PROGRESS: **41**
-- TODO: **26**
+- IN_PROGRESS: **42**
+- TODO: **25**
 - DEFERRED: **1**
 - BLOCKED: **0**
 - DEPRECATED: **0**
@@ -275,22 +275,21 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - browser smoke follows the intentionally empty historical-event seed
   - CI run #168 and later full pipelines validate the aligned behavior
 
-## CURRENT CHECKPOINT — ACT-213 — 2026-10-04
+## CURRENT CHECKPOINT — ACT-216 — 2026-10-04
 
-- ACT-213 implements TASK-07-013 — Install Experience.
-- Added a real browser `beforeinstallprompt` flow with Install/Later controls, persistent dismiss state and `appinstalled` handling.
-- Added install-flow localization for Persian and English.
-- Added a browser E2E acceptance scenario and unit-level source contract coverage for the install prompt.
-- Strengthened the service worker precache to include the offline page, manifest and standard icons.
-- Theme A provides the install-prompt visual skin; Theme B remains untouched.
-- No Calendar Engine, Domain, Data, Application business rules, Auth/session semantics or other product logic changed.
-- TASK-07-002 through TASK-07-011 remain IN_PROGRESS pending validation of the complete batch; TASK-07-013 is also IN_PROGRESS pending validation.
-- Latest implementation head on this work branch: 48a42d82083af949783b6aa6319e30e40834f9a0.
-- Last independently observed CI success is the earlier PR head 938939b8bb25..., which validates the visual batch before the later PWA changes; final validation must cover the current head as one unit.
-- Canonical task counts remain 204 total / 136 DONE / 41 IN_PROGRESS / 26 TODO / 1 DEFERRED.
+- ACT-216 starts release-readiness work on TASK-10-001 — Production Configuration.
+- Added central runtime configuration validation for NODE_ENV, APP_URL, APP_TIMEZONE and database URL shape, with a separate production contract requiring database configuration.
+- Database connection creation now consumes the runtime configuration boundary instead of reading DATABASE_URL directly.
+- Application timezone resolution now consumes the same runtime configuration boundary.
+- Unit tests cover valid config, malformed URL/timezone, PostgreSQL URL validation and production requirements.
+- No Theme B changes were made.
+- No visual Theme A implementation was changed in this checkpoint.
+- TASK-10-001 remains IN_PROGRESS because reproducible dependency installation/package-lock and real production environment evidence are still outstanding.
+- Current release-readiness implementation head will be recorded after the branch checkpoint is finalized.
+- Canonical task counts for this checkpoint: 204 total / 136 DONE / 42 IN_PROGRESS / 25 TODO / 1 DEFERRED.
 
 # PHASE-10 — Release & Handoff — TODO
-- TASK-10-001 — Production Configuration — TODO
+- TASK-10-001 — Production Configuration — IN_PROGRESS
   - includes central runtime configuration validation, production environment checks and the reproducible dependency-installation strategy (including lockfile)
 - TASK-10-002 — Production Build — TODO
 - TASK-10-003 — Deployment Validation — TODO
