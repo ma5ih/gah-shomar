@@ -7,12 +7,12 @@ QA gate: PHASE-09 — Integration & QA
 QA blocker: none; TASK-09-022 closed and current HEAD validated by CI #199
 Overall status: IN_PROGRESS
 
-## شمارش رسمی ریزتسک‌ها — ACT-162
+## شمارش رسمی ریزتسک‌ها — ACT-184
 
 - کل: **193**
 - DONE: **134**
-- IN_PROGRESS: **31**
-- TODO: **27**
+- IN_PROGRESS: **32**
+- TODO: **26**
 - DEFERRED: **1**
 - BLOCKED: **0**
 - DEPRECATED: **0**
@@ -110,7 +110,7 @@ The current automated baseline is green. This does **not** mean PHASE-06 is DONE
 - Personal form labels/types are localized for Persian and English.
 - No specialized visual-design work was introduced in this checkpoint.
 
-## Known QA blocker / mismatch
+## Closed QA blocker and current acceptance state
 
 No active E2E dataset mismatch remains. `seedEvents = []` is intentional and the browser smoke suite is aligned with that policy.
 
