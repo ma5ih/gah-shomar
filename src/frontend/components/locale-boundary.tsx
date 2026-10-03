@@ -1,9 +1,0 @@
-"use client";
-import { useEffect } from "react";
-export function LocaleBoundary({ locale, children }: { locale: "fa" | "en"; children: React.ReactNode }) {
-  useEffect(() => {
-    document.documentElement.lang = locale;
-    document.documentElement.dir = locale === "fa" ? "rtl" : "ltr";
-  }, [locale]);
-  return <>{children}</>;
-}
