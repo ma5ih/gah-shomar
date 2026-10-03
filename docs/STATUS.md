@@ -187,3 +187,9 @@ Test files برای calendar/month/leap/conversion/historical/today/arithmetic/w
 
 ## قانون ادامه
 هیچ task را صرفاً به دلیل وجود کد DONE نکن؛ implementation + tests + documentation + validation باید با هم وضعیت را تعیین کنند.
+
+
+## Recent action tail
+- ACT-099 — recurrence decision and implementation-note synchronization — DONE
+- ACT-100 — correct auth action type import boundary — DONE
+- ACT-101 — update Phase 4-6 task ledger — DONE
