@@ -305,9 +305,13 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 # مسیر ادامه فعلی
 
 **PRIMARY WORKSTREAM:** PHASE-06 — Core Frontend Product Experience — IN_PROGRESS
+**CURRENT VISUAL STREAM:** PHASE-07 — Theme A refinement
 **QA BLOCKER:** TASK-09-022 in PHASE-09 — DONE
 
-**CURRENT:** TASK-07-001 — Final Visual Hierarchy (Theme A — DONE). Theme B remains untouched. After TASK-07-001 and validation, continue with the remaining PHASE-07 visual tasks → PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release.
+**CURRENT NEXT TASK:** TASK-07-002 — Spacing/Margin Consistency — TODO
+- TASK-07-001 برای Theme A بسته شده و DONE است.
+- Theme B فعلاً خارج از Scope است و نباید وارد اجرای بصری فعلی شود.
+- پس از شروع Taskهای باقی‌مانده PHASE-07، مسیر به PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release می‌رسد.
 
 نکته: PHASE-09 در این checkpoint «فاز جاری محصول» نیست؛ یک QA gate باز است که blocker آن باید پیش از acceptance نهایی PHASE-06 بسته شود.
 
