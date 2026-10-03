@@ -100,9 +100,6 @@ Earlier full product/E2E acceptance checkpoint: **CI #299 — PASS**.
 TASK-09-019 is DONE. The product remains in PHASE-06 with runtime/browser acceptance open.
 TASK-07-001 is DONE for Theme A; the next visual task is TASK-07-002 and remains TODO.
 
-## 9. اصل ادامه پروژه
-GitHub مرجع نهایی است. فرد یا اکانت جدید نباید برای فهم وضعیت پروژه به چت قبلی نیاز داشته باشد.
-
 ## 9. وضعیت Visual Themeها
 
 از ACT-205 دو Visual Theme مستقل با Core مشترک تعریف شده‌اند.
@@ -120,3 +117,6 @@ GitHub مرجع نهایی است. فرد یا اکانت جدید نباید ب
 - طراحی اصلی Theme B هنوز شروع نشده و در scope فعلی نیست.
 
 قاعده: **shared Core + independent presentation**. تغییر purely visual در Theme مربوط انجام می‌شود؛ تغییر semantic/product behavior در shared Core باقی می‌ماند.
+
+## 10. اصل ادامه پروژه
+GitHub مرجع نهایی است. فرد یا اکانت جدید نباید برای فهم وضعیت پروژه به چت قبلی نیاز داشته باشد.
