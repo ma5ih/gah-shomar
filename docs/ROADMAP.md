@@ -12,8 +12,8 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 
 - کل ریزتسک‌های شماره‌گذاری‌شده: **204**
 - DONE: **134**
-- IN_PROGRESS: **32**
-- TODO: **37**
+- IN_PROGRESS: **33**
+- TODO: **36**
 - DEFERRED: **1**
 - BLOCKED: **0**
 - DEPRECATED: **0**
@@ -213,7 +213,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - core pages are present; completion is gated by runtime/browser acceptance
 
 # PHASE-07 — Visual Polish, Time/Season & App-like Experience — IN_PROGRESS
-- TASK-07-001 — Final Visual Hierarchy — TODO
+- TASK-07-001 — Final Visual Hierarchy — IN_PROGRESS
 - TASK-07-002 — Spacing/Margin Consistency — TODO
 - TASK-07-003 — Typography Consistency — TODO
 - TASK-07-004 — Component Consistency — TODO
@@ -275,16 +275,17 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - browser smoke follows the intentionally empty historical-event seed
   - CI run #168 and later full pipelines validate the aligned behavior
 
-## CURRENT CHECKPOINT — ACT-204 — 2026-10-04
+## CURRENT CHECKPOINT — ACT-207 — 2026-10-04
 
-- End-to-end project audit and continuation record is documented in `docs/PROJECT-AUDIT-2026-10-04-ACT-203.md`.
-- ACT-199 implementation correction is CI-validated: run #287 PASS.
-- Latest repository documentation checkpoint is CI-validated: run #292 PASS.
-- No roadmap task was prematurely marked DONE. The canonical ledger remains 204 / 134 DONE / 32 IN_PROGRESS / 37 TODO / 1 DEFERRED / 0 BLOCKED / 0 DEPRECATED.
-- ACT-204 completed browser acceptance expansion and CI #299 PASS.
-- Next fresh ACT ID: ACT-205.
-- **STOP POINT:** TASK-07-001 — Final Visual Hierarchy is the main visual-design entry point. Do not implement it until the product owner reviews/starts the visual design.
-- Primary continuation remains PHASE-06 runtime/browser acceptance.
+- ACT-207 starts the main visual-design execution for Theme A — Flat Geometric under TASK-07-001.
+- Theme A presentation is implemented in src/frontend/themes/flat-geometric/; Theme B is intentionally untouched.
+- The Theme A operational design rules are recorded in docs/PHASE-07-THEME-A-FLAT-GEOMETRIC.md.
+- Core, Calendar Engine, Domain, Data, Application, Auth/Session, routing, localization and product behavior remain unchanged.
+- Theme A removes gradient/glass treatment and uses flat solid surfaces, layered angular forms, simple lines and restrained interaction feedback.
+- Time-of-day and seasonal state remain data-driven and affect Theme A appearance only.
+- TASK-07-001 remains IN_PROGRESS pending broader visual validation across core pages and responsive states.
+- Latest observed CI before this checkpoint remains #299 PASS; ACT-207 validation is pending.
+- Next fresh ACT ID: ACT-208.
 
 # PHASE-10 — Release & Handoff — TODO
 - TASK-10-001 — Production Configuration — TODO
@@ -304,7 +305,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 **PRIMARY WORKSTREAM:** PHASE-06 — Core Frontend Product Experience — IN_PROGRESS
 **QA BLOCKER:** TASK-09-022 in PHASE-09 — DONE
 
-**NEXT:** TASK-07-001 — Final Visual Hierarchy. This is the requested visual-design stop point; implementation pauses here. → PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release.
+**CURRENT:** TASK-07-001 — Final Visual Hierarchy (Theme A — IN_PROGRESS). Theme B remains untouched. After TASK-07-001 and validation, continue with the remaining PHASE-07 visual tasks → PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release.
 
 نکته: PHASE-09 در این checkpoint «فاز جاری محصول» نیست؛ یک QA gate باز است که blocker آن باید پیش از acceptance نهایی PHASE-06 بسته شود.
 
