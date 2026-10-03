@@ -1,8 +1,8 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.4.0
-Last update: 2026-10-02
+Index version: 2.5.0
+Last update: 2026-10-03
 Current phase: PHASE-03 — Core Backend / Domain / Calendar Engine
 
 ## اسناد
@@ -63,7 +63,7 @@ PHASE-09: TODO
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-060 — اصلاح الگوریتم کبیسه برای چرخه‌های غیرثابت.
+ACT-061 — پیاده‌سازی تبدیل Gregorian ↔ Imperial.
 
 ## اقدام بعدی
 TASK-03-005 — Now/Today Calculation.
