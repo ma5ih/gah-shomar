@@ -8,7 +8,7 @@ export default defineConfig({
  use:{baseURL:"http://127.0.0.1:3000",trace:"retain-on-failure",locale:"fa-IR",colorScheme:"light"},
  projects:[
   {name:"chromium-desktop",use:{...devices["Desktop Chrome"]}},
-  {name:"chromium-mobile",use:{...devices["iPhone 13"]}}
+  {name:"chromium-mobile",use:{...devices["Pixel 5"]}}
  ],
  webServer:{command:"npm run start",url:"http://127.0.0.1:3000",reuseExistingServer:!process.env.CI,timeout:120000}
 });
