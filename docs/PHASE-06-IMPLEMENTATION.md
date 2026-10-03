@@ -1,8 +1,8 @@
 # PHASE-06 IMPLEMENTATION NOTE
 
 Status: IN_PROGRESS
-Last updated: 2026-10-04 — ACT-204
-Current checkpoint: browser acceptance expansion; CI #299 PASS.
+Last updated: 2026-10-04 — ACT-209
+Current checkpoint: core product acceptance remains open; TASK-07-001 Theme A is complete; next visual task is TASK-07-002.
 
 ## Implemented product surfaces
 - Today and current date hierarchy
@@ -42,27 +42,21 @@ Current implementation:
 - public event seed is intentionally empty pending editorial approval.
 
 ## Automated baseline
-- ACT-165 / run #168: full quality + browser smoke PASS (24/24 assertions across desktop/tablet/mobile).
-- ACT-166 / run #173: full quality + browser smoke PASS after historical-content notice correction.
-- ACT-175 / run #189: Personal Event browser flow PASS across the configured browser profiles.
-- ACT-180/182/183: Personal Person ownership regression, syntax normalization and readonly collection compatibility; final CI run #200 PASS.
-- ACT-175 / run #189: full quality + browser smoke PASS after authenticated Personal Event flow coverage.
-- Historical ACT-199 / run #199 is a legacy checkpoint and is not the current validation run.
-- ACT-186 / run #218: documentation checkpoint validated by full CI SUCCESS.
-- ACT-187 / run #244: correction checkpoint full CI SUCCESS.
-- ACT-188 / run #246: full quality + browser smoke PASS after application/presentation boundary correction.
-
-## Current correction gate after ACT-186 audit
-- HIGH implementation findings are recorded in `docs/ARCHITECTURE-IMPLEMENTATION-AUDIT-2026-10-04.md`.
-- HIGH-02 and HIGH-03 were corrected and validated by CI #244.
-- HIGH-01 presentation/data boundary was corrected through server composition and validated by CI #246 PASS.
-- TASK-09-019 is DONE; remaining work is runtime/product acceptance plus release reproducibility/security hardening.
+- ACT-204 / CI #299: English/LTR flow, yearly recurrence enable/clear, Memory CRUD, public Calendar/Day navigation and mobile navigation were accepted in the browser checkpoint.
+- Correction series ACT-186 through ACT-196 is closed and CI #281 validated the corrected implementation.
+- Theme A validation checkpoint ACT-208 was validated by GitHub Actions run #37161733754 with conclusion = success and successful quality job.
 
 ## Current acceptance gap
-- E2E smoke is aligned with the intentionally empty event seed and is green in CI.
-- The last fully green pipeline before ACT-199/ACT-200 was #283; current post-correction CI revalidation is pending on the latest main checkpoint.
-- ACT-204 expanded browser acceptance across English, recurrence, Memory CRUD, public navigation and Calendar/Day navigation; CI #299 PASS.
+- PHASE-06 runtime/product acceptance is still open.
 - Mobile/tablet/desktop visual QA remains open.
-- Final responsive/accessibility review remains open.
+- Final responsive/accessibility/touch review remains open.
+- PWA final QA remains open.
+- Release reproducibility still needs a committed package-lock under the appropriate release task.
 
-ACT-204 provides runtime/browser evidence. Do not begin TASK-07-001 yet: it is the project's main visual-design entry point and requires explicit user review before implementation. See `docs/PROJECT-AUDIT-2026-10-04-ACT-203.md` for the complete audit and continuation record.
+## Visual continuation
+TASK-07-001 — Final Visual Hierarchy — **DONE for Theme A**.
+
+Do not reopen TASK-07-001 for ordinary continuation. The next planned visual task is:
+**TASK-07-002 — Spacing/Margin Consistency — TODO**
+
+Per project scope, this visual stream currently targets **Theme A only**. Theme B is intentionally untouched.
