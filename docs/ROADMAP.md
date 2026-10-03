@@ -137,9 +137,9 @@ Last updated: 2026-10-03
 - TASK-03-022 — Public vs Personal Data Separation — DONE
 
 ## 3D — Tests
-- TASK-03-023 — Calendar Unit Tests — TODO
+- TASK-03-023 — Calendar Unit Tests — IN_PROGRESS
 - TASK-03-024 — Conversion Tests — IN_PROGRESS
-- TASK-03-025 — Edge-case Tests — TODO
+- TASK-03-025 — Edge-case Tests — IN_PROGRESS
 - TASK-03-026 — Domain Model Tests — TODO
 - TASK-03-027 — Engine Review — TODO
 
@@ -385,6 +385,6 @@ Last updated: 2026-10-03
 - Main Capabilities — DONE
 - MVP Definition — DONE
 
-**اقدام بعدی:** TASK-03-023 — Calendar Unit Tests
+**اقدام بعدی:** TASK-03-023 — Calendar Unit Tests / CI Validation
 
 سایر Taskهای مستقل تا حد امکان بدون وابستگی به قاعده کبیسه ادامه می‌یابند.
