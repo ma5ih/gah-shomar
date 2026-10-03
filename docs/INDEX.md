@@ -1,7 +1,7 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.13.0
+Index version: 2.14.0
 Last update: 2026-10-03
 Current phase: PHASE-03 — Core Backend / Domain / Calendar Engine
 
@@ -14,7 +14,7 @@ Current phase: PHASE-03 — Core Backend / Domain / Calendar Engine
 | DOC-003 | STATUS.md | DONE | وضعیت لحظه‌ای |
 | DOC-004 | CHANGELOG.md | DONE | تاریخچه اقدامات |
 | DOC-005 | DECISIONS.md | DONE | تصمیم‌های رسمی |
-| DOC-006 | REQUIREMENTS.md | APPROVED | نیازمندی‌های محصول نهایی v1.0 |
+| DOC-006 | REQUIREMENTS.md | APPROVED | نیازمندی‌های محصول v1.1 |
 | DOC-007 | ARCHITECTURE.md | APPROVED | معماری فنی |
 | DOC-008 | WORKFLOW.md | DONE | قواعد توسعه و ادامه پروژه |
 | DOC-009 | CALENDAR-SPEC.md | APPROVED | مشخصات رسمی سیستم تقویم |
@@ -63,7 +63,7 @@ PHASE-09: TODO
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-078 — sync Calendar Engine resolution note.
+ACT-080 — Requirements version sync.
 
 ## اقدام بعدی
 TASK-03-023 — Calendar Unit Tests / CI Validation.
