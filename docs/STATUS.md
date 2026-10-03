@@ -67,6 +67,7 @@ Overall status: IN_PROGRESS
 - ACT-060 — اصلاح الگوریتم کبیسه برای چرخه‌های غیرثابت — DONE
 - ACT-061 — پیاده‌سازی تبدیل Gregorian ↔ Imperial — DONE
 - ACT-062 — پیاده‌سازی Now/Today Calculation — DONE
+- ACT-063 — Historical Date Conversion Gateway — IN_PROGRESS
 
 ## تصمیم‌های محصول فعلی
 
