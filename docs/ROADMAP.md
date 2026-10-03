@@ -215,13 +215,13 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 # PHASE-07 — Visual Polish, Time/Season & App-like Experience — IN_PROGRESS
 - TASK-07-001 — Final Visual Hierarchy — DONE
 - TASK-07-002 — Spacing/Margin Consistency — IN_PROGRESS
-- TASK-07-003 — Typography Consistency — TODO
-- TASK-07-004 — Component Consistency — TODO
-- TASK-07-005 — Visual Density Review — TODO
-- TASK-07-006 — Morning State — TODO
-- TASK-07-007 — Noon State — TODO
-- TASK-07-008 — Sunset State — TODO
-- TASK-07-009 — Night State — TODO
+- TASK-07-003 — Typography Consistency — IN_PROGRESS
+- TASK-07-004 — Component Consistency — IN_PROGRESS
+- TASK-07-005 — Visual Density Review — IN_PROGRESS
+- TASK-07-006 — Morning State — IN_PROGRESS
+- TASK-07-007 — Noon State — IN_PROGRESS
+- TASK-07-008 — Sunset State — IN_PROGRESS
+- TASK-07-009 — Night State — IN_PROGRESS
 - TASK-07-010 — Seasonal Variations — IN_PROGRESS
 - TASK-07-011 — Motion Polish — IN_PROGRESS
 - TASK-07-012 — PWA Manifest — DONE
