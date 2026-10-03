@@ -1,3 +1,13 @@
+## ACT-161 — 2026-10-03
+Type: DOCUMENTATION-CHECKPOINT
+Status: DONE
+
+- Removed the remaining stale ACT-160 counter from the handoff/status checkpoint.
+- Next fresh ACT ID is ACT-162.
+- No application or content behavior changed.
+
+---
+
 ## ACT-160 — 2026-10-03
 Type: DOCUMENTATION-CHECKPOINT
 Status: DONE
