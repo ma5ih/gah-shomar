@@ -1,8 +1,8 @@
 # PHASE-06 IMPLEMENTATION NOTE
 
 Status: IN_PROGRESS
-Last updated: 2026-10-04 — ACT-203
-Current checkpoint: complete audit/continuation record after ACT-199 correction; CI #292 PASS.
+Last updated: 2026-10-04 — ACT-204
+Current checkpoint: browser acceptance expansion; CI #299 PASS.
 
 ## Implemented product surfaces
 - Today and current date hierarchy
@@ -61,8 +61,8 @@ Current implementation:
 ## Current acceptance gap
 - E2E smoke is aligned with the intentionally empty event seed and is green in CI.
 - The last fully green pipeline before ACT-199/ACT-200 was #283; current post-correction CI revalidation is pending on the latest main checkpoint.
-- Browser/runtime interaction QA remains open for product acceptance beyond automated smoke.
+- ACT-204 expanded browser acceptance across English, recurrence, Memory CRUD, public navigation and Calendar/Day navigation; CI #299 PASS.
 - Mobile/tablet/desktop visual QA remains open.
 - Final responsive/accessibility review remains open.
 
-Do not move PHASE-06 to DONE until runtime/product acceptance has evidence. No specialized visual-design work has been started in this checkpoint. See `docs/PROJECT-AUDIT-2026-10-04-ACT-203.md` for the complete audit and continuation record.
+ACT-204 provides runtime/browser evidence. Do not begin TASK-07-001 yet: it is the project's main visual-design entry point and requires explicit user review before implementation. See `docs/PROJECT-AUDIT-2026-10-04-ACT-203.md` for the complete audit and continuation record.
