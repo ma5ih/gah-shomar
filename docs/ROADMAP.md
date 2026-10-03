@@ -214,13 +214,14 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-08-001 — Content Taxonomy — DONE
 - TASK-08-002 — Historical Source Registry — DONE
 - TASK-08-003 — Event Research Workflow — TODO
-- TASK-08-004 — Monthly Occasion Review — TODO
-- TASK-08-005 — Important Event Editorial Selection — TODO
+- TASK-08-004 — Monthly Occasion Review — IN_PROGRESS
+- TASK-08-005 — Important Event Editorial Selection — IN_PROGRESS
 - TASK-08-006 — Person Dataset — TODO
 - TASK-08-007 — Timeline Period Dataset — TODO
 - TASK-08-008 — Historical Date Conversions — DONE
 - TASK-08-009 — Media/Image Metadata — TODO
-- TASK-08-010 — Initial MVP Dataset — DONE
+- TASK-08-010 — Initial MVP Dataset — IN_PROGRESS
+  - Public historical event seed intentionally empty pending month-by-month review and explicit approval.
 - TASK-08-011 — Content QA — TODO
 
 # PHASE-09 — Integration & Full QA — IN_PROGRESS
