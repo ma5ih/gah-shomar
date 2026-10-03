@@ -1,9 +1,9 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
-Last updated: 2026-10-04 — ACT-210
+Last updated: 2026-10-04 — ACT-211
 Current documentation checkpoint: ACT-210 on main
-Current implementation HEAD: dadfc21de5bbc1c262774b47c539bd10c1072414
-Current implementation checkpoint: ACT-210 — Theme A spacing implementation
+Current implementation HEAD: fa095e637e3f4d244c9b06889717d71d3dd690a0
+Current implementation checkpoint: ACT-211 — Theme A spacing normalization refinement
 Latest completed Theme A validation: GitHub Actions #37161733754 — PASS (ACT-208)
 Current task: TASK-07-002 — Spacing/Margin Consistency — IN_PROGRESS
 Primary workstream: PHASE-06 — Core Frontend Product Experience
@@ -48,17 +48,19 @@ Next fresh ACT ID: ACT-211
 - GitHub Actions #37161733754 با success کامل شد.
 
 ### ACT-209 — Documentation convergence — DONE
+
+### ACT-211 — Theme A spacing normalization refinement — IN_PROGRESS
 - STATUS/ROADMAP/INDEX/PROJECT/HANDOFF و اسناد continuation همگام شدند.
 - شمارش canonical واقعی Roadmap اصلاح و ثبت شد.
 - Next task به TASK-07-002 منتقل شد.
 
-### ACT-210 — Theme A spacing implementation — IN_PROGRESS
+### ACT-210 — Theme A spacing implementation — DONE (implementation checkpoint)
 - TASK-07-002 آغاز شد.
 - spacing scale اختصاصی Theme A با ۷ گام 4/8/12/16/20/24/32px اضافه شد.
 - shell، topbar، content، hero، cards، calendar، forms، controls، metadata و mobile navigation روی همان scale یکدست شدند.
 - تغییر فقط در src/frontend/themes/flat-geometric/theme.css انجام شد.
 - static validation: scale tokenها حاضرند، selectorهای Theme A حفظ شده‌اند و gradient count = 0 باقی مانده است.
-- CI جدید برای commit ACT-210 هنوز به‌عنوان اجرای مستقل قابل مشاهده نیست؛ بنابراین Task هنوز DONE اعلام نشده است.
+- نتیجهٔ مستقل CI برای commit اولیه ACT-210 از connector قابل مشاهده نشد؛ validation اجرای بعدی نیز به محیط شبکه‌ای محلی وابسته بود.
 - Theme B هیچ تغییری نکرده است.
 - Core و product behavior هیچ تغییری نکرده‌اند.
 
@@ -68,6 +70,7 @@ Next fresh ACT ID: ACT-211
 - Theme B: src/frontend/themes/modern-flat-vector/ — untouched / outside current scope.
 - TASK-07-001: DONE.
 - TASK-07-002: IN_PROGRESS.
+- Latest Theme A implementation commit: fa095e637e3f4d244c9b06889717d71d3dd690a0.
 - Operational spacing record: docs/PHASE-07-THEME-A-SPACING.md.
 - Permanent separation rules: docs/VISUAL-DESIGN-SEPARATION-WARNING.md.
 
@@ -79,7 +82,7 @@ seedEvents = [] عمداً خالی است. هیچ historical event عمومی �
 
 TASK-07-002 — Spacing/Margin Consistency — IN_PROGRESS
 
-پس از مشاهده validation واقعی برای commit ACT-210، در صورت موفقیت Task بسته می‌شود؛ سپس TASK-07-003 — Typography Consistency بررسی خواهد شد.
+Validation خودکار مستقل برای latest commit هنوز مشاهده نشده است؛ بنابراین TASK-07-002 فعلاً IN_PROGRESS می‌ماند. پس از validation موفق، TASK-07-003 — Typography Consistency بررسی خواهد شد.
 
 Theme B همچنان خارج از Scope است.
 
