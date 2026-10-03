@@ -1,7 +1,7 @@
 # PHASE-06 IMPLEMENTATION NOTE
 
 Status: IN_PROGRESS
-Last updated: 2026-10-03
+Last updated: 2026-10-03 — ACT-184
 Implementation baseline: `d531e0a1bb3e4cbf287ad2ce25c72bf0cfa4d9e3`
 
 ## Implemented product surfaces
@@ -43,6 +43,8 @@ Current implementation:
 ## Automated baseline
 - ACT-165 / run #168: full quality + browser smoke PASS (24/24 assertions across desktop/tablet/mobile).
 - ACT-166 / run #173: full quality + browser smoke PASS after historical-content notice correction.
+- ACT-175 / run #189: Personal Event browser flow PASS across the configured browser profiles.
+- ACT-180/182/183: Personal Person ownership regression, syntax normalization and readonly collection compatibility; final CI run #200 PASS.
 - ACT-175 / run #189: full quality + browser smoke PASS after authenticated Personal Event flow coverage.
 - ACT-199 / run #199: full quality + browser smoke PASS after Personal Person linkage/ownership work.
 
