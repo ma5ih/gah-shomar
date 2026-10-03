@@ -1,7 +1,7 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 2.0.1
-Last updated: 2026-10-02
+Version: 2.0.2
+Last updated: 2026-10-03
 
 این سند مرجع اجرایی پروژه از صفر تا انتشار است. ترتیب مراحل عمداً به‌گونه‌ای طراحی شده که ابتدا Product/Specification و مدل داده تثبیت شود، سپس Architecture و Backend/Core Engine ساخته شود، بعد Application Logic، سپس UI/UX و Frontend، و در پایان Integration/QA/Release انجام شود.
 
@@ -33,7 +33,7 @@ Last updated: 2026-10-02
 
 ---
 
-# PHASE-01 — Product Discovery & Specification — IN_PROGRESS
+# PHASE-01 — Product Discovery & Specification — DONE
 
 ## 1A — تعریف محصول و مخاطب
 - TASK-01-001 — Product Definition — DONE
@@ -65,7 +65,7 @@ Last updated: 2026-10-02
 
 ---
 
-# PHASE-02 — Architecture & Technical Foundation — IN_PROGRESS
+# PHASE-02 — Architecture & Technical Foundation — DONE
 
 ## 2A — تصمیم‌های فنی
 - TASK-02-001 — انتخاب Stack و Runtime — DONE
@@ -114,7 +114,7 @@ Last updated: 2026-10-02
 - TASK-03-003 — Month Lengths — DONE
 - TASK-03-004 — Leap-Year Rules — DONE
 - TASK-03-005 — Now/Today Calculation — TODO
-- TASK-03-006 — Gregorian ↔ Imperial Conversion — TODO
+- TASK-03-006 — Gregorian ↔ Imperial Conversion — DONE
 - TASK-03-007 — Historical Date Conversion — TODO
 - TASK-03-008 — Year Boundary / Nowruz Edge Cases — TODO
 - TASK-03-009 — Date Arithmetic — TODO
@@ -138,7 +138,7 @@ Last updated: 2026-10-02
 
 ## 3D — Tests
 - TASK-03-023 — Calendar Unit Tests — TODO
-- TASK-03-024 — Conversion Tests — TODO
+- TASK-03-024 — Conversion Tests — IN_PROGRESS
 - TASK-03-025 — Edge-case Tests — TODO
 - TASK-03-026 — Domain Model Tests — TODO
 - TASK-03-027 — Engine Review — TODO
@@ -374,7 +374,7 @@ Last updated: 2026-10-02
 
 ## وضعیت فعلی
 
-**PHASE-02 — IN_PROGRESS**
+**PHASE-03 — IN_PROGRESS**
 
 آخرین کارهای قطعی:
 - Non-goals & Scope Boundaries — DONE
@@ -385,6 +385,6 @@ Last updated: 2026-10-02
 - Main Capabilities — DONE
 - MVP Definition — DONE
 
-**اقدام بعدی:** TASK-03-004 — Leap-Year Rules (BLOCKED — نیازمند تعیین قاعده کبیسه)
+**اقدام بعدی:** TASK-03-005 — Now/Today Calculation
 
 سایر Taskهای مستقل تا حد امکان بدون وابستگی به قاعده کبیسه ادامه می‌یابند.
