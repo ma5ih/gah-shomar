@@ -15,7 +15,7 @@ Overall status: IN_PROGRESS
 | PHASE-00 Documentation | DONE | 100% |
 | PHASE-01 Specification | DONE | 100% |
 | PHASE-02 Architecture | DONE | 100% |
-| PHASE-03 Core Backend / Calendar Engine | IN_PROGRESS | 35% |
+| PHASE-03 Core Backend / Calendar Engine | IN_PROGRESS | 75% |
 | PHASE-04 Application Backend / Use Cases | TODO | 0% |
 | PHASE-05 Frontend Architecture & Design System | TODO | 0% |
 | PHASE-06 Core Frontend | TODO | 0% |
