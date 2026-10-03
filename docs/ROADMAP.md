@@ -8,19 +8,19 @@ Last updated: 2026-10-03
 ## وضعیت‌ها
 TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 
-## شمارش رسمی ریزتسک‌ها — ACT-162
+## شمارش رسمی ریزتسک‌ها — ACT-184
 
 - کل ریزتسک‌های شماره‌گذاری‌شده: **193**
 - DONE: **134**
-- IN_PROGRESS: **31**
-- TODO: **27**
+- IN_PROGRESS: **32**
+- TODO: **26**
 - DEFERRED: **1**
 - BLOCKED: **0**
 - DEPRECATED: **0**
 
 ### نقطه فعلی اجرا
 **PRIMARY WORKSTREAM:** PHASE-06 — Core Frontend Product Experience
-**QA BLOCKER:** ندارد — TASK-09-022 در CI #168 با موفقیت بسته شد
+**QA BLOCKER:** ندارد — TASK-09-022 DONE; latest full CI baseline is run #200
 **NEXT:** PHASE-06 runtime/browser acceptance → PHASE-06 closure → PHASE-07 → PHASE-08 → PHASE-09 final QA → PHASE-10.
 
 این شمارش بر اساس تمام TASK-*های همین سند انجام شده و از این checkpoint به‌عنوان عدد مرجع استفاده می‌شود.
