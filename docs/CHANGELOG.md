@@ -1,3 +1,19 @@
+## ACT-067 — 2026-10-03
+Type: CALENDAR-ENGINE-SEASON
+Status: DONE
+
+### انجام شد
+- `seasonOfImperialMonth()` به Calendar Domain اضافه شد.
+- چهار فصل با گروه‌بندی سه‌ماههٔ ماه‌های شاهنشاهی تعریف شد:
+  - فروردین تا خرداد: بهار
+  - تیر تا شهریور: تابستان
+  - مهر تا آذر: پاییز
+  - دی تا اسپند: زمستان
+- regression test برای ابتدا و انتهای هر فصل اضافه شد.
+
+### Next
+TASK-03-023 — Calendar Unit Tests
+
 ## ACT-066 — 2026-10-03
 Type: CALENDAR-ENGINE-TIME
 Status: DONE
