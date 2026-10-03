@@ -1,3 +1,19 @@
+## ACT-068 — 2026-10-03
+Type: QUALITY-CI
+Status: DONE
+
+### انجام شد
+- `.github/workflows/ci.yml` اضافه شد.
+- CI روی push به `main` و pull request اجرا می‌شود.
+- Node 22، dependency installation، TypeScript typecheck، Vitest unit tests و production build در pipeline تعریف شدند.
+- چون repository هنوز `package-lock.json` ندارد، CI از `npm install` استفاده می‌کند و lockfile جدیدی را از راه دور commit نمی‌کند.
+
+### وضعیت اجرا
+- برای commit ایجادشده هنوز workflow run از GitHub گزارش نشده؛ بنابراین PASS بودن typecheck/test/build فعلاً تأیید نشده است.
+
+### Next
+TASK-03-023 — Calendar Unit Tests / CI Validation
+
 ## ACT-067 — 2026-10-03
 Type: CALENDAR-ENGINE-SEASON
 Status: DONE
