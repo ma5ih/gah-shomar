@@ -34,6 +34,11 @@ Last updated: 2026-10-03
 
 TASK-03-004: DONE
 
+Regression coverage update — ACT-082:
+- توالی مستند کبیسه از ۲۵۷۱ تا ۲۶۲۹ شاهنشاهی به‌صورت ماتریس کامل در تست‌ها بررسی می‌شود.
+- گذار ۲۶۲۰ عادی → ۲۶۲۱ کبیسه و فاصله‌های پنج‌ساله در regression suite پوشش صریح دارند.
+- اجرای CI برای این commit هنوز مشاهده نشده و تا آن زمان PASS اعلام نمی‌شود.
+
 Current Calendar Engine implementation is no longer blocked by leap-year logic. Conversion, Today, arithmetic, weekday, time-of-day and season are implemented; current validation work is tracked under TASK-03-023 through TASK-03-025.
 
 
