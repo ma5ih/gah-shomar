@@ -125,29 +125,29 @@ Architecture می‌گوید Presentation باید از Application contracts ا
 
 **راه اصلاح:** comparison کامل ImperialDate برای start/end.
 
-### MEDIUM-01 — Personal Person قابل unlink نیست
+### MEDIUM-01 — Personal Person قابل unlink نیست — OPEN
 در update:
 - فرم خالی `personalPersonId` را به `undefined` تبدیل می‌کند.
 - repository/application، `undefined` را به معنای «بدون تغییر» تفسیر می‌کنند.
 
 نتیجه: بعد از link کردن یک Personal Person، کاربر نمی‌تواند آن را با انتخاب «—» حذف کند.
 
-### MEDIUM-02 — Recurrence قابل خاموش‌کردن نیست
+### MEDIUM-02 — Recurrence قابل خاموش‌کردن نیست — OPEN
 همان الگوی patch semantics برای recurrence وجود دارد:
 - unchecked → undefined
 - undefined → preserve existing
 
 در نتیجه recurrence موجود را نمی‌توان از UI خاموش کرد.
 
-### MEDIUM-03 — Notes/optional fields نیز ممکن است پاک نشوند
+### MEDIUM-03 — Notes/optional fields نیز ممکن است پاک نشوند — OPEN
 برای notes و برخی optional fields همان تفاوت «undefined = preserve» و «empty = clear» وجود دارد.
 Update command باید clear semantics صریح داشته باشد.
 
-### MEDIUM-04 — Public search status filtering ناقص
+### MEDIUM-04 — Public search status filtering ناقص — FIXED IN ACT-187
 `publicRepository.search()` events را از `events()` فیلتر می‌کند، اما people/periods را مستقیماً از seed می‌گیرد.
 فعلاً همه APPROVED هستند، ولی اگر record غیرApproved وارد seed شود، search می‌تواند آن را expose کند.
 
-### MEDIUM-05 — Ranged Event support ناقص در date queries
+### MEDIUM-05 — Ranged Event support ناقص در date queries — FIXED IN ACT-187
 `dateMatches()` فقط start date رویداد را بررسی می‌کند.
 EventDate دارای start/end است، اما event range در Day/Month query به‌طور کامل پوشش داده نمی‌شود.
 
@@ -156,7 +156,7 @@ EventDate دارای start/end است، اما event range در Day/Month query 
 Event nodes/chronology هنوز عملاً وارد Timeline query نشده‌اند.
 با seedEvents خالی این gap طبیعی است، ولی برای محصول نهایی باید با Timeline Model دوباره بررسی شود.
 
-### MEDIUM-07 — Share Card theme در renderer کامل اعمال نشده
+### MEDIUM-07 — Share Card theme در renderer کامل اعمال نشده — OPEN
 DTO theme دارد، اما Canvas renderer تقریباً یک visual treatment ثابت استفاده می‌کند.
 Requirement برای birthday و سایر event types theme متمایز تعریف کرده است.
 
@@ -171,7 +171,7 @@ CI سبز است، اما coverage فعلی عمدتاً smoke است.
 - accessibility audit
 - manual visual acceptance
 
-### MEDIUM-09 — Lint gate وجود ندارد
+### MEDIUM-09 — Lint gate وجود ندارد — OPEN
 `package.json` script به نام `lint` دارد، اما repository:
 - dependency صریح ESLint ندارد
 - config ESLint ندارد
@@ -179,7 +179,7 @@ CI سبز است، اما coverage فعلی عمدتاً smoke است.
 
 پس lint در حال حاضر quality gate واقعی نیست.
 
-### MEDIUM-10 — Lockfile وجود ندارد
+### MEDIUM-10 — Lockfile وجود ندارد — OPEN
 CI از `npm install` استفاده می‌کند و lockfile در repository وجود ندارد.
 این برای prototype قابل قبول است، اما برای reproducible production build باید قبل از release اصلاح شود.
 
