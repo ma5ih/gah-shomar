@@ -2,7 +2,7 @@
 
 Version: 1.0.0
 Status: APPROVED
-Last updated: 2026-10-02
+Last updated: 2026-10-03
 
 ## 1. تقویم اصلی
 
@@ -48,7 +48,7 @@ Last updated: 2026-10-02
 - از نوروز تا پایان دسامبر: سال میلادی + ۵۵۹
 - از اول ژانویه تا پیش از نوروز: سال میلادی + ۵۵۸
 
-Calendar Engine باید تبدیل دقیق روز را با توجه به تاریخ نوروز انجام دهد.
+Calendar Engine اکنون تبدیل دقیق روز را با الگوریتم Borkowski/Jalaali و محاسبه مرز نوروز انجام می‌دهد؛ implementation در `src/domain/calendar/conversion.ts` قرار دارد.
 
 ## 5. ماه‌ها
 
