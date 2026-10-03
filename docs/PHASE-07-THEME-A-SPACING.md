@@ -1,7 +1,7 @@
 # PHASE-07 — Theme A Spacing / Margin Consistency
 
 Status: IN_PROGRESS
-Action: ACT-210
+Action: ACT-210 / ACT-211
 Theme: Flat Geometric
 Task: TASK-07-002 — Spacing/Margin Consistency
 
@@ -57,13 +57,13 @@ No change was made to:
 
 ## Validation
 
-Static validation completed:
+Static validation completed and refined in ACT-211:
 - 7 spacing tokens are defined.
 - Theme A selector scope remains intact.
 - No gradient(...) expression exists in the Theme A stylesheet.
 - Existing backdrop-filter: none guards remain for the Theme A surfaces where required by the previous visual task.
 
-Automated CI for the ACT-210 implementation commit is not yet observed as an independent result. Therefore this Task remains IN_PROGRESS until real validation evidence is available.
+Automated CI for the latest ACT-211 implementation commit is not yet observed as an independent result. Therefore this Task remains IN_PROGRESS until real validation evidence is available.
 
 ## Continuation
 
@@ -72,3 +72,7 @@ Next validation target:
 - on success, close TASK-07-002 and move to TASK-07-003 — Typography Consistency.
 
 No new visual language may be introduced outside the approved Theme A brief.
+## ACT-211 refinement
+- Remaining non-scale spacing values in the Theme A stylesheet were normalized to the approved 4/8/12/16/20/24/32px scale.
+- Latest implementation commit: fa095e637e3f4d244c9b06889717d71d3dd690a0.
+- TASK-07-002 remains IN_PROGRESS until independently observed CI validation.
