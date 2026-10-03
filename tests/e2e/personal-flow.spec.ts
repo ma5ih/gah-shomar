@@ -14,9 +14,9 @@ test("signed-in user can create a private event and find it through personal sea
  const eventForm=page.locator("form").filter({has:page.getByRole("heading",{name:"افزودن رویداد شخصی"})});
  await eventForm.getByLabel("عنوان").fill("رویداد تست خصوصی");
  await eventForm.getByLabel("نوع").selectOption("custom");
- await eventForm.getByLabel("سال").fill("2585");
- await eventForm.getByLabel("ماه").fill("7");
- await eventForm.getByLabel("روز").fill("11");
+ await eventForm.getByLabel("سال",{exact:true}).fill("2585");
+ await eventForm.getByLabel("ماه",{exact:true}).fill("7");
+ await eventForm.getByLabel("روز",{exact:true}).fill("11");
  await eventForm.getByRole("button",{name:"ذخیره"}).click();
 
  await expect(page.getByText("رویداد تست خصوصی")).toBeVisible();
