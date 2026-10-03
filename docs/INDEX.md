@@ -1,8 +1,8 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.25.0
-Last update: 2026-10-04 — ACT-210
+Index version: 2.26.0
+Last update: 2026-10-04 — ACT-211
 Current phase: PHASE-06 — Core Frontend Product Experience (QA gate: PHASE-09)
 
 ## اسناد
@@ -68,7 +68,7 @@ PHASE-09: IN_PROGRESS
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-210 — شروع و ثبت اجرای TASK-07-002 برای Theme A.
+ACT-211 — refinement اجرای TASK-07-002 برای Theme A و normalization نهایی spacing.
 
 ## اقدام بعدی
 **TASK-07-002 — Spacing/Margin Consistency — IN_PROGRESS**؛ اجرای بصری فعلی فقط Theme A است و Theme B خارج از Scope می‌ماند.
