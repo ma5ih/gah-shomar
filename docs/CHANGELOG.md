@@ -1,3 +1,64 @@
+## ACT-075 — 2026-10-03
+Type: DOCUMENTATION-SYNC
+Status: DONE
+
+### انجام شد
+- ROADMAP v2.1.0 بازسازی شد و تمام Taskهای PHASE-00 تا PHASE-10 در یک ledger یکپارچه ثبت شدند.
+- وضعیت دقیق TASK-03-001 تا TASK-03-027 با implementation فعلی هماهنگ شد.
+- Next Task به TASK-03-023 منتقل و ترتیب ادامه تا پایان PHASE-03 مشخص شد.
+
+## ACT-074 — 2026-10-03
+Type: STATUS-SYNC
+Status: DONE
+
+### انجام شد
+- STATUS به snapshot canonical تبدیل شد.
+- DONE / IN_PROGRESS / TODOهای PHASE-03 به‌صورت صریح ثبت شدند.
+- implementationهای Calendar Engine، تست‌ها، CI و محدودیت‌های validation مستند شدند.
+- آخرین ACTها و Next Task ثبت شدند.
+
+## ACT-073 — 2026-10-03
+Type: DECISION-SYNC
+Status: DONE
+
+### انجام شد
+- DEC-019: جداسازی timezone resolution از Domain.
+- DEC-020: عدم جعل Historical Date conversion.
+- DEC-021: CI به‌عنوان validation gate.
+- Consequence هر تصمیم به Taskهای فعلی متصل شد.
+
+## ACT-072 — 2026-10-03
+Type: QUALITY-DOCUMENTATION
+Status: DONE
+
+### انجام شد
+- QUALITY-ARCHITECTURE با test coverage فعلی و وضعیت واقعی CI sync شد.
+- تفاوت «test موجود» با «test PASS شده» صریح شد.
+
+## ACT-071 — 2026-10-03
+Type: ARCHITECTURE-SYNC
+Status: DONE
+
+### انجام شد
+- ARCHITECTURE v1.1.0 با implementation واقعی Calendar Engine sync شد.
+- moduleهای conversion، Today، historical conversion، arithmetic، weekday، time و season ثبت شدند.
+- وضعیت validation فعلی اضافه شد.
+
+## ACT-070 — 2026-10-03
+Type: PROJECT-SYNC
+Status: DONE
+
+### انجام شد
+- PROJECT v1.2.0 با وضعیت فعلی محصول و Calendar Engine هماهنگ شد.
+- وضعیت PHASEها، Next Task و محدودیت Historical Conversion به‌روزرسانی شد.
+
+## ACT-069 — 2026-10-03
+Type: README-SYNC
+Status: DONE
+
+### انجام شد
+- README با PHASE-03، وضعیت Calendar Engine، CI و Next Task هماهنگ شد.
+
 ## ACT-068 — 2026-10-03
 Type: QUALITY-CI
 Status: DONE
