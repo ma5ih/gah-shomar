@@ -1,22 +1,22 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
 Last updated: 2026-10-04
-Current repository checkpoint: **ACT-205 on main**
+Current repository checkpoint: **ACT-207 on main**
 Current implementation HEAD: `a9eace682f32f6e6ff32a748fe9df53448c27692`
-Current documentation/audit checkpoint: **ACT-205 — Visual Theme boundary checkpoint**
+Current documentation/audit checkpoint: **ACT-207 — Theme A visual execution checkpoint**
 Latest CI: **#299 — PASS**
 Latest implementation-head CI: **#287 — PASS**
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: **ACT-206**
+Next fresh ACT ID: **ACT-208**
 
 ## شمارش رسمی ریزتسک‌ها
 
 - کل: **204**
 - DONE: **134**
-- IN_PROGRESS: **32**
-- TODO: **37**
+- IN_PROGRESS: **33**
+- TODO: **36**
 - DEFERRED: **1**
 - BLOCKED: **0**
 - DEPRECATED: **0**
@@ -84,7 +84,9 @@ Implemented and validated:
 - Theme A: `src/frontend/themes/flat-geometric/`
 - Theme B: `src/frontend/themes/modern-flat-vector/`
 - Shared Core remains single-source: Calendar Engine, Domain, Data, Application, Auth/Session and product contracts.
-- No visual-design implementation has started under TASK-07-001 yet.
+- TASK-07-001 is IN_PROGRESS for Theme A — Flat Geometric.
+- Theme A visual execution is isolated under src/frontend/themes/flat-geometric/ and Theme B remains untouched.
+- The Theme A operational design record is docs/PHASE-07-THEME-A-FLAT-GEOMETRIC.md.
 - Permanent separation rules: `docs/VISUAL-DESIGN-SEPARATION-WARNING.md`.
 
 ## Editorial state
@@ -93,4 +95,4 @@ Implemented and validated:
 
 ## مسیر بعدی
 
-**ACT-205 فقط مرزبندی دو Visual Theme را ثبت کرد. Next is TASK-07-001 — Final Visual Hierarchy. طراحی اصلی هنوز شروع نشده و نقطه توقف همان‌جاست.** → PHASE-08 editorial dataset → PHASE-09 final QA → PHASE-10 release.
+**ACT-207 شروع اجرای طراحی اصلی Theme A در TASK-07-001 است. Theme B عمداً دست‌نخورده مانده است.** → ادامه TASK-07-001 و validation بصری → PHASE-08 editorial dataset → PHASE-09 final QA → PHASE-10 release.
