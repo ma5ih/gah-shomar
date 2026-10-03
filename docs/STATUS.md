@@ -1,10 +1,10 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
-Last updated: 2026-10-03
+Last updated: 2026-10-04
 Implementation baseline: `d531e0a1bb3e4cbf287ad2ce25c72bf0cfa4d9e3`
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 QA gate: PHASE-09 — Integration & QA
-QA blocker: none; TASK-09-022 closed and current HEAD validated by CI #199
+QA blocker: none; TASK-09-022 closed and current HEAD validated by CI #218
 Overall status: IN_PROGRESS
 
 ## شمارش رسمی ریزتسک‌ها — ACT-185
@@ -21,7 +21,7 @@ Overall status: IN_PROGRESS
 
 **نقطه فعلی اجرا:** PHASE-06 — Core Frontend Product Experience.
 
-**وضعیت QA:** TASK-09-022 بسته شد. CI #199 روی HEAD فعلی سبز است؛ وابستگی اصلی اکنون runtime/browser acceptance خود PHASE-06 است.
+**وضعیت QA:** TASK-09-022 بسته شد. CI #218 روی HEAD فعلی سبز است؛ وابستگی اصلی اکنون runtime/browser acceptance خود PHASE-06 است.
 
 ## وضعیت فازها
 
@@ -94,8 +94,9 @@ Current implementation:
 ## Latest CI truth
 
 Current HEAD:
-- SHA `d531e0a1bb3e4cbf287ad2ce25c72bf0cfa4d9e3`
-- CI run **#199 — PASS**
+- SHA `2f8bc94aa64d2cb6cf5efb42042ba418b04ad8be`
+- implementation baseline: `d531e0a1bb3e4cbf287ad2ce25c72bf0cfa4d9e3`
+- CI run **#218 — PASS**
 - migration: PASS
 - typecheck: PASS
 - unit/integration: PASS
@@ -116,6 +117,10 @@ The current automated baseline is green. This does **not** mean PHASE-06 is DONE
 
 No active E2E dataset mismatch remains. `seedEvents = []` is intentional and the browser smoke suite is aligned with that policy.
 
+## Audit findings / immediate correction gate
+
+ACT-186 verified the architecture direction but found three HIGH implementation gaps (presentation dependency leaks, optional Event slug routing contract, and incomplete Period date containment) plus several MEDIUM quality/acceptance gaps. These must be handled under TASK-09-019 before final product acceptance.
+
 ## Immediate next actions
 
 1. Execute browser/runtime acceptance on desktop, tablet and mobile for fa/RTL and en/LTR.
@@ -129,7 +134,7 @@ No active E2E dataset mismatch remains. `seedEvents = []` is intentional and the
 
 ## Documentation checkpoint
 
-ACT-158 through ACT-183 cover the implementation and validation work in this checkpoint; ACT-184 is the documentation synchronization checkpoint.
+ACT-158 through ACT-183 cover the implementation and validation work in this checkpoint; ACT-184 is the documentation synchronization checkpoint; ACT-186 records the independent architecture/implementation audit.
 
 ## ACT / history note
 
