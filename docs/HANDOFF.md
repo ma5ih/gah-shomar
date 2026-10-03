@@ -186,7 +186,7 @@ production configuration، deployment validation، production PWA check، final 
 
 قاعدهٔ جدید:
 - از checkpoint بعدی فقط شناسه‌های جدید استفاده شود.
-- شناسهٔ بعدی: ACT-157
+- شناسهٔ بعدی: ACT-161
 - هیچ ACT قدیمی دوباره استفاده نشود.
 - برای ارجاع به collisionهای قدیمی، از توضیح توصیفی و SHA commit استفاده شود.
 
@@ -219,3 +219,8 @@ production configuration، deployment validation، production PWA check، final 
 ## 13. Documentation checkpoint note
 
 ACT-158 performed the main reconciliation. ACT-159 finalizes the checkpoint after all documentation synchronization commits. The implementation baseline remains `e3107be19485199f3e725a1bbc40ceb86b72f88b`; later commits in this checkpoint are documentation-only unless explicitly listed otherwise.
+
+
+## 14. Counter correction
+
+ACT-160 corrected a stale ACT counter in this handoff. No product/code behavior changed in ACT-160.
