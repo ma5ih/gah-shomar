@@ -1,8 +1,10 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
 Last updated: 2026-10-03
-Implementation baseline: `e3107be19485199f3e725a1bbc40ceb86b72f88b`
-Current phase: PHASE-09 — Integration & QA
+Implementation baseline: `7512b433d1396029ae30625c466008e9e2453a35`
+Primary workstream: PHASE-06 — Core Frontend Product Experience
+QA gate: PHASE-09 — Integration & QA
+QA blocker: TASK-09-022 — E2E Dataset/Editorial Alignment
 Overall status: IN_PROGRESS
 
 ## شمارش رسمی ریزتسک‌ها — ACT-162
@@ -15,7 +17,9 @@ Overall status: IN_PROGRESS
 - BLOCKED: **0**
 - DEPRECATED: **0**
 
-**نقطه فعلی:** TASK-09-022 در PHASE-09 — Integration & Full QA.
+**نقطه فعلی اجرا:** PHASE-06 — Core Frontend Product Experience.
+
+**وابستگی QA:** TASK-09-022 در PHASE-09 باید قبل از acceptance نهایی PHASE-06 بسته و با CI تأیید شود.
 
 ## وضعیت فازها
 
@@ -106,9 +110,9 @@ Therefore:
 - title `صدور فرمان مشروطیت`
 - search result for `فرمان مشروطیت`
 
-Those assertions conflict with the current editorial rule that `seedEvents` is empty.
+ACT-163 این assertions را با editorial rule فعلی که `seedEvents` خالی است همگام کرد.
 
-This is a real QA mismatch, not a documentation-only issue.
+این mismatch کدی اکنون برطرف شده است؛ CI و browser acceptance هنوز نیازمند validation تازه هستند.
 
 ## Immediate next actions
 
@@ -134,7 +138,7 @@ There is a historical ACT-ID collision in Git commit messages:
 
 These historical commits are immutable and should not be rewritten. From the next checkpoint onward, new ACT IDs must never be reused.
 
-Next fresh ACT ID: **ACT-163**
+Next fresh ACT ID: **ACT-164**
 
 ## Continuation rule
 
@@ -160,4 +164,4 @@ ACT-160 changed documentation only. Implementation baseline remains e3107be19485
 
 ## Final continuation counter
 
-Next fresh ACT ID: **ACT-162**. ACT-161 changed documentation only.
+Next fresh ACT ID: **ACT-164**. ACT-163 aligned public E2E expectations with the intentionally empty historical-event seed.
