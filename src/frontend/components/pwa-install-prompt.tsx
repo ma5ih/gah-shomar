@@ -10,23 +10,23 @@ type DeferredInstallPrompt=Event&{
 
 const DISMISS_KEY="gah-shomar:pwa-install-dismissed";
 
+function readDismissed(){
+  if(typeof window==="undefined")return false;
+  try{return window.localStorage.getItem(DISMISS_KEY)==="1";}catch{return false;}
+}
+
+function readInstalled(){
+  if(typeof window==="undefined")return false;
+  return window.matchMedia("(display-mode: standalone)").matches;
+}
+
 export function PwaInstallPrompt({locale}:{locale:Locale}){
   const [deferredPrompt,setDeferredPrompt]=useState<DeferredInstallPrompt|null>(null);
-  const [dismissed,setDismissed]=useState(false);
-  const [installed,setInstalled]=useState(false);
+  const [dismissed,setDismissed]=useState(readDismissed);
+  const [installed,setInstalled]=useState(readInstalled);
   const c=copy[locale];
 
   useEffect(()=>{
-    if(window.matchMedia("(display-mode: standalone)").matches){
-      setInstalled(true);
-      return;
-    }
-    try{
-      if(window.localStorage.getItem(DISMISS_KEY)==="1")setDismissed(true);
-    }catch{
-      // Storage may be unavailable; the install flow can still work.
-    }
-
     const onBeforeInstallPrompt=(event:Event)=>{
       event.preventDefault();
       setDeferredPrompt(event as DeferredInstallPrompt);
@@ -56,9 +56,7 @@ export function PwaInstallPrompt({locale}:{locale:Locale}){
 
   const dismiss=()=>{
     setDismissed(true);
-    try{
-      window.localStorage.setItem(DISMISS_KEY,"1");
-    }catch{
+    try{window.localStorage.setItem(DISMISS_KEY,"1");}catch{
       // Ignore storage failures; the prompt is hidden for this session.
     }
   };
