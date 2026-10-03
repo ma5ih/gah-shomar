@@ -1,3 +1,24 @@
+## ACT-212 — 2026-10-04
+Type: THEME-A-VISUAL-POLISH-BATCH
+Status: IN_PROGRESS
+
+- TASK-07-002 تا TASK-07-011 برای Theme A وارد اجرای مستقیم شدند.
+- typography consistency با یک type scale محدود و hierarchy مشخص اعمال شد.
+- component consistency با radii، borders و controls هماهنگ شد.
+- visual density با normalize کردن gap/paddingهای تکرارشونده سبک و متعادل شد.
+- چهار state زمان روز — morning/noon/sunset/night — به‌صورت appearance-only با surface، landscape layers و accentهای متفاوت تعریف شدند.
+- seasonal accentهای spring/summer/autumn/winter حفظ و شفاف‌تر شدند.
+- motion به hover/focus lift و transitionهای کوتاه محدود ماند و prefers-reduced-motion حفظ شد.
+- implementation فقط در src/frontend/themes/flat-geometric/theme.css انجام شد و هیچ فایل Theme B تغییر نکرد.
+- static validation: ۷ spacing token، ۰ gradient expression، چهار time-of-day state، چهار season state و reduced-motion handling تأیید شدند.
+- implementation commit: 120722f4304c1ea385ffcb12058d9f94e0fa371b.
+- TASK-07-002 تا TASK-07-011 فعلاً IN_PROGRESS هستند تا CI/runtime visual evidence مستقل مشاهده شود.
+
+### Next
+CI و runtime visual validation برای batch Theme A؛ سپس در صورت PASS، promotion این Taskها به DONE و ادامه به TASK-07-013.
+
+Next fresh ACT ID: **ACT-213**
+
 ## ACT-211 — 2026-10-04
 Type: THEME-A-SPACING-REFINEMENT
 Status: IN_PROGRESS
