@@ -4,3 +4,4 @@ export * from "./types";
 export * from "./leap-year";
 export * from "./conversion";
 export * from "./today";
+export * from "./historical-conversion";
