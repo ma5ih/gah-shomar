@@ -1,21 +1,21 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
 Last updated: 2026-10-04
-Current repository checkpoint: **ACT-207 on main**
+Current repository checkpoint: **ACT-208 on main**
 Current implementation HEAD: `5791e3e89aabcd75fd856e03e9a05023d009dbcc`
-Current documentation/audit checkpoint: **ACT-207 — Theme A visual execution checkpoint**
+Current documentation/audit checkpoint: **ACT-208 — Theme A visual hierarchy validation checkpoint**
 Latest CI: **#299 — PASS**
 Latest implementation-head CI: **#287 — PASS**
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: **ACT-208**
+Next fresh ACT ID: **ACT-209**
 
 ## شمارش رسمی ریزتسک‌ها
 
 - کل: **204**
-- DONE: **134**
-- IN_PROGRESS: **33**
+- DONE: **135**
+- IN_PROGRESS: **32**
 - TODO: **36**
 - DEFERRED: **1**
 - BLOCKED: **0**
@@ -84,7 +84,7 @@ Implemented and validated:
 - Theme A: `src/frontend/themes/flat-geometric/`
 - Theme B: `src/frontend/themes/modern-flat-vector/`
 - Shared Core remains single-source: Calendar Engine, Domain, Data, Application, Auth/Session and product contracts.
-- TASK-07-001 is IN_PROGRESS for Theme A — Flat Geometric.
+- TASK-07-001 is DONE for Theme A — Flat Geometric.
 - Theme A visual execution is isolated under src/frontend/themes/flat-geometric/ and Theme B remains untouched.
 - The Theme A operational design record is docs/PHASE-07-THEME-A-FLAT-GEOMETRIC.md.
 - Permanent separation rules: `docs/VISUAL-DESIGN-SEPARATION-WARNING.md`.
@@ -95,4 +95,4 @@ Implemented and validated:
 
 ## مسیر بعدی
 
-**ACT-207 شروع اجرای طراحی اصلی Theme A در TASK-07-001 است. Theme B عمداً دست‌نخورده مانده است.** → ادامه TASK-07-001 و validation بصری → PHASE-08 editorial dataset → PHASE-09 final QA → PHASE-10 release.
+**ACT-208 TASK-07-001 را برای Theme A بست. Theme B عمداً دست‌نخورده مانده است.** → ادامه تسک‌های باقی‌مانده PHASE-07 → PHASE-08 editorial dataset → PHASE-09 final QA → PHASE-10 release.
