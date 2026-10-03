@@ -4,10 +4,10 @@ Project: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Checkpoint date: 2026-10-04
-Implementation baseline: d531e0a1bb3e4cbf287ad2ce25c72bf0cfa4d9e3
+Implementation baseline: 4e06741359d86cd2194b5cacbcb4c2d9e81c4fd1
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 QA gate: PHASE-09 — Integration & QA
-QA dependency: TASK-09-022 — DONE; current HEAD CI #218 PASS
+QA dependency: TASK-09-022 — DONE; TASK-09-019 correction gate remains IN_PROGRESS; latest code checkpoint CI #246 is IN_PROGRESS at browser setup.
 Overall status: IN_PROGRESS
 
 ## 1. از کجا شروع کنیم؟
@@ -131,7 +131,8 @@ migration → typecheck → unit/integration tests → production build → Chro
 
 آخرین CI baseline قطعی:
 - ACT-199 / run #199: PASS
-- Latest HEAD validation: CI #218 PASS برای migration، typecheck، unit/integration، production build و browser smoke.
+- ACT-187 checkpoint: CI #244 PASS for migration, typecheck, unit/integration, production build and browser smoke.
+ACT-188 checkpoint: CI #246 IN_PROGRESS at browser setup when this handoff was synchronized.
 
 آخرین CI برای HEAD فعلی:
 - run #199
@@ -196,7 +197,7 @@ production configuration، deployment validation، production PWA check، final 
 
 قاعدهٔ جدید:
 - از checkpoint بعدی فقط شناسه‌های جدید استفاده شود.
-- شناسهٔ بعدی: ACT-185
+- شناسهٔ بعدی: ACT-189
 - هیچ ACT قدیمی دوباره استفاده نشود.
 - برای ارجاع به collisionهای قدیمی، از توضیح توصیفی و SHA commit استفاده شود.
 
