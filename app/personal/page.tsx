@@ -6,8 +6,8 @@ import {resolveLocale} from "@/application/locale";
 import {AppShell} from "@/frontend/components/app-shell";
 import {copy} from "@/frontend/lib/i18n";
 import {imperialDateLabel} from "@/frontend/lib/format";
-import {createPersonalEventAction,updatePersonalEventAction,deletePersonalEventAction,createPersonalPersonAction,createMemoryAction,updateMemoryAction,deleteMemoryAction} from "@/app/actions/personal";
-import {signOutAction} from "@/app/actions/auth";
+import {createPersonalEventAction,updatePersonalEventAction,deletePersonalEventAction,createPersonalPersonAction,createMemoryAction,updateMemoryAction,deleteMemoryAction} from "../actions/personal";
+import {signOutAction} from "../actions/auth";
 import {ShareCardButton} from "@/frontend/components/share-card-button";
 export const dynamic="force-dynamic";
 
