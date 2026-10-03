@@ -2,6 +2,33 @@
 Type: LEDGER-CORRECTION
 Status: DONE
 
+### اصلاح مهم شمارش
+- تمام خطوط یکتای `TASK-*` در `docs/ROADMAP.md` مستقیماً دوباره شمارش شدند.
+- شمارش قبلی 193 ناقص بود و از اینجا به بعد دیگر مرجع نیست.
+- شمارش canonical فعلی:
+  - **204 کل**
+  - **134 DONE**
+  - **32 IN_PROGRESS**
+  - **37 TODO**
+  - **1 DEFERRED**
+  - **0 BLOCKED**
+  - **0 DEPRECATED**
+- هیچ Task تکراری در این شمارش وجود ندارد.
+- TASK-09-010 اکنون IN_PROGRESS است و TASK-09-022 DONE باقی مانده است.
+- PRIMARY WORKSTREAM همچنان PHASE-06 است.
+- آخرین implementation HEAD: `b22ca9d59414b675512edf3bfe307c7dba3e87c9`
+- آخرین CI سبز: **run #200**.
+- ACT بعدی: **ACT-186**.
+
+### دلیل ثبت
+این correction برای جلوگیری از ادامه دادن پروژه با عدد نادرست انجام شد؛ هیچ implementation جدیدی در ACT-185 اضافه نشده است.
+
+---
+
+## ACT-185 — 2026-10-03
+Type: LEDGER-CORRECTION
+Status: DONE
+
 - چون TASK-09-010 از TODO به IN_PROGRESS منتقل شد، شمارش رسمی اصلاح شد.
 - شمارش نهایی: 193 کل / 134 DONE / 32 IN_PROGRESS / 26 TODO / 1 DEFERRED / 0 BLOCKED / 0 DEPRECATED.
 - Next fresh ACT ID: ACT-186.
