@@ -1,3 +1,13 @@
+## ACT-185 — 2026-10-03
+Type: LEDGER-CORRECTION
+Status: DONE
+
+- چون TASK-09-010 از TODO به IN_PROGRESS منتقل شد، شمارش رسمی اصلاح شد.
+- شمارش نهایی: 193 کل / 134 DONE / 32 IN_PROGRESS / 26 TODO / 1 DEFERRED / 0 BLOCKED / 0 DEPRECATED.
+- Next fresh ACT ID: ACT-186.
+
+---
+
 ## ACT-184 — 2026-10-03
 Type: PROJECT-LEDGER-SYNC
 Status: DONE
