@@ -1,0 +1,1 @@
+import {cookies} from "next/headers";import {validateSessionToken} from "./auth";export const SESSION_COOKIE="gah_shomar_session";export async function getCurrentSession(){const token=(await cookies()).get(SESSION_COOKIE)?.value;if(!token)return null;return validateSessionToken(token)}
