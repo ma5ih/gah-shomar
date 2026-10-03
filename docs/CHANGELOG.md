@@ -1,3 +1,21 @@
+## ACT-207 — 2026-10-04
+Type: THEME-A-VISUAL-EXECUTION
+Status: IN_PROGRESS
+
+- اجرای اصلی TASK-07-001 — Final Visual Hierarchy برای Theme A آغاز شد.
+- stylesheet مستقل Theme A در src/frontend/themes/flat-geometric/theme.css اضافه شد.
+- اجرای Theme A ظاهر فعلی را به یک سیستم flat با سطوح opaque، رنگ‌های solid، لبه‌های ساده، خطوط مستقیم و لایه‌های هندسی/landscape-like منتقل می‌کند.
+- gradient و glass/backdrop treatment در Theme A کنار گذاشته شد.
+- برای Hero، لایه‌های ساده و angular به‌صورت solid و minimal پیاده شدند.
+- stateهای موجود time-of-day و season فقط appearance Theme A را تغییر می‌دهند و هیچ تغییری در Core/product behavior ندارند.
+- App Layout اکنون Theme A را به‌صورت فعال بارگذاری می‌کند؛ Theme B هیچ تغییری نکرده است.
+- قرارداد عملیاتی این اجرای بصری در docs/PHASE-07-THEME-A-FLAT-GEOMETRIC.md ثبت شد و DEC-025 به‌عنوان تصمیم اجرایی ثبت گردید.
+- TASK-07-001 عمداً DONE نشده و تا validation واقعی across core pages و responsive states باز می‌ماند.
+- آخرین CI مشاهده‌شده قبل از ACT-207، #299 PASS است؛ validation مربوط به ACT-207 هنوز pending است.
+
+### Next
+Continue TASK-07-001 — Theme A validation and visual refinement. Theme B remains untouched.
+
 ## ACT-205 — 2026-10-04
 Type: VISUAL-THEME-BOUNDARY
 Status: DONE
