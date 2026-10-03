@@ -1,3 +1,15 @@
+## ACT-159 — 2026-10-03
+Type: DOCUMENTATION-CHECKPOINT
+Status: DONE
+
+- Finalized the repository continuation checkpoint after the ACT-158 reconciliation.
+- Confirmed that documentation commits after implementation HEAD are documentation-only.
+- Updated the handoff to distinguish the implementation baseline from later documentation commits.
+- Advanced the next fresh ACT ID to ACT-160; historical ACT-150/151 collisions remain immutable.
+- Final current implementation task remains TASK-09-022: align E2E/browser smoke with the intentionally empty historical-event seed.
+
+---
+
 ## ACT-158 — 2026-10-03
 Type: DOCUMENTATION-RECONCILIATION
 Status: DONE
