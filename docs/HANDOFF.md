@@ -4,10 +4,10 @@ Project: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Checkpoint date: 2026-10-03
-Implementation baseline: 9e7facf1b14ebc42ea900175bfd37ebbf14a28f5
+Implementation baseline: d531e0a1bb3e4cbf287ad2ce25c72bf0cfa4d9e3
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 QA gate: PHASE-09 — Integration & QA
-QA dependency: TASK-09-022 — DONE in CI #168
+QA dependency: TASK-09-022 — DONE; current HEAD CI #199 PASS
 Overall status: IN_PROGRESS
 
 ## 1. از کجا شروع کنیم؟
@@ -125,29 +125,21 @@ migration → typecheck → unit/integration tests → production build → Chro
 در `tests/e2e/public-smoke.spec.ts` assertionهای event قدیمی با ACT-163 با سیاست `seedEvents = []` همگام شدند.
 
 نتیجه:
-- current HEAD را نباید green/QA-passed اعلام کرد.
+- current HEAD از نظر automated CI سبز است.
 - blocker کدی TASK-09-022 برطرف شده است.
-- بعد CI کامل روی HEAD فعلی دوباره بررسی شود.
-- سپس browser/runtime acceptance واقعی اجرا و ثبت شود.
+- browser/runtime acceptance واقعی PHASE-06 همچنان باید اجرا و ثبت شود.
 
 آخرین CI baseline قطعی:
-- ACT-133 / run #102: PASS برای migration، typecheck، tests و production build.
+- ACT-199 / run #199: PASS برای migration، typecheck، unit/integration، production build و browser smoke.
 
-آخرین CI ثبت‌شده برای HEAD فعلی در snapshot پروژه:
-- run #134
-- SHA: e3107be19485199f3e725a1bbc40ceb86b72f88b
-- status: IN_PROGRESS
-بنابراین تا مشاهدهٔ نتیجهٔ نهایی، PASS رسمی ثبت نشود.
+آخرین CI برای HEAD فعلی:
+- run #199
+- SHA: d531e0a1bb3e4cbf287ad2ce25c72bf0cfa4d9e3
+- status: PASS
 
 ## 8. مسیر ادامه، به ترتیب
 
-### گام 1 — QA test/data alignment
-browser smoke و هر تستی که هنوز event demo/approved قدیمی را انتظار دارد با seed خالی و editorial policy همگام شود.
-
-### گام 2 — CI revalidation
-migration، typecheck، unit/integration، build و E2E روی HEAD جدید اجرا و نتیجهٔ واقعی ثبت شود.
-
-### گام 3 — Runtime/browser acceptance
+### گام 1 — Runtime/browser acceptance
 حداقل این سناریوها بررسی شوند:
 - Today
 - Calendar
@@ -166,13 +158,13 @@ migration، typecheck، unit/integration، build و E2E روی HEAD جدید ا�
 - loading/error/empty states
 - PWA manifest/service worker/offline baseline
 
-### گام 4 — PHASE-06 closure
+### گام 2 — PHASE-06 closure
 پس از acceptance واقعی، gapهای Core Frontend بسته و Phase-06 فقط در صورت evidence به DONE منتقل شود.
 
-### گام 5 — PHASE-07 visual polish
+### گام 3 — PHASE-07 visual polish
 hierarchy، spacing، typography، component consistency، density، motion، time-of-day، seasonal states و install UX تکمیل شوند.
 
-### گام 6 — PHASE-08 editorial content
+### گام 4 — PHASE-08 editorial content
 بررسی ماه‌به‌ماه را از اولین ماه تقویمی در ترتیب محصول شروع کنید:
 - candidate events
 - date/title/summary/type
@@ -186,10 +178,10 @@ hierarchy، spacing، typography، component consistency، density، motion، ti
 
 تا قبل از تأیید، هیچ event وارد public seed نشود.
 
-### گام 7 — PHASE-09 final QA
+### گام 5 — PHASE-09 final QA
 content QA، accessibility، performance، PWA، visual consistency و release blocker review.
 
-### گام 8 — PHASE-10 release
+### گام 6 — PHASE-10 release
 production configuration، deployment validation، production PWA check، final docs، release notes، versioning و handoff.
 
 ## 9. وضعیت شناسه‌های ACT
@@ -203,7 +195,7 @@ production configuration، deployment validation، production PWA check، final 
 
 قاعدهٔ جدید:
 - از checkpoint بعدی فقط شناسه‌های جدید استفاده شود.
-- شناسهٔ بعدی: ACT-164
+- شناسهٔ بعدی: ACT-185
 - هیچ ACT قدیمی دوباره استفاده نشود.
 - برای ارجاع به collisionهای قدیمی، از توضیح توصیفی و SHA commit استفاده شود.
 
