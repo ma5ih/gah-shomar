@@ -1,7 +1,7 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
 Last updated: 2026-10-03
-Implementation baseline: `7512b433d1396029ae30625c466008e9e2453a35`
+Implementation baseline: `9e7facf1b14ebc42ea900175bfd37ebbf14a28f5`
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 QA gate: PHASE-09 — Integration & QA
 QA blocker: none; TASK-09-022 closed by CI #168
@@ -112,7 +112,7 @@ Therefore:
 
 ACT-163 این assertions را با editorial rule فعلی که `seedEvents` خالی است همگام کرد.
 
-CI #168 این mismatch را با 24/24 browser smoke assertions در desktop/tablet/mobile و تمام مراحل قبلی pipeline با موفقیت اعتبارسنجی کرد.
+CI #173 این checkpoint را با migration، typecheck، unit/integration، production build و 24/24 browser smoke assertions در desktop/tablet/mobile با موفقیت اعتبارسنجی کرد.
 
 ## Immediate next actions
 
@@ -138,7 +138,7 @@ There is a historical ACT-ID collision in Git commit messages:
 
 These historical commits are immutable and should not be rewritten. From the next checkpoint onward, new ACT IDs must never be reused.
 
-Next fresh ACT ID: **ACT-164**
+Next fresh ACT ID: **ACT-167**
 
 ## Continuation rule
 
