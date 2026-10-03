@@ -26,4 +26,33 @@ test.describe("public product smoke",()=>{
  test("PWA manifest and standard icons are exposed",async({request})=>{
   const response=await request.get("/manifest.webmanifest");expect(response.ok()).toBe(true);const manifest=await response.json();expect(manifest.name).toBe("گاه‌شمار");expect(manifest.lang).toBe("fa");expect(manifest.dir).toBe("rtl");expect(manifest.display).toBe("standalone");expect(manifest.icons.length).toBeGreaterThanOrEqual(2);for(const path of ["/icon-192.png","/icon-512.png","/sw.js"]){expect((await request.get(path)).ok()).toBe(true)}
  });
-});
+})
+ test("Calendar day selection opens the Day Detail route",async({page})=>{
+  await page.goto("/calendar?lang=fa&year=2465&month=5");
+  await page.getByRole("gridcell",{name:"1"}).click();
+  await expect(page).toHaveURL(/\/day\/2465\/5\/1\?lang=fa$/);
+  await expect(page.getByRole("heading",{level:1})).toBeVisible();
+ });
+ test("Calendar navigation moves between months",async({page})=>{
+  await page.goto("/calendar?lang=en&year=2465&month=5");
+  await page.getByRole("link",{name:"Next month"}).click();
+  await expect(page).toHaveURL(/\/calendar\?lang=en&year=2465&month=6$/);
+  await page.getByRole("link",{name:"Previous month"}).click();
+  await expect(page).toHaveURL(/\/calendar\?lang=en&year=2465&month=5$/);
+ });
+ test("Search returns a stable empty state for unknown public content",async({page})=>{
+  await page.goto("/search?lang=en&q="+encodeURIComponent("definitely-no-such-gah-shomar-result"));
+  await expect(page.getByText("No results")).toBeVisible();
+ });
+ test("Day Detail exposes a public empty state for a valid empty date",async({page})=>{
+  await page.goto("/day/2465/5/1?lang=en");
+  await expect(page.getByRole("heading",{level:1})).toBeVisible();
+  await expect(page.getByText("No results")).toBeVisible();
+ });
+ test("Mobile bottom navigation is exposed at handset width",async({page})=>{
+  await page.setViewportSize({width:390,height:844});
+  await page.goto("/?lang=en");
+  await expect(page.locator(".bottom-nav")).toBeVisible();
+  await expect(page.locator(".bottom-link").filter({hasText:"Calendar"})).toBeVisible();
+ });
+;
