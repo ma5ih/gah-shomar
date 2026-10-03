@@ -17,7 +17,7 @@ test("signed-in user can create a private event and find it through personal sea
  await eventForm.getByLabel("سال",{exact:true}).fill("2585");
  await eventForm.getByLabel("ماه",{exact:true}).fill("7");
  await eventForm.getByLabel("روز",{exact:true}).fill("11");
- await eventForm.getByRole("button",{name:"ذخیره"}).click();
+ await Promise.all([page.waitForResponse(response=>response.request().method()==="POST"&&response.url().includes("/personal?lang=fa")),eventForm.getByRole("button",{name:"ذخیره"}).click()]);
 
  await page.goto("/personal?lang=fa");
  await expect(page.getByText("رویداد تست خصوصی")).toBeVisible();
