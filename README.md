@@ -1,6 +1,6 @@
 # گاه‌شمار | Calendar App
 
-> **Current status: PHASE-06 — Core Frontend Product Experience — IN_PROGRESS**
+> **Current status: PHASE-06 — Core Frontend Product Experience — IN_PROGRESS | Visual stream: PHASE-07 Theme A**
 
 این repository مرجع اصلی و Source of Truth پروژه «گاه‌شمار» است. وضعیت واقعی پروژه باید از اسناد GitHub خوانده شود، نه از چت‌های قبلی.
 
@@ -19,9 +19,9 @@
 
 ### وضعیت اعتبارسنجی
 CI workflow فعلی شامل migration، ESLint، typecheck، unit/integration tests، production build و Playwright browser smoke است.
-- CI #287: PASS روی implementation checkpoint
-- CI #288: PASS روی documentation checkpoint
-- CI #292: PASS روی current repository HEAD
+- CI #281: PASS روی implementation correction series
+- CI #299: PASS روی product/E2E acceptance checkpoint
+- GitHub Actions #37161733754: PASS روی Theme A visual validation
 Product acceptance و release QA هنوز باز هستند.
 
 ### مهم‌ترین اسناد
@@ -50,10 +50,12 @@ Product acceptance و release QA هنوز باز هستند.
 - Calendar Engine مسئول conversion، leap-year، arithmetic، weekday، Today، time-of-day و season است.
 
 ## وضعیت جاری
-Correction gate مربوط به ACT-186 بسته شده است. اصلاحات بعدی ACT-199 نیز روی implementation اعمال و در CI #287 PASS شده‌اند.
-Current repository HEAD: `f2060a1265c1ac79336364e31c69576de998e97c`
-Current implementation checkpoint: `a9eace682f32f6e6ff32a748fe9df53448c27692`
-Next fresh ACT ID: **ACT-206**
+Correction gate مربوط به ACT-186 و correctionهای بعدی بسته شده‌اند.
+Current implementation HEAD: 5791e3e89aabcd75fd856e03e9a05023d009dbcc
+Current documentation checkpoint: **ACT-209**
+TASK-07-001 — Final Visual Hierarchy برای Theme A — **DONE**.
+Next task: **TASK-07-002 — Spacing/Margin Consistency — TODO**.
+Next fresh ACT ID: **ACT-210**.
 
 ## Visual Theme separation
 
