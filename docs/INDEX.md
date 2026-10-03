@@ -63,7 +63,7 @@ PHASE-09: TODO
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-082 — Expand calendar leap-year regression matrix.
+ACT-083 — Add domain contract fixtures.
 
 ## اقدام بعدی
 TASK-03-023 — Calendar Unit Tests / CI Validation.
