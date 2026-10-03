@@ -4,7 +4,7 @@ Project: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Checkpoint date: 2026-10-03
-Implementation baseline: 7512b433d1396029ae30625c466008e9e2453a35
+Implementation baseline: 9e7facf1b14ebc42ea900175bfd37ebbf14a28f5
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 QA gate: PHASE-09 — Integration & QA
 QA dependency: TASK-09-022 — DONE in CI #168
