@@ -1,26 +1,26 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
-Last updated: 2026-10-04 — ACT-209
-Current documentation checkpoint: **ACT-209 on main**
-Current implementation HEAD: 5791e3e89aabcd75fd856e03e9a05023d009dbcc
-Current implementation checkpoint: **ACT-207 — Theme A activation**
-Latest Theme A validation: **GitHub Actions #37161733754 — PASS**
-Latest product/E2E acceptance checkpoint: **CI #299 — PASS**
+Last updated: 2026-10-04 — ACT-210
+Current documentation checkpoint: ACT-210 on main
+Current implementation HEAD: dadfc21de5bbc1c262774b47c539bd10c1072414
+Current implementation checkpoint: ACT-210 — Theme A spacing implementation
+Latest completed Theme A validation: GitHub Actions #37161733754 — PASS (ACT-208)
+Current task: TASK-07-002 — Spacing/Margin Consistency — IN_PROGRESS
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 Current visual stream: PHASE-07 — Theme A refinement
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: **ACT-210**
+Next fresh ACT ID: ACT-211
 
 ## شمارش رسمی ریزتسک‌ها
 
-- کل: **204**
-- DONE: **136**
-- IN_PROGRESS: **31**
-- TODO: **36**
-- DEFERRED: **1**
-- BLOCKED: **0**
-- DEPRECATED: **0**
+- کل: 204
+- DONE: 136
+- IN_PROGRESS: 32
+- TODO: 35
+- DEFERRED: 1
+- BLOCKED: 0
+- DEPRECATED: 0
 
 این شمارش canonical مستقیماً از ledger فعلی ROADMAP خوانده شده است.
 
@@ -35,61 +35,41 @@ Next fresh ACT ID: **ACT-210**
 | PHASE-04 | DONE | Application/backend use cases |
 | PHASE-05 | DONE | Frontend architecture/design system |
 | PHASE-06 | IN_PROGRESS | Core pages implemented; runtime/browser/product acceptance remains |
-| PHASE-07 | IN_PROGRESS | TASK-07-001 Theme A complete; remaining visual/time/season/install work remains |
+| PHASE-07 | IN_PROGRESS | Theme A hierarchy complete; spacing consistency now in progress |
 | PHASE-08 | IN_PROGRESS | Editorial review and historical dataset remain |
 | PHASE-09 | IN_PROGRESS | Automated pipeline green; final QA remains |
 | PHASE-10 | TODO | Release |
 
-## آخرین checkpoint اجرایی
+## آخرین اقدامات
 
 ### ACT-208 — Theme A visual hierarchy validation — DONE
-- TASK-07-001 — Final Visual Hierarchy برای Theme A — Flat Geometric بسته شد.
-- Theme A با brief مصوب منطبق شد: flat solid colors، angular layered forms، simple lines، minimal detail، بدون gradient و realistic texture.
-- Time-of-day و season فقط appearance را تغییر می‌دهند.
-- Theme B در این checkpoint دست‌نخورده ماند.
-- CI run #37161733754 با conclusion = success و quality job موفق شد.
+- TASK-07-001 — Final Visual Hierarchy برای Theme A بسته شد.
+- Theme A با brief مصوب تطبیق داده شد.
+- GitHub Actions #37161733754 با success کامل شد.
 
 ### ACT-209 — Documentation convergence — DONE
-- وضعیت فعلی همه اسناد continuation اصلی با ACT-208 همگام شد.
-- هیچ تغییر implementation یا product behavior جدیدی انجام نشد.
-- TASK-07-001 همچنان DONE است.
-- گام بعدی TASK-07-002 — Spacing/Margin Consistency است و هنوز TODO است.
+- STATUS/ROADMAP/INDEX/PROJECT/HANDOFF و اسناد continuation همگام شدند.
+- شمارش canonical واقعی Roadmap اصلاح و ثبت شد.
+- Next task به TASK-07-002 منتقل شد.
 
-## وضعیت واقعی implementation
-
-Implemented and validated:
-- Calendar Engine and Imperial date rules
-- Gregorian ↔ Imperial conversion
-- leap-year break-point algorithm + regression matrix
-- Today / Calendar / Day Detail
-- Event / Important Event / Person / Timeline / Search routes
-- Authentication / sessions
-- Personal Event / Personal Person / Memory
-- recurrence
-- Personal Share Card
-- Persian + English / RTL + LTR
-- public/personal separation
-- graceful public fallback when personal storage is unavailable
-- PWA baseline
-- Playwright smoke coverage for desktop/tablet/mobile
-
-## Correction gate
-
-تمام findings اجراییِ ثبت‌شده در correction series مربوط به ACT-186 تا ACT-196 بسته شده‌اند و CI #281 آن‌ها را اعتبارسنجی کرده است. موارد باقی‌مانده از جنس acceptance/release هستند:
-- broader runtime/browser acceptance و visual acceptance
-- accessibility / touch / responsive review
-- release reproducibility به‌دلیل نبود package-lock
-- release hardening مربوط به CSRF/rate limiting طبق Taskهای Phase-09/10
+### ACT-210 — Theme A spacing implementation — IN_PROGRESS
+- TASK-07-002 آغاز شد.
+- spacing scale اختصاصی Theme A با ۷ گام 4/8/12/16/20/24/32px اضافه شد.
+- shell، topbar، content، hero، cards، calendar، forms، controls، metadata و mobile navigation روی همان scale یکدست شدند.
+- تغییر فقط در src/frontend/themes/flat-geometric/theme.css انجام شد.
+- static validation: scale tokenها حاضرند، selectorهای Theme A حفظ شده‌اند و gradient count = 0 باقی مانده است.
+- CI جدید برای commit ACT-210 هنوز به‌عنوان اجرای مستقل قابل مشاهده نیست؛ بنابراین Task هنوز DONE اعلام نشده است.
+- Theme B هیچ تغییری نکرده است.
+- Core و product behavior هیچ تغییری نکرده‌اند.
 
 ## Visual Theme state
 
-- Theme A: src/frontend/themes/flat-geometric/ — فعال و اجراشده.
-- Theme B: src/frontend/themes/modern-flat-vector/ — فقط boundary/scaffolding؛ طراحی اصلی آن هنوز شروع نشده است.
-- Core مشترک single-source باقی مانده: Calendar Engine، Domain، Data، Application، Auth/Session و product contracts.
-- TASK-07-001 برای Theme A — DONE.
-- سند عملیاتی Theme A: docs/PHASE-07-THEME-A-FLAT-GEOMETRIC.md.
-- قرارداد جداسازی دائمی: docs/VISUAL-DESIGN-SEPARATION-WARNING.md.
-- هر visual change فعلی باید فقط در Theme A و دقیقاً داخل brief مصوب خودش باقی بماند.
+- Theme A: src/frontend/themes/flat-geometric/ — active refinement.
+- Theme B: src/frontend/themes/modern-flat-vector/ — untouched / outside current scope.
+- TASK-07-001: DONE.
+- TASK-07-002: IN_PROGRESS.
+- Operational spacing record: docs/PHASE-07-THEME-A-SPACING.md.
+- Permanent separation rules: docs/VISUAL-DESIGN-SEPARATION-WARNING.md.
 
 ## Editorial state
 
@@ -97,12 +77,11 @@ seedEvents = [] عمداً خالی است. هیچ historical event عمومی �
 
 ## مسیر بعدی قطعی
 
-**Next task: TASK-07-002 — Spacing/Margin Consistency — TODO**
+TASK-07-002 — Spacing/Margin Consistency — IN_PROGRESS
 
-پس از شروع این Task، اجرای بصری فقط برای Theme A انجام می‌شود. Theme B تا تصمیم و scope مستقل خودش وارد اجرا نمی‌شود.
+پس از مشاهده validation واقعی برای commit ACT-210، در صورت موفقیت Task بسته می‌شود؛ سپس TASK-07-003 — Typography Consistency بررسی خواهد شد.
 
-مسیر کلی:
-PHASE-06 runtime/browser acceptance → ادامهٔ PHASE-07 برای Theme A → PHASE-08 editorial dataset → PHASE-09 final QA → PHASE-10 release.
+Theme B همچنان خارج از Scope است.
 
 ## قانون ادامه پروژه
 
