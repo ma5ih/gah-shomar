@@ -31,7 +31,7 @@
 - CI workflow برای typecheck + unit test + production build
 
 ### وضعیت اعتبارسنجی
-CI فعلی شامل migration، typecheck، unit/integration tests، production build و Playwright browser smoke است. ACT-187 checkpoint در run #244 موفق شد؛ ACT-188 checkpoint در run #246 هنگام این synchronization هنوز در حال اجرای browser setup است. با این حال product acceptance و release QA هنوز باز هستند.
+CI فعلی شامل migration، typecheck، unit/integration tests، production build و Playwright browser smoke است. ACT-187 checkpoint در run #244 موفق شد و ACT-188 checkpoint در run #246 نیز با SUCCESS کامل شد. Product acceptance و release QA هنوز باز هستند. با این حال product acceptance و release QA هنوز باز هستند.
 
 ## مهم‌ترین اسناد
 - `docs/PROJECT.md` — تعریف کامل محصول
