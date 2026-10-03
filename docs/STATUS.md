@@ -1,7 +1,7 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
 Last updated: 2026-10-03
-Current HEAD: `e3107be19485199f3e725a1bbc40ceb86b72f88b`
+Implementation baseline: `e3107be19485199f3e725a1bbc40ceb86b72f88b`
 Current phase: PHASE-09 — Integration & QA
 Overall status: IN_PROGRESS
 
@@ -109,6 +109,10 @@ This is a real QA mismatch, not a documentation-only issue.
 7. Finish PHASE-09 release-blocker review.
 8. Execute PHASE-10 release and final handoff.
 
+## Documentation checkpoint
+
+ACT-158 and ACT-159 synchronized the project ledger, roadmap, handoff and implementation notes. The commits after implementation baseline `e3107be...` in this checkpoint are documentation-only.
+
 ## ACT / history note
 
 There is a historical ACT-ID collision in Git commit messages:
@@ -118,7 +122,7 @@ There is a historical ACT-ID collision in Git commit messages:
 
 These historical commits are immutable and should not be rewritten. From the next checkpoint onward, new ACT IDs must never be reused.
 
-Next fresh ACT ID: **ACT-159**
+Next fresh ACT ID: **ACT-160**
 
 ## Continuation rule
 
@@ -130,3 +134,8 @@ A meaningful change requires:
 - validation evidence before claiming PASS/DONE.
 
 GitHub `main` and these documents are the source of truth for continuation; the previous chat is not required.
+
+
+## Current branch note
+
+The code implementation baseline for this checkpoint is `e3107be19485199f3e725a1bbc40ceb86b72f88b`. Subsequent checkpoint commits only synchronize documentation; use the Git history and this file to identify any future code change separately.
