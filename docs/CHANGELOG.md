@@ -1,3 +1,16 @@
+## ACT-083 — 2026-10-03
+Type: DOMAIN-TESTS
+Status: IN_PROGRESS
+
+### انجام شد
+- `tests/unit/domain-contracts.test.ts` ایجاد شد.
+- قراردادهای Event، Person، HistoricalPeriod و Source با fixtureهای typed و assertionهای رابطه‌ای تست می‌شوند.
+- سازگاری relationship graph و preservation تاریخ تاریخی دقیق با معادل شاهنشاهی پوشش داده شد.
+- Personal Event و Memory هنوز coverage مستقل ندارند و تکمیل آن‌ها ادامه TASK-03-026 است.
+
+### Next
+TASK-03-026 — تکمیل Domain Model Tests، سپس TASK-03-027 — Engine Review.
+
 ## ACT-082 — 2026-10-03
 Type: TEST-REGRESSION
 Status: DONE
