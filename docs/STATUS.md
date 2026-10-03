@@ -5,6 +5,18 @@ Implementation baseline: `e3107be19485199f3e725a1bbc40ceb86b72f88b`
 Current phase: PHASE-09 — Integration & QA
 Overall status: IN_PROGRESS
 
+## شمارش رسمی ریزتسک‌ها — ACT-162
+
+- کل: **193**
+- DONE: **133**
+- IN_PROGRESS: **32**
+- TODO: **27**
+- DEFERRED: **1**
+- BLOCKED: **0**
+- DEPRECATED: **0**
+
+**نقطه فعلی:** TASK-09-022 در PHASE-09 — Integration & Full QA.
+
 ## وضعیت فازها
 
 | Phase | Status | وضعیت واقعی |
@@ -122,7 +134,7 @@ There is a historical ACT-ID collision in Git commit messages:
 
 These historical commits are immutable and should not be rewritten. From the next checkpoint onward, new ACT IDs must never be reused.
 
-Next fresh ACT ID: **ACT-162**
+Next fresh ACT ID: **ACT-163**
 
 ## Continuation rule
 
@@ -143,7 +155,7 @@ The code implementation baseline for this checkpoint is `e3107be19485199f3e725a1
 
 ## Final checkpoint note
 
-ACT-160 changed documentation only. Implementation baseline remains e3107be19485199f3e725a1bbc40ceb86b72f88b. Next fresh ACT ID: **ACT-161**.
+ACT-160 changed documentation only. Implementation baseline remains e3107be19485199f3e725a1bbc40ceb86b72f88b. Next fresh ACT ID: **ACT-163**.
 
 
 ## Final continuation counter
