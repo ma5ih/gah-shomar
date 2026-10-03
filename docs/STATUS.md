@@ -4,14 +4,14 @@ Last updated: 2026-10-03
 Implementation baseline: `7512b433d1396029ae30625c466008e9e2453a35`
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 QA gate: PHASE-09 — Integration & QA
-QA blocker: TASK-09-022 — E2E Dataset/Editorial Alignment
+QA blocker: none; TASK-09-022 closed by CI #168
 Overall status: IN_PROGRESS
 
 ## شمارش رسمی ریزتسک‌ها — ACT-162
 
 - کل: **193**
-- DONE: **133**
-- IN_PROGRESS: **32**
+- DONE: **134**
+- IN_PROGRESS: **31**
 - TODO: **27**
 - DEFERRED: **1**
 - BLOCKED: **0**
@@ -19,7 +19,7 @@ Overall status: IN_PROGRESS
 
 **نقطه فعلی اجرا:** PHASE-06 — Core Frontend Product Experience.
 
-**وابستگی QA:** TASK-09-022 در PHASE-09 باید قبل از acceptance نهایی PHASE-06 بسته و با CI تأیید شود.
+**وضعیت QA:** TASK-09-022 بسته شد؛ CI #168 سبز است. اکنون وابستگی اصلی، runtime/browser acceptance خود PHASE-06 است.
 
 ## وضعیت فازها
 
@@ -112,7 +112,7 @@ Therefore:
 
 ACT-163 این assertions را با editorial rule فعلی که `seedEvents` خالی است همگام کرد.
 
-این mismatch کدی اکنون برطرف شده است؛ CI و browser acceptance هنوز نیازمند validation تازه هستند.
+CI #168 این mismatch را با 24/24 browser smoke assertions در desktop/tablet/mobile و تمام مراحل قبلی pipeline با موفقیت اعتبارسنجی کرد.
 
 ## Immediate next actions
 
