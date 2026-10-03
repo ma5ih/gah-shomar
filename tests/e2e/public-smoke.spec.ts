@@ -23,7 +23,19 @@ test.describe("public product smoke",()=>{
  });
  test("English locale switches the shell to LTR",async({page})=>{await page.goto("/?lang=en");await expect(page.locator("html")).toHaveAttribute("lang","en");await expect(page.locator("html")).toHaveAttribute("dir","ltr");await expect(page.locator(".app-shell")).toHaveAttribute("dir","ltr");});
  test("Primary navigation is keyboard reachable",async({page})=>{await page.goto("/?lang=fa");await page.keyboard.press("Tab");await expect(page.locator(":focus-visible")).toBeVisible();});
- test("PWA manifest and standard icons are exposed",async({request})=>{
+ test("PWA install prompt appears when browser exposes install capability",async({page})=>{
+  await page.goto("/?lang=en");
+  await page.evaluate(()=>{
+    const event=Object.assign(new Event("beforeinstallprompt"),{prompt:async()=>{},userChoice:Promise.resolve({outcome:"dismissed"})});
+    window.dispatchEvent(event);
+  });
+  await expect(page.getByRole("status")).toBeVisible();
+  await expect(page.getByRole("button",{name:"Install"})).toBeVisible();
+  await expect(page.getByRole("button",{name:"Later"})).toBeVisible();
+  await page.getByRole("button",{name:"Later"}).click();
+  await expect(page.getByRole("status")).toHaveCount(0);
+});
+test("PWA manifest and standard icons are exposed",async({request})=>{
   const response=await request.get("/manifest.webmanifest");expect(response.ok()).toBe(true);const manifest=await response.json();expect(manifest.name).toBe("گاه‌شمار");expect(manifest.lang).toBe("fa");expect(manifest.dir).toBe("rtl");expect(manifest.display).toBe("standalone");expect(manifest.icons.length).toBeGreaterThanOrEqual(2);for(const path of ["/icon-192.png","/icon-512.png","/sw.js"]){expect((await request.get(path)).ok()).toBe(true)}
  });
  test("Calendar day selection opens the Day Detail route",async({page})=>{
