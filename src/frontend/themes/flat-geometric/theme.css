@@ -1,5 +1,5 @@
 /* Theme A — Flat Geometric | TASK-07-002 */
-html[data-theme="flat-geometric"]{--fg-bg:#efe9dc;--fg-surface:#f7f2e7;--fg-surface-strong:#fbf7ed;--fg-ink:#24322c;--fg-muted:#6b7069;--fg-line:rgba(36,50,44,.16);--fg-accent:#8f5b3b;--fg-accent-soft:#e9d5bd;--fg-green:#687f68;--fg-blue:#657b87;--fg-shadow:0 12px 28px rgba(36,50,44,.08);--fg-space-1:4px;--fg-space-2:8px;--fg-space-3:12px;--fg-space-4:16px;--fg-space-5:20px;--fg-space-6:24px;--fg-space-7:32px}
+html[data-theme="flat-geometric"]{--fg-bg:#efe9dc;--fg-surface:#f7f2e7;--fg-surface-strong:#fbf7ed;--fg-ink:#24322c;--fg-muted:#6b7069;--fg-line:rgba(36,50,44,.16);--fg-accent:#8f5b3b;--fg-accent-soft:#e9d5bd;--fg-green:#687f68;--fg-blue:#657b87;--fg-shadow:0 12px 28px rgba(36,50,44,.08);--fg-space-1:4px;--fg-space-2:8px;--fg-space-3:12px;--fg-space-4:16px;--fg-space-5:20px;--fg-space-6:24px;--fg-space-7:32px;--fg-radius-sm:10px;--fg-radius-md:12px;--fg-radius-lg:14px;--fg-radius-sheet:18px;--fg-ease:160ms ease;--fg-type-xs:.72rem;--fg-type-sm:.78rem;--fg-type-md:.86rem;--fg-type-body:1rem;--fg-type-lg:1.1rem;--fg-type-xl:1.3rem}
 html[data-theme="flat-geometric"],html[data-theme="flat-geometric"] body{background:var(--fg-bg)}
 html[data-theme="flat-geometric"] body{color:var(--fg-ink)}
 html[data-theme="flat-geometric"] .app-shell{max-width:1180px;padding-top:var(--fg-space-3)}
@@ -103,3 +103,56 @@ html[data-theme="flat-geometric"] .hero-panel{padding:var(--fg-space-7)}
 html[data-theme="flat-geometric"] .event-card{padding:var(--fg-space-5)}
 html[data-theme="flat-geometric"] .detail-card{padding:var(--fg-space-6)}
 }
+/* TASK-07-003 — Typography Consistency */
+html[data-theme="flat-geometric"] body{font-size:var(--fg-type-body);line-height:1.6}
+html[data-theme="flat-geometric"] .overline,html[data-theme="flat-geometric"] .eyebrow{font-size:var(--fg-type-xs);line-height:1.35;font-weight:800}
+html[data-theme="flat-geometric"] .nav-link,html[data-theme="flat-geometric"] .lang-chip{font-size:var(--fg-type-sm)}
+html[data-theme="flat-geometric"] .profile-chip{font-size:var(--fg-type-md)}
+html[data-theme="flat-geometric"] .section-head h2{font-size:var(--fg-type-lg);line-height:1.35}
+html[data-theme="flat-geometric"] .section-head a{font-size:var(--fg-type-sm)}
+html[data-theme="flat-geometric"] .event-card h3{font-size:1.05rem;line-height:1.4}
+html[data-theme="flat-geometric"] .event-card p{font-size:var(--fg-type-md);line-height:1.7}
+html[data-theme="flat-geometric"] .card-meta,html[data-theme="flat-geometric"] .calendar-hint,html[data-theme="flat-geometric"] .meta-row{font-size:var(--fg-type-sm)}
+html[data-theme="flat-geometric"] .context-value{font-size:var(--fg-type-xl);line-height:1.35}
+html[data-theme="flat-geometric"] .primary-button,html[data-theme="flat-geometric"] .secondary-button{font-size:var(--fg-type-md);font-weight:800;line-height:1.35}
+html[data-theme="flat-geometric"] .search-form input,html[data-theme="flat-geometric"] .field input,html[data-theme="flat-geometric"] .field textarea,html[data-theme="flat-geometric"] .field select{font-size:var(--fg-type-body);line-height:1.5}
+
+/* TASK-07-004 — Component Consistency */
+html[data-theme="flat-geometric"] .nav-link,html[data-theme="flat-geometric"] .lang-chip,html[data-theme="flat-geometric"] .profile-chip,html[data-theme="flat-geometric"] .icon-button,html[data-theme="flat-geometric"] .primary-button,html[data-theme="flat-geometric"] .secondary-button,html[data-theme="flat-geometric"] .search-form input,html[data-theme="flat-geometric"] .field input,html[data-theme="flat-geometric"] .field textarea,html[data-theme="flat-geometric"] .field select,html[data-theme="flat-geometric"] .pill{border-radius:var(--fg-radius-sm)}
+html[data-theme="flat-geometric"] .card,html[data-theme="flat-geometric"] .calendar-surface,html[data-theme="flat-geometric"] .hero-panel,html[data-theme="flat-geometric"] .detail-card,html[data-theme="flat-geometric"] .auth-card{border-radius:var(--fg-radius-lg)}
+html[data-theme="flat-geometric"] .event-card,html[data-theme="flat-geometric"] .empty,html[data-theme="flat-geometric"] .notice{border-radius:var(--fg-radius-md)}
+html[data-theme="flat-geometric"] .bottom-sheet{border-radius:var(--fg-radius-sheet) var(--fg-radius-sheet) 0 0}
+html[data-theme="flat-geometric"] .primary-button,html[data-theme="flat-geometric"] .secondary-button,html[data-theme="flat-geometric"] .icon-button{box-shadow:none}
+
+/* TASK-07-005 — Visual Density Review */
+html[data-theme="flat-geometric"] .app-content{gap:var(--fg-space-5)}
+html[data-theme="flat-geometric"] .stack{gap:var(--fg-space-3)}
+html[data-theme="flat-geometric"] .two-col{gap:var(--fg-space-5)}
+html[data-theme="flat-geometric"] .calendar-grid{gap:var(--fg-space-1)}
+html[data-theme="flat-geometric"] .section-head{margin:0 2px var(--fg-space-2)}
+html[data-theme="flat-geometric"] .card-meta{margin-top:var(--fg-space-3);padding-top:var(--fg-space-2)}
+
+/* TASK-07-006..009 — Time-of-day Presentation */
+html[data-theme="flat-geometric"] .hero[data-time-of-day="morning"]{--fg-hero-surface:#f4ead8;--fg-land-a:#93a68e;--fg-land-b:#c8b783;--fg-accent:#7b805f}
+html[data-theme="flat-geometric"] .hero[data-time-of-day="noon"]{--fg-hero-surface:#e9efe6;--fg-land-a:#7d9873;--fg-land-b:#c8b06b;--fg-accent:#687f68}
+html[data-theme="flat-geometric"] .hero[data-time-of-day="sunset"]{--fg-hero-surface:#ead5bd;--fg-land-a:#a97858;--fg-land-b:#c49a5c;--fg-accent:#9a653e}
+html[data-theme="flat-geometric"] .hero[data-time-of-day="night"]{--fg-hero-surface:#26352f;--fg-land-a:#4d6959;--fg-land-b:#6f6650;--fg-accent:#92a58f}
+html[data-theme="flat-geometric"] .hero[data-time-of-day="night"] .hero-panel:first-child .overline,
+html[data-theme="flat-geometric"] .hero[data-time-of-day="night"] .hero-panel:first-child .hero-subtitle{color:#e8e2d6}
+
+/* TASK-07-010 — Seasonal Variations */
+html[data-theme="flat-geometric"] .hero[data-season="spring"]{--fg-accent:#6f886e}
+html[data-theme="flat-geometric"] .hero[data-season="summer"]{--fg-accent:#9a653e}
+html[data-theme="flat-geometric"] .hero[data-season="autumn"]{--fg-accent:#a46f45}
+html[data-theme="flat-geometric"] .hero[data-season="winter"]{--fg-accent:#6e8790}
+
+/* TASK-07-011 — Motion Polish */
+html[data-theme="flat-geometric"] .nav-link,
+html[data-theme="flat-geometric"] .lang-chip,
+html[data-theme="flat-geometric"] .profile-chip,
+html[data-theme="flat-geometric"] .icon-button,
+html[data-theme="flat-geometric"] .primary-button,
+html[data-theme="flat-geometric"] .secondary-button,
+html[data-theme="flat-geometric"] .event-card{transition:transform var(--fg-ease),background-color var(--fg-ease),border-color var(--fg-ease),color var(--fg-ease)}
+html[data-theme="flat-geometric"] .nav-link:hover,html[data-theme="flat-geometric"] .lang-chip:hover,html[data-theme="flat-geometric"] .profile-chip:hover{transform:translateY(-1px)}
+html[data-theme="flat-geometric"] .primary-button:active,html[data-theme="flat-geometric"] .secondary-button:active,html[data-theme="flat-geometric"] .icon-button:active{transform:translateY(0)}
