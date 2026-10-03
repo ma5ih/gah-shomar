@@ -2,7 +2,7 @@
 
 Version: 1.1.0
 Status: APPROVED
-Last updated: 2026-10-03
+Last updated: 2026-10-04
 
 ## Stack
 Next.js App Router, React, TypeScript, PostgreSQL, Drizzle ORM, Tailwind CSS, Node.js LTS, npm.
@@ -17,7 +17,7 @@ Next.js App Router, React, TypeScript, PostgreSQL, Drizzle ORM, Tailwind CSS, No
 
 ## Dependency Rule
 Presentation → Application → Domain.
-Data implements persistence boundaries. Domain has no dependency on Next.js, React or database.
+Data implements persistence boundaries. Domain has no dependency on Next.js, React or database. ACT-186 identified remaining presentation-layer dependency leaks that must be removed before final acceptance.
 
 ## Calendar Engine — current implementation
 Calendar Engine is the single source of truth for:
@@ -60,7 +60,7 @@ Request → Route/Server boundary → Application use case → Domain/Data → D
 Domain stores localized content. Presentation determines locale and direction. Persian is RTL; English is LTR.
 
 ## Testing
-Calendar/domain unit tests are first-class. Current test files cover month rules, leap-year regression, conversion, historical conversion, Today, arithmetic, weekday, time-of-day and season. CI is configured for typecheck, unit tests and production build, but no successful GitHub run has yet been observed.
+Calendar/domain unit tests are first-class. The current suite also contains application, integration and browser smoke coverage. CI currently runs migration, typecheck, unit/integration tests, production build and Playwright browser smoke; latest observed run #218 is SUCCESS.
 
 ## Deferred
 Notifications, social features, public event submission, maps, export/import, integrations, monetization, public API and advanced analytics remain outside MVP.
@@ -72,6 +72,6 @@ Minimal username/password authentication with DB-backed sessions is defined in A
 Private Personal Event share-card generation is defined in SHARE-CARD-ARCHITECTURE.md.
 
 ## Current phase
-PHASE-03 — IN_PROGRESS
+PHASE-06 — IN_PROGRESS (QA gate: PHASE-09)
 
-**Next:** TASK-03-023 — Calendar Unit Tests / CI Validation
+**Next:** TASK-09-019 — Critical Bug Fixes identified by ACT-186
