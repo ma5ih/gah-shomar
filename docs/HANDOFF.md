@@ -4,239 +4,145 @@ Project: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Checkpoint date: 2026-10-04
-Current repository checkpoint: **ACT-203 on main**
-Last implementation HEAD: `a9eace682f32f6e6ff32a748fe9df53448c27692`
+Current documentation checkpoint: **ACT-209 on main**
+Current implementation HEAD: 5791e3e89aabcd75fd856e03e9a05023d009dbcc
 Primary workstream: PHASE-06 — Core Frontend Product Experience
-QA gate: PHASE-09 — Integration & QA
-QA dependency: TASK-09-022 — DONE; TASK-09-019 implementation correction gate is DONE; ACT-199 correction was revalidated by CI #287 PASS; latest documentation checkpoint CI #292 PASS.
+Current visual stream: PHASE-07 — Theme A refinement
+QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
+Next fresh ACT ID: **ACT-210**
 
-## 1. از کجا شروع کنیم؟
+## 1. نقطه فعلی پروژه
 
-برای ادامه پروژه این ترتیب را بخوانید:
-1. `docs/HANDOFF.md`
-2. `docs/STATUS.md`
-3. `docs/ROADMAP.md`
-4. آخرین بخش `docs/CHANGELOG.md`
-5. سند مرتبط با TASK جاری
+این checkpoint بعد از بسته‌شدن موفق TASK-07-001 برای Theme A ثبت شده است.
 
-GitHub و همین شاخهٔ `main` مرجع واقعی وضعیت هستند. چت قبلی برای ادامه‌دادن پروژه لازم نیست.
+- TASK-07-001 — Final Visual Hierarchy — **DONE**
+- Theme A — Flat Geometric — فعال و validation شده است.
+- Theme B — Modern Flat Vector Illustration — هنوز وارد طراحی اصلی نشده است.
+- گام بعدی بصری: **TASK-07-002 — Spacing/Margin Consistency — TODO**
+- هیچ تغییر جدیدی در Core، Calendar Engine، Domain، Data، Application، Auth/Session، routing یا business behavior در ACT-209 انجام نشده است.
 
-## 2. نقطه‌ای که الان واقعاً در آن هستیم
+## 2. شمارش رسمی Taskها
 
-هستهٔ محصول و معماری اصلی ساخته شده‌اند:
-- Calendar Engine و قراردادهای تاریخ
-- لایهٔ Domain/Application/Data/Content
-- Today، Calendar، Day Detail
-- Events / Important Events / Event Detail
-- Timeline / People
-- Search
-- Authentication / Personal Events / Personal Person / Memories
-- Recurrence
-- Personal Share Card
-- Persian + English و RTL/LTR
-- fallback عمومی هنگام ازکارافتادن personal storage
-- PWA baseline شامل manifest، service worker، offline route و iconها
-- browser smoke coverage در CI
-
-اما Release هنوز انجام نشده است. Phase-09 به‌طور رسمی باز است و Phase-06/07/08 نیز gapهای مشخص دارند.
-
-## 2.1 شمارش رسمی ریزتسک‌ها — ACT-162
-
-بر اساس تمام TASK-*های موجود در ROADMAP فعلی:
 - کل: **204**
-- DONE: **134**
+- DONE: **135**
 - IN_PROGRESS: **32**
-- TODO: **37**
+- TODO: **36**
 - DEFERRED: **1**
 - BLOCKED: **0**
 - DEPRECATED: **0**
 
-**نقطه فعلی محصول:** PHASE-06 — Core Frontend Product Experience.
-**QA dependency:** TASK-09-022 — DONE. TASK-09-010 Personal Layer Acceptance — IN_PROGRESS.
-این بخش و شمارش آن مرجع ادامه پروژه است؛ برای تعیین وضعیت به چت قبلی اتکا نشود.
+این شمارش باید با docs/ROADMAP.md یکی باشد.
 
 ## 3. وضعیت Phaseها
 
-- PHASE-00 Documentation — DONE
-- PHASE-01 Specification — DONE
-- PHASE-02 Architecture — DONE
-- PHASE-03 Core Backend / Domain / Calendar Engine — DONE
-- PHASE-04 Application Backend / Use Cases — DONE
-- PHASE-05 Frontend Architecture & Design System — DONE
-- PHASE-06 Core Frontend Product Experience — IN_PROGRESS
-- PHASE-07 Visual Polish, Time/Season & App-like Experience — IN_PROGRESS
-- PHASE-08 Content, Editorial & Historical Dataset — IN_PROGRESS
-- PHASE-09 Integration & Full QA — IN_PROGRESS
-- PHASE-10 Release & Handoff — TODO
+- PHASE-00 — DONE
+- PHASE-01 — DONE
+- PHASE-02 — DONE
+- PHASE-03 — DONE
+- PHASE-04 — DONE
+- PHASE-05 — DONE
+- PHASE-06 — IN_PROGRESS: runtime/browser/product acceptance باقی است.
+- PHASE-07 — IN_PROGRESS: TASK-07-001 برای Theme A بسته شده؛ visual/time/season/install work باقی است.
+- PHASE-08 — IN_PROGRESS: editorial dataset و historical review باقی است.
+- PHASE-09 — IN_PROGRESS: final QA و release-blocker review باقی است.
+- PHASE-10 — TODO: release.
 
-تعریف مهم: DONE بودن Phaseهای 03 تا 05 به معنای تمام‌شدن scope آن فازهاست؛ تغییرات بعدی همچنان باید در Phase-09 از نظر regression و acceptance دوباره اعتبارسنجی شوند.
+## 4. آخرین اقدامات قطعی
 
-## 4. آخرین تغییرات واقعی قبل از این checkpoint
+### ACT-207 — Theme A visual execution
+- Theme A stylesheet در src/frontend/themes/flat-geometric/theme.css فعال شد.
+- flat solid surfaces، simple lines، layered angular forms و minimal visual treatment اجرا شد.
+- gradient و glass/backdrop treatment کنار گذاشته شد.
+- time-of-day و season فقط appearance را تحت تأثیر قرار می‌دهند.
 
-### Content / Editorial
-- ACT-142 تا ACT-151: public historical event seed عمداً به آرایهٔ خالی برگشت.
-- روابط event با people/periods نیز از seed ساختاری حذف شد.
-- تست‌های application و resilience با نبود event عمومی هماهنگ شدند.
-- صفحهٔ Important Events در نبود داده، حالت editorial-pending نشان می‌دهد.
-- فرآیند بررسی و تأیید ماه‌به‌ماه در `docs/EDITORIAL-EVENT-REVIEW.md` ثبت شده است.
-- هیچ event تاریخی جدیدی نباید بدون تأیید صریح وارد public seed شود.
+### ACT-208 — Theme A validation
+- TASK-07-001 بسته شد.
+- Theme A با brief رسمی تطبیق داده شد.
+- CI run #37161733754 با success کامل شد.
 
-### PWA / Responsive / Browser QA
-- PWA baseline و iconهای استاندارد اضافه شده‌اند.
-- Playwright برای desktop/tablet/mobile Chromium تعریف شده است.
-- پروفایل tablet به Galaxy Tab S4 و mobile به Pixel 5 تنظیم شده است.
-- GitHub Actions به Node 24 و actions/checkout@v5 و setup-node@v7 منتقل شده است.
-- selectorهای browser smoke دقیق‌تر شده‌اند.
-- تست English اکنون lang و dir واقعی document را assert می‌کند.
+### ACT-209 — Documentation convergence
+- STATUS/ROADMAP/INDEX/PROJECT/HANDOFF/Phase notes با ACT-208 همگام شدند.
+- اشاره‌های stale به pending بودن TASK-07-001 و checkpointهای قدیمی حذف یا جایگزین شدند.
+- implementation HEAD بدون تغییر باقی ماند.
 
-## 5. وضعیت محتوای تاریخی
+## 5. وضعیت Visual Themeها
 
-در `src/content/seed.ts`:
-- published historical events = 0
-- public people = 5
-- historical periods = 2
-- reference sources = 6
+ساختار:
 
-People/Periods/Sources در این مرحله فقط محتوای ساختاری و source registry هستند و نباید به‌عنوان تأیید event تلقی شوند.
+src/
+├── domain/
+├── application/
+├── data/
+├── content/
+└── frontend/
+    └── themes/
+        ├── flat-geometric/         ← THEME A
+        └── modern-flat-vector/     ← THEME B
 
-## 6. قرارداد قطعی Important Events
+Core بین هر دو Theme مشترک است. هیچ Theme نباید Domain/Application/Data/Auth/Calendar/business logic را کپی یا تغییر دهد.
 
-این requirement جدید نیست؛ قبلاً در مدل محصول تصویب شده و باید حفظ شود:
+### Theme A
+Brief رسمی و تنها مرجع طراحی همان سند ثبت‌شده در docs/VISUAL-DESIGN-SEPARATION-WARNING.md و src/frontend/themes/flat-geometric/README.md است.
 
-صفحهٔ «رویدادهای خاص» باید:
-- رویدادهای مهم همان ماه را نمایش دهد.
-- برای هر event تصویر شاخص داشته باشد.
-- card قابل کلیک باشد.
-- به صفحهٔ مستقل Event Detail برود.
-- در Detail روایت/توضیح کامل‌تر، تاریخ، منابع، افراد/دوره‌های مرتبط و در صورت وجود تصاویر بیشتر را نمایش دهد.
+وضعیت:
+- TASK-07-001: DONE
+- TASK-07-002: TODO / next
 
-وضعیت فعلی:
-- Important Events listing و empty state پیاده شده‌اند.
-- Event cards قابل کلیک هستند.
-- Event Detail فعلی narrative/date/people/related/sources را دارد.
-- لایهٔ تصویر/گالری برای event هنوز کامل نشده و باید همراه با dataset/media work تکمیل شود.
-- چون seed فعلاً خالی است، هیچ event عمومی منتشر نمی‌شود.
+### Theme B
+وضعیت:
+- boundary/scaffolding: موجود
+- main visual execution: **not started**
+- current scope: خارج از Scope
 
-## 7. مهم‌ترین gap فعلی QA
+## 6. وضعیت محتوای تاریخی
 
-آخرین workflow تعریف‌شده شامل این مراحل است:
-migration → typecheck → unit/integration tests → production build → Chromium install → browser smoke.
+seedEvents = [] عمداً خالی است. هیچ historical event عمومی بدون source/validation/editorial approval وارد public seed نمی‌شود.
 
-در `tests/e2e/public-smoke.spec.ts` assertionهای event قدیمی با ACT-163 با سیاست `seedEvents = []` همگام شدند.
+## 7. QA و validation
 
-نتیجه:
-- current HEAD از نظر automated CI سبز است.
-- blocker کدی TASK-09-022 برطرف شده است.
-- browser/runtime acceptance واقعی PHASE-06 همچنان باید اجرا و ثبت شود.
+آخرین evidenceهای قطعی:
+- CI #281 — implementation correction series green
+- CI #299 — product/E2E acceptance checkpoint green
+- GitHub Actions #37161733754 — Theme A validation checkpoint green
 
-آخرین CI baseline قطعی:
-- ACT-199 / run #199: PASS
-- ACT-187 checkpoint: CI #244 PASS for migration, typecheck, unit/integration, production build and browser smoke.
-ACT-188 checkpoint: CI #246 PASS across migration, typecheck, unit/integration, build and browser smoke.
+موارد باز همچنان acceptance/release هستند:
+- runtime/browser acceptance کامل برای PHASE-06
+- responsive/mobile/tablet/desktop visual QA
+- accessibility / touch/swipe review
+- release reproducibility و lockfile
+- final security/release hardening
 
-آخرین validation correction series:\n- CI #287: PASS on implementation HEAD after ACT-199.\n- CI #292: PASS on the latest repository documentation checkpoint.
+بدون اجرای واقعی CI یا acceptance evidence جدید، وضعیت جدید PASS اعلام نشود.
 
-## 8. مسیر ادامه، به ترتیب
+## 8. مسیر ادامه
 
-### گام 1 — PHASE-06 runtime/browser acceptance
-حداقل این سناریوها بررسی شوند:
-- Today
-- Calendar
-- Day Detail
-- Important Events
-- Event Detail
-- Timeline
-- People
-- Search
-- Login/Register
-- Personal Event / Memory / Share Card
-- fa/RTL و en/LTR
-- desktop / tablet / mobile
-- touch/swipe
-- no unexpected horizontal overflow
-- loading/error/empty states
-- PWA manifest/service worker/offline baseline
+**گام بعدی:** TASK-07-002 — Spacing/Margin Consistency — TODO
 
-### گام 2 — PHASE-06 closure after acceptance evidence
-پس از acceptance واقعی، gapهای Core Frontend بسته و Phase-06 فقط در صورت evidence به DONE منتقل شود.
+تا زمانی که کاربر scope را تغییر نداده است، هر visual implementation جدید فقط روی Theme A انجام می‌شود و Theme B دست‌نخورده می‌ماند.
 
-### گام 3 — PHASE-07 visual polish (only after explicit design discussion)
-hierarchy، spacing، typography، component consistency، density، motion، time-of-day، seasonal states و install UX تکمیل شوند.
+مسیر کلی بعد از آن:
+PHASE-06 acceptance → remaining PHASE-07 Theme A work → PHASE-08 editorial dataset → PHASE-09 final QA → PHASE-10 release.
 
-### گام 4 — PHASE-08 editorial content
-بررسی ماه‌به‌ماه را از اولین ماه تقویمی در ترتیب محصول شروع کنید:
-- candidate events
-- date/title/summary/type
-- source verification
-- uncertainty/dispute flags
-- presentation to user
-- explicit approval
-- only then seed insertion
-- image/hero/media metadata
-- content + relationship validation
+## 9. قراردادهای غیرقابل مذاکره
 
-تا قبل از تأیید، هیچ event وارد public seed نشود.
-
-### گام 5 — PHASE-09 final QA
-content QA، accessibility، performance، PWA، visual consistency و release blocker review.
-
-### گام 6 — PHASE-10 release
-production configuration، deployment validation، production PWA check، final docs، release notes، versioning و handoff.
-
-## 9. وضعیت شناسه‌های ACT
-
-در تاریخچهٔ commitها دو collision تاریخی ثبت شده است:
-- ACT-150 یک‌بار برای browser/mobile profile و یک‌بار برای editorial event hold استفاده شده.
-- ACT-151 یک‌بار برای responsive/PWA browser QA و یک‌بار برای resilience alignment استفاده شده.
-- ACT-155 در commit history فعلی پیدا نشد.
-
-این collisionها immutable هستند و نباید با بازنویسی تاریخچهٔ Git اصلاح شوند.
-
-قاعدهٔ جدید:
-- از checkpoint بعدی فقط شناسه‌های جدید استفاده شود.
-- شناسهٔ بعدی: ACT-204
-- هیچ ACT قدیمی دوباره استفاده نشود.
-- برای ارجاع به collisionهای قدیمی، از توضیح توصیفی و SHA commit استفاده شود.
-
-## 10. قراردادهای مهمی که نباید شکسته شوند
-
-- سال شاهنشاهی در UI اصلی است؛ Solar Hijri ordinary year نباید به‌عنوان سال اصلی نمایش داده شود.
+- Calendar Engine تنها Source of Truth برای منطق تقویم است.
+- سال شاهنشاهی در UI اصلی است؛ سال هجری شمسی معمولی سال اصلی UI نیست.
 - Gregorian فرعی است.
-- Calendar Engine تنها source of truth برای منطق تقویم است.
 - unsupported historical conversion نباید حدس زده شود.
 - public و personal data جدا هستند.
 - personal storage failure نباید public Today/Calendar/Day/Search را از کار بیندازد.
-- public event بدون source/validation مناسب منتشر نشود.
-- event تاریخی بدون approval صریح publish نشود.
-- content تاریخی در UI hard-code نشود.
-- هر تغییر معنادار ACT ID + changelog + status/roadmap sync + validation لازم دارد.
-- CI result بدون مشاهدهٔ اجرای واقعی PASS اعلام نشود.
+- event تاریخی بدون source/validation/approval منتشر نشود.
+- visual Themeها نباید Core را fork کنند.
+- same data + same state + different Theme = different appearance, same product behavior.
+- هر اقدام معنادار: ACT ID + CHANGELOG + STATUS/ROADMAP sync + validation در صورت نیاز.
 
-## 11. آخرین نقطهٔ شروع عملی
+## 10. نقطه شروع جلسه بعد
 
-ACT-186 correction gate and ACT-199 implementation correction are closed and CI-validated.\n**Next:** PHASE-06 runtime/browser acceptance → PHASE-06 closure.
+ابتدا:
+1. docs/STATUS.md
+2. docs/ROADMAP.md
+3. آخرین بخش docs/CHANGELOG.md
+4. سند docs/PHASE-07-THEME-A-FLAT-GEOMETRIC.md
 
-بعد از سبزشدن CI و ثبت acceptance واقعی، تازه به visual polish و سپس editorial month-by-month content بروید.
-
-## 12. اصل انتقال‌پذیری
-
-هیچ‌کس نباید برای فهم وضعیت پروژه به چت قبلی وابسته باشد. اگر این فایل، STATUS، ROADMAP و CHANGELOG با هم سازگار باشند، پروژه باید از همین commit قابل ادامه باشد.
-
-
-## 13. Documentation checkpoint note
-
-ACT-158 performed the main reconciliation. ACT-159 finalizes the checkpoint after all documentation synchronization commits. The implementation baseline remains `e3107be19485199f3e725a1bbc40ceb86b72f88b`; later commits in this checkpoint are documentation-only unless explicitly listed otherwise.
-
-
-## 14. Counter correction
-
-ACT-160 corrected a stale ACT counter in this handoff. No product/code behavior changed in ACT-160.
-
-
-## 10. Checkpoint ACT-197
-
-- All ACT-186 implementation findings are closed and CI #281 is fully green.
-- Remaining work is product/runtime acceptance in PHASE-06, followed by visual polish, editorial dataset work, final QA and release.
-- Release reproducibility still requires a committed `package-lock.json`; it has not been fabricated without a reliable npm/package-manager environment.
-- Next fresh ACT ID: ACT-204.
+سپس فقط در صورت شروع TASK-07-002، اجرای visual refinement برای **Theme A** انجام شود.
