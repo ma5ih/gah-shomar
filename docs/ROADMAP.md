@@ -1,7 +1,7 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 2.4.4
-Last updated: 2026-10-04 — ACT-210
+Version: 2.4.5
+Last updated: 2026-10-04 — ACT-211
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
 
@@ -275,16 +275,16 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - browser smoke follows the intentionally empty historical-event seed
   - CI run #168 and later full pipelines validate the aligned behavior
 
-## CURRENT CHECKPOINT — ACT-210 — 2026-10-04
+## CURRENT CHECKPOINT — ACT-211 — 2026-10-04
 
-- ACT-210 starts and implements TASK-07-002 — Spacing/Margin Consistency for Theme A — Flat Geometric.
+- ACT-210 started TASK-07-002 — Spacing/Margin Consistency for Theme A — Flat Geometric; ACT-211 refined its spacing normalization.
 - Theme A spacing is normalized through a dedicated 4/8/12/16/20/24/32px scale in src/frontend/themes/flat-geometric/theme.css.
 - Applied areas include shell/topbar, main content, hero, cards, calendar, forms, controls, metadata and mobile navigation.
 - No Core, Calendar Engine, Domain, Data, Application, Auth/Session, routing, localization or business behavior changed.
 - Theme B remains untouched and outside the current scope.
 - Static validation passed for scope/selector structure and confirmed no gradient expression was introduced in the Theme A stylesheet.
-- Automated CI for the ACT-210 implementation commit has not yet produced an independently observed result; TASK-07-002 therefore remains IN_PROGRESS.
-- Current implementation commit: dadfc21de5bbc1c262774b47c539bd10c1072414.
+- Automated CI for the latest ACT-211 implementation commit has not yet produced an independently observed result; TASK-07-002 therefore remains IN_PROGRESS.
+- Current implementation commit: fa095e637e3f4d244c9b06889717d71d3dd690a0.
 - Last completed Theme A CI validation remains GitHub Actions #37161733754 from ACT-208.
 - Canonical task counts: 204 total / 136 DONE / 32 IN_PROGRESS / 35 TODO / 1 DEFERRED.
 
