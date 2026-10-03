@@ -4,11 +4,11 @@ Project: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Checkpoint date: 2026-10-04
-Current repository checkpoint: **ACT-202 on main**
+Current repository checkpoint: **ACT-203 on main**
 Last implementation HEAD: `a9eace682f32f6e6ff32a748fe9df53448c27692`
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 QA gate: PHASE-09 — Integration & QA
-QA dependency: TASK-09-022 — DONE; TASK-09-019 implementation correction gate is DONE; current post-correction CI revalidation is pending; last fully green baseline before ACT-199 was #283 PASS.
+QA dependency: TASK-09-022 — DONE; TASK-09-019 implementation correction gate is DONE; ACT-199 correction was revalidated by CI #287 PASS; latest documentation checkpoint CI #292 PASS.
 Overall status: IN_PROGRESS
 
 ## 1. از کجا شروع کنیم؟
@@ -135,10 +135,7 @@ migration → typecheck → unit/integration tests → production build → Chro
 - ACT-187 checkpoint: CI #244 PASS for migration, typecheck, unit/integration, production build and browser smoke.
 ACT-188 checkpoint: CI #246 PASS across migration, typecheck, unit/integration, build and browser smoke.
 
-آخرین implementation validation قبل از ACT-199:
-- CI #281: PASS
-- workflow runs #282 و #283: PASS documentation checkpoints
-- ACT-199 adds the post-audit persistence fix and remaining Day server-boundary correction; CI revalidation is required.
+آخرین validation correction series:\n- CI #287: PASS on implementation HEAD after ACT-199.\n- CI #292: PASS on the latest repository documentation checkpoint.
 
 ## 8. مسیر ادامه، به ترتیب
 
@@ -198,7 +195,7 @@ production configuration، deployment validation، production PWA check، final 
 
 قاعدهٔ جدید:
 - از checkpoint بعدی فقط شناسه‌های جدید استفاده شود.
-- شناسهٔ بعدی: ACT-203
+- شناسهٔ بعدی: ACT-204
 - هیچ ACT قدیمی دوباره استفاده نشود.
 - برای ارجاع به collisionهای قدیمی، از توضیح توصیفی و SHA commit استفاده شود.
 
@@ -218,8 +215,7 @@ production configuration، deployment validation، production PWA check، final 
 
 ## 11. آخرین نقطهٔ شروع عملی
 
-ACT-186 correction gate is already closed.
-**Next:** ACT-199 CI revalidation → PHASE-06 runtime/browser acceptance → PHASE-06 closure.
+ACT-186 correction gate and ACT-199 implementation correction are closed and CI-validated.\n**Next:** PHASE-06 runtime/browser acceptance → PHASE-06 closure.
 
 بعد از سبزشدن CI و ثبت acceptance واقعی، تازه به visual polish و سپس editorial month-by-month content بروید.
 
@@ -243,4 +239,4 @@ ACT-160 corrected a stale ACT counter in this handoff. No product/code behavior 
 - All ACT-186 implementation findings are closed and CI #281 is fully green.
 - Remaining work is product/runtime acceptance in PHASE-06, followed by visual polish, editorial dataset work, final QA and release.
 - Release reproducibility still requires a committed `package-lock.json`; it has not been fabricated without a reliable npm/package-manager environment.
-- Next fresh ACT ID: ACT-203.
+- Next fresh ACT ID: ACT-204.

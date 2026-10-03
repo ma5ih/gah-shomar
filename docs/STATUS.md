@@ -1,15 +1,15 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
 Last updated: 2026-10-04
-Current repository checkpoint: **ACT-202 on main**
+Current repository checkpoint: **ACT-203 on main**
 Current implementation HEAD: `a9eace682f32f6e6ff32a748fe9df53448c27692`
-Current documentation checkpoint: **ACT-202 — final current-state synchronization**
-Current CI revalidation: **PENDING**
-Latest fully green CI before the current correction: **#283 — PASS**
+Current documentation/audit checkpoint: **ACT-203 — complete audit and continuation record**
+Latest CI: **#292 — PASS**
+Latest implementation-head CI: **#287 — PASS**
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: **ACT-203**
+Next fresh ACT ID: **ACT-204**
 
 ## شمارش رسمی ریزتسک‌ها
 
@@ -39,7 +39,7 @@ Next fresh ACT ID: **ACT-203**
 | PHASE-09 | IN_PROGRESS | Automated pipeline green; final QA remains |
 | PHASE-10 | TODO | Release |
 
-## وضعیت واقعی implementation
+## Audit continuation record\n\nبرای جزئیات کامل بررسی، مغایرت‌ها، اصلاحات، تست‌ها و تصمیم‌های نگهداری/واگذاری به Taskهای آینده، `docs/PROJECT-AUDIT-2026-10-04-ACT-203.md` مرجع این checkpoint است.\n\n## وضعیت واقعی implementation
 
 Implemented and validated:
 - Calendar Engine and Imperial date rules

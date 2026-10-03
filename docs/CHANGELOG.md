@@ -1,3 +1,19 @@
+## ACT-203 — 2026-10-04
+Type: AUDIT-AND-CONTINUATION
+Status: DONE
+
+- یک ممیزی end-to-end از documentation، roadmap، changelog، architecture، requirements، calendar contracts، application/domain/data/presentation، auth، search، PWA، tests و GitHub state انجام شد.
+- همه findings به سه دسته تقسیم شدند: اصلاح فوری، کار آینده دارای Task/Phase، و موضوع نیازمند تصمیم مستقل.
+- دو defect واقعی implementation در ACT-199 اصلاح شدند: حفظ `notes` و `personalPersonId` در Personal Event create و حذف import مستقیم `personalRepository` از Day page با انتقال binding به server composition boundary.
+- Personal Event E2E به‌گونه‌ای تقویت شد که persistence یادداشت، شخص مرتبط و recurrence را verify کند.
+- Documentation contractهای Stack، Dependency Policy، Search، Auth و Configuration با implementation فعلی یا Task آینده همگام شدند.
+- پرونده جامع این audit در `docs/PROJECT-AUDIT-2026-10-04-ACT-203.md` ثبت شد.
+- CI #287 روی implementation HEAD PASS و CI #292 روی latest documentation HEAD PASS شد.
+- هیچ historical event جدیدی publish نشد؛ `seedEvents = []` طبق editorial policy حفظ شد.
+- هیچ Phase یا Taskی صرفاً بر اساس وجود کد DONE اعلام نشد.
+
+Next fresh ACT ID: ACT-204.
+
 ## ACT-202 — 2026-10-04
 Type: DOCUMENTATION-CONVERGENCE
 Status: DONE

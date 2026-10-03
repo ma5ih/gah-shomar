@@ -1,7 +1,7 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.21.0
+Index version: 2.22.0
 Last update: 2026-10-04
 Current phase: PHASE-06 — Core Frontend Product Experience (QA gate: PHASE-09)
 
@@ -40,7 +40,7 @@ Current phase: PHASE-06 — Core Frontend Product Experience (QA gate: PHASE-09)
 | DOC-029 | SHARE-CARD-ARCHITECTURE.md | APPROVED | معماری Personal Share Card |
 | DOC-030 | CALENDAR-ENGINE-OPEN-QUESTION.md | RESOLVED | تصمیم و وضعیت نهایی قاعده کبیسه |
 | DOC-031 | HANDOFF.md | DONE | نقطهٔ ادامه مستقل از چت و وضعیت واقعی repository |
-| DOC-032 | ARCHITECTURE-IMPLEMENTATION-AUDIT-2026-10-04.md | COMPLETE — follow-up tracked in ACT-197 | Audit مستقل implementation/architecture و gapهای verified |
+| DOC-032 | ARCHITECTURE-IMPLEMENTATION-AUDIT-2026-10-04.md | COMPLETE — historical audit | Audit مستقل implementation/architecture و gapهای verified |\n| DOC-033 | PROJECT-AUDIT-2026-10-04-ACT-203.md | COMPLETE | پرونده کامل ممیزی این checkpoint، اصلاحات، تست‌ها و نقطه ادامه |
 
 ## شناسه‌گذاری
 - PHASE-XX — مرحله
@@ -65,10 +65,10 @@ PHASE-09: IN_PROGRESS
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-202 — final current-state synchronization.
+ACT-203 — complete audit and continuation record.
 
 ## اقدام بعدی
-ACT-199/202 CI revalidation → PHASE-06 runtime/browser acceptance → PHASE-07 polish.
+CI #292 PASS → PHASE-06 runtime/browser acceptance → PHASE-07 polish.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.

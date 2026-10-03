@@ -1,7 +1,7 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 2.4.0
-Last updated: 2026-10-04
+Version: 2.4.1
+Last updated: 2026-10-04 — ACT-203
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
 
@@ -274,6 +274,15 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-09-022 — E2E Dataset/Editorial Alignment — DONE
   - browser smoke follows the intentionally empty historical-event seed
   - CI run #168 and later full pipelines validate the aligned behavior
+
+## CURRENT CHECKPOINT — ACT-203 — 2026-10-04
+
+- End-to-end project audit and continuation record is documented in `docs/PROJECT-AUDIT-2026-10-04-ACT-203.md`.
+- ACT-199 implementation correction is CI-validated: run #287 PASS.
+- Latest repository documentation checkpoint is CI-validated: run #292 PASS.
+- No roadmap task was prematurely marked DONE. The canonical ledger remains 204 / 134 DONE / 32 IN_PROGRESS / 37 TODO / 1 DEFERRED / 0 BLOCKED / 0 DEPRECATED.
+- Next fresh ACT ID: ACT-204.
+- Primary continuation remains PHASE-06 runtime/browser acceptance.
 
 # PHASE-10 — Release & Handoff — TODO
 - TASK-10-001 — Production Configuration — TODO

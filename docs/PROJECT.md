@@ -93,10 +93,9 @@ PHASE-08 IN_PROGRESS
 PHASE-09 IN_PROGRESS
 PHASE-10 TODO
 
-Current implementation checkpoint: **ACT-199 — post-audit persistence and server-boundary correction**.
-Current documentation checkpoint: **ACT-202 — final current-state synchronization**.
-Implementation HEAD for ACT-199: `a9eace682f32f6e6ff32a748fe9df53448c27692`.
-The current ACT-199/202 post-change CI validation is pending; the last fully green workflow before these corrections was **#283 — PASS**.
+Current implementation checkpoint: `a9eace682f32f6e6ff32a748fe9df53448c27692`.
+Current repository checkpoint: **ACT-203 — complete audit and continuation record**.
+Latest verified CI after the ACT-199 implementation correction: **#292 — PASS**.
 `TASK-09-019` is DONE. The product remains in PHASE-06 with runtime/browser acceptance open.
 
 ## 9. اصل ادامه پروژه
