@@ -1,7 +1,7 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.19.0
+Index version: 2.20.0
 Last update: 2026-10-04
 Current phase: PHASE-06 — Core Frontend Product Experience (QA gate: PHASE-09)
 
@@ -65,10 +65,10 @@ PHASE-09: IN_PROGRESS
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-186 — Architecture & implementation audit.
+ACT-188 — Architecture boundary correction checkpoint.
 
 ## اقدام بعدی
-TASK-09-019 — Critical Bug Fixes identified by ACT-186, then runtime/browser acceptance.
+CI #246 validation → TASK-09-019 remaining medium gaps → runtime/browser acceptance.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.
