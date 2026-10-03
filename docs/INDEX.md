@@ -42,7 +42,7 @@ Current phase: PHASE-06 — Core Frontend Product Experience (QA gate: PHASE-09)
 | DOC-031 | HANDOFF.md | DONE | نقطهٔ ادامه مستقل از چت و وضعیت واقعی repository |
 | DOC-032 | ARCHITECTURE-IMPLEMENTATION-AUDIT-2026-10-04.md | COMPLETE — historical audit | Audit مستقل implementation/architecture و gapهای verified |\n| DOC-033 | PROJECT-AUDIT-2026-10-04-ACT-203.md | COMPLETE | پرونده کامل ممیزی این checkpoint، اصلاحات، تست‌ها و نقطه ادامه |
 | DOC-034 | VISUAL-DESIGN-SEPARATION-WARNING.md | APPROVED | قرارداد و هشدار جداسازی دو Visual Theme با Core مشترک |
-| DOC-035 | PHASE-07-THEME-A-FLAT-GEOMETRIC.md | IN_PROGRESS | اجرای بصری Theme A و قرارداد عملیاتی TASK-07-001 |
+| DOC-035 | PHASE-07-THEME-A-FLAT-GEOMETRIC.md | DONE | اجرای بصری Theme A و قرارداد عملیاتی TASK-07-001 |
 
 ## شناسه‌گذاری
 - PHASE-XX — مرحله
@@ -67,10 +67,10 @@ PHASE-09: IN_PROGRESS
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-207 — شروع اجرای بصری Theme A در TASK-07-001.
+ACT-208 — بسته‌شدن TASK-07-001 برای Theme A پس از validation و CI موفق.
 
 ## اقدام بعدی
-ادامه TASK-07-001 — validation بصری Theme A؛ Theme B فعلاً خارج از Scope است.
+ادامه تسک‌های باقی‌مانده PHASE-07؛ Theme B فعلاً خارج از Scope است.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.
