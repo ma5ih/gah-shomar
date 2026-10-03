@@ -25,8 +25,8 @@ Next fresh ACT ID: **ACT-210**
 ## 2. شمارش رسمی Taskها
 
 - کل: **204**
-- DONE: **135**
-- IN_PROGRESS: **32**
+- DONE: **136**
+- IN_PROGRESS: **31**
 - TODO: **36**
 - DEFERRED: **1**
 - BLOCKED: **0**
