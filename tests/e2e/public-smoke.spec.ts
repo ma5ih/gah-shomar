@@ -1,7 +1,7 @@
 import{test,expect}from"@playwright/test";
 test.describe("public product smoke",()=>{
  test("Today is Persian, RTL and shows sourced content",async({page})=>{
-  await page.goto("/?lang=fa");await expect(page.locator("html")).toHaveAttribute("dir","rtl");await expect(page.getByRole("heading",{level:1})).toBeVisible();await expect(page.getByText("مناسبت‌های امروز")).toBeVisible();
+  await page.goto("/?lang=fa");await expect(page.locator("html")).toHaveAttribute("dir","rtl");await expect(page.getByRole("heading",{level:1})).toBeVisible();await expect(page.getByRole("heading",{level:2,name:"مناسبت‌های امروز"})).toBeVisible();
  });
  test("Calendar route renders without horizontal overflow",async({page})=>{
   await page.goto("/calendar?lang=fa&year=2465&month=5");await expect(page.getByRole("heading",{level:1})).toBeVisible();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
@@ -13,7 +13,7 @@ test.describe("public product smoke",()=>{
   await page.goto("/timeline?lang=fa");await expect(page.getByRole("heading",{level:1})).toBeVisible();
  });
  test("Search returns the sourced event",async({page})=>{
-  await page.goto("/search?lang=fa&q="+encodeURIComponent("فرمان مشروطیت"));await expect(page.getByText("صدور فرمان مشروطیت")).toBeVisible();
+  await page.goto("/search?lang=fa&q="+encodeURIComponent("فرمان مشروطیت"));await expect(page.getByRole("link").filter({has:page.getByRole("heading",{name:"صدور فرمان مشروطیت"})})).toBeVisible();
  });
  test("Personal route presents the auth boundary when signed out",async({page})=>{
   await page.goto("/personal?lang=fa");await expect(page.getByText(/ورود|Sign in/)).toBeVisible();
