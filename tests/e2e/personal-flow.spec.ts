@@ -20,7 +20,7 @@ test("signed-in user can create a private event and find it through personal sea
  await Promise.all([page.waitForResponse(response=>response.request().method()==="POST"&&response.url().includes("/personal?lang=fa")),eventForm.getByRole("button",{name:"ذخیره"}).click()]);
 
  await page.goto("/personal?lang=fa");
- await expect(page.getByDisplayValue("رویداد تست خصوصی")).toBeVisible();
+ expect(await page.locator('input[name="title"]').evaluateAll(inputs=>inputs.some(input=>(input as HTMLInputElement).value==="رویداد تست خصوصی"))).toBe(true);
 
  await page.goto("/search?lang=fa&q="+encodeURIComponent("رویداد تست خصوصی"));
  await expect(page.getByText("رویداد تست خصوصی")).toBeVisible();
