@@ -7,7 +7,7 @@ Checkpoint date: 2026-10-03
 Implementation baseline: 7512b433d1396029ae30625c466008e9e2453a35
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 QA gate: PHASE-09 — Integration & QA
-QA blocker: TASK-09-022 — E2E Dataset/Editorial Alignment
+QA dependency: TASK-09-022 — DONE in CI #168
 Overall status: IN_PROGRESS
 
 ## 1. از کجا شروع کنیم؟
@@ -44,15 +44,15 @@ GitHub و همین شاخهٔ `main` مرجع واقعی وضعیت هستند. 
 
 بر اساس تمام TASK-*های موجود در ROADMAP فعلی:
 - کل: **193**
-- DONE: **133**
-- IN_PROGRESS: **32**
+- DONE: **134**
+- IN_PROGRESS: **31**
 - TODO: **27**
 - DEFERRED: **1**
 - BLOCKED: **0**
 - DEPRECATED: **0**
 
 **نقطه فعلی محصول:** PHASE-06 — Core Frontend Product Experience.
-**QA dependency:** TASK-09-022 — E2E Dataset/Editorial Alignment.
+**QA dependency:** TASK-09-022 — DONE in CI #168.
 این بخش و شمارش آن مرجع ادامه پروژه است؛ برای تعیین وضعیت به چت قبلی اتکا نشود.
 
 ## 3. وضعیت Phaseها
