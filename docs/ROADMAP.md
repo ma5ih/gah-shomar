@@ -11,8 +11,8 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 ## شمارش رسمی ریزتسک‌ها — ACT-185
 
 - کل ریزتسک‌های شماره‌گذاری‌شده: **204**
-- DONE: **134**
-- IN_PROGRESS: **33**
+- DONE: **135**
+- IN_PROGRESS: **32**
 - TODO: **36**
 - DEFERRED: **1**
 - BLOCKED: **0**
@@ -213,7 +213,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - core pages are present; completion is gated by runtime/browser acceptance
 
 # PHASE-07 — Visual Polish, Time/Season & App-like Experience — IN_PROGRESS
-- TASK-07-001 — Final Visual Hierarchy — IN_PROGRESS
+- TASK-07-001 — Final Visual Hierarchy — DONE
 - TASK-07-002 — Spacing/Margin Consistency — TODO
 - TASK-07-003 — Typography Consistency — TODO
 - TASK-07-004 — Component Consistency — TODO
@@ -305,7 +305,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 **PRIMARY WORKSTREAM:** PHASE-06 — Core Frontend Product Experience — IN_PROGRESS
 **QA BLOCKER:** TASK-09-022 in PHASE-09 — DONE
 
-**CURRENT:** TASK-07-001 — Final Visual Hierarchy (Theme A — IN_PROGRESS). Theme B remains untouched. After TASK-07-001 and validation, continue with the remaining PHASE-07 visual tasks → PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release.
+**CURRENT:** TASK-07-001 — Final Visual Hierarchy (Theme A — DONE). Theme B remains untouched. After TASK-07-001 and validation, continue with the remaining PHASE-07 visual tasks → PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release.
 
 نکته: PHASE-09 در این checkpoint «فاز جاری محصول» نیست؛ یک QA gate باز است که blocker آن باید پیش از acceptance نهایی PHASE-06 بسته شود.
 
