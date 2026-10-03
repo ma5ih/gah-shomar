@@ -21,7 +21,7 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 ### نقطه فعلی اجرا
 **PRIMARY WORKSTREAM:** PHASE-06 — Core Frontend Product Experience
 **QA BLOCKER:** ندارد — TASK-09-022 در CI #168 با موفقیت بسته شد
-**NEXT:** CI revalidation → runtime/browser acceptance for PHASE-06 → PHASE-06 closure → PHASE-07 → PHASE-08 → PHASE-09 final QA → PHASE-10.
+**NEXT:** runtime/browser acceptance for PHASE-06 → PHASE-06 closure → PHASE-07 → PHASE-08 → PHASE-09 final QA → PHASE-10.
 
 این شمارش بر اساس تمام TASK-*های همین سند انجام شده و از این checkpoint به‌عنوان عدد مرجع استفاده می‌شود.
 
@@ -280,7 +280,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 # مسیر ادامه فعلی
 
 **PRIMARY WORKSTREAM:** PHASE-06 — Core Frontend Product Experience — IN_PROGRESS
-**QA BLOCKER:** TASK-09-022 in PHASE-09 — IN_PROGRESS
+**QA BLOCKER:** TASK-09-022 in PHASE-09 — DONE
 
 **NEXT:** CI revalidation → runtime/browser acceptance → PHASE-06 closure → PHASE-07 polish → PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release.
 
