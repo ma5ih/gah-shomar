@@ -1,13 +1,73 @@
-import type {ImperialDate} from "../domain/calendar/types";import type {Memory,PersonalEvent} from "../domain/personal/types";import type {PersonalRepository} from "../data/contracts/repositories";import {ValidationError} from "../shared/errors";
-export function assertUser(userId:string){if(!userId)throw new ValidationError("A signed-in user is required.")}
-export function validatePersonalDate(date:ImperialDate){if(!Number.isInteger(date.year)||!Number.isInteger(date.month)||!Number.isInteger(date.day)||date.month<1||date.month>12||date.day<1||date.day>31)throw new ValidationError("Invalid Imperial date.")}
-export function personalUseCases(repository:PersonalRepository){return{
- listOverview:async(userId:string)=>{assertUser(userId);const [events,people,memories]=await Promise.all([repository.listEvents(userId),repository.listPeople(userId),repository.listMemories(userId)]);return{events,people,memories}},
- listForDate:async(userId:string,date:ImperialDate)=>{assertUser(userId);validatePersonalDate(date);const [events,memories]=await Promise.all([repository.listEventsForDate(userId,date),repository.listMemoriesForDate(userId,date)]);return{events,memories}},
- createEvent:async(userId:string,input:Omit<PersonalEvent,"id"|"ownerUserId"|"createdAt"|"updatedAt">)=>{assertUser(userId);validatePersonalDate(input.date);return repository.createEvent(userId,input)},
- updateEvent:async(userId:string,id:string,input:Parameters<PersonalRepository["updateEvent"]>[2])=>{assertUser(userId);if(!id)throw new ValidationError("Personal event id is required.");if(input.date)validatePersonalDate(input.date);return repository.updateEvent(userId,id,input)},
- deleteEvent:async(userId:string,id:string)=>{assertUser(userId);if(!id)throw new ValidationError("Personal event id is required.");return repository.deleteEvent(userId,id)},
- createMemory:async(userId:string,input:Omit<Memory,"id"|"ownerUserId"|"createdAt"|"updatedAt">)=>{assertUser(userId);validatePersonalDate(input.date);return repository.createMemory(userId,input)},
- updateMemory:async(userId:string,id:string,input:Parameters<PersonalRepository["updateMemory"]>[2])=>{assertUser(userId);if(!id)throw new ValidationError("Memory id is required.");if(input.date)validatePersonalDate(input.date);return repository.updateMemory(userId,id,input)},
- deleteMemory:async(userId:string,id:string)=>{assertUser(userId);if(!id)throw new ValidationError("Memory id is required.");return repository.deleteMemory(userId,id)}
-}}
+import { isImperialDateValid } from "../domain/calendar/conversion";
+import type { ImperialDate } from "../domain/calendar/types";
+import type { Memory,PersonalEvent,PersonalEventType } from "../domain/personal/types";
+import type { PersonalRepository } from "../data/contracts/repositories";
+import { ValidationError } from "../shared/errors";
+
+export function assertUser(userId:string){
+  if(!userId) throw new ValidationError("A signed-in user is required.");
+}
+
+export function validatePersonalDate(date:ImperialDate){
+  if(!Number.isInteger(date.year)||!Number.isInteger(date.month)||!Number.isInteger(date.day)||!isImperialDateValid(date)){
+    throw new ValidationError("Invalid Imperial date.");
+  }
+}
+
+export function validatePersonalEventInput(input:Pick<PersonalEvent,"type"|"title"|"date">){
+  validatePersonalDate(input.date);
+  if(!["birthday","anniversary","custom"].includes(input.type as PersonalEventType)){
+    throw new ValidationError("Invalid personal event type.");
+  }
+  if(!input.title.trim()) throw new ValidationError("Personal event title is required.");
+}
+
+export function validateMemoryInput(input:Pick<Memory,"text"|"date">){
+  validatePersonalDate(input.date);
+  if(!input.text.trim()) throw new ValidationError("Memory text is required.");
+}
+
+export function validatePersonalPersonName(name:string){
+  if(!name.trim()) throw new ValidationError("Personal person name is required.");
+}
+
+export function personalUseCases(repository:PersonalRepository){
+  return {
+    listOverview:async(userId:string)=>{
+      assertUser(userId);
+      const [events,people,memories]=await Promise.all([repository.listEvents(userId),repository.listPeople(userId),repository.listMemories(userId)]);
+      return {events,people,memories};
+    },
+    listForDate:async(userId:string,date:ImperialDate)=>{
+      assertUser(userId); validatePersonalDate(date);
+      const [events,memories]=await Promise.all([repository.listEventsForDate(userId,date),repository.listMemoriesForDate(userId,date)]);
+      return {events,memories};
+    },
+    createEvent:async(userId:string,input:Omit<PersonalEvent,"id"|"ownerUserId"|"createdAt"|"updatedAt">)=>{
+      assertUser(userId); validatePersonalEventInput(input); return repository.createEvent(userId,input);
+    },
+    updateEvent:async(userId:string,id:string,input:Parameters<PersonalRepository["updateEvent"]>[2])=>{
+      assertUser(userId);
+      if(!id) throw new ValidationError("Personal event id is required.");
+      if(input.type!==undefined&&!["birthday","anniversary","custom"].includes(input.type)) throw new ValidationError("Invalid personal event type.");
+      if(input.title!==undefined&&!input.title.trim()) throw new ValidationError("Personal event title is required.");
+      if(input.date) validatePersonalDate(input.date);
+      return repository.updateEvent(userId,id,input);
+    },
+    deleteEvent:async(userId:string,id:string)=>{
+      assertUser(userId); if(!id) throw new ValidationError("Personal event id is required."); return repository.deleteEvent(userId,id);
+    },
+    createMemory:async(userId:string,input:Omit<Memory,"id"|"ownerUserId"|"createdAt"|"updatedAt">)=>{
+      assertUser(userId); validateMemoryInput(input); return repository.createMemory(userId,input);
+    },
+    updateMemory:async(userId:string,id:string,input:Parameters<PersonalRepository["updateMemory"]>[2])=>{
+      assertUser(userId); if(!id) throw new ValidationError("Memory id is required.");
+      if(input.date) validatePersonalDate(input.date);
+      if(input.text!==undefined&&!input.text.trim()) throw new ValidationError("Memory text is required.");
+      return repository.updateMemory(userId,id,input);
+    },
+    deleteMemory:async(userId:string,id:string)=>{
+      assertUser(userId); if(!id) throw new ValidationError("Memory id is required."); return repository.deleteMemory(userId,id);
+    }
+  };
+}
