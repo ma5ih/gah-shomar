@@ -1,7 +1,7 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 2.4.5
-Last updated: 2026-10-04 — ACT-211
+Version: 2.5.0
+Last updated: 2026-10-04 — ACT-212
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
 
@@ -12,8 +12,8 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 
 - کل ریزتسک‌های شماره‌گذاری‌شده: **204**
 - DONE: **136**
-- IN_PROGRESS: **32**
-- TODO: **35**
+- IN_PROGRESS: **41**
+- TODO: **26**
 - DEFERRED: **1**
 - BLOCKED: **0**
 - DEPRECATED: **0**
@@ -222,8 +222,8 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-07-007 — Noon State — TODO
 - TASK-07-008 — Sunset State — TODO
 - TASK-07-009 — Night State — TODO
-- TASK-07-010 — Seasonal Variations — TODO
-- TASK-07-011 — Motion Polish — TODO
+- TASK-07-010 — Seasonal Variations — IN_PROGRESS
+- TASK-07-011 — Motion Polish — IN_PROGRESS
 - TASK-07-012 — PWA Manifest — DONE
 - TASK-07-013 — Install Experience — IN_PROGRESS
 - TASK-07-014 — Offline Baseline — DONE
@@ -275,18 +275,17 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - browser smoke follows the intentionally empty historical-event seed
   - CI run #168 and later full pipelines validate the aligned behavior
 
-## CURRENT CHECKPOINT — ACT-211 — 2026-10-04
+## CURRENT CHECKPOINT — ACT-212 — 2026-10-04
 
-- ACT-210 started TASK-07-002 — Spacing/Margin Consistency for Theme A — Flat Geometric; ACT-211 refined its spacing normalization.
-- Theme A spacing is normalized through a dedicated 4/8/12/16/20/24/32px scale in src/frontend/themes/flat-geometric/theme.css.
-- Applied areas include shell/topbar, main content, hero, cards, calendar, forms, controls, metadata and mobile navigation.
-- No Core, Calendar Engine, Domain, Data, Application, Auth/Session, routing, localization or business behavior changed.
+- ACT-212 expands Theme A visual execution from spacing normalization into typography, component consistency, density, time-of-day presentation, seasonal accents and restrained motion.
+- TASK-07-002 through TASK-07-011 are implemented in the Theme A stylesheet and are currently **IN_PROGRESS** pending independently observed CI/runtime visual evidence.
+- The implementation remains isolated to src/frontend/themes/flat-geometric/theme.css plus the Theme A visual documentation record.
+- Theme A continues to use only flat solid colors, angular/layered forms, simple lines and minimal detail; no gradients or realistic textures are introduced.
 - Theme B remains untouched and outside the current scope.
-- Static validation passed for scope/selector structure and confirmed no gradient expression was introduced in the Theme A stylesheet.
-- Automated CI for the latest ACT-211 implementation commit has not yet produced an independently observed result; TASK-07-002 therefore remains IN_PROGRESS.
-- Current implementation commit: fa095e637e3f4d244c9b06889717d71d3dd690a0.
-- Last completed Theme A CI validation remains GitHub Actions #37161733754 from ACT-208.
-- Canonical task counts: 204 total / 136 DONE / 32 IN_PROGRESS / 35 TODO / 1 DEFERRED.
+- No Core, Calendar Engine, Domain, Data, Application, Auth/Session, routing, localization or product/business behavior changed.
+- Static validation confirms 7 spacing tokens, full four-state time-of-day selectors, four seasonal selectors, reduced-motion handling and 0 gradient(...) expressions in the Theme A stylesheet.
+- Current implementation commit on this branch: 120722f4304c1ea385ffcb12058d9f94e0fa371b.
+- Canonical task counts for this implementation checkpoint: 204 total / 136 DONE / 41 IN_PROGRESS / 26 TODO / 1 DEFERRED.
 
 # PHASE-10 — Release & Handoff — TODO
 - TASK-10-001 — Production Configuration — TODO
@@ -307,7 +306,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 **CURRENT VISUAL STREAM:** PHASE-07 — Theme A refinement
 **QA BLOCKER:** TASK-09-022 in PHASE-09 — DONE
 
-**CURRENT NEXT TASK:** TASK-07-002 — Spacing/Margin Consistency — IN_PROGRESS
+**CURRENT VISUAL BATCH:** TASK-07-002 through TASK-07-011 — IN_PROGRESS
 - TASK-07-001 برای Theme A بسته شده و DONE است.
 - Theme B فعلاً خارج از Scope است و نباید وارد اجرای بصری فعلی شود.
 - پس از شروع Taskهای باقی‌مانده PHASE-07، مسیر به PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release می‌رسد.
