@@ -45,11 +45,14 @@ export function personalUseCases(repository:PersonalRepository){
     },
     createPerson:async(userId:string,input:Pick<PersonalPerson,"name">)=>{assertUser(userId);validatePersonalPersonName(input.name);return repository.createPerson(userId,input)},
     createEvent:async(userId:string,input:Omit<PersonalEvent,"id"|"ownerUserId"|"createdAt"|"updatedAt">)=>{
-      assertUser(userId); validatePersonalEventInput(input); return repository.createEvent(userId,input);
+      assertUser(userId); validatePersonalEventInput(input);
+      if(input.personalPersonId && !(await repository.listPeople(userId)).some(person=>person.id===input.personalPersonId)) throw new AuthorizationError("Personal person not found.");
+      return repository.createEvent(userId,input);
     },
     updateEvent:async(userId:string,id:string,input:Parameters<PersonalRepository["updateEvent"]>[2])=>{
       assertUser(userId);
       if(!id) throw new ValidationError("Personal event id is required.");
+      if(input.personalPersonId && !(await repository.listPeople(userId)).some(person=>person.id===input.personalPersonId)) throw new AuthorizationError("Personal person not found.");
       if(input.type!==undefined&&!["birthday","anniversary","custom"].includes(input.type)) throw new ValidationError("Invalid personal event type.");
       if(input.title!==undefined&&!input.title.trim()) throw new ValidationError("Personal event title is required.");
       if(input.date) validatePersonalDate(input.date);
