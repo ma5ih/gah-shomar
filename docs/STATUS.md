@@ -1,15 +1,15 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
 Last updated: 2026-10-04
-Current repository checkpoint: **ACT-203 on main**
+Current repository checkpoint: **ACT-204 on main**
 Current implementation HEAD: `a9eace682f32f6e6ff32a748fe9df53448c27692`
-Current documentation/audit checkpoint: **ACT-203 — complete audit and continuation record**
-Latest CI: **#292 — PASS**
+Current documentation/audit checkpoint: **ACT-204 — PHASE-06 browser acceptance checkpoint**
+Latest CI: **#299 — PASS**
 Latest implementation-head CI: **#287 — PASS**
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: **ACT-204**
+Next fresh ACT ID: **ACT-205**
 
 ## شمارش رسمی ریزتسک‌ها
 
@@ -85,4 +85,4 @@ Implemented and validated:
 
 ## مسیر بعدی
 
-**PHASE-06 runtime/browser acceptance** → closure PHASE-06 → PHASE-07 visual polish → PHASE-08 editorial dataset → PHASE-09 final QA → PHASE-10 release.
+**ACT-204 runtime/browser acceptance is validated. Next is TASK-07-001 — Final Visual Hierarchy. Per product-owner instruction, stop before entering main visual design.** → PHASE-08 editorial dataset → PHASE-09 final QA → PHASE-10 release.
