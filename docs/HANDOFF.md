@@ -186,7 +186,7 @@ production configuration، deployment validation، production PWA check، final 
 
 قاعدهٔ جدید:
 - از checkpoint بعدی فقط شناسه‌های جدید استفاده شود.
-- شناسهٔ بعدی: ACT-161
+- شناسهٔ بعدی: ACT-162
 - هیچ ACT قدیمی دوباره استفاده نشود.
 - برای ارجاع به collisionهای قدیمی، از توضیح توصیفی و SHA commit استفاده شود.
 
