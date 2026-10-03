@@ -1,203 +1,122 @@
 # VISUAL DESIGN SEPARATION WARNING
 
-**Status: APPROVED**  
+**Status: APPROVED**
 **Established: ACT-205 — 2026-10-04**
 
-> ⚠️ **هشدار دائمی پروژه:** از نقطه شروع طراحی اصلی، دو مسیر بصری مستقل وجود دارند؛ اما پروژه دو Core ندارد. فقط Presentation / Visual System جدا می‌شود.
+> ⚠️ **هشدار دائمی پروژه:** پروژه یک Core مشترک دارد و دو Visual Theme مستقل. از TASK-07-001 به بعد، مسیر طراحی هر Theme کاملاً جداست. هیچ طراحی یا تصمیم بصری خارج از brief ثبت‌شده همان Theme مجاز نیست.
 
-## 1. نقطه جداسازی دقیق
+## 1. نقطه جداسازی
 
-جداسازی رسمی از:
+جداسازی طراحی از **TASK-07-001 — Final Visual Hierarchy** شروع می‌شود.
 
-**TASK-07-001 — Final Visual Hierarchy**
+پوشه‌های Theme در ACT-205 فقط مرزبندی و scaffolding هستند؛ طراحی اصلی هنوز از TASK-07-001 آغاز می‌شود.
 
-شروع می‌شود.
+## 2. ساختار
 
-قبل از این نقطه، تمام product logic و foundation مشترک است. ایجاد پوشه‌های Theme در ACT-205 فقط scaffolding و ثبت مرز معماری است و به معنای شروع طراحی نهایی نیست.
-
-## 2. ساختار رسمی
-
-```text
-gah-shomar
-│
-├── src/
-│   ├── domain/                         ← SHARED
-│   ├── application/                   ← SHARED
-│   ├── data/                          ← SHARED
-│   ├── content/                       ← SHARED
-│   │
-│   └── frontend/
-│       └── themes/
-│           ├── flat-geometric/        ← THEME A
-│           └── modern-flat-vector/    ← THEME B
-│
-├── app/                               ← shared product routes / behavior
-│
-└── docs/
-    └── VISUAL-DESIGN-SEPARATION-WARNING.md
+```
+src/
+├── domain/                         ← SHARED
+├── application/                   ← SHARED
+├── data/                          ← SHARED
+├── content/                       ← SHARED
+└── frontend/
+    └── themes/
+        ├── flat-geometric/        ← THEME A
+        └── modern-flat-vector/    ← THEME B
 ```
 
-## 3. چه چیزهایی حتماً مشترک می‌مانند؟
+## 3. Core مشترک
 
-این موارد فقط یک نسخه دارند و بین هر دو Theme مشترک‌اند:
+این موارد بین هر دو Theme یکی هستند و نباید کپی یا fork شوند:
 
 - Calendar Engine و تمام منطق تقویم
-- Imperial Date و Gregorian/Imperial conversion
-- leap-year، date arithmetic، weekday، Today، time-of-day و season logic
-- Domain models و invariantها
-- Event / Person / Period / Memory / Personal Event
-- Application use cases
-- Repository contracts و persistence
-- Authentication و Session
-- Authorization و ownership rules
-- Search behavior و application contracts
-- Localization contracts و locale/direction state
-- Public/Personal data separation
-- Content validation و editorial policy
-- Routing و semantic product behavior
-- API / server composition boundaries
-- تست‌های domain، application، integration و business behavior
+- Domain models و business rules
+- Data / repositories / persistence
+- Application / use cases
+- Authentication / Session / Authorization
+- Search semantics
+- Localization contracts
+- Public / Personal separation
+- Content validation / editorial rules
+- Routing و product behavior
+- server composition و API contracts
+- domain/application/integration/business tests
 
-**هیچ‌کدام از موارد بالا نباید برای Theme A یا Theme B کپی شوند.**
+## 4. Theme A — Flat Geometric
 
-## 4. چه چیزهایی جدا می‌شوند؟
+**مسیر:** `src/frontend/themes/flat-geometric/`
 
-هر Theme مالک presentation خودش است، از جمله:
+**Visual Brief — SOURCE OF TRUTH:**
+
+> Design the app with a modern flat geometric illustration style. Use natural, recognizable shapes simplified into clean angular forms, similar to contemporary landscape/vector illustrations. Use flat solid colors, sharp edges, layered shapes, and simple straight lines, with minimal detail and no gradients or realistic textures. The overall design should feel clean, friendly, modern, and slightly playful, while remaining natural and visually balanced.
+
+**قانون:** تمام طراحی Theme A باید در محدوده همین brief بماند. اضافه کردن زبان بصری متناقض با آن، حتی اگر از نظر زیبایی مناسب باشد، مجاز نیست.
+
+## 5. Theme B — Modern Flat Vector Illustration
+
+**مسیر:** `src/frontend/themes/modern-flat-vector/`
+
+**Visual Brief — SOURCE OF TRUTH:**
+
+> Use a Modern Flat Vector Illustration style throughout the app. Use clean, simple 2D shapes, flat solid colors, minimal visual detail, and a polished modern aesthetic. Illustrations should feel friendly, approachable, and slightly playful, with smooth simplified forms and clear visual hierarchy. Avoid realistic rendering, gradients, heavy textures, 3D effects, and excessive geometric or polygonal shapes. The overall design should feel lightweight, clean, contemporary, and suitable for a modern digital product.
+
+**قانون:** تمام طراحی Theme B باید در محدوده همین brief بماند. اضافه کردن زبان بصری متناقض با آن، حتی اگر از نظر زیبایی مناسب باشد، مجاز نیست.
+
+## 6. جداسازی بصری
+
+Theme A و Theme B می‌توانند مستقلانه این موارد را تعیین کنند:
 
 - visual hierarchy
 - color tokens
 - typography choices
 - spacing presentation
-- surface treatment
-- card treatment
-- border/radius choices
-- icon treatment
-- illustration language
-- decorative geometry
+- surfaces
+- cards
+- borders / radius
+- icons
+- illustrations
+- decorative elements
 - visual density
 - motion styling
 - component skin
 - hero composition
-- background treatment
-- visual states for morning/noon/sunset/night
-- seasonal visual variations
-- other purely visual composition decisions
+- backgrounds
+- visual time/season states
 
-## 5. Theme A — Flat Geometric / Natural Angular Illustration
+اما این تصمیم‌ها باید با **brief همان Theme** سازگار باشند.
 
-این مسیر باید بر اساس brief زیر طراحی شود:
+## 7. ممنوعیت‌های معماری
 
-> Modern flat geometric illustration style. Natural, recognizable shapes simplified into clean angular forms, contemporary landscape/vector feel, flat solid colors, sharp edges, layered shapes, simple straight lines, minimal detail, no gradients, no realistic textures. Clean, friendly, modern, slightly playful, natural and visually balanced.
+- کپی کردن Core برای یک Theme
+- business logic داخل Theme
+- calendar logic داخل Theme
+- repository/database access مستقیم از Theme
+- تغییر data contract برای یک Theme
+- وابستگی Theme A به Theme B
+- وابستگی Theme B به Theme A
+- import کردن visual tokens/styles/assets یک Theme در Theme دیگر
+- ساختن یک Theme به‌صورت fork کامل محصول
 
-مسیر:
+## 8. قانون تشخیص تغییر
 
-`src/frontend/themes/flat-geometric/`
+اگر تغییر **purely visual** است → فقط در Theme مربوطه.
 
-## 6. Theme B — Modern Flat Vector Illustration
+اگر تغییر **semantic/product behavior** است → در Core/shared layer.
 
-این مسیر با هویت مستقل خود و بر پایه:
+اگر abstraction بین هر دو Theme لازم است → فقط abstraction semantic و بدون وابستگی به ظاهر وارد shared layer شود.
 
-**Modern Flat Vector Illustration**
+## 9. تست
 
-طراحی می‌شود.
-
-مسیر:
-
-`src/frontend/themes/modern-flat-vector/`
-
-جزئیات بصری Theme B نباید به Theme A نشت کند و برعکس.
-
-## 7. قوانین سخت جداسازی
-
-### ممنوع
-
-- کپی کردن Calendar Engine برای یک Theme
-- کپی کردن Application use caseها
-- کپی کردن repositoryها
-- ایجاد business rule داخل Theme
-- گذاشتن conversion/leap/calendar logic داخل component بصری
-- import مستقیم database/repository از Theme
-- ایجاد مدل داده موازی فقط برای یک Theme
-- تغییر data contract برای زیباتر شدن یک Theme
-- وابسته کردن Theme A به Theme B
-- وابسته کردن Theme B به Theme A
-- import کردن فایل‌های styling یا visual token یک Theme داخل Theme دیگر
-- ساختن یک Theme به‌عنوان fork کامل UI و نگهداری Core دوم
-
-### مجاز
-
-- import از shared semantic contracts
-- استفاده مشترک از domain/application DTOها
-- داشتن componentهای visual مخصوص همان Theme
-- داشتن tokenهای کاملاً جدا
-- داشتن illustration/asset pipeline جدا
-- داشتن motion و transitionهای جدا
-- داشتن visual variants مخصوص هر Theme
-
-## 8. قانون تغییرات آینده
-
-هر تغییر بصری جدید باید ابتدا سؤال زیر را پاسخ دهد:
-
-**«این تغییر semantic/product behavior است یا purely visual؟»**
-
-اگر purely visual است:
-- فقط در Theme مربوط به آن قرار بگیرد.
-
-اگر semantic/product behavior است:
-- در Core/shared layer حل شود تا هر دو Theme همان رفتار را دریافت کنند.
-
-اگر یک abstraction واقعاً بین هر دو Theme مشترک است:
-- فقط abstraction semantic و بدون وابستگی به ظاهر به shared layer منتقل شود.
-
-## 9. قانون فعال‌سازی Theme
-
-فعال کردن Theme A یا Theme B نباید باعث تغییر در:
-
-- تاریخ فعلی
-- محاسبات Calendar Engine
-- داده رویدادها
-- داده شخصی
-- authentication
-- session
-- search semantics
-- persistence
-- authorization
-- business rules
-
-شود.
-
-فقط presentation باید تغییر کند.
-
-## 10. تست و QA
-
-تست‌های Core بین هر دو Theme مشترک‌اند.
-
-تست‌های مخصوص visual behavior می‌توانند جدا باشند.
-
-در QA باید ثابت شود:
+برای هر دو Theme باید این اصل برقرار باشد:
 
 **same data + same state + different Theme = different appearance, same product behavior**
 
-## 11. مرجع قطعی
+## 10. مرجع قطعی
 
-این سند همراه با:
+این سند، همراه با `docs/DECISIONS.md` (DEC-024)، `docs/ARCHITECTURE-BOUNDARIES.md` و TASK-07-001، مرجع جداسازی Themeها است.
 
-- `docs/DECISIONS.md` → DEC-024
-- `docs/ARCHITECTURE-BOUNDARIES.md`
-- `docs/ROADMAP.md` → TASK-07-001
+**هیچ تصمیم طراحی نباید خارج از دو Visual Brief بالا گرفته شود.**
 
-مرجع رسمی جداسازی Themeها است.
+## 11. وضعیت
 
-## 12. وضعیت فعلی
-
-ACT-205 فقط:
-
-- مرز را ثبت کرده،
-- پوشه‌ها را ساخته،
-- قرارداد را مستند کرده است.
-
-**طراحی اصلی هنوز شروع نشده است.**
-
-نقطه شروع طراحی:
-
-**TASK-07-001 — Final Visual Hierarchy**
+ACT-205 مرزبندی و scaffolding را ثبت کرد. طراحی اصلی هنوز شروع نشده است.
