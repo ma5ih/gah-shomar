@@ -139,3 +139,8 @@ GitHub `main` and these documents are the source of truth for continuation; the 
 ## Current branch note
 
 The code implementation baseline for this checkpoint is `e3107be19485199f3e725a1bbc40ceb86b72f88b`. Subsequent checkpoint commits only synchronize documentation; use the Git history and this file to identify any future code change separately.
+
+
+## Final checkpoint note
+
+ACT-160 changed documentation only. Implementation baseline remains e3107be19485199f3e725a1bbc40ceb86b72f88b. Next fresh ACT ID: **ACT-161**.
