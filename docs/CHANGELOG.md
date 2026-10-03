@@ -1,3 +1,40 @@
+## ACT-081 — 2026-10-03
+Type: DOCUMENTATION-SYNC
+Status: DONE
+
+### انجام شد
+- CHANGELOG ledger با ACT-076 تا ACT-080 نیز کامل شد.
+- آخرین documentation syncها اکنون در تاریخچه قابل ردیابی هستند.
+
+## ACT-080 — 2026-10-03
+Type: REQUIREMENTS-SYNC
+Status: DONE
+
+### انجام شد
+- REQUIREMENTS از v1.0.0 به v1.1.0 ارتقا یافت.
+- REQ-081 و REQ-082 به نیازمندی‌های Calendar Engine و CI اضافه شدند.
+- AC-035 و AC-040 وضعیت واقعی validation را صریح می‌کنند.
+
+## ACT-079 — 2026-10-03
+Type: DOCUMENTATION-INDEX
+Status: DONE
+- INDEX با وضعیت فعلی اسناد و Next Task هماهنگ شد.
+
+## ACT-078 — 2026-10-03
+Type: CALENDAR-DOCUMENTATION
+Status: DONE
+- CALENDAR-ENGINE-OPEN-QUESTION با وضعیت فعلی engine هماهنگ شد.
+
+## ACT-077 — 2026-10-03
+Type: REQUIREMENTS
+Status: DONE
+- REQ-081/082 و AC-040 برای Calendar Engine contracts و CI validation ثبت شدند.
+
+## ACT-076 — 2026-10-03
+Type: CHANGELOG-SYNC
+Status: DONE
+- documentation syncهای ACT-069 تا ACT-075 یکپارچه و قابل ردیابی شدند.
+
 ## ACT-080 — 2026-10-03
 Type: REQUIREMENTS-SYNC
 Status: DONE
