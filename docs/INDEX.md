@@ -1,7 +1,7 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.10.0
+Index version: 2.11.0
 Last update: 2026-10-03
 Current phase: PHASE-03 — Core Backend / Domain / Calendar Engine
 
@@ -63,7 +63,7 @@ PHASE-09: TODO
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-066 — Time-of-day State.
+ACT-067 — Seasonal State.
 
 ## اقدام بعدی
 TASK-03-005 — Now/Today Calculation.
