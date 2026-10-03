@@ -1,7 +1,7 @@
 # ROADMAP — نقشه راه کامل پروژه
 
 Version: 2.3.0
-Last updated: 2026-10-03
+Last updated: 2026-10-04
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
 
@@ -264,6 +264,10 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-09-017 — PWA QA — IN_PROGRESS
 - TASK-09-018 — Visual Consistency QA — TODO
 - TASK-09-019 — Critical Bug Fixes — IN_PROGRESS
+  - ACT-186 HIGH-01: presentation/data/domain dependency leaks
+  - ACT-186 HIGH-02: published Event slug/routing contract
+  - ACT-186 HIGH-03: Period date containment by full ImperialDate
+  - MEDIUM update semantics, range events, search approval filtering and share-card theme remain open
 - TASK-09-020 — Release Blocker Review — TODO
 - TASK-09-021 — Final Product Review — TODO
 - TASK-09-022 — E2E Dataset/Editorial Alignment — DONE
@@ -287,7 +291,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 **PRIMARY WORKSTREAM:** PHASE-06 — Core Frontend Product Experience — IN_PROGRESS
 **QA BLOCKER:** TASK-09-022 in PHASE-09 — DONE
 
-**NEXT:** PHASE-06 runtime/browser acceptance → PHASE-06 closure → PHASE-07 polish → PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release.
+**NEXT:** TASK-09-019 critical correction gate → PHASE-06 runtime/browser acceptance → PHASE-06 closure → PHASE-07 polish → PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release.
 
 نکته: PHASE-09 در این checkpoint «فاز جاری محصول» نیست؛ یک QA gate باز است که blocker آن باید پیش از acceptance نهایی PHASE-06 بسته شود.
 
