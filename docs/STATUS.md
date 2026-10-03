@@ -1,15 +1,16 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
-Last updated: 2026-10-04
-Current repository checkpoint: **ACT-208 on main**
-Current implementation HEAD: `5791e3e89aabcd75fd856e03e9a05023d009dbcc`
-Current documentation/audit checkpoint: **ACT-208 — Theme A visual hierarchy validation checkpoint**
-Latest CI: **#299 — PASS**
-Latest implementation-head CI: **#287 — PASS**
+Last updated: 2026-10-04 — ACT-209
+Current documentation checkpoint: **ACT-209 on main**
+Current implementation HEAD: 5791e3e89aabcd75fd856e03e9a05023d009dbcc
+Current implementation checkpoint: **ACT-207 — Theme A activation**
+Latest Theme A validation: **GitHub Actions #37161733754 — PASS**
+Latest product/E2E acceptance checkpoint: **CI #299 — PASS**
 Primary workstream: PHASE-06 — Core Frontend Product Experience
+Current visual stream: PHASE-07 — Theme A refinement
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: **ACT-209**
+Next fresh ACT ID: **ACT-210**
 
 ## شمارش رسمی ریزتسک‌ها
 
@@ -21,7 +22,7 @@ Next fresh ACT ID: **ACT-209**
 - BLOCKED: **0**
 - DEPRECATED: **0**
 
-این شمارش همان ledger فعلی ROADMAP است؛ هیچ Task جدیدی در correction series اضافه نشده است.
+این شمارش canonical همان ledger فعلی ROADMAP است.
 
 ## وضعیت فازها
 
@@ -34,12 +35,27 @@ Next fresh ACT ID: **ACT-209**
 | PHASE-04 | DONE | Application/backend use cases |
 | PHASE-05 | DONE | Frontend architecture/design system |
 | PHASE-06 | IN_PROGRESS | Core pages implemented; runtime/browser/product acceptance remains |
-| PHASE-07 | IN_PROGRESS | Visual polish, time/season states and install UX remain |
+| PHASE-07 | IN_PROGRESS | TASK-07-001 Theme A complete; remaining visual/time/season/install work remains |
 | PHASE-08 | IN_PROGRESS | Editorial review and historical dataset remain |
 | PHASE-09 | IN_PROGRESS | Automated pipeline green; final QA remains |
 | PHASE-10 | TODO | Release |
 
-## Audit continuation record\n\nبرای جزئیات کامل بررسی، مغایرت‌ها، اصلاحات، تست‌ها و تصمیم‌های نگهداری/واگذاری به Taskهای آینده، `docs/PROJECT-AUDIT-2026-10-04-ACT-203.md` مرجع این checkpoint است.\n\n## وضعیت واقعی implementation
+## آخرین checkpoint اجرایی
+
+### ACT-208 — Theme A visual hierarchy validation — DONE
+- TASK-07-001 — Final Visual Hierarchy برای Theme A — Flat Geometric بسته شد.
+- Theme A با brief مصوب منطبق شد: flat solid colors، angular layered forms، simple lines، minimal detail، بدون gradient و realistic texture.
+- Time-of-day و season فقط appearance را تغییر می‌دهند.
+- Theme B در این checkpoint دست‌نخورده ماند.
+- CI run #37161733754 با conclusion = success و quality job موفق شد.
+
+### ACT-209 — Documentation convergence — DONE
+- وضعیت فعلی همه اسناد continuation اصلی با ACT-208 همگام شد.
+- هیچ تغییر implementation یا product behavior جدیدی انجام نشد.
+- TASK-07-001 همچنان DONE است.
+- گام بعدی TASK-07-002 — Spacing/Margin Consistency است و هنوز TODO است.
+
+## وضعیت واقعی implementation
 
 Implemented and validated:
 - Calendar Engine and Imperial date rules
@@ -57,42 +73,42 @@ Implemented and validated:
 - PWA baseline
 - Playwright smoke coverage for desktop/tablet/mobile
 
-## Correction gate — ACT-186 follow-up
+## Correction gate
 
-تمام findings اجراییِ ثبت‌شده در ACT-186 اکنون در کد اصلاح و در CI #281 اعتبارسنجی شده‌اند:
-- HIGH-01 Presentation/Data boundary — CLOSED
-- HIGH-02 Event slug/routing — CLOSED
-- HIGH-03 Period exact-date containment — CLOSED
-- MEDIUM-01 Personal Person unlink semantics — CLOSED
-- MEDIUM-02 Recurrence clear semantics — CLOSED
-- MEDIUM-03 Optional-field clear semantics — CLOSED
-- MEDIUM-04 Public search approval filtering — CLOSED
-- MEDIUM-05 Ranged-event date matching — CLOSED
-- MEDIUM-06 Timeline event nodes — CLOSED
-- MEDIUM-07 Share Card theme treatment — CLOSED
-- MEDIUM-09 Lint gate — CLOSED
-- LOW-01 Session lastSeenAt lifecycle — CLOSED
-- LOW-02 AuthorizationError consistency — CLOSED
-- LOW-03 Memory relationship ownership validation — CLOSED
-
-دو موضوع هنوز باز هستند، اما از جنس release/acceptance هستند نه «کد خرابِ شناخته‌شده»:
-- MEDIUM-08: گسترش E2E به English flow، recurrence browser acceptance، memory CRUD، share-card behavior، accessibility، swipe و visual acceptance.
-- MEDIUM-10: نبود `package-lock.json`؛ برای reproducible release باید در محیط دارای package-manager/network به‌صورت رسمی تولید و commit شود.
+تمام findings اجراییِ ثبت‌شده در correction series مربوط به ACT-186 تا ACT-196 بسته شده‌اند و CI #281 آن‌ها را اعتبارسنجی کرده است. موارد باقی‌مانده از جنس acceptance/release هستند:
+- broader runtime/browser acceptance و visual acceptance
+- accessibility / touch / responsive review
+- release reproducibility به‌دلیل نبود package-lock
+- release hardening مربوط به CSRF/rate limiting طبق Taskهای Phase-09/10
 
 ## Visual Theme state
 
-- Theme A: `src/frontend/themes/flat-geometric/`
-- Theme B: `src/frontend/themes/modern-flat-vector/`
-- Shared Core remains single-source: Calendar Engine, Domain, Data, Application, Auth/Session and product contracts.
-- TASK-07-001 is DONE for Theme A — Flat Geometric.
-- Theme A visual execution is isolated under src/frontend/themes/flat-geometric/ and Theme B remains untouched.
-- The Theme A operational design record is docs/PHASE-07-THEME-A-FLAT-GEOMETRIC.md.
-- Permanent separation rules: `docs/VISUAL-DESIGN-SEPARATION-WARNING.md`.
+- Theme A: src/frontend/themes/flat-geometric/ — فعال و اجراشده.
+- Theme B: src/frontend/themes/modern-flat-vector/ — فقط boundary/scaffolding؛ طراحی اصلی آن هنوز شروع نشده است.
+- Core مشترک single-source باقی مانده: Calendar Engine، Domain، Data، Application، Auth/Session و product contracts.
+- TASK-07-001 برای Theme A — DONE.
+- سند عملیاتی Theme A: docs/PHASE-07-THEME-A-FLAT-GEOMETRIC.md.
+- قرارداد جداسازی دائمی: docs/VISUAL-DESIGN-SEPARATION-WARNING.md.
+- هر visual change فعلی باید فقط در Theme A و دقیقاً داخل brief مصوب خودش باقی بماند.
 
 ## Editorial state
 
-`seedEvents = []` همچنان عمداً خالی است. هیچ رویداد تاریخی عمومی بدون editorial approval وارد محصول نشده است.
+seedEvents = [] عمداً خالی است. هیچ historical event عمومی بدون editorial approval وارد محصول نشده است.
 
-## مسیر بعدی
+## مسیر بعدی قطعی
 
-**ACT-208 TASK-07-001 را برای Theme A بست. Theme B عمداً دست‌نخورده مانده است.** → ادامه تسک‌های باقی‌مانده PHASE-07 → PHASE-08 editorial dataset → PHASE-09 final QA → PHASE-10 release.
+**Next task: TASK-07-002 — Spacing/Margin Consistency — TODO**
+
+پس از شروع این Task، اجرای بصری فقط برای Theme A انجام می‌شود. Theme B تا تصمیم و scope مستقل خودش وارد اجرا نمی‌شود.
+
+مسیر کلی:
+PHASE-06 runtime/browser acceptance → ادامهٔ PHASE-07 برای Theme A → PHASE-08 editorial dataset → PHASE-09 final QA → PHASE-10 release.
+
+## قانون ادامه پروژه
+
+هر اقدام معنادار باید:
+1. یک ACT ID یکتا داشته باشد.
+2. در CHANGELOG ثبت شود.
+3. Task و STATUS را به‌روز کند.
+4. در صورت ارتباط ROADMAP/DECISIONS/REQUIREMENTS را همگام کند.
+5. اگر ساختار سندی تغییر کرد، INDEX را sync کند.
