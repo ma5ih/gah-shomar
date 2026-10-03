@@ -1,4 +1,4 @@
-import {addImperialDays,differenceInImperialDays,imperialToGregorian,isImperialLeapYear,monthLength,weekdayOfImperialDate} from "../domain/calendar";
+import {addImperialDays,imperialToGregorian,isImperialLeapYear,monthLength,weekdayOfImperialDate} from "../domain/calendar";
 import {monthName} from "../domain/calendar/month";
 import type {GregorianDate,ImperialDate,ImperialMonth,Weekday} from "../domain/calendar/types";
 import type {MonthQueryResult,DayQueryResult} from "./types";
@@ -11,8 +11,9 @@ import {personalEventOccursInMonth,personalEventOccursOn} from "./personal-calen
 const WEEKDAYS:readonly Weekday[]=["saturday","sunday","monday","tuesday","wednesday","thursday","friday"];
 function assertMonth(month:number):asserts month is ImperialMonth{if(!Number.isInteger(month)||month<1||month>12)throw new RangeError("Invalid Imperial month.")}
 function assertYear(year:number){if(!Number.isInteger(year)||year<1119||year>4357)throw new RangeError("Unsupported Imperial year.")}
-function periodContainsDate(period:{startDate:{imperialDate?:ImperialDate};endDate?:{imperialDate?:ImperialDate}},date:ImperialDate){const start=period.startDate.imperialDate;if(!start||differenceInImperialDays(start,date)<0)return false;const end=period.endDate?.imperialDate;return !end||differenceInImperialDays(date,end)<=0}
-function eventContainsDate(event:{dates:readonly {start:{imperialDate?:ImperialDate};end?:{imperialDate?:ImperialDate}}[]},date:ImperialDate){return event.dates.some(({start,end})=>{const startDate=start.imperialDate;if(!startDate||differenceInImperialDays(startDate,date)>0)return false;const endDate=end?.imperialDate;return !endDate||differenceInImperialDays(date,endDate)<=0})}
+function compareImperialDate(left:ImperialDate,right:ImperialDate){return left.year-right.year||left.month-right.month||left.day-right.day}
+function periodContainsDate(period:{startDate:{imperialDate?:ImperialDate};endDate?:{imperialDate?:ImperialDate}},date:ImperialDate){const start=period.startDate.imperialDate;if(!start||compareImperialDate(start,date)>0)return false;const end=period.endDate?.imperialDate;return !end||compareImperialDate(date,end)<=0}
+function eventContainsDate(event:{dates:readonly {start:{imperialDate?:ImperialDate};end?:{imperialDate?:ImperialDate}}[]},date:ImperialDate){return event.dates.some(({start,end})=>{const startDate=start.imperialDate;if(!startDate||compareImperialDate(startDate,date)>0)return false;const endDate=end?.imperialDate;return !endDate||compareImperialDate(date,endDate)<=0})}
 export function gregorianDateForImperial(date:ImperialDate):GregorianDate{return imperialToGregorian(date)}
 export function monthNameFor(month:ImperialMonth):string{return monthName(month)}
 export async function getMonthQuery(year:number,month:number,today?:ImperialDate,userId?:string,personalRepository?:PersonalRepository):Promise<MonthQueryResult>{
