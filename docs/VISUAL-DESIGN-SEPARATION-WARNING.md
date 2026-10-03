@@ -117,6 +117,12 @@ Theme A و Theme B می‌توانند مستقلانه این موارد را �
 
 **هیچ تصمیم طراحی نباید خارج از دو Visual Brief بالا گرفته شود.**
 
-## 11. وضعیت
+## 11. وضعیت جاری
 
-ACT-205 مرزبندی و scaffolding را ثبت کرد. طراحی اصلی هنوز شروع نشده است.
+- ACT-205: boundary/scaffolding — DONE
+- ACT-207: Theme A visual execution — DONE
+- ACT-208: Theme A validation / TASK-07-001 closure — DONE
+- ACT-209: documentation convergence — DONE
+- Theme A اکنون baseline بصری اجرایی دارد.
+- Theme B همچنان فقط در سطح boundary/scaffolding است و طراحی اصلی آن شروع نشده است.
+- گام بعدی بصری: TASK-07-002 — Spacing/Margin Consistency — فقط برای Theme A در scope فعلی.
