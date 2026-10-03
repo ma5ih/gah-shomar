@@ -4,7 +4,7 @@ Version: 1.0.0
 Status: APPROVED
 Tasks: TASK-02-019 تا TASK-02-021
 Actions: ACT-038 تا ACT-040
-Last updated: 2026-10-03
+Last updated: 2026-10-04
 
 ## Error Strategy
 
@@ -64,4 +64,4 @@ Calendar unit/regression tests اکنون برای month rules، leap-year، con
 ## Result
 TASK-02-019 تا TASK-02-021 DONE.
 
-Current quality work: TASK-03-023 تا TASK-03-026 IN_PROGRESS. برای TASK-03-026، contract fixtures مربوط به Event، Person، Period و Source اضافه شده‌اند؛ coverage مدل‌های Personal Event و Memory هنوز باید تکمیل شود.
+Current quality gate: PHASE-09. Automated CI is green on current HEAD (#218), while product acceptance remains open. ACT-186 adds a verified correction queue covering presentation boundaries, routing/date contracts, update clear semantics, content filtering, ranged events, share-card themes, lint/reproducibility and broader E2E coverage.
