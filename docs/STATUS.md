@@ -4,7 +4,7 @@ Last updated: 2026-10-04
 Implementation baseline: `4e06741359d86cd2194b5cacbcb4c2d9e81c4fd1`
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 QA gate: PHASE-09 — Integration & QA
-QA blocker: TASK-09-019 correction gate; TASK-09-022 closed. Latest code checkpoint CI #246 is still validating browser setup.
+QA blocker: TASK-09-019 remaining medium/low correction gate; TASK-09-022 closed. Latest implementation checkpoint CI #246 is PASS.
 Overall status: IN_PROGRESS
 
 ## شمارش رسمی ریزتسک‌ها — ACT-185
@@ -94,10 +94,10 @@ Current implementation:
 ## Latest CI truth
 
 Current HEAD:
-- SHA `4e06741359d86cd2194b5cacbcb4c2d9e81c4fd1`
+- SHA `a_PENDING_DOC_HEAD`
 - implementation baseline: `4e06741359d86cd2194b5cacbcb4c2d9e81c4fd1`
 - CI #244 — PASS for ACT-187 checkpoint
-- CI #246 — IN_PROGRESS for ACT-188 checkpoint
+- CI #246 — PASS for ACT-188 checkpoint
 - migration: PASS
 - typecheck: PASS
 - unit/integration: PASS
