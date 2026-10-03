@@ -1,6 +1,6 @@
 # REQUIREMENTS — نیازمندی‌های محصول
 
-Version: 1.0.0
+Version: 1.1.0
 Status: APPROVED
 Last updated: 2026-10-03
 
