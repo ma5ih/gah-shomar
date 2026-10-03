@@ -1,7 +1,7 @@
 # PHASE-06 IMPLEMENTATION NOTE
 
 Status: IN_PROGRESS
-Last updated: 2026-10-03 — ACT-184
+Last updated: 2026-10-04 — ACT-186
 Implementation baseline: `d531e0a1bb3e4cbf287ad2ce25c72bf0cfa4d9e3`
 
 ## Implemented product surfaces
@@ -47,6 +47,11 @@ Current implementation:
 - ACT-180/182/183: Personal Person ownership regression, syntax normalization and readonly collection compatibility; final CI run #200 PASS.
 - ACT-175 / run #189: full quality + browser smoke PASS after authenticated Personal Event flow coverage.
 - ACT-199 / run #199: full quality + browser smoke PASS after Personal Person linkage/ownership work.
+- ACT-186 / run #218: latest HEAD documentation checkpoint validated by full CI SUCCESS.
+
+## Current correction gate after ACT-186 audit
+- HIGH implementation findings are recorded in `docs/ARCHITECTURE-IMPLEMENTATION-AUDIT-2026-10-04.md`.
+- TASK-09-019 is the next correction gate; PHASE-06 must remain IN_PROGRESS until these findings are handled and runtime/product acceptance is evidenced.
 
 ## Current acceptance gap
 - E2E smoke is aligned with the intentionally empty event seed and is green in CI.
