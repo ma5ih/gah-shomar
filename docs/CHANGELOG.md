@@ -1,3 +1,22 @@
+## ACT-211 — 2026-10-04
+Type: THEME-A-SPACING-REFINEMENT
+Status: IN_PROGRESS
+
+- TASK-07-002 — Spacing/Margin Consistency برای Theme A ادامه یافت.
+- مقادیر باقیماندهٔ spacing که خارج از scale بودند نیز normalize شدند: 10px/22px/28px به گام‌های مصوب Theme A تبدیل شدند.
+- header comment stylesheet به TASK-07-002 به‌روزرسانی شد.
+- تغییر implementation همچنان فقط در src/frontend/themes/flat-geometric/theme.css است.
+- Theme B هیچ تغییری نکرد.
+- Core، Calendar Engine، Domain، Application، Data، Auth/Session، routing، localization و business behavior هیچ تغییری نکردند.
+- static validation بعد از refinement انجام شد؛ selector scope حفظ شد و gradient expression جدیدی وارد نشد.
+- latest implementation commit: fa095e637e3f4d244c9b06889717d71d3dd690a0.
+- CI مستقل latest commit هنوز از مسیر قابل مشاهده موجود نیست؛ Task همچنان IN_PROGRESS است.
+
+### Next
+اعتبارسنجی واقعی latest Theme A spacing commit؛ سپس در صورت PASS بستن TASK-07-002 و بررسی TASK-07-003.
+
+Next fresh ACT ID: **ACT-212**
+
 ## ACT-210 — 2026-10-04
 Type: THEME-A-SPACING-IMPLEMENTATION
 Status: IN_PROGRESS
