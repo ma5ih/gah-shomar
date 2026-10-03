@@ -70,6 +70,7 @@ Overall status: IN_PROGRESS
 - ACT-063 — Historical Date Conversion Gateway — IN_PROGRESS
 - ACT-064 — Date Arithmetic — DONE
 - ACT-065 — Weekday Calculation — DONE
+- ACT-066 — Time-of-day State — DONE
 
 ## تصمیم‌های محصول فعلی
 
