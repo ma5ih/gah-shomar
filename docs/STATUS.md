@@ -72,6 +72,7 @@ Overall status: IN_PROGRESS
 - ACT-065 — Weekday Calculation — DONE
 - ACT-066 — Time-of-day State — DONE
 - ACT-067 — Seasonal State — DONE
+- ACT-068 — CI typecheck/test/build workflow — DONE
 
 ## تصمیم‌های محصول فعلی
 
