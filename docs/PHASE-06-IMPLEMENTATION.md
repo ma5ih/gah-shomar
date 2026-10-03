@@ -3,34 +3,35 @@
 Status: IN_PROGRESS
 Last updated: 2026-10-03
 
-Implemented routes:
-- /
-- /calendar
-- /day/[year]/[month]/[day]
-- /events
-- /events/[slug]
-- /people/[slug]
-- /timeline
-- /search
-- /login
-- /register
-- /personal
+## Implemented
 
-Implemented flows:
-- Today calendar context
-- Month navigation and swipe
-- Day detail
-- Event/person/related navigation
-- Public and authenticated personal search orchestration
-- Personal event create/update/delete
-- Personal person creation
-- Memory create/update/delete
-- Personal markers in calendar
-- Yearly recurrence input
-- Personal Share Card generation/share/download
+- Today and current date hierarchy
+- Month Calendar + navigation
+- Day Detail
+- Events / Event Detail
+- People / Timeline
+- Search
+- Authentication
+- Personal Events / Personal Person / Memories
+- Yearly recurrence
+- Personal Share Card
+- Persian/English + RTL/LTR
+- Public/personal data separation
+- Graceful public fallback when personal storage is unavailable
 
-Known acceptance gaps:
-- Final green CI gate
-- Real-device/runtime QA
-- Rich media/hero presentation depends on PHASE-08 dataset
-- PWA baseline belongs to PHASE-07
+## Verified automated baseline
+
+- Database migration: PASS
+- TypeScript: PASS
+- Unit/integration tests: PASS on ACT-133 baseline
+- Production build: PASS on ACT-133 baseline
+- Application tests migrated to sourced content by ACT-137
+- Personal-storage resilience and PWA acceptance added by ACT-138; current CI run must finish before HEAD is called green
+
+## Acceptance gap
+
+- Browser/runtime interaction QA
+- Mobile/tablet/desktop visual QA
+- Final responsive/accessibility review
+
+This phase remains IN_PROGRESS until the runtime acceptance gap is actually verified.
