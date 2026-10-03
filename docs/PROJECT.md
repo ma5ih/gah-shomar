@@ -5,7 +5,7 @@ Name: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Status: IN_PROGRESS
-Document version: 1.2.0
+Document version: 1.3.0
 Last updated: 2026-10-04
 
 ## 1. تعریف محصول
@@ -93,10 +93,30 @@ PHASE-08 IN_PROGRESS
 PHASE-09 IN_PROGRESS
 PHASE-10 TODO
 
-Current implementation checkpoint: `a9eace682f32f6e6ff32a748fe9df53448c27692`.
-Current repository checkpoint: **ACT-203 — complete audit and continuation record**.
-Latest verified CI after the ACT-199 implementation correction: **#292 — PASS**.
-`TASK-09-019` is DONE. The product remains in PHASE-06 with runtime/browser acceptance open.
+Current implementation HEAD: 5791e3e89aabcd75fd856e03e9a05023d009dbcc.
+Current documentation checkpoint: **ACT-209 — Theme A documentation convergence**.
+Latest Theme A validation: **GitHub Actions #37161733754 — PASS**.
+Earlier full product/E2E acceptance checkpoint: **CI #299 — PASS**.
+TASK-09-019 is DONE. The product remains in PHASE-06 with runtime/browser acceptance open.
+TASK-07-001 is DONE for Theme A; the next visual task is TASK-07-002 and remains TODO.
 
 ## 9. اصل ادامه پروژه
 GitHub مرجع نهایی است. فرد یا اکانت جدید نباید برای فهم وضعیت پروژه به چت قبلی نیاز داشته باشد.
+
+## 9. وضعیت Visual Themeها
+
+از ACT-205 دو Visual Theme مستقل با Core مشترک تعریف شده‌اند.
+
+### Theme A — Flat Geometric
+- مسیر: src/frontend/themes/flat-geometric/
+- TASK-07-001 — Final Visual Hierarchy: **DONE**
+- اجرای بصری و validation این Task انجام شده است.
+- تمام تصمیم‌های فعلی باید داخل brief مصوب Theme A بمانند.
+- Task بعدی در مسیر بصری: TASK-07-002 — Spacing/Margin Consistency.
+
+### Theme B — Modern Flat Vector Illustration
+- مسیر: src/frontend/themes/modern-flat-vector/
+- فقط boundary/scaffolding ایجاد شده است.
+- طراحی اصلی Theme B هنوز شروع نشده و در scope فعلی نیست.
+
+قاعده: **shared Core + independent presentation**. تغییر purely visual در Theme مربوط انجام می‌شود؛ تغییر semantic/product behavior در shared Core باقی می‌ماند.
