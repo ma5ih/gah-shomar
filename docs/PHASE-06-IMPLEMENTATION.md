@@ -1,8 +1,8 @@
 # PHASE-06 IMPLEMENTATION NOTE
 
 Status: IN_PROGRESS
-Last updated: 2026-10-04 — ACT-199
-Current checkpoint: post-audit persistence and server-boundary correction; CI revalidation follows this commit.
+Last updated: 2026-10-04 — ACT-200
+Current checkpoint: documentation synchronized after ACT-199 implementation correction; CI #288 is the current revalidation run.
 
 ## Implemented product surfaces
 - Today and current date hierarchy
@@ -47,7 +47,7 @@ Current implementation:
 - ACT-175 / run #189: Personal Event browser flow PASS across the configured browser profiles.
 - ACT-180/182/183: Personal Person ownership regression, syntax normalization and readonly collection compatibility; final CI run #200 PASS.
 - ACT-175 / run #189: full quality + browser smoke PASS after authenticated Personal Event flow coverage.
-- ACT-199 / run #199: full quality + browser smoke PASS after Personal Person linkage/ownership work.
+- Historical ACT-199 / run #199 was a legacy checkpoint and is not the current validation run.
 - ACT-186 / run #218: documentation checkpoint validated by full CI SUCCESS.
 - ACT-187 / run #244: correction checkpoint full CI SUCCESS.
 - ACT-188 / run #246: full quality + browser smoke PASS after application/presentation boundary correction.
@@ -60,7 +60,7 @@ Current implementation:
 
 ## Current acceptance gap
 - E2E smoke is aligned with the intentionally empty event seed and is green in CI.
-- Current HEAD automated pipeline is green.
+- The last fully green pipeline before ACT-199/ACT-200 was #283; current post-correction CI revalidation is in progress (#288).
 - Browser/runtime interaction QA remains open for product acceptance beyond automated smoke.
 - Mobile/tablet/desktop visual QA remains open.
 - Final responsive/accessibility review remains open.
