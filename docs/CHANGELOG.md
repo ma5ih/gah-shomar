@@ -1,3 +1,21 @@
+## ACT-061 — 2026-10-03
+Type: CALENDAR-ENGINE-CONVERSION
+Status: DONE
+
+### انجام شد
+- پیاده‌سازی تبدیل خالص Gregorian ↔ Imperial در `src/domain/calendar/conversion.ts`.
+- تبدیل بر پایه الگوریتم Borkowski/Jalaali و همان break-pointهای تثبیت‌شده انجام می‌شود؛ شماره سال شاهنشاهی با offset برابر ۱۱۸۰ اعمال می‌شود.
+- تبدیل تاریخ روزانه به Julian Day و بازگشت به Gregorian بدون وابستگی به timezone یا `Date` مرورگر انجام می‌شود.
+- اعتبارسنجی تاریخ‌های Gregorian و Imperial اضافه شد.
+- regression test برای نوروز ۲۵۸۵، یک جفت شناخته‌شده ۲۰۱۶/۲۵۷۵، گذار ۲۶۲۰/۲۶۲۱ و round-trip تاریخ‌های نماینده اضافه شد.
+- منطق تبدیل به export عمومی Calendar Domain اضافه شد.
+
+### وضعیت تست
+- workflow برای commitهای جدید هنوز run ثبت نکرده است؛ بنابراین اجرای موفق test suite هنوز تأیید نشده است.
+
+### Next
+TASK-03-005 — Now/Today Calculation
+
 ## ACT-060 — 2026-10-02
 Type: CALENDAR-ENGINE-CORRECTION
 Status: DONE
