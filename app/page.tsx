@@ -13,7 +13,7 @@ export default async function HomePage({searchParams}:{searchParams?:Promise<Rec
  const state=await getTodayState(session?{userId:session.userId,personalRepository}:{});const g=state.context.gregorianDate;
  return <AppShell locale={locale} active="today">
   <div className="notice">{c.demoNotice}</div>
-  <section className="hero">
+  <section className="hero" data-time-of-day={state.context.timeOfDay} data-season={state.context.season}>
    <div className="hero-panel"><div className="overline">{weekdayLabel(locale,state.context.weekday)} · {c[state.context.timeOfDay]}</div><h1 className="hero-title">{imperialDateLabel(state.context.imperialDate,locale)}</h1><p className="hero-subtitle">{gregorianLabel(g,locale)} · {c[state.context.season]}</p><div style={{marginTop:20,display:"flex",gap:8,flexWrap:"wrap"}}><Link className="primary-button" href={"/calendar?lang="+locale}>{c.calendar}</Link><Link className="secondary-button" href={"/search?lang="+locale}>{c.search}</Link></div></div>
    <aside className="hero-panel context-card"><div><div className="overline">{c.occasions}</div><div className="context-value">{state.events.length}</div></div><div><div className="overline">{c.personal}</div><div className="context-value">{state.personalEvents.length+state.memories.length}</div></div></aside>
   </section>
