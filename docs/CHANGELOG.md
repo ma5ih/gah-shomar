@@ -1,3 +1,25 @@
+## ACT-165 — 2026-10-03
+Type: TEST-ACCEPTANCE-ALIGNMENT
+Status: DONE
+
+- Event Detail smoke test اکنون رفتار واقعی Not Found را بررسی می‌کند.
+- Search smoke test تضمین می‌کند event تأییدنشده به‌عنوان event result عمومی expose نشود.
+- CI run #168 کاملاً سبز شد: migration، typecheck، unit/integration، production build و browser smoke.
+- Browser smoke در desktop/tablet/mobile: 24/24 assertions PASS.
+- TASK-09-022 بسته شد.
+- Next fresh ACT ID: ACT-166.
+
+---
+
+## ACT-164 — 2026-10-03
+Type: TEST-ACCEPTANCE-ALIGNMENT
+Status: SUPERSEDED
+
+- اولین اصلاح smoke test با editorial-empty dataset انجام شد.
+- CI نشان داد دو فرض runtime نیاز به اصلاح دقیق‌تر دارند؛ اصلاح نهایی در ACT-165 ثبت شد.
+
+---
+
 ## ACT-163 — 2026-10-03
 Type: TEST-ACCEPTANCE-ALIGNMENT
 Status: DONE
