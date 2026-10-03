@@ -93,9 +93,11 @@ PHASE-08 IN_PROGRESS
 PHASE-09 IN_PROGRESS
 PHASE-10 TODO
 
-Current implementation checkpoint: **ACT-199 — post-audit persistence and server-boundary correction**.
-Latest verified implementation checkpoint before this action: `1f28a0306c446beb89f279a69a382814090d4e7a`.
-Latest fully green workflow before this action: **#283 — PASS**.
+Current repository HEAD: `7a7e0d9263078f7160a4f4b9a62670452c3e01ae`
+Current implementation HEAD: `a9eace682f32f6e6ff32a748fe9df53448c27692`
+Current documentation checkpoint: **ACT-200 — contract synchronization after ACT-199 correction**.
+Latest CI run: **#288 — IN_PROGRESS**.
+Latest fully green workflow before these changes: **#283 — PASS**.
 `TASK-09-019` is DONE. The product remains in PHASE-06 with runtime/browser acceptance open.
 
 ## 9. اصل ادامه پروژه
