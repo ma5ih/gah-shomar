@@ -6,7 +6,7 @@ Repository: ma5ih/gah-shomar
 Default branch: main
 Status: IN_PROGRESS
 Document version: 1.2.0
-Last updated: 2026-10-03
+Last updated: 2026-10-04
 
 ## 1. تعریف محصول
 «گاه‌شمار» یک گاه‌شمار دیجیتال ایرانی است که تقویم روزانه را با تاریخ و فرهنگ ایران، رویدادهای تاریخی، مناسبت‌ها، رویدادهای شخصی، خاطرات، جستجو و Timeline ترکیب می‌کند.
@@ -93,8 +93,10 @@ PHASE-08 IN_PROGRESS
 PHASE-09 IN_PROGRESS
 PHASE-10 TODO
 
-Current HEAD: `e3107be19485199f3e725a1bbc40ceb86b72f88b`
-Current next task: TASK-09-022 — E2E dataset/editorial alignment.
+Implementation baseline: `d531e0a1bb3e4cbf287ad2ce25c72bf0cfa4d9e3`
+Current HEAD: `2f8bc94aa64d2cb6cf5efb42042ba418b04ad8be`
+Latest CI: #218 — PASS
+Current next task: TASK-09-019 — Critical Bug Fixes identified by ACT-186.
 
 ## 9. اصل ادامه پروژه
 GitHub مرجع نهایی است. فرد یا اکانت جدید نباید برای فهم وضعیت پروژه به چت قبلی نیاز داشته باشد.
