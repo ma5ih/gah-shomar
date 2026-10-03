@@ -53,7 +53,7 @@ AC-001 تا AC-039 باید در QA قابل trace باشند.
 
 ## Calendar Engine Quality Status
 
-Calendar unit/regression tests اکنون برای month rules، leap-year، conversion، historical conversion، Today، date arithmetic، weekday، time-of-day و season وجود دارند. CI workflow نیز typecheck، Vitest و production build را تعریف کرده است.
+Calendar unit/regression tests اکنون برای month rules، leap-year، conversion، historical conversion، Today، date arithmetic، weekday، time-of-day و season وجود دارند. ماتریس leap-year مدرن نیز تا Imperial 2629 / Solar Hijri 1449 پوشش داده شده و گذار 2620/2621 را به‌صورت regression صریح بررسی می‌کند. CI workflow نیز typecheck، Vitest و production build را تعریف کرده است.
 
 ### Validation status
 - Test code: PRESENT
