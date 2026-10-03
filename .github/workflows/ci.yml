@@ -8,23 +8,37 @@ on:
 jobs:
   quality:
     runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/gah_shomar_test
+      APP_TIMEZONE: Asia/Tehran
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: gah_shomar_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d gah_shomar_test"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
-
       - name: Install dependencies
         run: npm install
-
+      - name: Migrate test database
+        run: npm run db:migrate
       - name: Typecheck
         run: npx tsc --noEmit
-
-      - name: Unit tests
+      - name: Unit and integration tests
         run: npm test
-
       - name: Production build
         run: npm run build
