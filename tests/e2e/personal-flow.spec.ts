@@ -72,6 +72,7 @@ test("yearly recurrence can be enabled and cleared through the browser",async({p
  await page.getByLabel("نام کاربری").fill(username);
  await page.getByLabel("رمز عبور").fill("TestPassword123!");
  await page.getByRole("button",{name:"ثبت‌نام"}).click();
+ await expect(page.getByText("وارد شدی. بخش شخصی را باز کن.")).toBeVisible();
  await page.goto("/personal?lang=fa");
 
  const form=page.locator("form").filter({has:page.getByRole("heading",{name:"افزودن رویداد شخصی"})});
@@ -97,6 +98,7 @@ test("memory CRUD is available in the authenticated personal browser flow",async
  await page.getByLabel("نام کاربری").fill(username);
  await page.getByLabel("رمز عبور").fill("TestPassword123!");
  await page.getByRole("button",{name:"ثبت‌نام"}).click();
+ await expect(page.getByText("وارد شدی. بخش شخصی را باز کن.")).toBeVisible();
  await page.goto("/personal?lang=fa");
 
  const form=page.locator("form").filter({has:page.getByRole("heading",{name:"ثبت خاطره"})});
