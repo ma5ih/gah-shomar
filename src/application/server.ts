@@ -1,7 +1,7 @@
 import type { ImperialDate, ImperialMonth } from "../domain/calendar/types";
 import { personalRepository } from "../data/db/repositories";
 import { getTodayState } from "./today";
-import { getMonthQuery } from "./calendar";
+import { getMonthQuery, getDayQuery } from "./calendar";
 import { application } from "./use-cases";
 
 export function getServerPersonalUseCases() {
@@ -19,6 +19,10 @@ export function getServerMonthQuery(
   userId?: string,
 ) {
   return getMonthQuery(year, month, today, userId, userId ? personalRepository : undefined);
+}
+
+export function getServerDayQuery(date: ImperialDate, userId?: string) {
+  return getDayQuery(date, userId, userId ? personalRepository : undefined);
 }
 
 export function searchAllServer(userId: string | null, query: string) {
