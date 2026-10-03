@@ -138,7 +138,7 @@ There is a historical ACT-ID collision in Git commit messages:
 
 These historical commits are immutable and should not be rewritten. From the next checkpoint onward, new ACT IDs must never be reused.
 
-Next fresh ACT ID: **ACT-185**
+Next fresh ACT ID: **ACT-186**
 
 ## Continuation rule
 
