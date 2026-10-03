@@ -1,3 +1,24 @@
+## ACT-188 — 2026-10-04
+Type: ARCHITECTURE-BOUNDARY
+Status: IN_PROGRESS
+
+### انجام شد
+- repository binding مستقیم از route/presentationهای اصلی به یک server composition boundary منتقل شد.
+- `src/application/server.ts` به‌عنوان composition root سروری ایجاد شد و Personal Repository را به Application Use Cases متصل می‌کند.
+- Home، Calendar، Search، Personal و Personal Actions دیگر repository را مستقیم import نمی‌کنند.
+- ACT-187 اصلاحات Event routing، range/date containment و application presentation helpers را تکمیل کرد.
+- CI run #244 برای checkpoint ACT-187 با SUCCESS کامل شد.
+- CI run #246 برای ACT-188 هنگام ثبت این لاگ هنوز در مرحله Browser setup است؛ PASS نهایی ثبت نشده است.
+
+### نتیجه موقت
+- HIGH-01 presentation/data boundary: implementation اصلاح شد؛ validation نهایی pending.
+- HIGH-02 Event slug/routing contract: با slug-or-id retrieval اصلاح و در code path تثبیت شد.
+- HIGH-03 Period exact-date containment: اصلاح و regression test شد؛ CI #244 موفق.
+- Medium/Low findings audit همچنان باز هستند.
+
+### Next
+پس از مشاهده نتیجه CI #246: همگام‌سازی نهایی ACT-188 و سپس TASK-09-019 برای gapهای MEDIUM باقی‌مانده.
+
 ## ACT-186 — 2026-10-04
 Type: ARCHITECTURE-IMPLEMENTATION-AUDIT
 Status: DONE
