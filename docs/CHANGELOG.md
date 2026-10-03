@@ -1,3 +1,18 @@
+## ACT-163 — 2026-10-03
+Type: TEST-ACCEPTANCE-ALIGNMENT
+Status: DONE
+
+- public E2E smoke با سیاست فعلی seedEvents خالی همگام شد.
+- Important Events اکنون editorial-pending state را تست می‌کند.
+- Event Detail برای event تأییدنشده 404 بودن را تست می‌کند.
+- Search دیگر event تاریخی تأییدنشده را expose نمی‌کند.
+- هیچ دادهٔ تاریخی جدیدی اضافه نشد.
+- blocker کدی TASK-09-022 برطرف شد؛ CI revalidation هنوز pending است.
+- Primary workstream همچنان PHASE-06 است؛ PHASE-09 در این نقطه QA gate است.
+- Next fresh ACT ID: ACT-164.
+
+---
+
 ## ACT-162 — 2026-10-03
 Type: DOCUMENTATION-CHECKPOINT
 Status: DONE
