@@ -1,7 +1,7 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.17.0
+Index version: 2.18.0
 Last update: 2026-10-03
 Current phase: PHASE-09 — Integration & QA
 
@@ -64,7 +64,7 @@ PHASE-09: IN_PROGRESS
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-158 — Documentation reconciliation + definitive handoff checkpoint.
+ACT-159 — Final documentation checkpoint and handoff finalization.
 
 ## اقدام بعدی
 TASK-09-022 — E2E dataset/editorial alignment, then CI revalidation and runtime acceptance.
