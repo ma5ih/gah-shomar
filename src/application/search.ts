@@ -1,0 +1,2 @@
+import { publicRepository } from "../data/public/repository";
+export function searchPublicContent(query: string) { return publicRepository.search(query); }
