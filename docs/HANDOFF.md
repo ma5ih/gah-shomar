@@ -19,7 +19,8 @@ Next fresh ACT ID: **ACT-211**
 - TASK-07-001 — Final Visual Hierarchy — **DONE**
 - Theme A — Flat Geometric — فعال و validation شده است.
 - Theme B — Modern Flat Vector Illustration — هنوز وارد طراحی اصلی نشده است.
-- گام بصری جاری: **TASK-07-002 — Spacing/Margin Consistency — IN_PROGRESS**
+- visual batch جاری: **TASK-07-002 تا TASK-07-011 — IN_PROGRESS**
+- app-like task جاری: **TASK-07-013 — Install Experience — IN_PROGRESS**
 - هیچ تغییر جدیدی در Core، Calendar Engine، Domain، Data، Application، Auth/Session، routing یا business behavior در ACT-209 انجام نشده است.
 
 ## 2. شمارش رسمی Taskها
@@ -69,6 +70,12 @@ Next fresh ACT ID: **ACT-211**
 - TASK-07-002 آغاز شد و spacing scale اختصاصی 4/8/12/16/20/24/32px در Theme A فعال شد.
 - تغییر implementation فقط در src/frontend/themes/flat-geometric/theme.css انجام شد.
 - static validation انجام شد، اما CI جدید هنوز به‌صورت مستقل مشاهده نشده است؛ بنابراین Task فعلاً IN_PROGRESS است.
+
+### ACT-213 — PWA install experience
+- Install prompt، dismiss state، appinstalled handling و localization اضافه شدند.
+- service worker precache برای offline/manifest/icons تقویت شد.
+- unit/E2E coverage اضافه شد.
+- final validation of the complete branch remains pending.
 
 ## 5. وضعیت Visual Themeها
 
@@ -121,7 +128,7 @@ seedEvents = [] عمداً خالی است. هیچ historical event عمومی �
 
 ## 8. مسیر ادامه
 
-**گام بعدی:** تکمیل validation و بستن TASK-07-002 — Spacing/Margin Consistency
+**گام بعدی:** validation کامل batch Theme A + PWA و سپس promotion Taskهای validated
 
 تا زمانی که کاربر scope را تغییر نداده است، هر visual implementation جدید فقط روی Theme A انجام می‌شود و Theme B دست‌نخورده می‌ماند.
 
