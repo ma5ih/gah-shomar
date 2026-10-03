@@ -73,6 +73,10 @@ Calendar Engine تنها Source of Truth برای منطق تقویم است و 
 ## 6. محتوای تاریخی
 Event/Person/Timeline/Source/Media داده ساختاریافته هستند. محتوای تاریخی مهم باید source-backed و دارای وضعیت validation باشد. Event عمومی و Personal Event از نظر مدل و دسترسی جدا هستند.
 
+صفحهٔ Important Events بخشی از قرارداد محصول است: رویدادهای منتخب ماه باید با تصویر شاخص نمایش داده شوند، card قابل کلیک باشد و به Event Detail مستقل با روایت کامل‌تر، منابع، افراد/دوره و تصاویر بیشتر در صورت وجود منتهی شود.
+
+در checkpoint فعلی `seedEvents` عمداً خالی است و انتشار هر event تا بررسی ماه‌به‌ماه و تأیید صریح متوقف است.
+
 ## 7. مخاطب
 تعریف مخاطب محصول در REQUIREMENTS و PROJECT ثبت شده و شامل ایرانیان و مخاطبان علاقه‌مند به تاریخ/فرهنگ ایران است. محتوای سیاسی/معاصر باید factual، منبع‌دار و قابل بررسی ارائه شود.
 
@@ -80,10 +84,17 @@ Event/Person/Timeline/Source/Media داده ساختاریافته هستند. �
 PHASE-00 DONE
 PHASE-01 DONE
 PHASE-02 DONE
-PHASE-03 IN_PROGRESS
-PHASE-04..10 TODO
+PHASE-03 DONE
+PHASE-04 DONE
+PHASE-05 DONE
+PHASE-06 IN_PROGRESS
+PHASE-07 IN_PROGRESS
+PHASE-08 IN_PROGRESS
+PHASE-09 IN_PROGRESS
+PHASE-10 TODO
 
-**Next Task:** TASK-03-023 — Calendar Unit Tests / CI Validation
+Current HEAD: `e3107be19485199f3e725a1bbc40ceb86b72f88b`
+Current next task: TASK-09-022 — E2E dataset/editorial alignment.
 
 ## 9. اصل ادامه پروژه
 GitHub مرجع نهایی است. فرد یا اکانت جدید نباید برای فهم وضعیت پروژه به چت قبلی نیاز داشته باشد.
