@@ -1,10 +1,10 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
 Last updated: 2026-10-03
-Implementation baseline: `9e7facf1b14ebc42ea900175bfd37ebbf14a28f5`
+Implementation baseline: `d531e0a1bb3e4cbf287ad2ce25c72bf0cfa4d9e3`
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 QA gate: PHASE-09 — Integration & QA
-QA blocker: none; TASK-09-022 closed by CI #168
+QA blocker: none; TASK-09-022 closed and current HEAD validated by CI #199
 Overall status: IN_PROGRESS
 
 ## شمارش رسمی ریزتسک‌ها — ACT-162
@@ -19,7 +19,7 @@ Overall status: IN_PROGRESS
 
 **نقطه فعلی اجرا:** PHASE-06 — Core Frontend Product Experience.
 
-**وضعیت QA:** TASK-09-022 بسته شد؛ CI #168 سبز است. اکنون وابستگی اصلی، runtime/browser acceptance خود PHASE-06 است.
+**وضعیت QA:** TASK-09-022 بسته شد. CI #199 روی HEAD فعلی سبز است؛ وابستگی اصلی اکنون runtime/browser acceptance خود PHASE-06 است.
 
 ## وضعیت فازها
 
@@ -34,7 +34,7 @@ Overall status: IN_PROGRESS
 | PHASE-06 | IN_PROGRESS | Core product pages implemented; runtime/browser acceptance and image-rich event presentation remain |
 | PHASE-07 | IN_PROGRESS | PWA baseline exists; final visual polish, time/season states and install UX remain |
 | PHASE-08 | IN_PROGRESS | Editorial workflow is defined; published historical event dataset intentionally empty |
-| PHASE-09 | IN_PROGRESS | Automated coverage exists, but latest HEAD is not formally green and full device acceptance is open |
+| PHASE-09 | IN_PROGRESS | Automated pipeline is green on current HEAD; full device/product acceptance and final QA remain open |
 | PHASE-10 | TODO | Release / production / final handoff |
 
 ## Current product state
@@ -91,34 +91,34 @@ Current implementation:
 
 ## Latest CI truth
 
-Confirmed green baseline:
-- ACT-133 / run #102: migration + typecheck + unit/integration tests + production build PASS.
+Current HEAD:
+- SHA `d531e0a1bb3e4cbf287ad2ce25c72bf0cfa4d9e3`
+- CI run **#199 — PASS**
+- migration: PASS
+- typecheck: PASS
+- unit/integration: PASS
+- production build: PASS
+- browser smoke: PASS
 
-Latest recorded run for current HEAD:
-- run #134
-- SHA `e3107be19485199f3e725a1bbc40ceb86b72f88b`
-- status recorded as `IN_PROGRESS`
+The current automated baseline is green. This does **not** mean PHASE-06 is DONE: manual/runtime product acceptance, device interaction coverage beyond the automated smoke, and the approved image-rich Event Detail presentation remain open.
 
-Therefore:
-- current HEAD must not be called CI-green or release-ready;
-- a successful run after the latest test/data changes must be observed before recording PASS.
+## Current Phase-06 functional progress
+
+- Personal Event authenticated create/persistence/logout flow has browser coverage.
+- Personal Person is listed in the Personal UI and can be linked to a Personal Event.
+- Personal Person ownership is enforced at the application boundary and regression-tested.
+- Personal form labels/types are localized for Persian and English.
+- No specialized visual-design work was introduced in this checkpoint.
 
 ## Known QA blocker / mismatch
 
-`tests/e2e/public-smoke.spec.ts` still contains assertions for the removed demo event:
-- route `/events/constitutional-decree-1906`
-- title `صدور فرمان مشروطیت`
-- search result for `فرمان مشروطیت`
-
-ACT-163 این assertions را با editorial rule فعلی که `seedEvents` خالی است همگام کرد.
-
-CI #173 این checkpoint را با migration، typecheck، unit/integration، production build و 24/24 browser smoke assertions در desktop/tablet/mobile با موفقیت اعتبارسنجی کرد.
+No active E2E dataset mismatch remains. `seedEvents = []` is intentional and the browser smoke suite is aligned with that policy.
 
 ## Immediate next actions
 
-1. Align E2E/browser-smoke expectations with the editorial-empty event dataset.
-2. Re-run/observe the complete CI pipeline on the resulting HEAD.
-3. Execute browser/runtime acceptance on desktop, tablet and mobile for fa/RTL and en/LTR.
+1. Execute browser/runtime acceptance on desktop, tablet and mobile for fa/RTL and en/LTR.
+2. Close remaining PHASE-06 functional acceptance gaps.
+3. Only after PHASE-06 acceptance, move to PHASE-07 visual polish.
 4. Close remaining PHASE-06 acceptance gaps.
 5. Continue PHASE-07 visual polish and app-like states.
 6. Start PHASE-08 month-by-month event review from the first calendar month in product order; publish only explicitly approved events and their media metadata.
@@ -127,7 +127,7 @@ CI #173 این checkpoint را با migration، typecheck، unit/integration، p
 
 ## Documentation checkpoint
 
-ACT-158 and ACT-159 synchronized the project ledger, roadmap, handoff and implementation notes. The commits after implementation baseline `e3107be...` in this checkpoint are documentation-only.
+ACT-158 through ACT-183 cover the implementation and validation work in this checkpoint; ACT-184 is the documentation synchronization checkpoint.
 
 ## ACT / history note
 
@@ -138,7 +138,7 @@ There is a historical ACT-ID collision in Git commit messages:
 
 These historical commits are immutable and should not be rewritten. From the next checkpoint onward, new ACT IDs must never be reused.
 
-Next fresh ACT ID: **ACT-167**
+Next fresh ACT ID: **ACT-185**
 
 ## Continuation rule
 
@@ -164,4 +164,4 @@ ACT-160 changed documentation only. Implementation baseline remains e3107be19485
 
 ## Final continuation counter
 
-Next fresh ACT ID: **ACT-164**. ACT-163 aligned public E2E expectations with the intentionally empty historical-event seed.
+Next fresh ACT ID: **ACT-185**. ACT-163 through ACT-183 are recorded in CHANGELOG; ACT-184 synchronizes the final checkpoint.
