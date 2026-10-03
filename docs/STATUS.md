@@ -1,15 +1,16 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
 Last updated: 2026-10-04
-Implementation baseline: `4e06741359d86cd2194b5cacbcb4c2d9e81c4fd1`
+Current HEAD: `1f28a0306c446beb89f279a69a382814090d4e7a`
+Latest CI: **#281 — PASS**
 Primary workstream: PHASE-06 — Core Frontend Product Experience
-QA gate: PHASE-09 — Integration & QA
-QA blocker: TASK-09-019 remaining medium/low correction gate; TASK-09-022 closed. Latest implementation checkpoint CI #246 is PASS.
+QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
+Next fresh ACT ID: **ACT-198**
 
-## شمارش رسمی ریزتسک‌ها — ACT-185
+## شمارش رسمی ریزتسک‌ها
 
-- کل ریزتسک‌های شماره‌گذاری‌شده: **204**
+- کل: **204**
 - DONE: **134**
 - IN_PROGRESS: **32**
 - TODO: **37**
@@ -17,158 +18,68 @@ Overall status: IN_PROGRESS
 - BLOCKED: **0**
 - DEPRECATED: **0**
 
-این شمارش با استخراج مستقیم تمام خطوط یکتای `TASK-*` از همین ROADMAP انجام شده است.
-
-**نقطه فعلی اجرا:** PHASE-06 — Core Frontend Product Experience.
-
-**وضعیت QA:** TASK-09-022 بسته شد. CI #218 روی HEAD فعلی سبز است؛ وابستگی اصلی اکنون runtime/browser acceptance خود PHASE-06 است.
+این شمارش همان ledger فعلی ROADMAP است؛ هیچ Task جدیدی در correction series اضافه نشده است.
 
 ## وضعیت فازها
 
 | Phase | Status | وضعیت واقعی |
 |---|---|---|
 | PHASE-00 | DONE | Documentation foundation |
-| PHASE-01 | DONE | Product specification and acceptance contracts |
-| PHASE-02 | DONE | Architecture and technical boundaries |
-| PHASE-03 | DONE | Calendar Engine + Domain + core regression coverage |
-| PHASE-04 | DONE | Application use-cases, auth, personal layer, recurrence, search |
-| PHASE-05 | DONE | Frontend architecture, design system, RTL/LTR, responsive/accessibility foundations |
-| PHASE-06 | IN_PROGRESS | Core product pages implemented; runtime/browser acceptance and image-rich event presentation remain |
-| PHASE-07 | IN_PROGRESS | PWA baseline exists; final visual polish, time/season states and install UX remain |
-| PHASE-08 | IN_PROGRESS | Editorial workflow is defined; published historical event dataset intentionally empty |
-| PHASE-09 | IN_PROGRESS | Automated pipeline is green on current HEAD; full device/product acceptance and final QA remain open |
-| PHASE-10 | TODO | Release / production / final handoff |
+| PHASE-01 | DONE | Product specification |
+| PHASE-02 | DONE | Architecture and boundaries |
+| PHASE-03 | DONE | Calendar Engine + Domain |
+| PHASE-04 | DONE | Application/backend use cases |
+| PHASE-05 | DONE | Frontend architecture/design system |
+| PHASE-06 | IN_PROGRESS | Core pages implemented; runtime/browser/product acceptance remains |
+| PHASE-07 | IN_PROGRESS | Visual polish, time/season states and install UX remain |
+| PHASE-08 | IN_PROGRESS | Editorial review and historical dataset remain |
+| PHASE-09 | IN_PROGRESS | Automated pipeline green; final QA remains |
+| PHASE-10 | TODO | Release |
 
-## Current product state
+## وضعیت واقعی implementation
 
-Implemented structure:
-- Today
-- Monthly Calendar
-- Day Detail
-- Important Events
-- Event Detail
-- Timeline
-- People
-- Search
-- Login / Register
-- Personal Events
-- Personal Person
-- Memories
-- Recurrence
+Implemented and validated:
+- Calendar Engine and Imperial date rules
+- Gregorian ↔ Imperial conversion
+- leap-year break-point algorithm + regression matrix
+- Today / Calendar / Day Detail
+- Event / Important Event / Person / Timeline / Search routes
+- Authentication / sessions
+- Personal Event / Personal Person / Memory
+- recurrence
 - Personal Share Card
-- Persian + English
-- RTL + LTR
-- Public/personal separation
-- Public fallbacks when personal storage is unavailable
-- PWA baseline: manifest, service worker, offline route, standard icons
-- Playwright smoke coverage for desktop/tablet/mobile Chromium
+- Persian + English / RTL + LTR
+- public/personal separation
+- graceful public fallback when personal storage is unavailable
+- PWA baseline
+- Playwright smoke coverage for desktop/tablet/mobile
 
-## Historical content state
+## Correction gate — ACT-186 follow-up
 
-`src/content/seed.ts` currently has:
-- `seedEvents = []`
-- 5 public people
-- 2 historical periods
-- 6 reference sources
+تمام findings اجراییِ ثبت‌شده در ACT-186 اکنون در کد اصلاح و در CI #281 اعتبارسنجی شده‌اند:
+- HIGH-01 Presentation/Data boundary — CLOSED
+- HIGH-02 Event slug/routing — CLOSED
+- HIGH-03 Period exact-date containment — CLOSED
+- MEDIUM-01 Personal Person unlink semantics — CLOSED
+- MEDIUM-02 Recurrence clear semantics — CLOSED
+- MEDIUM-03 Optional-field clear semantics — CLOSED
+- MEDIUM-04 Public search approval filtering — CLOSED
+- MEDIUM-05 Ranged-event date matching — CLOSED
+- MEDIUM-06 Timeline event nodes — CLOSED
+- MEDIUM-07 Share Card theme treatment — CLOSED
+- MEDIUM-09 Lint gate — CLOSED
+- LOW-01 Session lastSeenAt lifecycle — CLOSED
+- LOW-02 AuthorizationError consistency — CLOSED
+- LOW-03 Memory relationship ownership validation — CLOSED
 
-This empty event seed is intentional. No public historical event may be inserted until the month-by-month editorial review is completed and the user explicitly approves the final candidate list.
+دو موضوع هنوز باز هستند، اما از جنس release/acceptance هستند نه «کد خرابِ شناخته‌شده»:
+- MEDIUM-08: گسترش E2E به English flow، recurrence browser acceptance، memory CRUD، share-card behavior، accessibility، swipe و visual acceptance.
+- MEDIUM-10: نبود `package-lock.json`؛ برای reproducible release باید در محیط دارای package-manager/network به‌صورت رسمی تولید و commit شود.
 
-## Important Events product contract
+## Editorial state
 
-The intended experience is already part of the approved requirements:
-1. Show important events for the selected/current Imperial month.
-2. Each published important event has a suitable hero image.
-3. Event card is clickable.
-4. Click opens a dedicated Event Detail page.
-5. Detail provides fuller narrative/context plus date, people, period, related events and sources.
-6. Additional images/documents can be shown when available.
+`seedEvents = []` همچنان عمداً خالی است. هیچ رویداد تاریخی عمومی بدون editorial approval وارد محصول نشده است.
 
-Current implementation:
-- monthly Important Events listing exists;
-- empty editorial-pending state exists;
-- cards link to Event Detail;
-- Event Detail currently renders date, narrative/summary, people, related events and sources;
-- image/hero/gallery presentation is not complete yet;
-- no historical event is currently published.
+## مسیر بعدی
 
-## Latest CI truth
-
-Current HEAD: latest documentation checkpoint after ACT-188.
-- implementation baseline: `4e06741359d86cd2194b5cacbcb4c2d9e81c4fd1`
-- CI #244 — PASS for ACT-187 checkpoint
-- CI #246 — PASS for ACT-188 checkpoint
-- migration: PASS
-- typecheck: PASS
-- unit/integration: PASS
-- production build: PASS
-- browser smoke: PASS
-
-The current automated baseline is green. This does **not** mean PHASE-06 is DONE: manual/runtime product acceptance, device interaction coverage beyond the automated smoke, and the approved image-rich Event Detail presentation remain open.
-
-## Current Phase-06 functional progress
-
-- Personal Event authenticated create/persistence/logout flow has browser coverage.
-- Personal Person is listed in the Personal UI and can be linked to a Personal Event.
-- Personal Person ownership is enforced at the application boundary and regression-tested.
-- Personal form labels/types are localized for Persian and English.
-- No specialized visual-design work was introduced in this checkpoint.
-
-## Closed QA blocker and current acceptance state
-
-No active E2E dataset mismatch remains. `seedEvents = []` is intentional and the browser smoke suite is aligned with that policy.
-
-## Audit findings / immediate correction gate
-
-ACT-186 verified the architecture direction and found three HIGH implementation gaps (presentation dependency leaks, optional Event slug routing contract, and incomplete Period date containment) plus several MEDIUM quality/acceptance gaps. These must be handled under TASK-09-019 before final product acceptance.
-
-## Immediate next actions
-
-1. Execute browser/runtime acceptance on desktop, tablet and mobile for fa/RTL and en/LTR.
-2. Close remaining PHASE-06 functional acceptance gaps.
-3. Only after PHASE-06 acceptance, move to PHASE-07 visual polish.
-4. Close remaining PHASE-06 acceptance gaps.
-5. Continue PHASE-07 visual polish and app-like states.
-6. Start PHASE-08 month-by-month event review from the first calendar month in product order; publish only explicitly approved events and their media metadata.
-7. Finish PHASE-09 release-blocker review.
-8. Execute PHASE-10 release and final handoff.
-
-## Documentation checkpoint
-
-ACT-158 through ACT-183 cover the implementation and validation work in this checkpoint; ACT-184 is the documentation synchronization checkpoint; ACT-186 records the independent architecture/implementation audit.
-
-## ACT / history note
-
-There is a historical ACT-ID collision in Git commit messages:
-- ACT-150 was used for two unrelated changes.
-- ACT-151 was used for two unrelated changes.
-- ACT-155 is not present in the current commit search result.
-
-These historical commits are immutable and should not be rewritten. From the next checkpoint onward, new ACT IDs must never be reused.
-
-Next fresh ACT ID: **ACT-189**
-
-## Continuation rule
-
-A meaningful change requires:
-- a fresh ACT ID;
-- CHANGELOG entry;
-- synchronized STATUS/ROADMAP;
-- DECISIONS/REQUIREMENTS update when policy changes;
-- validation evidence before claiming PASS/DONE.
-
-GitHub `main` and these documents are the source of truth for continuation; the previous chat is not required.
-
-
-## Current branch note
-
-The code implementation baseline for this checkpoint is `e3107be19485199f3e725a1bbc40ceb86b72f88b`. Subsequent checkpoint commits only synchronize documentation; use the Git history and this file to identify any future code change separately.
-
-
-## Final checkpoint note
-
-ACT-160 changed documentation only. Implementation baseline remains e3107be19485199f3e725a1bbc40ceb86b72f88b. Next fresh ACT ID: **ACT-163**.
-
-
-## Final continuation counter
-
-Next fresh ACT ID: **ACT-185**. ACT-163 through ACT-183 are recorded in CHANGELOG; ACT-184 synchronizes the final checkpoint.
+**PHASE-06 runtime/browser acceptance** → closure PHASE-06 → PHASE-07 visual polish → PHASE-08 editorial dataset → PHASE-09 final QA → PHASE-10 release.

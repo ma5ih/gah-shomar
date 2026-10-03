@@ -1,6 +1,6 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 2.3.0
+Version: 2.4.0
 Last updated: 2026-10-04
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
@@ -263,11 +263,10 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-09-016 — Performance QA — TODO
 - TASK-09-017 — PWA QA — IN_PROGRESS
 - TASK-09-018 — Visual Consistency QA — TODO
-- TASK-09-019 — Critical Bug Fixes — IN_PROGRESS
-  - ACT-186 HIGH-01: implementation corrected through server composition boundary; final CI validation pending
-  - ACT-186 HIGH-02: published Event slug/routing contract corrected via slug-or-id retrieval
-  - ACT-186 HIGH-03: Period date containment corrected and regression-tested
-  - MEDIUM update semantics, range/search hardening follow-up, share-card theme, lint/reproducibility and broader acceptance remain open
+- TASK-09-019 — Critical Bug Fixes — DONE
+  - All verified implementation findings from ACT-186 are closed through ACT-189..ACT-196.
+  - CI #281 validates lint, typecheck, unit/integration, production build and browser smoke on the corrected HEAD.
+  - The missing package-lock is tracked as a release reproducibility concern, not an unresolved application bug.
 - TASK-09-020 — Release Blocker Review — TODO
 - TASK-09-021 — Final Product Review — TODO
 - TASK-09-022 — E2E Dataset/Editorial Alignment — DONE
@@ -291,7 +290,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 **PRIMARY WORKSTREAM:** PHASE-06 — Core Frontend Product Experience — IN_PROGRESS
 **QA BLOCKER:** TASK-09-022 in PHASE-09 — DONE
 
-**NEXT:** TASK-09-019 critical correction gate → PHASE-06 runtime/browser acceptance → PHASE-06 closure → PHASE-07 polish → PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release.
+**NEXT:** PHASE-06 runtime/browser acceptance → PHASE-06 closure → PHASE-07 polish → PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release.
 
 نکته: PHASE-09 در این checkpoint «فاز جاری محصول» نیست؛ یک QA gate باز است که blocker آن باید پیش از acceptance نهایی PHASE-06 بسته شود.
 

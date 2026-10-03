@@ -22,7 +22,7 @@ Last updated: 2026-10-04
 
 ## Current implementation audit addendum — ACT-186 / ACT-188
 
-Architecture specification همچنان APPROVED است، اما implementation audit فعلی چند dependency leak در Presentation و چند contract gap را verified کرد. Dependency leakهای اصلی اکنون از مسیر server composition boundary اصلاح شده‌اند؛ validation نهایی آن‌ها در CI #246 pending است. این موارد تحت TASK-09-019 باید اصلاح و سپس در PHASE-09 دوباره validation شوند.
+Architecture specification همچنان APPROVED است، اما implementation audit فعلی چند dependency leak در Presentation و چند contract gap را verified کرد. Dependency leakهای اصلی اکنون از مسیر server composition boundary اصلاح شده‌اند و در CI #281 به‌صورت کامل validation شده‌اند. کل correction gate پیرو ACT-186 در TASK-09-019 بسته شده است؛ موارد باز فعلی به runtime/product acceptance و release reproducibility محدود هستند.
 
 ## Findings
 

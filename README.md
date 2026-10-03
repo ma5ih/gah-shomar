@@ -31,7 +31,7 @@
 - CI workflow برای typecheck + unit test + production build
 
 ### وضعیت اعتبارسنجی
-CI فعلی شامل migration، typecheck، unit/integration tests، production build و Playwright browser smoke است. ACT-187 checkpoint در run #244 موفق شد و ACT-188 checkpoint در run #246 نیز با SUCCESS کامل شد. Product acceptance و release QA هنوز باز هستند. با این حال product acceptance و release QA هنوز باز هستند.
+CI فعلی شامل migration، ESLint، typecheck، unit/integration tests، production build و Playwright browser smoke است. checkpoint فعلی run #281 با SUCCESS کامل شده است. Product acceptance و release QA هنوز باز هستند.
 
 ## مهم‌ترین اسناد
 - `docs/PROJECT.md` — تعریف کامل محصول
@@ -44,7 +44,7 @@ CI فعلی شامل migration، typecheck، unit/integration tests، production
 - `docs/CALENDAR-SPEC.md` — قرارداد تقویم
 - `docs/CALENDAR-ENGINE-OPEN-QUESTION.md` — وضعیت نهایی تصمیم کبیسه
 - `docs/INDEX.md` — فهرست مرکزی اسناد
-- `docs/ARCHITECTURE-IMPLEMENTATION-AUDIT-2026-10-04.md` — آخرین audit مستقل implementation
+- `docs/ARCHITECTURE-IMPLEMENTATION-AUDIT-2026-10-04.md` — آخرین audit مستقل implementation و وضعیت follow-upهای آن
 
 ## Calendar Engine
 تقویم اصلی خورشیدی با شماره‌گذاری شاهنشاهی است:

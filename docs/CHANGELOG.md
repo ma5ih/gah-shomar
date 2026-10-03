@@ -1,3 +1,80 @@
+## ACT-197 — 2026-10-04
+Type: DOCUMENTATION-CHECKPOINT
+Status: DONE
+
+- STATUS, ROADMAP, CHANGELOG, AUDIT, ARCHITECTURE, QUALITY, HANDOFF, INDEX, ARCHITECTURE-REVIEW و README با HEAD واقعی همگام شدند.
+- HEAD: `1f28a0306c446beb89f279a69a382814090d4e7a`
+- CI #281: PASS کامل.
+- TASK-09-019 به DONE منتقل شد؛ فقط release reproducibility (lockfile) و broader product acceptance باز هستند.
+- Next fresh ACT ID: ACT-198.
+
+## ACT-196 — 2026-10-04
+Type: TYPE-CONTRACT-CORRECTION
+Status: DONE
+
+- Personal Event create/update helper با overloadهای جداگانه اصلاح شد.
+- create دیگر هیچ‌وقت `recurrence: null` تولید نمی‌کند.
+- CI #281: PASS کامل.
+
+## ACT-195 — 2026-10-04
+Type: TYPE-COMPATIBILITY-CORRECTION
+Status: DONE
+
+- `exactOptionalPropertyTypes` در Personal Action inputها به‌صورت صریح مدیریت شد.
+- Locale copy type در Personal Page از Persian-only به union صحیح اصلاح شد.
+- CI #280 در build type-check متوقف شد و اصلاح در ACT-196 تکمیل شد.
+
+## ACT-194 — 2026-10-04
+Type: TYPE-CONTRACT-CORRECTION
+Status: DONE
+
+- import نوع `GregorianDate` در Calendar Application که هنگام lint-cleanup حذف شده بود، به قرارداد صحیح برگردانده شد.
+- CI #279 تا build با type-check کامل شد و سپس به‌دلیل Personal Action contract متوقف شد.
+
+## ACT-193 — 2026-10-04
+Type: LINT-CLEANUP
+Status: DONE
+
+- regression testهای Personal Update از `{}` به `Calls` تایپ‌شده منتقل شدند.
+- import بلااستفاده Calendar پاک شد.
+- CI #278 lint/typecheck را تا build رساند؛ سپس type contract مستقل در ACT-194 اصلاح شد.
+
+## ACT-192 — 2026-10-04
+Type: LINT-CLEANUP
+Status: DONE
+
+- `Personal Page` از `any`ها به typeهای واقعی domain منتقل شد.
+- JSX از داخل `try/catch` خارج شد؛ فقط data fetch در try قرار گرفت.
+- CI #277 lint findingهای بعدی را به regression test/unused type محدود کرد.
+
+## ACT-191 — 2026-10-04
+Type: QUALITY-GATE-CORRECTION
+Status: DONE
+
+- ESLint از compatibility layer ناسازگار به native Flat Config منتقل شد.
+- `@eslint/eslintrc` از devDependencies حذف شد.
+- CI #276 نشان داد lint وارد اجرای واقعی شده و سپس findingهای source را مشخص کرد.
+
+## ACT-190 — 2026-10-04
+Type: AUTHORIZATION-CORRECTION
+Status: DONE
+
+- `assertOwnership()` اکنون `AuthorizationError` استاندارد پروژه را throw می‌کند.
+- CI #275 به‌علت lint config قدیمی متوقف شد؛ اصلاح ESLint در ACT-191 انجام شد.
+
+## ACT-189 — 2026-10-04
+Type: TECHNICAL-CORRECTION
+Status: DONE
+
+- clear semantics برای Personal Person، recurrence، notes و optional Memory fields اصلاح شد.
+- session `lastSeenAt` هنگام استفاده از session فعال refresh می‌شود.
+- Memory reference validation در application layer تکمیل شد.
+- Timeline event nodes اضافه شد.
+- Share Card birthday theme واقعاً متمایز شد.
+- Lint gate به CI اضافه شد.
+- Public repository event range/search filtering سخت‌تر شد.
+- CI #274 اولین failure را در lint config نشان داد و correction series را آغاز کرد.
+
 ## ACT-187 — 2026-10-04
 Type: CRITICAL-CORRECTION
 Status: DONE

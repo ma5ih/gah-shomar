@@ -58,10 +58,10 @@ Calendar unit/regression tests اکنون برای month rules، leap-year، con
 ### Validation status
 - Test code: PRESENT
 - CI configuration: PRESENT
-- GitHub workflow result: NOT YET OBSERVED
+- GitHub workflow result: PASS — run #281
 - Therefore: هیچ PASS رسمی تا مشاهده run موفق ثبت نمی‌شود.
 
 ## Result
 TASK-02-019 تا TASK-02-021 DONE.
 
-Current quality gate: PHASE-09. Automated CI is green on current HEAD (#218), while product acceptance remains open. ACT-186 adds a verified correction queue covering presentation boundaries, routing/date contracts, update clear semantics, content filtering, ranged events, share-card themes, lint/reproducibility and broader E2E coverage.
+Current quality gate: PHASE-09. Automated CI is green on current HEAD (#281), including migration, lint, typecheck, unit/integration, production build and browser smoke. The ACT-186 implementation correction queue is closed; broader runtime/product acceptance and release reproducibility remain open.

@@ -252,3 +252,35 @@ Memory می‌تواند IDهای person/event/personalEvent بگیرد، ولی
 - Release readiness: **NOT YET**
 
 این audit به‌معنای DONE شدن هیچ Taskی نیست؛ فقط وضعیت واقعی و gapهای verified را ثبت می‌کند.
+
+
+## Follow-up status — ACT-197
+
+### Current implementation checkpoint
+- Current HEAD: `1f28a0306c446beb89f279a69a382814090d4e7a`
+- CI run: **#281 — SUCCESS**
+- Pipeline: migration, lint, typecheck, unit/integration, production build, Chromium install, browser smoke — all PASS.
+
+### Finding closure
+- HIGH-01: CLOSED — Presentation/Data access now flows through Application/server composition boundaries.
+- HIGH-02: CLOSED — Event detail resolves slug or ID.
+- HIGH-03: CLOSED — Period/day containment uses full ImperialDate comparison.
+- MEDIUM-01: CLOSED — Personal Person can be explicitly cleared.
+- MEDIUM-02: CLOSED — recurrence can be explicitly disabled.
+- MEDIUM-03: CLOSED — nullable patch semantics support clearing optional fields.
+- MEDIUM-04: CLOSED — public search uses approved/public repository views.
+- MEDIUM-05: CLOSED — ranged events are handled in day/month queries.
+- MEDIUM-06: CLOSED — timeline contains period and event nodes.
+- MEDIUM-07: CLOSED — Share Card renderer applies distinct birthday treatment.
+- MEDIUM-09: CLOSED — ESLint is a real CI gate using native Flat Config.
+- LOW-01: CLOSED — session lastSeenAt is refreshed on active token lookup.
+- LOW-02: CLOSED — ownership violations use AuthorizationError.
+- LOW-03: CLOSED — Memory public/private relationship references are validated.
+
+### Remaining non-bug gaps
+- MEDIUM-08 remains open as broader product acceptance coverage.
+- MEDIUM-10 remains open as release reproducibility work because `package-lock.json` is still absent.
+These do not invalidate the current application correction gate; they remain PHASE-09/PHASE-10 work.
+
+### Updated verdict
+The ACT-186 correction gate is **closed for implementation defects**. The project is ready to continue into PHASE-06 runtime/browser acceptance, not yet ready for final release.
