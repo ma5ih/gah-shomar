@@ -7,15 +7,17 @@ QA gate: PHASE-09 — Integration & QA
 QA blocker: none; TASK-09-022 closed and current HEAD validated by CI #199
 Overall status: IN_PROGRESS
 
-## شمارش رسمی ریزتسک‌ها — ACT-184
+## شمارش رسمی ریزتسک‌ها — ACT-185
 
-- کل: **193**
+- کل ریزتسک‌های شماره‌گذاری‌شده: **204**
 - DONE: **134**
 - IN_PROGRESS: **32**
-- TODO: **26**
+- TODO: **37**
 - DEFERRED: **1**
 - BLOCKED: **0**
 - DEPRECATED: **0**
+
+این شمارش با استخراج مستقیم تمام خطوط یکتای `TASK-*` از همین ROADMAP انجام شده است.
 
 **نقطه فعلی اجرا:** PHASE-06 — Core Frontend Product Experience.
 
