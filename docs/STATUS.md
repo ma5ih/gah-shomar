@@ -1,55 +1,132 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
 Last updated: 2026-10-03
+Current HEAD: `e3107be19485199f3e725a1bbc40ceb86b72f88b`
 Current phase: PHASE-09 — Integration & QA
 Overall status: IN_PROGRESS
 
-| Phase | Status | خلاصه |
+## وضعیت فازها
+
+| Phase | Status | وضعیت واقعی |
 |---|---|---|
-| PHASE-00 | DONE | Documentation |
-| PHASE-01 | DONE | Product specification |
-| PHASE-02 | DONE | Architecture |
-| PHASE-03 | DONE | Calendar engine + domain; unsupported historical calendars explicitly deferred |
+| PHASE-00 | DONE | Documentation foundation |
+| PHASE-01 | DONE | Product specification and acceptance contracts |
+| PHASE-02 | DONE | Architecture and technical boundaries |
+| PHASE-03 | DONE | Calendar Engine + Domain + core regression coverage |
 | PHASE-04 | DONE | Application use-cases, auth, personal layer, recurrence, search |
 | PHASE-05 | DONE | Frontend architecture, design system, RTL/LTR, responsive/accessibility foundations |
-| PHASE-06 | IN_PROGRESS | Core product implemented; runtime/device acceptance remains |
-| PHASE-07 | IN_PROGRESS | Visual polish + PWA baseline implemented; final polish remains |
-| PHASE-08 | IN_PROGRESS | 7 events, 5 people, 2 periods, 6 sourced references; dataset expansion remains |
-| PHASE-09 | IN_PROGRESS | Automated coverage strengthened; full product/device QA remains |
-| PHASE-10 | TODO | Release |
+| PHASE-06 | IN_PROGRESS | Core product pages implemented; runtime/browser acceptance and image-rich event presentation remain |
+| PHASE-07 | IN_PROGRESS | PWA baseline exists; final visual polish, time/season states and install UX remain |
+| PHASE-08 | IN_PROGRESS | Editorial workflow is defined; published historical event dataset intentionally empty |
+| PHASE-09 | IN_PROGRESS | Automated coverage exists, but latest HEAD is not formally green and full device acceptance is open |
+| PHASE-10 | TODO | Release / production / final handoff |
 
-## Current HEAD
-`6dfe546a189267726f8a5ebb8e0ee0b92281a123` — ACT-147.
+## Current product state
 
-## Latest event-content decision
-- Public historical event seed is intentionally empty.
-- Daily event sections and the Important Events page remain implemented and safely render an editorial-pending empty state.
-- Events will be researched and reviewed month by month; only explicitly approved items will be published.
+Implemented structure:
+- Today
+- Monthly Calendar
+- Day Detail
+- Important Events
+- Event Detail
+- Timeline
+- People
+- Search
+- Login / Register
+- Personal Events
+- Personal Person
+- Memories
+- Recurrence
+- Personal Share Card
+- Persian + English
+- RTL + LTR
+- Public/personal separation
+- Public fallbacks when personal storage is unavailable
+- PWA baseline: manifest, service worker, offline route, standard icons
+- Playwright smoke coverage for desktop/tablet/mobile Chromium
 
-## Verified CI
-- ACT-133 / run #102: PASS — migration, typecheck, tests, production build.
-- ACT-132 / run #101: PASS.
-- ACT-134 / run #103: PASS.
-- ACT-135 / run #104: FAILED because old application tests still asserted removed demo IDs; fixed by ACT-137.
-- ACT-136 / run #105: FAILED for the same stale demo assertions; ACT-137 fixed them.
-- ACT-137 / run #106: pending at snapshot time.
-- ACT-138 / run #107: pending at snapshot time.
+## Historical content state
 
-## Recent implementation
-- Resilient public Today/Calendar/Day/Search when personal storage fails.
-- PWA manifest, service worker, offline page, app icon and safe-area/mobile navigation polish.
-- Real source-backed historical seed replacing demo data.
-- Relationship/source validation tests.
-- Application tests migrated from demo content.
-- PWA and personal-storage resilience acceptance tests.
+`src/content/seed.ts` currently has:
+- `seedEvents = []`
+- 5 public people
+- 2 historical periods
+- 6 reference sources
 
-## Remaining work
-1. Verify the CI runs triggered by ACT-142 through ACT-147.
-2. Complete browser/runtime and mobile/tablet/desktop acceptance.
-3. Finish Phase-07 visual polish, time/season visual states and install UX.
-4. Run the monthly event-review workflow; publish only user-approved events, then expand historical content and editorial/media QA.
-5. Complete Phase-09 release-blocker review and final QA.
-6. Execute Phase-10 production/release/handoff.
+This empty event seed is intentional. No public historical event may be inserted until the month-by-month editorial review is completed and the user explicitly approves the final candidate list.
+
+## Important Events product contract
+
+The intended experience is already part of the approved requirements:
+1. Show important events for the selected/current Imperial month.
+2. Each published important event has a suitable hero image.
+3. Event card is clickable.
+4. Click opens a dedicated Event Detail page.
+5. Detail provides fuller narrative/context plus date, people, period, related events and sources.
+6. Additional images/documents can be shown when available.
+
+Current implementation:
+- monthly Important Events listing exists;
+- empty editorial-pending state exists;
+- cards link to Event Detail;
+- Event Detail currently renders date, narrative/summary, people, related events and sources;
+- image/hero/gallery presentation is not complete yet;
+- no historical event is currently published.
+
+## Latest CI truth
+
+Confirmed green baseline:
+- ACT-133 / run #102: migration + typecheck + unit/integration tests + production build PASS.
+
+Latest recorded run for current HEAD:
+- run #134
+- SHA `e3107be19485199f3e725a1bbc40ceb86b72f88b`
+- status recorded as `IN_PROGRESS`
+
+Therefore:
+- current HEAD must not be called CI-green or release-ready;
+- a successful run after the latest test/data changes must be observed before recording PASS.
+
+## Known QA blocker / mismatch
+
+`tests/e2e/public-smoke.spec.ts` still contains assertions for the removed demo event:
+- route `/events/constitutional-decree-1906`
+- title `صدور فرمان مشروطیت`
+- search result for `فرمان مشروطیت`
+
+Those assertions conflict with the current editorial rule that `seedEvents` is empty.
+
+This is a real QA mismatch, not a documentation-only issue.
+
+## Immediate next actions
+
+1. Align E2E/browser-smoke expectations with the editorial-empty event dataset.
+2. Re-run/observe the complete CI pipeline on the resulting HEAD.
+3. Execute browser/runtime acceptance on desktop, tablet and mobile for fa/RTL and en/LTR.
+4. Close remaining PHASE-06 acceptance gaps.
+5. Continue PHASE-07 visual polish and app-like states.
+6. Start PHASE-08 month-by-month event review from the first calendar month in product order; publish only explicitly approved events and their media metadata.
+7. Finish PHASE-09 release-blocker review.
+8. Execute PHASE-10 release and final handoff.
+
+## ACT / history note
+
+There is a historical ACT-ID collision in Git commit messages:
+- ACT-150 was used for two unrelated changes.
+- ACT-151 was used for two unrelated changes.
+- ACT-155 is not present in the current commit search result.
+
+These historical commits are immutable and should not be rewritten. From the next checkpoint onward, new ACT IDs must never be reused.
+
+Next fresh ACT ID: **ACT-159**
 
 ## Continuation rule
-Every meaningful change gets an ACT ID, changelog entry, tests/validation and synchronized STATUS/ROADMAP.
+
+A meaningful change requires:
+- a fresh ACT ID;
+- CHANGELOG entry;
+- synchronized STATUS/ROADMAP;
+- DECISIONS/REQUIREMENTS update when policy changes;
+- validation evidence before claiming PASS/DONE.
+
+GitHub `main` and these documents are the source of truth for continuation; the previous chat is not required.
