@@ -2,7 +2,7 @@
 
 Status: RESOLVED
 Task: TASK-03-004
-Action: ACT-061
+Action: ACT-060 / ACT-061
 Last updated: 2026-10-03
 
 ## تصمیم
@@ -34,8 +34,11 @@ Last updated: 2026-10-03
 
 TASK-03-004: DONE
 
+Current Calendar Engine implementation is no longer blocked by leap-year logic. Conversion, Today, arithmetic, weekday, time-of-day and season are implemented; current validation work is tracked under TASK-03-023 through TASK-03-025.
+
 
 ## ACT-061 — 2026-10-03
+Status: DONE
 Status: DONE
 
 تبدیل روزانه Gregorian ↔ Imperial بر پایه همان الگوریتم تثبیت‌شده Calendar Engine پیاده‌سازی شد. تست‌های regression و round-trip اضافه شده‌اند؛ اجرای CI هنوز pending است.
