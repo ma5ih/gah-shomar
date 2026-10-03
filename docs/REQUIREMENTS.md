@@ -2,7 +2,7 @@
 
 Version: 1.0.0
 Status: APPROVED
-Last updated: 2026-10-02
+Last updated: 2026-10-03
 
 ## نیازمندی‌های تأییدشده
 
@@ -51,6 +51,8 @@ Last updated: 2026-10-02
 - REQ-040 — تاریخ اصلی منبع تاریخی و معادل شاهنشاهی باید همزمان قابل نگهداری باشند.
 - REQ-041 — منطق تقویم نباید داخل UI تکرار یا پیاده‌سازی شود.
 - REQ-042 — Calendar Engine باید طول ماه‌ها، کبیسه، روز هفته، محاسبات تاریخ و تبدیل‌ها را پوشش دهد.
+- REQ-081 — Calendar Engine باید Today، Time-of-day و Seasonal state را به‌صورت domain/application contracts قابل تست ارائه کند.
+- REQ-082 — CI پروژه باید حداقل typecheck، unit tests و production build را اجرا کند؛ تا مشاهده run موفق، PASS رسمی ثبت نشود.
 
 ## نیازمندی‌های MVP
 
@@ -129,11 +131,12 @@ Last updated: 2026-10-02
 
 ### کیفیت، تست و Scope
 
-- AC-035 — تست‌های واحد مربوط به Calendar Engine، conversion و edge caseهای سال باید وجود داشته باشند و PASS شوند.
+- AC-035 — تست‌های واحد مربوط به Calendar Engine، conversion و edge caseهای سال باید وجود داشته باشند و در CI قابل اجرا باشند؛ پذیرش نهایی منوط به PASS شدن CI است.
 - AC-036 — مدل‌های اصلی Event، Person، Personal Event و Memory باید تست‌های رفتاری/قراردادی پایه داشته باشند.
 - AC-037 — تغییرات مربوط به مرز سال، conversion، recurrence و داده‌های شخصی باید دارای regression coverage باشند تا تغییرات بعدی منطق قبلی را نشکنند.
 - AC-038 — هیچ قابلیت خارج از Scope مصوب MVP نباید برای تکمیل یک acceptance criterion به‌صورت پنهان وارد محصول شود.
 - AC-039 — معیار پذیرش نهایی MVP باید بر اساس نتیجه تست و QA بررسی شود، نه صرفاً ظاهر صفحه یا وجود کد.
+- AC-040 — وضعیت test/build نباید بدون مشاهده نتیجه اجرا PASS اعلام شود.
 
 ## ادامه PHASE-01 پس از REQUIREMENTS v1.0
 
@@ -191,7 +194,7 @@ Account/Auth و Personal Share Card در سطح Requirements نهایی هستن
 
 ## وضعیت نسخه
 
-- Requirements version: 1.0.0
+- Requirements version: 1.1.0
 - Product requirements: APPROVED
 - Acceptance criteria: AC-001 تا AC-039
 - Scope boundaries: APPROVED
