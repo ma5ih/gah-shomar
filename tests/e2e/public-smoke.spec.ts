@@ -22,6 +22,19 @@ test.describe("public product smoke",()=>{
   await page.goto("/personal?lang=fa");await expect(page.getByText(/ورود|Sign in/)).toBeVisible();
  });
  test("English locale switches the shell to LTR",async({page})=>{await page.goto("/?lang=en");await expect(page.locator("html")).toHaveAttribute("lang","en");await expect(page.locator("html")).toHaveAttribute("dir","ltr");await expect(page.locator(".app-shell")).toHaveAttribute("dir","ltr");});
+ test("Theme A time and season states expose valid presentation hooks",async({page})=>{
+  await page.goto("/?lang=en");
+  const hero=page.locator(".hero");
+  await expect(hero).toHaveAttribute("data-time-of-day",/^(morning|noon|sunset|night)$/);
+  await expect(hero).toHaveAttribute("data-season",/^(spring|summer|autumn|winter)$/);
+ });
+ test("Mobile pages do not create unexpected horizontal overflow",async({page})=>{
+  await page.setViewportSize({width:390,height:844});
+  for(const path of ["/?lang=en","/calendar?lang=en&year=2465&month=5","/timeline?lang=en","/search?lang=en"]){
+   await page.goto(path);
+   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
+  }
+ });
  test("Primary navigation is keyboard reachable",async({page})=>{await page.goto("/?lang=fa");await page.keyboard.press("Tab");await expect(page.locator(":focus-visible")).toBeVisible();});
  test("PWA install prompt appears when browser exposes install capability",async({page})=>{
   await page.goto("/?lang=en");
@@ -43,6 +56,12 @@ test("PWA manifest and standard icons are exposed",async({request})=>{
   await page.getByRole("gridcell",{name:"1",exact:true}).click();
   await expect(page).toHaveURL(/\/day\/2465\/5\/1\?lang=fa$/);
   await expect(page.getByRole("heading",{level:1})).toBeVisible();
+ });
+ test("Calendar swipe moves to the adjacent month",async({page})=>{
+  await page.goto("/calendar?lang=en&year=2465&month=5");
+  await page.dispatchEvent(".calendar-surface","touchstart",{touches:[{clientX:300}]});
+  await page.dispatchEvent(".calendar-surface","touchend",{changedTouches:[{clientX:180}]});
+  await expect(page).toHaveURL(/\/calendar\?lang=en&year=2465&month=6$/);
  });
  test("Calendar navigation moves between months",async({page})=>{
   await page.goto("/calendar?lang=en&year=2465&month=5");
