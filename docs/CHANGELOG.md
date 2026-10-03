@@ -1,3 +1,19 @@
+## ACT-064 — 2026-10-03
+Type: CALENDAR-ENGINE-DATE-ARITHMETIC
+Status: DONE
+
+### انجام شد
+- `addImperialDays()` و `differenceInImperialDays()` به Calendar Domain اضافه شدند.
+- محاسبه بر پایه Julian Day انجام می‌شود تا جابه‌جایی‌های بزرگ و عبور از مرز ماه/سال بدون حلقه‌های روزبه‌روز انجام شوند.
+- regression test برای مرز ماه، روز کبیسه، عبور سال و اختلاف روزها اضافه شد.
+- timezone و UI همچنان خارج از این منطق باقی مانده‌اند.
+
+### وضعیت تست
+- testها نوشته شده‌اند؛ اجرای CI برای commitهای جدید هنوز تأیید نشده است.
+
+### Next
+TASK-03-010 — Weekday Calculation
+
 ## ACT-063 — 2026-10-03
 Type: CALENDAR-ENGINE-HISTORICAL
 Status: IN_PROGRESS
