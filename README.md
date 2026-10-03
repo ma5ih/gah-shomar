@@ -52,10 +52,11 @@ Product acceptance و release QA هنوز باز هستند.
 ## وضعیت جاری
 Correction gate مربوط به ACT-186 و correctionهای بعدی بسته شده‌اند.
 Current implementation HEAD: 5791e3e89aabcd75fd856e03e9a05023d009dbcc
-Current documentation checkpoint: **ACT-209**
+Current documentation checkpoint: **ACT-210**
 TASK-07-001 — Final Visual Hierarchy برای Theme A — **DONE**.
-Next task: **TASK-07-002 — Spacing/Margin Consistency — TODO**.
-Next fresh ACT ID: **ACT-210**.
+TASK-07-002 — Spacing/Margin Consistency — **IN_PROGRESS**.
+ACT-210 implementation commit: dadfc21de5bbc1c262774b47c539bd10c1072414.
+Next fresh ACT ID: **ACT-211**.
 
 ## Visual Theme separation
 
