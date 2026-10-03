@@ -34,29 +34,29 @@ describe("Imperial calendar month rules", () => {
 });
 
 describe("Imperial calendar leap-year rules", () => {
-  it("supports the known modern sequence", () => {
+  it("supports the complete documented modern sequence through Solar Hijri 1449", () => {
     const expected = [
-      2579,
-      2583,
-      2588,
-      2592,
-      2596,
-      2600,
-      2604,
-      2608,
+      2571, 2575, 2579,
+      2583, 2588, 2592, 2596, 2600, 2604, 2608,
+      2612, 2616, 2621, 2625, 2629,
     ];
 
-    for (const year of expected) {
-      expect(isImperialLeapYear(year)).toBe(true);
+    const actual: number[] = [];
+    for (let year = 2571; year <= 2629; year += 1) {
+      if (isImperialLeapYear(year)) {
+        actual.push(year);
+      }
     }
+
+    expect(actual).toEqual(expected);
   });
 
-  it("preserves the Solar Hijri 1440/1441 transition after the +1180 offset", () => {
+  it("preserves the known 1440/1441 transition after the +1180 offset", () => {
     expect(isImperialLeapYear(2620)).toBe(false);
     expect(isImperialLeapYear(2621)).toBe(true);
   });
 
-  it("preserves five-year leap gaps", () => {
+  it("preserves five-year leap gaps without hard-coded exceptions", () => {
     expect(isImperialLeapYear(2583)).toBe(true);
     expect(isImperialLeapYear(2588)).toBe(true);
     expect(isImperialLeapYear(2584)).toBe(false);
