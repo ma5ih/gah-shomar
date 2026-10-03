@@ -1,3 +1,15 @@
+## ACT-166 — 2026-10-03
+Type: PRODUCT-COPY-CORRECTION
+Status: DONE
+
+- Historical-content notice in Persian and English now accurately states that public historical events are under month-by-month editorial review and approval.
+- No historical event data was added.
+- CI run #173 passed the full quality + browser-smoke pipeline.
+- Primary workstream remains PHASE-06; no specialized visual-design work was introduced.
+- Next fresh ACT ID: ACT-167.
+
+---
+
 ## ACT-165 — 2026-10-03
 Type: TEST-ACCEPTANCE-ALIGNMENT
 Status: DONE
