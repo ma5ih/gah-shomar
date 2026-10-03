@@ -1,8 +1,8 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.23.0
-Last update: 2026-10-04
+Index version: 2.24.0
+Last update: 2026-10-04 — ACT-209
 Current phase: PHASE-06 — Core Frontend Product Experience (QA gate: PHASE-09)
 
 ## اسناد
@@ -67,10 +67,10 @@ PHASE-09: IN_PROGRESS
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-208 — بسته‌شدن TASK-07-001 برای Theme A پس از validation و CI موفق.
+ACT-209 — همگام‌سازی کامل اسناد پس از بسته‌شدن TASK-07-001 برای Theme A.
 
 ## اقدام بعدی
-ادامه تسک‌های باقی‌مانده PHASE-07؛ Theme B فعلاً خارج از Scope است.
+**TASK-07-002 — Spacing/Margin Consistency — TODO**؛ اجرای بصری فعلی فقط Theme A است و Theme B خارج از Scope می‌ماند.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.
