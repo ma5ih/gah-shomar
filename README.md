@@ -1,6 +1,6 @@
 # گاه‌شمار | Calendar App
 
-> **Current status: PHASE-03 — Core Backend / Domain / Calendar Engine — IN_PROGRESS**
+> **Current status: PHASE-06 — Core Frontend Product Experience — IN_PROGRESS**
 
 این repository مرجع اصلی و Source of Truth پروژه «گاه‌شمار» است. وضعیت واقعی پروژه باید از اسناد GitHub خوانده شود، نه از چت‌های قبلی.
 
@@ -8,8 +8,14 @@
 - PHASE-00 Documentation — DONE
 - PHASE-01 Product / Specification — DONE
 - PHASE-02 Architecture — DONE
-- PHASE-03 Core Backend / Calendar Engine — IN_PROGRESS
-- PHASE-04 تا PHASE-10 — TODO
+- PHASE-03 Core Backend / Calendar Engine — DONE
+- PHASE-04 Application Backend / Use Cases — DONE
+- PHASE-05 Frontend Architecture & Design System — DONE
+- PHASE-06 Core Frontend Product Experience — IN_PROGRESS
+- PHASE-07 Visual Polish & PWA — IN_PROGRESS
+- PHASE-08 Historical Content / Editorial Dataset — IN_PROGRESS
+- PHASE-09 Integration & QA — IN_PROGRESS
+- PHASE-10 Release — TODO
 
 ### کارهای انجام‌شده اخیر در PHASE-03
 - Imperial Date Type، Year/Month/Day و Month Lengths
@@ -25,7 +31,7 @@
 - CI workflow برای typecheck + unit test + production build
 
 ### وضعیت اعتبارسنجی
-تست‌ها و CI نوشته شده‌اند، اما GitHub برای workflow جدید هنوز run گزارش نکرده است؛ بنابراین repository فعلاً هیچ test/build را به‌عنوان PASS اعلام نمی‌کند.
+CI فعلی شامل migration، typecheck، unit/integration tests، production build و Playwright browser smoke است و آخرین run فعلی #218 با SUCCESS تمام شده است. با این حال product acceptance و release QA هنوز باز هستند.
 
 ## مهم‌ترین اسناد
 - `docs/PROJECT.md` — تعریف کامل محصول
@@ -38,6 +44,7 @@
 - `docs/CALENDAR-SPEC.md` — قرارداد تقویم
 - `docs/CALENDAR-ENGINE-OPEN-QUESTION.md` — وضعیت نهایی تصمیم کبیسه
 - `docs/INDEX.md` — فهرست مرکزی اسناد
+- `docs/ARCHITECTURE-IMPLEMENTATION-AUDIT-2026-10-04.md` — آخرین audit مستقل implementation
 
 ## Calendar Engine
 تقویم اصلی خورشیدی با شماره‌گذاری شاهنشاهی است:
@@ -59,4 +66,4 @@
 5. INDEX را در صورت تغییر ساختار/آخرین وضعیت sync کند.
 
 ## شروع هر جلسه
-ابتدا `STATUS → ROADMAP → CHANGELOG` را بخوانید؛ سپس دقیقاً از Next Task در STATUS ادامه دهید.
+ابتدا `STATUS → ROADMAP → CHANGELOG` را بخوانید؛ سپس audit و سند مرتبط با Next Task را بررسی کنید.
