@@ -93,8 +93,7 @@ Current implementation:
 
 ## Latest CI truth
 
-Current HEAD:
-- SHA `a08ac4a7c4241b791668b99480a9f59953e990c5`
+Current HEAD: latest documentation checkpoint after ACT-188.
 - implementation baseline: `4e06741359d86cd2194b5cacbcb4c2d9e81c4fd1`
 - CI #244 — PASS for ACT-187 checkpoint
 - CI #246 — PASS for ACT-188 checkpoint
