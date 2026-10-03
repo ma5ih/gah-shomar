@@ -1,0 +1,14 @@
+import type { TodayState } from "./types";
+import { resolveTimeContext } from "./time-context";
+import { publicRepository } from "../data/public/repository";
+
+export function getTodayState(options: { now?: Date; timeZone?: string } = {}): TodayState {
+  const context = resolveTimeContext(options.now, options.timeZone);
+  const events = publicRepository.listEventsForDate(context.imperialDate.year, context.imperialDate.month, context.imperialDate.day);
+  const importantEvents = publicRepository.listImportantEvents(context.imperialDate.year, context.imperialDate.month);
+  const ids = new Set(events.flatMap((e) => e.periodIds));
+  const periods = publicRepository.listPeriods().filter((p) => ids.has(p.id));
+  const people = [...new Set(events.flatMap((e) => e.personIds))]
+    .map((id) => publicRepository.getPersonById(id)).filter(Boolean);
+  return { context, events, importantEvents, periods, people: people as NonNullable<typeof people[number]>[] };
+}
