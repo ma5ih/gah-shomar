@@ -1,3 +1,24 @@
+## ACT-210 — 2026-10-04
+Type: THEME-A-SPACING-IMPLEMENTATION
+Status: IN_PROGRESS
+
+- TASK-07-002 — Spacing/Margin Consistency برای Theme A آغاز شد.
+- یک spacing scale اختصاصی با گام‌های 4/8/12/16/20/24/32px به Theme A اضافه شد.
+- shell، topbar، app content، hero، event/card surfaces، calendar، forms، controls، metadata و mobile navigation بر اساس همین scale یکدست شدند.
+- تغییر implementation فقط در src/frontend/themes/flat-geometric/theme.css انجام شد.
+- Theme A همچنان داخل brief مصوب Flat Geometric باقی ماند؛ gradient، realistic texture، 3D treatment یا زبان بصری جدید اضافه نشد.
+- Theme B هیچ تغییری نکرد و خارج از Scope ماند.
+- static validation انجام شد: ۷ spacing token حاضر، selector scope حفظ شده و gradient count = 0.
+- implementation commit: dadfc21de5bbc1c262774b47c539bd10c1072414.
+- CI جدید برای این commit هنوز نتیجه مستقل قابل مشاهده‌ای ارائه نکرده است؛ بنابراین TASK-07-002 فعلاً DONE نشده است.
+- مستند عملیاتی این Task در docs/PHASE-07-THEME-A-SPACING.md ثبت شد.
+- canonical task counts بعد از شروع TASK-07-002: 204 کل، 136 DONE، 32 IN_PROGRESS، 35 TODO، 1 DEFERRED.
+
+### Next
+اعتبارسنجی واقعی commit ACT-210 و در صورت موفقیت بستن TASK-07-002؛ سپس TASK-07-003 — Typography Consistency.
+
+Next fresh ACT ID: **ACT-211**
+
 ## ACT-209 — 2026-10-04
 Type: DOCUMENTATION-CONVERGENCE
 Status: DONE
