@@ -5,7 +5,7 @@ Name: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Status: IN_PROGRESS
-Document version: 1.3.0
+Document version: 1.4.0
 Last updated: 2026-10-04
 
 ## 1. تعریف محصول
@@ -94,11 +94,12 @@ PHASE-09 IN_PROGRESS
 PHASE-10 TODO
 
 Current implementation HEAD: 5791e3e89aabcd75fd856e03e9a05023d009dbcc.
-Current documentation checkpoint: **ACT-209 — Theme A documentation convergence**.
-Latest Theme A validation: **GitHub Actions #37161733754 — PASS**.
+Current documentation checkpoint: **ACT-210 — Theme A spacing implementation**.
+Current implementation commit: dadfc21de5bbc1c262774b47c539bd10c1072414.
+Latest completed Theme A validation: **GitHub Actions #37161733754 — PASS**.
 Earlier full product/E2E acceptance checkpoint: **CI #299 — PASS**.
 TASK-09-019 is DONE. The product remains in PHASE-06 with runtime/browser acceptance open.
-TASK-07-001 is DONE for Theme A; the next visual task is TASK-07-002 and remains TODO.
+TASK-07-001 is DONE for Theme A. TASK-07-002 — Spacing/Margin Consistency — is IN_PROGRESS pending CI validation.
 
 ## 9. وضعیت Visual Themeها
 
@@ -107,9 +108,10 @@ TASK-07-001 is DONE for Theme A; the next visual task is TASK-07-002 and remains
 ### Theme A — Flat Geometric
 - مسیر: src/frontend/themes/flat-geometric/
 - TASK-07-001 — Final Visual Hierarchy: **DONE**
-- اجرای بصری و validation این Task انجام شده است.
+- TASK-07-002 — Spacing/Margin Consistency: **IN_PROGRESS**
+- اجرای TASK-07-002 فقط روی Theme A انجام شده و با spacing scale هفت‌مرحله‌ای 4/8/12/16/20/24/32px ثبت شده است.
 - تمام تصمیم‌های فعلی باید داخل brief مصوب Theme A بمانند.
-- Task بعدی در مسیر بصری: TASK-07-002 — Spacing/Margin Consistency.
+- سند اجرایی spacing: docs/PHASE-07-THEME-A-SPACING.md.
 
 ### Theme B — Modern Flat Vector Illustration
 - مسیر: src/frontend/themes/modern-flat-vector/
