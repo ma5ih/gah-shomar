@@ -1,12 +1,29 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 2.2.0
+Version: 2.3.0
 Last updated: 2026-10-03
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
 
 ## وضعیت‌ها
 TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
+
+## شمارش رسمی ریزتسک‌ها — ACT-162
+
+- کل ریزتسک‌های شماره‌گذاری‌شده: **193**
+- DONE: **133**
+- IN_PROGRESS: **32**
+- TODO: **27**
+- DEFERRED: **1**
+- BLOCKED: **0**
+- DEPRECATED: **0**
+
+### نقطه فعلی اجرا
+**CURRENT:** PHASE-09 — Integration & Full QA
+**CURRENT TASK:** TASK-09-022 — E2E Dataset/Editorial Alignment — IN_PROGRESS
+**NEXT:** همگام‌سازی E2E با seed خالی → CI revalidation → runtime/browser acceptance → بستن PHASE-06 → PHASE-07 → PHASE-08 → تکمیل PHASE-09 → PHASE-10.
+
+این شمارش بر اساس تمام TASK-*های همین سند انجام شده و از این checkpoint به‌عنوان عدد مرجع استفاده می‌شود.
 
 # PHASE-00 — Documentation Foundation — DONE
 - TASK-00-001 — ساخت ساختار مستندات — DONE
