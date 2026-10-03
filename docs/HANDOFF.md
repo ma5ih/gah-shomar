@@ -38,6 +38,20 @@ GitHub و همین شاخهٔ `main` مرجع واقعی وضعیت هستند. 
 
 اما Release هنوز انجام نشده است. Phase-09 به‌طور رسمی باز است و Phase-06/07/08 نیز gapهای مشخص دارند.
 
+## 2.1 شمارش رسمی ریزتسک‌ها — ACT-162
+
+بر اساس تمام TASK-*های موجود در ROADMAP فعلی:
+- کل: **193**
+- DONE: **133**
+- IN_PROGRESS: **32**
+- TODO: **27**
+- DEFERRED: **1**
+- BLOCKED: **0**
+- DEPRECATED: **0**
+
+**نقطه فعلی:** TASK-09-022 — E2E Dataset/Editorial Alignment.
+این بخش و شمارش آن مرجع ادامه پروژه است؛ برای تعیین وضعیت به چت قبلی اتکا نشود.
+
 ## 3. وضعیت Phaseها
 
 - PHASE-00 Documentation — DONE
@@ -186,7 +200,7 @@ production configuration، deployment validation، production PWA check، final 
 
 قاعدهٔ جدید:
 - از checkpoint بعدی فقط شناسه‌های جدید استفاده شود.
-- شناسهٔ بعدی: ACT-162
+- شناسهٔ بعدی: ACT-163
 - هیچ ACT قدیمی دوباره استفاده نشود.
 - برای ارجاع به collisionهای قدیمی، از توضیح توصیفی و SHA commit استفاده شود.
 
@@ -207,7 +221,7 @@ production configuration، deployment validation، production PWA check، final 
 ## 11. آخرین نقطهٔ شروع عملی
 
 اولین کار بعد از این checkpoint:
-**TASK-09-019 / browser-smoke alignment با editorial-empty dataset، سپس CI revalidation.**
+**TASK-09-022 / E2E dataset/editorial alignment، سپس CI revalidation.**
 
 بعد از سبزشدن CI و ثبت acceptance واقعی، تازه به visual polish و سپس editorial month-by-month content بروید.
 
