@@ -1,10 +1,8 @@
 # ARCHITECTURE — معماری فنی پروژه
 
-Version: 1.0.0
+Version: 1.1.0
 Status: APPROVED
-Task: TASK-02-023
-Action: ACT-042
-Last updated: 2026-10-02
+Last updated: 2026-10-03
 
 ## Stack
 Next.js App Router, React, TypeScript, PostgreSQL, Drizzle ORM, Tailwind CSS, Node.js LTS, npm.
@@ -21,8 +19,35 @@ Next.js App Router, React, TypeScript, PostgreSQL, Drizzle ORM, Tailwind CSS, No
 Presentation → Application → Domain.
 Data implements persistence boundaries. Domain has no dependency on Next.js, React or database.
 
-## Calendar Engine
-Single source of truth for imperial calendar, conversions, date arithmetic, weekday, time-of-day and season state.
+## Calendar Engine — current implementation
+Calendar Engine is the single source of truth for:
+- Imperial date types and validation
+- month/year rules
+- leap years
+- Gregorian ↔ Imperial conversion
+- historical-date conversion gateway
+- Today calculation
+- date arithmetic
+- weekday
+- time-of-day state
+- seasonal state
+
+Implementation is under `src/domain/calendar/`.
+
+Key modules:
+- `leap-year.ts`
+- `conversion.ts`
+- `historical-conversion.ts`
+- `today.ts`
+- `date-arithmetic.ts`
+- `weekday.ts`
+- `time-of-day.ts`
+- `season.ts`
+
+Timezone resolution is outside Domain. Domain receives an already-resolved calendar date/time input.
+
+## Historical conversion boundary
+Exact Gregorian and Solar Hijri dates can be converted to Imperial. Other calendars/eras are intentionally not guessed; they require a dedicated converter and editorial policy.
 
 ## Public vs Personal
 Public: Event, Person, Period, Source, Media.
@@ -31,17 +56,11 @@ Private: User, Personal Event, Personal Person, Memory, Share Card artifact.
 ## Data Flow
 Request → Route/Server boundary → Application use case → Domain/Data → DTO → Presentation.
 
-## Content
-Historical content requires source/verification. Only APPROVED public content is exposed.
-
 ## Localization
 Domain stores localized content. Presentation determines locale and direction. Persian is RTL; English is LTR.
 
-## Search
-Search is an application capability with simple explainable ranking. External search engine is not required for MVP.
-
 ## Testing
-Calendar/domain unit tests are first-class. Application integration and critical E2E paths are required before release.
+Calendar/domain unit tests are first-class. Current test files cover month rules, leap-year regression, conversion, historical conversion, Today, arithmetic, weekday, time-of-day and season. CI is configured for typecheck, unit tests and production build, but no successful GitHub run has yet been observed.
 
 ## Deferred
 Notifications, social features, public event submission, maps, export/import, integrations, monetization, public API and advanced analytics remain outside MVP.
@@ -52,7 +71,7 @@ Minimal username/password authentication with DB-backed sessions is defined in A
 ## Share Card
 Private Personal Event share-card generation is defined in SHARE-CARD-ARCHITECTURE.md.
 
-## Status
-TASK-02-023: DONE
-ACT-042: DONE
-Next: TASK-02-024 — Authentication & Session Architecture
+## Current phase
+PHASE-03 — IN_PROGRESS
+
+**Next:** TASK-03-023 — Calendar Unit Tests / CI Validation
