@@ -1,3 +1,36 @@
+## ACT-158 — 2026-10-03
+Type: DOCUMENTATION-RECONCILIATION
+Status: DONE
+
+### هدف
+همگام‌سازی کامل وضعیت repository با implementation واقعی و ایجاد یک نقطهٔ ادامهٔ مستقل از چت.
+
+### ثبت شد
+- `docs/HANDOFF.md` به‌عنوان continuation checkpoint مرجع اضافه شد.
+- CURRENT HEAD روی `e3107be19485199f3e725a1bbc40ceb86b72f88b` ثبت شد.
+- PHASE-09 به‌عنوان فاز جاری ثبت شد و وضعیت Phaseهای 00 تا 10 با implementation واقعی همگام شد.
+- وضعیت فعلی public historical event seed = صفر رویداد به‌صورت صریح ثبت شد.
+- قرارداد صفحهٔ Important Events و Event Detail با requirement تصویری/روایتی ثبت شد.
+- وضعیت PWA، responsive browser QA، Node 24 workflow و English direction test در handoff ثبت شد.
+- مغایرت E2E با event seed خالی شناسایی و به TASK-09-022 تبدیل شد.
+- آخرین CI baseline قطعی ACT-133 / run #102 به‌عنوان PASS حفظ شد.
+- آخرین run ثبت‌شده برای HEAD فعلی (#134 / e310...) هنوز IN_PROGRESS است و PASS اعلام نمی‌شود.
+- collision تاریخی ACT-150 و ACT-151 و نبود ACT-155 در تاریخچه ثبت شد؛ از اینجا به بعد شناسه‌ها دوباره استفاده نمی‌شوند.
+- `INDEX`, `PROJECT`, `PHASE-04-IMPLEMENTATION`, `PHASE-05-IMPLEMENTATION`, `PHASE-06-IMPLEMENTATION`, `EDITORIAL-EVENT-REVIEW` و content README همگام شدند.
+
+### Reconciled recent implementation commits
+- ACT-152 — tablet browser profile moved to Chromium-compatible Galaxy Tab S4.
+- ACT-153 — CI actions/workflow moved to Node 24.
+- ACT-154 — browser smoke selectors tightened.
+- ACT-156 — English browser test now asserts document `lang="en"` and `dir="ltr"`.
+- ACT-155 was not found in current commit history; no behavior is inferred for it.
+- Earlier ACT-149/150/151 commit messages contain collisions; see `docs/HANDOFF.md`.
+
+### Current next step
+TASK-09-022 — align E2E/browser smoke tests with the intentionally empty public historical-event seed, then observe the full CI result.
+
+---
+
 ## ACT-150 — 2026-10-03
 Type: CONTENT-EDITORIAL-POLICY
 Status: DONE
