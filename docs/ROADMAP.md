@@ -1,7 +1,7 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 2.4.3
-Last updated: 2026-10-04 — ACT-209
+Version: 2.4.4
+Last updated: 2026-10-04 — ACT-210
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
 
@@ -12,8 +12,8 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 
 - کل ریزتسک‌های شماره‌گذاری‌شده: **204**
 - DONE: **136**
-- IN_PROGRESS: **31**
-- TODO: **36**
+- IN_PROGRESS: **32**
+- TODO: **35**
 - DEFERRED: **1**
 - BLOCKED: **0**
 - DEPRECATED: **0**
@@ -214,7 +214,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 
 # PHASE-07 — Visual Polish, Time/Season & App-like Experience — IN_PROGRESS
 - TASK-07-001 — Final Visual Hierarchy — DONE
-- TASK-07-002 — Spacing/Margin Consistency — TODO
+- TASK-07-002 — Spacing/Margin Consistency — IN_PROGRESS
 - TASK-07-003 — Typography Consistency — TODO
 - TASK-07-004 — Component Consistency — TODO
 - TASK-07-005 — Visual Density Review — TODO
@@ -275,19 +275,18 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - browser smoke follows the intentionally empty historical-event seed
   - CI run #168 and later full pipelines validate the aligned behavior
 
-## CURRENT CHECKPOINT — ACT-209 — 2026-10-04
+## CURRENT CHECKPOINT — ACT-210 — 2026-10-04
 
-- ACT-209 is a documentation-convergence checkpoint after ACT-208.
-- TASK-07-001 — Final Visual Hierarchy — is **DONE for Theme A — Flat Geometric**.
-- TASK-07-002 — Spacing/Margin Consistency — is the next visual task and remains **TODO** until implementation is explicitly started.
-- Theme A is the only active visual scope. Theme B — Modern Flat Vector Illustration — remains untouched and outside the current scope.
-- Theme A presentation remains isolated under src/frontend/themes/flat-geometric/.
-- The operational Theme A visual contract is docs/PHASE-07-THEME-A-FLAT-GEOMETRIC.md.
-- Core, Calendar Engine, Domain, Data, Application, Auth/Session, routing, localization contracts and product behavior remain shared and unchanged by this documentation checkpoint.
-- Last implementation HEAD remains 5791e3e89aabcd75fd856e03e9a05023d009dbcc.
-- Last Theme A validation observed: GitHub Actions run #37161733754 — PASS; its quality job also succeeded.
-- Canonical task counts remain: 204 total / 136 DONE / 31 IN_PROGRESS / 36 TODO / 1 DEFERRED.
-- No task was added or removed by ACT-209 and no product/code behavior changed.
+- ACT-210 starts and implements TASK-07-002 — Spacing/Margin Consistency for Theme A — Flat Geometric.
+- Theme A spacing is normalized through a dedicated 4/8/12/16/20/24/32px scale in src/frontend/themes/flat-geometric/theme.css.
+- Applied areas include shell/topbar, main content, hero, cards, calendar, forms, controls, metadata and mobile navigation.
+- No Core, Calendar Engine, Domain, Data, Application, Auth/Session, routing, localization or business behavior changed.
+- Theme B remains untouched and outside the current scope.
+- Static validation passed for scope/selector structure and confirmed no gradient expression was introduced in the Theme A stylesheet.
+- Automated CI for the ACT-210 implementation commit has not yet produced an independently observed result; TASK-07-002 therefore remains IN_PROGRESS.
+- Current implementation commit: dadfc21de5bbc1c262774b47c539bd10c1072414.
+- Last completed Theme A CI validation remains GitHub Actions #37161733754 from ACT-208.
+- Canonical task counts: 204 total / 136 DONE / 32 IN_PROGRESS / 35 TODO / 1 DEFERRED.
 
 # PHASE-10 — Release & Handoff — TODO
 - TASK-10-001 — Production Configuration — TODO
@@ -308,7 +307,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 **CURRENT VISUAL STREAM:** PHASE-07 — Theme A refinement
 **QA BLOCKER:** TASK-09-022 in PHASE-09 — DONE
 
-**CURRENT NEXT TASK:** TASK-07-002 — Spacing/Margin Consistency — TODO
+**CURRENT NEXT TASK:** TASK-07-002 — Spacing/Margin Consistency — IN_PROGRESS
 - TASK-07-001 برای Theme A بسته شده و DONE است.
 - Theme B فعلاً خارج از Scope است و نباید وارد اجرای بصری فعلی شود.
 - پس از شروع Taskهای باقی‌مانده PHASE-07، مسیر به PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release می‌رسد.
