@@ -68,6 +68,7 @@ Overall status: IN_PROGRESS
 - ACT-061 — پیاده‌سازی تبدیل Gregorian ↔ Imperial — DONE
 - ACT-062 — پیاده‌سازی Now/Today Calculation — DONE
 - ACT-063 — Historical Date Conversion Gateway — IN_PROGRESS
+- ACT-064 — Date Arithmetic — DONE
 
 ## تصمیم‌های محصول فعلی
 
