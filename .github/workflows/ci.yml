@@ -36,6 +36,8 @@ jobs:
         run: npm install
       - name: Migrate test database
         run: npm run db:migrate
+      - name: Lint
+        run: npm run lint
       - name: Typecheck
         run: npx tsc --noEmit
       - name: Unit and integration tests
