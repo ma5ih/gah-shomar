@@ -15,12 +15,13 @@ export async function getMonthQuery(year:number,month:number,today?:ImperialDate
  const eventDays=new Set(publicRepository.listEventsForMonth(year,month).flatMap(e=>e.dates.map(({start})=>start.imperialDate?.day).filter((d):d is number=>d!==undefined)));
  const personalDays=new Set<number>();
  if(userId&&personalRepository){
-  const[events,memories]=await Promise.all([personalRepository.listEvents(userId),personalRepository.listMemories(userId)]);
+  try { const[events,memories]=await Promise.all([personalRepository.listEvents(userId),personalRepository.listMemories(userId)]);
   events.filter(e=>personalEventOccursInMonth(e,year,month)).forEach(e=>{
    const occurrence=e.recurrence?occurrenceForYear(e.date,year,e.recurrence):e.date;
    if(occurrence&&occurrence.year===year)personalDays.add(occurrence.day);
   });
   memories.filter(m=>m.date.year===year&&m.date.month===month).forEach(m=>personalDays.add(m.date.day));
+  } catch { /* Public calendar remains available when personal storage is unavailable. */ }
  }
  const length=Math.ceil((offset+daysInMonth)/7)*7;const cells:Array<MonthQueryResult["cells"][number]>=Array.from({length},()=>null);
  for(let day=1;day<=daysInMonth;day++){const date:ImperialDate={year,month,day};cells[offset+day-1]={day,date,weekday:weekdayOfImperialDate(date),isToday:!!today&&today.year===year&&today.month===month&&today.day===day,hasEvents:eventDays.has(day),hasPersonalData:personalDays.has(day)}}
@@ -28,7 +29,7 @@ export async function getMonthQuery(year:number,month:number,today?:ImperialDate
 }
 export async function getDayQuery(date:ImperialDate,userId?:string,personalRepository?:PersonalRepository):Promise<DayQueryResult>{
  const events=publicRepository.listEventsForDate(date.year,date.month,date.day);const importantEvents=events.filter(e=>e.featured);const people=[...new Set(events.flatMap(e=>e.personIds))].map(id=>publicRepository.getPersonById(id)).filter((p):p is NonNullable<typeof p>=>Boolean(p));const periods=publicRepository.listPeriods().filter(p=>{const start=p.startDate.imperialDate;const end=p.endDate?.imperialDate;return!!start&&date.year>=start.year&&(!end||date.year<=end.year)});
- let personalEvents: readonly PersonalEvent[]=[];let memories: readonly Memory[]=[];if(userId&&personalRepository){const[allEvents,allMemories]=await Promise.all([personalRepository.listEvents(userId),personalRepository.listMemoriesForDate(userId,date)]);personalEvents=allEvents.filter(e=>personalEventOccursOn(e,date));memories=allMemories}
+ let personalEvents: readonly PersonalEvent[]=[];let memories: readonly Memory[]=[];if(userId&&personalRepository){try{const[allEvents,allMemories]=await Promise.all([personalRepository.listEvents(userId),personalRepository.listMemoriesForDate(userId,date)]);personalEvents=allEvents.filter(e=>personalEventOccursOn(e,date));memories=allMemories}catch{/* Public day remains available when personal storage is unavailable. */}}
  return{date,weekday:weekdayOfImperialDate(date),events,importantEvents,periods,people,personalEvents,memories}
 }
 export function shiftMonth(year:number,month:ImperialMonth,delta:-1|1):ImperialDate{assertYear(year);assertMonth(month);const moved=addImperialDays({year,month,day:1},delta===1?monthLength(month,isImperialLeapYear(year)):-1);return{year:moved.year,month:moved.month,day:1}}

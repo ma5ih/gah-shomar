@@ -2,7 +2,7 @@
 import {revalidatePath} from "next/cache";
 import {getCurrentSession} from "@/application/session";
 import {personalRepository} from "@/data/db/repositories";
-import {personalUseCases,validatePersonalPersonName} from "@/application/personal";
+import {validatePersonalPersonName} from "@/application/personal";
 import {application} from "@/application/use-cases";
 
 function date(fd:FormData){return{year:Number(fd.get("year")),month:Number(fd.get("month")) as 1|2|3|4|5|6|7|8|9|10|11|12,day:Number(fd.get("day"))}}

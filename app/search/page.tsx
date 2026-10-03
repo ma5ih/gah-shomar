@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { resolveLocale } from "@/application/locale";
 import { application } from "@/application/use-cases";
-import { getCurrentSession } from "@/application/session";
+import { getCurrentSessionSafe } from "@/application/session";
 import { personalRepository } from "@/data/db/repositories";
 import { AppShell } from "@/frontend/components/app-shell";
 import { SearchForm } from "@/frontend/components/search-form";
@@ -17,7 +17,7 @@ export default async function SearchPage({
   const p = await searchParams;
   const locale = resolveLocale(typeof p?.lang === "string" ? p.lang : undefined);
   const q = typeof p?.q === "string" ? p.q : "";
-  const session = await getCurrentSession();
+  const session = await getCurrentSessionSafe();
   const results = q
     ? await application.searchAll(personalRepository, session?.userId ?? null, q)
     : [];

@@ -18,12 +18,13 @@ export async function getTodayState(options:{now?:Date;timeZone?:string;userId?:
   let personalEvents: readonly PersonalEvent[] = [];
   let memories: readonly Memory[] = [];
   if(options.userId&&options.personalRepository){
-    const [allEvents,allMemories]=await Promise.all([
+    try { const [allEvents,allMemories]=await Promise.all([
       options.personalRepository.listEvents(options.userId),
       options.personalRepository.listMemoriesForDate(options.userId,context.imperialDate),
     ]);
-    personalEvents=allEvents.filter(event=>personalEventOccursOn(event,context.imperialDate));
-    memories=allMemories;
+      personalEvents=allEvents.filter(event=>personalEventOccursOn(event,context.imperialDate));
+      memories=allMemories;
+    } catch { personalEvents=[]; memories=[]; }
   }
   return{context,events,importantEvents,periods,people,personalEvents,memories};
 }
