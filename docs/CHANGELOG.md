@@ -1,3 +1,136 @@
+## ACT-184 — 2026-10-03
+Type: DOCUMENTATION-SYNC
+Status: DONE
+
+- ROADMAP, STATUS, HANDOFF و PHASE-06-IMPLEMENTATION با وضعیت واقعی HEAD همگام شدند.
+- CI #199 به‌عنوان آخرین validation رسمی ثبت شد: migration، typecheck، unit/integration، production build و browser smoke همگی PASS.
+- شمارش رسمی ریزتسک‌ها حفظ شد: 193 کل / 134 DONE / 31 IN_PROGRESS / 27 TODO / 1 DEFERRED.
+- PRIMARY WORKSTREAM همچنان PHASE-06 است.
+- PHASE-06 هنوز DONE نشده؛ runtime/product acceptance و Event Detail image-rich presentation باقی است.
+- هیچ کار تخصصی Visual Design در این checkpoint انجام نشده است.
+- Next fresh ACT ID: ACT-185.
+
+## ACT-183 — 2026-10-03
+Type: TYPE-CORRECTION
+Status: DONE
+
+- فرم Personal Event برای دریافت `readonly PersonalPerson[]` اصلاح شد.
+- CI #199 با build و browser smoke سبز شد.
+
+## ACT-182 — 2026-10-03
+Type: TEST-FIX
+Status: DONE
+
+- یک closing-brace اضافی در regression test لایهٔ Personal Repository حذف شد.
+- پس از اصلاح، unit/integration tests سبز شدند.
+
+## ACT-181 — 2026-10-03
+Type: APPLICATION-AUTHORIZATION
+Status: DONE
+
+- `AuthorizationError` به application Personal اضافه شد.
+- اتصال Personal Person به Personal Event اکنون در create/update فقط برای person متعلق به همان کاربر پذیرفته می‌شود.
+- CI اولیهٔ این تغییر به‌علت import جاافتاده fail شد؛ import اصلاح و در CI بعدی تأیید شد.
+
+## ACT-180 — 2026-10-03
+Type: TEST-REGRESSION
+Status: DONE
+
+- regression test برای مرز مالکیت Personal Person اضافه شد.
+- تست تأیید می‌کند person یک کاربر در فهرست کاربر دیگر قابل مشاهده نیست و event می‌تواند به person مالک متصل شود.
+
+## ACT-179 — 2026-10-03
+Type: APPLICATION-OWNERSHIP
+Status: DONE
+
+- application layer قبل از create/update رویداد، `personalPersonId` را در people همان کاربر بررسی می‌کند.
+- از اتصال event شخصی به person کاربر دیگر جلوگیری می‌شود.
+
+## ACT-178 — 2026-10-03
+Type: PERSONAL-UI
+Status: DONE
+
+- Personal Personها در UI شخصی نمایش داده می‌شوند.
+- انتخاب person هنگام ایجاد/ویرایش Personal Event اضافه شد.
+- نوع‌های birthday/anniversary/custom اکنون از labelهای محلی‌سازی‌شده استفاده می‌کنند.
+
+## ACT-177 — 2026-10-03
+Type: PERSONAL-DATA-LINK
+Status: DONE
+
+- `personalPersonId` از فرم Personal Event به Server Action منتقل و حفظ می‌شود.
+- اتصال event ↔ personal person در مسیر create/update قابل استفاده شد.
+
+## ACT-176 — 2026-10-03
+Type: I18N
+Status: DONE
+
+- labelهای birthday، anniversary، custom و memory text به فارسی/انگلیسی اضافه شدند.
+- زیرساخت localization فرم شخصی از hard-coded English فاصله گرفت.
+
+## ACT-175 — 2026-10-03
+Type: E2E-ACCEPTANCE
+Status: DONE
+
+- E2E واقعی برای register → Personal → create Personal Event → persistence → Search → logout اضافه شد.
+- تست در CI #189 روی desktop/tablet/mobile با موفقیت اجرا شد.
+- چند خطای تستی حین توسعه تشخیص و اصلاح شدند؛ منطق persistence محصول صحیح بود.
+
+## ACT-174 — 2026-10-03
+Type: E2E-ASSERTION
+Status: DONE
+
+- assertion عنوان Personal Event به مقدار واقعی input اصلاح شد.
+- diagnostic موقت response حذف شد.
+
+## ACT-173 — 2026-10-03
+Type: E2E-DIAGNOSTIC
+Status: DONE
+
+- response واقعی Server Action ذخیره Personal Event برای تشخیص boundary مشکل بررسی شد.
+- مشخص شد persistence انجام می‌شود و failure قبلی از assertion تست بود.
+
+## ACT-172 — 2026-10-03
+Type: INTEGRATION-REGRESSION
+Status: DONE
+
+- integration test مستقل برای create/read رویداد شخصی در repository اضافه شد.
+- مالکیت رکورد در سطح repository نیز بررسی شد.
+
+## ACT-171 — 2026-10-03
+Type: E2E-SYNCHRONIZATION
+Status: DONE
+
+- E2E بعد از Save منتظر پاسخ Server Action شد تا navigation زودهنگام، نتیجهٔ تست را خراب نکند.
+
+## ACT-170 — 2026-10-03
+Type: E2E-REGRESSION
+Status: DONE
+
+- persistence رویداد شخصی بعد از Save با reload صفحه بررسی شد.
+
+## ACT-169 — 2026-10-03
+Type: E2E-ASSERTION
+Status: DONE
+
+- labelهای سال/ماه/روز در Playwright با `exact` disambiguate شدند.
+
+## ACT-168 — 2026-10-03
+Type: ACCESSIBILITY-FORM
+Status: DONE
+
+- labelهای فرم Personal Event و Memory با `id/htmlFor` به کنترل‌ها متصل شدند.
+- این اصلاح بدون تغییر تخصصی در طراحی انجام شد.
+
+## ACT-167 — 2026-10-03
+Type: PERSONAL-FORM-I18N
+Status: DONE
+
+- labelهای اصلی فرم‌های Personal Event/Memory و actionهای ذخیره به سیستم localization متصل شدند.
+- هیچ تغییر Visual Design تخصصی انجام نشد.
+
+---
+
 ## ACT-166 — 2026-10-03
 Type: PRODUCT-COPY-CORRECTION
 Status: DONE
