@@ -7,9 +7,9 @@
 
 ## 1. نقطه جداسازی
 
-جداسازی طراحی از **TASK-07-001 — Final Visual Hierarchy** شروع می‌شود.
+جداسازی طراحی از **TASK-07-001 — Final Visual Hierarchy** شروع شد.
 
-پوشه‌های Theme در ACT-205 فقط مرزبندی و scaffolding هستند؛ طراحی اصلی هنوز از TASK-07-001 آغاز می‌شود.
+ACT-205 مرزبندی و scaffolding را ثبت کرد؛ ACT-207 اجرای اصلی Theme A را آغاز کرد و ACT-208 آن را با validation واقعی بست.
 
 ## 2. ساختار
 
