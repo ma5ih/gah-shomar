@@ -1,3 +1,41 @@
+## DEC-019 — 2026-10-03
+Status: ACCEPTED
+Title: تفکیک Timezone Resolution از Calendar Domain
+
+### Decision
+- Calendar Domain نباید مستقیماً clock/timezone سیستم یا browser `Date` را مالک شود.
+- Runtime/application ابتدا تاریخ و زمان محلی موردنظر را resolve می‌کند.
+- Domain فقط داده تقویمی resolve‌شده را دریافت و محاسبه می‌کند.
+- هدف deterministic بودن SSR، تست و محیط‌های مختلف است.
+
+### Consequence
+TASK-03-005 به‌صورت pure Today calculation پیاده‌سازی شده و resolution واقعی timezone برای Application layer باقی می‌ماند.
+
+## DEC-020 — 2026-10-03
+Status: ACCEPTED
+Title: عدم جعل تبدیل تاریخ تاریخی
+
+### Decision
+- برای HistoricalDate فقط تقویم‌هایی که converter دقیق و policy مشخص دارند ImperialDate تولید می‌شود.
+- Gregorian و Solar Hijri فعلاً exact conversion دارند.
+- Julian، قمری، BCE/eraهای خاص و موارد مشابه تا تعریف converter مستقل نباید به‌صورت حدسی تبدیل شوند.
+- original date/calendar همیشه حفظ می‌شوند.
+
+### Consequence
+TASK-03-007 فعلاً IN_PROGRESS باقی می‌ماند و کامل‌شدن آن به معنای پوشش همه تقویم‌های تاریخی نیست؛ بلکه پوشش converterهای مصوب و قرارداد دقیق Historical Date است.
+
+## DEC-021 — 2026-10-03
+Status: ACCEPTED
+Title: CI به‌عنوان دروازه اعتبارسنجی فنی
+
+### Decision
+- CI باید حداقل typecheck، unit tests و production build را اجرا کند.
+- تا زمانی که GitHub workflow run موفق مشاهده نشده، test/build به‌عنوان PASS ثبت نمی‌شود.
+- repository فعلاً lockfile ندارد؛ CI از `npm install` استفاده می‌کند.
+
+### Consequence
+TASK-03-023 تا TASK-03-025 تا مشاهده و رفع خطاهای احتمالی CI در وضعیت IN_PROGRESS باقی می‌مانند.
+
 ## DEC-018 — 2026-10-03
 Status: ACCEPTED
 Title: تبدیل Gregorian ↔ Imperial در Calendar Engine
