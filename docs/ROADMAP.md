@@ -118,79 +118,79 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 ### خروجی مورد انتظار PHASE-03
 Calendar Engine + Domain foundation + test suite + CI validation قابل اعتماد و مستقل از UI.
 
-# PHASE-04 — Application Backend / Use Cases — TODO
-- TASK-04-001 — Today Query/State — TODO
-- TASK-04-002 — Today's Occasions — TODO
-- TASK-04-003 — Today's Historical Events — TODO
-- TASK-04-004 — Today's Personal Events — TODO
-- TASK-04-005 — Today's Memories — TODO
-- TASK-04-006 — Time/Season Context — TODO
-- TASK-04-007 — Month Query — TODO
-- TASK-04-008 — Day Detail Query — TODO
-- TASK-04-009 — Event Markers — TODO
-- TASK-04-010 — Month Navigation — TODO
-- TASK-04-011 — Event Retrieval — TODO
-- TASK-04-012 — Event Detail — TODO
-- TASK-04-013 — Important Events Selection — TODO
-- TASK-04-014 — Timeline Queries — TODO
-- TASK-04-015 — Person Queries — TODO
-- TASK-04-016 — Related Entities — TODO
-- TASK-04-017 — Personal Event Creation/Editing — TODO
-- TASK-04-018 — Personal Person — TODO
-- TASK-04-019 — Memory Creation/Editing — TODO
-- TASK-04-020 — Recurrence — TODO
-- TASK-04-021 — Search Index/Query — TODO
-- TASK-04-022 — Search Results by Entity — TODO
-- TASK-04-023 — Persian/English Data Contracts — TODO
-- TASK-04-024 — RTL/LTR Direction State — TODO
-- TASK-04-025 — Register/Login/Session Use Cases — TODO
-- TASK-04-026 — Personal Event Share Card Data Use Case — TODO
+# PHASE-04 — Application Backend / Use Cases — IN_PROGRESS
+- TASK-04-001 — Today Query/State — IN_PROGRESS
+- TASK-04-002 — Today's Occasions — IN_PROGRESS
+- TASK-04-003 — Today's Historical Events — IN_PROGRESS
+- TASK-04-004 — Today's Personal Events — IN_PROGRESS
+- TASK-04-005 — Today's Memories — IN_PROGRESS
+- TASK-04-006 — Time/Season Context — IN_PROGRESS
+- TASK-04-007 — Month Query — IN_PROGRESS
+- TASK-04-008 — Day Detail Query — IN_PROGRESS
+- TASK-04-009 — Event Markers — IN_PROGRESS
+- TASK-04-010 — Month Navigation — IN_PROGRESS
+- TASK-04-011 — Event Retrieval — IN_PROGRESS
+- TASK-04-012 — Event Detail — IN_PROGRESS
+- TASK-04-013 — Important Events Selection — IN_PROGRESS
+- TASK-04-014 — Timeline Queries — IN_PROGRESS
+- TASK-04-015 — Person Queries — IN_PROGRESS
+- TASK-04-016 — Related Entities — IN_PROGRESS
+- TASK-04-017 — Personal Event Creation/Editing — IN_PROGRESS
+- TASK-04-018 — Personal Person — IN_PROGRESS
+- TASK-04-019 — Memory Creation/Editing — IN_PROGRESS
+- TASK-04-020 — Recurrence — IN_PROGRESS
+- TASK-04-021 — Search Index/Query — IN_PROGRESS
+- TASK-04-022 — Search Results by Entity — IN_PROGRESS
+- TASK-04-023 — Persian/English Data Contracts — IN_PROGRESS
+- TASK-04-024 — RTL/LTR Direction State — IN_PROGRESS
+- TASK-04-025 — Register/Login/Session Use Cases — IN_PROGRESS
+- TASK-04-026 — Personal Event Share Card Data Use Case — IN_PROGRESS
 
-# PHASE-05 — Frontend Architecture & Design System — TODO
-- TASK-05-001 — App Shell — TODO
-- TASK-05-002 — Routing/Navigation Architecture — TODO
-- TASK-05-003 — State Management Strategy — TODO
-- TASK-05-004 — Data Fetching/Domain Integration — TODO
-- TASK-05-005 — Error/Loading/Empty States — TODO
-- TASK-05-006 — Typography — TODO
-- TASK-05-007 — Spacing/Grid — TODO
-- TASK-05-008 — Color Tokens — TODO
-- TASK-05-009 — Iconography — TODO
-- TASK-05-010 — Buttons/Controls — TODO
-- TASK-05-011 — Sheets/Dialogs — TODO
-- TASK-05-012 — Cards/Content Surfaces — TODO
-- TASK-05-013 — Mobile Touch Model — TODO
-- TASK-05-014 — Swipe Patterns — TODO
-- TASK-05-015 — Motion/Transitions — TODO
-- TASK-05-016 — Accessibility Foundations — TODO
-- TASK-05-017 — Responsive Rules — TODO
-- TASK-05-018 — RTL/LTR Mirroring — TODO
+# PHASE-05 — Frontend Architecture & Design System — IN_PROGRESS
+- TASK-05-001 — App Shell — IN_PROGRESS
+- TASK-05-002 — Routing/Navigation Architecture — IN_PROGRESS
+- TASK-05-003 — State Management Strategy — IN_PROGRESS
+- TASK-05-004 — Data Fetching/Domain Integration — IN_PROGRESS
+- TASK-05-005 — Error/Loading/Empty States — IN_PROGRESS
+- TASK-05-006 — Typography — IN_PROGRESS
+- TASK-05-007 — Spacing/Grid — IN_PROGRESS
+- TASK-05-008 — Color Tokens — IN_PROGRESS
+- TASK-05-009 — Iconography — IN_PROGRESS
+- TASK-05-010 — Buttons/Controls — IN_PROGRESS
+- TASK-05-011 — Sheets/Dialogs — IN_PROGRESS
+- TASK-05-012 — Cards/Content Surfaces — IN_PROGRESS
+- TASK-05-013 — Mobile Touch Model — IN_PROGRESS
+- TASK-05-014 — Swipe Patterns — IN_PROGRESS
+- TASK-05-015 — Motion/Transitions — IN_PROGRESS
+- TASK-05-016 — Accessibility Foundations — IN_PROGRESS
+- TASK-05-017 — Responsive Rules — IN_PROGRESS
+- TASK-05-018 — RTL/LTR Mirroring — IN_PROGRESS
 
-# PHASE-06 — Core Frontend Product Experience — TODO
-- TASK-06-001 — Today Page — TODO
-- TASK-06-002 — Date Hierarchy — TODO
-- TASK-06-003 — Occasion/Event Sections — TODO
-- TASK-06-004 — Personal/Memory Sections — TODO
-- TASK-06-005 — Time/Season Presentation — TODO
-- TASK-06-006 — Month Calendar — TODO
-- TASK-06-007 — Day Selection — TODO
-- TASK-06-008 — Day Detail — TODO
-- TASK-06-009 — Month Swipe/Navigation — TODO
-- TASK-06-010 — Important Events Page — TODO
-- TASK-06-011 — Event Detail Page — TODO
-- TASK-06-012 — Historical Timeline — TODO
-- TASK-06-013 — Person Page — TODO
-- TASK-06-014 — Related Content Navigation — TODO
-- TASK-06-015 — Personal Events UI — TODO
-- TASK-06-016 — Personal Person UI — TODO
-- TASK-06-017 — Memories UI — TODO
-- TASK-06-018 — Recurrence UI — TODO
-- TASK-06-019 — Search UI — TODO
-- TASK-06-020 — Search Result Navigation — TODO
-- TASK-06-021 — Persian Experience — TODO
-- TASK-06-022 — English Experience — TODO
-- TASK-06-023 — Authentication UI — TODO
-- TASK-06-024 — Personal Event Share Card Experience — TODO
+# PHASE-06 — Core Frontend Product Experience — IN_PROGRESS
+- TASK-06-001 — Today Page — IN_PROGRESS
+- TASK-06-002 — Date Hierarchy — IN_PROGRESS
+- TASK-06-003 — Occasion/Event Sections — IN_PROGRESS
+- TASK-06-004 — Personal/Memory Sections — IN_PROGRESS
+- TASK-06-005 — Time/Season Presentation — IN_PROGRESS
+- TASK-06-006 — Month Calendar — IN_PROGRESS
+- TASK-06-007 — Day Selection — IN_PROGRESS
+- TASK-06-008 — Day Detail — IN_PROGRESS
+- TASK-06-009 — Month Swipe/Navigation — IN_PROGRESS
+- TASK-06-010 — Important Events Page — IN_PROGRESS
+- TASK-06-011 — Event Detail Page — IN_PROGRESS
+- TASK-06-012 — Historical Timeline — IN_PROGRESS
+- TASK-06-013 — Person Page — IN_PROGRESS
+- TASK-06-014 — Related Content Navigation — IN_PROGRESS
+- TASK-06-015 — Personal Events UI — IN_PROGRESS
+- TASK-06-016 — Personal Person UI — IN_PROGRESS
+- TASK-06-017 — Memories UI — IN_PROGRESS
+- TASK-06-018 — Recurrence UI — IN_PROGRESS
+- TASK-06-019 — Search UI — IN_PROGRESS
+- TASK-06-020 — Search Result Navigation — IN_PROGRESS
+- TASK-06-021 — Persian Experience — IN_PROGRESS
+- TASK-06-022 — English Experience — IN_PROGRESS
+- TASK-06-023 — Authentication UI — IN_PROGRESS
+- TASK-06-024 — Personal Event Share Card Experience — IN_PROGRESS
 
 # PHASE-07 — Visual Polish, Time/Season & App-like Experience — TODO
 - TASK-07-001 — Final Visual Hierarchy — TODO
