@@ -2,8 +2,8 @@
 
 Status: RESOLVED
 Task: TASK-03-004
-Action: ACT-059
-Last updated: 2026-10-02
+Action: ACT-061
+Last updated: 2026-10-03
 
 ## تصمیم
 
@@ -33,3 +33,9 @@ Last updated: 2026-10-02
 این implementation از الگوی ۳۳ ساله به‌عنوان توضیح کلی استفاده می‌کند، اما آن را قانون تکرارشوندهٔ سراسری در نظر نمی‌گیرد.
 
 TASK-03-004: DONE
+
+
+## ACT-061 — 2026-10-03
+Status: DONE
+
+تبدیل روزانه Gregorian ↔ Imperial بر پایه همان الگوریتم تثبیت‌شده Calendar Engine پیاده‌سازی شد. تست‌های regression و round-trip اضافه شده‌اند؛ اجرای CI هنوز pending است.
