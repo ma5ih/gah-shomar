@@ -71,6 +71,7 @@ Overall status: IN_PROGRESS
 - ACT-064 — Date Arithmetic — DONE
 - ACT-065 — Weekday Calculation — DONE
 - ACT-066 — Time-of-day State — DONE
+- ACT-067 — Seasonal State — DONE
 
 ## تصمیم‌های محصول فعلی
 
