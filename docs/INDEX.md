@@ -1,9 +1,9 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.16.0
+Index version: 2.17.0
 Last update: 2026-10-03
-Current phase: PHASE-03 — Core Backend / Domain / Calendar Engine
+Current phase: PHASE-09 — Integration & QA
 
 ## اسناد
 
@@ -39,6 +39,7 @@ Current phase: PHASE-03 — Core Backend / Domain / Calendar Engine
 | DOC-028 | AUTH-ARCHITECTURE.md | APPROVED | Authentication و Session |
 | DOC-029 | SHARE-CARD-ARCHITECTURE.md | APPROVED | معماری Personal Share Card |
 | DOC-030 | CALENDAR-ENGINE-OPEN-QUESTION.md | RESOLVED | تصمیم و وضعیت نهایی قاعده کبیسه |
+| DOC-031 | HANDOFF.md | DONE | نقطهٔ ادامه مستقل از چت و وضعیت واقعی repository |
 
 ## شناسه‌گذاری
 - PHASE-XX — مرحله
@@ -53,20 +54,20 @@ Current phase: PHASE-03 — Core Backend / Domain / Calendar Engine
 PHASE-00: DONE
 PHASE-01: DONE
 PHASE-02: DONE
-PHASE-03: IN_PROGRESS
-PHASE-04: TODO
-PHASE-05: TODO
-PHASE-06: TODO
-PHASE-07: TODO
-PHASE-08: TODO
-PHASE-09: TODO
+PHASE-03: DONE
+PHASE-04: DONE
+PHASE-05: DONE
+PHASE-06: IN_PROGRESS
+PHASE-07: IN_PROGRESS
+PHASE-08: IN_PROGRESS
+PHASE-09: IN_PROGRESS
 PHASE-10: TODO
 
 ## آخرین اقدام
-ACT-083 — Add domain contract fixtures.
+ACT-158 — Documentation reconciliation + definitive handoff checkpoint.
 
 ## اقدام بعدی
-TASK-03-023 — Calendar Unit Tests / CI Validation.
+TASK-09-022 — E2E dataset/editorial alignment, then CI revalidation and runtime acceptance.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.
