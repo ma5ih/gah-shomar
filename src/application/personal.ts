@@ -2,7 +2,7 @@ import { isImperialDateValid } from "../domain/calendar/conversion";
 import type { ImperialDate } from "../domain/calendar/types";
 import type { Memory,PersonalEvent,PersonalEventType,PersonalPerson } from "../domain/personal/types";
 import type { PersonalRepository } from "../data/contracts/repositories";
-import { ValidationError } from "../shared/errors";
+import { AuthorizationError, ValidationError } from "../shared/errors";
 
 export function assertUser(userId:string){
   if(!userId) throw new ValidationError("A signed-in user is required.");
