@@ -469,3 +469,26 @@ Type: DOCUMENTATION-SYNC
 Status: DONE
 - Added PHASE-04-IMPLEMENTATION.md, PHASE-05-IMPLEMENTATION.md and PHASE-06-IMPLEMENTATION.md.
 - Updated implementation handoff notes and current phase checkpoint.
+
+
+## ACT-123 — 2026-10-03
+Type: DATABASE-QUALITY
+Status: DONE
+- Added foreign keys and ownership/date indexes to the PostgreSQL schema and initial migration.
+
+## ACT-124 — 2026-10-03
+Type: RELIABILITY
+Status: DONE
+- Public Today/Calendar/Day/Search routes now degrade gracefully when personal storage is unavailable.
+
+## ACT-125 — 2026-10-03
+Type: ACCESSIBILITY
+Status: DONE
+- Added visible keyboard focus treatment and improved mobile bottom-navigation readability.
+
+## ACT-126 — 2026-10-03
+Type: CI-CHECKPOINT
+Status: IN_PROGRESS
+- Current main HEAD: 14aa3cef557c59195f6168cc3ce3c1b4563df826
+- Current CI checkpoint: run #94 (in_progress).
+- Final Phase-06 promotion remains blocked until runtime/device acceptance gaps are closed.
