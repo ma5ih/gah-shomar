@@ -1,3 +1,72 @@
+## ACT-141 — 2026-10-03
+Type: DOCUMENTATION-SYNC
+Status: DONE
+
+- Synchronized CHANGELOG with the current Phase-03 through Phase-10 execution state.
+- Recorded the latest CI gates, PWA baseline, sourced dataset, resilience tests and application test migration.
+- Latest verified green baseline remains ACT-133; later CI runs are tracked separately until completion.
+
+## ACT-140 — 2026-10-03
+Type: ROADMAP-SYNC
+Status: DONE
+
+- PHASE-03 marked DONE with unsupported historical calendar conversion explicitly DEFERRED.
+- PHASE-04 and PHASE-05 synchronized as DONE.
+- PHASE-06 remains IN_PROGRESS pending runtime/device acceptance.
+- PHASE-07, PHASE-08 and PHASE-09 moved to IN_PROGRESS with completed subtasks recorded.
+- PHASE-10 remains TODO.
+
+## ACT-139 — 2026-10-03
+Type: STATUS-SYNC
+Status: DONE
+
+- STATUS rebuilt around the actual repository HEAD and verified CI state.
+- Current phase moved to PHASE-09 Integration & QA.
+- Remaining work now explicitly lists runtime/device QA, visual polish, historical dataset expansion and release.
+
+## ACT-138 — 2026-10-03
+Type: TEST-ACCEPTANCE
+Status: IN_PROGRESS
+
+- Added personal-storage failure coverage for Today, Month/Day and Search.
+- Added PWA manifest acceptance test.
+- CI validation pending.
+
+## ACT-137 — 2026-10-03
+Type: TEST-REGRESSION
+Status: DONE
+
+- Migrated application tests away from removed demo identifiers.
+- Calendar day and public-search assertions now use sourced historical content.
+
+## ACT-136 — 2026-10-03
+Type: CONTENT-VALIDATION
+Status: IN_PROGRESS
+
+- Added relationship graph validation for events, people, periods and sources.
+- Added seeded-content tests for non-demo source-backed publication.
+- CI validation pending.
+
+## ACT-135 — 2026-10-03
+Type: CONTENT-DATASET
+Status: DONE
+
+- Replaced demo content with a source-backed MVP seed.
+- Current seed contains 7 events, 5 people, 2 periods and 6 Encyclopaedia Iranica references.
+- Unsupported historical calendars remain outside the supported conversion contract.
+
+## ACT-134 — 2026-10-03
+Type: DOCUMENTATION-CHECKPOINT
+Status: SUPERSEDED
+- Created an initial dataset replacement commit before the final sourced seed was corrected by ACT-135.
+
+## ACT-133 — 2026-10-03
+Type: PWA
+Status: DONE
+
+- Added installable manifest, service worker, offline route, application icon and mobile safe-area/navigation baseline.
+- CI run #102 passed migration, typecheck, test suite and production build.
+
 ## ACT-083 — 2026-10-03
 Type: DOMAIN-TESTS
 Status: IN_PROGRESS
