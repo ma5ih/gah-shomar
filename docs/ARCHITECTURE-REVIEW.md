@@ -20,9 +20,9 @@ Last updated: 2026-10-04
 - Deferred features در MVP فعال نشده‌اند: PASS
 - Auth و Share Card boundaryهای مستقل دارند: PASS
 
-## Current implementation audit addendum — ACT-186
+## Current implementation audit addendum — ACT-186 / ACT-188
 
-Architecture specification همچنان APPROVED است، اما implementation audit فعلی چند dependency leak در Presentation و چند contract gap را verified کرده است. این موارد تحت TASK-09-019 باید اصلاح و سپس در PHASE-09 دوباره validation شوند.
+Architecture specification همچنان APPROVED است، اما implementation audit فعلی چند dependency leak در Presentation و چند contract gap را verified کرد. Dependency leakهای اصلی اکنون از مسیر server composition boundary اصلاح شده‌اند؛ validation نهایی آن‌ها در CI #246 pending است. این موارد تحت TASK-09-019 باید اصلاح و سپس در PHASE-09 دوباره validation شوند.
 
 ## Findings
 
