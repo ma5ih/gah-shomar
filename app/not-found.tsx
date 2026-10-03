@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NotFound(){return <div className="app-shell"><section className="auth-card card"><div className="overline">404</div><h1>پیدا نشد</h1><p className="prose">این مسیر در گاه‌شمار وجود ندارد.</p><Link className="primary-button" href="/">بازگشت به امروز</Link></section></div>}

@@ -1,0 +1,1 @@
+export default function Loading(){return <div className="app-shell"><div className="card empty" aria-live="polite">در حال آماده‌سازی…</div></div>}

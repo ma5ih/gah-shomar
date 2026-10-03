@@ -1,0 +1,2 @@
+"use client";
+export default function ErrorPage({reset}:{error:Error&{digest?:string};reset:()=>void}){return <div className="app-shell"><section className="auth-card card"><h1>مشکلی پیش آمد</h1><p className="prose">دوباره تلاش کن.</p><button className="primary-button" onClick={()=>reset()}>تلاش دوباره</button></section></div>}
