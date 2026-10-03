@@ -11,8 +11,8 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 ## شمارش رسمی ریزتسک‌ها — ACT-162
 
 - کل ریزتسک‌های شماره‌گذاری‌شده: **193**
-- DONE: **133**
-- IN_PROGRESS: **32**
+- DONE: **134**
+- IN_PROGRESS: **31**
 - TODO: **27**
 - DEFERRED: **1**
 - BLOCKED: **0**
@@ -20,7 +20,7 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 
 ### نقطه فعلی اجرا
 **PRIMARY WORKSTREAM:** PHASE-06 — Core Frontend Product Experience
-**QA BLOCKER:** TASK-09-022 — E2E Dataset/Editorial Alignment — IN_PROGRESS
+**QA BLOCKER:** ندارد — TASK-09-022 در CI #168 با موفقیت بسته شد
 **NEXT:** CI revalidation → runtime/browser acceptance for PHASE-06 → PHASE-06 closure → PHASE-07 → PHASE-08 → PHASE-09 final QA → PHASE-10.
 
 این شمارش بر اساس تمام TASK-*های همین سند انجام شده و از این checkpoint به‌عنوان عدد مرجع استفاده می‌شود.
@@ -261,9 +261,9 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-09-019 — Critical Bug Fixes — IN_PROGRESS
 - TASK-09-020 — Release Blocker Review — TODO
 - TASK-09-021 — Final Product Review — TODO
-- TASK-09-022 — E2E Dataset/Editorial Alignment — IN_PROGRESS
-  - current browser smoke still expects removed demo historical event records
-  - must be aligned before current HEAD can be considered CI-green
+- TASK-09-022 — E2E Dataset/Editorial Alignment — DONE
+  - browser smoke now follows the intentionally empty historical-event seed
+  - CI run #168 passed the full quality + browser-smoke pipeline
 
 # PHASE-10 — Release & Handoff — TODO
 - TASK-10-001 — Production Configuration — TODO
