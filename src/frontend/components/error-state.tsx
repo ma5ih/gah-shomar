@@ -1,0 +1,1 @@
+export function ErrorState({message="مشکلی پیش آمد",retryLabel="تلاش دوباره",onRetry}:{message?:string;retryLabel?:string;onRetry?:()=>void}){return <div className="card empty"><p>{message}</p>{onRetry?<button className="primary-button" onClick={onRetry}>{retryLabel}</button>:null}</div>}
