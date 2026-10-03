@@ -167,6 +167,7 @@ Test files برای calendar/month/leap/conversion/historical/today/arithmetic/w
 - ACT-080 — Requirements version sync — DONE
 - ACT-081 — Complete changelog action ledger — DONE
 - ACT-082 — Expand calendar leap-year regression matrix — DONE
+- ACT-083 — Add domain contract fixtures — IN_PROGRESS
 
 ## Next Task — دقیقاً از اینجا ادامه بده
 
