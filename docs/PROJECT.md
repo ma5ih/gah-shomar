@@ -93,10 +93,10 @@ PHASE-08 IN_PROGRESS
 PHASE-09 IN_PROGRESS
 PHASE-10 TODO
 
-Implementation baseline: `d531e0a1bb3e4cbf287ad2ce25c72bf0cfa4d9e3`
-Current HEAD: `2f8bc94aa64d2cb6cf5efb42042ba418b04ad8be`
-Latest CI: #218 — PASS
-Current next task: TASK-09-019 — Critical Bug Fixes identified by ACT-186.
+Implementation baseline: `4e06741359d86cd2194b5cacbcb4c2d9e81c4fd1`
+Current HEAD: `4e06741359d86cd2194b5cacbcb4c2d9e81c4fd1`
+Latest code checkpoint CI: #246 — IN_PROGRESS at browser setup when this checkpoint was recorded.
+TASK-09-019 — Critical Bug Fixes remains IN_PROGRESS; next fresh ACT: ACT-189.
 
 ## 9. اصل ادامه پروژه
 GitHub مرجع نهایی است. فرد یا اکانت جدید نباید برای فهم وضعیت پروژه به چت قبلی نیاز داشته باشد.
