@@ -52,6 +52,8 @@ Calendar Engine از blocker اصلی کبیسه عبور کرده و اجزای
 - TASK-03-023 — Calendar Unit Tests / CI Validation
 - TASK-03-024 — Conversion Tests
 - TASK-03-025 — Edge-case Tests
+  - modern leap-year regression matrix expanded through Imperial 2629 / Solar Hijri 1449: DONE
+  - CI execution validation: PENDING
 
 ### TODO
 - TASK-03-026 — Domain Model Tests
@@ -164,6 +166,7 @@ Test files برای calendar/month/leap/conversion/historical/today/arithmetic/w
 - ACT-079 — Documentation index sync — DONE
 - ACT-080 — Requirements version sync — DONE
 - ACT-081 — Complete changelog action ledger — DONE
+- ACT-082 — Expand calendar leap-year regression matrix — DONE
 
 ## Next Task — دقیقاً از اینجا ادامه بده
 
