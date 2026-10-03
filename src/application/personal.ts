@@ -1,6 +1,6 @@
 import { isImperialDateValid } from "../domain/calendar/conversion";
 import type { ImperialDate } from "../domain/calendar/types";
-import type { Memory,PersonalEvent,PersonalEventType } from "../domain/personal/types";
+import type { Memory,PersonalEvent,PersonalEventType,PersonalPerson } from "../domain/personal/types";
 import type { PersonalRepository } from "../data/contracts/repositories";
 import { ValidationError } from "../shared/errors";
 
