@@ -113,7 +113,7 @@ Last updated: 2026-10-03
 - TASK-03-002 — Year/Month/Day Rules — DONE
 - TASK-03-003 — Month Lengths — DONE
 - TASK-03-004 — Leap-Year Rules — DONE
-- TASK-03-005 — Now/Today Calculation — TODO
+- TASK-03-005 — Now/Today Calculation — DONE
 - TASK-03-006 — Gregorian ↔ Imperial Conversion — DONE
 - TASK-03-007 — Historical Date Conversion — TODO
 - TASK-03-008 — Year Boundary / Nowruz Edge Cases — TODO
@@ -385,6 +385,6 @@ Last updated: 2026-10-03
 - Main Capabilities — DONE
 - MVP Definition — DONE
 
-**اقدام بعدی:** TASK-03-005 — Now/Today Calculation
+**اقدام بعدی:** TASK-03-007 — Historical Date Conversion
 
 سایر Taskهای مستقل تا حد امکان بدون وابستگی به قاعده کبیسه ادامه می‌یابند.
