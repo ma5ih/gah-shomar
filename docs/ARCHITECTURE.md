@@ -17,7 +17,7 @@ Next.js App Router, React, TypeScript, PostgreSQL, Drizzle ORM, Tailwind CSS, No
 
 ## Dependency Rule
 Presentation → Application → Domain.
-Data implements persistence boundaries. Domain has no dependency on Next.js, React or database. ACT-186 identified remaining presentation-layer dependency leaks that must be removed before final acceptance.
+Data implements persistence boundaries. Domain has no dependency on Next.js, React or database. ACT-186 identified presentation-layer dependency leaks; ACT-188 moved concrete repository binding to `src/application/server.ts` so app routes/actions consume the application composition boundary.
 
 ## Calendar Engine — current implementation
 Calendar Engine is the single source of truth for:
@@ -54,13 +54,13 @@ Public: Event, Person, Period, Source, Media.
 Private: User, Personal Event, Personal Person, Memory, Share Card artifact.
 
 ## Data Flow
-Request → Route/Server boundary → Application use case → Domain/Data → DTO → Presentation.
+Request → Route/Server boundary → Application composition (`src/application/server.ts`) → Use Case → Domain/Data → DTO → Presentation.
 
 ## Localization
 Domain stores localized content. Presentation determines locale and direction. Persian is RTL; English is LTR.
 
 ## Testing
-Calendar/domain unit tests are first-class. The current suite also contains application, integration and browser smoke coverage. CI currently runs migration, typecheck, unit/integration tests, production build and Playwright browser smoke; latest observed run #218 is SUCCESS.
+Calendar/domain unit tests are first-class. The current suite also contains application, integration and browser smoke coverage. CI currently runs migration, typecheck, unit/integration tests, production build and Playwright browser smoke; ACT-187 checkpoint #244 is SUCCESS; ACT-188 checkpoint #246 is in progress at browser setup.
 
 ## Deferred
 Notifications, social features, public event submission, maps, export/import, integrations, monetization, public API and advanced analytics remain outside MVP.
@@ -74,4 +74,4 @@ Private Personal Event share-card generation is defined in SHARE-CARD-ARCHITECTU
 ## Current phase
 PHASE-06 — IN_PROGRESS (QA gate: PHASE-09)
 
-**Next:** TASK-09-019 — Critical Bug Fixes identified by ACT-186
+**Next:** TASK-09-019 — remaining correction gaps identified by ACT-186, after CI #246 validation
