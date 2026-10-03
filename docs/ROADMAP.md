@@ -118,7 +118,7 @@ Last updated: 2026-10-03
 - TASK-03-007 — Historical Date Conversion — IN_PROGRESS
 - TASK-03-008 — Year Boundary / Nowruz Edge Cases — DONE
 - TASK-03-009 — Date Arithmetic — DONE
-- TASK-03-010 — Weekday Calculation — TODO
+- TASK-03-010 — Weekday Calculation — DONE
 - TASK-03-011 — Time-of-day State — TODO
 - TASK-03-012 — Seasonal State — TODO
 
@@ -385,6 +385,6 @@ Last updated: 2026-10-03
 - Main Capabilities — DONE
 - MVP Definition — DONE
 
-**اقدام بعدی:** TASK-03-010 — Weekday Calculation
+**اقدام بعدی:** TASK-03-011 — Time-of-day State
 
 سایر Taskهای مستقل تا حد امکان بدون وابستگی به قاعده کبیسه ادامه می‌یابند.
