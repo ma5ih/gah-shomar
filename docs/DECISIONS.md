@@ -1,3 +1,19 @@
+## DEC-025 — 2026-10-04
+Status: ACCEPTED
+Title: آغاز اجرای بصری Theme A بدون تغییر Core
+
+### Decision
+- اجرای اصلی TASK-07-001 فقط برای Theme A — Flat Geometric آغاز می‌شود.
+- تمام قواعد بصری اجرای Theme A در docs/PHASE-07-THEME-A-FLAT-GEOMETRIC.md ثبت می‌شوند و باید داخل brief مصوب Theme A باقی بمانند.
+- stylesheet و presentation مربوط به Theme A داخل src/frontend/themes/flat-geometric/ نگهداری می‌شود.
+- Theme B در این checkpoint هیچ تغییری نمی‌کند.
+- Core مشترک، Domain، Application، Data، Calendar Engine، Auth/Session، routing، localization contracts و business behavior نباید برای این طراحی تغییر کنند.
+
+### Consequence
+- Theme A می‌تواند ظاهر خود را مستقل از Theme B توسعه دهد.
+- same data + same state + same product behavior برای Theme A حفظ می‌شود.
+- TASK-07-001 تا زمان validation واقعی across core pages و responsive states DONE نمی‌شود.
+
 ## DEC-024 — 2026-10-04
 Status: ACCEPTED
 Title: جداسازی کامل دو Visual Theme با Core مشترک
