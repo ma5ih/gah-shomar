@@ -3,6 +3,7 @@ import type {ImperialDate,ImperialMonth,Weekday} from "../domain/calendar/types"
 import type {MonthQueryResult,DayQueryResult} from "./types";
 import {publicRepository} from "../data/public/repository";
 import type {PersonalRepository} from "../data/contracts/repositories";
+import type {PersonalEvent,Memory} from "../domain/personal/types";
 import {occurrenceForYear} from "../domain/personal/recurrence";
 import {personalEventOccursInMonth,personalEventOccursOn} from "./personal-calendar";
 
