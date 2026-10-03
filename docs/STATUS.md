@@ -122,7 +122,7 @@ There is a historical ACT-ID collision in Git commit messages:
 
 These historical commits are immutable and should not be rewritten. From the next checkpoint onward, new ACT IDs must never be reused.
 
-Next fresh ACT ID: **ACT-160**
+Next fresh ACT ID: **ACT-162**
 
 ## Continuation rule
 
@@ -144,3 +144,8 @@ The code implementation baseline for this checkpoint is `e3107be19485199f3e725a1
 ## Final checkpoint note
 
 ACT-160 changed documentation only. Implementation baseline remains e3107be19485199f3e725a1bbc40ceb86b72f88b. Next fresh ACT ID: **ACT-161**.
+
+
+## Final continuation counter
+
+Next fresh ACT ID: **ACT-162**. ACT-161 changed documentation only.
