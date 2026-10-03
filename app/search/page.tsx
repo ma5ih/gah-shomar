@@ -1,0 +1,18 @@
+import Link from "next/link";
+import { resolveLocale } from "@/application/locale";
+import { searchPublicContent } from "@/application/search";
+import { AppShell } from "@/frontend/components/app-shell";
+import { SearchForm } from "@/frontend/components/search-form";
+import { copy } from "@/frontend/lib/i18n";
+
+export default async function SearchPage({searchParams}:{searchParams?:Promise<Record<string,string|string[]|undefined>>}) {
+  const p=await searchParams; const locale=resolveLocale(typeof p?.lang==="string"?p.lang:undefined); const q=typeof p?.q==="string"?p.q:""; const results=searchPublicContent(q); const t=copy[locale];
+  return <AppShell locale={locale} active="search">
+    <section className="hero-panel"><div className="overline">{t.search}</div><h1 style={{margin:"10px 0",fontSize:"2.3rem"}}>{t.search}</h1><SearchForm locale={locale} initialQuery={q}/></section>
+    {q ? <div className="stack">{results.map((r)=>
+      <Link key={r.entityId} className="card event-card" href={r.entityType==="event"?`/events/${r.slug}?lang=${locale}`:r.entityType==="person"?`/people/${r.slug}?lang=${locale}`:`/timeline?lang=${locale}`}>
+        <div className="eyebrow">{r.entityType}</div><h3>{r.title[locale]}</h3><p>{r.context[locale]}</p>
+      </Link>
+    )}{!results.length?<div className="card empty">{t.noResults}</div>:null}</div>:<div className="card empty">{locale==="fa"?"عبارت جستجو را وارد کن.":"Enter a search phrase."}</div>}
+  </AppShell>;
+}

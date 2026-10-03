@@ -1,0 +1,9 @@
+import { resolveLocale } from "@/application/locale";
+import { AppShell } from "@/frontend/components/app-shell";
+import { AuthForm } from "@/frontend/components/auth-form";
+import { signUpAction } from "@/app/actions/auth";
+
+export default async function RegisterPage({searchParams}:{searchParams?:Promise<Record<string,string|string[]|undefined>>}) {
+  const p=await searchParams; const locale=resolveLocale(typeof p?.lang==="string"?p.lang:undefined);
+  return <AppShell locale={locale} active="personal"><AuthForm mode="register" action={signUpAction} locale={locale}/></AppShell>;
+}
