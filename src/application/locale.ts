@@ -1,0 +1,1 @@
+import type {Locale} from "./types";export function resolveLocale(value?:string):Locale{return value==="en"?"en":"fa"}export function directionForLocale(locale:Locale):"rtl"|"ltr"{return locale==="fa"?"rtl":"ltr"}

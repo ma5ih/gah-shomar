@@ -1,0 +1,1 @@
+import {publicRepository} from "../data/public/repository";export function getTimeline(){return [...publicRepository.listPeriods()].sort((a,b)=>(a.startDate.imperialDate?.year??Number.MAX_SAFE_INTEGER)-(b.startDate.imperialDate?.year??Number.MAX_SAFE_INTEGER))}
