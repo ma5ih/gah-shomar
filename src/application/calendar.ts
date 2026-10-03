@@ -11,12 +11,14 @@ import {personalEventOccursInMonth,personalEventOccursOn} from "./personal-calen
 const WEEKDAYS:readonly Weekday[]=["saturday","sunday","monday","tuesday","wednesday","thursday","friday"];
 function assertMonth(month:number):asserts month is ImperialMonth{if(!Number.isInteger(month)||month<1||month>12)throw new RangeError("Invalid Imperial month.")}
 function assertYear(year:number){if(!Number.isInteger(year)||year<1119||year>4357)throw new RangeError("Unsupported Imperial year.")}
-function periodContainsDate(period:{startDate: {imperialDate?: ImperialDate}; endDate?: {imperialDate?: ImperialDate}},date:ImperialDate){const start=period.startDate.imperialDate;if(!start||differenceInImperialDays(start,date)<0)return false;const end=period.endDate?.imperialDate;return !end||differenceInImperialDays(date,end)<=0}
+function periodContainsDate(period:{startDate:{imperialDate?:ImperialDate};endDate?:{imperialDate?:ImperialDate}},date:ImperialDate){const start=period.startDate.imperialDate;if(!start||differenceInImperialDays(start,date)<0)return false;const end=period.endDate?.imperialDate;return !end||differenceInImperialDays(date,end)<=0}
+function eventContainsDate(event:{dates:readonly {start:{imperialDate?:ImperialDate};end?:{imperialDate?:ImperialDate}}[]},date:ImperialDate){return event.dates.some(({start,end})=>{const startDate=start.imperialDate;if(!startDate||differenceInImperialDays(startDate,date)>0)return false;const endDate=end?.imperialDate;return !endDate||differenceInImperialDays(date,endDate)<=0})}
 export function gregorianDateForImperial(date:ImperialDate):GregorianDate{return imperialToGregorian(date)}
 export function monthNameFor(month:ImperialMonth):string{return monthName(month)}
 export async function getMonthQuery(year:number,month:number,today?:ImperialDate,userId?:string,personalRepository?:PersonalRepository):Promise<MonthQueryResult>{
  assertYear(year);assertMonth(month);const daysInMonth=monthLength(month,isImperialLeapYear(year));const first:ImperialDate={year,month,day:1};const offset=WEEKDAYS.indexOf(weekdayOfImperialDate(first));
- const eventDays=new Set(publicRepository.listEventsForMonth(year,month).flatMap(e=>e.dates.map(({start,end})=>({start,end})).flatMap(({start,end})=>{const d=start.imperialDate;const last=end?.imperialDate??d;return d&&last?Array.from({length:Math.max(1,differenceInImperialDays(d,last)+1)},(_,i)=>{const target=addImperialDays(d,i);return target.year===year&&target.month===month?target.day:null}):[]} ).filter((d):d is number=>d!==null)));
+ const publicEvents=publicRepository.listEventsForMonth(year,month);const eventDays=new Set<number>();
+ for(let day=1;day<=daysInMonth;day++){const date:ImperialDate={year,month,day};if(publicEvents.some(event=>eventContainsDate(event,date)))eventDays.add(day)}
  const personalDays=new Set<number>();
  if(userId&&personalRepository){
   try { const[events,memories]=await Promise.all([personalRepository.listEvents(userId),personalRepository.listMemories(userId)]);
