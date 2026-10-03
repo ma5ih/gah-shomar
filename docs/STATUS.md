@@ -163,6 +163,7 @@ Test files برای calendar/month/leap/conversion/historical/today/arithmetic/w
 - ACT-078 — Calendar Engine resolution note sync — DONE
 - ACT-079 — Documentation index sync — DONE
 - ACT-080 — Requirements version sync — DONE
+- ACT-081 — Complete changelog action ledger — DONE
 
 ## Next Task — دقیقاً از اینجا ادامه بده
 
