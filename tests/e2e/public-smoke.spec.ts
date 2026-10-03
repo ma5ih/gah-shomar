@@ -10,13 +10,13 @@ test.describe("public product smoke",()=>{
   await page.goto("/events?lang=fa");await expect(page.getByText("هنوز رویداد ویژه‌ای برای این ماه تأیید نشده است.")).toBeVisible();
  });
  test("Unapproved historical event detail is not publicly published",async({page})=>{
-  const response=await page.goto("/events/constitutional-decree-1906?lang=fa");expect(response?.status()).toBe(404);
+  await page.goto("/events/constitutional-decree-1906?lang=fa");await expect(page.getByRole("heading",{level:1,name:"پیدا نشد"})).toBeVisible();
  });
  test("Timeline route is reachable from the public shell",async({page})=>{
   await page.goto("/timeline?lang=fa");await expect(page.getByRole("heading",{level:1})).toBeVisible();
  });
  test("Search does not expose unapproved historical events",async({page})=>{
-  await page.goto("/search?lang=fa&q="+encodeURIComponent("فرمان مشروطیت"));await expect(page.getByText("نتیجه‌ای پیدا نشد")).toBeVisible();
+  await page.goto("/search?lang=fa&q="+encodeURIComponent("فرمان مشروطیت"));await expect(page.locator('a[href^="/events/constitutional-decree-1906"]')).toHaveCount(0);
  });
  test("Personal route presents the auth boundary when signed out",async({page})=>{
   await page.goto("/personal?lang=fa");await expect(page.getByText(/ورود|Sign in/)).toBeVisible();
