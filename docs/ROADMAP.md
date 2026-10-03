@@ -264,10 +264,10 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-09-017 — PWA QA — IN_PROGRESS
 - TASK-09-018 — Visual Consistency QA — TODO
 - TASK-09-019 — Critical Bug Fixes — IN_PROGRESS
-  - ACT-186 HIGH-01: presentation/data/domain dependency leaks
-  - ACT-186 HIGH-02: published Event slug/routing contract
-  - ACT-186 HIGH-03: Period date containment by full ImperialDate
-  - MEDIUM update semantics, range events, search approval filtering and share-card theme remain open
+  - ACT-186 HIGH-01: implementation corrected through server composition boundary; final CI validation pending
+  - ACT-186 HIGH-02: published Event slug/routing contract corrected via slug-or-id retrieval
+  - ACT-186 HIGH-03: Period date containment corrected and regression-tested
+  - MEDIUM update semantics, range/search hardening follow-up, share-card theme, lint/reproducibility and broader acceptance remain open
 - TASK-09-020 — Release Blocker Review — TODO
 - TASK-09-021 — Final Product Review — TODO
 - TASK-09-022 — E2E Dataset/Editorial Alignment — DONE
