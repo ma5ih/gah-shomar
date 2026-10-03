@@ -3,3 +3,4 @@ export * from "./month";
 export * from "./types";
 export * from "./leap-year";
 export * from "./conversion";
+export * from "./today";
