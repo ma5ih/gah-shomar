@@ -1,1 +1,3 @@
-import {Pool} from "pg";import {drizzle} from "drizzle-orm/node-postgres";import * as schema from "./schema";let pool:Pool|undefined;export function getDb(){const connectionString=process.env.DATABASE_URL;if(!connectionString)throw new Error("DATABASE_URL is required for database-backed use cases.");if(!pool)pool=new Pool({connectionString,max:10});return drizzle(pool,{schema})}
+import {Pool} from "pg";import {drizzle} from "drizzle-orm/node-postgres";import * as schema from "./schema";import {getRuntimeConfig} from "../../application/runtime-config";
+let pool:Pool|undefined;
+export function getDb(){const {databaseUrl}=getRuntimeConfig({requireDatabase:true});if(!databaseUrl)throw new Error("DATABASE_URL is required for database-backed use cases.");if(!pool)pool=new Pool({connectionString:databaseUrl,max:10});return drizzle(pool,{schema})}
