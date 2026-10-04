@@ -1,7 +1,7 @@
 # ROADMAP — نقشه راه کامل پروژه
 
 Version: 2.4.5
-Last updated: 2026-10-04 — ACT-211
+Last updated: 2026-10-04 — ACT-221
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
 
@@ -12,8 +12,8 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 
 - کل ریزتسک‌های شماره‌گذاری‌شده: **204**
 - DONE: **136**
-- IN_PROGRESS: **32**
-- TODO: **35**
+- IN_PROGRESS: **34**
+- TODO: **33**
 - DEFERRED: **1**
 - BLOCKED: **0**
 - DEPRECATED: **0**
@@ -268,28 +268,27 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - All verified implementation findings from ACT-186 are closed through ACT-189..ACT-196.
   - CI #281 validates lint, typecheck, unit/integration, production build and browser smoke on the corrected HEAD.
   - The missing package-lock is tracked as a release reproducibility concern, not an unresolved application bug.
-- TASK-09-020 — Release Blocker Review — TODO
+- TASK-09-020 — Release Blocker Review — IN_PROGRESS
   - includes final security hardening evidence (CSRF/rate limiting) and release reproducibility review
 - TASK-09-021 — Final Product Review — TODO
 - TASK-09-022 — E2E Dataset/Editorial Alignment — DONE
   - browser smoke follows the intentionally empty historical-event seed
   - CI run #168 and later full pipelines validate the aligned behavior
 
-## CURRENT CHECKPOINT — ACT-211 — 2026-10-04
+## CURRENT CHECKPOINT — ACT-221 — 2026-10-04
 
-- ACT-210 started TASK-07-002 — Spacing/Margin Consistency for Theme A — Flat Geometric; ACT-211 refined its spacing normalization.
-- Theme A spacing is normalized through a dedicated 4/8/12/16/20/24/32px scale in src/frontend/themes/flat-geometric/theme.css.
-- Applied areas include shell/topbar, main content, hero, cards, calendar, forms, controls, metadata and mobile navigation.
-- No Core, Calendar Engine, Domain, Data, Application, Auth/Session, routing, localization or business behavior changed.
-- Theme B remains untouched and outside the current scope.
-- Static validation passed for scope/selector structure and confirmed no gradient expression was introduced in the Theme A stylesheet.
-- Automated CI for the latest ACT-211 implementation commit has not yet produced an independently observed result; TASK-07-002 therefore remains IN_PROGRESS.
-- Current implementation commit: fa095e637e3f4d244c9b06889717d71d3dd690a0.
-- Last completed Theme A CI validation remains GitHub Actions #37161733754 from ACT-208.
-- Canonical task counts: 204 total / 136 DONE / 32 IN_PROGRESS / 35 TODO / 1 DEFERRED.
+- ACT-221 starts release security hardening on the main baseline.
+- Persistent PostgreSQL-backed authentication rate limiting is implemented for login/register attempts.
+- The policy is 5 attempts per 10 minutes per normalized account identity, with a reset after successful authentication/registration.
+- The migration runner now applies all SQL files in deterministic filename order, and drizzle/0001_auth_rate_limits.sql adds the rate-limit table.
+- TASK-09-020 — Release Blocker Review is now IN_PROGRESS.
+- TASK-10-001 — Production Configuration is now IN_PROGRESS.
+- Runtime configuration centralization from ACT-216 remains on a separate release-readiness branch and is not part of this security branch.
+- Theme A/Theme B presentation work is not changed in this branch.
+- The security implementation requires CI validation before promotion to DONE.
 
 # PHASE-10 — Release & Handoff — TODO
-- TASK-10-001 — Production Configuration — TODO
+- TASK-10-001 — Production Configuration — IN_PROGRESS
   - includes central runtime configuration validation, production environment checks and the reproducible dependency-installation strategy (including lockfile)
 - TASK-10-002 — Production Build — TODO
 - TASK-10-003 — Deployment Validation — TODO
