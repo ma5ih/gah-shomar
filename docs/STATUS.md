@@ -1,7 +1,7 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
-Last updated: 2026-10-04 — ACT-246
-Current documentation checkpoint: ACT-246 on main
+Last updated: 2026-10-04 — ACT-247
+Current documentation checkpoint: ACT-247 on main
 Current implementation HEAD: 7e7ebb4bb8f2d15175900daf54968b4792d23bad
 Current implementation checkpoint: ACT-237 production security gate + ACT-244 PHASE-06 acceptance
 Latest completed Theme A validation: GitHub Actions #37161733754 — PASS (ACT-208)
@@ -11,14 +11,14 @@ Primary workstream: PHASE-10 — Release & Handoff
 Current visual stream: PHASE-07 — Theme A — DONE
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: ACT-247
+Next fresh ACT ID: ACT-248
 
 ## شمارش رسمی ریزتسک‌ها
 
 - کل: 204
-- DONE: 187
+- DONE: 190
 - IN_PROGRESS: 4
-- TODO: 12
+- TODO: 9
 - DEFERRED: 1
 - BLOCKED: 0
 - DEPRECATED: 0
@@ -42,6 +42,10 @@ Next fresh ACT ID: ACT-247
 | PHASE-10 | IN_PROGRESS | Release hardening and final release steps |
 
 ## آخرین اقدامات
+
+### ACT-247 — Internal release-readiness cleanup — DONE
+- TASK-08-011, TASK-10-005 and TASK-10-009 are DONE.
+- Canonical ledger is now 190 DONE / 4 IN_PROGRESS / 9 TODO / 1 DEFERRED.
 
 ### ACT-246 — Final review and release checklist — DONE
 - Automated/assisted review records are complete; human signoff remains explicitly open.
