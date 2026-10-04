@@ -1,17 +1,17 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
 Last updated: 2026-10-04 — ACT-231
-Current documentation checkpoint: ACT-231 on main
+Current documentation checkpoint: ACT-235 on main
 Current implementation HEAD: 7e7ebb4bb8f2d15175900daf54968b4792d23bad
 Current implementation checkpoint: ACT-230 — full security/reproducibility + post-merge validation
 Latest completed Theme A validation: GitHub Actions #37161733754 — PASS (ACT-208)
 Current visual state: PHASE-07 DONE — Theme A visual batch validated
 Current app-like state: TASK-07-013 DONE — Install Experience validated
-Primary workstream: PHASE-06 — Core Frontend Product Experience
-Current visual stream: PHASE-07 — Theme A refinement
+Primary workstream: PHASE-10 — Release & Handoff
+Current visual stream: PHASE-07 — Theme A — DONE
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: ACT-232
+Next fresh ACT ID: ACT-236
 
 ## شمارش رسمی ریزتسک‌ها
 
@@ -49,6 +49,14 @@ Next fresh ACT ID: ACT-232
 - PHASE-07 و Theme A به‌صورت صریح DONE ثبت شدند؛ Theme B همچنان خارج از scope است.
 - این اقدام documentation-only است و behavior یا Core محصول را تغییر نمی‌دهد.
 
+### ACT-235 — Performance baseline correction and validation — DONE
+- ACT-233 initial performance gate failed only because the Playwright skip callback was written with the wrong fixture signature.
+- ACT-235 corrected the project gating.
+- CI #444 passed: 87 tests, with measured TTFB 40.7–83.1ms and DOMContentLoaded 85.5–203.1ms on Today, Calendar and Search.
+
+### ACT-232 — Dependency security audit — DONE
+- CI #438 produced the first reproducible audit and PR #5 is handling production-vulnerability remediation.
+
 ### ACT-230 — Full security/reproducibility + post-merge validation — DONE
 - PR #4 merged as 7e7ebb4bb8f2d15175900daf54968b4792d23bad.
 - PR #4 CI #406 and main CI #407 passed end-to-end.
@@ -80,7 +88,7 @@ seedEvents = [] عمداً خالی است. هیچ historical event عمومی �
 
 TASK-07-002 — Spacing/Margin Consistency — DONE
 
-Main validation is green. Remaining release gates are security/reproducibility integration, performance QA, visual human review, editorial event approval and production deployment evidence.
+Main validation is green. Remaining release gates are dependency-security remediation, final human visual/product review, editorial event approval, production deployment/PWA validation and release packaging.
 
 Theme B همچنان خارج از Scope است.
 
