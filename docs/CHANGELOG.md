@@ -1,3 +1,78 @@
+## ACT-223 — 2026-10-04
+Type: PRODUCT-NAVIGATION-IMPLEMENTATION
+Status: IN_PROGRESS
+
+- Person Detail اکنون relatedPersonIds را به related-person navigation واقعی تبدیل می‌کند.
+- Person page برای related people card/link نمایش می‌دهد.
+- Browser E2E مسیر Reżā Shah Pahlavi → Moḥammad-Reżā Shah Pahlavi را verify می‌کند.
+- این اقدام به TASK-06-014 — Related Content Navigation مربوط است.
+- Theme B و shared calendar/business behavior تغییری نکردند.
+- CI validation برای latest branch head هنوز pending است.
+
+### Next
+Validate the current Theme A/PWA/product-navigation branch head and then promote validated tasks.
+
+Next fresh ACT ID: **ACT-224**
+
+## ACT-220 — 2026-10-04
+Type: QA-AND-DATA-STATUS-RECONCILIATION
+Status: DONE
+
+- ACT-217: accessibility/device QA coverage expanded for semantic main, keyboard focus, tablet navigation and mobile overflow.
+- ACT-218: approved Person page and Search-to-Person navigation received browser acceptance coverage.
+- ACT-219: PWA install prompt state was made hydration-safe while keeping install behavior event-driven.
+- ACT-220: Personal Share Card browser acceptance coverage was added.
+- Person Dataset and Timeline Period Dataset are now marked DONE because approved seeded entities, relationship validation and route coverage already exist.
+- Today, Calendar, Timeline, Mobile, Tablet/Desktop, Touch/Swipe, Accessibility and Visual Consistency QA tasks are now IN_PROGRESS based on concrete automated coverage.
+- Event Acceptance remains TODO because the public historical event seed is intentionally empty and no synthetic public event was introduced.
+- Theme B remains untouched; shared Core and product semantics remain unchanged.
+- Canonical ledger count at this checkpoint: 204 total / 138 DONE / 49 IN_PROGRESS / 24 TODO / 1 DEFERRED.
+
+### Next
+Complete validation of the latest Theme A + PWA branch head, then merge validated work and continue release-readiness/security/reproducibility tasks.
+
+Next fresh ACT ID: **ACT-221**
+
+## ACT-213 — 2026-10-04
+Type: PWA-INSTALL-EXPERIENCE
+Status: IN_PROGRESS
+
+- TASK-07-013 — Install Experience برای محصول وارد اجرای واقعی شد.
+- `PwaInstallPrompt` به AppShell متصل شد و از `beforeinstallprompt`، `appinstalled` و persistent dismiss state استفاده می‌کند.
+- متن‌های Install/Later برای فارسی و انگلیسی به localization contract اضافه شدند.
+- browser E2E برای نمایش prompt و dismiss آن اضافه شد.
+- unit contract برای install prompt و service-worker precache اضافه شد.
+- service worker از cache shell v2 به v3 ارتقا یافت و offline page، manifest و iconهای استاندارد را precache می‌کند.
+- skin بصری install prompt فقط در Theme A قرار گرفت.
+- Theme B و shared Core/business behavior تغییری نکردند.
+- TASK-07-002 تا TASK-07-011 همچنان در انتظار validation کامل batch هستند؛ TASK-07-013 نیز تا validation نهایی IN_PROGRESS است.
+
+### Next
+Validation کامل branch شامل visual batch + PWA install experience؛ سپس promotion Taskهای validated به DONE.
+
+Next fresh ACT ID: **ACT-214**
+
+## ACT-212 — 2026-10-04
+Type: THEME-A-VISUAL-POLISH-BATCH
+Status: IN_PROGRESS
+
+- TASK-07-002 تا TASK-07-011 برای Theme A وارد اجرای مستقیم شدند.
+- typography consistency با یک type scale محدود و hierarchy مشخص اعمال شد.
+- component consistency با radii، borders و controls هماهنگ شد.
+- visual density با normalize کردن gap/paddingهای تکرارشونده سبک و متعادل شد.
+- چهار state زمان روز — morning/noon/sunset/night — به‌صورت appearance-only با surface، landscape layers و accentهای متفاوت تعریف شدند.
+- seasonal accentهای spring/summer/autumn/winter حفظ و شفاف‌تر شدند.
+- motion به hover/focus lift و transitionهای کوتاه محدود ماند و prefers-reduced-motion حفظ شد.
+- implementation فقط در src/frontend/themes/flat-geometric/theme.css انجام شد و هیچ فایل Theme B تغییر نکرد.
+- static validation: ۷ spacing token، ۰ gradient expression، چهار time-of-day state، چهار season state و reduced-motion handling تأیید شدند.
+- implementation commit: 120722f4304c1ea385ffcb12058d9f94e0fa371b.
+- TASK-07-002 تا TASK-07-011 فعلاً IN_PROGRESS هستند تا CI/runtime visual evidence مستقل مشاهده شود.
+
+### Next
+CI و runtime visual validation برای batch Theme A؛ سپس در صورت PASS، promotion این Taskها به DONE و ادامه به TASK-07-013.
+
+Next fresh ACT ID: **ACT-213**
+
 ## ACT-211 — 2026-10-04
 Type: THEME-A-SPACING-REFINEMENT
 Status: IN_PROGRESS

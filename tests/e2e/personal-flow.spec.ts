@@ -33,13 +33,13 @@ test("signed-in user can create a private event with linked person and notes and
  await expect(savedEvent.locator('select[name="personalPersonId"] option:checked')).toHaveText("شخص تست");
  await expect(savedEvent.locator('input[name="title"]')).toHaveValue("رویداد تست خصوصی");
  await expect(savedEvent.locator('input[name="recurrence"]')).toBeChecked();
+ await expect(savedEvent.getByRole("button",{name:"اشتراک‌گذاری کارت"})).toBeVisible();
 
  await page.goto("/search?lang=fa&q="+encodeURIComponent("رویداد تست خصوصی"));
  await expect(page.getByText("رویداد تست خصوصی")).toBeVisible();
 
  await page.goto("/personal?lang=fa");
  await page.getByRole("button",{name:"خروج"}).click();
- await page.goto("/personal?lang=fa");
  await expect(page.getByText("برای نگهداری رویدادها و خاطرات شخصی وارد حساب شو.")).toBeVisible();
 });
 

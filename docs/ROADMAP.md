@@ -1,7 +1,7 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 2.4.5
-Last updated: 2026-10-04 — ACT-211
+Version: 2.8.0
+Last updated: 2026-10-04 — ACT-225
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
 
@@ -11,9 +11,9 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 ## شمارش رسمی ریزتسک‌ها — ACT-185
 
 - کل ریزتسک‌های شماره‌گذاری‌شده: **204**
-- DONE: **136**
-- IN_PROGRESS: **32**
-- TODO: **35**
+- DONE: **138**
+- IN_PROGRESS: **49**
+- TODO: **16**
 - DEFERRED: **1**
 - BLOCKED: **0**
 - DEPRECATED: **0**
@@ -215,15 +215,15 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 # PHASE-07 — Visual Polish, Time/Season & App-like Experience — IN_PROGRESS
 - TASK-07-001 — Final Visual Hierarchy — DONE
 - TASK-07-002 — Spacing/Margin Consistency — IN_PROGRESS
-- TASK-07-003 — Typography Consistency — TODO
-- TASK-07-004 — Component Consistency — TODO
-- TASK-07-005 — Visual Density Review — TODO
-- TASK-07-006 — Morning State — TODO
-- TASK-07-007 — Noon State — TODO
-- TASK-07-008 — Sunset State — TODO
-- TASK-07-009 — Night State — TODO
-- TASK-07-010 — Seasonal Variations — TODO
-- TASK-07-011 — Motion Polish — TODO
+- TASK-07-003 — Typography Consistency — IN_PROGRESS
+- TASK-07-004 — Component Consistency — IN_PROGRESS
+- TASK-07-005 — Visual Density Review — IN_PROGRESS
+- TASK-07-006 — Morning State — IN_PROGRESS
+- TASK-07-007 — Noon State — IN_PROGRESS
+- TASK-07-008 — Sunset State — IN_PROGRESS
+- TASK-07-009 — Night State — IN_PROGRESS
+- TASK-07-010 — Seasonal Variations — IN_PROGRESS
+- TASK-07-011 — Motion Polish — IN_PROGRESS
 - TASK-07-012 — PWA Manifest — DONE
 - TASK-07-013 — Install Experience — IN_PROGRESS
 - TASK-07-014 — Offline Baseline — DONE
@@ -236,8 +236,8 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-08-003 — Event Research Workflow — DONE
 - TASK-08-004 — Monthly Occasion Review — IN_PROGRESS
 - TASK-08-005 — Important Event Editorial Selection — IN_PROGRESS
-- TASK-08-006 — Person Dataset — TODO
-- TASK-08-007 — Timeline Period Dataset — TODO
+- TASK-08-006 — Person Dataset — DONE
+- TASK-08-007 — Timeline Period Dataset — DONE
 - TASK-08-008 — Historical Date Conversions — DONE
 - TASK-08-009 — Media/Image Metadata — TODO
 - TASK-08-010 — Initial MVP Dataset — IN_PROGRESS
@@ -250,20 +250,20 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-09-003 — Calendar Regression Tests — DONE
 - TASK-09-004 — Data Validation Tests — DONE
 - TASK-09-005 — Search Tests — DONE
-- TASK-09-006 — Today Acceptance Test — TODO
-- TASK-09-007 — Calendar Acceptance Test — TODO
+- TASK-09-006 — Today Acceptance Test — IN_PROGRESS
+- TASK-09-007 — Calendar Acceptance Test — IN_PROGRESS
 - TASK-09-008 — Event Acceptance Test — TODO
-- TASK-09-009 — Timeline Acceptance Test — TODO
+- TASK-09-009 — Timeline Acceptance Test — IN_PROGRESS
 - TASK-09-010 — Personal Layer Acceptance Test — IN_PROGRESS
   - authenticated Personal Event create/persistence/logout flow and Personal Person ownership regression now have automated coverage
 - TASK-09-011 — Language/RTL/LTR QA — IN_PROGRESS
-- TASK-09-012 — Mobile QA — TODO
-- TASK-09-013 — Tablet/Desktop QA — TODO
-- TASK-09-014 — Touch/Swipe QA — TODO
-- TASK-09-015 — Accessibility QA — TODO
+- TASK-09-012 — Mobile QA — IN_PROGRESS
+- TASK-09-013 — Tablet/Desktop QA — IN_PROGRESS
+- TASK-09-014 — Touch/Swipe QA — IN_PROGRESS
+- TASK-09-015 — Accessibility QA — IN_PROGRESS
 - TASK-09-016 — Performance QA — TODO
 - TASK-09-017 — PWA QA — IN_PROGRESS
-- TASK-09-018 — Visual Consistency QA — TODO
+- TASK-09-018 — Visual Consistency QA — IN_PROGRESS
 - TASK-09-019 — Critical Bug Fixes — DONE
   - All verified implementation findings from ACT-186 are closed through ACT-189..ACT-196.
   - CI #281 validates lint, typecheck, unit/integration, production build and browser smoke on the corrected HEAD.
@@ -275,18 +275,17 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - browser smoke follows the intentionally empty historical-event seed
   - CI run #168 and later full pipelines validate the aligned behavior
 
-## CURRENT CHECKPOINT — ACT-211 — 2026-10-04
+## CURRENT CHECKPOINT — ACT-225 — 2026-10-04
 
-- ACT-210 started TASK-07-002 — Spacing/Margin Consistency for Theme A — Flat Geometric; ACT-211 refined its spacing normalization.
-- Theme A spacing is normalized through a dedicated 4/8/12/16/20/24/32px scale in src/frontend/themes/flat-geometric/theme.css.
-- Applied areas include shell/topbar, main content, hero, cards, calendar, forms, controls, metadata and mobile navigation.
-- No Core, Calendar Engine, Domain, Data, Application, Auth/Session, routing, localization or business behavior changed.
-- Theme B remains untouched and outside the current scope.
-- Static validation passed for scope/selector structure and confirmed no gradient expression was introduced in the Theme A stylesheet.
-- Automated CI for the latest ACT-211 implementation commit has not yet produced an independently observed result; TASK-07-002 therefore remains IN_PROGRESS.
-- Current implementation commit: fa095e637e3f4d244c9b06889717d71d3dd690a0.
-- Last completed Theme A CI validation remains GitHub Actions #37161733754 from ACT-208.
-- Canonical task counts: 204 total / 136 DONE / 32 IN_PROGRESS / 35 TODO / 1 DEFERRED.
+- ACT-225 fixes the two deterministic browser QA failures found on the latest branch head.
+- Accessibility landmark acceptance no longer depends on a responsive nav that may be hidden on mobile/tablet.
+- PWA install acceptance waits for a mounted install-listener marker before dispatching beforeinstallprompt.
+- Latest implementation head before this documentation checkpoint: 2d35460c5e4087a5d2a5eaed5f989941800c9fa7.
+- Previous CI on the pre-fix head recorded 81 passed, 2 failed and 1 flaky browser tests; the failures were isolated to the two scenarios above.
+- Current validation run is re-running the complete CI pipeline against ACT-225 fixes.
+- Theme A remains the only visual implementation scope; Theme B remains untouched.
+- Security/reproducibility work from the separate ACT-221 branch is intentionally not merged into this work branch yet.
+- Canonical task counts from the actual top-level TASK ledger: 204 total / 138 DONE / 49 IN_PROGRESS / 16 TODO / 1 DEFERRED.
 
 # PHASE-10 — Release & Handoff — TODO
 - TASK-10-001 — Production Configuration — TODO
@@ -307,7 +306,8 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 **CURRENT VISUAL STREAM:** PHASE-07 — Theme A refinement
 **QA BLOCKER:** TASK-09-022 in PHASE-09 — DONE
 
-**CURRENT NEXT TASK:** TASK-07-002 — Spacing/Margin Consistency — IN_PROGRESS
+**CURRENT VISUAL BATCH:** TASK-07-002 through TASK-07-011 — IN_PROGRESS
+**CURRENT APP-LIKE TASK:** TASK-07-013 — Install Experience — IN_PROGRESS
 - TASK-07-001 برای Theme A بسته شده و DONE است.
 - Theme B فعلاً خارج از Scope است و نباید وارد اجرای بصری فعلی شود.
 - پس از شروع Taskهای باقی‌مانده PHASE-07، مسیر به PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release می‌رسد.

@@ -123,6 +123,7 @@ Theme A و Theme B می‌توانند مستقلانه این موارد را �
 - ACT-207: Theme A visual execution — DONE
 - ACT-208: Theme A validation / TASK-07-001 closure — DONE
 - ACT-209: documentation convergence — DONE
-- Theme A اکنون baseline بصری اجرایی دارد.
+- ACT-212: Theme A visual polish batch — IN_PROGRESS
+- Theme A اکنون baseline بصری اجرایی دارد و polishهای TASK-07-002 تا TASK-07-011 در حال validation هستند.
 - Theme B همچنان فقط در سطح boundary/scaffolding است و طراحی اصلی آن شروع نشده است.
 - گام بعدی بصری: TASK-07-002 — Spacing/Margin Consistency — فقط برای Theme A در scope فعلی.

@@ -1,6 +1,6 @@
 import { gregorianToImperial } from "./conversion";
 import { isImperialLeapYear } from "./leap-year";
-import type { GregorianDate, HistoricalDate, ImperialDate } from "./types";
+import type { HistoricalDate, ImperialDate } from "./types";
 
 export type ExactHistoricalCalendar = "gregorian" | "hijri_solar";
 
