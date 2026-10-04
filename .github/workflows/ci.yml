@@ -11,6 +11,7 @@ jobs:
     env:
       DATABASE_URL: postgresql://postgres:postgres@localhost:5432/gah_shomar_test
       APP_TIMEZONE: Asia/Tehran
+      APP_URL: http://127.0.0.1:3000
     services:
       postgres:
         image: postgres:16
