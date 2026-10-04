@@ -39,3 +39,43 @@ html[data-theme="flat-geometric"] .notice{background:#efd5c5;border-color:#e5c0a
 html[data-theme="flat-geometric"] .empty{background:var(--fg-surface);border-color:#cfc4b3}
 html[data-theme="flat-geometric"] .bottom-nav{background:var(--fg-surface-strong);border-color:var(--fg-line)}
 html[data-theme="flat-geometric"] .bottom-link.active{background:var(--fg-ink);color:#fffdf8}
+
+
+/* TASK-07-003 — Typography Consistency */
+html[data-theme="flat-geometric"]{--fg-space-1:4px;--fg-space-2:8px;--fg-space-3:12px;--fg-space-4:16px;--fg-space-5:20px;--fg-space-6:24px;--fg-space-7:32px}
+
+/* TASK-07-004 — Component Consistency */
+
+/* TASK-07-005 — Visual Density Review */
+
+/* TASK-07-006..009 — Time-of-day Presentation */
+html[data-theme="flat-geometric"] .today-view[data-time-of-day="morning"] .today-primary{background:#f2e6d0}
+html[data-theme="flat-geometric"] .today-view[data-time-of-day="noon"] .today-primary{background:#e8eee5}
+html[data-theme="flat-geometric"] .today-view[data-time-of-day="sunset"] .today-primary{background:#ead3bb}
+html[data-theme="flat-geometric"] .today-view[data-time-of-day="night"] .today-primary{background:#293a31}
+html[data-theme="flat-geometric"] .today-view[data-time-of-day="night"] .today-primary .today-date,
+html[data-theme="flat-geometric"] .today-view[data-time-of-day="night"] .today-primary .today-clock{color:#f5f0e7}
+
+/* TASK-07-010 — Seasonal Variations */
+html[data-theme="flat-geometric"] .today-view[data-season="spring"] .today-dot{background:#71896d}
+html[data-theme="flat-geometric"] .today-view[data-season="summer"] .today-dot{background:#ca5f37}
+html[data-theme="flat-geometric"] .today-view[data-season="autumn"] .today-dot{background:#a66d4e}
+html[data-theme="flat-geometric"] .today-view[data-season="winter"] .today-dot{background:#718995}
+
+/* TASK-07-011 — Motion Polish */
+html[data-theme="flat-geometric"] .nav-link,
+html[data-theme="flat-geometric"] .lang-chip,
+html[data-theme="flat-geometric"] .profile-chip,
+html[data-theme="flat-geometric"] .icon-button,
+html[data-theme="flat-geometric"] .primary-button,
+html[data-theme="flat-geometric"] .secondary-button,
+html[data-theme="flat-geometric"] .event-card,
+html[data-theme="flat-geometric"] .today-event{transition:transform var(--fg-ease,180ms cubic-bezier(.2,.7,.2,1)),background-color var(--fg-ease,180ms cubic-bezier(.2,.7,.2,1)),border-color var(--fg-ease,180ms cubic-bezier(.2,.7,.2,1)),color var(--fg-ease,180ms cubic-bezier(.2,.7,.2,1))}
+
+/* TASK-07-013 — Install Experience */
+
+@media(prefers-reduced-motion:reduce){
+ html[data-theme="flat-geometric"] *,
+ html[data-theme="flat-geometric"] *::before,
+ html[data-theme="flat-geometric"] *::after{transition-duration:.01ms!important;animation-duration:.01ms!important}
+}
