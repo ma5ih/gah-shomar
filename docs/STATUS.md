@@ -1,7 +1,7 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
 Last updated: 2026-10-04 — ACT-211
-Current documentation checkpoint: ACT-213 on work/act-212-phase-07
+Current documentation checkpoint: ACT-220 on work/act-212-phase-07
 Current implementation HEAD: fa095e637e3f4d244c9b06889717d71d3dd690a0
 Current implementation checkpoint: ACT-213 — PWA install experience
 Latest completed Theme A validation: GitHub Actions #37161733754 — PASS (ACT-208)
@@ -43,6 +43,14 @@ Next fresh ACT ID: ACT-211
 
 ## آخرین اقدامات
 
+### ACT-217..220 — QA/data reconciliation — DONE
+- Mobile/tablet/touch/accessibility/visual QA coverage expanded.
+- Public Person and Search-to-Person navigation covered.
+- PWA install state made hydration-safe.
+- Personal Share Card visibility covered.
+- Person/Period datasets promoted to DONE based on existing approved data and validation coverage.
+- Several Phase-09 QA tasks promoted from TODO to IN_PROGRESS; historical Event acceptance remains blocked by intentional empty seed.
+
 ### ACT-208 — Theme A visual hierarchy validation — DONE
 - TASK-07-001 — Final Visual Hierarchy برای Theme A بسته شد.
 - Theme A با brief مصوب تطبیق داده شد.
@@ -82,6 +90,11 @@ Next fresh ACT ID: ACT-211
 seedEvents = [] عمداً خالی است. هیچ historical event عمومی بدون editorial approval وارد محصول نشده است.
 
 ## مسیر بعدی قطعی
+
+- Validate latest Theme A + PWA branch head.
+- Merge validated visual/app-like batch.
+- Continue release-readiness/configuration and security/reproducibility.
+- Keep editorial event publication blocked until explicit approval.
 
 TASK-07-002 — Spacing/Margin Consistency — IN_PROGRESS
 
