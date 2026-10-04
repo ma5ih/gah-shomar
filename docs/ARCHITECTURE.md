@@ -60,7 +60,7 @@ Request → Route/Server boundary → Application composition (`src/application/
 Domain stores localized content. Presentation determines locale and direction. Persian is RTL; English is LTR.
 
 ## Testing
-Calendar/domain unit tests are first-class. The current suite also contains application, integration and browser smoke coverage. CI currently runs migration, ESLint, typecheck, unit/integration tests, production build and Playwright browser smoke; current checkpoint #281 is SUCCESS.
+Calendar/domain unit tests are first-class. The current suite also contains application, integration and browser smoke coverage. CI runs migration, ESLint, typecheck, unit/integration tests, production build and Playwright browser smoke. Current validated release evidence includes PR #4 / CI #406 and main CI #407, with browser/product acceptance in CI #461.
 
 ## Deferred
 Notifications, social features, public event submission, maps, export/import, integrations, monetization, public API and advanced analytics remain outside MVP.
@@ -72,6 +72,6 @@ Minimal username/password authentication with DB-backed sessions is defined in A
 Private Personal Event share-card generation is defined in SHARE-CARD-ARCHITECTURE.md.
 
 ## Current phase
-PHASE-06 — IN_PROGRESS (QA gate: PHASE-09)
+PHASE-10 — IN_PROGRESS (QA gates: PHASE-09 human final review + external production validation)
 
-**Next:** PHASE-06 runtime/browser acceptance; TASK-09-019 implementation correction gate is DONE.
+**Next:** editorial/public dataset approval, human visual/product signoff, then real production/PWA validation and final release packaging. Automated implementation/security/performance gates are green.
