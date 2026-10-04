@@ -1,8 +1,8 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.36.0
-Last update: 2026-10-04 — ACT-247
+Index version: 2.37.0
+Last update: 2026-10-04 — ACT-248
 Current phase: PHASE-10 — Release & Handoff (with PHASE-09 final review and external deployment/editorial gates)
 
 ## اسناد
@@ -47,9 +47,9 @@ Current phase: PHASE-10 — Release & Handoff (with PHASE-09 final review and ex
 | DOC-037 | PHASE-07-THEME-A-VISUAL-POLISH.md | DONE | اجرای batch بصری TASK-07-002 تا TASK-07-011 برای Theme A |
 | DOC-038 | PWA Install Experience | DONE | اجرای TASK-07-013 و قرارداد نصب/آفلاین PWA |
 | DOC-039 | RELEASE-BLOCKER-REVIEW.md | DONE — blockers remain open | review نهایی blockerهای امنیتی، reproducibility و production readiness |
-| DOC-040 | RELEASE-ACCEPTANCE-MATRIX.md | IN_PROGRESS |\n| DOC-041 | RELEASE-SECURITY-AUDIT-ACT-232.md | IN_PROGRESS |\n| DOC-042 | RELEASE-DEPLOYMENT-VALIDATION.md | IN_PROGRESS |\n| DOC-043 | EDITORIAL-CANDIDATES-INITIAL.md | IN_PROGRESS
-| DOC-044 | FINAL-HUMAN-VISUAL-REVIEW.md | IN_PROGRESS |
-| DOC-045 | FINAL-PRODUCT-REVIEW.md | IN_PROGRESS |
+| DOC-040 | RELEASE-ACCEPTANCE-MATRIX.md | IN_PROGRESS |\n| DOC-041 | RELEASE-SECURITY-AUDIT-ACT-232.md | COMPLETE — production security resolved |\n| DOC-042 | RELEASE-DEPLOYMENT-VALIDATION.md | IMPLEMENTED — external validation pending |\n| DOC-043 | EDITORIAL-CANDIDATES-INITIAL.md | PROPOSED — not published |
+| DOC-044 | FINAL-HUMAN-VISUAL-REVIEW.md | IN_PROGRESS — human signoff pending |
+| DOC-045 | FINAL-PRODUCT-REVIEW.md | IN_PROGRESS — human signoff pending |
 | DOC-046 | RELEASE-CHECKLIST.md | IN_PROGRESS | | ماتریس ردیابی معیارهای پذیرش تا Release |
 
 ## شناسه‌گذاری
@@ -68,17 +68,17 @@ PHASE-02: DONE
 PHASE-03: DONE
 PHASE-04: DONE
 PHASE-05: DONE
-PHASE-06: IN_PROGRESS
+PHASE-06: DONE
 PHASE-07: DONE
 PHASE-08: IN_PROGRESS
 PHASE-09: IN_PROGRESS
 PHASE-10: IN_PROGRESS
 
 ## آخرین اقدام
-ACT-231 — documentation convergence after ACT-230; next is dependency-security remediation.
+ACT-248 — documentation/state reconciliation; next is final editorial, human-signoff and real production/PWA release gates.
 
 ## اقدام بعدی
-**PHASE-10 release hardening — IN_PROGRESS**؛ Theme A validated و PHASE-07 کامل است، Theme B همچنان خارج از Scope می‌ماند.
+**PHASE-10 release hardening — IN_PROGRESS**؛ automated product/security/performance gates are green. Remaining work is editorial approval, human signoff, real production/PWA validation and final release packaging. Theme B همچنان خارج از Scope می‌ماند.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.
