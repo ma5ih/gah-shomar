@@ -1,6 +1,6 @@
 # گاه‌شمار | Calendar App
 
-> **Current status: PHASE-10 — Release & Handoff — IN_PROGRESS | Theme A / PHASE-07 DONE**
+> **Current status: PHASE-10 — Release & Handoff — IN_PROGRESS | Theme A / PHASE-07 DONE | PHASE-06 DONE
 
 این repository مرجع اصلی و Source of Truth پروژه «گاه‌شمار» است. وضعیت واقعی پروژه باید از اسناد GitHub خوانده شود، نه از چت‌های قبلی.
 
@@ -11,7 +11,7 @@
 - PHASE-03 Core Backend / Calendar Engine — DONE
 - PHASE-04 Application Backend / Use Cases — DONE
 - PHASE-05 Frontend Architecture & Design System — DONE
-- PHASE-06 Core Frontend Product Experience — IN_PROGRESS
+- PHASE-06 Core Frontend Product Experience — DONE
 - PHASE-07 Visual Polish & PWA — DONE
 - PHASE-08 Historical Content / Editorial Dataset — IN_PROGRESS
 - PHASE-09 Integration & QA — IN_PROGRESS
@@ -52,11 +52,11 @@ Product acceptance و release QA هنوز باز هستند.
 ## وضعیت جاری
 Correction gate مربوط به ACT-186 و correctionهای بعدی بسته شده‌اند.
 Current implementation HEAD: 7e7ebb4bb8f2d15175900daf54968b4792d23bad
-Current documentation checkpoint: **ACT-231**
+Current documentation checkpoint: **ACT-245**
 TASK-07-001 — Final Visual Hierarchy برای Theme A — **DONE**.
 TASK-07-002 — Spacing/Margin Consistency — **DONE**.
 ACT-211 latest implementation commit: fa095e637e3f4d244c9b06889717d71d3dd690a0.
-Next fresh ACT ID: **ACT-232**.
+Next fresh ACT ID: **ACT-246**
 
 ## Visual Theme separation
 
