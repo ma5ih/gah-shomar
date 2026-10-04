@@ -1,3 +1,61 @@
+## ACT-245 — 2026-10-04
+Type: DOCUMENTATION-CONVERGENCE
+Status: DONE
+
+- Canonical ledger: 187 DONE / 4 IN_PROGRESS / 12 TODO / 1 DEFERRED / 0 BLOCKED / 0 DEPRECATED.
+- PHASE-06 is DONE after CI #461 with 90 browser/acceptance tests passed.
+- Production dependency security is PASS; full audit retains 5 dev-only high findings in the lint chain.
+- ACT-240 deployment/PWA validation harness is implemented; real production execution remains pending.
+- ACT-242 source-backed editorial candidates are prepared but not published or approved.
+
+## ACT-244 — 2026-10-04
+Type: PRODUCT-ACCEPTANCE
+Status: DONE
+- TASK-06-001 through TASK-06-024 are DONE based on CI #461.
+- Date Hierarchy and Personal Share Card have direct browser assertions.
+
+## ACT-243 — 2026-10-04
+Type: DOCUMENTATION
+Status: DONE
+- Release validation and editorial candidate documents are indexed.
+
+## ACT-242 — 2026-10-04
+Type: EDITORIAL-PREP
+Status: DONE
+- Prepared a source-backed candidate queue without publishing any historical event.
+
+## ACT-241 — 2026-10-04
+Type: QA-FIX
+Status: DONE
+- Corrected the Date Hierarchy locator after CI #457 identified a strict-mode conflict.
+
+## ACT-240 — 2026-10-04
+Type: RELEASE-HARNESS
+Status: DONE
+- Added manual production/PWA validation workflow and runtime checker.
+
+## ACT-238 — 2026-10-04
+Type: DOCUMENTATION
+Status: DONE
+- Reconciled Theme A spacing record; TASK-07-002 is DONE.
+
+## ACT-237 — 2026-10-04
+Type: SECURITY
+Status: DONE
+- Added a blocking production dependency audit.
+- CI #454: npm audit --omit=dev --audit-level=high returned 0 vulnerabilities.
+
+## ACT-236 — 2026-10-04
+Type: SECURITY-REMEDIATION
+Status: DONE
+- PR #6 merged.
+- drizzle-orm 0.45.3 and vitest/@vitest/coverage-v8 5.0.3 are committed.
+
+## ACT-235 — 2026-10-04
+Type: PERFORMANCE-QA
+Status: DONE
+- CI #444 passed with 87 tests and measured Today/Calendar/Search timing budgets.
+
 ## ACT-235 — 2026-10-04
 Type: PERFORMANCE-QA
 Status: DONE
