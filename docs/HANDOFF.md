@@ -4,13 +4,13 @@ Project: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Checkpoint date: 2026-10-04
-Current documentation checkpoint: **ACT-245 on main**
+Current documentation checkpoint: **ACT-246 on main**
 Current implementation HEAD: 7e7ebb4bb8f2d15175900daf54968b4792d23bad
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 Current visual stream: PHASE-07 — Theme A refinement
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: **ACT-246**
+Next fresh ACT ID: **ACT-247**
 
 ## 1. نقطه فعلی پروژه
 
@@ -128,6 +128,8 @@ seedEvents = [] عمداً خالی است. هیچ historical event عمومی �
 
 ## 8. مسیر ادامه
 
-PHASE-06 is DONE. Production dependency security and performance are PASS. ACT-240 deployment/PWA validation harness is ready. Next executable work is ACT-246 final visual/product review record; after that only external editorial approval and real production/PWA validation remain before Release 1.0 packaging.
+PHASE-06 is DONE. Production dependency security and performance are PASS. ACT-240 deployment/PWA harness and ACT-246 release checklist are ready.
+
+Only these release-critical gates remain: explicit editorial approval/public historical seed, human visual signoff, human final product signoff, and a real production/staging URL run of the deployment/PWA validator.
 
 Theme B remains untouched and outside scope.
