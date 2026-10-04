@@ -1,3 +1,14 @@
+## ACT-247 — 2026-10-04
+Type: RELEASE-READINESS
+Status: DONE
+
+- TASK-08-011 Content QA is DONE based on the existing automated content-validation suite.
+- TASK-10-005 Documentation Finalization is DONE.
+- TASK-10-009 Handoff / Continuation Guide is DONE.
+- Canonical ledger: 190 DONE / 4 IN_PROGRESS / 9 TODO / 1 DEFERRED / 0 BLOCKED / 0 DEPRECATED.
+
+Next fresh ACT ID: **ACT-248**
+
 ## ACT-246 — 2026-10-04
 Type: RELEASE-GATE
 Status: DONE
