@@ -11,6 +11,7 @@ jobs:
     env:
       DATABASE_URL: postgresql://postgres:postgres@localhost:5432/gah_shomar_test
       APP_TIMEZONE: Asia/Tehran
+      APP_URL: http://127.0.0.1:3000
     services:
       postgres:
         image: postgres:16
@@ -33,7 +34,15 @@ jobs:
         with:
           node-version: 24
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+      - name: Capture generated package lock
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-package-lock
+          path: package-lock.json
+          if-no-files-found: ignore
+
       - name: Migrate test database
         run: npm run db:migrate
       - name: Lint
