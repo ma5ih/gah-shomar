@@ -1,7 +1,7 @@
 # RELEASE BLOCKER REVIEW
 
 Status: DONE
-Checkpoint: ACT-230
+Checkpoint: ACT-231
 Date: 2026-10-04
 
 ## Resolved
@@ -18,14 +18,14 @@ Date: 2026-10-04
 
 ## Current blockers
 
-### 3. Security hardening integration — PENDING
+### 3. Security hardening integration — RESOLVED
 - Persistent PostgreSQL-backed auth rate limiting is implemented on PR #4.
 - Runtime configuration validation is implemented on PR #4.
-- PR #4 is under its own full CI validation.
+- PR #4 completed its full CI validation and is merged to main.
 - A dedicated CI browser-server fix adds APP_URL=http://127.0.0.1:3000 to the test environment so production-mode next start satisfies the central runtime configuration contract.
 - PR #4 CI #406 passed end-to-end and the branch is merged to main; main CI #407 also passed.
 
-### 4. Dependency reproducibility — PENDING
+### 4. Dependency reproducibility — RESOLVED
 - package-lock.json is committed on PR #4.
 - CI uses npm ci on PR #4.
 - Main now contains the committed lockfile and npm ci strategy; PR #4 CI #406 and main CI #407 validated the strategy.
@@ -59,7 +59,7 @@ Next.js documents Server Actions as POST-based and same-origin checked by defaul
 
 ## Decision
 
-Do not mark PHASE-10 release-ready yet. The immediate gate is PR #4 CI -> merge -> fresh main CI -> final blocker reconciliation.
+Do not mark PHASE-10 release-ready yet. The immediate gate is the dependency-security audit/remediation cycle, followed by performance evidence, final human review, editorial acceptance and production/PWA validation.
 
 ## ACT-230 resolution
 
