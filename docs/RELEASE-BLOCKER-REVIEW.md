@@ -1,7 +1,7 @@
 # RELEASE BLOCKER REVIEW
 
-Status: IN_PROGRESS
-Checkpoint: ACT-229
+Status: DONE
+Checkpoint: ACT-230
 Date: 2026-10-04
 
 ## Resolved
@@ -23,12 +23,12 @@ Date: 2026-10-04
 - Runtime configuration validation is implemented on PR #4.
 - PR #4 is under its own full CI validation.
 - A dedicated CI browser-server fix adds APP_URL=http://127.0.0.1:3000 to the test environment so production-mode next start satisfies the central runtime configuration contract.
-- These changes are not considered release-ready until the latest PR #4 CI passes and the branch is merged to main.
+- PR #4 CI #406 passed end-to-end and the branch is merged to main; main CI #407 also passed.
 
 ### 4. Dependency reproducibility — PENDING
 - package-lock.json is committed on PR #4.
 - CI uses npm ci on PR #4.
-- Main does not yet claim this as resolved until PR #4 merges and a fresh post-merge CI passes.
+- Main now contains the committed lockfile and npm ci strategy; PR #4 CI #406 and main CI #407 validated the strategy.
 
 ### 5. Dependency security — OPEN
 - A prior GitHub Actions dependency install reported 9 vulnerabilities: 3 moderate and 6 high.
@@ -60,3 +60,11 @@ Next.js documents Server Actions as POST-based and same-origin checked by defaul
 ## Decision
 
 Do not mark PHASE-10 release-ready yet. The immediate gate is PR #4 CI -> merge -> fresh main CI -> final blocker reconciliation.
+
+## ACT-230 resolution
+
+- Auth abuse protection: validated.
+- Runtime configuration: validated.
+- Dependency reproducibility: resolved.
+- Main post-merge full CI: PASS.
+- Remaining blockers are now limited to dependency-security remediation, final human visual review, performance evidence, editorial approval/public dataset, production deployment and release documentation/versioning.
