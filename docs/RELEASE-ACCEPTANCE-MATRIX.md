@@ -1,7 +1,7 @@
 # RELEASE ACCEPTANCE MATRIX
 
 Status: IN_PROGRESS
-Checkpoint: ACT-245
+Checkpoint: ACT-246
 Date: 2026-10-04
 
 | Area | Current evidence | Status |
@@ -23,7 +23,7 @@ Date: 2026-10-04
 | Accessibility | semantic landmarks + focus/keyboard + main CI #404 | PASS |
 | Mobile / Tablet / Desktop | Playwright profiles + overflow/navigation checks | PASS |
 | Touch / Swipe | calendar swipe browser acceptance | PASS |
-| Visual consistency | Theme A contract + main CI #407 | IN_PROGRESS — final human visual review remains |
+| Visual consistency | Theme A contract + CI #461 responsive/browser evidence | OPEN — final human visual review remains |
 | Authentication | register/login/session browser flow | PASS |
 | Auth abuse protection | PostgreSQL rate limit + integration test + PR #4 CI #406 + main CI #407 | PASS |
 | Runtime configuration | central config + unit tests + PR #4 CI #406 + main CI #407 | PASS |
@@ -32,7 +32,7 @@ Date: 2026-10-04
 | Performance | CI #444 baseline + CI #461 regression | PASS |
 | Production Configuration | runtime config + reproducible install strategy + CI evidence | PASS |
 | Production Build | main CI #407 production build | PASS |
-| Production deployment | ACT-240 manual BASE_URL validation harness implemented; no real production URL executed yet | OPEN |
+| Production deployment | ACT-240 manual BASE_URL validation harness implemented; no real production/staging URL executed yet | OPEN |
 | Editorial historical dataset | ACT-242 source-backed candidates prepared; seedEvents intentionally empty until explicit approval | OPEN |
 
 ## Release rule
