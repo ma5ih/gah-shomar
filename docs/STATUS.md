@@ -1,15 +1,13 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
-Last updated: 2026-10-04 — ACT-251
-Current documentation checkpoint: ACT-251 on main
-Current implementation HEAD: a6a1956ef9446fc37b6cd339d874b4cfd4ebc768
-Latest completed Theme A validation before this redesign: GitHub Actions #37161733754 — PASS
-Current visual implementation: ACT-251 major Theme A / AppShell redesign, awaiting fresh CI completion and final human visual signoff
-Current app-like state: viewport-locked AppShell with hidden browser scroll and controlled internal content scrolling
-Primary workstream: PHASE-10 — Release & Handoff
-QA gate: PHASE-09 — Integration & Full QA
+Last updated: 2026-10-04 — ACT-252
+Current documentation checkpoint: ACT-252 on main
+Current implementation HEAD: b552a7b1ad93715f718f7b345772e02592315287
+Current visual implementation: ACT-252 full visual-system replacement + no-page-scroll app shell
+Latest Theme A validated checkpoint before ACT-252: GitHub Actions #37161733754 — PASS
+Latest CI for ACT-252 is running; final human visual/product signoff remains open
 Overall status: IN_PROGRESS
-Next fresh ACT ID: ACT-252
+Next fresh ACT ID: ACT-253
 
 ## شمارش رسمی ریزتسک‌ها
 
@@ -25,39 +23,29 @@ Next fresh ACT ID: ACT-252
 
 ## آخرین اقدام
 
-### ACT-251 — Major UI / Theme A redesign — IN_PROGRESS
-- AppShell از حالت صفحه‌محور وب به viewport-locked، mobile-first و app-like تبدیل شد.
-- اسکرول مرورگر حذف شد؛ ناحیه محتوای داخلی AppShell در صورت نیاز به‌صورت کنترل‌شده scroll می‌شود و scrollbar بصری ندارد.
-- Today از حالت شمارنده‌محور خارج شد و روی تاریخ اصلی، ساعت، مناسبت‌های امروز و رویدادهای شخصی امروز تمرکز کرد.
-- شمارنده تعداد مناسبت‌های عمومی و تعداد داده‌های شخصی از Today حذف شدند.
-- ساعت محلی به‌صورت زنده و هماهنگ با timezone runtime نمایش داده می‌شود.
-- نمایش سال شاهنشاهی بدون grouping اصلاح شد؛ ۲۵۸۵ به‌صورت «۲۵۸۵» نمایش داده می‌شود.
-- نمایش ناخواسته سال هجری شمسی در formatter Gregorian اصلاح شد؛ formatter اکنون صریحاً از calendar=gregory استفاده می‌کند.
-- Vazirmatn فونت اصلی UI شد.
-- Theme A از نو روی brief مصوب Flat Geometric اجرا شد: رنگ‌های تخت، فرم‌های زاویه‌ای/لایه‌ای، landscape/vector shapes، بدون gradient و بدون glassmorphism.
-- mobile bottom navigation با آیکن‌های SVG بازطراحی شد.
-- کنترل‌های تقویم و عناصر فرم با همین visual language هماهنگ شدند.
-- حرکت‌ها، active/hover/press states و reduced-motion handling در shared UI foundation بازسازی شدند.
-- CI برای commitهای این اقدام اجرا شده و نتیجه نهایی latest head هنوز در حال تکمیل است.
-- human visual/product signoff همچنان release gate است و با این اقدام به‌صورت خودکار PASS تلقی نمی‌شود.
+### ACT-252 — Full visual-system replacement / app shell — IN_PROGRESS
+- AppShell now uses a fixed viewport and an internal route stage; browser-level page scrolling is disabled.
+- Today route explicitly disables route-stage scrolling and is sized to the available app viewport.
+- Replaced the previous design language rather than iterating on the prior skin: typography hierarchy, surfaces, navigation, controls, event rows, calendar cells and motion were rebuilt.
+- Mobile navigation is now a compact app dock with SVG icons and a dedicated active state.
+- Theme A is reduced to the approved Flat Geometric visual language: solid fills, angular landscape/vector layers, no gradients, no glassmorphism.
+- Vazirmatn is loaded through next/font and is the application font.
+- 2585 remains ungrouped and Gregorian formatting is explicit; no 1405 output from the Gregorian formatter.
+- Today remains centered on the primary date, live clock, today's event list and personal event/memory list; count-only metrics remain removed.
+- CI is running on the latest implementation; no final PASS is claimed until observed.
+- Human visual/product signoff remains a release gate.
 
 ## Visual Theme state
 
-- Theme A: src/frontend/themes/flat-geometric/ — active implementation scope.
+- Theme A: src/frontend/themes/flat-geometric/ — active and substantially rebuilt in ACT-252.
 - Theme B: src/frontend/themes/modern-flat-vector/ — untouched / outside current scope.
-- Visual source of truth remains docs/VISUAL-DESIGN-SEPARATION-WARNING.md.
-- ACT-251 is a substantial implementation refresh, not a new Theme B or a Core fork.
+- Visual source of truth: docs/VISUAL-DESIGN-SEPARATION-WARNING.md.
 
 ## Release gates
 
-Remaining release-critical gates are unchanged:
 - explicit editorial approval/public historical event seed
 - final human visual signoff
 - final human product signoff
 - real production/staging deployment validation
 - real PWA production validation
 - final release version/tag after those gates close
-
-## مسیر بعدی قطعی
-
-اول نتیجه CI روی latest head بررسی می‌شود. پس از آن human visual/product signoff و release gates ادامه پیدا می‌کنند. Theme B همچنان دست‌نخورده می‌ماند.
