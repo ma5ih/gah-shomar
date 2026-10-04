@@ -74,5 +74,5 @@ Validation result:
 No new visual language may be introduced outside the approved Theme A brief.
 ## ACT-211 refinement
 - Remaining non-scale spacing values in the Theme A stylesheet were normalized to the approved 4/8/12/16/20/24/32px scale.
-- Latest implementation commit: fa095e637e3f4d244c9b06889717d71d3dd690a0.
-- TASK-07-002 remains IN_PROGRESS until independently observed CI validation.
+- Main CI #404 later validated the full Theme A batch.
+- TASK-07-002 is DONE.
