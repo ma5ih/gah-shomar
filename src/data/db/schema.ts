@@ -57,3 +57,10 @@ export const memories=pgTable("memories",{
  createdAt:timestamp("created_at",{withTimezone:true}).defaultNow().notNull(),
  updatedAt:timestamp("updated_at",{withTimezone:true}).defaultNow().notNull(),
 },t=>({ownerDateIndex:index("memories_owner_date_idx").on(t.ownerUserId,t.year,t.month,t.day)}));
+
+export const authRateLimits=pgTable("auth_rate_limits",{
+ scopeKey:varchar("scope_key",{length:160}).primaryKey(),
+ windowStartedAt:timestamp("window_started_at",{withTimezone:true}).notNull(),
+ attempts:integer("attempts").notNull().default(0),
+ updatedAt:timestamp("updated_at",{withTimezone:true}).defaultNow().notNull(),
+});
