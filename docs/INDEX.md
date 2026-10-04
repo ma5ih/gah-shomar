@@ -1,8 +1,8 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.30.0
-Last update: 2026-10-04 — ACT-229
+Index version: 2.31.0
+Last update: 2026-10-04 — ACT-230
 Current phase: PHASE-06 — Core Frontend Product Experience (QA gate: PHASE-09)
 
 ## اسناد
@@ -46,7 +46,7 @@ Current phase: PHASE-06 — Core Frontend Product Experience (QA gate: PHASE-09)
 | DOC-036 | PHASE-07-THEME-A-SPACING.md | DONE | قرارداد spacing و اجرای TASK-07-002 Theme A |
 | DOC-037 | PHASE-07-THEME-A-VISUAL-POLISH.md | DONE | اجرای batch بصری TASK-07-002 تا TASK-07-011 برای Theme A |
 | DOC-038 | PWA Install Experience | DONE | اجرای TASK-07-013 و قرارداد نصب/آفلاین PWA |
-| DOC-039 | RELEASE-BLOCKER-REVIEW.md | IN_PROGRESS | blockerهای امنیتی، reproducibility و production readiness |
+| DOC-039 | RELEASE-BLOCKER-REVIEW.md | DONE — blockers remain open | review نهایی blockerهای امنیتی، reproducibility و production readiness |
 | DOC-040 | RELEASE-ACCEPTANCE-MATRIX.md | IN_PROGRESS | ماتریس ردیابی معیارهای پذیرش تا Release |
 
 ## شناسه‌گذاری
@@ -69,13 +69,13 @@ PHASE-06: IN_PROGRESS
 PHASE-07: DONE
 PHASE-08: IN_PROGRESS
 PHASE-09: IN_PROGRESS
-PHASE-10: TODO
+PHASE-10: IN_PROGRESS
 
 ## آخرین اقدام
-ACT-229 — post-merge main validation و promotion Taskهای دارای evidence قطعی.
+ACT-230 — full security/reproducibility integration و post-merge CI validation.
 
 ## اقدام بعدی
-**PR #4 — security/reproducibility validation — IN_PROGRESS**؛ Theme A validated است و Theme B همچنان خارج از Scope می‌ماند.
+**PHASE-10 release hardening — IN_PROGRESS**؛ Theme A validated است و Theme B همچنان خارج از Scope می‌ماند.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.
