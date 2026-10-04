@@ -1,299 +1,41 @@
 /* Theme A — Flat Geometric
-   Visual direction: solid fills, angular forms, restrained shadows, no gradients or glass. */
+   Contemporary landscape/vector language: flat solid colors, angular layered forms,
+   simple straight lines, minimal detail, no gradients and no realistic textures. */
 
-html[data-theme="flat-geometric"] {
-  --fg-bg: #f4efe5;
-  --fg-surface: #fffdf8;
-  --fg-surface-soft: #f8f2e7;
-  --fg-surface-strong: #ffffff;
-  --fg-ink: #17231d;
-  --fg-muted: #667269;
-  --fg-line: #ded7ca;
-  --fg-accent: #cf6538;
-  --fg-accent-strong: #b84f27;
-  --fg-accent-soft: #f1d8c7;
-  --fg-green: #6f8b6b;
-  --fg-blue: #6f8794;
-  --fg-yellow: #e0b64d;
-  --fg-shadow: 0 10px 26px rgba(35, 45, 39, .08);
-  --fg-radius-sm: 12px;
-  --fg-radius-md: 16px;
-  --fg-radius-lg: 22px;
-  --fg-ease: 180ms cubic-bezier(.2,.7,.2,1);
+html[data-theme="flat-geometric"]{
+  --fg-bg:#efe8da;--fg-surface:#fffdf7;--fg-surface-soft:#f6f0e4;--fg-surface-strong:#fff;
+  --fg-ink:#1b2b24;--fg-muted:#69766e;--fg-line:#dcd2c1;--fg-accent:#ca5f37;
+  --fg-accent-strong:#ae4b28;--fg-green:#71896d;--fg-yellow:#d3ab55;--fg-blue:#718995;
 }
-
-html[data-theme="flat-geometric"],
-html[data-theme="flat-geometric"] body {
-  background: var(--fg-bg);
-}
-
-html[data-theme="flat-geometric"] body {
-  color: var(--fg-ink);
-}
-
-html[data-theme="flat-geometric"] .topbar {
-  background: var(--fg-bg);
-  border-bottom-color: var(--fg-line);
-}
-
-html[data-theme="flat-geometric"] .brand {
-  color: var(--fg-ink);
-}
-
-html[data-theme="flat-geometric"] .brand::before {
-  background: var(--fg-accent);
-}
-
-html[data-theme="flat-geometric"] .nav-link,
-html[data-theme="flat-geometric"] .lang-chip,
-html[data-theme="flat-geometric"] .profile-chip {
-  border-radius: var(--fg-radius-sm);
-}
-
-html[data-theme="flat-geometric"] .nav-link:hover,
-html[data-theme="flat-geometric"] .nav-link.active,
-html[data-theme="flat-geometric"] .lang-chip:hover,
-html[data-theme="flat-geometric"] .profile-chip:hover {
-  background: var(--fg-surface);
-  border-color: var(--fg-line);
-}
-
-html[data-theme="flat-geometric"] .nav-link.active {
-  box-shadow: inset 0 -3px 0 var(--fg-accent);
-}
-
-html[data-theme="flat-geometric"] .lang-chip {
-  background: var(--fg-surface);
-  border-color: var(--fg-line);
-}
-
-html[data-theme="flat-geometric"] .hero-panel,
-html[data-theme="flat-geometric"] .card,
-html[data-theme="flat-geometric"] .calendar-surface {
-  background: var(--fg-surface);
-  border-color: var(--fg-line);
-  box-shadow: var(--fg-shadow);
-  border-radius: var(--fg-radius-lg);
-}
-
-html[data-theme="flat-geometric"] .hero {
-  gap: 20px;
-}
-
-html[data-theme="flat-geometric"] .hero-panel {
-  overflow: hidden;
-}
-
-html[data-theme="flat-geometric"] .hero-panel:first-child {
-  --fg-hero-bg: #f1e5cd;
-  --fg-shape-a: #9baa89;
-  --fg-shape-b: #d2b778;
-  background: var(--fg-hero-bg);
-  border-color: #dcd0bb;
-}
-
-html[data-theme="flat-geometric"] .hero-panel:first-child::before,
-html[data-theme="flat-geometric"] .hero-panel:first-child::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  pointer-events: none;
-}
-
-html[data-theme="flat-geometric"] .hero-panel:first-child::before {
-  inset-inline-start: -7%;
-  bottom: -8%;
-  width: 58%;
-  height: 42%;
-  background: var(--fg-shape-a);
-  clip-path: polygon(0 40%, 20% 15%, 40% 30%, 61% 0, 82% 25%, 100% 12%, 100% 100%, 0 100%);
-}
-
-html[data-theme="flat-geometric"] .hero-panel:first-child::after {
-  inset-inline-end: -4%;
-  bottom: -10%;
-  width: 62%;
-  height: 34%;
-  background: var(--fg-shape-b);
-  clip-path: polygon(0 44%, 19% 22%, 38% 36%, 58% 4%, 78% 28%, 100% 10%, 100% 100%, 0 100%);
-}
-
-html[data-theme="flat-geometric"] .hero-panel:first-child > * {
-  position: relative;
-  z-index: 1;
-}
-
-html[data-theme="flat-geometric"] .hero-title {
-  color: var(--fg-ink);
-}
-
-html[data-theme="flat-geometric"] .hero-subtitle,
-html[data-theme="flat-geometric"] .overline,
-html[data-theme="flat-geometric"] .eyebrow,
-html[data-theme="flat-geometric"] .calendar-hint {
-  color: var(--fg-muted);
-}
-
-html[data-theme="flat-geometric"] .context-card {
-  background: var(--fg-surface-strong);
-}
-
-html[data-theme="flat-geometric"] .event-card {
-  background: var(--fg-surface);
-  border-color: var(--fg-line);
-  box-shadow: none;
-  border-radius: var(--fg-radius-md);
-}
-
-html[data-theme="flat-geometric"] .event-card:hover {
-  background: var(--fg-surface-strong);
-  border-color: #cabdad;
-  box-shadow: var(--fg-shadow);
-}
-
-html[data-theme="flat-geometric"] .calendar-surface {
-  background: var(--fg-surface);
-}
-
-html[data-theme="flat-geometric"] .icon-button {
-  border-color: var(--fg-line);
-  background: var(--fg-surface-strong);
-  border-radius: var(--fg-radius-sm);
-}
-
-html[data-theme="flat-geometric"] .day-cell {
-  border-radius: 13px;
-  background: var(--fg-surface-soft);
-}
-
-html[data-theme="flat-geometric"] .day-cell:hover {
-  background: var(--fg-surface-strong);
-  border-color: var(--fg-line);
-}
-
-html[data-theme="flat-geometric"] .day-cell.today {
-  background: var(--fg-ink);
-}
-
-html[data-theme="flat-geometric"] .day-cell.has-event {
-  box-shadow: inset 0 -3px 0 var(--fg-accent);
-}
-
-html[data-theme="flat-geometric"] .day-cell.has-personal {
-  box-shadow: inset 0 -3px 0 var(--fg-green);
-}
-
-html[data-theme="flat-geometric"] .primary-button {
-  background: var(--fg-ink);
-  color: #fffdf8;
-}
-
-html[data-theme="flat-geometric"] .primary-button:hover {
-  background: #24362b;
-}
-
-html[data-theme="flat-geometric"] .secondary-button {
-  background: var(--fg-surface);
-  border-color: var(--fg-line);
-  color: var(--fg-ink);
-}
-
-html[data-theme="flat-geometric"] .secondary-button:hover {
-  background: var(--fg-surface-soft);
-  border-color: #cabdad;
-}
-
-html[data-theme="flat-geometric"] .search-form input,
-html[data-theme="flat-geometric"] .field input,
-html[data-theme="flat-geometric"] .field textarea,
-html[data-theme="flat-geometric"] .field select {
-  background: var(--fg-surface-strong);
-  border-color: var(--fg-line);
-  border-radius: var(--fg-radius-sm);
-}
-
-html[data-theme="flat-geometric"] .search-form input:focus,
-html[data-theme="flat-geometric"] .field input:focus,
-html[data-theme="flat-geometric"] .field textarea:focus,
-html[data-theme="flat-geometric"] .field select:focus {
-  border-color: rgba(207, 101, 56, .58);
-  box-shadow: 0 0 0 4px rgba(207, 101, 56, .10);
-}
-
-html[data-theme="flat-geometric"] .detail-card,
-html[data-theme="flat-geometric"] .auth-card {
-  background: var(--fg-surface);
-}
-
-html[data-theme="flat-geometric"] .pill {
-  background: var(--fg-surface-soft);
-  border-color: var(--fg-line);
-}
-
-html[data-theme="flat-geometric"] .notice {
-  background: var(--fg-accent-soft);
-  border-color: #e6c2aa;
-  color: #6c422d;
-}
-
-html[data-theme="flat-geometric"] .empty {
-  background: var(--fg-surface);
-  border-color: #cfc6b7;
-}
-
-html[data-theme="flat-geometric"] .bottom-nav {
-  background: var(--fg-surface-strong);
-  border-color: var(--fg-line);
-  box-shadow: 0 16px 34px rgba(20, 28, 23, .14);
-}
-
-html[data-theme="flat-geometric"] .bottom-link.active {
-  background: var(--fg-ink);
-  color: #fffdf8;
-}
-
-/* Time-of-day: solid color shifts only. */
-html[data-theme="flat-geometric"] .hero[data-time-of-day="morning"] {
-  --fg-hero-bg: #f1e5cd;
-  --fg-shape-a: #9baa89;
-  --fg-shape-b: #d2b778;
-}
-
-html[data-theme="flat-geometric"] .hero[data-time-of-day="noon"] {
-  --fg-hero-bg: #e9efe5;
-  --fg-shape-a: #7e9a76;
-  --fg-shape-b: #cdb770;
-}
-
-html[data-theme="flat-geometric"] .hero[data-time-of-day="sunset"] {
-  --fg-hero-bg: #ead4bd;
-  --fg-shape-a: #ad7450;
-  --fg-shape-b: #ce9b58;
-}
-
-html[data-theme="flat-geometric"] .hero[data-time-of-day="night"] {
-  --fg-hero-bg: #26372f;
-  --fg-shape-a: #4e6c58;
-  --fg-shape-b: #74654f;
-}
-
-html[data-theme="flat-geometric"] .hero[data-time-of-day="night"] .hero-panel:first-child {
-  color: #f5f1e7;
-  border-color: #43574c;
-}
-
-html[data-theme="flat-geometric"] .hero[data-time-of-day="night"] .hero-panel:first-child .hero-title,
-html[data-theme="flat-geometric"] .hero[data-time-of-day="night"] .hero-panel:first-child .context-value {
-  color: #f5f1e7;
-}
-
-html[data-theme="flat-geometric"] .hero[data-time-of-day="night"] .hero-panel:first-child .overline,
-html[data-theme="flat-geometric"] .hero[data-time-of-day="night"] .hero-panel:first-child .hero-subtitle {
-  color: #dce5de;
-}
-
-/* Season accents. */
-html[data-theme="flat-geometric"] .hero[data-season="spring"] { --fg-accent: #6f8b6b; }
-html[data-theme="flat-geometric"] .hero[data-season="summer"] { --fg-accent: #cf6538; }
-html[data-theme="flat-geometric"] .hero[data-season="autumn"] { --fg-accent: #a66b40; }
-html[data-theme="flat-geometric"] .hero[data-season="winter"] { --fg-accent: #6f8794; }
+html[data-theme="flat-geometric"],html[data-theme="flat-geometric"] body{background:var(--fg-bg)}
+html[data-theme="flat-geometric"] body{color:var(--fg-ink)}
+html[data-theme="flat-geometric"] .topbar{background:var(--fg-bg);border-color:var(--fg-line)}
+html[data-theme="flat-geometric"] .nav-link:hover,html[data-theme="flat-geometric"] .nav-link.active,html[data-theme="flat-geometric"] .lang-chip:hover,html[data-theme="flat-geometric"] .profile-chip:hover{background:var(--fg-surface);border-color:var(--fg-line)}
+html[data-theme="flat-geometric"] .nav-link.active{box-shadow:inset 0 -3px 0 var(--fg-accent)}
+html[data-theme="flat-geometric"] .today-primary{background:#f2e6d0;border-color:#ddcfb8}
+html[data-theme="flat-geometric"] .today-primary::before{background:#91a77f}
+html[data-theme="flat-geometric"] .today-primary::after{background:#d0ad62}
+html[data-theme="flat-geometric"] .today-side{background:#e9e0cf;border-color:#d7cab3}
+html[data-theme="flat-geometric"] .today-sun{background:#e4b85c}
+html[data-theme="flat-geometric"] .today-side-art::before{background:#7f9a76}
+html[data-theme="flat-geometric"] .today-side-art::after{background:#a56d4e}
+html[data-theme="flat-geometric"] .today-side-content{background:#fffdf7;border-color:rgba(255,255,255,.74)}
+html[data-theme="flat-geometric"] .today-event{background:var(--fg-surface-soft);border-color:var(--fg-line)}
+html[data-theme="flat-geometric"] .today-event:hover{background:var(--fg-surface-strong)}
+html[data-theme="flat-geometric"] .today-event-type{color:var(--fg-accent-strong)}
+html[data-theme="flat-geometric"] .today-empty{border-color:#cfc4b3;background:var(--fg-surface-soft)}
+html[data-theme="flat-geometric"] .card,html[data-theme="flat-geometric"] .calendar-surface,html[data-theme="flat-geometric"] .hero-panel{background:var(--fg-surface);border-color:var(--fg-line)}
+html[data-theme="flat-geometric"] .event-card{background:var(--fg-surface);border-color:var(--fg-line)}
+html[data-theme="flat-geometric"] .event-card:hover{background:var(--fg-surface-strong);border-color:#cbbfaa}
+html[data-theme="flat-geometric"] .day-cell{background:var(--fg-surface-soft)}
+html[data-theme="flat-geometric"] .day-cell:hover{background:var(--fg-surface-strong)}
+html[data-theme="flat-geometric"] .primary-button{background:var(--fg-ink)}
+html[data-theme="flat-geometric"] .primary-button:hover{background:#24382e}
+html[data-theme="flat-geometric"] .secondary-button,html[data-theme="flat-geometric"] .icon-button{background:var(--fg-surface);border-color:var(--fg-line);color:var(--fg-ink)}
+html[data-theme="flat-geometric"] .secondary-button:hover,html[data-theme="flat-geometric"] .icon-button:hover{background:var(--fg-surface-soft);border-color:#cbbfaa}
+html[data-theme="flat-geometric"] .search-form input,html[data-theme="flat-geometric"] .field input,html[data-theme="flat-geometric"] .field textarea,html[data-theme="flat-geometric"] .field select{background:var(--fg-surface-strong);border-color:var(--fg-line)}
+html[data-theme="flat-geometric"] .pill{background:var(--fg-surface-soft);border-color:var(--fg-line)}
+html[data-theme="flat-geometric"] .notice{background:#efd5c5;border-color:#e5c0a6;color:#6c402c}
+html[data-theme="flat-geometric"] .empty{background:var(--fg-surface);border-color:#cfc4b3}
+html[data-theme="flat-geometric"] .bottom-nav{background:var(--fg-surface-strong);border-color:var(--fg-line)}
+html[data-theme="flat-geometric"] .bottom-link.active{background:var(--fg-ink);color:#fffdf8}
