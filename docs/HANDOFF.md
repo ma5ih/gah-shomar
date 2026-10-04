@@ -4,13 +4,13 @@ Project: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Checkpoint date: 2026-10-04
-Current documentation checkpoint: **ACT-248 on main**
+Current documentation checkpoint: **ACT-249 on main**
 Current implementation HEAD: 7e7ebb4bb8f2d15175900daf54968b4792d23bad
 Primary workstream: PHASE-10 — Release & Handoff
 Current visual stream: PHASE-07 — Theme A refinement
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: **ACT-249**
+Next fresh ACT ID: **ACT-250**
 
 ## 1. نقطه فعلی پروژه
 
@@ -28,9 +28,9 @@ Next fresh ACT ID: **ACT-249**
 ## 2. شمارش رسمی Taskها
 
 - کل: **204 unique**
-- DONE: **190**
+- DONE: **193**
 - IN_PROGRESS: **4**
-- TODO: **9**
+- TODO: **6**
 - DEFERRED: **1**
 - BLOCKED: **0**
 - DEPRECATED: **0**
@@ -52,6 +52,12 @@ Next fresh ACT ID: **ACT-249**
 - PHASE-10 — IN_PROGRESS: editorial approval, external deployment validation and final release packaging remain.
 
 ## 4. آخرین اقدامات قطعی
+
+### ACT-249 — UX/product consistency + release packaging
+- Objective UX issues were fixed without changing the product scope: locale route preservation, localized calendar presentation, invalid-query fallback, calendar accessibility labels, current-date defaults for personal creation and clearer post-auth navigation.
+- Release-candidate notes and post-release backlog were prepared.
+- Automated release/security/performance gates remain green; external production validation and human approval gates remain open.
+
 
 ### ACT-248 — Documentation/state reconciliation
 - Central documentation was reconciled with the validated main state.
@@ -125,7 +131,8 @@ seedEvents = [] عمداً خالی است. هیچ historical event عمومی �
 ## 8. مسیر ادامه
 
 PHASE-10 is the active workstream. The next executable path is:
-editorial approval/public event seed → human visual signoff → human end-to-end product signoff → real production/PWA validation → release notes/version/tag/post-release backlog.
+editorial approval/public event seed → human visual signoff → human end-to-end product signoff → real production/PWA validation → final version/tag.
+Release notes and post-release backlog are already prepared; no tag is created while release-critical gates remain open.
 
 Theme B remains untouched and outside scope.
 
