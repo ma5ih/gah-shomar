@@ -1,7 +1,7 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 2.9.0
-Last updated: 2026-10-04 — ACT-229
+Version: 3.0.0
+Last updated: 2026-10-04 — ACT-230
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
 
@@ -11,9 +11,9 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 ## شمارش رسمی ریزتسک‌ها — ACT-185
 
 - کل ریزتسک‌های شماره‌گذاری‌شده: **204**
-- DONE: **159**
+- DONE: **162**
 - IN_PROGRESS: **28**
-- TODO: **16**
+- TODO: **13**
 - DEFERRED: **1**
 - BLOCKED: **0**
 - DEPRECATED: **0**
@@ -268,34 +268,35 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - All verified implementation findings from ACT-186 are closed through ACT-189..ACT-196.
   - CI #281 validates lint, typecheck, unit/integration, production build and browser smoke on the corrected HEAD.
   - The missing package-lock is tracked as a release reproducibility concern, not an unresolved application bug.
-- TASK-09-020 — Release Blocker Review — TODO
+- TASK-09-020 — Release Blocker Review — DONE
   - includes final security hardening evidence (CSRF/rate limiting) and release reproducibility review
 - TASK-09-021 — Final Product Review — TODO
 - TASK-09-022 — E2E Dataset/Editorial Alignment — DONE
   - browser smoke follows the intentionally empty historical-event seed
   - CI run #168 and later full pipelines validate the aligned behavior
 
-## CURRENT CHECKPOINT — ACT-229 — 2026-10-04
+## CURRENT CHECKPOINT — ACT-230 — 2026-10-04
 
-- ACT-229 records the post-merge validation state after PR #1 merged the Theme A visual polish + PWA install batch.
-- Main merge commit: b0d5267b66ec48dfd1e27ed31d87e1ed38e85e2f.
-- Main CI run #404 completed successfully: migration, lint, typecheck, unit/integration tests, production build, Chromium installation and browser smoke all passed.
-- TASK-07-002 through TASK-07-011 and TASK-07-013 are now DONE.
-- PHASE-07 is now DONE.
-- TASK-09-006, 09-007, 09-009, 09-010, 09-011, 09-012, 09-013, 09-014, 09-015 and 09-017 are now DONE based on the observed main CI #404 acceptance coverage.
-- TASK-09-018 Visual Consistency QA remains IN_PROGRESS because the current evidence is automated/static and does not replace a final human visual review.
-- TASK-09-008 Event Acceptance remains TODO because the public historical event seed is intentionally empty and no event may be fabricated.
-- TASK-09-016 Performance QA remains TODO pending real performance evidence.
-- TASK-09-020 Release Blocker Review remains TODO on main until security/reproducibility integration is validated.
-- TASK-10-001 Production Configuration remains TODO on main until the security/reproducibility branch is integrated and validated.
+- Main merge commit after security/reproducibility integration: 7e7ebb4bb8f2d15175900daf54968b4792d23bad.
+- PR #4 security/reproducibility CI run #406 passed end-to-end: npm ci, migration, lint, typecheck, unit/integration, production build, Chromium and browser smoke.
+- Main post-merge CI run #407 passed end-to-end on the merged main commit.
+- TASK-09-020 — Release Blocker Review is DONE: the hardening/reproducibility evidence was reviewed and recorded. Open blockers are documented separately.
+- TASK-10-001 — Production Configuration is DONE: runtime config validation, production contract, committed lockfile and npm ci were implemented and validated.
+- TASK-10-002 — Production Build is DONE: production build has passed on the main validation gates.
+- Dependency reproducibility is no longer an open blocker.
+- Dependency security remains OPEN because the previous install reported 9 vulnerabilities (3 moderate, 6 high) and no remediation has yet been approved.
+- TASK-09-018 Visual Consistency QA remains IN_PROGRESS for final human visual review.
+- TASK-09-016 Performance QA remains TODO.
+- TASK-09-021 Final Product Review remains TODO.
+- Historical Event Acceptance remains TODO while seedEvents = [] and editorial approval is pending.
+- Production Deployment Validation and PWA Production Validation remain open under PHASE-10.
 - Theme B remains untouched and outside the current execution scope.
-- Security/reproducibility integration is currently under PR #4; its latest CI run is separate from the already-green main validation above.
-- Canonical task counts at this checkpoint: 204 total / 159 DONE / 28 IN_PROGRESS / 16 TODO / 1 DEFERRED.
+- Canonical task counts: 204 total / 162 DONE / 28 IN_PROGRESS / 13 TODO / 1 DEFERRED.
 
-# PHASE-10 — Release & Handoff — TODO
-- TASK-10-001 — Production Configuration — TODO
+# PHASE-10 — Release & Handoff — IN_PROGRESS
+- TASK-10-001 — Production Configuration — DONE
   - includes central runtime configuration validation, production environment checks and the reproducible dependency-installation strategy (including lockfile)
-- TASK-10-002 — Production Build — TODO
+- TASK-10-002 — Production Build — DONE
 - TASK-10-003 — Deployment Validation — TODO
 - TASK-10-004 — PWA Production Validation — TODO
 - TASK-10-005 — Documentation Finalization — TODO
@@ -311,8 +312,8 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 **CURRENT VISUAL STREAM:** PHASE-07 — Theme A refinement
 **QA BLOCKER:** TASK-09-022 in PHASE-09 — DONE
 
-**CURRENT VISUAL BATCH:** TASK-07-002 through TASK-07-011 — IN_PROGRESS
-**CURRENT APP-LIKE TASK:** TASK-07-013 — Install Experience — IN_PROGRESS
+**CURRENT VISUAL STREAM:** PHASE-07 — Theme A — DONE
+**CURRENT RELEASE STREAM:** PHASE-10 — IN_PROGRESS
 - TASK-07-001 برای Theme A بسته شده و DONE است.
 - Theme B فعلاً خارج از Scope است و نباید وارد اجرای بصری فعلی شود.
 - پس از شروع Taskهای باقی‌مانده PHASE-07، مسیر به PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release می‌رسد.
