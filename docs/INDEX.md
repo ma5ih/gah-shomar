@@ -1,8 +1,8 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.37.0
-Last update: 2026-10-04 — ACT-248
+Index version: 2.38.0
+Last update: 2026-10-04 — ACT-249
 Current phase: PHASE-10 — Release & Handoff (with PHASE-09 final review and external deployment/editorial gates)
 
 ## اسناد
@@ -51,6 +51,7 @@ Current phase: PHASE-10 — Release & Handoff (with PHASE-09 final review and ex
 | DOC-044 | FINAL-HUMAN-VISUAL-REVIEW.md | IN_PROGRESS — human signoff pending |
 | DOC-045 | FINAL-PRODUCT-REVIEW.md | IN_PROGRESS — human signoff pending |
 | DOC-046 | RELEASE-CHECKLIST.md | IN_PROGRESS | | ماتریس ردیابی معیارهای پذیرش تا Release |
+| DOC-047 | RELEASE-NOTES-1.0.0.md | PREPARED — release candidate |\n| DOC-048 | POST-RELEASE-BACKLOG.md | PREPARED |\n| DOC-049 | UX-CONSISTENCY-AUDIT-2026-10-04-ACT-249.md | COMPLETE — automated/static audit |\n
 
 ## شناسه‌گذاری
 - PHASE-XX — مرحله
@@ -75,10 +76,10 @@ PHASE-09: IN_PROGRESS
 PHASE-10: IN_PROGRESS
 
 ## آخرین اقدام
-ACT-248 — documentation/state reconciliation; next is final editorial, human-signoff and real production/PWA release gates.
+ACT-249 — UX/product consistency and release packaging; next is final editorial, human-signoff and real production/PWA release gates.
 
 ## اقدام بعدی
-**PHASE-10 release hardening — IN_PROGRESS**؛ automated product/security/performance gates are green. Remaining work is editorial approval, human signoff, real production/PWA validation and final release packaging. Theme B همچنان خارج از Scope می‌ماند.
+**PHASE-10 release hardening — IN_PROGRESS**؛ automated product/security/performance gates are green. Remaining work is editorial approval, human signoff, real production/PWA validation and final version/tag. Release notes and post-release backlog are prepared. Theme B همچنان خارج از Scope می‌ماند.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.
