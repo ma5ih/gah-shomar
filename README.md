@@ -1,6 +1,6 @@
 # گاه‌شمار | Calendar App
 
-> **Current status: PHASE-06 — Core Frontend Product Experience — IN_PROGRESS | Visual stream: PHASE-07 Theme A**
+> **Current status: PHASE-10 — Release & Handoff — IN_PROGRESS | Theme A / PHASE-07 DONE**
 
 این repository مرجع اصلی و Source of Truth پروژه «گاه‌شمار» است. وضعیت واقعی پروژه باید از اسناد GitHub خوانده شود، نه از چت‌های قبلی.
 
@@ -12,10 +12,10 @@
 - PHASE-04 Application Backend / Use Cases — DONE
 - PHASE-05 Frontend Architecture & Design System — DONE
 - PHASE-06 Core Frontend Product Experience — IN_PROGRESS
-- PHASE-07 Visual Polish & PWA — IN_PROGRESS
+- PHASE-07 Visual Polish & PWA — DONE
 - PHASE-08 Historical Content / Editorial Dataset — IN_PROGRESS
 - PHASE-09 Integration & QA — IN_PROGRESS
-- PHASE-10 Release — TODO
+- PHASE-10 Release — IN_PROGRESS
 
 ### وضعیت اعتبارسنجی
 CI workflow فعلی شامل migration، ESLint، typecheck، unit/integration tests، production build و Playwright browser smoke است.
@@ -51,12 +51,12 @@ Product acceptance و release QA هنوز باز هستند.
 
 ## وضعیت جاری
 Correction gate مربوط به ACT-186 و correctionهای بعدی بسته شده‌اند.
-Current implementation HEAD: 5791e3e89aabcd75fd856e03e9a05023d009dbcc
-Current documentation checkpoint: **ACT-211**
+Current implementation HEAD: 7e7ebb4bb8f2d15175900daf54968b4792d23bad
+Current documentation checkpoint: **ACT-231**
 TASK-07-001 — Final Visual Hierarchy برای Theme A — **DONE**.
-TASK-07-002 — Spacing/Margin Consistency — **IN_PROGRESS**.
+TASK-07-002 — Spacing/Margin Consistency — **DONE**.
 ACT-211 latest implementation commit: fa095e637e3f4d244c9b06889717d71d3dd690a0.
-Next fresh ACT ID: **ACT-212**.
+Next fresh ACT ID: **ACT-232**.
 
 ## Visual Theme separation
 
