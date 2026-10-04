@@ -1,7 +1,7 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 3.1.0
-Last updated: 2026-10-04 — ACT-231
+Version: 3.2.0
+Last updated: 2026-10-04 — ACT-245
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
 
@@ -272,11 +272,12 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-09-020 — Release Blocker Review — DONE
   - includes final security hardening evidence (CSRF/rate limiting) and release reproducibility review
 - TASK-09-021 — Final Product Review — TODO
+  - Automated acceptance is green; final human end-to-end signoff remains.
 - TASK-09-022 — E2E Dataset/Editorial Alignment — DONE
   - browser smoke follows the intentionally empty historical-event seed
   - CI run #168 and later full pipelines validate the aligned behavior
 
-## CURRENT CHECKPOINT — ACT-231 — 2026-10-04
+## CURRENT CHECKPOINT — ACT-245 — 2026-10-04
 
 - Main merge commit after security/reproducibility integration: 7e7ebb4bb8f2d15175900daf54968b4792d23bad.
 - PR #4 security/reproducibility CI run #406 passed end-to-end: npm ci, migration, lint, typecheck, unit/integration, production build, Chromium and browser smoke.
@@ -300,7 +301,9 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - includes central runtime configuration validation, production environment checks and the reproducible dependency-installation strategy (including lockfile)
 - TASK-10-002 — Production Build — DONE
 - TASK-10-003 — Deployment Validation — TODO
+  - ACT-240 harness implemented; requires real production/staging URL execution.
 - TASK-10-004 — PWA Production Validation — TODO
+  - ACT-240 harness implemented; requires real production/staging URL execution.
 - TASK-10-005 — Documentation Finalization — TODO
 - TASK-10-006 — CHANGELOG Release Entry — TODO
 - TASK-10-007 — Release Notes — TODO
@@ -313,7 +316,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 **PRIMARY WORKSTREAM:** PHASE-10 — Release & Handoff — IN_PROGRESS
 **PRODUCT ACCEPTANCE WORKSTREAM:** PHASE-06 — remaining browser/product acceptance tasks
 **CURRENT VISUAL STREAM:** PHASE-07 — Theme A — DONE
-**QA GATE:** PHASE-09 — remaining final review/performance tasks
+**QA GATE:** PHASE-09 — final human/product review remains
 - TASK-07-001 برای Theme A بسته شده و DONE است.
 - Theme B فعلاً خارج از Scope است و نباید وارد اجرای بصری فعلی شود.
 - پس از شروع Taskهای باقی‌مانده PHASE-07، مسیر به PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release می‌رسد.
