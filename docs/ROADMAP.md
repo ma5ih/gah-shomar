@@ -1,7 +1,7 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 3.3.0
-Last updated: 2026-10-04 — ACT-246
+Version: 3.4.0
+Last updated: 2026-10-04 — ACT-247
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
 
@@ -242,7 +242,8 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-08-009 — Media/Image Metadata — TODO
 - TASK-08-010 — Initial MVP Dataset — IN_PROGRESS
   - published historical event seed intentionally empty pending review and explicit approval
-- TASK-08-011 — Content QA — TODO
+- TASK-08-011 — Content QA — DONE
+  - Automated content-validation suite validates approval, visibility, source and relationship integrity.
 
 # PHASE-09 — Integration & Full QA — IN_PROGRESS
 - TASK-09-001 — Unit Test Suite — DONE
@@ -277,7 +278,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - browser smoke follows the intentionally empty historical-event seed
   - CI run #168 and later full pipelines validate the aligned behavior
 
-## CURRENT CHECKPOINT — ACT-246 — 2026-10-04
+## CURRENT CHECKPOINT — ACT-247 — 2026-10-04
 
 - Main merge commit after security/reproducibility integration: 7e7ebb4bb8f2d15175900daf54968b4792d23bad.
 - PR #4 security/reproducibility CI run #406 passed end-to-end: npm ci, migration, lint, typecheck, unit/integration, production build, Chromium and browser smoke.
@@ -304,7 +305,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - ACT-240 harness implemented; requires real production/staging URL execution.
 - TASK-10-004 — PWA Production Validation — TODO
   - ACT-240 harness implemented; requires real production/staging URL execution.
-- TASK-10-005 — Documentation Finalization — TODO
+- TASK-10-005 — Documentation Finalization — DONE
 - TASK-10-006 — CHANGELOG Release Entry — TODO
 - TASK-10-007 — Release Notes — TODO
 - TASK-10-008 — Version REL-1.0.0 — TODO
