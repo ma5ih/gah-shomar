@@ -1,3 +1,21 @@
+## ACT-252 — 2026-10-04
+Type: FULL-VISUAL-SYSTEM-REPLACEMENT
+Status: IN_PROGRESS
+
+- Replaced the previous visual skin instead of iterating on it incrementally.
+- Rebuilt AppShell around a fixed viewport with an internal route stage so the browser page itself does not scroll.
+- Today is explicitly non-scrollable at the route-stage level and uses the full available app viewport.
+- Rebuilt typography hierarchy, navigation, bottom app dock, controls, surfaces, event rows, calendar cells and motion.
+- Removed old card-heavy visual treatment in favor of flat, compositional Theme A surfaces with angular landscape/vector forms.
+- Theme A is now aligned directly to the approved Flat Geometric brief: solid colors, sharp/layered forms, minimal detail, no gradients, no glassmorphism.
+- Vazirmatn is loaded through next/font and used as the primary UI font.
+- 2585 continues to render without grouping; Gregorian formatting explicitly uses the Gregorian calendar.
+- Today focuses on date, live clock, today's events and the user's personal events/memories; summary counts remain absent.
+- Latest implementation head: `b552a7b1ad93715f718f7b345772e02592315287`.
+- Latest CI is still running; human visual/product signoff remains open.
+
+Next fresh ACT ID: **ACT-253**
+
 ## ACT-251 — 2026-10-04
 Type: MAJOR-UX-DESIGN-REDESIGN
 Status: IN_PROGRESS
