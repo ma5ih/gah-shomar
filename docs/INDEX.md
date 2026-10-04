@@ -43,6 +43,7 @@ Current phase: PHASE-06 — Core Frontend Product Experience (QA gate: PHASE-09)
 | DOC-032 | ARCHITECTURE-IMPLEMENTATION-AUDIT-2026-10-04.md | COMPLETE — historical audit | Audit مستقل implementation/architecture و gapهای verified |\n| DOC-033 | PROJECT-AUDIT-2026-10-04-ACT-203.md | COMPLETE | پرونده کامل ممیزی این checkpoint، اصلاحات، تست‌ها و نقطه ادامه |
 | DOC-034 | VISUAL-DESIGN-SEPARATION-WARNING.md | APPROVED | قرارداد و هشدار جداسازی دو Visual Theme با Core مشترک |
 | DOC-035 | PHASE-07-THEME-A-FLAT-GEOMETRIC.md | DONE | اجرای بصری Theme A و قرارداد عملیاتی TASK-07-001 |
+| DOC-039 | RELEASE-BLOCKER-REVIEW.md | IN_PROGRESS | بررسی blockerهای امنیتی، reproducibility و production readiness |
 | DOC-036 | PHASE-07-THEME-A-SPACING.md | IN_PROGRESS | اجرای TASK-07-002 و قرارداد spacing Theme A |
 
 ## شناسه‌گذاری
