@@ -1,9 +1,9 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
-Last updated: 2026-10-04 — ACT-231
-Current documentation checkpoint: ACT-235 on main
+Last updated: 2026-10-04 — ACT-245
+Current documentation checkpoint: ACT-245 on main
 Current implementation HEAD: 7e7ebb4bb8f2d15175900daf54968b4792d23bad
-Current implementation checkpoint: ACT-230 — full security/reproducibility + post-merge validation
+Current implementation checkpoint: ACT-237 production security gate + ACT-244 PHASE-06 acceptance
 Latest completed Theme A validation: GitHub Actions #37161733754 — PASS (ACT-208)
 Current visual state: PHASE-07 DONE — Theme A visual batch validated
 Current app-like state: TASK-07-013 DONE — Install Experience validated
@@ -11,14 +11,14 @@ Primary workstream: PHASE-10 — Release & Handoff
 Current visual stream: PHASE-07 — Theme A — DONE
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: ACT-236
+Next fresh ACT ID: ACT-246
 
 ## شمارش رسمی ریزتسک‌ها
 
 - کل: 204
-- DONE: 162
-- IN_PROGRESS: 28
-- TODO: 13
+- DONE: 187
+- IN_PROGRESS: 4
+- TODO: 12
 - DEFERRED: 1
 - BLOCKED: 0
 - DEPRECATED: 0
@@ -35,13 +35,22 @@ Next fresh ACT ID: ACT-236
 | PHASE-03 | DONE | Calendar Engine + Domain |
 | PHASE-04 | DONE | Application/backend use cases |
 | PHASE-05 | DONE | Frontend architecture/design system |
-| PHASE-06 | IN_PROGRESS | Core pages implemented; runtime/browser/product acceptance remains |
+| PHASE-06 | DONE | Core pages + browser/product acceptance validated in CI #461 |
 | PHASE-07 | DONE | Theme A visual polish, time/season, motion and PWA install experience validated |
 | PHASE-08 | IN_PROGRESS | Editorial review and historical dataset remain |
 | PHASE-09 | IN_PROGRESS | Automated pipeline green; final QA remains |
 | PHASE-10 | IN_PROGRESS | Release hardening and final release steps |
 
 ## آخرین اقدامات
+
+### ACT-245 — Full documentation convergence — DONE
+- Canonical ledger is 187 DONE / 4 IN_PROGRESS / 12 TODO / 1 DEFERRED.
+- PHASE-06 is DONE after CI #461.
+- Production dependency security is PASS; full audit has only dev-only high findings.
+- Deployment/PWA harness and editorial candidate queue are implemented without fabricating external validation or approval.
+
+### ACT-244 — PHASE-06 browser/product acceptance — DONE
+- TASK-06-001 through TASK-06-024 are DONE from CI #461 evidence.
 
 ### ACT-231 — Documentation convergence — DONE
 - STATUS/ROADMAP/INDEX/PROJECT/HANDOFF/README و اسناد اجرایی Theme A با وضعیت واقعی main در ACT-230 همگام شدند.
@@ -81,9 +90,8 @@ seedEvents = [] عمداً خالی است. هیچ historical event عمومی �
 
 ## مسیر بعدی قطعی
 
-- ACT-232: dependency-security audit/remediation.
-- سپس performance evidence، final human visual/product review، editorial event acceptance، production deployment/PWA validation و release packaging.
-- انتشار historical event تا editorial approval همچنان متوقف است.
+- ACT-246: final human visual/product review records and release checklist refinement.
+- سپس editorial approval, real production/PWA validation and final release packaging.
 - Theme B دست‌نخورده می‌ماند.
 
 TASK-07-002 — Spacing/Margin Consistency — DONE
