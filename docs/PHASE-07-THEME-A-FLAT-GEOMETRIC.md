@@ -3,7 +3,7 @@
 Status: DONE
 Action: ACT-208 (validated) / ACT-209 (documentation convergence)
 Theme: Flat Geometric
-Task: TASK-07-001 — Final Visual Hierarchy
+Task: TASK-07-001..011 + TASK-07-013 — Theme A validated batch
 
 ## Scope
 This document operationalizes the approved Theme A visual brief. It does not create a new visual brief and does not modify Theme B.
@@ -81,8 +81,7 @@ The existing season state remains authoritative. Theme A uses it only for subtle
 - Theme B received no presentation changes in this execution.
 - GitHub Actions run #37161733754 completed successfully; the quality job also succeeded.
 
-## Continuation
-TASK-07-001 is closed. The next planned Theme A visual task is:
-**TASK-07-002 — Spacing/Margin Consistency — TODO**
+## Final Phase-07 state
+TASK-07-001 through TASK-07-011 and TASK-07-013 are DONE. PHASE-07 is complete.
 
-No new visual language may be introduced outside the approved Theme A brief.
+No new visual language may be introduced outside the approved Theme A brief. Theme B remains untouched and outside scope.
