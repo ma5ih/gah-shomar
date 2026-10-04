@@ -1,0 +1,33 @@
+name: One-time lockfile generation
+
+on:
+  push:
+    branches: ["work/act-221-security-hardening"]
+
+permissions:
+  contents: write
+
+jobs:
+  lockfile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - name: Generate package lock
+        run: npm install --package-lock-only
+      - name: Commit lockfile and remove one-time workflow
+        run: |
+          if git diff --quiet -- package-lock.json; then
+            git rm .github/workflows/one-time-lockfile.yml
+          else
+            git add package-lock.json
+            git rm .github/workflows/one-time-lockfile.yml
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: commit reproducible package lock"
+          git push origin HEAD:work/act-221-security-hardening
