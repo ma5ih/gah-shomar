@@ -4,13 +4,13 @@ Project: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Checkpoint date: 2026-10-04
-Current documentation checkpoint: **ACT-247 on main**
+Current documentation checkpoint: **ACT-248 on main**
 Current implementation HEAD: 7e7ebb4bb8f2d15175900daf54968b4792d23bad
-Primary workstream: PHASE-06 — Core Frontend Product Experience
+Primary workstream: PHASE-10 — Release & Handoff
 Current visual stream: PHASE-07 — Theme A refinement
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: **ACT-248**
+Next fresh ACT ID: **ACT-249**
 
 ## 1. نقطه فعلی پروژه
 
@@ -27,15 +27,15 @@ Next fresh ACT ID: **ACT-248**
 
 ## 2. شمارش رسمی Taskها
 
-- کل: **204**
-- DONE: **162**
-- IN_PROGRESS: **28**
-- TODO: **13**
+- کل: **204 unique**
+- DONE: **190**
+- IN_PROGRESS: **4**
+- TODO: **9**
 - DEFERRED: **1**
 - BLOCKED: **0**
 - DEPRECATED: **0**
 
-این شمارش باید با docs/ROADMAP.md یکی باشد.
+این شمارش باید با ROADMAP و STATUS یکی باشد.
 
 ## 3. وضعیت Phaseها
 
@@ -45,39 +45,33 @@ Next fresh ACT ID: **ACT-248**
 - PHASE-03 — DONE
 - PHASE-04 — DONE
 - PHASE-05 — DONE
-- PHASE-06 — IN_PROGRESS: runtime/browser/product acceptance باقی است.
-- PHASE-07 — IN_PROGRESS: TASK-07-001 برای Theme A بسته شده؛ visual/time/season/install work باقی است.
+- PHASE-06 — DONE: browser/product acceptance validated in CI #461.
+- PHASE-07 — DONE: Theme A visual polish, time/season and PWA install experience validated.
 - PHASE-08 — IN_PROGRESS: editorial dataset و historical review باقی است.
-- PHASE-09 — IN_PROGRESS: final QA و release-blocker review باقی است.
-- PHASE-10 — IN_PROGRESS: release hardening and final release steps.
+- PHASE-09 — IN_PROGRESS: automated QA is green; human visual/product signoff remains.
+- PHASE-10 — IN_PROGRESS: editorial approval, external deployment validation and final release packaging remain.
 
 ## 4. آخرین اقدامات قطعی
 
-### ACT-207 — Theme A visual execution
-- Theme A stylesheet در src/frontend/themes/flat-geometric/theme.css فعال شد.
-- flat solid surfaces، simple lines، layered angular forms و minimal visual treatment اجرا شد.
-- gradient و glass/backdrop treatment کنار گذاشته شد.
-- time-of-day و season فقط appearance را تحت تأثیر قرار می‌دهند.
+### ACT-248 — Documentation/state reconciliation
+- Central documentation was reconciled with the validated main state.
+- Canonical ledger is 204 unique tasks: 190 DONE / 4 IN_PROGRESS / 9 TODO / 1 DEFERRED.
+- TASK-10-005 and TASK-10-009 are DONE; the handoff is complete.
+- Production dependency security and performance are PASS.
+- Remaining release-critical gates are editorial approval/public event seed, human visual signoff, human final product signoff and real production/staging deployment + PWA validation.
 
-### ACT-208 — Theme A validation
-- TASK-07-001 بسته شد.
-- Theme A با brief رسمی تطبیق داده شد.
-- CI run #37161733754 با success کامل شد.
+### ACT-247 — Internal release-readiness cleanup
+- TASK-08-011, TASK-10-005 and TASK-10-009 were closed.
+- Handoff, README/project checkpoint and release-readiness notes were refreshed.
 
-### ACT-209 — Documentation convergence
-- STATUS/ROADMAP/INDEX/PROJECT/HANDOFF/Phase notes با ACT-208 همگام شدند.
-- اشاره‌های stale به pending بودن TASK-07-001 و checkpointهای قدیمی حذف یا جایگزین شدند.
+### ACT-246 — Final review and release checklist
+- Automated/assisted review records were completed; human signoff remained explicitly open.
+- Release checklist and acceptance evidence were established.
 
-### ACT-210 — Theme A spacing implementation
-- TASK-07-002 آغاز شد و spacing scale اختصاصی 4/8/12/16/20/24/32px در Theme A فعال شد.
-- تغییر implementation فقط در src/frontend/themes/flat-geometric/theme.css انجام شد.
-- static validation انجام شد، اما CI جدید هنوز به‌صورت مستقل مشاهده نشده است؛ بنابراین Task فعلاً IN_PROGRESS است.
-
-### ACT-213 — PWA install experience
-- Install prompt، dismiss state، appinstalled handling و localization اضافه شدند.
-- service worker precache برای offline/manifest/icons تقویت شد.
-- unit/E2E coverage اضافه شد.
-- final validation of the complete branch remains pending.
+### ACT-245 / ACT-244 — Final implementation and product acceptance convergence
+- PHASE-06 browser/product acceptance was closed via CI #461.
+- Theme A / PHASE-07 remained DONE.
+- Security/reproducibility and production build gates were validated on main.
 
 ## 5. وضعیت Visual Themeها
 
@@ -115,21 +109,23 @@ seedEvents = [] عمداً خالی است. هیچ historical event عمومی �
 ## 7. QA و validation
 
 آخرین evidence قطعی:
-- PR #4 CI #406 — PASS end-to-end
+- PR #4 / CI #406 — PASS end-to-end
 - Main post-merge CI #407 — PASS end-to-end
+- CI #461 — PASS for Phase-06 browser/product acceptance (90 acceptance tests)
+- CI #454 — PASS for production dependency security audit
+- CI #444 — PASS for performance baseline
 - Theme A validation #37161733754 — PASS
-- CI #299 — PASS برای checkpoint قبلی محصول
 
 نتیجه:
+- PHASE-06 DONE.
 - PHASE-07 DONE.
-- core browser/mobile/tablet/accessibility/touch/PWA acceptance covered by green CI and DONE tasks.
-- Release blocker review is completed as a review task, but some blockers remain open.
-- Remaining open release gates: dependency security remediation, human visual review, performance evidence, historical editorial approval, production deployment validation, final release docs/versioning.
+- Automated core QA, security hardening, reproducibility and performance gates are closed.
+- Remaining release gates: editorial approval/public historical seed, human visual signoff, human final product signoff and a real production/staging URL run of the deployment/PWA validator.
 
 ## 8. مسیر ادامه
 
-PHASE-06 is DONE. Production dependency security and performance are PASS. ACT-240 deployment/PWA harness and ACT-246 release checklist are ready.
-
-Only these release-critical gates remain: explicit editorial approval/public historical seed, human visual signoff, human final product signoff, and a real production/staging URL run of the deployment/PWA validator.
+PHASE-10 is the active workstream. The next executable path is:
+editorial approval/public event seed → human visual signoff → human end-to-end product signoff → real production/PWA validation → release notes/version/tag/post-release backlog.
 
 Theme B remains untouched and outside scope.
+
