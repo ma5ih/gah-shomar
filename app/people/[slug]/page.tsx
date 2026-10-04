@@ -16,8 +16,9 @@ export default async function PersonPage({
  const person=getPersonBySlug(route.slug);
  if(!person)notFound();
  const c=copy[locale];
- const events=person.eventIds.map(getEventById).filter(Boolean);
- const relatedPeople=person.relatedPersonIds.map(getPersonById).filter(Boolean);
+ const isPresent=<T,>(value:T):value is NonNullable<T>=>Boolean(value);
+ const events=person.eventIds.map(getEventById).filter(isPresent);
+ const relatedPeople=person.relatedPersonIds.map(getPersonById).filter(isPresent);
 
  return <AppShell locale={locale} active="events">
   <article className="detail-card card">
