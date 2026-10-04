@@ -1,7 +1,7 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 2.5.1
-Last updated: 2026-10-04 — ACT-213
+Version: 2.7.0
+Last updated: 2026-10-04 — ACT-220
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
 
@@ -236,8 +236,8 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-08-003 — Event Research Workflow — DONE
 - TASK-08-004 — Monthly Occasion Review — IN_PROGRESS
 - TASK-08-005 — Important Event Editorial Selection — IN_PROGRESS
-- TASK-08-006 — Person Dataset — TODO
-- TASK-08-007 — Timeline Period Dataset — TODO
+- TASK-08-006 — Person Dataset — DONE
+- TASK-08-007 — Timeline Period Dataset — DONE
 - TASK-08-008 — Historical Date Conversions — DONE
 - TASK-08-009 — Media/Image Metadata — TODO
 - TASK-08-010 — Initial MVP Dataset — IN_PROGRESS
@@ -250,20 +250,20 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-09-003 — Calendar Regression Tests — DONE
 - TASK-09-004 — Data Validation Tests — DONE
 - TASK-09-005 — Search Tests — DONE
-- TASK-09-006 — Today Acceptance Test — TODO
-- TASK-09-007 — Calendar Acceptance Test — TODO
+- TASK-09-006 — Today Acceptance Test — IN_PROGRESS
+- TASK-09-007 — Calendar Acceptance Test — IN_PROGRESS
 - TASK-09-008 — Event Acceptance Test — TODO
-- TASK-09-009 — Timeline Acceptance Test — TODO
+- TASK-09-009 — Timeline Acceptance Test — IN_PROGRESS
 - TASK-09-010 — Personal Layer Acceptance Test — IN_PROGRESS
   - authenticated Personal Event create/persistence/logout flow and Personal Person ownership regression now have automated coverage
 - TASK-09-011 — Language/RTL/LTR QA — IN_PROGRESS
-- TASK-09-012 — Mobile QA — TODO
-- TASK-09-013 — Tablet/Desktop QA — TODO
-- TASK-09-014 — Touch/Swipe QA — TODO
-- TASK-09-015 — Accessibility QA — TODO
+- TASK-09-012 — Mobile QA — IN_PROGRESS
+- TASK-09-013 — Tablet/Desktop QA — IN_PROGRESS
+- TASK-09-014 — Touch/Swipe QA — IN_PROGRESS
+- TASK-09-015 — Accessibility QA — IN_PROGRESS
 - TASK-09-016 — Performance QA — TODO
 - TASK-09-017 — PWA QA — IN_PROGRESS
-- TASK-09-018 — Visual Consistency QA — TODO
+- TASK-09-018 — Visual Consistency QA — IN_PROGRESS
 - TASK-09-019 — Critical Bug Fixes — DONE
   - All verified implementation findings from ACT-186 are closed through ACT-189..ACT-196.
   - CI #281 validates lint, typecheck, unit/integration, production build and browser smoke on the corrected HEAD.
@@ -275,19 +275,19 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - browser smoke follows the intentionally empty historical-event seed
   - CI run #168 and later full pipelines validate the aligned behavior
 
-## CURRENT CHECKPOINT — ACT-213 — 2026-10-04
+## CURRENT CHECKPOINT — ACT-220 — 2026-10-04
 
-- ACT-213 implements TASK-07-013 — Install Experience.
-- Added a real browser `beforeinstallprompt` flow with Install/Later controls, persistent dismiss state and `appinstalled` handling.
-- Added install-flow localization for Persian and English.
-- Added a browser E2E acceptance scenario and unit-level source contract coverage for the install prompt.
-- Strengthened the service worker precache to include the offline page, manifest and standard icons.
-- Theme A provides the install-prompt visual skin; Theme B remains untouched.
-- No Calendar Engine, Domain, Data, Application business rules, Auth/session semantics or other product logic changed.
-- TASK-07-002 through TASK-07-011 remain IN_PROGRESS pending validation of the complete batch; TASK-07-013 is also IN_PROGRESS pending validation.
-- Latest implementation head on this work branch: 48a42d82083af949783b6aa6319e30e40834f9a0.
-- Last independently observed CI success is the earlier PR head 938939b8bb25..., which validates the visual batch before the later PWA changes; final validation must cover the current head as one unit.
-- Canonical task counts remain 204 total / 136 DONE / 41 IN_PROGRESS / 26 TODO / 1 DEFERRED.
+- ACT-217 expanded accessibility and device acceptance coverage: semantic main landmark, keyboard focus, tablet navigation and mobile overflow checks.
+- ACT-218 added public Person page and public Search → Person navigation coverage.
+- ACT-219 made the PWA install prompt hydration-safe and kept install state event-driven.
+- ACT-220 added Personal Share Card browser acceptance coverage and reconciled QA/content task statuses with the implemented evidence.
+- TASK-08-006 — Person Dataset is now DONE: five approved public people are present, relationship/source validation exists and browser coverage exists for Person.
+- TASK-08-007 — Timeline Period Dataset is now DONE: approved period dataset is present and timeline route coverage exists.
+- TASK-09-006, 09-007, 09-009, 09-012, 09-013, 09-014, 09-015 and 09-018 are now IN_PROGRESS based on automated acceptance/QA coverage.
+- TASK-09-008 Event Acceptance remains TODO because public event seed is intentionally empty and no event is allowed to be fabricated.
+- Theme B remains untouched.
+- TASK-07-002..011 and TASK-07-013 remain IN_PROGRESS pending full validation of the latest branch head.
+- Canonical task counts for this checkpoint: 204 total / 138 DONE / 49 IN_PROGRESS / 24 TODO / 1 DEFERRED.
 
 # PHASE-10 — Release & Handoff — TODO
 - TASK-10-001 — Production Configuration — TODO
