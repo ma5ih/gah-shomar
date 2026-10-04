@@ -5,8 +5,8 @@ Name: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Status: IN_PROGRESS
-Document version: 1.7.0
-Last updated: 2026-10-04
+Document version: 1.8.0
+Last updated: 2026-10-04 — ACT-231
 
 ## 1. تعریف محصول
 «گاه‌شمار» یک گاه‌شمار دیجیتال ایرانی است که تقویم روزانه را با تاریخ و فرهنگ ایران، رویدادهای تاریخی، مناسبت‌ها، رویدادهای شخصی، خاطرات، جستجو و Timeline ترکیب می‌کند.
@@ -94,14 +94,14 @@ PHASE-09 IN_PROGRESS
 PHASE-10 IN_PROGRESS
 
 Current implementation HEAD: 7e7ebb4bb8f2d15175900daf54968b4792d23bad.
-Current documentation checkpoint: **ACT-230 — full security/reproducibility + post-merge validation**.
+Current documentation checkpoint: **ACT-231 — documentation convergence after full security/reproducibility + post-merge validation**.
 Main post-merge CI #407: **PASS** end-to-end, including browser smoke.
 PR #4 security/reproducibility CI #406: **PASS** end-to-end.
 Latest Theme A validation: **GitHub Actions #37161733754 — PASS**.
 TASK-07-002 through TASK-07-011 and TASK-07-013 are DONE; PHASE-07 is DONE.
 TASK-09-006, 09-007, 09-009, 09-010, 09-011, 09-012, 09-013, 09-014, 09-015, 09-017 and 09-020 are DONE.
 TASK-10-001 and TASK-10-002 are DONE.
-Remaining release work is documented in RELEASE-ACCEPTANCE-MATRIX.md and RELEASE-BLOCKER-REVIEW.md.
+Remaining release work is documented in RELEASE-ACCEPTANCE-MATRIX.md and RELEASE-BLOCKER-REVIEW.md. The next executable gate is dependency-security remediation.
 
 ## 9. وضعیت Visual Themeها
 
