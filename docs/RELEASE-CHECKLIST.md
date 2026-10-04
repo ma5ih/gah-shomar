@@ -1,12 +1,14 @@
 # RELEASE CHECKLIST
 
-Current checkpoint: ACT-248
+Current checkpoint: ACT-249
 Original checklist action: ACT-246
 Last reconciled: 2026-10-04
 
 ## DONE
 
 - Documentation synchronization / final handoff guide (TASK-10-005 / TASK-10-009)
+- Release CHANGELOG entry + release-candidate notes (TASK-10-006 / TASK-10-007)
+- Post-release backlog (TASK-10-010)
 
 - Calendar engine and conversion/regression suite
 - Core application/use cases
@@ -26,7 +28,7 @@ Last reconciled: 2026-10-04
 - Final human visual signoff
 - Final human end-to-end product signoff
 - Execution of production/staging validation workflow against a real BASE_URL
-- Final release docs/version/tag only after the above gates
-- Final release packaging should close TASK-10-006, TASK-10-007 and TASK-10-010; REL-1.0.0 remains blocked while any release-critical item is OPEN
+- Final version/tag only after the above gates
+- TASK-10-006, TASK-10-007 and TASK-10-010 are now DONE; REL-1.0.0 remains blocked while any release-critical item is OPEN
 
 Release 1.0 must not be tagged while any release-critical OPEN item remains.
