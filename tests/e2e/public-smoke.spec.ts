@@ -53,7 +53,7 @@ test("Timeline route is reachable from the public shell",async({page})=>{
   await expect(page.locator("header")).toHaveCount(1);
   await expect(page.locator("nav")).toHaveCount(2);
   await expect(page.getByRole("heading",{level:1})).toBeVisible();
-  await page.getByRole("link",{name:"Calendar"}).focus();
+  await page.locator("nav").first().getByRole("link",{name:"Calendar"}).focus();
   await expect(page.locator(":focus-visible")).toBeVisible();
 });
 test("Primary navigation is keyboard reachable",async({page})=>{await page.goto("/?lang=fa");await page.keyboard.press("Tab");await expect(page.locator(":focus-visible")).toBeVisible();});
@@ -80,8 +80,12 @@ test("PWA manifest and standard icons are exposed",async({request})=>{
  });
  test("Calendar swipe moves to the adjacent month",async({page})=>{
   await page.goto("/calendar?lang=en&year=2465&month=5");
-  await page.dispatchEvent(".calendar-surface","touchstart",{touches:[{clientX:300}]});
-  await page.dispatchEvent(".calendar-surface","touchend",{changedTouches:[{clientX:180}]});
+  await page.locator(".calendar-surface").evaluate((element)=>{
+  const start=new Touch({identifier:0,target:element,clientX:300,clientY:240});
+  const end=new Touch({identifier:0,target:element,clientX:180,clientY:240});
+  element.dispatchEvent(new TouchEvent("touchstart",{bubbles:true,cancelable:true,touches:[start],targetTouches:[start],changedTouches:[start]}));
+  element.dispatchEvent(new TouchEvent("touchend",{bubbles:true,cancelable:true,touches:[],targetTouches:[],changedTouches:[end]}));
+ });
   await expect(page).toHaveURL(/\/calendar\?lang=en&year=2465&month=6$/);
  });
  test("Calendar navigation moves between months",async({page})=>{
