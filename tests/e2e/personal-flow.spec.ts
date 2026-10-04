@@ -34,6 +34,11 @@ test("signed-in user can create a private event with linked person and notes and
  await expect(savedEvent.locator('input[name="title"]')).toHaveValue("رویداد تست خصوصی");
  await expect(savedEvent.locator('input[name="recurrence"]')).toBeChecked();
  await expect(savedEvent.getByRole("button",{name:"اشتراک‌گذاری کارت"})).toBeVisible();
+ const [download]=await Promise.all([
+  page.waitForEvent("download"),
+  savedEvent.getByRole("button",{name:"اشتراک‌گذاری کارت"}).click()
+ ]);
+ await expect(download.suggestedFilename()).toBe("gah-shomar-share.png");
 
  await page.goto("/search?lang=fa&q="+encodeURIComponent("رویداد تست خصوصی"));
  await expect(page.getByText("رویداد تست خصوصی")).toBeVisible();
