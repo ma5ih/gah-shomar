@@ -12,7 +12,19 @@ test.describe("public product smoke",()=>{
  test("Unapproved historical event detail is not publicly published",async({page})=>{
   await page.goto("/events/constitutional-decree-1906?lang=fa");await expect(page.getByRole("heading",{level:1,name:"پیدا نشد"})).toBeVisible();
  });
- test("Timeline route is reachable from the public shell",async({page})=>{
+ test("Person page renders approved public person",async({page})=>{
+  await page.goto("/people/reza-shah-pahlavi?lang=en");
+  await expect(page.getByRole("heading",{level:1,name:"Reżā Shah Pahlavi"})).toBeVisible();
+  await expect(page.getByText("Pahlavi monarch from 1925 to 1941.")).toBeVisible();
+});
+test("Search navigates to an approved public person",async({page})=>{
+  await page.goto("/search?lang=en&q="+encodeURIComponent("Reżā Shah Pahlavi"));
+  const result=page.locator('a[href^="/people/reza-shah-pahlavi"]');
+  await expect(result).toBeVisible();
+  await result.click();
+  await expect(page).toHaveURL(/\/people\/reza-shah-pahlavi\?lang=en$/);
+});
+test("Timeline route is reachable from the public shell",async({page})=>{
   await page.goto("/timeline?lang=fa");await expect(page.getByRole("heading",{level:1})).toBeVisible();
  });
  test("Search does not expose unapproved historical events",async({page})=>{
