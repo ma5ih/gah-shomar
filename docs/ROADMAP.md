@@ -1,7 +1,7 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 3.5.0
-Last updated: 2026-10-04 — ACT-248
+Version: 3.6.0
+Last updated: 2026-10-04 — ACT-249
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
 
@@ -11,9 +11,9 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 ## شمارش رسمی ریزتسک‌ها — ACT-185
 
 - کل ریزتسک‌های یکتای شماره‌گذاری‌شده: **204**
-- DONE: **190**
+- DONE: **193**
 - IN_PROGRESS: **4**
-- TODO: **9**
+- TODO: **6**
 - DEFERRED: **1**
 - BLOCKED: **0**
 - DEPRECATED: **0**
@@ -278,9 +278,9 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - browser smoke follows the intentionally empty historical-event seed
   - CI run #168 and later full pipelines validate the aligned behavior
 
-## CURRENT CHECKPOINT — ACT-248 — 2026-10-04
+## CURRENT CHECKPOINT — ACT-249 — 2026-10-04
 
-- Current documentation checkpoint: **ACT-248**.
+- Current documentation checkpoint: **ACT-249**.
 - Current implementation HEAD: **7e7ebb4bb8f2d15175900daf54968b4792d23bad**.
 - PR #4 / CI #406 passed end-to-end: npm ci, migration, lint, typecheck, unit/integration, production build, Chromium and browser smoke.
 - Main post-merge CI #407 passed end-to-end on the merged main commit.
@@ -291,10 +291,10 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-09-021 — Final Product Review — TODO pending explicit human end-to-end signoff.
 - TASK-08-004 / TASK-08-005 / TASK-08-010 remain IN_PROGRESS for editorial review and initial public dataset approval; `seedEvents = []` remains intentional.
 - TASK-10-003 / TASK-10-004 remain TODO until the deployment/PWA validation harness is executed against a real production/staging `BASE_URL`.
-- TASK-10-006 / TASK-10-007 / TASK-10-008 / TASK-10-010 remain TODO for final release packaging after the open gates close.
+- TASK-10-006 CHANGELOG entry, TASK-10-007 release notes and TASK-10-010 post-release backlog are DONE. TASK-10-008 version/tag remains gated until release-critical human/external checks close.
 - TASK-10-005 and TASK-10-009 are DONE.
 - Theme B remains untouched and outside the current execution scope.
-- Canonical task counts: **204 total / 190 DONE / 4 IN_PROGRESS / 9 TODO / 1 DEFERRED / 0 BLOCKED / 0 DEPRECATED**.
+- Canonical task counts: **204 total / 193 DONE / 4 IN_PROGRESS / 6 TODO / 1 DEFERRED / 0 BLOCKED / 0 DEPRECATED**.
 
 # PHASE-10 — Release & Handoff — IN_PROGRESS
 - TASK-10-001 — Production Configuration — DONE
@@ -305,11 +305,11 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-10-004 — PWA Production Validation — TODO
   - ACT-240 harness implemented; requires real production/staging URL execution.
 - TASK-10-005 — Documentation Finalization — DONE
-- TASK-10-006 — CHANGELOG Release Entry — TODO
-- TASK-10-007 — Release Notes — TODO
+- TASK-10-006 — CHANGELOG Release Entry — DONE
+- TASK-10-007 — Release Notes — DONE
 - TASK-10-008 — Version REL-1.0.0 — TODO
 - TASK-10-009 — Handoff/Continuation Guide — DONE
-- TASK-10-010 — Post-release Backlog — TODO
+- TASK-10-010 — Post-release Backlog — DONE
 
 # مسیر ادامه فعلی
 
