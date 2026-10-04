@@ -17,6 +17,13 @@ test.describe("public product smoke",()=>{
   await expect(page.getByRole("heading",{level:1,name:"Reżā Shah Pahlavi"})).toBeVisible();
   await expect(page.getByText("Pahlavi monarch from 1925 to 1941.")).toBeVisible();
 });
+test("Person page exposes related-person navigation",async({page})=>{
+  await page.goto("/people/reza-shah-pahlavi?lang=en");
+  const related=page.getByRole("link",{name:"Moḥammad-Reżā Shah Pahlavi"});
+  await expect(related).toBeVisible();
+  await related.click();
+  await expect(page).toHaveURL(/\/people\/mohammad-reza-shah-pahlavi\?lang=en$/);
+});
 test("Search navigates to an approved public person",async({page})=>{
   await page.goto("/search?lang=en&q="+encodeURIComponent("Reżā Shah Pahlavi"));
   const result=page.locator('a[href^="/people/reza-shah-pahlavi"]');
