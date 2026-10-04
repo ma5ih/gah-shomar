@@ -1,9 +1,9 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
-Last updated: 2026-10-04 — ACT-229
-Current documentation checkpoint: ACT-229 on main
-Current implementation HEAD: b0d5267b66ec48dfd1e27ed31d87e1ed38e85e2f
-Current implementation checkpoint: ACT-229 — post-merge validation
+Last updated: 2026-10-04 — ACT-230
+Current documentation checkpoint: ACT-230 on main
+Current implementation HEAD: 7e7ebb4bb8f2d15175900daf54968b4792d23bad
+Current implementation checkpoint: ACT-230 — full security/reproducibility + post-merge validation
 Latest completed Theme A validation: GitHub Actions #37161733754 — PASS (ACT-208)
 Current visual state: PHASE-07 DONE — Theme A visual batch validated
 Current app-like state: TASK-07-013 DONE — Install Experience validated
@@ -16,9 +16,9 @@ Next fresh ACT ID: ACT-211
 ## شمارش رسمی ریزتسک‌ها
 
 - کل: 204
-- DONE: 159
+- DONE: 162
 - IN_PROGRESS: 28
-- TODO: 16
+- TODO: 13
 - DEFERRED: 1
 - BLOCKED: 0
 - DEPRECATED: 0
@@ -36,10 +36,10 @@ Next fresh ACT ID: ACT-211
 | PHASE-04 | DONE | Application/backend use cases |
 | PHASE-05 | DONE | Frontend architecture/design system |
 | PHASE-06 | IN_PROGRESS | Core pages implemented; runtime/browser/product acceptance remains |
-| PHASE-07 | DONE | Theme A visual polish, time/season, motion, PWA install experience validated |
+| PHASE-07 | DONE | Theme A visual polish, time/season, motion and PWA install experience validated |
 | PHASE-08 | IN_PROGRESS | Editorial review and historical dataset remain |
 | PHASE-09 | IN_PROGRESS | Automated pipeline green; final QA remains |
-| PHASE-10 | TODO | Release |
+| PHASE-10 | IN_PROGRESS | Release hardening and final release steps |
 
 ## آخرین اقدامات
 
@@ -73,12 +73,12 @@ Next fresh ACT ID: ACT-211
 - Theme B هیچ تغییری نکرده است.
 - Core و product behavior هیچ تغییری نکرده‌اند.
 
-### ACT-229 — Post-merge main validation — DONE
-- PR #1 merged as b0d5267b66ec48dfd1e27ed31d87e1ed38e85e2f.
-- Main CI #404 passed end-to-end, including browser smoke.
-- Theme A visual batch TASK-07-002..011 and TASK-07-013 are validated and DONE.
-- Phase-09 acceptance tasks covered by automated main QA were promoted to DONE.
-- Security/reproducibility remains on PR #4 and is not yet part of main.
+### ACT-230 — Full security/reproducibility + post-merge validation — DONE
+- PR #4 merged as 7e7ebb4bb8f2d15175900daf54968b4792d23bad.
+- PR #4 CI #406 passed end-to-end, including browser smoke.
+- Main post-merge CI #407 passed end-to-end.
+- TASK-09-020, TASK-10-001 and TASK-10-002 are now DONE.
+- Remaining release blockers: dependency security review, human visual review, performance evidence, editorial event approval and production deployment/PWA production validation.
 
 ## Visual Theme state
 
@@ -87,6 +87,7 @@ Next fresh ACT ID: ACT-211
 - TASK-07-001: DONE.
 - TASK-07-002 through TASK-07-011: DONE.
 - TASK-07-013: DONE.
+- PHASE-07: DONE.
 - Latest Theme A/PWA implementation head: 48a42d82083af949783b6aa6319e30e40834f9a0.
 - Operational spacing record: docs/PHASE-07-THEME-A-SPACING.md.
 - Permanent separation rules: docs/VISUAL-DESIGN-SEPARATION-WARNING.md.
