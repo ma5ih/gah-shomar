@@ -1,8 +1,8 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.35.0
-Last update: 2026-10-04 — ACT-246
+Index version: 2.36.0
+Last update: 2026-10-04 — ACT-247
 Current phase: PHASE-10 — Release & Handoff (with PHASE-09 final review and external deployment/editorial gates)
 
 ## اسناد
