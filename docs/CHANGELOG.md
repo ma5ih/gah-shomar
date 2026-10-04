@@ -1,20 +1,19 @@
-## ACT-252 — 2026-10-04
-Type: FULL-VISUAL-SYSTEM-REPLACEMENT
+## ACT-253 — 2026-10-04
+Type: VISUAL-REDESIGN-ON-SAME-WIREFRAME
 Status: IN_PROGRESS
 
-- Replaced the previous visual skin instead of iterating on it incrementally.
-- Rebuilt AppShell around a fixed viewport with an internal route stage so the browser page itself does not scroll.
-- Today is explicitly non-scrollable at the route-stage level and uses the full available app viewport.
-- Rebuilt typography hierarchy, navigation, bottom app dock, controls, surfaces, event rows, calendar cells and motion.
-- Removed old card-heavy visual treatment in favor of flat, compositional Theme A surfaces with angular landscape/vector forms.
-- Theme A is now aligned directly to the approved Flat Geometric brief: solid colors, sharp/layered forms, minimal detail, no gradients, no glassmorphism.
-- Vazirmatn is loaded through next/font and used as the primary UI font.
-- 2585 continues to render without grouping; Gregorian formatting explicitly uses the Gregorian calendar.
-- Today focuses on date, live clock, today's events and the user's personal events/memories; summary counts remain absent.
-- Latest implementation head: `b552a7b1ad93715f718f7b345772e02592315287`.
-- Latest CI is still running; human visual/product signoff remains open.
+- Reverted the ACT-252 AppShell structural change and restored the pre-redesign wireframe/DOM skeleton.
+- Kept `app/page.tsx` unchanged; Today information architecture and element positions remain the same.
+- Rebuilt the visual treatment on top of that wireframe: typography scale, spacing rhythm, buttons, nav states, cards, event rows, calendar cells, forms, surfaces and interaction states.
+- Preserved the approved Theme A Flat Geometric direction: flat fills, layered angular forms, no gradients and no glassmorphism.
+- Kept the no-browser-page-scroll behavior through the original app-content scroll region; no new route-stage wrapper was introduced.
+- Removed the redundant Google Fonts import; Vazirmatn remains supplied by `next/font`.
+- Structural verification: AppShell and Today page match the pre-ACT-252 versions; no `route-stage` remains.
+- Latest implementation head: `9943978a4b9fe317bdc3091ac3972a14fbe9549a`.
+- Latest CI: run #37186935157 (in_progress).
+- Human visual/product signoff remains open.
 
-Next fresh ACT ID: **ACT-253**
+Next fresh ACT ID: **ACT-254**
 
 ## ACT-251 — 2026-10-04
 Type: MAJOR-UX-DESIGN-REDESIGN
