@@ -1,94 +1,80 @@
 /* Theme A — Flat Geometric
-   Source of truth:
-   contemporary landscape/vector illustration language,
-   flat solid colors, angular layered forms, simple straight lines,
-   minimal detail, friendly, modern, slightly playful,
-   no gradients, no glassmorphism, no realistic textures.
-*/
-
-/* TASK-07-003 — Typography Consistency */
+   Same product wireframe; visual layer only.
+   Flat solid colors, angular shapes, crisp controls, no gradients, no glass. */
 html[data-theme="flat-geometric"]{
-  --fg-bg:#ece5d7;
-  --fg-surface:#fffdf6;
-  --fg-surface-soft:#f5eee0;
-  --fg-ink:#15231c;
-  --fg-muted:#6a756d;
-  --fg-line:#d9cfbd;
-  --fg-accent:#cc6035;
-  --fg-accent-dark:#ac4926;
-  --fg-sage:#7f9975;
-  --fg-olive:#bca360;
-  --fg-blue:#728c98;
-  --fg-space-1:4px;
-  --fg-space-2:8px;
-  --fg-space-3:12px;
-  --fg-space-4:16px;
-  --fg-space-5:20px;
-  --fg-space-6:24px;
-  --fg-space-7:32px;
+  --fg-bg:#f1ece3;--fg-surface:#fffdf8;--fg-surface-soft:#f6f0e6;--fg-surface-strong:#fff;
+  --fg-ink:#17231f;--fg-muted:#6a746e;--fg-line:#ddd4c6;--fg-accent:#d45f3b;
+  --fg-accent-strong:#a84529;--fg-green:#789171;--fg-yellow:#d1a64f;--fg-blue:#708792;
+  --bg:var(--fg-bg);--surface:var(--fg-surface);--surface-soft:var(--fg-surface-soft);
+  --surface-strong:var(--fg-surface-strong);--ink:var(--fg-ink);--muted:var(--fg-muted);
+  --line:var(--fg-line);--accent:var(--fg-accent);--accent-strong:var(--fg-accent-strong);
+  --accent-soft:#f0d0c0;--green:var(--fg-green);--yellow:var(--fg-yellow);--blue:var(--fg-blue);
 }
-
-/* TASK-07-004 — Component Consistency */
-html[data-theme="flat-geometric"] body{background:var(--fg-bg);color:var(--fg-ink)}
-html[data-theme="flat-geometric"] .topbar{background:var(--fg-bg);border-color:rgba(77,67,53,.1)}
-html[data-theme="flat-geometric"] .brand-mark{background:var(--fg-accent)}
-html[data-theme="flat-geometric"] .nav-link.active{background:var(--fg-surface);border-color:var(--fg-line);box-shadow:inset 0 -2px 0 var(--fg-accent)}
-html[data-theme="flat-geometric"] .lang-chip{background:var(--fg-surface);border-color:var(--fg-line);color:var(--fg-ink)}
-html[data-theme="flat-geometric"] .today-primary{background:#f0dfbf}
-html[data-theme="flat-geometric"] .today-primary::before{background:var(--fg-sage)}
-html[data-theme="flat-geometric"] .today-primary::after{background:var(--fg-olive)}
-html[data-theme="flat-geometric"] .today-side{background:#dfe2cd}
-html[data-theme="flat-geometric"] .today-side-art::before{background:#87a27c}
-html[data-theme="flat-geometric"] .today-side-art::after{background:#9d6b4e}
-html[data-theme="flat-geometric"] .today-sun{background:#d9ad4c}
-html[data-theme="flat-geometric"] .today-side-content{background:var(--fg-ink);color:#fffdf7}
+html[data-theme="flat-geometric"],html[data-theme="flat-geometric"] body{background:var(--fg-bg)}
+html[data-theme="flat-geometric"] body{color:var(--fg-ink)}
+html[data-theme="flat-geometric"] .topbar{border-color:rgba(31,40,35,.10)}
+html[data-theme="flat-geometric"] .nav-link.active,
+html[data-theme="flat-geometric"] .bottom-link.active{background:var(--fg-ink);color:#fffdf8;border-color:var(--fg-ink)}
+html[data-theme="flat-geometric"] .today-primary{background:#efe1c9}
+html[data-theme="flat-geometric"] .today-primary::before{background:#86a17b}
+html[data-theme="flat-geometric"] .today-primary::after{background:#d1a34f}
+html[data-theme="flat-geometric"] .today-side{background:#253730;border-color:#253730}
+html[data-theme="flat-geometric"] .today-sun{background:#e1b24f}
+html[data-theme="flat-geometric"] .today-side-art::before{background:#789171}
+html[data-theme="flat-geometric"] .today-side-art::after{background:#b06d4d}
 html[data-theme="flat-geometric"] .today-event{background:var(--fg-surface-soft)}
-html[data-theme="flat-geometric"] .today-event::before{background:var(--fg-accent)}
-html[data-theme="flat-geometric"] .today-event-type{color:var(--fg-accent-dark)}
-html[data-theme="flat-geometric"] .today-event:hover{background:#eee3d0}
-html[data-theme="flat-geometric"] .today-empty{background:var(--fg-surface-soft)}
-html[data-theme="flat-geometric"] .hero-panel{background:#f0dfbf}
-html[data-theme="flat-geometric"] .hero-panel::after{background:var(--fg-sage)}
-html[data-theme="flat-geometric"] .event-card{background:var(--fg-surface);border-color:var(--fg-line)}
+html[data-theme="flat-geometric"] .today-event-type,
+html[data-theme="flat-geometric"] .today-panel-head a,
+html[data-theme="flat-geometric"] .section-head a{color:var(--fg-accent-strong)}
 html[data-theme="flat-geometric"] .event-card::before{background:var(--fg-accent)}
-html[data-theme="flat-geometric"] .calendar-surface,
-html[data-theme="flat-geometric"] .today-panel,
-html[data-theme="flat-geometric"] .card{background:var(--fg-surface);border-color:var(--fg-line)}
-html[data-theme="flat-geometric"] .day-cell{background:var(--fg-surface-soft)}
-html[data-theme="flat-geometric"] .day-cell.today{background:var(--fg-ink);color:#fffdf7}
-html[data-theme="flat-geometric"] .primary-button{background:var(--fg-ink);color:#fffdf7}
-html[data-theme="flat-geometric"] .primary-button:hover{background:#294038}
+html[data-theme="flat-geometric"] .primary-button{background:var(--fg-accent);color:#fffdf8}
 html[data-theme="flat-geometric"] .secondary-button,
 html[data-theme="flat-geometric"] .icon-button{background:var(--fg-surface);border-color:var(--fg-line);color:var(--fg-ink)}
-html[data-theme="flat-geometric"] .secondary-button:hover,
-html[data-theme="flat-geometric"] .icon-button:hover{background:var(--fg-surface-soft)}
+html[data-theme="flat-geometric"] .day-cell{background:var(--fg-surface-soft)}
+html[data-theme="flat-geometric"] .day-cell.today{background:var(--fg-ink);color:#fffdf8}
 html[data-theme="flat-geometric"] .search-form input,
 html[data-theme="flat-geometric"] .field input,
 html[data-theme="flat-geometric"] .field textarea,
 html[data-theme="flat-geometric"] .field select{background:var(--fg-surface);border-color:var(--fg-line);color:var(--fg-ink)}
 html[data-theme="flat-geometric"] .pill{background:var(--fg-surface-soft);border-color:var(--fg-line)}
-html[data-theme="flat-geometric"] .notice{background:#f1d6c4;border-color:#e4bd9f;color:#6a412e}
-html[data-theme="flat-geometric"] .bottom-nav{background:var(--fg-bg)}
-html[data-theme="flat-geometric"] .bottom-nav-inner{background:var(--fg-ink)}
-html[data-theme="flat-geometric"] .bottom-link.active{background:var(--fg-surface);color:var(--fg-ink)}
+html[data-theme="flat-geometric"] .notice{background:#f0d0c0;border-color:#e5bda9;color:#6b412f}
+html[data-theme="flat-geometric"] .install-prompt,
+html[data-theme="flat-geometric"] .detail-card,
+html[data-theme="flat-geometric"] .auth-card,
+html[data-theme="flat-geometric"] .empty{background:var(--fg-surface);border-color:var(--fg-line)}
+html[data-theme="flat-geometric"] .bottom-nav{background:#f1ece3;border-color:rgba(31,40,35,.10)}
+
+/* TASK-07-003 — Typography and hierarchy */
+html[data-theme="flat-geometric"] .today-date,
+html[data-theme="flat-geometric"] .hero-title,
+html[data-theme="flat-geometric"] .detail-card h1{font-weight:900;letter-spacing:-.065em}
+
+/* TASK-07-004 — Shape Language */
+html[data-theme="flat-geometric"] .today-primary::before,
+html[data-theme="flat-geometric"] .today-primary::after,
+html[data-theme="flat-geometric"] .today-side-art::before,
+html[data-theme="flat-geometric"] .today-side-art::after,
+html[data-theme="flat-geometric"] .brand::before,
+html[data-theme="flat-geometric"] .event-card::before{clip-path:polygon(0 42%,18% 24%,36% 39%,54% 8%,73% 30%,100% 12%,100% 100%,0 100%)}
 
 /* TASK-07-005 — Visual Density Review */
 html[data-theme="flat-geometric"] .app-content{gap:0}
-html[data-theme="flat-geometric"] .today-view{gap:14px}
-html[data-theme="flat-geometric"] .today-grid{gap:14px}
+html[data-theme="flat-geometric"] .today-view{gap:18px}
+html[data-theme="flat-geometric"] .today-grid{gap:18px}
 
 /* TASK-07-006..009 — Time-of-day Presentation */
-html[data-theme="flat-geometric"] .today-view[data-time-of-day="morning"] .today-primary{background:#f0dfbf}
-html[data-theme="flat-geometric"] .today-view[data-time-of-day="noon"] .today-primary{background:#e7eee4}
-html[data-theme="flat-geometric"] .today-view[data-time-of-day="sunset"] .today-primary{background:#ead2b9}
-html[data-theme="flat-geometric"] .today-view[data-time-of-day="night"] .today-primary{background:#293a31}
+html[data-theme="flat-geometric"] .today-view[data-time-of-day="morning"] .today-primary{background:#efe1c9}
+html[data-theme="flat-geometric"] .today-view[data-time-of-day="noon"] .today-primary{background:#e8eee4}
+html[data-theme="flat-geometric"] .today-view[data-time-of-day="sunset"] .today-primary{background:#ead3be}
+html[data-theme="flat-geometric"] .today-view[data-time-of-day="night"] .today-primary{background:#293b34}
 html[data-theme="flat-geometric"] .today-view[data-time-of-day="night"] .today-date,
-html[data-theme="flat-geometric"] .today-view[data-time-of-day="night"] .today-clock{color:#f5f0e7}
+html[data-theme="flat-geometric"] .today-view[data-time-of-day="night"] .today-clock,
+html[data-theme="flat-geometric"] .today-view[data-time-of-day="night"] .today-secondary{color:#f7f2e9}
 
 /* TASK-07-010 — Seasonal Variations */
-html[data-theme="flat-geometric"] .today-view[data-season="spring"] .today-dot{background:var(--fg-sage)}
+html[data-theme="flat-geometric"] .today-view[data-season="spring"] .today-dot{background:var(--fg-green)}
 html[data-theme="flat-geometric"] .today-view[data-season="summer"] .today-dot{background:var(--fg-accent)}
-html[data-theme="flat-geometric"] .today-view[data-season="autumn"] .today-dot{background:#a66c47}
+html[data-theme="flat-geometric"] .today-view[data-season="autumn"] .today-dot{background:#a86b47}
 html[data-theme="flat-geometric"] .today-view[data-season="winter"] .today-dot{background:var(--fg-blue)}
 
 /* TASK-07-011 — Motion Polish */
@@ -108,11 +94,8 @@ html[data-theme="flat-geometric"] .icon-button:active,
 html[data-theme="flat-geometric"] .bottom-link:active{transform:scale(.97)}
 
 @media(prefers-reduced-motion:reduce){
-  html[data-theme="flat-geometric"] *,
-  html[data-theme="flat-geometric"] *::before,
-  html[data-theme="flat-geometric"] *::after{
-    transition-duration:.01ms!important;
-    animation-duration:.01ms!important
+  html[data-theme="flat-geometric"] *,html[data-theme="flat-geometric"] *::before,html[data-theme="flat-geometric"] *::after{
+    transition-duration:.01ms!important;animation-duration:.01ms!important
   }
 }
 
