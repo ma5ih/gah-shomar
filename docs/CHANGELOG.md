@@ -1,3 +1,24 @@
+## ACT-230 — 2026-10-04
+Type: FULL-QA-AND-RELEASE-HARDENING
+Status: DONE
+
+- PR #4 merged as 7e7ebb4bb8f2d15175900daf54968b4792d23bad.
+- PR #4 CI #406 passed end-to-end with npm ci, migration, lint, typecheck, unit/integration tests, production build, Chromium and browser smoke.
+- Main post-merge CI #407 passed end-to-end on the merged code.
+- TASK-09-020 — Release Blocker Review — DONE.
+- TASK-10-001 — Production Configuration — DONE.
+- TASK-10-002 — Production Build — DONE.
+- package-lock.json is now part of the main repository and CI uses npm ci.
+- PostgreSQL-backed authentication rate limiting and central runtime configuration are integrated and validated.
+- Dependency reproducibility blocker is resolved.
+- Remaining release blockers are explicitly limited to dependency-security remediation, final human visual review, performance evidence, editorial event approval/public dataset, production deployment validation and final release documentation/versioning.
+- Theme A is complete; Theme B remains untouched and outside scope.
+
+### Next
+Continue PHASE-10 release work and remaining PHASE-08/09 acceptance blockers.
+
+Next fresh ACT ID: **ACT-231**
+
 ## ACT-229 — 2026-10-04
 Type: POST-MERGE-QA-RECONCILIATION
 Status: DONE
