@@ -44,6 +44,7 @@ Current phase: PHASE-06 — Core Frontend Product Experience (QA gate: PHASE-09)
 | DOC-034 | VISUAL-DESIGN-SEPARATION-WARNING.md | APPROVED | قرارداد و هشدار جداسازی دو Visual Theme با Core مشترک |
 | DOC-035 | PHASE-07-THEME-A-FLAT-GEOMETRIC.md | DONE | اجرای بصری Theme A و قرارداد عملیاتی TASK-07-001 |
 | DOC-039 | RELEASE-BLOCKER-REVIEW.md | IN_PROGRESS | بررسی blockerهای امنیتی، reproducibility و production readiness |
+| DOC-040 | RELEASE-ACCEPTANCE-MATRIX.md | IN_PROGRESS | ماتریس ردیابی معیارهای پذیرش تا Release |
 | DOC-036 | PHASE-07-THEME-A-SPACING.md | IN_PROGRESS | اجرای TASK-07-002 و قرارداد spacing Theme A |
 
 ## شناسه‌گذاری
