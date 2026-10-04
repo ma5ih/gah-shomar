@@ -5,7 +5,7 @@ Name: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Status: IN_PROGRESS
-Document version: 1.5.0
+Document version: 1.6.0
 Last updated: 2026-10-04
 
 ## 1. تعریف محصول
@@ -88,18 +88,19 @@ PHASE-03 DONE
 PHASE-04 DONE
 PHASE-05 DONE
 PHASE-06 IN_PROGRESS
-PHASE-07 IN_PROGRESS
+PHASE-07 DONE
 PHASE-08 IN_PROGRESS
 PHASE-09 IN_PROGRESS
 PHASE-10 TODO
 
-Current implementation HEAD: 5791e3e89aabcd75fd856e03e9a05023d009dbcc.
-Current documentation checkpoint: **ACT-213 — PWA install experience**.
-Current implementation HEAD: 48a42d82083af949783b6aa6319e30e40834f9a0.
+Current implementation HEAD: b0d5267b66ec48dfd1e27ed31d87e1ed38e85e2f.
+Current documentation checkpoint: **ACT-229 — post-merge main validation**.
+Main CI #404: **PASS** end-to-end, including browser smoke.
 Latest completed Theme A validation: **GitHub Actions #37161733754 — PASS**.
 Earlier full product/E2E acceptance checkpoint: **CI #299 — PASS**.
-TASK-09-019 is DONE. The product remains in PHASE-06 with runtime/browser acceptance open.
-TASK-07-001 is DONE for Theme A. TASK-07-002 through TASK-07-011 are IN_PROGRESS pending full validation. TASK-07-013 Install Experience is IN_PROGRESS pending PWA validation.
+TASK-07-002 through TASK-07-011 and TASK-07-013 are DONE; PHASE-07 is DONE.
+TASK-09-006, 09-007, 09-009, 09-010, 09-011, 09-012, 09-013, 09-014, 09-015 and 09-017 are DONE from observed main CI acceptance.
+Security/reproducibility integration is currently tracked in PR #4 and is not yet part of main.
 
 ## 9. وضعیت Visual Themeها
 
@@ -108,8 +109,10 @@ TASK-07-001 is DONE for Theme A. TASK-07-002 through TASK-07-011 are IN_PROGRESS
 ### Theme A — Flat Geometric
 - مسیر: src/frontend/themes/flat-geometric/
 - TASK-07-001 — Final Visual Hierarchy: **DONE**
-- TASK-07-002 — Spacing/Margin Consistency: **IN_PROGRESS**
-- اجرای TASK-07-002 فقط روی Theme A انجام شده و با spacing scale هفت‌مرحله‌ای 4/8/12/16/20/24/32px ثبت شده است.
+- TASK-07-002 through TASK-07-011: **DONE**
+- TASK-07-013 Install Experience: **DONE**
+- PHASE-07: **DONE**
+- Theme A remains the only active visual implementation; all current visual decisions remain inside the approved brief.
 - تمام تصمیم‌های فعلی باید داخل brief مصوب Theme A بمانند.
 - سند اجرایی spacing: docs/PHASE-07-THEME-A-SPACING.md.
 
