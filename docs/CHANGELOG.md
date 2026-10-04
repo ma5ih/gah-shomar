@@ -1,3 +1,21 @@
+## ACT-249 — 2026-10-04
+Type: UX-QA-AND-RELEASE-PACKAGING
+Status: DONE
+
+- Performed a static product-contract and UX consistency audit across the main product routes and release documentation.
+- Fixed locale switching so it preserves the active route and query state.
+- Localized calendar swipe guidance and English month headings.
+- Hardened malformed calendar query parameters with safe fallback to the current date.
+- Added localized accessibility labels to the calendar grid and day cells.
+- New personal events/memories now default to the actual current Imperial date instead of a fixed sample date.
+- Replaced internal-looking user ID presentation on the Personal page with a product-level heading.
+- Added a direct Personal destination after successful authentication.
+- Corrected stale Architecture, Requirements, Theme separation and security-audit documentation.
+- Prepared 1.0 release-candidate notes and a post-release backlog; no release tag was created.
+- Human visual/product approval, historical editorial approval and real production/PWA validation remain intentionally open.
+
+Next fresh ACT ID: **ACT-250**
+
 ## ACT-248 — 2026-10-04
 Type: DOCUMENTATION-SYNC
 Status: DONE
