@@ -40,7 +40,6 @@ test("signed-in user can create a private event with linked person and notes and
 
  await page.goto("/personal?lang=fa");
  await page.getByRole("button",{name:"خروج"}).click();
- await page.goto("/personal?lang=fa");
  await expect(page.getByText("برای نگهداری رویدادها و خاطرات شخصی وارد حساب شو.")).toBeVisible();
 });
 
