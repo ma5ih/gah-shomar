@@ -47,7 +47,7 @@ Current phase: PHASE-10 — Release & Handoff (with PHASE-06/08/09 acceptance ga
 | DOC-037 | PHASE-07-THEME-A-VISUAL-POLISH.md | DONE | اجرای batch بصری TASK-07-002 تا TASK-07-011 برای Theme A |
 | DOC-038 | PWA Install Experience | DONE | اجرای TASK-07-013 و قرارداد نصب/آفلاین PWA |
 | DOC-039 | RELEASE-BLOCKER-REVIEW.md | DONE — blockers remain open | review نهایی blockerهای امنیتی، reproducibility و production readiness |
-| DOC-040 | RELEASE-ACCEPTANCE-MATRIX.md | IN_PROGRESS |\n| DOC-041 | RELEASE-SECURITY-AUDIT-ACT-232.md | IN_PROGRESS | ماتریس ردیابی معیارهای پذیرش تا Release |
+| DOC-040 | RELEASE-ACCEPTANCE-MATRIX.md | IN_PROGRESS |\n| DOC-041 | RELEASE-SECURITY-AUDIT-ACT-232.md | IN_PROGRESS |\n| DOC-042 | RELEASE-DEPLOYMENT-VALIDATION.md | IN_PROGRESS |\n| DOC-043 | EDITORIAL-CANDIDATES-INITIAL.md | IN_PROGRESS | ماتریس ردیابی معیارهای پذیرش تا Release |
 
 ## شناسه‌گذاری
 - PHASE-XX — مرحله
