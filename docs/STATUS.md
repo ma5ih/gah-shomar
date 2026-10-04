@@ -1,7 +1,7 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
-Last updated: 2026-10-04 — ACT-230
-Current documentation checkpoint: ACT-230 on main
+Last updated: 2026-10-04 — ACT-231
+Current documentation checkpoint: ACT-231 on main
 Current implementation HEAD: 7e7ebb4bb8f2d15175900daf54968b4792d23bad
 Current implementation checkpoint: ACT-230 — full security/reproducibility + post-merge validation
 Latest completed Theme A validation: GitHub Actions #37161733754 — PASS (ACT-208)
@@ -11,7 +11,7 @@ Primary workstream: PHASE-06 — Core Frontend Product Experience
 Current visual stream: PHASE-07 — Theme A refinement
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: ACT-211
+Next fresh ACT ID: ACT-232
 
 ## شمارش رسمی ریزتسک‌ها
 
@@ -43,46 +43,21 @@ Next fresh ACT ID: ACT-211
 
 ## آخرین اقدامات
 
-### ACT-217..220 — QA/data reconciliation — DONE
-- Mobile/tablet/touch/accessibility/visual QA coverage expanded.
-- Public Person and Search-to-Person navigation covered.
-- PWA install state made hydration-safe.
-- Personal Share Card visibility covered.
-- Person/Period datasets promoted to DONE based on existing approved data and validation coverage.
-- Several Phase-09 QA tasks promoted from TODO to IN_PROGRESS; historical Event acceptance remains blocked by intentional empty seed.
-
-### ACT-208 — Theme A visual hierarchy validation — DONE
-- TASK-07-001 — Final Visual Hierarchy برای Theme A بسته شد.
-- Theme A با brief مصوب تطبیق داده شد.
-- GitHub Actions #37161733754 با success کامل شد.
-
-### ACT-209 — Documentation convergence — DONE
-
-### ACT-211 — Theme A spacing normalization refinement — IN_PROGRESS
-- STATUS/ROADMAP/INDEX/PROJECT/HANDOFF و اسناد continuation همگام شدند.
-- شمارش canonical واقعی Roadmap اصلاح و ثبت شد.
-- Next task به TASK-07-002 منتقل شد.
-
-### ACT-210 — Theme A spacing implementation — DONE (implementation checkpoint)
-- TASK-07-002 آغاز شد.
-- spacing scale اختصاصی Theme A با ۷ گام 4/8/12/16/20/24/32px اضافه شد.
-- shell، topbar، content، hero، cards، calendar، forms، controls، metadata و mobile navigation روی همان scale یکدست شدند.
-- تغییر فقط در src/frontend/themes/flat-geometric/theme.css انجام شد.
-- static validation: scale tokenها حاضرند، selectorهای Theme A حفظ شده‌اند و gradient count = 0 باقی مانده است.
-- نتیجهٔ مستقل CI برای commit اولیه ACT-210 از connector قابل مشاهده نشد؛ validation اجرای بعدی نیز به محیط شبکه‌ای محلی وابسته بود.
-- Theme B هیچ تغییری نکرده است.
-- Core و product behavior هیچ تغییری نکرده‌اند.
+### ACT-231 — Documentation convergence — DONE
+- STATUS/ROADMAP/INDEX/PROJECT/HANDOFF/README و اسناد اجرایی Theme A با وضعیت واقعی main در ACT-230 همگام شدند.
+- stale references به ACT-211/ACT-212/ACT-213 و pending بودن TASK-07-002 پاک‌سازی شدند.
+- PHASE-07 و Theme A به‌صورت صریح DONE ثبت شدند؛ Theme B همچنان خارج از scope است.
+- این اقدام documentation-only است و behavior یا Core محصول را تغییر نمی‌دهد.
 
 ### ACT-230 — Full security/reproducibility + post-merge validation — DONE
 - PR #4 merged as 7e7ebb4bb8f2d15175900daf54968b4792d23bad.
-- PR #4 CI #406 passed end-to-end, including browser smoke.
-- Main post-merge CI #407 passed end-to-end.
-- TASK-09-020, TASK-10-001 and TASK-10-002 are now DONE.
-- Remaining release blockers: dependency security review, human visual review, performance evidence, editorial event approval and production deployment/PWA production validation.
+- PR #4 CI #406 and main CI #407 passed end-to-end.
+- TASK-09-020, TASK-10-001 and TASK-10-002 are DONE.
+- Release blockers remain explicitly tracked below.
 
 ## Visual Theme state
 
-- Theme A: src/frontend/themes/flat-geometric/ — active refinement.
+- Theme A: src/frontend/themes/flat-geometric/ — completed for PHASE-07; only approved Theme A is in active visual scope.
 - Theme B: src/frontend/themes/modern-flat-vector/ — untouched / outside current scope.
 - TASK-07-001: DONE.
 - TASK-07-002 through TASK-07-011: DONE.
@@ -98,12 +73,12 @@ seedEvents = [] عمداً خالی است. هیچ historical event عمومی �
 
 ## مسیر بعدی قطعی
 
-- Validate latest Theme A + PWA branch head.
-- Merge validated visual/app-like batch.
-- Continue release-readiness/configuration and security/reproducibility.
-- Keep editorial event publication blocked until explicit approval.
+- ACT-232: dependency-security audit/remediation.
+- سپس performance evidence، final human visual/product review، editorial event acceptance، production deployment/PWA validation و release packaging.
+- انتشار historical event تا editorial approval همچنان متوقف است.
+- Theme B دست‌نخورده می‌ماند.
 
-TASK-07-002 — Spacing/Margin Consistency — IN_PROGRESS
+TASK-07-002 — Spacing/Margin Consistency — DONE
 
 Main validation is green. Remaining release gates are security/reproducibility integration, performance QA, visual human review, editorial event approval and production deployment evidence.
 
