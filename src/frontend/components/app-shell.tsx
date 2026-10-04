@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Locale } from "../../application/types";
 import { copy } from "../lib/i18n";
 import { LocaleBoundary } from "./locale-boundary";
+import { LocaleSwitcher } from "./locale-switcher";
 export function AppShell({locale,active,children}:{locale:Locale;active:"today"|"calendar"|"events"|"timeline"|"search"|"personal";children:React.ReactNode}){
   const c=copy[locale];
   const links=[["today","/",c.today],["calendar","/calendar",c.calendar],["events","/events",c.events],["timeline","/timeline",c.timeline],["search","/search",c.search],["personal","/personal",c.personal]] as const;
