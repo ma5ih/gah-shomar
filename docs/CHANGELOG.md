@@ -1,3 +1,19 @@
+## ACT-232 — 2026-10-04
+Type: DEPENDENCY-SECURITY-AUDIT
+Status: DONE
+
+- CI #438 captured a fresh `npm audit --json` artifact from the reproducible main install.
+- Result: 9 vulnerabilities total (6 high, 3 moderate, 0 critical, 0 low).
+- The high production finding is `drizzle-orm <0.45.2`; remediation branch PR #5 upgrades it to 0.45.3.
+- Vitest tooling findings are being upgraded to 5.0.3.
+- The `braces` high finding is currently in the development-only lint chain and upstream reports no patched braces release; it remains a documented exception/risk pending a safe replacement path.
+- Release rule: zero high/critical production vulnerabilities before Release 1.0.
+
+### Next
+ACT-233 performance baseline validation and ACT-234 dependency remediation/lockfile regeneration.
+
+Next fresh ACT ID: **ACT-235**
+
 ## ACT-231 — 2026-10-04
 Type: DOCUMENTATION-CONVERGENCE
 Status: DONE
