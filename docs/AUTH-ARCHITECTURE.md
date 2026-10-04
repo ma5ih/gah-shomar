@@ -1,10 +1,10 @@
 # AUTH-ARCHITECTURE — Authentication و Session
 
-Version: 1.0.0
+Version: 1.1.0
 Status: APPROVED
 Task: TASK-02-024
-Action: ACT-043
-Last updated: 2026-10-02
+Action: ACT-221
+Last updated: 2026-10-04
 
 ## Scope
 
@@ -39,7 +39,7 @@ Password:
 
 ## Password Security
 
-Password hash در implementation فعلی با `scrypt` به‌صورت salted/adaptive ذخیره می‌شود. تغییر به Argon2id فقط با تصمیم امنیتی/وابستگی مستقل انجام می‌شود.
+Password hash در implementation فعلی با scrypt به‌صورت salted/adaptive ذخیره می‌شود. تغییر به Argon2id فقط با تصمیم امنیتی/وابستگی مستقل انجام می‌شود.
 
 ## Session
 
@@ -65,10 +65,13 @@ Public content بدون login قابل مشاهده است.
 
 ## Abuse Protection
 
-State-changing requests باید CSRF-safe باشند و login/register rate limiting برای release hardening پیگیری می‌شود؛ evidence نهایی در `TASK-09-020` بررسی می‌شود.
+- Login/register attempts now use a persistent PostgreSQL-backed rate-limit window keyed by normalized account identity.
+- Default policy: 5 attempts per 10 minutes; successful authentication/registration clears the current window.
+- Rate limiting is intentionally persistent rather than process-memory-only, so it survives multiple application instances.
+- State-changing application actions continue to use Next.js Server Actions; framework-level request protection remains part of the release review.
+- Final security evidence and any broader IP/distributed abuse controls remain part of TASK-09-020.
 
 ## Status
 
 TASK-02-024: DONE
-ACT-043: DONE
-Next: TASK-02-025 — Share Card Architecture
+ACT-221: security hardening implementation checkpoint
