@@ -4,25 +4,25 @@ Project: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Checkpoint date: 2026-10-04
-Current documentation checkpoint: **ACT-230 on main**
+Current documentation checkpoint: **ACT-231 on main**
 Current implementation HEAD: 7e7ebb4bb8f2d15175900daf54968b4792d23bad
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 Current visual stream: PHASE-07 — Theme A refinement
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: **ACT-231**
+Next fresh ACT ID: **ACT-232**
 
 ## 1. نقطه فعلی پروژه
 
-این checkpoint بعد از بسته‌شدن موفق TASK-07-001 برای Theme A ثبت شده است.
+این checkpoint بعد از بسته‌شدن PHASE-07 و merge موفق hardening/reproducibility در ACT-230 ثبت شده است.
 
 - TASK-07-001 — Final Visual Hierarchy — **DONE**
-- Theme A — Flat Geometric — فعال و validation شده است.
+- Theme A — Flat Geometric — **PHASE-07 DONE** و validation شده است.
 - Theme B — Modern Flat Vector Illustration — هنوز وارد طراحی اصلی نشده است.
 - TASK-07-002 تا TASK-07-011 — **DONE**
 - TASK-07-013 — **DONE**
 - PHASE-07 — **DONE**
-- security/reproducibility integration: **PR #4 / IN_PROGRESS**
+- security/reproducibility integration: **PR #4 / MERGED — validated in CI #406 and main CI #407**
 - هیچ تغییر جدیدی در Core، Calendar Engine، Domain، Data، Application، Auth/Session، routing یا business behavior در ACT-209 انجام نشده است.
 
 ## 2. شمارش رسمی Taskها
@@ -100,7 +100,7 @@ Brief رسمی و تنها مرجع طراحی همان سند ثبت‌شده �
 
 وضعیت:
 - TASK-07-001: DONE
-- TASK-07-002: IN_PROGRESS
+- TASK-07-002: DONE
 
 ### Theme B
 وضعیت:
@@ -128,12 +128,11 @@ seedEvents = [] عمداً خالی است. هیچ historical event عمومی �
 
 ## 8. مسیر ادامه
 
-**گام بعدی:** PHASE-10 remaining release blockers → final review → release versioning
+**گام بعدی:** ACT-232 dependency-security audit/remediation.
 
-تا زمانی که کاربر scope را تغییر نداده است، هر visual implementation جدید فقط روی Theme A انجام می‌شود و Theme B دست‌نخورده می‌ماند.
+بعد از آن به‌ترتیب: performance evidence → final human visual/product review → editorial event acceptance → production deployment validation → PWA production validation → release docs/versioning/handoff.
 
-مسیر کلی بعد از آن:
-PHASE-06 acceptance → remaining PHASE-07 Theme A work → PHASE-08 editorial dataset → PHASE-09 final QA → PHASE-10 release.
+Theme B دست‌نخورده و خارج از scope می‌ماند.
 
 ## 9. قراردادهای غیرقابل مذاکره
 
@@ -150,10 +149,4 @@ PHASE-06 acceptance → remaining PHASE-07 Theme A work → PHASE-08 editorial d
 
 ## 10. نقطه شروع جلسه بعد
 
-ابتدا:
-1. docs/STATUS.md
-2. docs/ROADMAP.md
-3. آخرین بخش docs/CHANGELOG.md
-4. سند docs/PHASE-07-THEME-A-FLAT-GEOMETRIC.md
-
-سپس فقط در صورت شروع TASK-07-002، اجرای visual refinement برای **Theme A** انجام شود.
+ابتدا STATUS → ROADMAP → CHANGELOG را بخوانید؛ سپس RELEASE-ACCEPTANCE-MATRIX.md و RELEASE-BLOCKER-REVIEW.md را بررسی کنید و از ACT-232 ادامه دهید.
