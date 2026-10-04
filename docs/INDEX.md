@@ -1,9 +1,9 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.31.0
-Last update: 2026-10-04 — ACT-230
-Current phase: PHASE-06 — Core Frontend Product Experience (QA gate: PHASE-09)
+Index version: 2.32.0
+Last update: 2026-10-04 — ACT-231
+Current phase: PHASE-10 — Release & Handoff (with PHASE-06/08/09 acceptance gates)
 
 ## اسناد
 
@@ -72,10 +72,10 @@ PHASE-09: IN_PROGRESS
 PHASE-10: IN_PROGRESS
 
 ## آخرین اقدام
-ACT-230 — full security/reproducibility integration و post-merge CI validation.
+ACT-231 — documentation convergence after ACT-230; next is dependency-security remediation.
 
 ## اقدام بعدی
-**PHASE-10 release hardening — IN_PROGRESS**؛ Theme A validated است و Theme B همچنان خارج از Scope می‌ماند.
+**PHASE-10 release hardening — IN_PROGRESS**؛ Theme A validated و PHASE-07 کامل است، Theme B همچنان خارج از Scope می‌ماند.
 
 ## قانون
 هر تغییر معنادار باید در CHANGELOG ثبت و در صورت ارتباط، STATUS، ROADMAP، REQUIREMENTS و DECISIONS نیز همگام شود.
