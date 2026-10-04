@@ -4,7 +4,7 @@ test.describe("public product smoke",()=>{
   await page.goto("/?lang=fa");
   await expect(page.locator(".hero .hero-title")).toBeVisible();
   await expect(page.locator(".hero .hero-subtitle")).toBeVisible();
-  await expect(page.locator(".hero .overline")).toBeVisible();
+  await expect(page.locator(".hero > .hero-panel:first-child .overline")).toBeVisible();
   await expect(page.locator(".hero .hero-title")).not.toHaveText("");
  });
  test("Today is Persian and RTL",async({page})=>{
