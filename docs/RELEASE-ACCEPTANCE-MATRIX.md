@@ -1,7 +1,7 @@
 # RELEASE ACCEPTANCE MATRIX
 
 Status: IN_PROGRESS
-Checkpoint: ACT-229
+Checkpoint: ACT-230
 Date: 2026-10-04
 
 | Area | Current evidence | Status |
@@ -25,11 +25,13 @@ Date: 2026-10-04
 | Touch / Swipe | calendar swipe browser acceptance | PASS |
 | Visual consistency | Theme A contract + main CI #404 | IN_PROGRESS — final human visual review remains |
 | Authentication | register/login/session browser flow | PASS |
-| Auth abuse protection | implementation in PR #4; dedicated integration test present | PENDING CI / merge |
-| Runtime configuration | central config implementation in PR #4; unit tests present | PENDING CI / merge |
-| Dependency reproducibility | package-lock + npm ci in PR #4 | PENDING CI / merge |
-| Dependency security | previous npm install reported 9 vulnerabilities (3 moderate, 6 high) | OPEN |
+| Auth abuse protection | PostgreSQL rate limit + integration test + PR #4 CI #406 + main CI #407 | PASS |
+| Runtime configuration | central config + unit tests + PR #4 CI #406 + main CI #407 | PASS |
+| Dependency reproducibility | committed package-lock + npm ci + PR #4 CI #406 + main CI #407 | PASS |
+| Dependency security | previous npm install reported 9 vulnerabilities (3 moderate, 6 high) | OPEN — remediation still required |
 | Performance | no production performance evidence yet | OPEN |
+| Production Configuration | runtime config + reproducible install strategy + CI evidence | PASS |
+| Production Build | main CI #407 production build | PASS |
 | Production deployment | no production infrastructure evidence yet | OPEN |
 | Editorial historical dataset | intentionally empty until explicit approval | OPEN |
 
