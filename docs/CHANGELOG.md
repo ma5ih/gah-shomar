@@ -1,3 +1,13 @@
+## ACT-246 — 2026-10-04
+Type: RELEASE-GATE
+Status: DONE
+
+- Final human visual/product review records and release checklist were created.
+- Automated/assisted evidence is green; human signoff is explicitly still open.
+- Production/PWA validation harness is ready but requires a real BASE_URL.
+
+Next fresh ACT ID: **ACT-247**
+
 ## ACT-245 — 2026-10-04
 Type: DOCUMENTATION-CONVERGENCE
 Status: DONE
