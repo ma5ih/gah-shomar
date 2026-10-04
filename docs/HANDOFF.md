@@ -4,13 +4,13 @@ Project: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Checkpoint date: 2026-10-04
-Current documentation checkpoint: **ACT-235 on main**
+Current documentation checkpoint: **ACT-245 on main**
 Current implementation HEAD: 7e7ebb4bb8f2d15175900daf54968b4792d23bad
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 Current visual stream: PHASE-07 — Theme A refinement
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: **ACT-236**
+Next fresh ACT ID: **ACT-246**
 
 ## 1. نقطه فعلی پروژه
 
@@ -128,23 +128,6 @@ seedEvents = [] عمداً خالی است. هیچ historical event عمومی �
 
 ## 8. مسیر ادامه
 
-ACT-232 security audit is recorded; ACT-235 performance evidence is now PASS. The next executable gate is ACT-234 dependency remediation / PR #5, followed by final human visual/product review, editorial event acceptance, production deployment validation, PWA production validation and release packaging.
+PHASE-06 is DONE. Production dependency security and performance are PASS. ACT-240 deployment/PWA validation harness is ready. Next executable work is ACT-246 final visual/product review record; after that only external editorial approval and real production/PWA validation remain before Release 1.0 packaging.
 
-Theme B دست‌نخورده و خارج از scope می‌ماند.
-
-## 9. قراردادهای غیرقابل مذاکره
-
-- Calendar Engine تنها Source of Truth برای منطق تقویم است.
-- سال شاهنشاهی در UI اصلی است؛ سال هجری شمسی معمولی سال اصلی UI نیست.
-- Gregorian فرعی است.
-- unsupported historical conversion نباید حدس زده شود.
-- public و personal data جدا هستند.
-- personal storage failure نباید public Today/Calendar/Day/Search را از کار بیندازد.
-- event تاریخی بدون source/validation/approval منتشر نشود.
-- visual Themeها نباید Core را fork کنند.
-- same data + same state + different Theme = different appearance, same product behavior.
-- هر اقدام معنادار: ACT ID + CHANGELOG + STATUS/ROADMAP sync + validation در صورت نیاز.
-
-## 10. نقطه شروع جلسه بعد
-
-ابتدا STATUS → ROADMAP → CHANGELOG را بخوانید؛ سپس RELEASE-ACCEPTANCE-MATRIX.md و RELEASE-BLOCKER-REVIEW.md را بررسی کنید و از ACT-232 ادامه دهید.
+Theme B remains untouched and outside scope.
