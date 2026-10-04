@@ -55,6 +55,9 @@ jobs:
           path: audit/npm-audit.json
           if-no-files-found: ignore
 
+      - name: Production dependency security audit
+        run: npm audit --omit=dev --audit-level=high
+
       - name: Migrate test database
         run: npm run db:migrate
       - name: Lint
