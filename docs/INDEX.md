@@ -40,14 +40,17 @@ Current phase: PHASE-10 — Release & Handoff (with PHASE-09 final review and ex
 | DOC-029 | SHARE-CARD-ARCHITECTURE.md | APPROVED | معماری Personal Share Card |
 | DOC-030 | CALENDAR-ENGINE-OPEN-QUESTION.md | RESOLVED | تصمیم و وضعیت نهایی قاعده کبیسه |
 | DOC-031 | HANDOFF.md | DONE | نقطهٔ ادامه مستقل از چت و وضعیت واقعی repository |
-| DOC-032 | ARCHITECTURE-IMPLEMENTATION-AUDIT-2026-10-04.md | COMPLETE — historical audit | Audit مستقل implementation/architecture و gapهای verified |\n| DOC-033 | PROJECT-AUDIT-2026-10-04-ACT-203.md | COMPLETE | پرونده کامل ممیزی این checkpoint، اصلاحات، تست‌ها و نقطه ادامه |
+| DOC-032 | ARCHITECTURE-IMPLEMENTATION-AUDIT-2026-10-04.md | COMPLETE — historical audit | Audit مستقل implementation/architecture و gapهای verified || DOC-033 | PROJECT-AUDIT-2026-10-04-ACT-203.md | COMPLETE | پرونده کامل ممیزی این checkpoint، اصلاحات، تست‌ها و نقطه ادامه |
 | DOC-034 | VISUAL-DESIGN-SEPARATION-WARNING.md | APPROVED | قرارداد و هشدار جداسازی دو Visual Theme با Core مشترک |
 | DOC-035 | PHASE-07-THEME-A-FLAT-GEOMETRIC.md | DONE | اجرای بصری Theme A و قرارداد عملیاتی TASK-07-001 |
 | DOC-036 | PHASE-07-THEME-A-SPACING.md | DONE | قرارداد spacing و اجرای TASK-07-002 Theme A |
 | DOC-037 | PHASE-07-THEME-A-VISUAL-POLISH.md | DONE | اجرای batch بصری TASK-07-002 تا TASK-07-011 برای Theme A |
 | DOC-038 | PWA Install Experience | DONE | اجرای TASK-07-013 و قرارداد نصب/آفلاین PWA |
 | DOC-039 | RELEASE-BLOCKER-REVIEW.md | DONE — blockers remain open | review نهایی blockerهای امنیتی، reproducibility و production readiness |
-| DOC-040 | RELEASE-ACCEPTANCE-MATRIX.md | IN_PROGRESS |\n| DOC-041 | RELEASE-SECURITY-AUDIT-ACT-232.md | COMPLETE — production security resolved |\n| DOC-042 | RELEASE-DEPLOYMENT-VALIDATION.md | IMPLEMENTED — external validation pending |\n| DOC-043 | EDITORIAL-CANDIDATES-INITIAL.md | PROPOSED — not published |
+| DOC-040 | RELEASE-ACCEPTANCE-MATRIX.md | IN_PROGRESS | ماتریس پذیرش Release |
+| DOC-041 | RELEASE-SECURITY-AUDIT-ACT-232.md | COMPLETE — production security resolved | ممیزی امنیتی Release |
+| DOC-042 | RELEASE-DEPLOYMENT-VALIDATION.md | IMPLEMENTED — external validation pending | harness اعتبارسنجی production/PWA |
+| DOC-043 | EDITORIAL-CANDIDATES-INITIAL.md | PROPOSED — not published | صف اولیه رویدادهای تاریخی |
 | DOC-044 | FINAL-HUMAN-VISUAL-REVIEW.md | IN_PROGRESS — human signoff pending |
 | DOC-045 | FINAL-PRODUCT-REVIEW.md | IN_PROGRESS — human signoff pending |
 | DOC-046 | RELEASE-CHECKLIST.md | IN_PROGRESS | | ماتریس ردیابی معیارهای پذیرش تا Release |
