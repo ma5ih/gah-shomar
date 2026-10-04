@@ -1,17 +1,15 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
-Last updated: 2026-10-04 — ACT-249
-Current documentation checkpoint: ACT-249 on main
-Current implementation HEAD: 7e7ebb4bb8f2d15175900daf54968b4792d23bad
-Current implementation checkpoint: ACT-247 release-readiness cleanup + ACT-244 PHASE-06 acceptance
-Latest completed Theme A validation: GitHub Actions #37161733754 — PASS (ACT-208)
-Current visual state: PHASE-07 DONE — Theme A visual batch validated
-Current app-like state: TASK-07-013 DONE — Install Experience validated
+Last updated: 2026-10-04 — ACT-251
+Current documentation checkpoint: ACT-251 on main
+Current implementation HEAD: a6a1956ef9446fc37b6cd339d874b4cfd4ebc768
+Latest completed Theme A validation before this redesign: GitHub Actions #37161733754 — PASS
+Current visual implementation: ACT-251 major Theme A / AppShell redesign, awaiting fresh CI completion and final human visual signoff
+Current app-like state: viewport-locked AppShell with hidden browser scroll and controlled internal content scrolling
 Primary workstream: PHASE-10 — Release & Handoff
-Current visual stream: PHASE-07 — Theme A — DONE
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: ACT-250
+Next fresh ACT ID: ACT-252
 
 ## شمارش رسمی ریزتسک‌ها
 
@@ -25,105 +23,41 @@ Next fresh ACT ID: ACT-250
 
 این شمارش canonical مستقیماً از ledger فعلی ROADMAP خوانده شده است.
 
-## وضعیت فازها
+## آخرین اقدام
 
-| Phase | Status | وضعیت واقعی |
-|---|---|---|
-| PHASE-00 | DONE | Documentation foundation |
-| PHASE-01 | DONE | Product specification |
-| PHASE-02 | DONE | Architecture and boundaries |
-| PHASE-03 | DONE | Calendar Engine + Domain |
-| PHASE-04 | DONE | Application/backend use cases |
-| PHASE-05 | DONE | Frontend architecture/design system |
-| PHASE-06 | DONE | Core pages + browser/product acceptance validated in CI #461 |
-| PHASE-07 | DONE | Theme A visual polish, time/season, motion and PWA install experience validated |
-| PHASE-08 | IN_PROGRESS | Editorial review and historical dataset remain |
-| PHASE-09 | IN_PROGRESS | Automated pipeline green; final QA remains |
-| PHASE-10 | IN_PROGRESS | Release hardening and final release steps |
-
-## آخرین اقدامات
-
-### ACT-249 — UX/product consistency + release packaging — DONE
-- Fixed objective UX inconsistencies in locale switching, calendar localization/accessibility, invalid calendar parameters, personal default dates and post-auth guidance.
-- Prepared release-candidate notes and a post-release backlog.
-- Corrected stale architecture/security/visual/requirements documentation states.
-- Canonical ledger is now 193 DONE / 4 IN_PROGRESS / 6 TODO / 1 DEFERRED.
-
-### ACT-248 — Documentation/state reconciliation — DONE
-- Reconciled README, PROJECT, ROADMAP, STATUS, HANDOFF, INDEX, release checklist and acceptance matrix with the real main state.
-- Corrected the canonical ledger to 204 unique tasks: 190 DONE / 4 IN_PROGRESS / 9 TODO / 1 DEFERRED.
-- Confirmed the remaining release-critical gates are editorial approval/public event seed, human visual signoff, human final product signoff and real production/PWA validation.
-
-### ACT-247 — Internal release-readiness cleanup — DONE
-- TASK-08-011, TASK-10-005 and TASK-10-009 are DONE.
-- Canonical ledger is now 190 DONE / 4 IN_PROGRESS / 9 TODO / 1 DEFERRED.
-
-### ACT-246 — Final review and release checklist — DONE
-- Automated/assisted review records are complete; human signoff remains explicitly open.
-- Release checklist is now canonical.
-
-### ACT-245 — Full documentation convergence — DONE
-- Canonical ledger is 187 DONE / 4 IN_PROGRESS / 12 TODO / 1 DEFERRED.
-- PHASE-06 is DONE after CI #461.
-- Production dependency security is PASS; full audit has only dev-only high findings.
-- Deployment/PWA harness and editorial candidate queue are implemented without fabricating external validation or approval.
-
-### ACT-244 — PHASE-06 browser/product acceptance — DONE
-- TASK-06-001 through TASK-06-024 are DONE from CI #461 evidence.
-
-### ACT-231 — Documentation convergence — DONE
-- STATUS/ROADMAP/INDEX/PROJECT/HANDOFF/README و اسناد اجرایی Theme A با وضعیت واقعی main در ACT-230 همگام شدند.
-- stale references به ACT-211/ACT-212/ACT-213 و pending بودن TASK-07-002 پاک‌سازی شدند.
-- PHASE-07 و Theme A به‌صورت صریح DONE ثبت شدند؛ Theme B همچنان خارج از scope است.
-- این اقدام documentation-only است و behavior یا Core محصول را تغییر نمی‌دهد.
-
-### ACT-235 — Performance baseline correction and validation — DONE
-- ACT-233 initial performance gate failed only because the Playwright skip callback was written with the wrong fixture signature.
-- ACT-235 corrected the project gating.
-- CI #444 passed: 87 tests, with measured TTFB 40.7–83.1ms and DOMContentLoaded 85.5–203.1ms on Today, Calendar and Search.
-
-### ACT-232 — Dependency security audit — DONE
-- CI #438 produced the first reproducible audit and PR #5 is handling production-vulnerability remediation.
-
-### ACT-230 — Full security/reproducibility + post-merge validation — DONE
-- PR #4 merged as 7e7ebb4bb8f2d15175900daf54968b4792d23bad.
-- PR #4 CI #406 and main CI #407 passed end-to-end.
-- TASK-09-020, TASK-10-001 and TASK-10-002 are DONE.
-- Release blockers remain explicitly tracked below.
+### ACT-251 — Major UI / Theme A redesign — IN_PROGRESS
+- AppShell از حالت صفحه‌محور وب به viewport-locked، mobile-first و app-like تبدیل شد.
+- اسکرول مرورگر حذف شد؛ ناحیه محتوای داخلی AppShell در صورت نیاز به‌صورت کنترل‌شده scroll می‌شود و scrollbar بصری ندارد.
+- Today از حالت شمارنده‌محور خارج شد و روی تاریخ اصلی، ساعت، مناسبت‌های امروز و رویدادهای شخصی امروز تمرکز کرد.
+- شمارنده تعداد مناسبت‌های عمومی و تعداد داده‌های شخصی از Today حذف شدند.
+- ساعت محلی به‌صورت زنده و هماهنگ با timezone runtime نمایش داده می‌شود.
+- نمایش سال شاهنشاهی بدون grouping اصلاح شد؛ ۲۵۸۵ به‌صورت «۲۵۸۵» نمایش داده می‌شود.
+- نمایش ناخواسته سال هجری شمسی در formatter Gregorian اصلاح شد؛ formatter اکنون صریحاً از calendar=gregory استفاده می‌کند.
+- Vazirmatn فونت اصلی UI شد.
+- Theme A از نو روی brief مصوب Flat Geometric اجرا شد: رنگ‌های تخت، فرم‌های زاویه‌ای/لایه‌ای، landscape/vector shapes، بدون gradient و بدون glassmorphism.
+- mobile bottom navigation با آیکن‌های SVG بازطراحی شد.
+- کنترل‌های تقویم و عناصر فرم با همین visual language هماهنگ شدند.
+- حرکت‌ها، active/hover/press states و reduced-motion handling در shared UI foundation بازسازی شدند.
+- CI برای commitهای این اقدام اجرا شده و نتیجه نهایی latest head هنوز در حال تکمیل است.
+- human visual/product signoff همچنان release gate است و با این اقدام به‌صورت خودکار PASS تلقی نمی‌شود.
 
 ## Visual Theme state
 
-- Theme A: src/frontend/themes/flat-geometric/ — completed for PHASE-07; only approved Theme A is in active visual scope.
+- Theme A: src/frontend/themes/flat-geometric/ — active implementation scope.
 - Theme B: src/frontend/themes/modern-flat-vector/ — untouched / outside current scope.
-- TASK-07-001: DONE.
-- TASK-07-002 through TASK-07-011: DONE.
-- TASK-07-013: DONE.
-- PHASE-07: DONE.
-- Latest Theme A/PWA implementation head: 48a42d82083af949783b6aa6319e30e40834f9a0.
-- Operational spacing record: docs/PHASE-07-THEME-A-SPACING.md.
-- Permanent separation rules: docs/VISUAL-DESIGN-SEPARATION-WARNING.md.
+- Visual source of truth remains docs/VISUAL-DESIGN-SEPARATION-WARNING.md.
+- ACT-251 is a substantial implementation refresh, not a new Theme B or a Core fork.
 
-## Editorial state
+## Release gates
 
-seedEvents = [] عمداً خالی است. هیچ historical event عمومی بدون editorial approval وارد محصول نشده است.
+Remaining release-critical gates are unchanged:
+- explicit editorial approval/public historical event seed
+- final human visual signoff
+- final human product signoff
+- real production/staging deployment validation
+- real PWA production validation
+- final release version/tag after those gates close
 
 ## مسیر بعدی قطعی
 
-- ACT-249: objective UX consistency fixes and release documentation packaging are complete.
-- سپس editorial approval/public event seed, human visual/product signoff و real production/PWA validation; version/tag remains gated until those close.
-- Theme B دست‌نخورده می‌ماند.
-
-TASK-07-002 — Spacing/Margin Consistency — DONE
-
-Main validation is green. Remaining release gates are editorial approval/public event content, final human visual/product signoff, production deployment/PWA validation and final release packaging.
-
-Theme B همچنان خارج از Scope است.
-
-## قانون ادامه پروژه
-
-هر اقدام معنادار باید:
-1. یک ACT ID یکتا داشته باشد.
-2. در CHANGELOG ثبت شود.
-3. Task و STATUS را به‌روز کند.
-4. در صورت ارتباط ROADMAP/DECISIONS/REQUIREMENTS را همگام کند.
-5. اگر ساختار سندی تغییر کرد، INDEX را sync کند.
+اول نتیجه CI روی latest head بررسی می‌شود. پس از آن human visual/product signoff و release gates ادامه پیدا می‌کنند. Theme B همچنان دست‌نخورده می‌ماند.
