@@ -29,7 +29,7 @@ Date: 2026-10-04
 | Runtime configuration | central config + unit tests + PR #4 CI #406 + main CI #407 | PASS |
 | Dependency reproducibility | committed package-lock + npm ci + PR #4 CI #406 + main CI #407 | PASS |
 | Dependency security | previous install audit reported 9 vulnerabilities (3 moderate, 6 high) | OPEN — exact advisory audit/remediation is the next release gate |
-| Performance | no production performance evidence yet | OPEN |
+| Performance | CI #444 desktop baseline: 87 tests passed; Today/Calendar/Search TTFB 40.7–83.1ms, DOMContentLoaded 85.5–203.1ms | PASS |
 | Production Configuration | runtime config + reproducible install strategy + CI evidence | PASS |
 | Production Build | main CI #407 production build | PASS |
 | Production deployment | no production infrastructure evidence yet | OPEN |
