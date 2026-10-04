@@ -1,7 +1,7 @@
 # RELEASE ACCEPTANCE MATRIX
 
 Status: IN_PROGRESS
-Checkpoint: ACT-231
+Checkpoint: ACT-245
 Date: 2026-10-04
 
 | Area | Current evidence | Status |
@@ -28,12 +28,12 @@ Date: 2026-10-04
 | Auth abuse protection | PostgreSQL rate limit + integration test + PR #4 CI #406 + main CI #407 | PASS |
 | Runtime configuration | central config + unit tests + PR #4 CI #406 + main CI #407 | PASS |
 | Dependency reproducibility | committed package-lock + npm ci + PR #4 CI #406 + main CI #407 | PASS |
-| Dependency security | previous install audit reported 9 vulnerabilities (3 moderate, 6 high) | OPEN — exact advisory audit/remediation is the next release gate |
-| Performance | CI #444 desktop baseline: 87 tests passed; Today/Calendar/Search TTFB 40.7–83.1ms, DOMContentLoaded 85.5–203.1ms | PASS |
+| Dependency security | CI #454 production-only audit: 0 vulnerabilities; full audit retains 5 dev-only high findings in the lint chain | PASS |
+| Performance | CI #444 baseline + CI #461 regression | PASS |
 | Production Configuration | runtime config + reproducible install strategy + CI evidence | PASS |
 | Production Build | main CI #407 production build | PASS |
-| Production deployment | no production infrastructure evidence yet | OPEN |
-| Editorial historical dataset | intentionally empty until explicit approval | OPEN |
+| Production deployment | ACT-240 manual BASE_URL validation harness implemented; no real production URL executed yet | OPEN |
+| Editorial historical dataset | ACT-242 source-backed candidates prepared; seedEvents intentionally empty until explicit approval | OPEN |
 
 ## Release rule
 
