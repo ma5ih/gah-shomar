@@ -1,3 +1,21 @@
+## ACT-221 — 2026-10-04
+Type: RELEASE-SECURITY-HARDENING
+Status: IN_PROGRESS
+
+- PostgreSQL-backed authentication rate limiting was added for login/register attempts.
+- Default policy: 5 attempts per 10 minutes per normalized account identity, reset after successful authentication/registration.
+- Added auth rate-limit schema and idempotent migration.
+- Migration runner now applies all SQL migration files in deterministic filename order instead of only the initial file.
+- Added integration coverage for threshold, blocking and reset behavior.
+- TASK-09-020 and TASK-10-001 moved to IN_PROGRESS on this hardening branch.
+- Runtime configuration centralization from ACT-216 remains a separate branch and is not claimed as part of this checkpoint.
+- CI validation is still required before these security changes can be promoted to DONE.
+
+### Next
+Validate the security-hardening branch in CI, then combine with the production configuration branch and continue release reproducibility.
+
+Next fresh ACT ID: **ACT-222**
+
 ## ACT-211 — 2026-10-04
 Type: THEME-A-SPACING-REFINEMENT
 Status: IN_PROGRESS
