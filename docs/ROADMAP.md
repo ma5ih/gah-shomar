@@ -286,13 +286,8 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - Main post-merge CI #407 passed end-to-end on the merged main commit.
 - CI #461 passed the Phase-06 browser/product acceptance suite with 90 acceptance tests.
 - CI #454 confirmed **0 high/critical production dependency vulnerabilities**; remaining full-audit findings are dev-only tooling findings.
-- TASK-09-016 — Performance QA — DONE.
-- TASK-09-018 — Visual Consistency QA — IN_PROGRESS only for final human visual signoff.
-- TASK-09-021 — Final Product Review — TODO pending explicit human end-to-end signoff.
-- TASK-08-004 / TASK-08-005 / TASK-08-010 remain IN_PROGRESS for editorial review and initial public dataset approval; `seedEvents = []` remains intentional.
-- TASK-10-003 / TASK-10-004 remain TODO until the deployment/PWA validation harness is executed against a real production/staging `BASE_URL`.
-- TASK-10-006 CHANGELOG entry, TASK-10-007 release notes and TASK-10-010 post-release backlog are DONE. TASK-10-008 version/tag remains gated until release-critical human/external checks close.
-- TASK-10-005 and TASK-10-009 are DONE.
+- Release-critical work that remains is limited to editorial approval/public seed, human visual/product signoff, and real production/staging deployment + PWA validation.
+- Release notes and post-release backlog are already prepared. Version/tag creation remains gated until the open release-critical checks close.
 - Theme B remains untouched and outside the current execution scope.
 - Canonical task counts: **204 total / 193 DONE / 4 IN_PROGRESS / 6 TODO / 1 DEFERRED / 0 BLOCKED / 0 DEPRECATED**.
 
@@ -321,7 +316,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - PHASE-06 — Core Frontend Product Experience is DONE.
 - PHASE-07 — Theme A / PWA baseline is DONE.
 - Theme B remains outside Scope and must not enter the current visual execution.
-- Current remaining release-critical work is limited to editorial approval/public event seed, human visual signoff, human final product signoff, real production/staging deployment + PWA validation, then final release notes/version/tag/post-release backlog.
+- Current remaining release-critical work is limited to editorial approval/public event seed, human visual signoff, human final product signoff and real production/staging deployment + PWA validation; release notes and post-release backlog are already prepared, while version/tag remains gated.
 - Dependency reproducibility, production security gate, performance baseline and automated browser/product acceptance are already closed.
 
 قاعده: Phase فقط با implementation + tests + validation واقعی به DONE می‌رسد. QA دوباره‌کاری روی Phaseهای قبلی را با تغییرات بعدی پوشش می‌دهد.
