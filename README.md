@@ -54,14 +54,14 @@ Core product acceptance و automated release QA بسته شده‌اند؛ فق�
 ## وضعیت جاری
 Correction gate مربوط به ACT-186 و correctionهای بعدی بسته شده‌اند.
 Current implementation HEAD: 7e7ebb4bb8f2d15175900daf54968b4792d23bad
-Current documentation checkpoint: **ACT-248**
+Current documentation checkpoint: **ACT-249**
 Current implementation HEAD: 7e7ebb4bb8f2d15175900daf54968b4792d23bad
 TASK-07-001 — Final Visual Hierarchy برای Theme A — **DONE**.
 TASK-07-002 — Spacing/Margin Consistency — **DONE**.
 TASK-10-005 — Documentation Finalization — **DONE**.
 TASK-10-009 — Handoff / Continuation Guide — **DONE**.
 Release-critical gates remaining: editorial approval/public event seed، human visual signoff، human final product signoff و real production/staging PWA validation.
-Next fresh ACT ID: **ACT-249**
+Next fresh ACT ID: **ACT-250**
 
 ## Visual Theme separation
 
