@@ -1,7 +1,7 @@
 # PHASE-06 IMPLEMENTATION NOTE
 
-Status: IN_PROGRESS
-Last updated: 2026-10-04 — ACT-209
+Status: DONE
+Last updated: 2026-10-04 — ACT-245
 Current checkpoint: core product acceptance remains open; TASK-07-001 Theme A is complete; next visual task is TASK-07-002.
 
 ## Implemented product surfaces
