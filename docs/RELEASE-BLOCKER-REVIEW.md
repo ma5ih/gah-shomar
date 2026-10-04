@@ -1,7 +1,7 @@
 # RELEASE BLOCKER REVIEW
 
 Status: DONE
-Checkpoint: ACT-245
+Checkpoint: ACT-246
 Date: 2026-10-04
 
 ## Resolved
@@ -59,12 +59,4 @@ Next.js documents Server Actions as POST-based and same-origin checked by defaul
 
 ## Decision
 
-Do not mark Release 1.0 ready yet. Technical core, browser acceptance, performance and production dependency security are green. Remaining gates are explicit editorial approval/public historical seed, final human visual/product signoff, and production/PWA validation against a real deployment URL.
-
-## ACT-230 resolution
-
-- Auth abuse protection: validated.
-- Runtime configuration: validated.
-- Dependency reproducibility: resolved.
-- Main post-merge full CI: PASS.
-- Remaining blockers are now limited to dependency-security remediation, final human visual review, performance evidence, editorial approval/public dataset, production deployment and release documentation/versioning.
+Do not tag Release 1.0 yet. All core technical/browser/performance/security gates are green. The remaining release-critical gates are external: editorial approval/public historical content, human visual signoff, human end-to-end product signoff, and real production/PWA validation against a deployed URL.
