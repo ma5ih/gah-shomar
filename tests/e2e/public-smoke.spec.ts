@@ -35,7 +35,16 @@ test.describe("public product smoke",()=>{
    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
   }
  });
- test("Primary navigation is keyboard reachable",async({page})=>{await page.goto("/?lang=fa");await page.keyboard.press("Tab");await expect(page.locator(":focus-visible")).toBeVisible();});
+ test("Accessibility landmarks remain usable",async({page})=>{
+  await page.goto("/?lang=en");
+  await expect(page.locator("main")).toHaveCount(1);
+  await expect(page.locator("header")).toHaveCount(1);
+  await expect(page.locator("nav")).toHaveCount(2);
+  await expect(page.getByRole("heading",{level:1})).toBeVisible();
+  await page.getByRole("link",{name:"Calendar"}).focus();
+  await expect(page.locator(":focus-visible")).toBeVisible();
+});
+test("Primary navigation is keyboard reachable",async({page})=>{await page.goto("/?lang=fa");await page.keyboard.press("Tab");await expect(page.locator(":focus-visible")).toBeVisible();});
  test("PWA install prompt appears when browser exposes install capability",async({page})=>{
   await page.goto("/?lang=en");
   await page.evaluate(()=>{
@@ -79,7 +88,13 @@ test("PWA manifest and standard icons are exposed",async({request})=>{
   await expect(page.getByRole("heading",{level:1})).toBeVisible();
   await expect(page.getByText("No results")).toBeVisible();
  });
- test("Mobile bottom navigation is exposed at handset width",async({page})=>{
+ test("Tablet navigation stays reachable",async({page})=>{
+  await page.setViewportSize({width:1024,height:768});
+  await page.goto("/?lang=en");
+  await expect(page.getByRole("navigation").first()).toBeVisible();
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
+});
+test("Mobile bottom navigation is exposed at handset width",async({page})=>{
   await page.setViewportSize({width:390,height:844});
   await page.goto("/?lang=en");
   await expect(page.locator(".bottom-nav")).toBeVisible();
