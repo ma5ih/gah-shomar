@@ -1,3 +1,19 @@
+## ACT-223 — 2026-10-04
+Type: PRODUCT-NAVIGATION-IMPLEMENTATION
+Status: IN_PROGRESS
+
+- Person Detail اکنون relatedPersonIds را به related-person navigation واقعی تبدیل می‌کند.
+- Person page برای related people card/link نمایش می‌دهد.
+- Browser E2E مسیر Reżā Shah Pahlavi → Moḥammad-Reżā Shah Pahlavi را verify می‌کند.
+- این اقدام به TASK-06-014 — Related Content Navigation مربوط است.
+- Theme B و shared calendar/business behavior تغییری نکردند.
+- CI validation برای latest branch head هنوز pending است.
+
+### Next
+Validate the current Theme A/PWA/product-navigation branch head and then promote validated tasks.
+
+Next fresh ACT ID: **ACT-224**
+
 ## ACT-220 — 2026-10-04
 Type: QA-AND-DATA-STATUS-RECONCILIATION
 Status: DONE
