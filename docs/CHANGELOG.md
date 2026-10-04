@@ -1,3 +1,22 @@
+## ACT-220 — 2026-10-04
+Type: QA-AND-DATA-STATUS-RECONCILIATION
+Status: DONE
+
+- ACT-217: accessibility/device QA coverage expanded for semantic main, keyboard focus, tablet navigation and mobile overflow.
+- ACT-218: approved Person page and Search-to-Person navigation received browser acceptance coverage.
+- ACT-219: PWA install prompt state was made hydration-safe while keeping install behavior event-driven.
+- ACT-220: Personal Share Card browser acceptance coverage was added.
+- Person Dataset and Timeline Period Dataset are now marked DONE because approved seeded entities, relationship validation and route coverage already exist.
+- Today, Calendar, Timeline, Mobile, Tablet/Desktop, Touch/Swipe, Accessibility and Visual Consistency QA tasks are now IN_PROGRESS based on concrete automated coverage.
+- Event Acceptance remains TODO because the public historical event seed is intentionally empty and no synthetic public event was introduced.
+- Theme B remains untouched; shared Core and product semantics remain unchanged.
+- Canonical ledger count at this checkpoint: 204 total / 138 DONE / 49 IN_PROGRESS / 24 TODO / 1 DEFERRED.
+
+### Next
+Complete validation of the latest Theme A + PWA branch head, then merge validated work and continue release-readiness/security/reproducibility tasks.
+
+Next fresh ACT ID: **ACT-221**
+
 ## ACT-213 — 2026-10-04
 Type: PWA-INSTALL-EXPERIENCE
 Status: IN_PROGRESS
