@@ -36,6 +36,8 @@ Development-only findings without an available upstream patch do not block runti
 - Full audit retains 5 high dev-only findings in the eslint/fast-glob/micromatch/braces chain.
 - The dev-only chain remains documented as a tooling exception pending a safe upstream patch.
 
-## Next
+## Current release state
 
-ACT-234 applies the safe direct upgrades first. After the lockfile is regenerated and all CI validation passes, a fresh full audit must be run. Release sign-off requires zero high/critical production vulnerabilities.
+The remediation and reproducibility work is complete. The main production-only audit is green with **0 high/critical production vulnerabilities**; the remaining full-audit findings are documented as dev-only tooling exceptions in this record.
+
+No further production-security action is required for the current release gate.
