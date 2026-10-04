@@ -1,3 +1,18 @@
+## ACT-231 — 2026-10-04
+Type: DOCUMENTATION-CONVERGENCE
+Status: DONE
+
+- STATUS/ROADMAP/INDEX/PROJECT/HANDOFF/README و سند اجرایی Theme A با وضعیت واقعی main در ACT-230 همگام شدند.
+- stale references به ACT-211/ACT-212/ACT-213 و pending بودن TASK-07-002 پاک‌سازی شدند.
+- canonical task count دوباره از ROADMAP تأیید شد: 204 total / 162 DONE / 28 IN_PROGRESS / 13 TODO / 1 DEFERRED / 0 BLOCKED / 0 DEPRECATED.
+- PHASE-07 و Theme A به‌صورت صریح DONE ثبت شدند؛ Theme B همچنان خارج از scope است.
+- این اقدام documentation-only است و behavior یا Core محصول را تغییر نمی‌دهد.
+
+### Next
+ACT-232 — dependency-security audit/remediation، سپس performance, human review, editorial acceptance, production/PWA validation و release packaging.
+
+Next fresh ACT ID: **ACT-232**
+
 ## ACT-230 — 2026-10-04
 Type: FULL-QA-AND-RELEASE-HARDENING
 Status: DONE
