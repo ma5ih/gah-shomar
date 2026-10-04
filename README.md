@@ -19,10 +19,12 @@
 
 ### وضعیت اعتبارسنجی
 CI workflow فعلی شامل migration، ESLint، typecheck، unit/integration tests، production build و Playwright browser smoke است.
-- CI #281: PASS روی implementation correction series
-- CI #299: PASS روی product/E2E acceptance checkpoint
+- PR #4 / CI #406: PASS end-to-end، شامل npm ci، migration، lint، typecheck، unit/integration، production build و browser smoke
+- Main post-merge CI #407: PASS end-to-end روی main
+- CI #461: PASS برای browser/product acceptance و 90 تست پذیرش
+- CI #454: PASS برای production dependency security audit با 0 high/critical vulnerability
 - GitHub Actions #37161733754: PASS روی Theme A visual validation
-Product acceptance و release QA هنوز باز هستند.
+Core product acceptance و automated release QA بسته شده‌اند؛ فقط release gates انسانی، editorial و external production validation باز هستند.
 
 ### مهم‌ترین اسناد
 - `docs/PROJECT.md` — تعریف کامل محصول
@@ -52,11 +54,14 @@ Product acceptance و release QA هنوز باز هستند.
 ## وضعیت جاری
 Correction gate مربوط به ACT-186 و correctionهای بعدی بسته شده‌اند.
 Current implementation HEAD: 7e7ebb4bb8f2d15175900daf54968b4792d23bad
-Current documentation checkpoint: **ACT-247**
+Current documentation checkpoint: **ACT-248**
+Current implementation HEAD: 7e7ebb4bb8f2d15175900daf54968b4792d23bad
 TASK-07-001 — Final Visual Hierarchy برای Theme A — **DONE**.
 TASK-07-002 — Spacing/Margin Consistency — **DONE**.
-ACT-211 latest implementation commit: fa095e637e3f4d244c9b06889717d71d3dd690a0.
-Next fresh ACT ID: **ACT-248**
+TASK-10-005 — Documentation Finalization — **DONE**.
+TASK-10-009 — Handoff / Continuation Guide — **DONE**.
+Release-critical gates remaining: editorial approval/public event seed، human visual signoff، human final product signoff و real production/staging PWA validation.
+Next fresh ACT ID: **ACT-249**
 
 ## Visual Theme separation
 
