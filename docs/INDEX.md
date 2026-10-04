@@ -1,7 +1,7 @@
 # DOC-INDEX — فهرست مرکزی پروژه
 
 Project: گاه‌شمار
-Index version: 2.29.0
+Index version: 2.30.0
 Last update: 2026-10-04 — ACT-229
 Current phase: PHASE-06 — Core Frontend Product Experience (QA gate: PHASE-09)
 
