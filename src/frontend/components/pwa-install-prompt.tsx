@@ -39,7 +39,7 @@ export function PwaInstallPrompt({locale}:{locale:Locale}){
     };
   },[]);
 
-  if(installed||dismissed||!deferredPrompt)return null;
+  if(installed||dismissed||!deferredPrompt)return <span hidden data-pwa-install-ready aria-hidden="true"/>;
 
   const install=async()=>{
     const prompt=deferredPrompt;
@@ -56,7 +56,7 @@ export function PwaInstallPrompt({locale}:{locale:Locale}){
     }
   };
 
-  return <aside className="install-prompt" role="status" aria-live="polite">
+  return <><span hidden data-pwa-install-ready aria-hidden="true"/><aside className="install-prompt" role="status" aria-live="polite">
     <div className="install-prompt-copy">
       <strong>{c.installApp}</strong>
       <span>{c.installAppHint}</span>
@@ -65,5 +65,5 @@ export function PwaInstallPrompt({locale}:{locale:Locale}){
       <button className="primary-button" type="button" onClick={()=>void install()}>{c.install}</button>
       <button className="secondary-button" type="button" onClick={dismiss}>{c.later}</button>
     </div>
-  </aside>;
+  </aside></>;
 }
