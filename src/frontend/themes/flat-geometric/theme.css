@@ -1,165 +1,299 @@
-/* Theme A — Flat Geometric | TASK-07-002 */
-html[data-theme="flat-geometric"]{--fg-bg:#efe9dc;--fg-surface:#f7f2e7;--fg-surface-strong:#fbf7ed;--fg-ink:#24322c;--fg-muted:#6b7069;--fg-line:rgba(36,50,44,.16);--fg-accent:#8f5b3b;--fg-accent-soft:#e9d5bd;--fg-green:#687f68;--fg-blue:#657b87;--fg-shadow:0 12px 28px rgba(36,50,44,.08);--fg-space-1:4px;--fg-space-2:8px;--fg-space-3:12px;--fg-space-4:16px;--fg-space-5:20px;--fg-space-6:24px;--fg-space-7:32px;--fg-radius-sm:10px;--fg-radius-md:12px;--fg-radius-lg:14px;--fg-radius-sheet:18px;--fg-ease:160ms ease;--fg-type-xs:.72rem;--fg-type-sm:.78rem;--fg-type-md:.86rem;--fg-type-body:1rem;--fg-type-lg:1.1rem;--fg-type-xl:1.3rem}
-html[data-theme="flat-geometric"],html[data-theme="flat-geometric"] body{background:var(--fg-bg)}
-html[data-theme="flat-geometric"] body{color:var(--fg-ink)}
-html[data-theme="flat-geometric"] .app-shell{max-width:1180px;padding-top:var(--fg-space-3)}
-html[data-theme="flat-geometric"] .topbar{gap:var(--fg-space-4);padding:var(--fg-space-3) 2px var(--fg-space-6);background:var(--fg-bg);border-bottom:1px solid var(--fg-line)}
-html[data-theme="flat-geometric"] .brand{color:var(--fg-ink);font-size:1.28rem;letter-spacing:-.04em}
-html[data-theme="flat-geometric"] .toplinks{gap:var(--fg-space-1)}
-html[data-theme="flat-geometric"] .nav-link,html[data-theme="flat-geometric"] .lang-chip,html[data-theme="flat-geometric"] .profile-chip{border-radius:10px;color:var(--fg-muted);transition:transform .16s ease,background-color .16s ease,color .16s ease}
-html[data-theme="flat-geometric"] .nav-link:hover,html[data-theme="flat-geometric"] .nav-link.active,html[data-theme="flat-geometric"] .lang-chip:hover,html[data-theme="flat-geometric"] .profile-chip:hover{background:var(--fg-surface-strong);color:var(--fg-ink)}
-html[data-theme="flat-geometric"] .nav-link.active{box-shadow:inset 0 -3px 0 var(--fg-accent)}
-html[data-theme="flat-geometric"] .lang-chip{border-color:var(--fg-line);background:var(--fg-surface)}
-html[data-theme="flat-geometric"] .app-content{gap:var(--fg-space-5)}
-html[data-theme="flat-geometric"] .card,html[data-theme="flat-geometric"] .calendar-surface,html[data-theme="flat-geometric"] .hero-panel{background:var(--fg-surface);border:1px solid var(--fg-line);box-shadow:var(--fg-shadow);backdrop-filter:none;border-radius:14px}
-html[data-theme="flat-geometric"] .hero{gap:var(--fg-space-5)}
-html[data-theme="flat-geometric"] .hero-panel{position:relative;isolation:isolate;overflow:hidden;padding:var(--fg-space-7)}
-html[data-theme="flat-geometric"] .hero-panel:first-child{background:var(--fg-hero-surface,#f4ead8);border-color:rgba(36,50,44,.12);box-shadow:var(--fg-shadow)}
-html[data-theme="flat-geometric"] .hero-panel:first-child::before,html[data-theme="flat-geometric"] .hero-panel:first-child::after{content:"";position:absolute;pointer-events:none;z-index:0}
-html[data-theme="flat-geometric"] .hero-panel:first-child::before{inset:auto auto 0 0;width:52%;height:30%;background:var(--fg-land-a,#9dae8f);clip-path:polygon(0 34%,26% 8%,47% 28%,68% 0,100% 20%,100% 100%,0 100%)}
-html[data-theme="flat-geometric"] .hero-panel:first-child::after{inset:auto 0 0 auto;width:58%;height:23%;background:var(--fg-land-b,#c3b17b);clip-path:polygon(0 48%,23% 16%,44% 36%,67% 0,100% 30%,100% 100%,0 100%)}
-html[data-theme="flat-geometric"] .hero-panel:first-child>*{position:relative;z-index:1}
-html[data-theme="flat-geometric"] .overline,html[data-theme="flat-geometric"] .eyebrow{color:var(--fg-muted)}
-html[data-theme="flat-geometric"] .hero-title{color:var(--fg-ink);margin-top:var(--fg-space-3);margin-bottom:var(--fg-space-3);letter-spacing:-.065em}
-html[data-theme="flat-geometric"] .hero-subtitle{color:var(--fg-muted);line-height:1.75}
-html[data-theme="flat-geometric"] .context-card{background:var(--fg-surface-strong);justify-content:flex-start;gap:var(--fg-space-6);padding:var(--fg-space-6)}
-html[data-theme="flat-geometric"] .context-value{color:var(--fg-ink)}
-html[data-theme="flat-geometric"] .section-head{margin:0 2px var(--fg-space-2)}
-html[data-theme="flat-geometric"] .section-head h2{color:var(--fg-ink)}
-html[data-theme="flat-geometric"] .section-head a{color:var(--fg-accent);font-weight:800}
-html[data-theme="flat-geometric"] .event-card{background:var(--fg-surface);border:1px solid var(--fg-line);box-shadow:none;border-radius:12px;padding:var(--fg-space-4);transition:transform .16s ease,border-color .16s ease,background-color .16s ease}
-html[data-theme="flat-geometric"] .event-card:hover{transform:translateY(-2px);background:var(--fg-surface-strong);border-color:rgba(143,91,59,.28);box-shadow:none}
-html[data-theme="flat-geometric"] .event-card h3{color:var(--fg-ink)}
-html[data-theme="flat-geometric"] .event-card p{color:var(--fg-muted)}
-html[data-theme="flat-geometric"] .card-meta{border-top-color:var(--fg-line)}
-html[data-theme="flat-geometric"] .calendar-surface{padding:var(--fg-space-4);background:var(--fg-surface)}
-html[data-theme="flat-geometric"] .calendar-nav-row{margin-bottom:var(--fg-space-3)}
-html[data-theme="flat-geometric"] .calendar-hint{color:var(--fg-muted)}
-html[data-theme="flat-geometric"] .icon-button{border-radius:10px;border-color:var(--fg-line);background:var(--fg-surface-strong);color:var(--fg-ink);box-shadow:none;transition:transform .16s ease,background-color .16s ease,border-color .16s ease}
-html[data-theme="flat-geometric"] .icon-button:hover{transform:translateY(-1px);background:var(--fg-bg);border-color:rgba(143,91,59,.28)}
-html[data-theme="flat-geometric"] .day-cell{min-height:64px;border-radius:9px;border-color:transparent;background:var(--fg-surface-strong);color:var(--fg-ink);transition:transform .14s ease,background-color .14s ease,border-color .14s ease}
-html[data-theme="flat-geometric"] .day-cell:hover{background:var(--fg-bg);border-color:var(--fg-line)}
-html[data-theme="flat-geometric"] .day-cell.today{background:var(--fg-ink);color:#fffdf7}
-html[data-theme="flat-geometric"] .day-cell.has-event{box-shadow:inset 0 -3px 0 var(--fg-accent)}
-html[data-theme="flat-geometric"] .day-cell.has-personal{box-shadow:inset 0 -3px 0 var(--fg-green)}
-html[data-theme="flat-geometric"] .day-cell i{background:var(--fg-accent)}
-html[data-theme="flat-geometric"] .day-cell.has-personal i{background:var(--fg-green)}
-html[data-theme="flat-geometric"] .primary-button,html[data-theme="flat-geometric"] .secondary-button{border-radius:10px;transition:transform .16s ease,background-color .16s ease,border-color .16s ease,color .16s ease}
-html[data-theme="flat-geometric"] .primary-button{background:var(--fg-ink);color:#fffdf7}
-html[data-theme="flat-geometric"] .primary-button:hover{opacity:1;transform:translateY(-1px);background:#314239}
-html[data-theme="flat-geometric"] .secondary-button{background:var(--fg-surface-strong);border:1px solid var(--fg-line);color:var(--fg-ink)}
-html[data-theme="flat-geometric"] .secondary-button:hover{background:var(--fg-bg);border-color:rgba(143,91,59,.28)}
-html[data-theme="flat-geometric"] .search-form input,html[data-theme="flat-geometric"] .field input,html[data-theme="flat-geometric"] .field textarea,html[data-theme="flat-geometric"] .field select{border-color:var(--fg-line);background:var(--fg-surface-strong);border-radius:10px;color:var(--fg-ink);box-shadow:none;padding:var(--fg-space-3) var(--fg-space-4)}
-html[data-theme="flat-geometric"] .search-form input:focus,html[data-theme="flat-geometric"] .field input:focus,html[data-theme="flat-geometric"] .field textarea:focus,html[data-theme="flat-geometric"] .field select:focus{border-color:rgba(143,91,59,.46);box-shadow:0 0 0 3px rgba(143,91,59,.1)}
-html[data-theme="flat-geometric"] .detail-card{background:var(--fg-surface);padding:var(--fg-space-6)}
-html[data-theme="flat-geometric"] .detail-card h1,html[data-theme="flat-geometric"] .detail-card h2,html[data-theme="flat-geometric"] .detail-card h3{color:var(--fg-ink)}
-html[data-theme="flat-geometric"] .prose{color:#4d574f}
-html[data-theme="flat-geometric"] .pill{background:var(--fg-surface-strong);border:1px solid var(--fg-line);border-radius:10px;color:var(--fg-ink)}
-html[data-theme="flat-geometric"] .auth-card{background:var(--fg-surface);border-radius:14px;padding:var(--fg-space-7)}
-html[data-theme="flat-geometric"] .notice{background:var(--fg-accent-soft);color:#65452f;border-radius:10px}
-html[data-theme="flat-geometric"] .empty{background:var(--fg-surface);border:1px dashed rgba(36,50,44,.2);border-radius:12px;padding:var(--fg-space-7)}
-html[data-theme="flat-geometric"] .sheet-backdrop{background:rgba(36,50,44,.34)}
-html[data-theme="flat-geometric"] .bottom-sheet{background:var(--fg-surface-strong);border-radius:18px 18px 0 0;box-shadow:0 -12px 28px rgba(36,50,44,.12);padding:var(--fg-space-3) var(--fg-space-6) var(--fg-space-6)}
-html[data-theme="flat-geometric"] .sheet-handle{background:#aeb7ab}
-html[data-theme="flat-geometric"] .bottom-nav{background:var(--fg-surface-strong);border-color:var(--fg-line);border-radius:16px;backdrop-filter:none;box-shadow:0 12px 28px rgba(36,50,44,.12)}
-html[data-theme="flat-geometric"] .bottom-link{color:var(--fg-muted);border-radius:10px}
-html[data-theme="flat-geometric"] .bottom-link.active{background:var(--fg-ink);color:#fffdf7}
-html[data-theme="flat-geometric"] .hero[data-time-of-day="morning"]{--fg-hero-surface:#f4ead8;--fg-land-a:#93a68e;--fg-land-b:#c8b783}
-html[data-theme="flat-geometric"] .hero[data-time-of-day="noon"]{--fg-hero-surface:#e9efe6;--fg-land-a:#7d9873;--fg-land-b:#c8b06b}
-html[data-theme="flat-geometric"] .hero[data-time-of-day="sunset"]{--fg-hero-surface:#ead5bd;--fg-land-a:#a97858;--fg-land-b:#c49a5c}
-html[data-theme="flat-geometric"] .hero[data-time-of-day="night"]{--fg-hero-surface:#26352f;--fg-land-a:#4d6959;--fg-land-b:#6f6650}
-html[data-theme="flat-geometric"] .hero[data-time-of-day="night"] .hero-panel:first-child{border-color:rgba(255,255,255,.14)}
-html[data-theme="flat-geometric"] .hero[data-time-of-day="night"] .hero-panel:first-child .overline,html[data-theme="flat-geometric"] .hero[data-time-of-day="night"] .hero-panel:first-child .hero-subtitle,html[data-theme="flat-geometric"] .hero[data-time-of-day="night"] .hero-panel:first-child .hero-title{color:#f6f1e5}
-html[data-theme="flat-geometric"] .hero[data-season="spring"]{--fg-accent:#6f886e}
-html[data-theme="flat-geometric"] .hero[data-season="summer"]{--fg-accent:#9a653e}
-html[data-theme="flat-geometric"] .hero[data-season="autumn"]{--fg-accent:#a46f45}
-html[data-theme="flat-geometric"] .hero[data-season="winter"]{--fg-accent:#6e8790}
-html[data-theme="flat-geometric"] .hero[data-season] .hero-panel:first-child{border-bottom:4px solid var(--fg-accent)}
-html[data-theme="flat-geometric"] a:focus-visible,html[data-theme="flat-geometric"] button:focus-visible,html[data-theme="flat-geometric"] input:focus-visible,html[data-theme="flat-geometric"] textarea:focus-visible,html[data-theme="flat-geometric"] select:focus-visible{outline:3px solid rgba(143,91,59,.35);outline-offset:3px}
-@media (max-width:760px){html[data-theme="flat-geometric"] .app-shell{padding-top:var(--fg-space-2)}html[data-theme="flat-geometric"] .topbar{padding-bottom:var(--fg-space-3)}html[data-theme="flat-geometric"] .hero-panel{padding:var(--fg-space-6);border-radius:12px}html[data-theme="flat-geometric"] .hero-panel:first-child{min-height:330px}html[data-theme="flat-geometric"] .calendar-surface{border-radius:12px}html[data-theme="flat-geometric"] .day-cell{min-height:58px}html[data-theme="flat-geometric"] .bottom-nav{border-radius:14px}}
-@media (prefers-reduced-motion:reduce){html[data-theme="flat-geometric"] *,html[data-theme="flat-geometric"] *::before,html[data-theme="flat-geometric"] *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
-/* TASK-07-002 — Spacing/Margin Consistency */
-html[data-theme="flat-geometric"] .stack{gap:var(--fg-space-3)}
-html[data-theme="flat-geometric"] .two-col{gap:var(--fg-space-5)}
-html[data-theme="flat-geometric"] .form-stack{gap:var(--fg-space-4)}
-html[data-theme="flat-geometric"] .field{gap:var(--fg-space-1)}
-html[data-theme="flat-geometric"] .search-form{gap:var(--fg-space-2)}
-html[data-theme="flat-geometric"] .meta-row{gap:var(--fg-space-2)}
-html[data-theme="flat-geometric"] .primary-button,html[data-theme="flat-geometric"] .secondary-button{padding:var(--fg-space-3) var(--fg-space-4)}
-html[data-theme="flat-geometric"] .pill{padding:var(--fg-space-2) var(--fg-space-3)}
-html[data-theme="flat-geometric"] .notice{padding:var(--fg-space-3) var(--fg-space-4)}
-html[data-theme="flat-geometric"] .bottom-nav{padding:var(--fg-space-2)}
-html[data-theme="flat-geometric"] .bottom-link{padding:var(--fg-space-2) var(--fg-space-1)}
-@media(max-width:760px){
-html[data-theme="flat-geometric"] .app-shell{padding-top:var(--fg-space-2)}
-html[data-theme="flat-geometric"] .topbar{padding-bottom:var(--fg-space-3)}
-html[data-theme="flat-geometric"] .hero-panel{padding:var(--fg-space-6)}
-html[data-theme="flat-geometric"] .context-card{padding:var(--fg-space-4)}
-html[data-theme="flat-geometric"] .calendar-surface{padding:var(--fg-space-3)}
-html[data-theme="flat-geometric"] .bottom-nav{padding:var(--fg-space-2)}
+/* Theme A — Flat Geometric
+   Visual direction: solid fills, angular forms, restrained shadows, no gradients or glass. */
+
+html[data-theme="flat-geometric"] {
+  --fg-bg: #f4efe5;
+  --fg-surface: #fffdf8;
+  --fg-surface-soft: #f8f2e7;
+  --fg-surface-strong: #ffffff;
+  --fg-ink: #17231d;
+  --fg-muted: #667269;
+  --fg-line: #ded7ca;
+  --fg-accent: #cf6538;
+  --fg-accent-strong: #b84f27;
+  --fg-accent-soft: #f1d8c7;
+  --fg-green: #6f8b6b;
+  --fg-blue: #6f8794;
+  --fg-yellow: #e0b64d;
+  --fg-shadow: 0 10px 26px rgba(35, 45, 39, .08);
+  --fg-radius-sm: 12px;
+  --fg-radius-md: 16px;
+  --fg-radius-lg: 22px;
+  --fg-ease: 180ms cubic-bezier(.2,.7,.2,1);
 }
-@media(min-width:761px){
-html[data-theme="flat-geometric"] .hero-panel{padding:var(--fg-space-7)}
-html[data-theme="flat-geometric"] .event-card{padding:var(--fg-space-5)}
-html[data-theme="flat-geometric"] .detail-card{padding:var(--fg-space-6)}
+
+html[data-theme="flat-geometric"],
+html[data-theme="flat-geometric"] body {
+  background: var(--fg-bg);
 }
-/* TASK-07-003 — Typography Consistency */
-html[data-theme="flat-geometric"] body{font-size:var(--fg-type-body);line-height:1.6}
-html[data-theme="flat-geometric"] .overline,html[data-theme="flat-geometric"] .eyebrow{font-size:var(--fg-type-xs);line-height:1.35;font-weight:800}
-html[data-theme="flat-geometric"] .nav-link,html[data-theme="flat-geometric"] .lang-chip{font-size:var(--fg-type-sm)}
-html[data-theme="flat-geometric"] .profile-chip{font-size:var(--fg-type-md)}
-html[data-theme="flat-geometric"] .section-head h2{font-size:var(--fg-type-lg);line-height:1.35}
-html[data-theme="flat-geometric"] .section-head a{font-size:var(--fg-type-sm)}
-html[data-theme="flat-geometric"] .event-card h3{font-size:1.05rem;line-height:1.4}
-html[data-theme="flat-geometric"] .event-card p{font-size:var(--fg-type-md);line-height:1.7}
-html[data-theme="flat-geometric"] .card-meta,html[data-theme="flat-geometric"] .calendar-hint,html[data-theme="flat-geometric"] .meta-row{font-size:var(--fg-type-sm)}
-html[data-theme="flat-geometric"] .context-value{font-size:var(--fg-type-xl);line-height:1.35}
-html[data-theme="flat-geometric"] .primary-button,html[data-theme="flat-geometric"] .secondary-button{font-size:var(--fg-type-md);font-weight:800;line-height:1.35}
-html[data-theme="flat-geometric"] .search-form input,html[data-theme="flat-geometric"] .field input,html[data-theme="flat-geometric"] .field textarea,html[data-theme="flat-geometric"] .field select{font-size:var(--fg-type-body);line-height:1.5}
 
-/* TASK-07-004 — Component Consistency */
-html[data-theme="flat-geometric"] .nav-link,html[data-theme="flat-geometric"] .lang-chip,html[data-theme="flat-geometric"] .profile-chip,html[data-theme="flat-geometric"] .icon-button,html[data-theme="flat-geometric"] .primary-button,html[data-theme="flat-geometric"] .secondary-button,html[data-theme="flat-geometric"] .search-form input,html[data-theme="flat-geometric"] .field input,html[data-theme="flat-geometric"] .field textarea,html[data-theme="flat-geometric"] .field select,html[data-theme="flat-geometric"] .pill{border-radius:var(--fg-radius-sm)}
-html[data-theme="flat-geometric"] .card,html[data-theme="flat-geometric"] .calendar-surface,html[data-theme="flat-geometric"] .hero-panel,html[data-theme="flat-geometric"] .detail-card,html[data-theme="flat-geometric"] .auth-card{border-radius:var(--fg-radius-lg)}
-html[data-theme="flat-geometric"] .event-card,html[data-theme="flat-geometric"] .empty,html[data-theme="flat-geometric"] .notice{border-radius:var(--fg-radius-md)}
-html[data-theme="flat-geometric"] .bottom-sheet{border-radius:var(--fg-radius-sheet) var(--fg-radius-sheet) 0 0}
-html[data-theme="flat-geometric"] .primary-button,html[data-theme="flat-geometric"] .secondary-button,html[data-theme="flat-geometric"] .icon-button{box-shadow:none}
+html[data-theme="flat-geometric"] body {
+  color: var(--fg-ink);
+}
 
-/* TASK-07-005 — Visual Density Review */
-html[data-theme="flat-geometric"] .app-content{gap:var(--fg-space-5)}
-html[data-theme="flat-geometric"] .stack{gap:var(--fg-space-3)}
-html[data-theme="flat-geometric"] .two-col{gap:var(--fg-space-5)}
-html[data-theme="flat-geometric"] .calendar-grid{gap:var(--fg-space-1)}
-html[data-theme="flat-geometric"] .section-head{margin:0 2px var(--fg-space-2)}
-html[data-theme="flat-geometric"] .card-meta{margin-top:var(--fg-space-3);padding-top:var(--fg-space-2)}
+html[data-theme="flat-geometric"] .topbar {
+  background: var(--fg-bg);
+  border-bottom-color: var(--fg-line);
+}
 
-/* TASK-07-006..009 — Time-of-day Presentation */
-html[data-theme="flat-geometric"] .hero[data-time-of-day="morning"]{--fg-hero-surface:#f4ead8;--fg-land-a:#93a68e;--fg-land-b:#c8b783;--fg-accent:#7b805f}
-html[data-theme="flat-geometric"] .hero[data-time-of-day="noon"]{--fg-hero-surface:#e9efe6;--fg-land-a:#7d9873;--fg-land-b:#c8b06b;--fg-accent:#687f68}
-html[data-theme="flat-geometric"] .hero[data-time-of-day="sunset"]{--fg-hero-surface:#ead5bd;--fg-land-a:#a97858;--fg-land-b:#c49a5c;--fg-accent:#9a653e}
-html[data-theme="flat-geometric"] .hero[data-time-of-day="night"]{--fg-hero-surface:#26352f;--fg-land-a:#4d6959;--fg-land-b:#6f6650;--fg-accent:#92a58f}
-html[data-theme="flat-geometric"] .hero[data-time-of-day="night"] .hero-panel:first-child .overline,
-html[data-theme="flat-geometric"] .hero[data-time-of-day="night"] .hero-panel:first-child .hero-subtitle{color:#e8e2d6}
+html[data-theme="flat-geometric"] .brand {
+  color: var(--fg-ink);
+}
 
-/* TASK-07-010 — Seasonal Variations */
-html[data-theme="flat-geometric"] .hero[data-season="spring"]{--fg-accent:#6f886e}
-html[data-theme="flat-geometric"] .hero[data-season="summer"]{--fg-accent:#9a653e}
-html[data-theme="flat-geometric"] .hero[data-season="autumn"]{--fg-accent:#a46f45}
-html[data-theme="flat-geometric"] .hero[data-season="winter"]{--fg-accent:#6e8790}
+html[data-theme="flat-geometric"] .brand::before {
+  background: var(--fg-accent);
+}
 
-/* TASK-07-011 — Motion Polish */
 html[data-theme="flat-geometric"] .nav-link,
 html[data-theme="flat-geometric"] .lang-chip,
-html[data-theme="flat-geometric"] .profile-chip,
-html[data-theme="flat-geometric"] .icon-button,
-html[data-theme="flat-geometric"] .primary-button,
-html[data-theme="flat-geometric"] .secondary-button,
-html[data-theme="flat-geometric"] .event-card{transition:transform var(--fg-ease),background-color var(--fg-ease),border-color var(--fg-ease),color var(--fg-ease)}
-html[data-theme="flat-geometric"] .nav-link:hover,html[data-theme="flat-geometric"] .lang-chip:hover,html[data-theme="flat-geometric"] .profile-chip:hover{transform:translateY(-1px)}
-html[data-theme="flat-geometric"] .primary-button:active,html[data-theme="flat-geometric"] .secondary-button:active,html[data-theme="flat-geometric"] .icon-button:active{transform:translateY(0)}
-/* TASK-07-013 — Install Experience */
-html[data-theme="flat-geometric"] .install-prompt{display:flex;align-items:center;justify-content:space-between;gap:var(--fg-space-5);padding:var(--fg-space-4) var(--fg-space-5);background:var(--fg-surface);border:1px solid var(--fg-line);border-radius:var(--fg-radius-md);box-shadow:none}
-html[data-theme="flat-geometric"] .install-prompt-copy{display:grid;gap:var(--fg-space-1);min-width:0}
-html[data-theme="flat-geometric"] .install-prompt-copy strong{color:var(--fg-ink);font-size:var(--fg-type-md);line-height:1.4}
-html[data-theme="flat-geometric"] .install-prompt-copy span{color:var(--fg-muted);font-size:var(--fg-type-sm);line-height:1.6}
-html[data-theme="flat-geometric"] .install-prompt-actions{display:flex;gap:var(--fg-space-2);flex-wrap:wrap;justify-content:flex-end}
-@media(max-width:760px){html[data-theme="flat-geometric"] .install-prompt{align-items:flex-start;flex-direction:column;padding:var(--fg-space-4)}html[data-theme="flat-geometric"] .install-prompt-actions{width:100%;justify-content:stretch}html[data-theme="flat-geometric"] .install-prompt-actions .primary-button,html[data-theme="flat-geometric"] .install-prompt-actions .secondary-button{flex:1}}
+html[data-theme="flat-geometric"] .profile-chip {
+  border-radius: var(--fg-radius-sm);
+}
+
+html[data-theme="flat-geometric"] .nav-link:hover,
+html[data-theme="flat-geometric"] .nav-link.active,
+html[data-theme="flat-geometric"] .lang-chip:hover,
+html[data-theme="flat-geometric"] .profile-chip:hover {
+  background: var(--fg-surface);
+  border-color: var(--fg-line);
+}
+
+html[data-theme="flat-geometric"] .nav-link.active {
+  box-shadow: inset 0 -3px 0 var(--fg-accent);
+}
+
+html[data-theme="flat-geometric"] .lang-chip {
+  background: var(--fg-surface);
+  border-color: var(--fg-line);
+}
+
+html[data-theme="flat-geometric"] .hero-panel,
+html[data-theme="flat-geometric"] .card,
+html[data-theme="flat-geometric"] .calendar-surface {
+  background: var(--fg-surface);
+  border-color: var(--fg-line);
+  box-shadow: var(--fg-shadow);
+  border-radius: var(--fg-radius-lg);
+}
+
+html[data-theme="flat-geometric"] .hero {
+  gap: 20px;
+}
+
+html[data-theme="flat-geometric"] .hero-panel {
+  overflow: hidden;
+}
+
+html[data-theme="flat-geometric"] .hero-panel:first-child {
+  --fg-hero-bg: #f1e5cd;
+  --fg-shape-a: #9baa89;
+  --fg-shape-b: #d2b778;
+  background: var(--fg-hero-bg);
+  border-color: #dcd0bb;
+}
+
+html[data-theme="flat-geometric"] .hero-panel:first-child::before,
+html[data-theme="flat-geometric"] .hero-panel:first-child::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+}
+
+html[data-theme="flat-geometric"] .hero-panel:first-child::before {
+  inset-inline-start: -7%;
+  bottom: -8%;
+  width: 58%;
+  height: 42%;
+  background: var(--fg-shape-a);
+  clip-path: polygon(0 40%, 20% 15%, 40% 30%, 61% 0, 82% 25%, 100% 12%, 100% 100%, 0 100%);
+}
+
+html[data-theme="flat-geometric"] .hero-panel:first-child::after {
+  inset-inline-end: -4%;
+  bottom: -10%;
+  width: 62%;
+  height: 34%;
+  background: var(--fg-shape-b);
+  clip-path: polygon(0 44%, 19% 22%, 38% 36%, 58% 4%, 78% 28%, 100% 10%, 100% 100%, 0 100%);
+}
+
+html[data-theme="flat-geometric"] .hero-panel:first-child > * {
+  position: relative;
+  z-index: 1;
+}
+
+html[data-theme="flat-geometric"] .hero-title {
+  color: var(--fg-ink);
+}
+
+html[data-theme="flat-geometric"] .hero-subtitle,
+html[data-theme="flat-geometric"] .overline,
+html[data-theme="flat-geometric"] .eyebrow,
+html[data-theme="flat-geometric"] .calendar-hint {
+  color: var(--fg-muted);
+}
+
+html[data-theme="flat-geometric"] .context-card {
+  background: var(--fg-surface-strong);
+}
+
+html[data-theme="flat-geometric"] .event-card {
+  background: var(--fg-surface);
+  border-color: var(--fg-line);
+  box-shadow: none;
+  border-radius: var(--fg-radius-md);
+}
+
+html[data-theme="flat-geometric"] .event-card:hover {
+  background: var(--fg-surface-strong);
+  border-color: #cabdad;
+  box-shadow: var(--fg-shadow);
+}
+
+html[data-theme="flat-geometric"] .calendar-surface {
+  background: var(--fg-surface);
+}
+
+html[data-theme="flat-geometric"] .icon-button {
+  border-color: var(--fg-line);
+  background: var(--fg-surface-strong);
+  border-radius: var(--fg-radius-sm);
+}
+
+html[data-theme="flat-geometric"] .day-cell {
+  border-radius: 13px;
+  background: var(--fg-surface-soft);
+}
+
+html[data-theme="flat-geometric"] .day-cell:hover {
+  background: var(--fg-surface-strong);
+  border-color: var(--fg-line);
+}
+
+html[data-theme="flat-geometric"] .day-cell.today {
+  background: var(--fg-ink);
+}
+
+html[data-theme="flat-geometric"] .day-cell.has-event {
+  box-shadow: inset 0 -3px 0 var(--fg-accent);
+}
+
+html[data-theme="flat-geometric"] .day-cell.has-personal {
+  box-shadow: inset 0 -3px 0 var(--fg-green);
+}
+
+html[data-theme="flat-geometric"] .primary-button {
+  background: var(--fg-ink);
+  color: #fffdf8;
+}
+
+html[data-theme="flat-geometric"] .primary-button:hover {
+  background: #24362b;
+}
+
+html[data-theme="flat-geometric"] .secondary-button {
+  background: var(--fg-surface);
+  border-color: var(--fg-line);
+  color: var(--fg-ink);
+}
+
+html[data-theme="flat-geometric"] .secondary-button:hover {
+  background: var(--fg-surface-soft);
+  border-color: #cabdad;
+}
+
+html[data-theme="flat-geometric"] .search-form input,
+html[data-theme="flat-geometric"] .field input,
+html[data-theme="flat-geometric"] .field textarea,
+html[data-theme="flat-geometric"] .field select {
+  background: var(--fg-surface-strong);
+  border-color: var(--fg-line);
+  border-radius: var(--fg-radius-sm);
+}
+
+html[data-theme="flat-geometric"] .search-form input:focus,
+html[data-theme="flat-geometric"] .field input:focus,
+html[data-theme="flat-geometric"] .field textarea:focus,
+html[data-theme="flat-geometric"] .field select:focus {
+  border-color: rgba(207, 101, 56, .58);
+  box-shadow: 0 0 0 4px rgba(207, 101, 56, .10);
+}
+
+html[data-theme="flat-geometric"] .detail-card,
+html[data-theme="flat-geometric"] .auth-card {
+  background: var(--fg-surface);
+}
+
+html[data-theme="flat-geometric"] .pill {
+  background: var(--fg-surface-soft);
+  border-color: var(--fg-line);
+}
+
+html[data-theme="flat-geometric"] .notice {
+  background: var(--fg-accent-soft);
+  border-color: #e6c2aa;
+  color: #6c422d;
+}
+
+html[data-theme="flat-geometric"] .empty {
+  background: var(--fg-surface);
+  border-color: #cfc6b7;
+}
+
+html[data-theme="flat-geometric"] .bottom-nav {
+  background: var(--fg-surface-strong);
+  border-color: var(--fg-line);
+  box-shadow: 0 16px 34px rgba(20, 28, 23, .14);
+}
+
+html[data-theme="flat-geometric"] .bottom-link.active {
+  background: var(--fg-ink);
+  color: #fffdf8;
+}
+
+/* Time-of-day: solid color shifts only. */
+html[data-theme="flat-geometric"] .hero[data-time-of-day="morning"] {
+  --fg-hero-bg: #f1e5cd;
+  --fg-shape-a: #9baa89;
+  --fg-shape-b: #d2b778;
+}
+
+html[data-theme="flat-geometric"] .hero[data-time-of-day="noon"] {
+  --fg-hero-bg: #e9efe5;
+  --fg-shape-a: #7e9a76;
+  --fg-shape-b: #cdb770;
+}
+
+html[data-theme="flat-geometric"] .hero[data-time-of-day="sunset"] {
+  --fg-hero-bg: #ead4bd;
+  --fg-shape-a: #ad7450;
+  --fg-shape-b: #ce9b58;
+}
+
+html[data-theme="flat-geometric"] .hero[data-time-of-day="night"] {
+  --fg-hero-bg: #26372f;
+  --fg-shape-a: #4e6c58;
+  --fg-shape-b: #74654f;
+}
+
+html[data-theme="flat-geometric"] .hero[data-time-of-day="night"] .hero-panel:first-child {
+  color: #f5f1e7;
+  border-color: #43574c;
+}
+
+html[data-theme="flat-geometric"] .hero[data-time-of-day="night"] .hero-panel:first-child .hero-title,
+html[data-theme="flat-geometric"] .hero[data-time-of-day="night"] .hero-panel:first-child .context-value {
+  color: #f5f1e7;
+}
+
+html[data-theme="flat-geometric"] .hero[data-time-of-day="night"] .hero-panel:first-child .overline,
+html[data-theme="flat-geometric"] .hero[data-time-of-day="night"] .hero-panel:first-child .hero-subtitle {
+  color: #dce5de;
+}
+
+/* Season accents. */
+html[data-theme="flat-geometric"] .hero[data-season="spring"] { --fg-accent: #6f8b6b; }
+html[data-theme="flat-geometric"] .hero[data-season="summer"] { --fg-accent: #cf6538; }
+html[data-theme="flat-geometric"] .hero[data-season="autumn"] { --fg-accent: #a66b40; }
+html[data-theme="flat-geometric"] .hero[data-season="winter"] { --fg-accent: #6f8794; }
