@@ -4,13 +4,13 @@ Project: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Checkpoint date: 2026-10-04
-Current documentation checkpoint: **ACT-210 on main**
-Current implementation HEAD: dadfc21de5bbc1c262774b47c539bd10c1072414
+Current documentation checkpoint: **ACT-229 on main**
+Current implementation HEAD: b0d5267b66ec48dfd1e27ed31d87e1ed38e85e2f
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 Current visual stream: PHASE-07 — Theme A refinement
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: **ACT-211**
+Next fresh ACT ID: **ACT-230**
 
 ## 1. نقطه فعلی پروژه
 
@@ -19,16 +19,18 @@ Next fresh ACT ID: **ACT-211**
 - TASK-07-001 — Final Visual Hierarchy — **DONE**
 - Theme A — Flat Geometric — فعال و validation شده است.
 - Theme B — Modern Flat Vector Illustration — هنوز وارد طراحی اصلی نشده است.
-- visual batch جاری: **TASK-07-002 تا TASK-07-011 — IN_PROGRESS**
-- app-like task جاری: **TASK-07-013 — Install Experience — IN_PROGRESS**
+- TASK-07-002 تا TASK-07-011 — **DONE**
+- TASK-07-013 — **DONE**
+- PHASE-07 — **DONE**
+- security/reproducibility integration: **PR #4 / IN_PROGRESS**
 - هیچ تغییر جدیدی در Core، Calendar Engine، Domain، Data، Application، Auth/Session، routing یا business behavior در ACT-209 انجام نشده است.
 
 ## 2. شمارش رسمی Taskها
 
 - کل: **204**
-- DONE: **136**
-- IN_PROGRESS: **31**
-- TODO: **36**
+- DONE: **159**
+- IN_PROGRESS: **28**
+- TODO: **16**
 - DEFERRED: **1**
 - BLOCKED: **0**
 - DEPRECATED: **0**
@@ -112,23 +114,23 @@ seedEvents = [] عمداً خالی است. هیچ historical event عمومی �
 
 ## 7. QA و validation
 
-آخرین evidenceهای قطعی:
-- CI #281 — implementation correction series green
-- CI #299 — product/E2E acceptance checkpoint green
-- GitHub Actions #37161733754 — Theme A validation checkpoint green
+آخرین evidence قطعی:
+- Main CI #404 — **PASS**
+- PR #1 merge validation #403 — **PASS**
+- CI #299 — **PASS** برای checkpoint قبلی محصول
+- Theme A validation #37161733754 — **PASS**
 
-موارد باز همچنان acceptance/release هستند:
-- runtime/browser acceptance کامل برای PHASE-06
-- responsive/mobile/tablet/desktop visual QA
-- accessibility / touch/swipe review
-- release reproducibility و lockfile
-- final security/release hardening
-
-بدون اجرای واقعی CI یا acceptance evidence جدید، وضعیت جدید PASS اعلام نشود.
+در نتیجه:
+- PHASE-07 کامل شده است.
+- بخش عمدهٔ PHASE-09 که مستقیماً توسط main CI و browser smoke پوشش داده شد نیز DONE شده است.
+- TASK-09-018 Visual Consistency QA هنوز IN_PROGRESS است چون human visual review نهایی جدا از automated/static evidence است.
+- TASK-09-016 Performance QA هنوز TODO است.
+- TASK-09-008 Event Acceptance هنوز TODO است چون seedEvents عمداً خالی است.
+- TASK-09-020 و TASK-10-001 منتظر ادغام/validation امنیت و reproducibility در PR #4 هستند.
 
 ## 8. مسیر ادامه
 
-**گام بعدی:** validation کامل batch Theme A + PWA و سپس promotion Taskهای validated
+**گام بعدی:** تکمیل PR #4 security/reproducibility validation و سپس full post-merge CI
 
 تا زمانی که کاربر scope را تغییر نداده است، هر visual implementation جدید فقط روی Theme A انجام می‌شود و Theme B دست‌نخورده می‌ماند.
 
