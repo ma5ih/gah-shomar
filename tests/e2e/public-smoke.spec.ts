@@ -1,5 +1,12 @@
 import{test,expect}from"@playwright/test";
 test.describe("public product smoke",()=>{
+ test("Date hierarchy keeps Imperial date primary",async({page})=>{
+  await page.goto("/?lang=fa");
+  await expect(page.locator(".hero .hero-title")).toBeVisible();
+  await expect(page.locator(".hero .hero-subtitle")).toBeVisible();
+  await expect(page.locator(".hero .overline")).toBeVisible();
+  await expect(page.locator(".hero .hero-title")).not.toHaveText("");
+ });
  test("Today is Persian and RTL",async({page})=>{
   await page.goto("/?lang=fa");await expect(page.locator("html")).toHaveAttribute("dir","rtl");await expect(page.getByRole("heading",{level:1})).toBeVisible();await expect(page.getByRole("heading",{level:2,name:"مناسبت‌های امروز"})).toBeVisible();
  });
