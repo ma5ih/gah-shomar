@@ -10,25 +10,20 @@ type DeferredInstallPrompt=Event&{
 
 const DISMISS_KEY="gah-shomar:pwa-install-dismissed";
 
-function readDismissed(){
-  if(typeof window==="undefined")return false;
+function wasDismissed(){
   try{return window.localStorage.getItem(DISMISS_KEY)==="1";}catch{return false;}
-}
-
-function readInstalled(){
-  if(typeof window==="undefined")return false;
-  return window.matchMedia("(display-mode: standalone)").matches;
 }
 
 export function PwaInstallPrompt({locale}:{locale:Locale}){
   const [deferredPrompt,setDeferredPrompt]=useState<DeferredInstallPrompt|null>(null);
-  const [dismissed,setDismissed]=useState(readDismissed);
-  const [installed,setInstalled]=useState(readInstalled);
+  const [dismissed,setDismissed]=useState(false);
+  const [installed,setInstalled]=useState(false);
   const c=copy[locale];
 
   useEffect(()=>{
     const onBeforeInstallPrompt=(event:Event)=>{
       event.preventDefault();
+      if(wasDismissed())return;
       setDeferredPrompt(event as DeferredInstallPrompt);
     };
     const onInstalled=()=>{
