@@ -196,7 +196,7 @@ Account/Auth و Personal Share Card در سطح Requirements نهایی هستن
 
 - Requirements version: 1.1.0
 - Product requirements: APPROVED
-- Acceptance criteria: AC-001 تا AC-039
+- Acceptance criteria: AC-001 تا AC-040
 - Scope boundaries: APPROVED
 - Account/Auth product requirements: APPROVED
 - Personal Share Card product requirements: APPROVED
