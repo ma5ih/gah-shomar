@@ -123,7 +123,9 @@ Theme A و Theme B می‌توانند مستقلانه این موارد را �
 - ACT-207: Theme A visual execution — DONE
 - ACT-208: Theme A validation / TASK-07-001 closure — DONE
 - ACT-209: documentation convergence — DONE
-- ACT-212: Theme A visual polish batch — IN_PROGRESS
-- Theme A اکنون baseline بصری اجرایی دارد و polishهای TASK-07-002 تا TASK-07-011 در حال validation هستند.
+- ACT-212: Theme A visual polish batch — DONE
+- Theme A اکنون baseline بصری اجرایی و polishهای TASK-07-002 تا TASK-07-011 را با validation واقعی دارد.
+- TASK-07-013 Install Experience و PWA baseline نیز DONE و validated هستند.
+- PHASE-07 اکنون DONE است.
 - Theme B همچنان فقط در سطح boundary/scaffolding است و طراحی اصلی آن شروع نشده است.
-- گام بعدی بصری: TASK-07-002 — Spacing/Margin Consistency — فقط برای Theme A در scope فعلی.
+- هیچ تصمیم بصری جدیدی بدون human visual signoff نباید وارد release شود؛ این signoff یک release gate است، نه کار پیاده‌سازی Theme A.
