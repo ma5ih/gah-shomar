@@ -261,7 +261,8 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-09-013 — Tablet/Desktop QA — DONE
 - TASK-09-014 — Touch/Swipe QA — DONE
 - TASK-09-015 — Accessibility QA — DONE
-- TASK-09-016 — Performance QA — TODO
+- TASK-09-016 — Performance QA — DONE
+  - ACT-235 / CI #444: 87 tests passed; desktop navigation TTFB 40.7–83.1ms and DOMContentLoaded 85.5–203.1ms across Today, Calendar and Search baseline routes.
 - TASK-09-017 — PWA QA — DONE
 - TASK-09-018 — Visual Consistency QA — IN_PROGRESS
 - TASK-09-019 — Critical Bug Fixes — DONE
