@@ -1,8 +1,9 @@
 # RELEASE ACCEPTANCE MATRIX
 
 Status: IN_PROGRESS
-Checkpoint: ACT-246
+Checkpoint: ACT-248
 Date: 2026-10-04
+Last reconciled: ACT-248 — automated gates are green; human/external release gates remain open
 
 | Area | Current evidence | Status |
 |---|---|---|
