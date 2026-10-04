@@ -1,7 +1,7 @@
 # RELEASE BLOCKER REVIEW
 
 Status: IN_PROGRESS
-Checkpoint: ACT-221
+Checkpoint: ACT-227
 Date: 2026-10-04
 
 ## Current blockers
@@ -40,3 +40,9 @@ Date: 2026-10-04
 TASK-09-020 and TASK-10-001 remain IN_PROGRESS.
 
 Release must not be marked ready until the blockers above have explicit evidence or an accepted documented exception.
+## ACT-227 validation checkpoint
+
+- Security/reproducibility implementation is unchanged.
+- A human-authored checkpoint is added so GitHub Actions can validate the branch head after the earlier bot-generated package-lock commit.
+- No exception or approval is being inferred from the earlier `action_required` workflow result.
+- Required evidence remains: CI pass for runtime configuration, auth rate limiting, migration/test suite, build and browser smoke; package-lock review remains part of release acceptance.
