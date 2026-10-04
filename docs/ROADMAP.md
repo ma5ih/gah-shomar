@@ -177,40 +177,40 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-05-017 — Responsive Rules — DONE
 - TASK-05-018 — RTL/LTR Mirroring — DONE
 
-# PHASE-06 — Core Frontend Product Experience — IN_PROGRESS
-- TASK-06-001 — Today Page — IN_PROGRESS
-- TASK-06-002 — Date Hierarchy — IN_PROGRESS
-- TASK-06-003 — Occasion/Event Sections — IN_PROGRESS
-- TASK-06-004 — Personal/Memory Sections — IN_PROGRESS
-- TASK-06-005 — Time/Season Presentation — IN_PROGRESS
-- TASK-06-006 — Month Calendar — IN_PROGRESS
-- TASK-06-007 — Day Selection — IN_PROGRESS
-- TASK-06-008 — Day Detail — IN_PROGRESS
-- TASK-06-009 — Month Swipe/Navigation — IN_PROGRESS
-- TASK-06-010 — Important Events Page — IN_PROGRESS
-- TASK-06-011 — Event Detail Page — IN_PROGRESS
-- TASK-06-012 — Historical Timeline — IN_PROGRESS
-- TASK-06-013 — Person Page — IN_PROGRESS
-- TASK-06-014 — Related Content Navigation — IN_PROGRESS
-- TASK-06-015 — Personal Events UI — IN_PROGRESS
-  - authenticated create flow now has E2E coverage and persistence verification; create also persists optional notes and Personal Person linkage; acceptance remains open
-- TASK-06-016 — Personal Person UI — IN_PROGRESS
-  - people are listed and selectable from Personal Event forms; ownership boundary is regression-tested; full UI acceptance remains open
-- TASK-06-017 — Memories UI — IN_PROGRESS
-  - existing CRUD path remains implemented; dedicated browser acceptance is still open
-- TASK-06-018 — Recurrence UI — IN_PROGRESS
-  - yearly recurrence remains wired through Personal Event creation/update; full browser acceptance remains open
-- TASK-06-019 — Search UI — IN_PROGRESS
-  - category/alias search enhancements may be completed here; dedicated month/date parsing remains a future extension
-- TASK-06-020 — Search Result Navigation — IN_PROGRESS
-- TASK-06-021 — Persian Experience — IN_PROGRESS
-  - Personal form labels/types are now localized; broader RTL/product acceptance remains open
-- TASK-06-022 — English Experience — IN_PROGRESS
-  - Personal form labels/types now have English counterparts; broader LTR/product acceptance remains open
-- TASK-06-023 — Authentication UI — IN_PROGRESS
-  - register/login/logout are covered by the authenticated Personal browser flow; final acceptance remains open
-- TASK-06-024 — Personal Event Share Card Experience — IN_PROGRESS
-  - core pages are present; completion is gated by runtime/browser acceptance
+# PHASE-06 — Core Frontend Product Experience — DONE
+- TASK-06-001 — Today Page — DONE
+- TASK-06-002 — Date Hierarchy — DONE
+- TASK-06-003 — Occasion/Event Sections — DONE
+- TASK-06-004 — Personal/Memory Sections — DONE
+- TASK-06-005 — Time/Season Presentation — DONE
+- TASK-06-006 — Month Calendar — DONE
+- TASK-06-007 — Day Selection — DONE
+- TASK-06-008 — Day Detail — DONE
+- TASK-06-009 — Month Swipe/Navigation — DONE
+- TASK-06-010 — Important Events Page — DONE
+- TASK-06-011 — Event Detail Page — DONE
+- TASK-06-012 — Historical Timeline — DONE
+- TASK-06-013 — Person Page — DONE
+- TASK-06-014 — Related Content Navigation — DONE
+- TASK-06-015 — Personal Events UI — DONE
+  - CI #461/90 browser tests cover authenticated create, persistence, notes and Personal Person linkage.
+- TASK-06-016 — Personal Person UI — DONE
+  - CI #461 covers creation, listing, selection and ownership-boundary behavior.
+- TASK-06-017 — Memories UI — DONE
+  - CI #461 covers create, edit and delete acceptance.
+- TASK-06-018 — Recurrence UI — DONE
+  - CI #461 covers enabling and clearing yearly recurrence.
+- TASK-06-019 — Search UI — DONE
+  - CI #461 covers public search, stable empty state and protection of unapproved historical events.
+- TASK-06-020 — Search Result Navigation — DONE
+- TASK-06-021 — Persian Experience — DONE
+  - CI #461 covers Persian labels, RTL shell and Personal flow.
+- TASK-06-022 — English Experience — DONE
+  - CI #461 covers English labels, LTR shell and Personal flow.
+- TASK-06-023 — Authentication UI — DONE
+  - CI #461 covers register, authenticated state and logout.
+- TASK-06-024 — Personal Event Share Card Experience — DONE
+  - CI #461 includes the Share Card acceptance path and verifies the generated PNG download.
 
 # PHASE-07 — Visual Polish, Time/Season & App-like Experience — DONE
 - TASK-07-001 — Final Visual Hierarchy — DONE
