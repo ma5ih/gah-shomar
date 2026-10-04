@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS "auth_rate_limits" ("scope_key" varchar(160) PRIMARY KEY,"window_started_at" timestamptz NOT NULL,"attempts" integer NOT NULL DEFAULT 0,"updated_at" timestamptz NOT NULL DEFAULT now());
