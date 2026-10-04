@@ -1,10 +1,9 @@
 import{test,expect}from"@playwright/test";
 
 test.describe("performance baseline",()=>{
-  test.skip(({browserName},testInfo)=>browserName!=="chromium"||testInfo.project.name!=="chromium-desktop");
-
   for(const route of ["/?lang=en","/calendar?lang=en&year=2465&month=5","/search?lang=en&q=Re%C5%BE%C4%81%20Shah%20Pahlavi"]){
-    test("desktop navigation budget: "+route,async({page})=>{
+    test("desktop navigation budget: "+route,async({page},testInfo)=>{
+      test.skip(testInfo.project.name!=="chromium-desktop");
       const response=await page.goto(route,{waitUntil:"domcontentloaded"});
       expect(response?.ok()).toBe(true);
       const metrics=await page.evaluate(()=>{const n=performance.getEntriesByType("navigation")[0] as PerformanceNavigationTiming;return{
