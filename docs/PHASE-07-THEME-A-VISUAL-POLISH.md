@@ -1,6 +1,6 @@
 # PHASE-07 — Theme A Visual Polish Execution
 
-Status: IN_PROGRESS
+Status: DONE
 Action: ACT-212
 Theme: Flat Geometric
 Tasks: TASK-07-002 through TASK-07-011
@@ -101,9 +101,11 @@ Shared Core remains untouched:
 
 ## Current status
 
-TASK-07-002 through TASK-07-011 are implemented in the Theme A stylesheet but remain pending independently observed CI/runtime visual evidence before being promoted to DONE.
+TASK-07-002 through TASK-07-011 are implemented and validated by main CI #404 and are promoted to DONE.
 
 Theme B remains untouched and outside the current execution scope.
+
+TASK-07-013 Install Experience was validated in the merged PWA acceptance path and is DONE.
 ## TASK-07-013 — Install Experience
 
 The app shell now exposes a browser-native install prompt when the platform emits beforeinstallprompt.
