@@ -1,3 +1,21 @@
+## ACT-251 — 2026-10-04
+Type: MAJOR-UX-DESIGN-REDESIGN
+Status: IN_PROGRESS
+
+- Rebuilt the shared responsive visual foundation around a viewport-locked, mobile-first AppShell.
+- Browser page scrolling is removed; app content uses controlled internal scrolling with hidden scrollbars when content exceeds the viewport.
+- Rebuilt Today around the imperial date, live local time, today's event list and the user's personal events/memories; count-only summary metrics were removed.
+- Corrected Imperial year formatting so 2585 is rendered without grouping separators.
+- Corrected Gregorian formatting to explicitly use the Gregorian calendar, preventing accidental display of the Solar Hijri year 1405.
+- Added Vazirmatn as the primary application font.
+- Rebuilt Theme A visual skin to match the approved Flat Geometric brief with flat solid colors, angular landscape/vector layers and no gradients or glassmorphism.
+- Replaced legacy mobile navigation glyphs with inline SVG icons and refreshed controls, forms, motion and touch states.
+- Added a live local clock component using the runtime timezone.
+- Latest head: `a6a1956ef9446fc37b6cd339d874b4cfd4ebc768`.
+- Fresh CI for the latest head is still running; human visual/product signoff remains open.
+
+Next fresh ACT ID: **ACT-252**
+
 ## ACT-249 — 2026-10-04
 Type: UX-QA-AND-RELEASE-PACKAGING
 Status: DONE
