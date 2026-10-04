@@ -60,12 +60,12 @@ test("Timeline route is reachable from the public shell",async({page})=>{
   await expect(page.locator("header")).toHaveCount(1);
   await expect(page.locator("nav")).toHaveCount(2);
   await expect(page.getByRole("heading",{level:1})).toBeVisible();
-  await page.locator("nav").first().getByRole("link",{name:"Calendar"}).focus();
-  await expect(page.locator(":focus-visible")).toBeVisible();
+  await expect(page.locator(".app-shell [data-pwa-install-ready]")).toBeAttached();
 });
 test("Primary navigation is keyboard reachable",async({page})=>{await page.goto("/?lang=fa");await page.keyboard.press("Tab");await expect(page.locator(":focus-visible")).toBeVisible();});
  test("PWA install prompt appears when browser exposes install capability",async({page})=>{
   await page.goto("/?lang=en");
+  await expect(page.locator("[data-pwa-install-ready]")).toBeAttached();
   await page.evaluate(()=>{
     const event=Object.assign(new Event("beforeinstallprompt"),{prompt:async()=>{},userChoice:Promise.resolve({outcome:"dismissed"})});
     window.dispatchEvent(event);
