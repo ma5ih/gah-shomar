@@ -1,9 +1,9 @@
 # STATUS — وضعیت لحظه‌ای پروژه
 
-Last updated: 2026-10-04 — ACT-247
-Current documentation checkpoint: ACT-247 on main
+Last updated: 2026-10-04 — ACT-248
+Current documentation checkpoint: ACT-248 on main
 Current implementation HEAD: 7e7ebb4bb8f2d15175900daf54968b4792d23bad
-Current implementation checkpoint: ACT-237 production security gate + ACT-244 PHASE-06 acceptance
+Current implementation checkpoint: ACT-247 release-readiness cleanup + ACT-244 PHASE-06 acceptance
 Latest completed Theme A validation: GitHub Actions #37161733754 — PASS (ACT-208)
 Current visual state: PHASE-07 DONE — Theme A visual batch validated
 Current app-like state: TASK-07-013 DONE — Install Experience validated
@@ -11,7 +11,7 @@ Primary workstream: PHASE-10 — Release & Handoff
 Current visual stream: PHASE-07 — Theme A — DONE
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: ACT-248
+Next fresh ACT ID: ACT-249
 
 ## شمارش رسمی ریزتسک‌ها
 
@@ -42,6 +42,11 @@ Next fresh ACT ID: ACT-248
 | PHASE-10 | IN_PROGRESS | Release hardening and final release steps |
 
 ## آخرین اقدامات
+
+### ACT-248 — Documentation/state reconciliation — DONE
+- Reconciled README, PROJECT, ROADMAP, STATUS, HANDOFF, INDEX, release checklist and acceptance matrix with the real main state.
+- Corrected the canonical ledger to 204 unique tasks: 190 DONE / 4 IN_PROGRESS / 9 TODO / 1 DEFERRED.
+- Confirmed the remaining release-critical gates are editorial approval/public event seed, human visual signoff, human final product signoff and real production/PWA validation.
 
 ### ACT-247 — Internal release-readiness cleanup — DONE
 - TASK-08-011, TASK-10-005 and TASK-10-009 are DONE.
@@ -98,13 +103,13 @@ seedEvents = [] عمداً خالی است. هیچ historical event عمومی �
 
 ## مسیر بعدی قطعی
 
-- ACT-246: final human visual/product review records and release checklist refinement.
-- سپس editorial approval, real production/PWA validation and final release packaging.
+- ACT-248: documentation/state reconciliation is complete.
+- سپس editorial approval/public event seed, human visual/product signoff, real production/PWA validation and final release packaging.
 - Theme B دست‌نخورده می‌ماند.
 
 TASK-07-002 — Spacing/Margin Consistency — DONE
 
-Main validation is green. Remaining release gates are dependency-security remediation, final human visual/product review, editorial event approval, production deployment/PWA validation and release packaging.
+Main validation is green. Remaining release gates are editorial approval/public event content, final human visual/product signoff, production deployment/PWA validation and final release packaging.
 
 Theme B همچنان خارج از Scope است.
 
