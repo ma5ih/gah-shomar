@@ -1,10 +1,10 @@
 # ENV-CONFIG — Environment و Configuration Strategy
 
-Version: 1.0.0
+Version: 1.1.0
 Status: APPROVED
 Task: TASK-02-003
 Action: ACT-022
-Last updated: 2026-10-02
+Last updated: 2026-10-04 — ACT-221
 
 ## اصول
 
@@ -39,7 +39,7 @@ Secret: database credentials، auth/session secrets، storage credentials و pri
 
 ## Validation
 
-Configuration module باید required variables، type و format را validate کند و خطای واضح بدهد.
+`src/application/runtime-config.ts` اکنون boundary مرکزی validation است و required variables، type/format و IANA timezone را validate می‌کند. Production configuration نیز database requirement را enforce می‌کند.
 
 ## Feature Flags
 
@@ -49,4 +49,5 @@ Feature flag فقط برای rollout واقعی استفاده می‌شود؛ �
 
 TASK-02-003: DONE
 ACT-022: DONE
-Next: TASK-02-004 — Dependency Policy
+Release-readiness implementation checkpoint: ACT-221
+TASK-10-001 remains IN_PROGRESS until real CI validation and dependency reproducibility/lockfile evidence are complete.
