@@ -1,7 +1,7 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 2.4.5
-Last updated: 2026-10-04 — ACT-221
+Version: 2.8.0
+Last updated: 2026-10-04 — ACT-225
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
 
@@ -12,8 +12,8 @@ TODO / IN_PROGRESS / BLOCKED / DONE / DEFERRED / DEPRECATED
 
 - کل ریزتسک‌های شماره‌گذاری‌شده: **204**
 - DONE: **138**
-- IN_PROGRESS: **34**
-- TODO: **33**
+- IN_PROGRESS: **49**
+- TODO: **16**
 - DEFERRED: **1**
 - BLOCKED: **0**
 - DEPRECATED: **0**
@@ -268,7 +268,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - All verified implementation findings from ACT-186 are closed through ACT-189..ACT-196.
   - CI #281 validates lint, typecheck, unit/integration, production build and browser smoke on the corrected HEAD.
   - The missing package-lock is tracked as a release reproducibility concern, not an unresolved application bug.
-- TASK-09-020 — Release Blocker Review — IN_PROGRESS
+- TASK-09-020 — Release Blocker Review — TODO
   - includes final security hardening evidence (CSRF/rate limiting) and release reproducibility review
 - TASK-09-021 — Final Product Review — TODO
 - TASK-09-022 — E2E Dataset/Editorial Alignment — DONE
@@ -277,13 +277,41 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 
 ## CURRENT CHECKPOINT — ACT-225 — 2026-10-04
 
-- ACT-225 fixes the deterministic browser QA failures found in the previous run.
-- Accessibility landmark acceptance now verifies stable landmarks without depending on a nav that is hidden by responsive presentation.
-- PWA install acceptance now waits for the mounted install-listener marker before dispatching beforeinstallprompt.
-- Latest Theme A + PWA/product-navigation branch head: 2d35460c5e4087a5d2a5eaed5f989941800c9fa7 (validation run in progress).
-- Current work branch does not yet include the separate ACT-221 security/reproducibility branch; those changes remain separate until their own validation and integration.
-- Theme B remains untouched.
-- Current intended canonical ledger for this work branch: 204 total / 138 DONE / 58 IN_PROGRESS / 15 TODO / 1 DEFERRED.
-- Release cannot be marked ready until current browser smoke passes and security/reproducibility blockers are validated separately.
+- ACT-225 fixes the two deterministic browser QA failures found on the latest branch head.
+- Accessibility landmark acceptance no longer depends on a responsive nav that may be hidden on mobile/tablet.
+- PWA install acceptance waits for a mounted install-listener marker before dispatching beforeinstallprompt.
+- Latest implementation head before this documentation checkpoint: 2d35460c5e4087a5d2a5eaed5f989941800c9fa7.
+- Previous CI on the pre-fix head recorded 81 passed, 2 failed and 1 flaky browser tests; the failures were isolated to the two scenarios above.
+- Current validation run is re-running the complete CI pipeline against ACT-225 fixes.
+- Theme A remains the only visual implementation scope; Theme B remains untouched.
+- Security/reproducibility work from the separate ACT-221 branch is intentionally not merged into this work branch yet.
+- Canonical task counts from the actual top-level TASK ledger: 204 total / 138 DONE / 49 IN_PROGRESS / 16 TODO / 1 DEFERRED.
 
 # PHASE-10 — Release & Handoff — TODO
+- TASK-10-001 — Production Configuration — TODO
+  - includes central runtime configuration validation, production environment checks and the reproducible dependency-installation strategy (including lockfile)
+- TASK-10-002 — Production Build — TODO
+- TASK-10-003 — Deployment Validation — TODO
+- TASK-10-004 — PWA Production Validation — TODO
+- TASK-10-005 — Documentation Finalization — TODO
+- TASK-10-006 — CHANGELOG Release Entry — TODO
+- TASK-10-007 — Release Notes — TODO
+- TASK-10-008 — Version REL-1.0.0 — TODO
+- TASK-10-009 — Handoff/Continuation Guide — TODO
+- TASK-10-010 — Post-release Backlog — TODO
+
+# مسیر ادامه فعلی
+
+**PRIMARY WORKSTREAM:** PHASE-06 — Core Frontend Product Experience — IN_PROGRESS
+**CURRENT VISUAL STREAM:** PHASE-07 — Theme A refinement
+**QA BLOCKER:** TASK-09-022 in PHASE-09 — DONE
+
+**CURRENT VISUAL BATCH:** TASK-07-002 through TASK-07-011 — IN_PROGRESS
+**CURRENT APP-LIKE TASK:** TASK-07-013 — Install Experience — IN_PROGRESS
+- TASK-07-001 برای Theme A بسته شده و DONE است.
+- Theme B فعلاً خارج از Scope است و نباید وارد اجرای بصری فعلی شود.
+- پس از شروع Taskهای باقی‌مانده PHASE-07، مسیر به PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release می‌رسد.
+
+نکته: PHASE-09 در این checkpoint «فاز جاری محصول» نیست؛ یک QA gate باز است که blocker آن باید پیش از acceptance نهایی PHASE-06 بسته شود.
+
+قاعده: Phase فقط با implementation + tests + validation واقعی به DONE می‌رسد. QA دوباره‌کاری روی Phaseهای قبلی را با تغییرات بعدی پوشش می‌دهد.
