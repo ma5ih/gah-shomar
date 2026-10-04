@@ -4,13 +4,13 @@ Project: گاه‌شمار
 Repository: ma5ih/gah-shomar
 Default branch: main
 Checkpoint date: 2026-10-04
-Current documentation checkpoint: **ACT-231 on main**
+Current documentation checkpoint: **ACT-235 on main**
 Current implementation HEAD: 7e7ebb4bb8f2d15175900daf54968b4792d23bad
 Primary workstream: PHASE-06 — Core Frontend Product Experience
 Current visual stream: PHASE-07 — Theme A refinement
 QA gate: PHASE-09 — Integration & Full QA
 Overall status: IN_PROGRESS
-Next fresh ACT ID: **ACT-232**
+Next fresh ACT ID: **ACT-236**
 
 ## 1. نقطه فعلی پروژه
 
@@ -128,9 +128,7 @@ seedEvents = [] عمداً خالی است. هیچ historical event عمومی �
 
 ## 8. مسیر ادامه
 
-**گام بعدی:** ACT-232 dependency-security audit/remediation.
-
-بعد از آن به‌ترتیب: performance evidence → final human visual/product review → editorial event acceptance → production deployment validation → PWA production validation → release docs/versioning/handoff.
+ACT-232 security audit is recorded; ACT-235 performance evidence is now PASS. The next executable gate is ACT-234 dependency remediation / PR #5, followed by final human visual/product review, editorial event acceptance, production deployment validation, PWA production validation and release packaging.
 
 Theme B دست‌نخورده و خارج از scope می‌ماند.
 
