@@ -1,3 +1,18 @@
+## ACT-235 — 2026-10-04
+Type: PERFORMANCE-QA
+Status: DONE
+
+- ACT-233 added the first performance baseline; CI #439 failed only because the Playwright test.skip callback used an invalid fixture signature.
+- ACT-235 corrected the test gating.
+- CI #444 passed end-to-end: 87 tests passed.
+- Baseline metrics: Today TTFB 40.7ms / DOMContentLoaded 85.5ms; Calendar 43.9ms / 96.8ms; Search 83.1ms / 203.1ms.
+- TASK-09-016 — Performance QA — DONE.
+
+### Next
+Complete ACT-234 dependency remediation / PR #5, then final human/product review, editorial approval, production/PWA validation and release packaging.
+
+Next fresh ACT ID: **ACT-236**
+
 ## ACT-232 — 2026-10-04
 Type: DEPENDENCY-SECURITY-AUDIT
 Status: DONE
