@@ -1,7 +1,7 @@
 # ROADMAP — نقشه راه کامل پروژه
 
-Version: 3.0.0
-Last updated: 2026-10-04 — ACT-230
+Version: 3.1.0
+Last updated: 2026-10-04 — ACT-231
 
 این سند مرجع اجرایی پروژه از صفر تا Release است. وضعیت Taskها باید با implementation و validation واقعی هماهنگ باشد.
 
@@ -275,7 +275,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
   - browser smoke follows the intentionally empty historical-event seed
   - CI run #168 and later full pipelines validate the aligned behavior
 
-## CURRENT CHECKPOINT — ACT-230 — 2026-10-04
+## CURRENT CHECKPOINT — ACT-231 — 2026-10-04
 
 - Main merge commit after security/reproducibility integration: 7e7ebb4bb8f2d15175900daf54968b4792d23bad.
 - PR #4 security/reproducibility CI run #406 passed end-to-end: npm ci, migration, lint, typecheck, unit/integration, production build, Chromium and browser smoke.
@@ -284,6 +284,7 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 - TASK-10-001 — Production Configuration is DONE: runtime config validation, production contract, committed lockfile and npm ci were implemented and validated.
 - TASK-10-002 — Production Build is DONE: production build has passed on the main validation gates.
 - Dependency reproducibility is no longer an open blocker.
+- ACT-231 converged the repository documentation with the validated main state.
 - Dependency security remains OPEN because the previous install reported 9 vulnerabilities (3 moderate, 6 high) and no remediation has yet been approved.
 - TASK-09-018 Visual Consistency QA remains IN_PROGRESS for final human visual review.
 - TASK-09-016 Performance QA remains TODO.
@@ -308,12 +309,10 @@ Calendar Engine + Domain foundation + test suite + CI validation قابل اعت
 
 # مسیر ادامه فعلی
 
-**PRIMARY WORKSTREAM:** PHASE-06 — Core Frontend Product Experience — IN_PROGRESS
-**CURRENT VISUAL STREAM:** PHASE-07 — Theme A refinement
-**QA BLOCKER:** TASK-09-022 in PHASE-09 — DONE
-
+**PRIMARY WORKSTREAM:** PHASE-10 — Release & Handoff — IN_PROGRESS
+**PRODUCT ACCEPTANCE WORKSTREAM:** PHASE-06 — remaining browser/product acceptance tasks
 **CURRENT VISUAL STREAM:** PHASE-07 — Theme A — DONE
-**CURRENT RELEASE STREAM:** PHASE-10 — IN_PROGRESS
+**QA GATE:** PHASE-09 — remaining final review/performance tasks
 - TASK-07-001 برای Theme A بسته شده و DONE است.
 - Theme B فعلاً خارج از Scope است و نباید وارد اجرای بصری فعلی شود.
 - پس از شروع Taskهای باقی‌مانده PHASE-07، مسیر به PHASE-08 monthly editorial review → PHASE-09 final QA → PHASE-10 release می‌رسد.
